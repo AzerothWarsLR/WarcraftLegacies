@@ -1,0 +1,24 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（大门 - 损毁）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暴风城港口大门"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "横向木门"
+    }
+  ],
+  "NewId": "h02I"
+}

@@ -1,0 +1,38 @@
+{
+  "OldId": "AHmt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂热 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂热 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使单位的攻击速度提高<A0XM,DataA2,%>%，移动速度提高<A0XM,DataB2,%>%，持续<A0EH,Dur1>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使单位的攻击速度提高<A0XM,DataA1,%>%，移动速度提高<A0XM,DataB1,%>%，持续<A0EH,Dur1>秒。"
+    }
+  ],
+  "NewId": "A000"
+}

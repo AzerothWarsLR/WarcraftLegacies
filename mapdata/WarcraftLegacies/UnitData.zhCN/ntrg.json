@@ -1,0 +1,13 @@
+{
+  "OldId": "ntrg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战两栖单位，其带刺甲壳会伤害近战攻击它的敌人。"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（洛丹伦、暴风城）（任务）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "阿拉索遗产"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究阿拉索遗产"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化所有非英雄单位，使其伤害骰数提高 1，生命值提高 100，护甲等级提高 1。"
+    }
+  ],
+  "NewId": "R01N"
+}

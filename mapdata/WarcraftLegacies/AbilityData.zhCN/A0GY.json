@@ -1,0 +1,26 @@
+{
+  "OldId": "AUts",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（单位）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "尖刺甲壳"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用有机倒刺强化巢穴守卫的护甲，使其获得<AUts,DataC1>点额外护甲，并将<AUts,DataA1,%>%的近战攻击伤害反弹给敌人。"
+    }
+  ],
+  "NewId": "A0GY"
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "okod",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "骑乘科多兽的鼓手，能鼓舞部落的士兵。"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "hmil",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "符文石守卫"
+    }
+  ],
+  "NewId": "h0CM"
+}

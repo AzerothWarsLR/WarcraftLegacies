@@ -1,0 +1,19 @@
+{
+  "OldId": "ninf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能-传送门-萨格拉斯之眼）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "邪能烈焰召唤出的魔像。"
+    }
+  ],
+  "NewId": "n05D"
+}

@@ -1,0 +1,31 @@
+{
+  "OldId": "AIx5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（+9 力量）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "泰坦铸造"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "泰坦铸造"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "额外提高 9 点力量。"
+    }
+  ],
+  "NewId": "A0VM"
+}

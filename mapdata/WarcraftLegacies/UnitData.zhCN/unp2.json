@@ -1,0 +1,18 @@
+{
+  "OldId": "unp2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 T3）"
+    }
+  ]
+}

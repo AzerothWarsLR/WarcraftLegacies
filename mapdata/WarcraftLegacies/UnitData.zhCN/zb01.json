@@ -1,0 +1,29 @@
+{
+  "OldId": "negt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "太阳井塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯塔）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化太阳塔"
+    }
+  ],
+  "NewId": "zb01"
+}

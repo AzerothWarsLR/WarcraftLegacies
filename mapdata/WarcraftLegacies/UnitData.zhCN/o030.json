@@ -1,0 +1,19 @@
+{
+  "OldId": "ofrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 T3）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    }
+  ],
+  "NewId": "o030"
+}

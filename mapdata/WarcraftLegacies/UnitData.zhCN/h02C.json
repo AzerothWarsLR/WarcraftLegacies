@@ -1,0 +1,19 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯 T3）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    }
+  ],
+  "NewId": "h02C"
+}

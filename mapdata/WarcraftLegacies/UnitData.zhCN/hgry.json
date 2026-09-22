@@ -1,0 +1,18 @@
+{
+  "OldId": "hgry",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的飞行生物，由一名蛮锤投掷手骑乘。"
+    }
+  ]
+}

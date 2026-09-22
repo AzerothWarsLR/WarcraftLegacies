@@ -1,0 +1,13 @@
+{
+  "OldId": "nlds",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放纠缠根须并召唤对虾的中型远程单位。"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "osp1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 - 祖鲁希德 - 等级 2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "嗜血图腾"
+    }
+  ],
+  "NewId": "o010"
+}

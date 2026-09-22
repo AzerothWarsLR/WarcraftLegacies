@@ -1,0 +1,43 @@
+{
+  "OldId": "Hkal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奎尔萨拉斯王子"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长造成魔法伤害。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤凯尔萨斯·逐日者"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活奎尔萨拉斯王子"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活奎尔萨拉斯王子"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "凯尔萨斯·逐日者"
+    }
+  ]
+}

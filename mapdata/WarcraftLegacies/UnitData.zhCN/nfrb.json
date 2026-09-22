@@ -1,0 +1,13 @@
+{
+  "OldId": "nfrb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放精灵之火的重型近战单位。"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "ocat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "旋风炮"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba攻城 单位|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练旋风炮"
+    }
+  ],
+  "NewId": "o04U"
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "ufro",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "冰封荒原的亡灵巨龙。"
+    }
+  ]
+}

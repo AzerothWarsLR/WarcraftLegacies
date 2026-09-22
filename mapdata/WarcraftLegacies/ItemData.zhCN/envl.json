@@ -1,0 +1,13 @@
+{
+  "OldId": "envl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "在<AIp6,Dur1>秒内为英雄恢复<AIp6,DataA1>点生命值和<AIp6,DataB1>点魔法值。|n可使用<envl,uses>次。"
+    }
+  ]
+}

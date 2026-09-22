@@ -1,0 +1,21 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "任务完成：流放者"
+    }
+  ],
+  "NewId": "R06P"
+}

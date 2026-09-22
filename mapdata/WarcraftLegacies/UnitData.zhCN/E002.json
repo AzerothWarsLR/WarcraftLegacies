@@ -1,0 +1,44 @@
+{
+  "OldId": "Emoo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "哨兵部队将军"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长远程作战，能从远处造成伤害。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤珊蒂斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活哨兵将军"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活哨兵将军"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "珊蒂斯·羽月"
+    }
+  ],
+  "NewId": "E002"
+}

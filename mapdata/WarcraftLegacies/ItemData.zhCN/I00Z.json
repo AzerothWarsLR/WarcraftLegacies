@@ -1,0 +1,24 @@
+{
+  "OldId": "klmm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高攻击力。提供施放闪电链的能力"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00神器|r|n携带时使英雄的攻击力提高 20 点。可使用闪电链。|n|cffffcc00典故|r|n|cffffdead雷霆之怒，逐风者的祝福之剑，是风之亲王桑德兰曾持有的传奇之剑。\n"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "雷霆之怒"
+    }
+  ],
+  "NewId": "I00Z"
+}

@@ -1,0 +1,23 @@
+{
+  "OldId": "ntrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 托尔托拉）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战两栖单位，其带刺甲壳会伤害近战攻击它的敌人。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤海龟"
+    }
+  ]
+}

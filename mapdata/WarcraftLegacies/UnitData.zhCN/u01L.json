@@ -1,0 +1,14 @@
+{
+  "OldId": "uloc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "先祖之魂"
+    }
+  ],
+  "NewId": "u01L"
+}

@@ -1,0 +1,55 @@
+{
+  "OldId": "ANav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 乌索克）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "激活天神下凡后，乌索克获得额外护甲、额外生命值、额外攻击力和法术免疫。|n持续 60 秒。|n|n|cffffcc001级|r - 5 点额外护甲，600 点额外生命值，15 点额外攻击力。|n|cffffcc002级|r - 10 点额外护甲，1200 点额外生命值，30 点额外攻击力。|n|cffffcc003级|r - 15 点额外护甲，1800 点额外生命值，45 点额外攻击力。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "天神下凡 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "天神下凡 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活天神下凡，使乌索克获得<A06E,DataA1>点额外护甲、<A06E,DataB1>点额外生命值和<A06E,DataC1>点额外攻击力，并具有法术免疫。 |n持续<A06E,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活天神下凡，使乌索克获得<A06E,DataA2>点额外护甲、<A06E,DataB2>点额外生命值和<A06E,DataC2>点额外攻击力，并具有法术免疫。 |n持续<A06E,Dur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活天神下凡，使乌索克获得<A06E,DataA3>点额外护甲、<A06E,DataB3>点额外生命值和<A06E,DataC3>点额外攻击力，并具有法术免疫。 |n持续<A06E,Dur3>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "天神下凡 - [|cffffcc001级|r]"
+    }
+  ],
+  "NewId": "A06E"
+}

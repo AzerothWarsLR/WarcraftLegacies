@@ -1,0 +1,28 @@
+{
+  "OldId": "odes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌 - 霜狼 - 邪部落 - 兽人部落）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "护卫舰"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "部落海军的支柱，海洋的征服者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造护卫舰"
+    }
+  ]
+}

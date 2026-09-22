@@ -1,0 +1,29 @@
+{
+  "OldId": "halt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒祭坛）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血之祭坛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造血之祭坛"
+    }
+  ],
+  "NewId": "h0C6"
+}

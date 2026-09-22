@@ -1,0 +1,14 @@
+{
+  "OldId": "ngob",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗之门光环控制枢纽"
+    }
+  ],
+  "NewId": "n05J"
+}

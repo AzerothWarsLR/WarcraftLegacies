@@ -1,0 +1,24 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高所有属性。可用于施放隐形术、火焰之雨、吞噬魔法和恶魔召唤。"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00神器|r|n使力量和敏捷提高 10 点，智力提高 20 点。可用于施放隐形术、火焰之雨、吞噬魔法和恶魔召唤。|n|cffffcc00典故|r|n|cffffdead萨格拉斯被召唤出的枯萎形态的最后残片。|r\n"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨格拉斯之眼"
+    }
+  ],
+  "NewId": "I003"
+}

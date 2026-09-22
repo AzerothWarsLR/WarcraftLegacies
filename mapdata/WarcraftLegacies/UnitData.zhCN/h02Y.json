@@ -1,0 +1,29 @@
+{
+  "OldId": "hbla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯研究）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "工匠大厅"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造工匠大厅"
+    }
+  ],
+  "NewId": "h02Y"
+}

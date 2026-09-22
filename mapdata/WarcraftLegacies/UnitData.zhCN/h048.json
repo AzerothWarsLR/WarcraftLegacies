@@ -1,0 +1,29 @@
+{
+  "OldId": "hbla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡研究）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "锻造厂"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造锻造厂"
+    }
+  ],
+  "NewId": "h048"
+}

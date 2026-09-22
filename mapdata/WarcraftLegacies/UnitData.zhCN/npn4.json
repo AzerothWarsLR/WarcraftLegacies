@@ -1,0 +1,18 @@
+{
+  "OldId": "npn4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（陈）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "凶猛的火焰熊猫人战士。拥有永久献祭与抗性皮肤。"
+    }
+  ]
+}

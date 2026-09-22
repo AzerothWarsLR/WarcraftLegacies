@@ -1,0 +1,19 @@
+{
+  "OldId": "ninf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪部落-祖鲁希德）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火焰升腾元素"
+    }
+  ],
+  "NewId": "n09M"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Nmsr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（怪物-洛克莫丹）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘的鱼人，擅长远程攻击。可学习火焰之雨。"
+    }
+  ],
+  "NewId": "n0D1"
+}

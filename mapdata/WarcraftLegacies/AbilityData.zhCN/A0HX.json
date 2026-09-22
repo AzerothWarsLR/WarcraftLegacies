@@ -1,0 +1,20 @@
+{
+  "OldId": "Asd3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（发条地精 - 4 级）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "对小范围内的单位造成 180 点伤害。"
+    }
+  ],
+  "NewId": "A0HX"
+}

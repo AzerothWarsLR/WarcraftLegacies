@@ -1,0 +1,19 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "戒备！"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于戒备状态，护甲提高。"
+    }
+  ],
+  "NewId": "B03T"
+}

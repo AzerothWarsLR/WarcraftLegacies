@@ -1,0 +1,19 @@
+{
+  "OldId": "ohwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（艾露恩之镰）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "月光束"
+    }
+  ],
+  "NewId": "o037"
+}

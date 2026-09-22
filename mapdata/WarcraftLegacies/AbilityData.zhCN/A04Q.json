@@ -1,0 +1,26 @@
+{
+  "OldId": "ANpi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（地狱火 2级）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "灼烧周围的敌方单位，每秒造成 15 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "灼烧周围的敌方单位，每秒造成 20 点伤害。"
+    }
+  ],
+  "NewId": "A04Q"
+}

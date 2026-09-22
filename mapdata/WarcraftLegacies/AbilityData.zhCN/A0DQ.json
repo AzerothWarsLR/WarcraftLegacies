@@ -1,0 +1,20 @@
+{
+  "OldId": "ACvs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（蝎子）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒造成<A0DQ,DataA1>点毒性伤害。 |n持续<A0DQ,Dur1>秒。"
+    }
+  ],
+  "NewId": "A0DQ"
+}

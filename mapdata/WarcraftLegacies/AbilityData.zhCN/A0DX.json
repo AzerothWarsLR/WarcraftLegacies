@@ -1,0 +1,20 @@
+{
+  "OldId": "ACct",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（尚武之魂）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "其攻击有 15% 的几率造成双倍伤害。"
+    }
+  ],
+  "NewId": "A0DX"
+}

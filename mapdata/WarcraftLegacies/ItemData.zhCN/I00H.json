@@ -1,0 +1,29 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高所有属性。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买萨弗拉斯，炎魔拉格纳罗斯之手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00神器|r|n持有时使英雄的力量、智力和敏捷提高 10 点。|n|cffffcc00典故|r|n|cffffdead这把巨锤在火源之界的元素位面中锻造而成，被誉为拉格纳罗斯最伟大的造物，每一次挥击都会喷涌出岩浆与杀戮。\n"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨弗拉斯，炎魔拉格纳罗斯之手"
+    }
+  ],
+  "NewId": "I00H"
+}

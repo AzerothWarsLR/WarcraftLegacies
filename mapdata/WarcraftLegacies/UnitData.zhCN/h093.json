@@ -1,0 +1,29 @@
+{
+  "OldId": "hbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯攻城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "骑士团分会所"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造骑士团分会所"
+    }
+  ],
+  "NewId": "h093"
+}

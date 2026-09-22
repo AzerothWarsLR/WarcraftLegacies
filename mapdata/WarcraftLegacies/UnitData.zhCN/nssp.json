@@ -1,0 +1,13 @@
+{
+  "OldId": "nssp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "向敌人喷射毒液的轻型远程单位。可施放蛛网。"
+    }
+  ]
+}

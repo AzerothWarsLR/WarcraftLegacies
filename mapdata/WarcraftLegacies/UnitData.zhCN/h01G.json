@@ -1,0 +1,19 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "斯坦索姆城堡"
+    }
+  ],
+  "NewId": "h01G"
+}

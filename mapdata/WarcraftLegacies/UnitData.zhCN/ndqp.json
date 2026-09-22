@@ -1,0 +1,28 @@
+{
+  "OldId": "ndqp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能-传送门-萨格拉斯之眼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "统御侍女"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "夜之姐妹的统御者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤统御侍女"
+    }
+  ]
+}

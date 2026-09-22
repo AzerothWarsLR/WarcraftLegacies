@@ -1,0 +1,28 @@
+{
+  "OldId": "nsgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "会使敌人中毒的中型近战单位。可施放狂怒。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑瘴林蜘蛛"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤黑瘴林蜘蛛"
+    }
+  ]
+}

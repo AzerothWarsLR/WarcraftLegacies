@@ -1,0 +1,24 @@
+{
+  "OldId": "nfv4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "塞纳里奥要塞"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "卡利姆多南部重要的暗夜精灵基地，监视着安其拉。可训练小精灵并复活英雄。"
+    }
+  ],
+  "NewId": "n06D"
+}

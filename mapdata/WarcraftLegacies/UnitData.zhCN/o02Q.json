@@ -1,0 +1,19 @@
+{
+  "OldId": "obea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌 专精）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战争野兽生产建筑。"
+    }
+  ],
+  "NewId": "o02Q"
+}

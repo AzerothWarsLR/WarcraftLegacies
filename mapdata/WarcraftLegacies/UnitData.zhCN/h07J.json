@@ -1,0 +1,19 @@
+{
+  "OldId": "hctw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    }
+  ],
+  "NewId": "h07J"
+}

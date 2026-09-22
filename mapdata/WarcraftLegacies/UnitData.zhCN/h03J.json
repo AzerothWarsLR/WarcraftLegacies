@@ -1,0 +1,29 @@
+{
+  "OldId": "hars",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯专精）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "学院"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造学院"
+    }
+  ],
+  "NewId": "h03J"
+}

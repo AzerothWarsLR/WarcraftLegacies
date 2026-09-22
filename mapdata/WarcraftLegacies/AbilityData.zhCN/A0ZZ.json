@@ -1,0 +1,26 @@
+{
+  "OldId": "Ahsb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "燃烧箭"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "对敌方接舷战船造成的伤害提高 20 点。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "燃烧箭"
+    }
+  ],
+  "NewId": "A0ZZ"
+}

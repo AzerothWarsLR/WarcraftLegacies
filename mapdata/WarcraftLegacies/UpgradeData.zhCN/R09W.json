@@ -1,0 +1,57 @@
+{
+  "OldId": "Rhse",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "邪钢精炼"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "邪钢精炼"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化邪钢装甲，使碎骨者减免的伤害从<A0I6,DataC1>提高至<A0I6,DataC2>，刽子手从<VP21,DataC1>提高至<VP21,DataC2>。"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "研究强化强效腐臭蝠群"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究强化强效腐臭蝠群"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化恐惧魔王的腐臭蜂群，将其伤害提高到 105、最大伤害提高到 100，并缩短冷却时间。"
+    },
+    {
+      "Level": 2,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    }
+  ],
+  "NewId": "R09W"
+}

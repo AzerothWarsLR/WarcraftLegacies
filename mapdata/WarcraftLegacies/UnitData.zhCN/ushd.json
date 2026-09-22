@@ -1,0 +1,23 @@
+{
+  "OldId": "ushd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "杀死侍僧，并从其尸体中复活一个阴影。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "牺牲"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "nlv1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达格兰召唤等级 2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火元素"
+    }
+  ],
+  "NewId": "n06T"
+}

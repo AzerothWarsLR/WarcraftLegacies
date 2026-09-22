@@ -1,0 +1,31 @@
+{
+  "OldId": "SCae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "漩涡光环"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 海潮贤者）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "漩涡光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近敌方单位的移动速度降低 10%，攻击速度降低 15%。"
+    }
+  ],
+  "NewId": "S00A"
+}

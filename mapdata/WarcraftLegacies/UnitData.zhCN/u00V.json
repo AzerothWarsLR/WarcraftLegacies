@@ -1,0 +1,29 @@
+{
+  "OldId": "unec",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "通灵师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "兽人旧日岁月的通灵师，身经百战的老兵。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练通灵师"
+    }
+  ],
+  "NewId": "u00V"
+}

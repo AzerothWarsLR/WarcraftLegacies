@@ -1,0 +1,29 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城 - 精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暴风城冠军"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暴风城军队的精英近战勇士。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练暴风城冠军"
+    }
+  ],
+  "NewId": "h05F"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "uske",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "弱小的骷髅战士，在大规模亡灵军队中可作为有效的炮灰。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "亡灵维库人"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练亡灵维库人"
+    }
+  ],
+  "NewId": "u024"
+}

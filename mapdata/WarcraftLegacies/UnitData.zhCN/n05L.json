@@ -1,0 +1,29 @@
+{
+  "OldId": "nhym",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "咒术师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "技艺精湛的施法者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练咒术师"
+    }
+  ],
+  "NewId": "n05L"
+}

@@ -1,0 +1,77 @@
+{
+  "OldId": "AUfn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 玛瑟里顿）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "爆炸"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习爆炸 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击目标敌方单位周围的敌方单位。 |n|n|cffffcc001级|r - 对目标造成 190 点伤害。40 点溅射伤害。|n|cffffcc002级|r - 对目标造成 280 点伤害。80 点溅射伤害。|n|cffffcc003级|r - 对目标造成 370 点伤害。120 点溅射伤害。|n|cffffcc004级|r - 对目标造成 460 点伤害。160 点溅射伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆炸 (|cffffcc00Q|r) - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击敌人，造成 190 点伤害和 40 点溅射伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击敌人，造成 280 点伤害和 80 点溅射伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击敌人，造成 370 点伤害和 120 点溅射伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一场巨大的爆炸轰击敌人，造成 460 点伤害和 160 点溅射伤害。"
+    }
+  ],
+  "NewId": "A04N"
+}

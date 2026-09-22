@@ -1,0 +1,19 @@
+{
+  "OldId": "ofrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "雷霆崖"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼 其他）"
+    }
+  ],
+  "NewId": "o00J"
+}

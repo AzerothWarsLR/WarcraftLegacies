@@ -1,0 +1,18 @@
+{
+  "OldId": "hars",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城魔法）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    }
+  ]
+}

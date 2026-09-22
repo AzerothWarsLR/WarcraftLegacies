@@ -1,0 +1,29 @@
+{
+  "OldId": "nheb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "永恒之井"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "至高施法者生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造无限之泉"
+    }
+  ],
+  "NewId": "n0DZ"
+}

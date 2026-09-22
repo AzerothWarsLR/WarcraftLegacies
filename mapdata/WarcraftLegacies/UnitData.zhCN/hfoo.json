@@ -1,0 +1,18 @@
+{
+  "OldId": "hfoo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "洛丹伦的全能步兵。"
+    }
+  ]
+}

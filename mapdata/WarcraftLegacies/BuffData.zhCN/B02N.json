@@ -1,0 +1,19 @@
+{
+  "OldId": "Buhf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "复仇之魂"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位是复仇天神，攻击速度提高。"
+    }
+  ],
+  "NewId": "B02N"
+}

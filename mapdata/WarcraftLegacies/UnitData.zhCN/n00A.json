@@ -1,0 +1,29 @@
+{
+  "OldId": "nhea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯-精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "远行者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "奎尔萨拉斯敏捷、致命而技艺精湛的游侠。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练远行者"
+    }
+  ],
+  "NewId": "n00A"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "osp4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（占骨者）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "白骨图腾"
+    }
+  ],
+  "NewId": "o04T"
+}

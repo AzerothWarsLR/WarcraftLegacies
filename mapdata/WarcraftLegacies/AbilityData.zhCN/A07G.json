@@ -1,0 +1,14 @@
+{
+  "OldId": "ACat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    }
+  ],
+  "NewId": "A07G"
+}

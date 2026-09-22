@@ -1,0 +1,23 @@
+{
+  "OldId": "umtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "改装后的车辆，用于运送和抛射尸体。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造绞肉车"
+    }
+  ]
+}

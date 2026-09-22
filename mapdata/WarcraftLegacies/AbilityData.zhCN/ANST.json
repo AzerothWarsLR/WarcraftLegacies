@@ -1,0 +1,60 @@
+{
+  "OldId": "ACtn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（恩佐斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤触须 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "在目标位置召唤触须。持续 60 秒。 |n|n|cffffcc001级|r - 3 根触须。|n|cffffcc002级|r - 6 根触须。|n|cffffcc003级|r - 9 根触须。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "孳生触须 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "孳生触须 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "孳生触须 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "生出 3 根强大的触须攻击敌人。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "生出 6 根强大的触须攻击敌人。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "生出 9 根强大的触须攻击敌人。"
+    }
+  ],
+  "NewId": "ANST"
+}

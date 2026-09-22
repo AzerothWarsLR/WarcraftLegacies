@@ -1,0 +1,19 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本观察塔。无法攻击。"
+    }
+  ],
+  "NewId": "h07H"
+}

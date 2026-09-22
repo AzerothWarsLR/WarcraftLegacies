@@ -1,0 +1,29 @@
+{
+  "OldId": "ostr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼 T2）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大都会"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为大都会"
+    }
+  ],
+  "NewId": "o050"
+}

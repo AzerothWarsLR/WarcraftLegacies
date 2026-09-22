@@ -1,0 +1,19 @@
+{
+  "OldId": "BUau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "寒冰屏障"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "寒冰屏障"
+    }
+  ],
+  "NewId": "ZB3F"
+}

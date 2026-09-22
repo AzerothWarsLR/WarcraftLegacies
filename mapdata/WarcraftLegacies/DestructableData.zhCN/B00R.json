@@ -1,0 +1,14 @@
+{
+  "OldId": "LTbs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "尖刺"
+    }
+  ],
+  "NewId": "B00R"
+}

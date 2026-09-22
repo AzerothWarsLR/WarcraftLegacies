@@ -1,0 +1,13 @@
+{
+  "OldId": "nslr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷火焰弹的中型远程单位。可施放献祭与火球术。"
+    }
+  ]
+}

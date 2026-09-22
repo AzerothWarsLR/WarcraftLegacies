@@ -1,0 +1,38 @@
+{
+  "OldId": "Ogrh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战歌氏族的酋长"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，极其擅长击杀关键单位和造成伤害。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤地狱咆哮"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活地狱咆哮"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活地狱咆哮"
+    }
+  ]
+}

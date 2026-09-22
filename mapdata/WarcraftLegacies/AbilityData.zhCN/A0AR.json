@@ -1,0 +1,50 @@
+{
+  "OldId": "Ahea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（通灵侍僧、编织者、魅魔）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "治疗 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一个受伤的友方非机械单位恢复<A0AR,DataA2>点生命值。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "治疗 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以激活自动施法。|r"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以取消自动施法。|r"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一个受伤的友方非机械单位恢复<A0AR,DataA1>点生命值。"
+    }
+  ],
+  "NewId": "A0AR"
+}

@@ -1,0 +1,51 @@
+{
+  "OldId": "Rost",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "丰收女巫专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "丰收女巫大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究丰收女巫专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究丰收女巫大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高丰收女巫的法力值上限和法力恢复速度，并使其获得施放荆棘藤蔓的能力。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高丰收女巫的法力值上限和法力恢复速度，并使其获得施放视界术的能力。"
+    }
+  ],
+  "NewId": "R09M"
+}

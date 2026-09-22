@@ -1,0 +1,19 @@
+{
+  "OldId": "hatw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "魔法防御建筑。"
+    }
+  ],
+  "NewId": "h06Y"
+}

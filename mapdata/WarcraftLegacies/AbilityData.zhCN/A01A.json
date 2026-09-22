@@ -1,0 +1,20 @@
+{
+  "OldId": "ACac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（萨尔）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的攻击力额外提高<A01A,DataA1,%>%。"
+    }
+  ],
+  "NewId": "A01A"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "nhea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "公会游侠"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "哨兵部队中敏捷、致命而技艺精湛的弓箭手。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练公会游侠"
+    }
+  ],
+  "NewId": "n034"
+}

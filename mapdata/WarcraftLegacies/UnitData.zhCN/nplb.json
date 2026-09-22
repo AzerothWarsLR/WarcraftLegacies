@@ -1,0 +1,13 @@
+{
+  "OldId": "nplb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型两栖近战单位。"
+    }
+  ]
+}

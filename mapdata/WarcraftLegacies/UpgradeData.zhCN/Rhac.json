@@ -1,0 +1,32 @@
+{
+  "OldId": "Rhac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（黄色/紫色/橙色/绿色/深绿色研究）"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高建筑的护甲和生命值。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "进一步提高建筑的护甲和生命值。"
+    },
+    {
+      "Level": 3,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "进一步提高建筑的护甲和生命值。"
+    }
+  ]
+}

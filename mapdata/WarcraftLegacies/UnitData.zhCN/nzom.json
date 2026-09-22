@@ -1,0 +1,23 @@
+{
+  "OldId": "nzom",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "沦为亡者的可怜灵魂。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练僵尸"
+    }
+  ]
+}

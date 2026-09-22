@@ -1,0 +1,23 @@
+{
+  "OldId": "ngrd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯召唤）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伊森德雷"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可吞噬敌人并对魔法免疫的重型远程飞行单位。"
+    }
+  ]
+}

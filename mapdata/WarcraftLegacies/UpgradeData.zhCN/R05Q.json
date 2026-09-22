@@ -1,0 +1,21 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "任务完成：发明之城"
+    }
+  ],
+  "NewId": "R05Q"
+}

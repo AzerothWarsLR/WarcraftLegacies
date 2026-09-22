@@ -1,0 +1,29 @@
+{
+  "OldId": "nogo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔佣兵"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "受雇于地精卡特尔的有力佣兵。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食人魔佣兵"
+    }
+  ],
+  "NewId": "n099"
+}

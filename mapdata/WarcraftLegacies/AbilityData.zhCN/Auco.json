@@ -1,0 +1,43 @@
+{
+  "OldId": "Auco",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 巨魔蝙蝠骑士）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "不稳定化合物 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "引发一场猛烈的爆炸，对一个目标空中单位造成<Auco,DataB2>点伤害，并对附近的敌方空中单位造成<Auco,DataD2>点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以激活自动施法。|r"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以取消自动施法。|r"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "不稳定化合物 - [|cffffcc00级别 2|r]"
+    }
+  ]
+}

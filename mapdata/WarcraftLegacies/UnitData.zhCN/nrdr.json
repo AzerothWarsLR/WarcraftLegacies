@@ -1,0 +1,13 @@
+{
+  "OldId": "nrdr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "小型飞行远程单位。"
+    }
+  ]
+}

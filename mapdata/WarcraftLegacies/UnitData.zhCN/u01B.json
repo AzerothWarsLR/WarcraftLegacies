@@ -1,0 +1,19 @@
+{
+  "OldId": "uloc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城 - 旗舰）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "飞行器"
+    }
+  ],
+  "NewId": "u01B"
+}

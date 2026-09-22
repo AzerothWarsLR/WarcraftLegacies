@@ -1,0 +1,18 @@
+{
+  "OldId": "ncpn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能，工人）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "邪部落机器的基础劳工。"
+    }
+  ]
+}

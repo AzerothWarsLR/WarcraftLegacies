@@ -1,0 +1,29 @@
+{
+  "OldId": "ehpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "技艺娴熟的狮鹫骑士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "狮鹫射手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练狮鹫射手"
+    }
+  ],
+  "NewId": "e01L"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "BOac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cffff0000防御阵型|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到防御阵型的影响，攻击力降低。"
+    }
+  ],
+  "NewId": "B03U"
+}

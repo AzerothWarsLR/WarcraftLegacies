@@ -1,0 +1,18 @@
+{
+  "OldId": "npn6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（陈）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "坚实的大地熊猫人战士。拥有抗性皮肤与法术免疫。可施放粉碎与嘲讽。"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "OldId": "eaow",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊专精）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "空中单位生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造风之古树"
+    }
+  ]
+}

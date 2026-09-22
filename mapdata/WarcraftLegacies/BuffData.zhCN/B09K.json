@@ -1,0 +1,19 @@
+{
+  "OldId": "BOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "召唤驻军"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（洛丹伦/暴风城）"
+    }
+  ],
+  "NewId": "B09K"
+}

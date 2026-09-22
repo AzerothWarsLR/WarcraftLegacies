@@ -1,0 +1,19 @@
+{
+  "OldId": "hbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城兵营）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要作战单位生产建筑。"
+    }
+  ],
+  "NewId": "h06E"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "unp2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "军团据点"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "军团据点，燃烧军团在艾泽拉斯行动的基地。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团 其他）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "军团据点"
+    }
+  ],
+  "NewId": "u00G"
+}

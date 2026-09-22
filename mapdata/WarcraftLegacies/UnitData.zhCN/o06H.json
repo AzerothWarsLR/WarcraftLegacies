@@ -1,0 +1,19 @@
+{
+  "OldId": "osp1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物）（等级 1）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战歌战旗"
+    }
+  ],
+  "NewId": "o06H"
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "XUdd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "移动大地（效果）"
+    }
+  ],
+  "NewId": "X006"
+}

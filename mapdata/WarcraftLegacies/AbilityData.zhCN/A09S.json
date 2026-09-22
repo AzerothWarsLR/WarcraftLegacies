@@ -1,0 +1,30 @@
+{
+  "OldId": "AOre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 圣骑士）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习重生 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄被消灭后会复活。|n|n|cffffcc001级|r - 冷却时间<A022,Cool1>秒。|n|cffffcc002级|r - 冷却时间<A022,Cool2>秒。|n|cffffcc003级|r - 冷却时间<A022,Cool3>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "圣骑士被消灭后会在 6 秒后复活。重生的冷却时间为<A09S,Cool1>秒。"
+    }
+  ],
+  "NewId": "A09S"
+}

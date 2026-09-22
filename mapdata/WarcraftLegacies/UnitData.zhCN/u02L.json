@@ -1,0 +1,19 @@
+{
+  "OldId": "unp2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暗影地窟"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    }
+  ],
+  "NewId": "u02L"
+}

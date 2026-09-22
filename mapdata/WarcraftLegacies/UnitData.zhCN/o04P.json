@@ -1,0 +1,29 @@
+{
+  "OldId": "odkt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "纳斯雷兹姆术士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暗影系的纳斯雷兹姆支援单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练纳斯雷兹姆术士"
+    }
+  ],
+  "NewId": "o04P"
+}

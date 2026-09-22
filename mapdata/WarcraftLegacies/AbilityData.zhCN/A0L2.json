@@ -1,0 +1,31 @@
+{
+  "OldId": "ACba",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（魔枢）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "魔枢强化"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "魔枢强化"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围的友方单位获得每秒 0.5 点法力值的额外法力回复速度。"
+    }
+  ],
+  "NewId": "A0L2"
+}

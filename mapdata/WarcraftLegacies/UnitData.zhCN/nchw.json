@@ -1,0 +1,28 @@
+{
+  "OldId": "nchw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "邪能术士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "外域各氏族的邪恶术士。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练邪能术士"
+    }
+  ]
+}

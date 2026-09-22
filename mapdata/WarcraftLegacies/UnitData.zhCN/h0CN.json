@@ -1,0 +1,29 @@
+{
+  "OldId": "hcth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "族群领袖"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "霜狼的指挥官。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练族群领袖"
+    }
+  ],
+  "NewId": "h0CN"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "hspt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "守望者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "哨兵精英战士，专精于扰乱敌人。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练守望者"
+    }
+  ],
+  "NewId": "h045"
+}

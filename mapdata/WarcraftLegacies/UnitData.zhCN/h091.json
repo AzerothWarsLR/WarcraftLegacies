@@ -1,0 +1,29 @@
+{
+  "OldId": "hgyr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战争飞艇"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "精良的地精工程学加上神枪手驾驶员。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战争飞艇"
+    }
+  ],
+  "NewId": "h091"
+}

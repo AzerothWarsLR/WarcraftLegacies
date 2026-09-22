@@ -1,0 +1,29 @@
+{
+  "OldId": "opeo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼、工人）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "勤恳卖力、累断腰的劳工。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "宝石工匠"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练宝石工匠"
+    }
+  ],
+  "NewId": "o05A"
+}

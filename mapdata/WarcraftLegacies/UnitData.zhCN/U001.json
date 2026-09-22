@@ -1,0 +1,39 @@
+{
+  "OldId": "Uktl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 通灵师）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "诅咒教派的主人"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长范围魔法和召唤。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤克尔苏加德"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活通灵师"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活通灵师"
+    }
+  ],
+  "NewId": "U001"
+}

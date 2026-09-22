@@ -1,0 +1,60 @@
+{
+  "OldId": "AUts",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（部落）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "尖刺障碍"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "地穴领主生成一层带刺的角质护甲，提高自身防御力，并将伤害反弹给近战攻击者。|n|n|cffffcc001级|r - 反弹<AUts,DataA1,%>% 伤害，<AUts,DataC1>点额外护甲。|n|cffffcc002级|r - 反弹<AUts,DataA2,%>% 伤害，<AUts,DataC2>点额外护甲。|n|cffffcc003级|r - 反弹<AUts,DataA3,%>% 伤害，<AUts,DataC3>点额外护甲。|n|cffffcc004级|r - 反弹<AUts,DataA4,%>% 伤害，<AUts,DataC4>点额外护甲。|n|cffffcc005级|r - 反弹<AUts,DataA5,%>% 伤害，<AUts,DataC5>点额外护甲。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "尖刺障碍 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "尖刺障碍 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "尖刺障碍 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用尖刺和障碍强化建筑防御。提供 3 点额外护甲，并将 20% 的近战攻击伤害反弹给敌人。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用尖刺和障碍强化建筑防御。提供 3 点额外护甲，并将 20% 的近战攻击伤害反弹给敌人。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用尖刺和障碍强化建筑防御。提供 6 点额外护甲，并将 40% 的近战攻击伤害反弹给敌人。"
+    }
+  ],
+  "NewId": "A0CF"
+}

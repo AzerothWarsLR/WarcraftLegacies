@@ -1,0 +1,39 @@
+{
+  "OldId": "Obla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 - 祖尔法拉克）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "乌克兹"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "乌克兹·沙顶"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤乌克兹·沙顶"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活巫医"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活巫医"
+    }
+  ],
+  "NewId": "o06Y"
+}

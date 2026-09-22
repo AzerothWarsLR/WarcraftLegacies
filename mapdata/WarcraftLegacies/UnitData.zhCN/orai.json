@@ -1,0 +1,18 @@
+{
+  "OldId": "orai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "迅捷凶猛的狼骑兵，拥有极高的生命恢复速度。"
+    }
+  ]
+}

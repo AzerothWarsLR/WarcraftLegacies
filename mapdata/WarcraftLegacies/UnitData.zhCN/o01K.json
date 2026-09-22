@@ -1,0 +1,19 @@
+{
+  "OldId": "osp4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（召唤师）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "潮汐巨蛇"
+    }
+  ],
+  "NewId": "o01K"
+}

@@ -1,0 +1,20 @@
+{
+  "OldId": "ACrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暮锤氏族）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 3 波火焰，对一片区域内的单位造成伤害。每波造成 25 点伤害。"
+    }
+  ],
+  "NewId": "A0OL"
+}

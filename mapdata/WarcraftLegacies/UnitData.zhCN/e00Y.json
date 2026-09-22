@@ -1,0 +1,29 @@
+{
+  "OldId": "echm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "双头飞行巨龙。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "斯库拉"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练斯库拉"
+    }
+  ],
+  "NewId": "e00Y"
+}

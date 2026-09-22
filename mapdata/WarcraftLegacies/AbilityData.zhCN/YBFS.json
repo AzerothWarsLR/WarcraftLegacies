@@ -1,0 +1,67 @@
+{
+  "OldId": "AOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（萨尔/努波顿）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤暗影狼为英雄作战。|n持续 60 秒。|n|n|cffffcc001级|r - 召唤 2 头暗影狼。 |n|cffffcc002级|r - 召唤 3 头暗影狼。 |n|cffffcc003级|r - 召唤 4 头暗影狼。|n|cffffcc004级|r - 召唤 5 头暗影狼。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤野性狼群 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤野性狼群 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤野性狼群 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤野性狼群 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<YBFS,DataB1>头暗影狼。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<YBFS,DataB2>头暗影狼。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<YBFS,DataB3>头暗影狼。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<YBFS,DataB4>头暗影狼。"
+    }
+  ],
+  "NewId": "YBFS"
+}

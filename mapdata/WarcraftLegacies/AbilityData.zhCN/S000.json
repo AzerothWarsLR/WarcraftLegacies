@@ -1,0 +1,14 @@
+{
+  "OldId": "Slo3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（船只）（地精）"
+    }
+  ],
+  "NewId": "S000"
+}

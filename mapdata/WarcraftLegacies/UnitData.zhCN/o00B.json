@@ -1,0 +1,24 @@
+{
+  "OldId": "ogru",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "十兵卫索斯"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "复活十兵卫索斯"
+    }
+  ],
+  "NewId": "o00B"
+}

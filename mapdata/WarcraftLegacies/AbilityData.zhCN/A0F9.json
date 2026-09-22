@@ -1,0 +1,19 @@
+{
+  "OldId": "AHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 凯尔萨斯）（假单位）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "复燃烈焰风暴"
+    }
+  ],
+  "NewId": "A0F9"
+}

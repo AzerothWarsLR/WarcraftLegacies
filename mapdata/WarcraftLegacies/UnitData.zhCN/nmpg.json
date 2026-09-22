@@ -1,0 +1,13 @@
+{
+  "OldId": "nmpg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "会使敌人染病的轻型近战单位。"
+    }
+  ]
+}

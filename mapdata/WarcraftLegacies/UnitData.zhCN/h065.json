@@ -1,0 +1,29 @@
+{
+  "OldId": "htow",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然 T1）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "避难所"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造避难所"
+    }
+  ],
+  "NewId": "h065"
+}

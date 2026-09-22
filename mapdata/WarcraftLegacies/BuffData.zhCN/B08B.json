@@ -1,0 +1,19 @@
+{
+  "OldId": "BEim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "切换召唤"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（邪部落 - 恶魔之门）"
+    }
+  ],
+  "NewId": "B08B"
+}

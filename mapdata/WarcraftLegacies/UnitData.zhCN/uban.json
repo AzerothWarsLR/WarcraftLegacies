@@ -1,0 +1,18 @@
+{
+  "OldId": "uban",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "被天灾奴役的复生精灵之魂。"
+    }
+  ]
+}

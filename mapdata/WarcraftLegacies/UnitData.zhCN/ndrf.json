@@ -1,0 +1,13 @@
+{
+  "OldId": "ndrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    }
+  ]
+}

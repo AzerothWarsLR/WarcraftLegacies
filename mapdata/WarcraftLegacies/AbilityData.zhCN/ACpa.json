@@ -1,0 +1,24 @@
+{
+  "OldId": "ACpa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(邪能部落"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虚空寄生虫"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虚空寄生虫"
+    }
+  ]
+}

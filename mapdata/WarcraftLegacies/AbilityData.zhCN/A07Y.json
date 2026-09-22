@@ -1,0 +1,19 @@
+{
+  "OldId": "AIin",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（物品）（蓝色）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "地狱火之石"
+    }
+  ],
+  "NewId": "A07Y"
+}

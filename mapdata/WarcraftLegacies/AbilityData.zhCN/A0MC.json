@@ -1,0 +1,14 @@
+{
+  "OldId": "AIdf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 攻击猛击"
+    }
+  ],
+  "NewId": "A0MC"
+}

@@ -1,0 +1,23 @@
+{
+  "OldId": "etol",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 T1）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造生命之树"
+    }
+  ]
+}

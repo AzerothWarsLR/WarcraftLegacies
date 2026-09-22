@@ -1,0 +1,29 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "猛犸象驯手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "霜狼部族的驯兽师。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练猛犸象驯手"
+    }
+  ],
+  "NewId": "h0CO"
+}

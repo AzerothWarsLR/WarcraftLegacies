@@ -1,0 +1,77 @@
+{
+  "OldId": "AEah",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城 - 伯瓦尔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "惩戒光环"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习惩戒光环 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "该光环能将神圣伤害按近战攻击者伤害的一定百分比返还给攻击的敌方单位。范围 450。  |n|n|cffffcc001级|r - 返还 20% 伤害。 |n|cffffcc002级|r - 返还 35% 伤害。 |n|cffffcc003级|r - 返还 50% 伤害。|n|cffffcc004级|r - 返还 65% 伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "惩戒光环 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "惩戒光环 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "惩戒光环 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "惩戒光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该光环能对攻击受此光环影响单位的敌方近战单位造成 20% 的神圣伤害。范围 450。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该光环能对攻击受此光环影响单位的敌方近战单位造成 35% 的神圣伤害。范围 450。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该光环能对攻击受此光环影响单位的敌方近战单位造成 50% 的神圣伤害。范围 450。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该光环能对攻击受此光环影响单位的敌方近战单位造成 65% 的神圣伤害。范围 450。"
+    }
+  ],
+  "NewId": "A085"
+}

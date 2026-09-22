@@ -1,0 +1,28 @@
+{
+  "OldId": "hshy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "船坞"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦船坞）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造船坞"
+    }
+  ]
+}

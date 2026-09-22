@@ -1,0 +1,39 @@
+{
+  "OldId": "Orkn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长破坏性和扰乱性魔法。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暗矛勇士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤洛坎"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活洛坎"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活洛坎"
+    }
+  ],
+  "NewId": "MD25"
+}

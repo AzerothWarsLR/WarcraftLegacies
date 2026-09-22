@@ -1,0 +1,29 @@
+{
+  "OldId": "negt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灌注太阳之井魔法的塔楼。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造太阳塔"
+    }
+  ],
+  "NewId": "n0BC"
+}

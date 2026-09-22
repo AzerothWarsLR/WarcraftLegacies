@@ -1,0 +1,19 @@
+{
+  "OldId": "hkee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 T2）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    }
+  ],
+  "NewId": "h064"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "nzep",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "天空驳船"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "飞行攻击炮艇。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练天空驳船"
+    }
+  ],
+  "NewId": "n03L"
+}

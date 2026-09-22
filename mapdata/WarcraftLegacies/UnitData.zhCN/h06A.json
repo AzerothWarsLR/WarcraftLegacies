@@ -1,0 +1,29 @@
+{
+  "OldId": "harm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城专家）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "攻城武器生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "铁匠铺"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造铁匠铺"
+    }
+  ],
+  "NewId": "h06A"
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "ogru",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "部落的骄傲，荣耀的战士。"
+    }
+  ]
+}

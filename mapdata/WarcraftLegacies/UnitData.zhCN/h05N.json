@@ -1,0 +1,29 @@
+{
+  "OldId": "hfoo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "神射手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "少数从外域归来的精灵之一，已准备好再次保卫艾泽拉斯。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练神射手"
+    }
+  ],
+  "NewId": "h05N"
+}

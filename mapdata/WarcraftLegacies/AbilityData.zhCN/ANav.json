@@ -1,0 +1,82 @@
+{
+  "OldId": "ANav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（格罗姆，萨鲁法尔）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "激活战斗恍惚后，英雄将获得额外护甲、额外生命值、额外攻击力和法术免疫。|n持续 15 秒。|n|n|cffffcc001级|r - 5 点额外护甲，15 点额外攻击力。|n|cffffcc002级|r - 10 点额外护甲，30 点额外攻击力。|n|cffffcc003级|r - 15 点额外护甲，45 点额外攻击力。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活战斗恍惚 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活战斗恍惚 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活战斗恍惚 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA1>点额外护甲、<AHav,DataC1>点额外攻击力和法术免疫。 |n持续 15 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA2>点额外护甲、<AHav,DataC2>点额外攻击力和法术免疫。 |n持续 15 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活战斗恍惚，使英雄获得<ANav,DataA3>点额外护甲、<AHav,DataC3>点额外攻击力和法术免疫。 |n持续 15 秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消战斗恍惚"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消战斗恍惚"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消战斗恍惚"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习战斗恍惚"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战斗恍惚"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "OldId": "Rers",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（山岭巨人）"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "解锁抗性体肤，使山岭巨人获得更强的法术抗性；并解锁硬化体肤，提高其对伤害的抗性。"
+    }
+  ]
+}

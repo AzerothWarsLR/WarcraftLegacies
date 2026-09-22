@@ -1,0 +1,77 @@
+{
+  "OldId": "AHbz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（高等精灵 安纳斯特里亚）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "奥术冲击"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习奥术冲击 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄以奥术能量轰击一片区域，对处于效果范围内的单位造成伤害。 |n|n|cffffcc001级|r - 对每个单位造成 90 点伤害。|n|cffffcc002级|r - 对每个单位造成 140 点伤害。|n|cffffcc003级|r - 对每个单位造成 190 点伤害。|n|cffffcc004级|r - 对每个单位造成 240 点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥术冲击 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥术冲击 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥术冲击 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥术冲击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以奥术能量轰击一片区域，对处于效果范围内的单位造成 90 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以奥术能量轰击一片区域，对处于效果范围内的单位造成 140 点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以奥术能量轰击一片区域，对处于效果范围内的单位造成 190 点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以奥术能量轰击一片区域，对处于效果范围内的单位造成 240 点伤害。"
+    }
+  ],
+  "NewId": "A04J"
+}

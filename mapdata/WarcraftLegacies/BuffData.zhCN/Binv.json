@@ -1,0 +1,13 @@
+{
+  "OldId": "Binv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位已隐形，不会被敌人看到。攻击或施法会解除隐形。"
+    }
+  ]
+}

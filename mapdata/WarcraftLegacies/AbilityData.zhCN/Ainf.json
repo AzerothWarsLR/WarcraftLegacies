@@ -1,0 +1,25 @@
+{
+  "OldId": "Ainf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 牧师）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化心灵之火"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个目标友方单位的攻击力提高<Ainf,DataA2,%>%，护甲提高<Ainf,DataB2>。|n持续<Ainf,Dur1>秒。"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "nina",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "风暴锻造的战争机械。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蝎子"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造蝎子"
+    }
+  ],
+  "NewId": "n0E4"
+}

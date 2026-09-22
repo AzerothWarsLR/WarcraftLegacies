@@ -1,0 +1,18 @@
+{
+  "OldId": "uzg1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 防御塔）"
+    }
+  ]
+}

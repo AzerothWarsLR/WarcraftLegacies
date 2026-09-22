@@ -1,0 +1,19 @@
+{
+  "OldId": "Andt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（中立 - 地精实验室）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffcc00R|r)暴露"
+    }
+  ]
+}

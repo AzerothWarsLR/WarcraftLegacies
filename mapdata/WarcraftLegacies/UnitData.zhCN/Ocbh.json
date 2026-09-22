@@ -1,0 +1,38 @@
+{
+  "OldId": "Ocbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血蹄部族的酋长"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长吸收伤害和近身战斗。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "复活凯恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活凯恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活凯恩"
+    }
+  ]
+}

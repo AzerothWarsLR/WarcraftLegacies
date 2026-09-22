@@ -1,0 +1,18 @@
+{
+  "OldId": "nsnp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "凶猛的爬行两栖生物。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    }
+  ]
+}

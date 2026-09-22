@@ -1,0 +1,23 @@
+{
+  "OldId": "uskm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 黑色城堡）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "弱小的远程骷髅战士。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练骷髅法|cffffcc00g|r师"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhse",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "疾风步"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究疾风步"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使弓箭手、女猎手、月猎手、女祭司和角鹰兽骑士能够短暂隐形。"
+    }
+  ],
+  "NewId": "R03J"
+}

@@ -1,0 +1,20 @@
+{
+  "OldId": "ACct",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（哨兵 1、2）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "普通攻击有 15% 的几率造成 1.5 倍普通攻击伤害。"
+    }
+  ],
+  "NewId": "SACS"
+}

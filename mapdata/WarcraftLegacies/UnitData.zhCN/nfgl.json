@@ -1,0 +1,28 @@
+{
+  "OldId": "nfgl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "瘟疫泰坦"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "巨大的血肉魔像，血肉工艺的终极造物。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练瘟疫泰坦"
+    }
+  ]
+}

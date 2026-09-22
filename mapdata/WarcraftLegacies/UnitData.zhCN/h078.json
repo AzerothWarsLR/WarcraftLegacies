@@ -1,0 +1,19 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本观察塔。无法攻击。"
+    }
+  ],
+  "NewId": "h078"
+}

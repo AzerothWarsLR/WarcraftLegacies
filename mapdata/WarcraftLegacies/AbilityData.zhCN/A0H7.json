@@ -1,0 +1,55 @@
+{
+  "OldId": "ANto",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（玛法里奥、瓦丝琪）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "飓风 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "飓风 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "飓风 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一股可控制的龙卷风，可以减慢敌方单位的移动速度、随机将敌方地面单位抛到空中，并每秒对敌方建筑最多造成<A02S,DataA1>点伤害。 |n持续<A0H7,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一股可控制的龙卷风，可以减慢敌方单位的移动速度、随机将敌方地面单位抛到空中，并每秒对敌方建筑最多造成<A0H8,DataA1>点伤害。 |n持续<A0H7,Dur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一股可控制的龙卷风，可以减慢敌方单位的移动速度、随机将敌方地面单位抛到空中，并每秒对敌方建筑最多造成<A0H9,DataA1>点伤害。 |n持续<A0H7,Dur3>秒。"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一股可控制的龙卷风，可以减慢敌方单位的速度、随机将它们抛到空中，并对敌方建筑造成伤害。|n|cffffcc001级|r - 持续<A0H7,Dur1>秒，每秒对建筑造成<A02S,DataA1>点伤害。|n|cffffcc002级|r - 持续<A0H7,Dur2>秒，每秒对建筑造成<A0H8,DataA1>点伤害。|n|cffffcc003级|r - 持续<A0H7,Dur3>秒，每秒对建筑造成<A0H9,DataA1>点伤害。"
+    }
+  ],
+  "NewId": "A0H7"
+}

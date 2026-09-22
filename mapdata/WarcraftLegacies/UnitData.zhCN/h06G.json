@@ -1,0 +1,29 @@
+{
+  "OldId": "hkee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立敌对）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "断裂的萨多尔大桥"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "古老精灵守望者的阴森堡垒。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "断裂的萨多尔大桥"
+    }
+  ],
+  "NewId": "h06G"
+}

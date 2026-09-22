@@ -1,0 +1,14 @@
+{
+  "OldId": "AIs6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（+10 力量）"
+    }
+  ],
+  "NewId": "A0AL"
+}

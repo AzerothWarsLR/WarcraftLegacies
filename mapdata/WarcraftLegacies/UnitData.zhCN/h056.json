@@ -1,0 +1,29 @@
+{
+  "OldId": "hctw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "卡兹莫丹塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型防御建筑。对成群部队特别有效。提供 5% 统御光环。需要火枪手进驻才能攻击。可学习魔法哨兵技能。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造要塞塔"
+    }
+  ],
+  "NewId": "h056"
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "Huth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "日怒主谋"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "计算者帕萨雷恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长扰乱敌人和攻击魔法。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤帕萨雷恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活日怒主谋"
+    }
+  ],
+  "NewId": "H098"
+}

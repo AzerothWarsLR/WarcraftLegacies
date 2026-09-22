@@ -1,0 +1,23 @@
+{
+  "OldId": "nvde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型远程单位，可施放吞噬魔法和叉状闪电。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练古老虚空行者"
+    }
+  ]
+}

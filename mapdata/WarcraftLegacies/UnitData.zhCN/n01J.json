@@ -1,0 +1,19 @@
+{
+  "OldId": "nwe3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（雷克萨）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "灵魂"
+    }
+  ],
+  "NewId": "n01J"
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "Asal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落/霜狼/战歌 - 碎骨者、兽人步兵、狼骑兵）"
+    }
+  ],
+  "NewId": "A0ES"
+}

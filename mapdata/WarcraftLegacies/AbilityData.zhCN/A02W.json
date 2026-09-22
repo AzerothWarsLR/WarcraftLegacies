@@ -1,0 +1,31 @@
+{
+  "OldId": "AHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "群体邪恶狂热"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体邪恶狂热"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "目标区域内的所有非机械单位获得邪恶狂热，攻击速度提高 40%，但每秒会消耗 2 点生命值。|n持续 45 秒。"
+    }
+  ],
+  "NewId": "A02W"
+}

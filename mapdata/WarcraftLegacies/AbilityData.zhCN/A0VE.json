@@ -1,0 +1,31 @@
+{
+  "OldId": "Alsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奥术师）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "烈焰护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烈焰护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在目标单位周围形成一道烈焰护盾，每秒对其周围的单位造成 20 点伤害。|n持续 20 秒。对英雄持续 10 秒。"
+    }
+  ],
+  "NewId": "A0VE"
+}

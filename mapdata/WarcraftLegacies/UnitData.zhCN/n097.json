@@ -1,0 +1,19 @@
+{
+  "OldId": "ngrk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然-活体碎片）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "土魔像死亡后的产物。对法术免疫。"
+    }
+  ],
+  "NewId": "n097"
+}

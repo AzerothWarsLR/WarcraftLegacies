@@ -1,0 +1,14 @@
+{
+  "OldId": "XErf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "天降金雨（效果）"
+    }
+  ],
+  "NewId": "X00P"
+}

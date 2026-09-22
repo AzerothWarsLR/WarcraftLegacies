@@ -1,0 +1,29 @@
+{
+  "OldId": "hmpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "牧师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "治疗型施法单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练牧师"
+    }
+  ],
+  "NewId": "h04M"
+}

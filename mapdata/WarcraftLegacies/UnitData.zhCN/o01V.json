@@ -1,0 +1,29 @@
+{
+  "OldId": "odkt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "灰卫"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "极其强壮的狼人战士，被选来保护国王。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练灰卫"
+    }
+  ],
+  "NewId": "o01V"
+}

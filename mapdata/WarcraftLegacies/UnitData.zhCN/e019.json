@@ -1,0 +1,19 @@
+{
+  "OldId": "eden",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊商店）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    }
+  ],
+  "NewId": "e019"
+}

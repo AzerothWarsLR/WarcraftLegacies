@@ -1,0 +1,29 @@
+{
+  "OldId": "uaco",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团、工人）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "军团传令官"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基础工人。可召唤和修复建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练军团传令官"
+    }
+  ],
+  "NewId": "u00D"
+}

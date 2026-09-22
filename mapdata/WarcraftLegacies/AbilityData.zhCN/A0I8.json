@@ -1,0 +1,55 @@
+{
+  "OldId": "Aegr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "血符文"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血符文 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的魔法攻击和法术伤害降低 5%。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血符文 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血符文 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的魔法攻击和法术伤害降低 10%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的魔法攻击和法术伤害降低 15%。"
+    }
+  ],
+  "NewId": "A0I8"
+}

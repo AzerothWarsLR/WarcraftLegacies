@@ -1,0 +1,19 @@
+{
+  "OldId": "oeye",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼 - 巫医）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "守望者之眼"
+    }
+  ],
+  "NewId": "o00W"
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "LTbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "巨型树木"
+    }
+  ],
+  "NewId": "B00W"
+}

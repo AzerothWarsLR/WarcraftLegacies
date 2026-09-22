@@ -1,0 +1,44 @@
+{
+  "OldId": "Emfr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "上古守护者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "远古熊灵英雄，擅长前线近身战斗。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤乌索克"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活上古守护者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活上古守护者"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "乌索克"
+    }
+  ],
+  "NewId": "E00A"
+}

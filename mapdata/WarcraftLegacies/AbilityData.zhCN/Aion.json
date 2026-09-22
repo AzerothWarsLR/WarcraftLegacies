@@ -1,0 +1,13 @@
+{
+  "OldId": "Aion",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人 - 青色、粉色、灰色）"
+    }
+  ]
+}

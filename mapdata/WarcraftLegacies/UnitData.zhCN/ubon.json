@@ -1,0 +1,18 @@
+{
+  "OldId": "ubon",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "空中单位生产建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 攻城）"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "hsor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "掌焰者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "精通火焰法术的巫师。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练掌焰者"
+    }
+  ],
+  "NewId": "h0CG"
+}

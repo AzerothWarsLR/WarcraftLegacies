@@ -1,0 +1,24 @@
+{
+  "OldId": "hkee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "闪金镇"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造闪金镇"
+    }
+  ],
+  "NewId": "h00N"
+}

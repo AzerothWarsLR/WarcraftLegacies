@@ -1,0 +1,19 @@
+{
+  "OldId": "Bfzy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "野兽之怒"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有野性狂怒，攻击速度和移动速度提高。"
+    }
+  ],
+  "NewId": "B02J"
+}

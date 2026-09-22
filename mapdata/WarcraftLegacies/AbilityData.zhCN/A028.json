@@ -1,0 +1,19 @@
+{
+  "OldId": "Ahwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（艾露恩之镰）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "月光束"
+    }
+  ],
+  "NewId": "A028"
+}

@@ -1,0 +1,20 @@
+{
+  "OldId": "ACc2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 海巨人）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "发出一道巨大的波浪，对一条直线上的每个敌方地面单位造成<A0G0,DataA1>点伤害，最多造成<A0G0,DataB1>点伤害。"
+    }
+  ],
+  "NewId": "A0G0"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "nbsm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "尤格-萨隆的监狱"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    }
+  ],
+  "NewId": "yLL4"
+}

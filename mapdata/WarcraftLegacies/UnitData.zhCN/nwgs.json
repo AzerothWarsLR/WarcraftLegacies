@@ -1,0 +1,18 @@
+{
+  "OldId": "nwgs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "伊利达雷的敏捷飞行生物。"
+    }
+  ]
+}

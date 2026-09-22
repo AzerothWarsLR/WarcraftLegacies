@@ -1,0 +1,29 @@
+{
+  "OldId": "ninf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "光铸机甲"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "笼罩着恶魔烈焰的重型近战单位，会伤害附近的敌方地面单位。对魔法免疫。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤光铸机甲"
+    }
+  ],
+  "NewId": "n0CX"
+}

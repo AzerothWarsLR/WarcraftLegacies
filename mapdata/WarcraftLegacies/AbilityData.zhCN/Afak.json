@@ -1,0 +1,37 @@
+{
+  "OldId": "Afak",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 毁灭者）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "湮灭之球 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "湮灭之球 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为该单位的攻击增加<Afak,DataA1>点额外攻击力，并使其攻击可以造成范围伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击增加<Afak,DataA2>点额外伤害，并使其攻击造成范围伤害。"
+    }
+  ]
+}

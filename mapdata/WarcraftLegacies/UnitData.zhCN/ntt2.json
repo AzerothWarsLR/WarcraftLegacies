@@ -1,0 +1,23 @@
+{
+  "OldId": "ntt2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "提供人口，可提高可训练单位的数量上限。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼 其他）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造|cffffcc00r|r牛头人帐篷"
+    }
+  ]
+}

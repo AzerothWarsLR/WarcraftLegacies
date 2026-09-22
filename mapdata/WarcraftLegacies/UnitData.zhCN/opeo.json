@@ -1,0 +1,18 @@
+{
+  "OldId": "opeo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落 工人）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本工人单位。"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "OldId": "Aens",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 猎手）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将目标敌方单位束缚在地面上，使其在<A0F3,Dur1>秒内无法移动。被诱捕的空中单位可被视作地面单位进行攻击。"
+    }
+  ],
+  "NewId": "A0F3"
+}

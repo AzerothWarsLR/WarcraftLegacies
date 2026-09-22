@@ -1,0 +1,13 @@
+{
+  "OldId": "nfpu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有统御光环与战争践踏的重型近战单位。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "Ulic",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "上古之神"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "尤格-萨隆"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，尤其擅长冰霜魔法。可学习霜甲术、冰霜新星、黑暗仪式和枯萎凋零。"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活尤格-萨隆"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活尤格-萨隆"
+    }
+  ],
+  "NewId": "U02C"
+}

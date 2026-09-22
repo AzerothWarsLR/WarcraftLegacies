@@ -1,0 +1,19 @@
+{
+  "OldId": "hprt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（传送门）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "副本入口"
+    }
+  ],
+  "NewId": "h05T"
+}

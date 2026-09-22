@@ -1,0 +1,23 @@
+{
+  "OldId": "ocbw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能农场）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "供苦工保卫领地的防御性棚屋。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造邪兽人地洞"
+    }
+  ]
+}

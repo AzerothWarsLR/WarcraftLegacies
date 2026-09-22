@@ -1,0 +1,29 @@
+{
+  "OldId": "eshy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷船坞）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "远古船坞"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造远古船坞"
+    }
+  ],
+  "NewId": "e020"
+}

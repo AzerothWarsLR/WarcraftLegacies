@@ -1,0 +1,18 @@
+{
+  "OldId": "ugrv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 研究）"
+    }
+  ]
+}

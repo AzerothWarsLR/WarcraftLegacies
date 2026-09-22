@@ -1,0 +1,29 @@
+{
+  "OldId": "owtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能塔 2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化了望塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化了望塔"
+    }
+  ],
+  "NewId": "o035"
+}

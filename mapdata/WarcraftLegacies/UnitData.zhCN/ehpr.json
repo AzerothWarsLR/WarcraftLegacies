@@ -1,0 +1,23 @@
+{
+  "OldId": "ehpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "哨兵的空中弓箭手，可以打击多个敌人。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练角鹰兽骑士"
+    }
+  ]
+}

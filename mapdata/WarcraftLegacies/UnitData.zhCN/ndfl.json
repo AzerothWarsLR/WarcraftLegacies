@@ -1,0 +1,23 @@
+{
+  "OldId": "ndfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "腐化的生命之泉，为邪部落的士兵补充体力。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造被亵渎的生命之泉"
+    }
+  ]
+}

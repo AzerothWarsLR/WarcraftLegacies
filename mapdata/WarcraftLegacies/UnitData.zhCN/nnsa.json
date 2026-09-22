@@ -1,0 +1,28 @@
+{
+  "OldId": "nnsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷专家）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "空中单位生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "孵化场"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造孵化场"
+    }
+  ]
+}

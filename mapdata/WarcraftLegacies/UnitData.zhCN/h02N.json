@@ -1,0 +1,19 @@
+{
+  "OldId": "hlum",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然研究）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    }
+  ],
+  "NewId": "h02N"
+}

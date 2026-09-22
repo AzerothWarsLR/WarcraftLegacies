@@ -1,0 +1,29 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "游骑兵"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "南方之地的近战骑兵。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练游骑兵"
+    }
+  ],
+  "NewId": "h01B"
+}

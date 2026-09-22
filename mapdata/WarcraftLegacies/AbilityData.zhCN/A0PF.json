@@ -1,0 +1,47 @@
+{
+  "OldId": "AIra",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 堡垒）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪能"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习邪能 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "安东尼达斯引导正面的奥术能量，治疗大范围内盟友的伤口。 |n|n|cffffcc001级|r - 为附近的友方单位恢复 50 点生命值。 |n|cffffcc002级|r - 为附近的友方单位恢复 125 点生命值。 |n|cffffcc003级|r - 为附近的友方单位恢复 200 点生命值。 |n|cffffcc004级|r - 为附近的友方单位恢复 275 点生命值。|n|cffffcc005级|r - 为附近的友方单位恢复 350 点生命值。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为大范围内的友方单位恢复 200 点生命值。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为大范围内的友方单位恢复 300 点生命值和 100 点魔法值。"
+    }
+  ],
+  "NewId": "A0PF"
+}

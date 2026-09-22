@@ -1,0 +1,49 @@
+{
+  "OldId": "AUau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 死亡骑士阿尔萨斯） （古加尔）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "提高附近友方单位的移动速度和生命恢复速度。 |n|n|cffffcc001级|r - 移动速度 4%，生命恢复加成 0.80。 |n|cffffcc002级|r - 移动速度<AUau,DataA2,%>%，生命恢复加成 1.30。 |n|cffffcc003级|r - 移动速度<AUau,DataA3,%>%，生命恢复加成 1.80。 |n|cffffcc004级|r - 移动速度<AUau,DataA4,%>%，生命恢复加成 2.30。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪恶光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高 4%，生命恢复速度提高 0.80。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高<AUau,DataA2,%>%，生命恢复速度提高 1.30。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高<AUau,DataA3,%>%，生命恢复速度提高 1.80。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的移动速度提高<AUau,DataA4,%>%，生命恢复速度提高 2.30。"
+    }
+  ],
+  "NewId": "A0SC"
+}

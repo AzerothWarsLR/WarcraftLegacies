@@ -1,0 +1,29 @@
+{
+  "OldId": "hrif",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "皇家弩车"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "洛丹伦训练有素的弩手。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练皇家弩车"
+    }
+  ],
+  "NewId": "h0CQ"
+}

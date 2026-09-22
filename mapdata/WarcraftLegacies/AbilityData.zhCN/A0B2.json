@@ -1,0 +1,26 @@
+{
+  "OldId": "AHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(末日守卫、卡扎克、食人魔领主"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虔诚光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为 600 范围内的周围友方单位提供<A0B2,DataA1,.>点额外护甲。"
+    }
+  ],
+  "NewId": "A0B2"
+}

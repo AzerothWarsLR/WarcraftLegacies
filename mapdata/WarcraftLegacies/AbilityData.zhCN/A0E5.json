@@ -1,0 +1,20 @@
+{
+  "OldId": "Afbb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奥术宝珠物品 - 橙色商店）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每次攻击销毁目标 25 点法力值。"
+    }
+  ],
+  "NewId": "A0E5"
+}

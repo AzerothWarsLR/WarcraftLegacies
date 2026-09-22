@@ -1,0 +1,13 @@
+{
+  "OldId": "nmfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可吞噬尸体的轻型近战单位。"
+    }
+  ]
+}

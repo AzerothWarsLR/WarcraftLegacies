@@ -1,0 +1,20 @@
+{
+  "OldId": "Astd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色 - 要塞塔楼）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使要塞内的火枪手离开。"
+    }
+  ],
+  "NewId": "A00U"
+}

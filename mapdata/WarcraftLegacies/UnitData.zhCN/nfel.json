@@ -1,0 +1,23 @@
+{
+  "OldId": "nfel",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（召唤者-术士-萨格拉斯之眼）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "被召唤的猎犬。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练恶魔猎犬"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "etrp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化守护古树"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的防御型古树。扎根于地面时，可以向附近的敌方单位投掷巨大的岩石。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化守护古树"
+    }
+  ],
+  "NewId": "e000"
+}

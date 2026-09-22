@@ -1,0 +1,33 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化治疗"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究强化治疗"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化治疗术，将其治疗量提高至<A0AR,DataA2>，并使其法力值消耗降低至<A0AR,Cost2>。"
+    }
+  ],
+  "NewId": "R03L"
+}

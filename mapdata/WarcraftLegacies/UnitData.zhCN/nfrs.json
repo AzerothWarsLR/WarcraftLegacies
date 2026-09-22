@@ -1,0 +1,13 @@
+{
+  "OldId": "nfrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷闪电弹的中型远程单位。可施放回春术。"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "OldId": "Afzy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（自身施放 - 青色）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂乱 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂乱 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0EH,DataA1,%>%，移动速度提高<A0EH,DataB1,%>%，持续<A0EH,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击速度提高<A0EH,DataA2,%>%，移动速度提高<A0EH,DataB2,%>%，持续<A0EH,Dur2>秒。"
+    }
+  ],
+  "NewId": "A0EH"
+}

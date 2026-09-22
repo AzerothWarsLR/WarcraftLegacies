@@ -1,0 +1,28 @@
+{
+  "OldId": "nbot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地精私掠船"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "地精私掠船。可运输单位并能自卫。每分钟需 2 黄金维护费。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立地精）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "雇佣雇用 地精私掠船"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "uaod",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 祭坛）"
+    }
+  ]
+}

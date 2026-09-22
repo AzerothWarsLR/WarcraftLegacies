@@ -1,0 +1,18 @@
+{
+  "OldId": "otau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "宣誓效忠萨尔的强大血蹄战士。"
+    }
+  ]
+}

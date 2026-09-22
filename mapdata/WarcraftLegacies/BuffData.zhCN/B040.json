@@ -1,0 +1,19 @@
+{
+  "OldId": "BOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "召唤仆从"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    }
+  ],
+  "NewId": "B040"
+}

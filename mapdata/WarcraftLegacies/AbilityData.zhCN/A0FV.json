@@ -1,0 +1,31 @@
+{
+  "OldId": "Amls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（所有护卫舰）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "接舷战"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "接舷战"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该船下令将钩爪抛向一艘敌方舰船。随后士兵们登上该船，使其暂时失去行动能力并对其造成伤害。 |n持续 20 秒。"
+    }
+  ],
+  "NewId": "A0FV"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "opeo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌 工人）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "勤恳卖力、累断腰的劳工。"
+    }
+  ],
+  "NewId": "o04L"
+}

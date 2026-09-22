@@ -1,0 +1,23 @@
+{
+  "OldId": "hphx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯-安纳斯特里安-等级 1）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "逐日者王朝忠诚的凤凰。"
+    }
+  ]
+}

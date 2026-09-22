@@ -1,0 +1,19 @@
+{
+  "OldId": "Apsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 精灵龙。蓝色 - 虚空行者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位在受到伤害时脱离现实，暂时避免任何进一步的伤害。|n持续<Apsh,Dur1>秒。"
+    }
+  ]
+}

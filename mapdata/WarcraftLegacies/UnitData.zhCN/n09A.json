@@ -1,0 +1,29 @@
+{
+  "OldId": "nhym",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "余烬牧师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "圣光的忠实而坚定的信徒。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练余烬牧师"
+    }
+  ],
+  "NewId": "n09A"
+}

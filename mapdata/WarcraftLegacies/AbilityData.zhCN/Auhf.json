@@ -1,0 +1,19 @@
+{
+  "OldId": "Auhf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 通灵师）"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个目标单位的攻击速度提高<Auhf,DataA2,%>%，但每秒会消耗<Auhf,DataB2>点生命值。|n持续<Auhf,Dur2>秒。"
+    }
+  ]
+}

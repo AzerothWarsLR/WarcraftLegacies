@@ -1,0 +1,23 @@
+{
+  "OldId": "efon",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 召唤物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本的木质战士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练树人"
+    }
+  ]
+}

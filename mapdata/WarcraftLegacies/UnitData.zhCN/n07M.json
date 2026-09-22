@@ -1,0 +1,29 @@
+{
+  "OldId": "ndmg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 T2 虚空领主）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空领主恶魔之门"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "与燃烧远征的虚空领主调谐的传送门，每 60 秒召唤 1 个。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为虚空领主恶魔之门"
+    }
+  ],
+  "NewId": "n07M"
+}

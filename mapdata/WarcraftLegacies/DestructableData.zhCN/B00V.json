@@ -1,0 +1,14 @@
+{
+  "OldId": "XOkt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "基尔加丹王座"
+    }
+  ],
+  "NewId": "B00V"
+}

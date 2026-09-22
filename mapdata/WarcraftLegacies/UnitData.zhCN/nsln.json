@@ -1,0 +1,13 @@
+{
+  "OldId": "nsln",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可使敌人减速的中型近战单位。"
+    }
+  ]
+}

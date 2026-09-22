@@ -1,0 +1,29 @@
+{
+  "OldId": "uzg1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼 防御塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水晶守护者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造水晶守护者"
+    }
+  ],
+  "NewId": "u00U"
+}

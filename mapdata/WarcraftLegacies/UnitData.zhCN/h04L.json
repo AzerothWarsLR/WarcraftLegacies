@@ -1,0 +1,29 @@
+{
+  "OldId": "hcth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵 - 精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "月亮女祭司"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "艾露恩的战斗女祭司。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练月之女祭司"
+    }
+  ],
+  "NewId": "h04L"
+}

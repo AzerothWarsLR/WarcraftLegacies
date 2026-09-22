@@ -1,0 +1,59 @@
+{
+  "OldId": "AHre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城 - 伯瓦尔）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习复活术 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使周围友方单位的尸体复活。|n|n|cffffcc001级|r - 复活 20 个单位。150 秒冷却时间。|n|cffffcc002级|r - 复活 40 个单位。135 秒冷却时间。|n|cffffcc003级|r - 复活 60 个单位。120 秒冷却时间。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "复活术 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "复活术 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "复活术 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围 20 个友方单位的尸体复活。|n|cffffcc00150 秒冷却时间。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围 40 个友方单位的尸体复活。|n|cffffcc00135 秒冷却时间。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围 60 个友方单位的尸体复活。|n|cffffcc00120 秒冷却时间。"
+    }
+  ]
+}

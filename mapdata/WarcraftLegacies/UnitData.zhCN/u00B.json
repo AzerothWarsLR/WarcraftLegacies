@@ -1,0 +1,14 @@
+{
+  "OldId": "uplg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（等级 2）"
+    }
+  ],
+  "NewId": "u00B"
+}

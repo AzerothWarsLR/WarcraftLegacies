@@ -1,0 +1,35 @@
+{
+  "OldId": "Aamk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（所有英雄）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习属性加成 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "永久提升敏捷、智力和力量。每级为所有属性增加 3 点。"
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "属性附加 - [|cffffcc00级别 5|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "总共为敏捷、智力和力量增加<Aamk,DataA5>点"
+    }
+  ]
+}

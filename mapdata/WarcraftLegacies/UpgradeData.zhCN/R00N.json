@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhhb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡 酒馆）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化痛饮"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究强化痛饮"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化痛饮技能，使其恢复<A09J,DataA2>点生命值。"
+    }
+  ],
+  "NewId": "R00N"
+}

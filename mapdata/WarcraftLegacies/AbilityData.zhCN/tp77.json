@@ -1,0 +1,49 @@
+{
+  "OldId": "ANfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（基尔加丹）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "向敌人施放一道锥形闪电，对其造成伤害。 |n|n|cffffcc001级|r - 对每个单位造成<ANfl,DataA1>点伤害。 |n|cffffcc002级|r - 对每个单位造成<ANfl,DataA2>点伤害。 |n|cffffcc003级|r - 对每个单位造成<ANfl,DataA3>点伤害。 |n|cffffcc004级|r - 对每个单位造成<ANfl,DataA4>点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "叉状闪电 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位施放一道锥形闪电，最多攻击 3 个敌方单位，造成 125 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位施放一道锥形闪电，最多攻击 4 个敌方单位，造成 200 点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位施放一道锥形闪电，最多攻击 5 个敌方单位，造成 275 点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位施放一道锥形闪电，最多攻击 6 个敌方单位，造成 350 点伤害。"
+    }
+  ],
+  "NewId": "tp77"
+}

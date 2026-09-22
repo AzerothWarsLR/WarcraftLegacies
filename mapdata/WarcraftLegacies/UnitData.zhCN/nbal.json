@@ -1,0 +1,28 @@
+{
+  "OldId": "nbal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（萨格拉斯之眼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "次级末日守卫"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放驱散魔法、召唤恶魔兽、残废与火焰之雨的重型近战单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练末日守卫"
+    }
+  ]
+}

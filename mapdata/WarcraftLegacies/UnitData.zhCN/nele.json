@@ -1,0 +1,13 @@
+{
+  "OldId": "nele",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型近战单位。对法术免疫。"
+    }
+  ]
+}

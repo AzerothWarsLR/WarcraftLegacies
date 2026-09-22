@@ -1,0 +1,29 @@
+{
+  "OldId": "nmrk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡商店）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "探险者地窟"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造探险者地窟"
+    }
+  ],
+  "NewId": "n07U"
+}

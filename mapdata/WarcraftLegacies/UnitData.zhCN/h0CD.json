@@ -1,0 +1,19 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本观察塔。无法攻击。"
+    }
+  ],
+  "NewId": "h0CD"
+}

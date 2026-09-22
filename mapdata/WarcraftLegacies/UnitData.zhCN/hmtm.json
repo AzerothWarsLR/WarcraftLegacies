@@ -1,0 +1,18 @@
+{
+  "OldId": "hmtm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "远程攻城武器。对建筑造成极高伤害，但缓慢且脆弱。"
+    }
+  ]
+}

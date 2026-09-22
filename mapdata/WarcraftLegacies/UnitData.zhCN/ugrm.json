@@ -1,0 +1,18 @@
+{
+  "OldId": "ugrm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 石像鬼）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "飞行攻击单位。"
+    }
+  ]
+}

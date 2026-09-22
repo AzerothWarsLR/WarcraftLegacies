@@ -1,0 +1,14 @@
+{
+  "OldId": "Rhse",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使防御塔获得探测隐形单位的能力。不影响炮塔。"
+    }
+  ]
+}

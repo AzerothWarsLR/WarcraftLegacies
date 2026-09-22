@@ -1,0 +1,29 @@
+{
+  "OldId": "nmed",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "术士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "研习黑暗魔法的精灵奥术师。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练术士"
+    }
+  ],
+  "NewId": "n0E3"
+}

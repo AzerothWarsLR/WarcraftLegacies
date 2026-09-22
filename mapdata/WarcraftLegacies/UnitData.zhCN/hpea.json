@@ -1,0 +1,18 @@
+{
+  "OldId": "hpea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦、暴风城、工人）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中坚工人与建造者。"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "obea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 专精）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "工程师公会"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造工程师公会"
+    }
+  ],
+  "NewId": "o01M"
+}

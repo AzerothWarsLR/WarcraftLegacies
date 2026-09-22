@@ -1,0 +1,29 @@
+{
+  "OldId": "nbal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天空之墙）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "掌控四大元素的元素领主。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "元素领主"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤元素领主"
+    }
+  ],
+  "NewId": "n08S"
+}

@@ -1,0 +1,102 @@
+{
+  "OldId": "ANpa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团英雄）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "寄生虫"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用一个致命的腐烂寄生虫折磨目标敌方单位，每秒造成<VP05,DataA2>点伤害，持续<ANpa,Dur2>秒。如果受折磨的单位在寄生虫效果下死亡，其尸体上将出现一个僵尸。冷却时间<VP05,Cool2>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以激活自动施法。|r"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以取消自动施法。|r"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "寄生虫"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "寄生虫"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用一个致命的腐烂寄生虫折磨目标敌方单位，每秒造成<VP05,DataA1>点伤害，持续<ANpa,Dur1>秒。如果受折磨的单位在寄生虫效果下死亡，其尸体上将站起一个僵尸。冷却时间<VP05,Cool1>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用一个致命的腐烂寄生虫折磨目标敌方单位，每秒造成<VP05,DataA3>点伤害，持续<ANpa,Dur3>秒。如果受折磨的单位在寄生虫效果下死亡，其尸体上将出现 2 个僵尸。冷却时间<VP05,Cool3>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用一个致命的腐烂寄生虫折磨目标敌方单位，每秒造成<VP05,DataA4>点伤害，持续<ANpa,Dur4>秒。如果受折磨的单位在寄生虫效果下死亡，其尸体上将出现 2 个僵尸。冷却时间<VP05,Cool4>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以激活自动施法。|r"
+    },
+    {
+      "Level": 4,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以激活自动施法。|r"
+    },
+    {
+      "Level": 3,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以取消自动施法。|r"
+    },
+    {
+      "Level": 4,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以取消自动施法。|r"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习寄生虫 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "用一个致命的腐烂寄生虫折磨目标敌方单位，在其体内持续造成伤害。如果受折磨的单位在寄生虫效果下死亡，其尸体上将站起僵尸。 |n|n|cffffcc001级|r - 每秒造成<VP05,DataA1>点伤害，持续<VP05,Dur1>秒，产生 1 个僵尸。冷却时间<VP05,Cool1>秒。 |n|cffffcc002级|r - 每秒造成<VP05,DataA2>点伤害，持续<VP05,Dur2>秒，产生 1 个僵尸。冷却时间<VP05,Cool2>秒。 |n|cffffcc003级|r - 每秒造成<VP05,DataA3>点伤害，持续<VP05,Dur3>秒，产生 2 个僵尸。冷却时间<VP05,Cool3>秒。 |n|cffffcc004级|r - 每秒造成<VP05,DataA4>点伤害，持续<VP05,Dur4>秒，产生 2 个僵尸。冷却时间<VP05,Cool4>秒。"
+    }
+  ],
+  "NewId": "VP05"
+}

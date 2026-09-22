@@ -1,0 +1,24 @@
+{
+  "OldId": "Hmkg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恐怖的拉姆齐斯"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "恐怖的拉姆齐斯"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（怪物-凄凉之地）"
+    }
+  ],
+  "NewId": "h0BD"
+}

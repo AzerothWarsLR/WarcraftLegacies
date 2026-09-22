@@ -1,0 +1,19 @@
+{
+  "OldId": "BNbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "死亡进军"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有死亡进军，攻击力和护甲提高。"
+    }
+  ],
+  "NewId": "B08M"
+}

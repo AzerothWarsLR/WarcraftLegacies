@@ -1,0 +1,20 @@
+{
+  "OldId": "Afak",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 蓝龙）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击增加<A08W,DataA1>点额外伤害，并使其攻击造成范围伤害。"
+    }
+  ],
+  "NewId": "A08W"
+}

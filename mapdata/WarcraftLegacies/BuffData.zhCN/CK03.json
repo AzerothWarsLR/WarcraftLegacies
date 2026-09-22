@@ -1,0 +1,24 @@
+{
+  "OldId": "BNso",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "十字军之吼"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到十字军怒吼的影响，无法施法且移动速度降低。"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（血色-赛丹）"
+    }
+  ],
+  "NewId": "CK03"
+}

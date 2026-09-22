@@ -1,0 +1,13 @@
+{
+  "OldId": "olig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "携带时英雄的攻击附加 6 点额外伤害。英雄在攻击空中单位时会变成远程攻击，可驱散魔法并使敌人的移动速度降低，持续<AIlp,Dur1>秒。|n|cffffcc00对召唤单位造成<AIlp,DataC1>点额外伤害。\n"
+    }
+  ]
+}

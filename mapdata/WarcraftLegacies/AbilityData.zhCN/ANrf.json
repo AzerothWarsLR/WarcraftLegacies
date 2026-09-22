@@ -1,0 +1,30 @@
+{
+  "OldId": "ANrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（古加尔，瓦里玛萨斯）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成初始伤害，随后灼烧敌人<ANrf,Dur1>秒。 |n|n|cffffcc001级|r - 每波<ANrf,DataB1>点伤害，<ANrf,DataA1>波，每秒<ANrf,DataE1>点伤害。 |n|cffffcc002级|r - 每波<ANrf,DataB2>点伤害，<ANrf,DataA2>波，每秒<ANrf,DataE2>点伤害。 |n|cffffcc003级|r - 每波<ANrf,DataB3>点伤害，<ANrf,DataA3>波，每秒<ANrf,DataE3>点伤害。 |n|cffffcc004级|r - 每波<ANrf,DataB4>点伤害，<ANrf,DataA4>波，每秒<ANrf,DataE4>点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火焰之雨 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成<ANrf,DataB4>点初始伤害，并造成每秒<ANrf,DataE4>点伤害，持续<ANrf,Dur4>秒。 |n持续<ANrf,DataA4>波。"
+    }
+  ]
+}

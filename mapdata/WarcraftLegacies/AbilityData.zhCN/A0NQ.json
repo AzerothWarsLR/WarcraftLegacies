@@ -1,0 +1,20 @@
+{
+  "OldId": "Awar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（灰色 食人魔领主）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有 25% 的几率使一次攻击对周围的单位造成 35 点伤害。"
+    }
+  ],
+  "NewId": "A0NQ"
+}

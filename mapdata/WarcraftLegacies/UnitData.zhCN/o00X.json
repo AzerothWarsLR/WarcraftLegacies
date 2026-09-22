@@ -1,0 +1,29 @@
+{
+  "OldId": "odkt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大天使"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "圣光最强大的战士。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练大天使"
+    }
+  ],
+  "NewId": "o00X"
+}

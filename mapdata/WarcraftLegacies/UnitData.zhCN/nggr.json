@@ -1,0 +1,23 @@
+{
+  "OldId": "nggr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "以魔法建造并灌注力量的极其强大的构造体。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练花岗岩魔像"
+    }
+  ]
+}

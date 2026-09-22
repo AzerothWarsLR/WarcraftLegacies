@@ -1,0 +1,19 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城 T3）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    }
+  ],
+  "NewId": "h06N"
+}

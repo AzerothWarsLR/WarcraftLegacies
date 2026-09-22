@@ -1,0 +1,26 @@
+{
+  "OldId": "Ansk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（尚武之魂）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "防止所有远程伤害。"
+    }
+  ],
+  "NewId": "A0G8"
+}

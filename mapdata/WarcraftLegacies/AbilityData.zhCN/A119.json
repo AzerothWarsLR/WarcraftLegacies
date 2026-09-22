@@ -1,0 +1,31 @@
+{
+  "OldId": "AIsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝精英）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "艾露恩的祝福"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "艾露恩的祝福"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围单位的移动速度提高<A119,DataA1,%>%，持续 6 秒。"
+    }
+  ],
+  "NewId": "A119"
+}

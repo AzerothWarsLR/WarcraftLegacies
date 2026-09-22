@@ -1,0 +1,26 @@
+{
+  "OldId": "AEev",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(10%)（剑士、活化护甲）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪避"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有 10% 的几率躲避敌人的攻击。"
+    }
+  ],
+  "NewId": "A0E2"
+}

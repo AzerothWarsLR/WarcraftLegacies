@@ -1,0 +1,33 @@
+{
+  "OldId": "Uear",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "天灾的勇士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长支援军队并造成魔法伤害。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿尔萨斯·米奈希尔"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "瓦罗克·萨鲁法尔"
+    }
+  ]
+}

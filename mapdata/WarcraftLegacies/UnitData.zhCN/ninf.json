@@ -1,0 +1,23 @@
+{
+  "OldId": "ninf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "笼罩邪能烈焰的锻造恶魔。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练地狱火"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 海元素）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "涨潮"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究涨潮"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化海元素，使其生命值提高 200，攻击速度提高 35%。"
+    }
+  ],
+  "NewId": "R001"
+}

@@ -1,0 +1,13 @@
+{
+  "OldId": "nsbm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "会使敌人中毒并携带幼蛛参战的重型近战单位。可施放诱捕。"
+    }
+  ]
+}

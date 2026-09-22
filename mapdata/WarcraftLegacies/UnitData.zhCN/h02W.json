@@ -1,0 +1,24 @@
+{
+  "OldId": "hfoo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "假人"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练假人"
+    }
+  ],
+  "NewId": "h02W"
+}

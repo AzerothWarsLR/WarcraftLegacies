@@ -1,0 +1,19 @@
+{
+  "OldId": "osp2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡 工程师）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "便携火炮"
+    }
+  ],
+  "NewId": "o003"
+}

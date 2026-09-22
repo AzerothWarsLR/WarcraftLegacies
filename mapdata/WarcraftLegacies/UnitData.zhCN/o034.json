@@ -1,0 +1,19 @@
+{
+  "OldId": "owtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    }
+  ],
+  "NewId": "o034"
+}

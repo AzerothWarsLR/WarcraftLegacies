@@ -1,0 +1,20 @@
+{
+  "OldId": "Reuv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（浅蓝色研究）（棕色研究）"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究夜视能力"
+    }
+  ]
+}

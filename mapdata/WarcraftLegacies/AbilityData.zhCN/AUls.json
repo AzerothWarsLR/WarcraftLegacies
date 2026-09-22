@@ -1,0 +1,59 @@
+{
+  "OldId": "AUls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 阿努巴拉克）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习虫群风暴 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "创造出一群愤怒的蝗虫啃咬和撕扯周围的敌人。它们会啃食敌人的血肉并将其转变为精华，在返回英雄身边时为其恢复生命值。|n|n|cffffcc00级别 1|r - <AUls,DataA1>只蝗虫。|n|cffffcc00级别 2|r - <AUls,DataA2>只蝗虫。|n|cffffcc00级别 3|r - <AUls,DataA3>只蝗虫。|n|cffcece00|n作用范围：800。|n持续 30 秒。|n150 秒冷却时间。|r"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虫群风暴 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虫群风暴 - [|cffffcc00级别 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "虫群风暴 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "创造出一群愤怒的蝗虫啃咬和撕扯周围的敌人。它们会啃食敌人的血肉并将其转变为精华，在返回英雄身边时为其恢复生命值。|n|n召唤<AUls,DataA1>只蝗虫。|n|n|cffcece00|n作用范围：800。|n持续 30 秒。|n150 秒冷却时间。|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "创造出一群愤怒的蝗虫啃咬和撕扯周围的敌人。它们会啃食敌人的血肉并将其转变为精华，在返回英雄身边时为其恢复生命值。|n|n召唤<AUls,DataA2>只蝗虫。|n|n|cffcece00|n作用范围：800。|n持续 30 秒。|n150 秒冷却时间。|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "创造出一群愤怒的蝗虫啃咬和撕扯周围的敌人。它们会啃食敌人的血肉并将其转变为精华，在返回英雄身边时为其恢复生命值。|n|n召唤<AUls,DataA3>只蝗虫。|n|n|cffcece00|n作用范围：800。|n持续 30 秒。|n150 秒冷却时间。|r"
+    }
+  ]
+}

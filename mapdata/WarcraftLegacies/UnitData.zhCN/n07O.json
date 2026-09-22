@@ -1,0 +1,29 @@
+{
+  "OldId": "ndmg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 T2 恐惧卫士）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恐惧卫士恶魔之门"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "与燃烧远征的恐惧卫士调谐的传送门，每 90 秒召唤 1 个。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为恐惧卫士恶魔之门"
+    }
+  ],
+  "NewId": "n07O"
+}

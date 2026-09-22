@@ -1,0 +1,24 @@
+{
+  "OldId": "BNht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "自然光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到自然光环的影响，移动速度和攻击速度降低。"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（塞纳留斯）"
+    }
+  ],
+  "NewId": "B08K"
+}

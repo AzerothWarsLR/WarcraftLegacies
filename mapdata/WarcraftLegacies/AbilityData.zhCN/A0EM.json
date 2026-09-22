@@ -1,0 +1,20 @@
+{
+  "OldId": "Ahpe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（凤凰）（图标）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "凤凰会向周围的敌人喷吐魔法烈焰，造成<A0EL,DataA1>点初始伤害，以及每秒<A0EL,DataB1>点的燃烧伤害，持续<A0EL,Dur1>秒。炽热的烈焰同样会灼伤凤凰。"
+    }
+  ],
+  "NewId": "A0EM"
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "Beye",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "守望者之眼"
+    }
+  ],
+  "NewId": "B084"
+}

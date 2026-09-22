@@ -1,0 +1,29 @@
+{
+  "OldId": "hcth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血骑士侍从"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灌注圣光的战士。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练血骑士侍从"
+    }
+  ],
+  "NewId": "h0CE"
+}

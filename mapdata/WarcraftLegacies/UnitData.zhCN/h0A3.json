@@ -1,0 +1,19 @@
+{
+  "OldId": "hbla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色研究）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    }
+  ],
+  "NewId": "h0A3"
+}

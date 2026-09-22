@@ -1,0 +1,23 @@
+{
+  "OldId": "uobs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "古老设计的造物。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造黑曜石雕像"
+    }
+  ]
+}

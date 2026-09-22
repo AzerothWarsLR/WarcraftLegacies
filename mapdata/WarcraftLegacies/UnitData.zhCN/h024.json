@@ -1,0 +1,29 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "灯塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本的海上了望塔。拥有圣光闪现技能和较大的视野范围。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造灯塔"
+    }
+  ],
+  "NewId": "h024"
+}

@@ -1,0 +1,20 @@
+{
+  "OldId": "Ablo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（狼人萨满祭司）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个友方单位的攻击速度提高 30%，移动速度提高 20%。|n持续<A135,Dur1>秒。"
+    }
+  ],
+  "NewId": "A135"
+}

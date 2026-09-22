@@ -1,0 +1,29 @@
+{
+  "OldId": "edoc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "艾泽里特攻城坦克"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "攻城单位，可以变形成无法移动的远程攻城单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练艾泽里特攻城坦克"
+    }
+  ],
+  "NewId": "e01M"
+}

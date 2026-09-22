@@ -1,0 +1,29 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "雷象骑士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "埃索达的强大骑兵。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练雷象骑士"
+    }
+  ],
+  "NewId": "h09U"
+}

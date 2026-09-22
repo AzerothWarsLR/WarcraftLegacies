@@ -1,0 +1,23 @@
+{
+  "OldId": "nstl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "支援型施法者，拥有暗影突袭、吞噬魔法与残废技能。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练萨特窃魂者"
+    }
+  ]
+}

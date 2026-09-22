@@ -1,0 +1,19 @@
+{
+  "OldId": "ANbl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 影叶哨兵，DG - 军情七处）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将单位短距离传送，使其能够出入战场。 |n12 秒冷却时间。"
+    }
+  ]
+}

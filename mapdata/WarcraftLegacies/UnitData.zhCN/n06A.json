@@ -1,0 +1,14 @@
+{
+  "OldId": "ntor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（等级 2）"
+    }
+  ],
+  "NewId": "n06A"
+}

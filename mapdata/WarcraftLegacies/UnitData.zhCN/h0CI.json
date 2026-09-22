@@ -1,0 +1,29 @@
+{
+  "OldId": "hars",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒攻城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "匠师庭院"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "攻城武器生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造匠师庭院"
+    }
+  ],
+  "NewId": "h0CI"
+}

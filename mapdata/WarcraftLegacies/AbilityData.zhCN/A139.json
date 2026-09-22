@@ -1,0 +1,14 @@
+{
+  "OldId": "Asps",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奥术师）"
+    }
+  ],
+  "NewId": "A139"
+}

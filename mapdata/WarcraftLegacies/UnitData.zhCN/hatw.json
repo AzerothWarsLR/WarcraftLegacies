@@ -1,0 +1,18 @@
+{
+  "OldId": "hatw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "魔法防御建筑。"
+    }
+  ]
+}

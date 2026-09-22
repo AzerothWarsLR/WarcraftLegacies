@@ -1,0 +1,25 @@
+{
+  "OldId": "Ache",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（未使用？）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "干扰射线"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "汇聚一道中和魔法流，最多弹跳<Ache,DataC1>次，驱散沿途的单位并对召唤单位造成<Ache,DataB1>点伤害。"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "OldId": "ngns",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "发射淬毒弩箭的轻型远程单位。"
+    }
+  ]
+}

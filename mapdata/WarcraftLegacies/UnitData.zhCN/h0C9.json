@@ -1,0 +1,29 @@
+{
+  "OldId": "hbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒兵营）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "训练区"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要作战单位生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造区"
+    }
+  ],
+  "NewId": "h0C9"
+}

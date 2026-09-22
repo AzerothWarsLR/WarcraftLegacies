@@ -1,0 +1,18 @@
+{
+  "OldId": "otbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "天空中的迅捷飞行轰炸单位。"
+    }
+  ]
+}

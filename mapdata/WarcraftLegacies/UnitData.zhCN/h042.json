@@ -1,0 +1,29 @@
+{
+  "OldId": "harm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡魔法）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "尖峰"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "尖峰"
+    }
+  ],
+  "NewId": "h042"
+}

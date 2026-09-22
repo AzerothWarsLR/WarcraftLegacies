@@ -1,0 +1,19 @@
+{
+  "OldId": "hwat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "土元素"
+    }
+  ],
+  "NewId": "h09V"
+}

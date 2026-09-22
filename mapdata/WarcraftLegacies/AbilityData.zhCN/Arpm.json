@@ -1,0 +1,19 @@
+{
+  "OldId": "Arpm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（天灾 - 黑曜石雕像）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为附近友方非机械单位恢复魔法值。"
+    }
+  ]
+}

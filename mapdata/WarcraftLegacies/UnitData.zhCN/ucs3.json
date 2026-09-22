@@ -1,0 +1,18 @@
+{
+  "OldId": "ucs3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（红色 - 阿努巴拉克）（等级 3）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恐怖腐肉甲虫"
+    }
+  ]
+}

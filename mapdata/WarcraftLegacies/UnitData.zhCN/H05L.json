@@ -1,0 +1,44 @@
+{
+  "OldId": "Hjai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "普罗德摩尔家族女主人"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "凯瑟琳·普罗德摩尔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长以各种形态造成伤害。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤凯瑟琳·普罗德摩尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活普罗德摩尔家族的女主人"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活普罗德摩尔家族的女主人"
+    }
+  ],
+  "NewId": "H05L"
+}

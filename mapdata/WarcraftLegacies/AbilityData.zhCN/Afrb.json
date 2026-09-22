@@ -1,0 +1,25 @@
+{
+  "OldId": "Afrb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 萨菲隆，冰霜巨龙）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "冰霜吐息"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击会使被命中的敌人减速<Afrb,Dur1>（英雄为<Afrb,HeroDur1>）秒。"
+    }
+  ]
+}

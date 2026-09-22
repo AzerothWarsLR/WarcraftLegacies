@@ -1,0 +1,19 @@
+{
+  "OldId": "Ecen",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 幽灵）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暗夜精灵的半神"
+    }
+  ],
+  "NewId": "E00H"
+}

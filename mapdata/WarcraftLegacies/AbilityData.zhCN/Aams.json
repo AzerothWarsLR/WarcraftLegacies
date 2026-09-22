@@ -1,0 +1,19 @@
+{
+  "OldId": "Aams",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暮光、伊利达雷、恩佐斯）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "创造一道屏障，为目标单位阻挡 600 点法术伤害。|n持续 90 秒。"
+    }
+  ]
+}

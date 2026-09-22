@@ -1,0 +1,19 @@
+{
+  "OldId": "Brej",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "灵魂指引"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有灵魂指引，法力值持续恢复。"
+    }
+  ],
+  "NewId": "B0B7"
+}

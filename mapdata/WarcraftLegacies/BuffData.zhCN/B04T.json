@@ -1,0 +1,24 @@
+{
+  "OldId": "Buhf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "风怒"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有风怒，攻击速度提高。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "风怒"
+    }
+  ],
+  "NewId": "B04T"
+}

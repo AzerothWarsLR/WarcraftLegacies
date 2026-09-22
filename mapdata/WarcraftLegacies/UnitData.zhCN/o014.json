@@ -1,0 +1,29 @@
+{
+  "OldId": "odkt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能-传送门）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恐惧卫士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "末日守卫的有翼恶魔近亲，暗影与苦难的传播者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤恐惧卫士"
+    }
+  ],
+  "NewId": "o014"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "npig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Diadon2 - 8v8 第二赛季冠军"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（赞助者）"
+    }
+  ],
+  "NewId": "mD06"
+}

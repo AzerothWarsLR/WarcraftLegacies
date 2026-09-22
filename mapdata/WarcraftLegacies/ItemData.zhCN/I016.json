@@ -1,0 +1,24 @@
+{
+  "OldId": "ofir",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买辛洛斯，诸界的毁灭者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00神器|r|n使所有属性提高 15 点，攻击力提高 80 点，攻击速度与移动速度提高 30%。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "辛洛斯，诸界的毁灭者"
+    }
+  ],
+  "NewId": "I016"
+}

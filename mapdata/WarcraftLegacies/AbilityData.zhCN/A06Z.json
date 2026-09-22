@@ -1,0 +1,20 @@
+{
+  "OldId": "Apg2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（食人魔法师）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "移除目标单位身上的所有魔法效果。敌方单位还会在<A06Z,DataD1>秒内无法移动，其移动速度降低至原先的 1/<A06Z,DataA1>；它们会在<A06Z,Dur1>秒内逐渐恢复移动速度。 |n|cffffcc00对召唤单位造成<A06Z,DataC1>点伤害。|r"
+    }
+  ],
+  "NewId": "A06Z"
+}

@@ -1,0 +1,65 @@
+{
+  "OldId": "AUdd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "大地之怒"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习大地之怒 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄召唤大地之力，从敌人脚下破土而出，每秒对其造成相当于其基础生命值一定百分比的伤害。|n|cffffcc001级|r - 造成 3% 生命值的伤害，持续 30 秒。|n|cffffcc002级|r - 造成 4% 生命值的伤害，持续 30 秒。|n|cffffcc003级|r - 造成 5% 生命值的伤害，持续 30 秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大地之怒 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大地之怒 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "大地之怒 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒对效果范围内的敌方单位造成相当于其基础生命值 3% 的伤害。|n持续 30 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒对效果范围内的敌方单位造成相当于其基础生命值 4% 的伤害。|n持续 30 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒对效果范围内的敌方单位造成相当于其基础生命值 5% 的伤害。|n持续 30 秒。"
+    }
+  ],
+  "NewId": "A0BD"
+}

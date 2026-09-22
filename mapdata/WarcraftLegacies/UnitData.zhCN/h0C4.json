@@ -1,0 +1,29 @@
+{
+  "OldId": "hkee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒 T2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "盟约圣殿"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为盟约圣殿"
+    }
+  ],
+  "NewId": "h0C4"
+}

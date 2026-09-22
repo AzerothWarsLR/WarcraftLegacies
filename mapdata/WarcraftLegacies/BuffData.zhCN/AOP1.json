@@ -1,0 +1,24 @@
+{
+  "OldId": "BHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "保护光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到保护光环的影响，护甲提高。"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "保护光环"
+    }
+  ],
+  "NewId": "AOP1"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "owtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 防御塔 2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化暮光之锤了望塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化暮光之锤了望塔"
+    }
+  ],
+  "NewId": "o03H"
+}

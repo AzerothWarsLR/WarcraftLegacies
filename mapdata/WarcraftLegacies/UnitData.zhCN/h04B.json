@@ -1,0 +1,19 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然地卜师岩石）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "岩石"
+    }
+  ],
+  "NewId": "h04B"
+}

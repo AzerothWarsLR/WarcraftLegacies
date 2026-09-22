@@ -1,0 +1,18 @@
+{
+  "OldId": "hgra",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "空中单位生产建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡空军）"
+    }
+  ]
+}

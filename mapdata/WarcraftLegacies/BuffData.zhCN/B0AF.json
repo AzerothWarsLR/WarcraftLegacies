@@ -1,0 +1,19 @@
+{
+  "OldId": "Bblo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于润滑状态，攻击速度提高。"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "润滑"
+    }
+  ],
+  "NewId": "B0AF"
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "nfgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恩佐斯触须"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自深渊的扭曲触须。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（召唤触须 - 恩佐斯）"
+    }
+  ],
+  "NewId": "n04E"
+}

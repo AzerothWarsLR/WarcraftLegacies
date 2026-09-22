@@ -1,0 +1,77 @@
+{
+  "OldId": "AUts",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 玛瑟里顿，粉色 - 玛诺洛斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪能战甲"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习邪能战甲 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "深渊领主用邪能火焰蚀刻强化其甲壳护甲，使深渊领主获得提高防御力、并能向敌方近战攻击者反弹伤害的护甲。|n|n|cffffcc001级|r - 反弹<AUts,DataA1,%>% 的伤害，<AUts,DataC1>点额外护甲。|n|cffffcc002级|r -  反弹<AUts,DataA2,%>% 的伤害，<AUts,DataC2>点额外护甲。|n|cffffcc003级|r -  反弹<AUts,DataA3,%>% 的伤害，<AUts,DataC3>点额外护甲。|n|cffffcc004级|r -  反弹<AUts,DataA4,%>% 的伤害，<AUts,DataC4>点额外护甲。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能战甲 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能战甲 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能战甲 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能战甲 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用邪能火焰蚀刻强化深渊领主的甲壳护甲，使其获得<AUts,DataC1>点额外护甲，并向敌人反弹<AUts,DataA1,%>% 的近战攻击伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用邪能火焰蚀刻强化深渊领主的甲壳护甲，使其获得<AUts,DataC2>点额外护甲，并向敌人反弹<AUts,DataA2,%>% 的近战攻击伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用邪能火焰蚀刻强化深渊领主的甲壳护甲，使其获得<AUts,DataC3>点额外护甲，并向敌人反弹<AUts,DataA3,%>% 的近战攻击伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用邪能火焰蚀刻强化深渊领主的甲壳护甲，使其获得<AUts,DataC4>点额外护甲，并向敌人反弹<AUts,DataA4,%>% 的近战攻击伤害。"
+    }
+  ],
+  "NewId": "A0KU"
+}

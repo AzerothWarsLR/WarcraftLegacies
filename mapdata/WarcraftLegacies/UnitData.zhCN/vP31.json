@@ -1,0 +1,14 @@
+{
+  "OldId": "ofrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "阿塔哈卡神庙"
+    }
+  ],
+  "NewId": "vP31"
+}

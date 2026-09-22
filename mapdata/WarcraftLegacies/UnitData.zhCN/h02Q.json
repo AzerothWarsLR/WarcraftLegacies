@@ -1,0 +1,29 @@
+{
+  "OldId": "hdhw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "天马骑士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "迅捷的飞行单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练天马骑士"
+    }
+  ],
+  "NewId": "h02Q"
+}

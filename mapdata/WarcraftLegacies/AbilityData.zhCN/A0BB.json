@@ -1,0 +1,26 @@
+{
+  "OldId": "AEim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达格兰火元素）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活献祭"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活献祭后，该单位会被烈焰包裹，每秒对周围的敌方地面单位造成 25 点伤害。|n持续消耗法力直到取消。"
+    }
+  ],
+  "NewId": "A0BB"
+}

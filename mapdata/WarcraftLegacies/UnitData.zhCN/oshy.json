@@ -1,0 +1,28 @@
+{
+  "OldId": "oshy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落 船坞）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "部落码头"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造部落码头"
+    }
+  ]
+}
