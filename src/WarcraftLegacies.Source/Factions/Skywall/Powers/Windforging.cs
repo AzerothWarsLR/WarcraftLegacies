@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
@@ -37,7 +38,11 @@ public sealed class Windforging : Power
     _chance = chance;
     _returnPoint = returnPoint;
     _noReturnRect = noReturnRect;
-    Description = $"Your non-Resistant units have a {chance * 100}% chance to be transfigured into as a {GetObjectName(_unitTypeId)} in {returnPointName} upon death.";
+    Description = Loc.Format(
+      "Your non-Resistant units have a {chance}% chance to be transfigured into a {unit} in {location} upon death.",
+      ("{chance}", (chance * 100).ToString()),
+      ("{unit}", GetObjectName(_unitTypeId)),
+      ("{location}", returnPointName));
   }
 
   /// <inheritdoc />

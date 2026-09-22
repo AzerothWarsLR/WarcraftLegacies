@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -24,6 +25,6 @@ public sealed class CheatFood : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     cheater.FoodCap += S2I(parameters[0]);
-    return "Granted " + parameters[0] + " food.";
+    return Loc.Format("Granted {amount} food.", ("{amount}", parameters[0]));
   }
 }

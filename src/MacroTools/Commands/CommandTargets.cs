@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace MacroTools.Commands;
@@ -27,7 +28,7 @@ public static class CommandTargets
       return true;
     }
 
-    error = $"There is no faction with key '{key}'. Try -faction list to list valid keys.";
+    error = Loc.Format("There is no faction with key '{key}'. Try -faction list to list valid keys.", ("{key}", key));
     return false;
   }
 
@@ -54,7 +55,7 @@ public static class CommandTargets
       return true;
     }
 
-    error = $"{faction.Name} has no quest with key '{key}'. Try -quest list {faction.Name} to list valid keys.";
+    error = Loc.Format("{faction} has no quest with key '{key}'. Try -quest list {faction} to list valid keys.", ("{faction}", faction.Name), ("{key}", key));
     return false;
   }
 
@@ -81,7 +82,7 @@ public static class CommandTargets
       return true;
     }
 
-    error = $"{faction.Name} has no power with key '{key}'. Try -power list {faction.Name} to list valid keys.";
+    error = Loc.Format("{faction} has no power with key '{key}'. Try -power list {faction} to list valid keys.", ("{faction}", faction.Name), ("{key}", key));
     return false;
   }
 
@@ -101,7 +102,7 @@ public static class CommandTargets
       return true;
     }
 
-    error = $"There is no team named {name}.";
+    error = Loc.Format("There is no team named {name}.", ("{name}", name));
     return false;
   }
 

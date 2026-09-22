@@ -1,5 +1,6 @@
 ﻿using MacroTools.Artifacts;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.UserInterface.Books.Core;
 using WCSharp.Shared.Data;
 
@@ -17,7 +18,7 @@ public sealed class ArtifactBook : Book<Artifact, ArtifactPage, ArtifactCard, Ar
   {
     ArtifactManager.ArtifactRegistered += ArtifactCreated;
     PopulatePages();
-    Title = "Artifacts (F7)";
+    Title = Loc.Get("Artifacts (F7)");
     LauncherParent = framehandle.Get("UpperButtonBarQuestsButton", 0);
     Position = new Point(0.4f, 0.35f);
     trigger trigger = trigger.Create();

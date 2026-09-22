@@ -1,5 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -32,8 +33,9 @@ public sealed class CheatLevel : Command
         unit.SetLevel(S2I(parameters[0]));
       }
 
-      return $"Setting hero level of selected units to {parameters[0]}.";
+      return Loc.Format("Setting hero level of selected units to {level}.", ("{level}", parameters[0]));
     }
-    return $"Failed setting hero level of selected units to {parameters[0]} ({parameters[0]} is not a number).";
+    return Loc.Format("Failed setting hero level of selected units to {level} ({level} is not a number).",
+      ("{level}", parameters[0]));
   }
 }

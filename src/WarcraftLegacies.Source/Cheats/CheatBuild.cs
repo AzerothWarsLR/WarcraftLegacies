@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Commands;
+using MacroTools.Localization;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -30,15 +31,15 @@ public sealed class CheatBuild : Command
     if (parameters[0] == "on")
     {
       SetCheatActive(cheater, true);
-      return "Instant build activated.";
+      return Loc.Get("Instant build activated.");
     }
 
     else if (parameters[0] == "off")
     {
       SetCheatActive(cheater, false);
-      return "Instant build deactivated.";
+      return Loc.Get("Instant build deactivated.");
     }
-    return $"The paramater {parameters[0]} did not equal 'on' or 'off'.";
+    return Loc.Format("The paramater {value} did not equal 'on' or 'off'.", ("{value}", parameters[0]));
   }
 
   /// <inheritdoc />

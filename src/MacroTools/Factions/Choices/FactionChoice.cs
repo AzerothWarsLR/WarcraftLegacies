@@ -24,7 +24,7 @@ public sealed class FactionChoice : IChoice
       var name = $"{Loc.Get(Faction.Name)} {Difficulty.ToColoredText()}";
       if (RequiresCheats)
       {
-        name += " |cffD27575(CHEAT)|r";
+        name += $" |cffD27575({Loc.Get("CHEAT")})|r";
       }
 
       return name;

@@ -1,4 +1,5 @@
-﻿using MacroTools.Quests;
+﻿using MacroTools.Localization;
+using MacroTools.Quests;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Objectives.UnitBased;
@@ -14,7 +15,10 @@ public sealed class ObjectiveBuild : Objective
     set
     {
       _currentBuildCount = value;
-      Description = $"Build {GetObjectName(_objectId)}s ({_currentBuildCount}/{_targetBuildCount})";
+      Description = Loc.Format("Build {unit}s ({current}/{target})",
+        ("{unit}", GetObjectName(_objectId)),
+        ("{current}", _currentBuildCount.ToString()),
+        ("{target}", _targetBuildCount.ToString()));
     }
   }
 

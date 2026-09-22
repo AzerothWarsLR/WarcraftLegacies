@@ -4,6 +4,7 @@ using System.Linq;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
 using MacroTools.GameTime;
+using MacroTools.Localization;
 using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
@@ -171,7 +172,7 @@ public sealed class ControlPointManager
       controlPoint.Unit.IsInvulnerable = true;
     }
 
-    controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
+    controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} {Loc.Get("gold/min")})";
     controlPoint.Unit.AddAbility(PiercingResistanceAbility);
 
     RegisterIncome(controlPoint);
