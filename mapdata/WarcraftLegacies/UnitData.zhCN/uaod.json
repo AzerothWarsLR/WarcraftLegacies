@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 祭坛）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗祭坛"
     }
   ]
 }

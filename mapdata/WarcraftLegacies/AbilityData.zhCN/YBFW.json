@@ -5,6 +5,12 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 3 头具有咆哮、猛击和致命一击的野性狼。|n持续<ACs7,Dur2>秒。|n|n|cffffcc00能攻击地面单位。|r\n"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（塞纳留斯）"
@@ -15,16 +21,10 @@
       "Value": "野性狼群之唤"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "野性狼群之唤"
-    },
-    {
       "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "召唤 3 头具有咆哮、猛击和致命一击的野性狼。|n持续<ACs7,Dur2>秒。|n|n|cffffcc00能攻击地面单位。|r"
+      "Value": "野性狼群之唤"
     }
   ],
   "NewId": "YBFW"

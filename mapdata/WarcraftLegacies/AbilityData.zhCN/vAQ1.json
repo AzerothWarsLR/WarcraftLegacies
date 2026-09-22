@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（物品 - 克苏恩之锣）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "发出一声骇人的嚎叫，使附近敌方单位的攻击伤害降低<vAQ1,DataA1,%>%，护甲降低<vAQ1,DataB1>，持续<vAQ1,Dur1>秒。"
     }
   ],

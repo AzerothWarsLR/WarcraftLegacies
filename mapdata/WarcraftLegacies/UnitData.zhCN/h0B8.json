@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暗夜精灵）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "炮舰"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造炮舰"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "远程攻城重型船只。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造炮舰"
+      "Value": "（暗夜精灵）"
     }
   ],
   "NewId": "h0B8"

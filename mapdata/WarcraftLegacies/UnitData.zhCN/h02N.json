@@ -13,6 +13,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伐木场"
     }
   ],
   "NewId": "h02N"

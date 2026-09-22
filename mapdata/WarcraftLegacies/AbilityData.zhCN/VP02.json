@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（军团恐惧魔王）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "吸血虹吸"
@@ -37,6 +32,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使英雄每次对敌人造成伤害时恢复适量生命值。效果随英雄等级提升。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团恐惧魔王）"
     }
   ],
   "NewId": "VP02"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "净化"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（青色 - 黑暗萨满，粉色 - 萨满祭司）"

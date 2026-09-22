@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（末日守卫）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤恶魔猎犬"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（末日守卫）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤恶魔猎犬"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤一头恶魔猎犬。|n|cffffcc00持续 120 秒。|R|n|n|cffffcc00能攻击地面单位。|r"
     }
   ],

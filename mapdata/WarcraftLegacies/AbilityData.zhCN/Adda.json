@@ -1,0 +1,13 @@
+{
+  "OldId": "Adda",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "死亡时造成范围伤害"
+    }
+  ]
+}

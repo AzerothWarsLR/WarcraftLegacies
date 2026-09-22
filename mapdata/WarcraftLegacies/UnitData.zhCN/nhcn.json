@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造塞纳留斯之角底座"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "塞纳留斯之角底座"
     }
   ]
 }

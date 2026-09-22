@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（天灾"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "维库狂战士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练维库狂战士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "维库人的精锐战士。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练维库狂战士"
+      "Value": "（天灾"
     }
   ],
   "NewId": "h061"

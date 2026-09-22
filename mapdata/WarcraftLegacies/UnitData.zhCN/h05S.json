@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练准将"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "西部荒野旅最优秀的志愿兵，随时准备保卫他的国王与祖国。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（暴风城驻军）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "准将"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "西部荒野旅最优秀的志愿兵，随时准备保卫他的国王与祖国。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练准将"
     }
   ],
   "NewId": "h05S"

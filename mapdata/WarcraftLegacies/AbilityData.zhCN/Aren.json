@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "复苏"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（浅蓝色/棕色 - 小精灵）"

@@ -5,17 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（德鲁伊 - 猛禽）"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "重生轮回"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "重生轮回"
@@ -25,6 +14,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "从附近一具友方尸体中创造出一个治疗鳞茎，它会在 10 秒内治疗周围的单位。每个治疗鳞茎最多恢复 600 点生命值。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 猛禽）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "重生轮回"
     }
   ],
   "NewId": "A0HT"

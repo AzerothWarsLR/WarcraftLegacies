@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（兽人部落 攻城）"
+      "Value": "建造攻城车间"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "攻城武器生产建筑。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落 攻城）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "攻城车间"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造攻城车间"
     }
   ],
   "NewId": "o05G"

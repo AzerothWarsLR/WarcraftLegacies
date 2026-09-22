@@ -5,21 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊）"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "大德鲁伊"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "神秘型英雄，擅长治疗盟友并扰乱敌人。"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤玛法里奥"
@@ -38,6 +23,21 @@
       "Id": "upro",
       "Type": 3,
       "Value": "玛法里奥·怒风"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长治疗盟友并扰乱敌人。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大德鲁伊"
     }
   ]
 }

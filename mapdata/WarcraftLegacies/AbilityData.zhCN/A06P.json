@@ -5,20 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（恐惧魔王）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "恐惧嚎叫"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "发出一声恐怖的嚎叫，使附近敌方单位的攻击力降低 25%，持续<Acht,Dur1>秒。"
     }
   ],

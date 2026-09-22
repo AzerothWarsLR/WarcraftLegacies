@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（黄色 - 达格兰·索瑞森）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "烈焰仪式"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习火焰仪式 - [|cffffcc00等级 %d|r]。"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤火元素为英雄的敌人而战。火元素随等级提升而变强，并具有献祭、焚身化骨和火焰之息技能。|n|n|cffffcc001级|r - <A0JF,DataB1>个火元素。|n|cffffcc002级|r - <A0JF,DataB2>个火元素。|n|cffffcc003级|r - <A0JF,DataB3>个火元素。|n|cffffcc004级|r - <A0JF,DataB4>个火元素。"
+      "Value": "召唤火元素为英雄的敌人而战。火元素随等级提升而变强，并具有献祭、焚身化骨和火焰之息技能。|n|n|cffffcc001级|r - <A0JF,DataB1>个火元素。|n|cffffcc002级|r - <A0JF,DataB2>个火元素。|n|cffffcc003级|r - <A0JF,DataB3>个火元素。|n|cffffcc004级|r - <A0JF,DataB4>个火元素。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄召唤<A0JF,DataB4>个火元素并肩作战。火元素具有献祭、焚身化骨和火焰之息技能。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色 - 达格兰·索瑞森）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习火焰仪式 - [|cffffcc00等级 %d|r]。"
     }
   ],
   "NewId": "A0JF"

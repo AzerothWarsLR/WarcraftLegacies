@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自深渊的扭曲触须。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "尼奥罗萨触须"
     },
     {
-      "Id": "utub",
+      "Id": "utip",
       "Type": 3,
-      "Value": "来自深渊的扭曲触须。"
+      "Value": "训练尼奥罗萨触须"
     }
   ],
   "NewId": "n08P"

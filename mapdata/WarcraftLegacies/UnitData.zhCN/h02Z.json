@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "升级为城堡，以解锁更多类型的建筑和单位。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物）"

@@ -16,15 +16,16 @@
       "Value": "不屈灵魂"
     },
     {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "不屈灵魂 - [|cffffcc002级|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "该单位死亡时，会复活附近等级最高的一具尸体，持续 40 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（天灾 - 亡魂）"
     },
     {
       "Level": 2,
@@ -33,10 +34,9 @@
       "Value": "该单位死亡时，会复活附近等级最高的两具尸体，持续 40 秒。"
     },
     {
-      "Level": 2,
-      "Id": "atp1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "不屈灵魂 - [|cffffcc002级|r]"
+      "Value": "（天灾 - 亡魂）"
     }
   ],
   "NewId": "A05L"

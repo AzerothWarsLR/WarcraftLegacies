@@ -5,17 +5,17 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "格雷迈恩之门"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（大门 - 开启）"
     },
     {
       "Id": "unam",
-      "Type": 3,
-      "Value": "格雷迈恩之门"
-    },
-    {
-      "Id": "utip",
       "Type": 3,
       "Value": "格雷迈恩之门"
     }

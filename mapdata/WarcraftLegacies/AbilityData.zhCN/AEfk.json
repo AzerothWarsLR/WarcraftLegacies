@@ -5,20 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（浅蓝色 - 玛维）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "守望者掷出一阵飞刀，伤害附近的敌人。|n|n|cffffcc00等级 1|r - 每个目标<AEfk,DataA1>点伤害。 |n|cffffcc00等级 2|r - 每个目标<AEfk,DataA2>点伤害。 |n|cffffcc00等级 3|r - 每个目标<AEfk,DataA3>点伤害。 |n|cffffcc00等级 4|r - 每个目标<AEfk,DataA4>点伤害。"
+      "Value": "守望者掷出一阵飞刀，伤害附近的敌人。|n|n|cffffcc00等级 1|r - 每个目标<AEfk,DataA1>点伤害。 |n|cffffcc00等级 2|r - 每个目标<AEfk,DataA2>点伤害。 |n|cffffcc00等级 3|r - 每个目标<AEfk,DataA3>点伤害。 |n|cffffcc00等级 4|r - 每个目标<AEfk,DataA4>点伤害。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "飞刀速掷 - [|cffffcc004级|r]"
+      "Value": "刀扇"
     },
     {
       "Level": 3,
@@ -31,6 +25,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "守望者掷出一连串飞刀，对附近的敌人造成伤害。每把飞刀造成<AEfk,DataA4>点伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 玛维）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "飞刀速掷 - [|cffffcc004级|r]"
     }
   ]
 }

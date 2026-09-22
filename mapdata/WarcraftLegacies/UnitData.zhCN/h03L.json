@@ -5,24 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "散弹枪手"
     },
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "|cff2fc6ba射手 单位|r"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "训练散弹枪手"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba射手 单位|r"
     }
   ],
   "NewId": "h03L"

@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（铁炉堡）"
+      "Value": "战争魔像"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战争魔像"
     },
     {
       "Id": "utub",
@@ -15,9 +20,9 @@
       "Value": "重型抗魔法近战单位。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练战争魔像"
+      "Value": "（铁炉堡）"
     }
   ],
   "NewId": "n02D"

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（野外生物）"
+      "Value": "训练占卜师"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "与赞达拉之灵相连的攻击型施法者。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "占卜师"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练占卜师"
     }
   ],
   "NewId": "o04G"

@@ -5,19 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（德莱尼）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习圣光军团 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "从虚空中召唤多个光铸战争机甲。|n|n|cffffcc001级|r - 召唤 6 个光铸战争机甲。 |n|cffffcc002级|r - 召唤 10 个光铸战争机甲。 |n|cffffcc003级|r - 召唤 14 个光铸战争机甲。"
+      "Value": "从虚空中召唤多个光铸战争机甲。|n|n|cffffcc001级|r - 召唤 6 个光铸战争机甲。 |n|cffffcc002级|r - 召唤 10 个光铸战争机甲。 |n|cffffcc003级|r - 召唤 14 个光铸战争机甲。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "圣光军团"
     },
     {
       "Level": 1,
@@ -56,9 +51,14 @@
       "Value": "从虚空中召唤 14 个光铸战争机甲。"
     },
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "圣光军团"
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习圣光军团 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0ZH"

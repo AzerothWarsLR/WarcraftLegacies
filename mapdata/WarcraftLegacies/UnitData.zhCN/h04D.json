@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "逐日者王朝忠诚的凤凰。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（奎尔萨拉斯 - 安纳斯特里亚 - 等级 2）"
@@ -15,9 +20,9 @@
       "Value": "奥"
     },
     {
-      "Id": "utub",
+      "Id": "utip",
       "Type": 3,
-      "Value": "逐日者王朝忠诚的凤凰。"
+      "Value": "训练奥"
     }
   ],
   "NewId": "h04D"

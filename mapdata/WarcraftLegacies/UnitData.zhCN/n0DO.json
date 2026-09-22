@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（燃烧军团）"
+      "Value": "末日守卫"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "燃烧军团的精锐战士。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
     }
   ],
   "NewId": "n0DO"

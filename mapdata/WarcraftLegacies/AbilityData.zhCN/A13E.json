@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "腐尸甲虫"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（猛禽德鲁伊）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "德鲁伊从附近召唤 2 只蜘蛛。这些蜘蛛无法被选为目标，也无法被控制，并会攻击附近的敌人。"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "召唤蜘蛛"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤蜘蛛"
     }
   ],

@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（戈德林）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "白狼之怒"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习白狼之怒 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "使该单位的攻击速度大幅提高，移动速度提高<A0SV,DataA1,%>%，但受到的伤害增加<A0SV,DataC1,%>%。 |n持续 7 秒。|n|n|cffffcc001级|r - 攻击速度提高<A0SV,DataB1,%>%。|n|cffffcc002级|r - 攻击速度提高<A0SV,DataB2,%>%。|n|cffffcc003级|r - 攻击速度提高<A0SV,DataB3,%>%。 |n|cffffcc004级|r - 攻击速度提高<A0SV,DataB4,%>%。"
+      "Value": "使该单位的攻击速度大幅提高，移动速度提高<A0SV,DataA1,%>%，但受到的伤害增加<A0SV,DataC1,%>%。 |n持续 7 秒。|n|n|cffffcc001级|r - 攻击速度提高<A0SV,DataB1,%>%。|n|cffffcc002级|r - 攻击速度提高<A0SV,DataB2,%>%。|n|cffffcc003级|r - 攻击速度提高<A0SV,DataB3,%>%。 |n|cffffcc004级|r - 攻击速度提高<A0SV,DataB4,%>%。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使该单位的攻击速度提高<A0SV,DataB4,%>%，移动速度提高<A0SV,DataA4,%>%，但受到的伤害增加<A0SV,DataC4,%>%。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（戈德林）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习白狼之怒 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0SV"

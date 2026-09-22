@@ -1,0 +1,19 @@
+{
+  "OldId": "MD10",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "心灵之火"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个目标友方单位的攻击力提高<MD10,DataA1,%>%，护甲提高<MD10,DataB1>，生命恢复速度提高<MD10,DataD1>。 |n持续<MD10,Dur1>秒。"
+    }
+  ]
+}

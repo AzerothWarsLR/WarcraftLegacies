@@ -5,20 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（伊利丹）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "让恶魔猎手被烈焰吞噬，对附近的敌方地面单位造成伤害。 |n持续消耗法力直到取消。 |n|n|cffffcc001级|r - 每秒<ZBL6,DataA1>点伤害。 |n|cffffcc002级|r - 每秒<ZBL6,DataA2>点伤害。 |n|cffffcc003级|r - 每秒<ZBL6,DataA3>点伤害。|n|cffffcc004级|r - 每秒<ZBL6,DataA4>点伤害。"
+      "Value": "让恶魔猎手被烈焰吞噬，对附近的敌方地面单位造成伤害。 |n持续消耗法力直到取消。 |n|n|cffffcc001级|r - 每秒<ZBL6,DataA1>点伤害。 |n|cffffcc002级|r - 每秒<ZBL6,DataA2>点伤害。 |n|cffffcc003级|r - 每秒<ZBL6,DataA3>点伤害。|n|cffffcc004级|r - 每秒<ZBL6,DataA4>点伤害。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "激活献祭 - [|cffffcc004级|r]"
+      "Value": "献祭"
     },
     {
       "Level": 4,
@@ -43,6 +37,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "激活献祭后，该单位会被烈焰包裹，每秒对附近的敌方地面单位造成<ZBL6,DataA3>点伤害。 |n持续消耗法力直到取消。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（伊利丹）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "激活献祭 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "ZBL6"

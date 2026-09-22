@@ -5,27 +5,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔法岗哨"
+    },
+    {
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（战歌）"
     },
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Level": 1,
       "Value": "强化震荡波"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "研究强化震荡波"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "强化库卡隆震荡波，使其造成的伤害提高至<A01T,DataA2>，最大伤害提高至<A01T,DataB2>，冷却时间缩短至<A01T,Cool2>秒。"
     }
   ],

@@ -5,27 +5,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "混乱"
+    },
+    {
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（达拉然）（任务）"
     },
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Level": 1,
       "Value": "坚硬水晶构造体"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "研究坚硬水晶构造体"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "将土魔像转化为水晶魔像，使其生命值提高 500 点，攻击伤害提高 20 点。"
     }
   ],

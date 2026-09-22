@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "掷矛手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练掷矛手"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "协助快速防卫暴风城的西部荒野神射手。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练掷矛手"
+      "Value": "（暴风城）"
     }
   ],
   "NewId": "h00A"

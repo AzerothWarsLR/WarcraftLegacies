@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可使敌人减速的轻型近战单位。对法术免疫。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（达拉然）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "可使敌人减速的轻型近战单位。对法术免疫。"
+      "Value": "泥土魔像"
     }
   ],
   "NewId": "n0BO"

@@ -5,19 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（军团英雄）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习死亡之触 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一道死亡之锥伤害敌人。 |n|n|cffffcc001级|r - 对每个单位造成<VP03,DataA1>点伤害，最多影响<VP03,DataB1>个单位。 |n|cffffcc002级|r - 对每个单位造成<VP03,DataA2>点伤害，最多影响<VP03,DataB2>个单位。 |n|cffffcc003级|r - 对每个单位造成<VP03l,DataA3>点伤害，最多影响<VP03,DataB3>个单位。 |n|cffffcc004级|r - 对每个单位造成<VP03,DataA4>点伤害，最多影响<VP03,DataB4>个单位。"
+      "Value": "召唤一道死亡之锥伤害敌人。 |n|n|cffffcc001级|r - 对每个单位造成<VP03,DataA1>点伤害，最多影响<VP03,DataB1>个单位。 |n|cffffcc002级|r - 对每个单位造成<VP03,DataA2>点伤害，最多影响<VP03,DataB2>个单位。 |n|cffffcc003级|r - 对每个单位造成<VP03l,DataA3>点伤害，最多影响<VP03,DataB3>个单位。 |n|cffffcc004级|r - 对每个单位造成<VP03,DataA4>点伤害，最多影响<VP03,DataB4>个单位。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "死亡之触"
     },
     {
       "Level": 1,
@@ -68,9 +63,14 @@
       "Value": "对近战范围内的目标敌方单位召唤一道死亡之锥，最多命中<VP03,DataB4>个敌方单位，造成<VP03,DataA4>点伤害。"
     },
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "死亡之触"
+      "Value": "（军团英雄）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习死亡之触 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "VP03"

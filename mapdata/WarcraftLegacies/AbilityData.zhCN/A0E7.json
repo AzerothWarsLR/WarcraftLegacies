@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "驱散魔法"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（洛丹伦 - 法师）"

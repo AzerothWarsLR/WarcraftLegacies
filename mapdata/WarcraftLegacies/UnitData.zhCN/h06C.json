@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造高塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦专家）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "高塔"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "高级部队生产建筑。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造高塔"
     }
   ],
   "NewId": "h06C"

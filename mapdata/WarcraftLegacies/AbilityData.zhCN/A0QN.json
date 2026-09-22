@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（青色 - 祖鲁希德）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "生成熔岩爪牙"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 祖鲁希德）"
     }
   ],
   "NewId": "A0QN"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "石拳痛击者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "食人魔军团的大型残暴战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "石拳痛击者"
     }
   ],
   "NewId": "n07Z"

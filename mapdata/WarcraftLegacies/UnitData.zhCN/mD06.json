@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "呼唤野猪之灵来拯救你。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "Diadon2 - 8v8 第二赛季冠军"

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德鲁伊 - 召唤物）"
+      "Value": "训练树人"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "基本的木质战士"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练树人"
+      "Value": "（德鲁伊 - 召唤物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "树人"
     }
   ]
 }

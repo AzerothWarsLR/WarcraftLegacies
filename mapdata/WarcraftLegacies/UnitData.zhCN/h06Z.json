@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城塔）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "强化奥术塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为(|cffffcc00Z|r)强化奥术塔"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "强化魔法防御建筑。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "升级为(|cffffcc00Z|r)强化奥术塔"
+      "Value": "（暴风城塔）"
     }
   ],
   "NewId": "h06Z"

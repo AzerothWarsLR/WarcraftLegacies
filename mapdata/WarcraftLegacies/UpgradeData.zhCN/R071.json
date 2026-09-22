@@ -6,9 +6,15 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
+      "Id": "gnam",
       "Type": 3,
-      "Value": "（巨魔）"
+      "Value": "巫医专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "巫医大师级训练"
     },
     {
       "Level": 1,
@@ -35,16 +41,10 @@
       "Value": "提高妖术医师的法力值上限、法力恢复速度、生命值，并使其获得施放妖术的能力。"
     },
     {
+      "Id": "gnsf",
+      "Type": 3,
       "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "巫医专家级训练"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "巫医大师级训练"
+      "Value": "（巨魔）"
     }
   ],
   "NewId": "R071"

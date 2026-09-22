@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（燃烧军团）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "末日领主"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤末日领主"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "受命守卫大恶魔的精锐防御者。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤末日领主"
+      "Value": "（燃烧军团）"
     }
   ],
   "NewId": "n04O"

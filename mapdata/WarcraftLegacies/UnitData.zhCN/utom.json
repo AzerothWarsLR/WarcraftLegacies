@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 商店）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "遗物陵墓"
     }
   ]
 }

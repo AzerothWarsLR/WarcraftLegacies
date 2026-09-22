@@ -5,19 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（燃烧军团）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "黑暗者"
     },
     {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "提克迪奥斯"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长操控敌人并从内部瓦解他们。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
     },
     {
       "Id": "utip",

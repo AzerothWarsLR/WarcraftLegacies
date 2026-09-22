@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造沙塔斯"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德莱尼其他）"
@@ -13,11 +18,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "沙塔斯"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造沙塔斯"
     }
   ],
   "NewId": "h0AH"

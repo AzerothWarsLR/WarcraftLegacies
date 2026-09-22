@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "闪电宝珠"
+    },
+    {
       "Id": "utip",
       "Type": 3,
-      "Value": "购买闪电宝珠"
+      "Value": "购买奥术宝珠"
     },
     {
       "Id": "utub",
@@ -18,11 +23,6 @@
       "Id": "ides",
       "Type": 3,
       "Value": "攻击造成奥术伤害。"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "奥术宝珠"
     }
   ]
 }

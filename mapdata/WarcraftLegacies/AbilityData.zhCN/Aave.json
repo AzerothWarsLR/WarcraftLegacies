@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "黑曜石毁灭者形态"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 毁灭者）（未使用）"

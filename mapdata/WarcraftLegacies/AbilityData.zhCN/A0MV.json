@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（吉尔尼斯）"
+      "Value": "治疗术"
     },
     {
       "Level": 2,
@@ -50,6 +50,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "为一个受伤的目标友方非机械单位恢复 20 点生命值。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
     }
   ],
   "NewId": "A0MV"

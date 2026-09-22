@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "强大的骑乘战士。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "英勇骑士"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练英勇骑士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的骑乘战士。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
     }
   ],
   "NewId": "h0CP"

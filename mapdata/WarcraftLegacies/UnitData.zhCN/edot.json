@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（德鲁伊）"
+      "Value": "猛禽德鲁伊"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "支援型施法单位。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
     }
   ]
 }

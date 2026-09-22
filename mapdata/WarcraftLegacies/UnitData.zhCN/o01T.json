@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "utip",
       "Type": 3,
-      "Value": "宝藏堆"
+      "Value": "建造宝藏堆"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "创建一个可购买物品的商店。"
     },
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "宝藏堆"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌 商店）"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造宝藏堆"
     }
   ],
   "NewId": "o01T"

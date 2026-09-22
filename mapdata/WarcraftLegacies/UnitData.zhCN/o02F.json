@@ -5,24 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "投石机"
     },
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "|cff2fc6ba攻城 单位|r"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "训练投石机"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷巨石的攻城武器。"
     }
   ],
   "NewId": "o02F"

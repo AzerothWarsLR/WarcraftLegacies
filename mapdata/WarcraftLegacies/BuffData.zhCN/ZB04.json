@@ -18,6 +18,11 @@
       "Id": "fnam",
       "Type": 3,
       "Value": "收割"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（）"
     }
   ],
   "NewId": "ZB04"

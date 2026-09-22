@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "arut",
       "Type": 3,
-      "Value": "（洛瑟玛）"
+      "Value": "召唤数波流星从天而降，对周围的敌方单位造成伤害。|n持续 30 秒。|n|n|cffffcc001级|r - 每波造成<AEsf,DataA1>点伤害。|n|cffffcc002级|r - 每波造成<AEsf,DataA2>点伤害。|n|cffffcc003级|r - 每波造成<AEsf,DataA3>点伤害。|n|n持续<AEsf,Dur1>秒。|n\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "星辰坠落"
     },
     {
       "Level": 1,
@@ -40,15 +45,15 @@
       "Value": "召唤数波星光从天而降，对周围的敌方单位造成伤害。每波造成<A007,DataA3>点伤害。|n持续<A007,Dur3>秒。"
     },
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "召唤数波流星从天而降，对周围的敌方单位造成伤害。|n持续 30 秒。|n|n|cffffcc001级|r - 每波造成<AEsf,DataA1>点伤害。|n|cffffcc002级|r - 每波造成<AEsf,DataA2>点伤害。|n|cffffcc003级|r - 每波造成<AEsf,DataA3>点伤害。|n|n持续<AEsf,Dur1>秒。|n"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤数波星光从天而降，对周围的敌方单位造成伤害。每波造成<A007,DataA1>点伤害。|n持续<A007,Dur1>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛瑟玛）"
     }
   ],
   "NewId": "A007"

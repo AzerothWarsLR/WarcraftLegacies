@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（深绿色 - 加伦）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "瞬间复苏"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习瞬间复苏 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "托尔贝恩借助活力护身符的力量，瞬间将自身生命值恢复至全满。|n|n|cffffcc001级|r - 冷却时间 100 秒。|n|cffffcc002级|r - 冷却时间 85 秒。|n|cffffcc003级|r - 冷却时间 60 秒。"
+      "Value": "托尔贝恩借助活力护身符的力量，瞬间将自身生命值恢复至全满。|n|n|cffffcc001级|r - 冷却时间 100 秒。|n|cffffcc002级|r - 冷却时间 85 秒。|n|cffffcc003级|r - 冷却时间 60 秒。\n"
     },
     {
       "Level": 1,
@@ -59,6 +49,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "托尔贝恩借助活力护身符的力量，瞬间将自身生命值恢复至全满。                                                    |cff99b4d160 秒冷却时间|r"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 加伦）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习瞬间复苏 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A08O"

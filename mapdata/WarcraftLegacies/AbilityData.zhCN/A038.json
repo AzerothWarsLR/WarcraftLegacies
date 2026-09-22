@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（紫色 - 加里瑟斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "骑兵冲锋"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习骑兵冲锋 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤数波勇敢的骑士冲入敌阵。|n|n|cffffcc001级|r - 每名冲锋的骑士造成 40 点伤害。|n|cffffcc002级|r - 每名冲锋的骑士造成 70 点伤害。|n|cffffcc003级|r - 每名冲锋的骑士造成 100 点伤害。|n|n持续 30 秒。"
+      "Value": "召唤数波勇敢的骑士冲入敌阵。|n|n|cffffcc001级|r - 每名冲锋的骑士造成 40 点伤害。|n|cffffcc002级|r - 每名冲锋的骑士造成 70 点伤害。|n|cffffcc003级|r - 每名冲锋的骑士造成 100 点伤害。|n|n持续 30 秒。\n"
     },
     {
       "Level": 1,
@@ -59,6 +49,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤数波冲锋的骑士。每名骑士造成 100 点伤害。|n持续 30 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（紫色 - 加里瑟斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习骑兵冲锋 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A038"

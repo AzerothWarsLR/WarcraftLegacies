@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜吐息"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(水晶领主"

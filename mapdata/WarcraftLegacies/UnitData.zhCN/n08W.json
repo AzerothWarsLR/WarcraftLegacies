@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造德莱尼小屋"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "德莱尼部队生产建筑。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（伊利达雷专家）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "德莱尼小屋"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "德莱尼部队生产建筑。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造德莱尼小屋"
     }
   ],
   "NewId": "n08W"

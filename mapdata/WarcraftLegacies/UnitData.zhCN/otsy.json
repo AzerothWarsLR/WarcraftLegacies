@@ -1,0 +1,29 @@
+{
+  "OldId": "oshy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族 船坞）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "牛头人码头"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造牛头人码头"
+    }
+  ],
+  "NewId": "otsy"
+}

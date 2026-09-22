@@ -1,0 +1,14 @@
+{
+  "OldId": "ncim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族 伏兵）"
+    }
+  ],
+  "NewId": "otci"
+}

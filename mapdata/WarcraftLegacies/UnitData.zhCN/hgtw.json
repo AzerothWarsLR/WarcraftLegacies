@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "警戒塔"
+    },
+    {
       "Id": "utub",
       "Type": 3,
-      "Value": "|cff2fc6ba防御塔|r"
+      "Value": "主要防御建筑。"
     },
     {
       "Id": "unsf",

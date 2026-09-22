@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吸血光环"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（霜狼角斗士）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "附近友方近战单位在攻击敌方单位时，可获得其攻击伤害的 10%。"
     }
   ],

@@ -5,54 +5,44 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "arut",
       "Type": 3,
-      "Value": "（洛丹伦 - 亚历山德罗斯）"
+      "Value": "提高亚历山德罗斯的攻击速度和移动速度。持续 12 秒。|n|cffffcc00|n级别 1 |r - 攻击速度提高 40%，移动速度提高 10%。|n|cffffcc00级别 2 |r - 攻击速度提高 70%，移动速度提高 15%。|n|cffffcc00级别 3 |r - 攻击速度提高 100%，移动速度提高 20%。|n|cffffcc00级别 4|r - 攻击速度提高 130%，移动速度提高 25%。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "狂暴"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂暴 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂暴 - [|cffffcc00级别 2|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂暴 - [|cffffcc00级别 4|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂暴 - [|cffffcc00级别 3|r]"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "使该单位的攻击速度提高 40%，移动速度提高 10%。|n持续 12 秒。"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "神圣之力"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习神圣之力 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "提高亚历山德罗斯的攻击速度和移动速度。持续 12 秒。|n|cffffcc00|n级别 1 |r - 攻击速度提高 40%，移动速度提高 10%。|n|cffffcc00级别 2 |r - 攻击速度提高 70%，移动速度提高 15%。|n|cffffcc00级别 3 |r - 攻击速度提高 100%，移动速度提高 20%。|n|cffffcc00级别 4|r - 攻击速度提高 130%，移动速度提高 25%。"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "神圣之力 - [|cffffcc00级别 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "神圣之力 - [|cffffcc00级别 2|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "神圣之力 - [|cffffcc00级别 4|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "神圣之力 - [|cffffcc00级别 3|r]"
     },
     {
       "Level": 2,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使该单位的攻击速度提高 130%，移动速度提高 25%。|n持续 12 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 亚历山德罗斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣之力 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "MD01"

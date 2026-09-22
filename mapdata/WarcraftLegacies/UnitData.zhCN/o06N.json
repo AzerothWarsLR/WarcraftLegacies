@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "奥术结界"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练奥术结界"
     }
   ],
   "NewId": "o06N"

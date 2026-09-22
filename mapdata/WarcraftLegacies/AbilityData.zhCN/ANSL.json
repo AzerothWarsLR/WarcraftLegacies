@@ -5,15 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "arut",
       "Type": 3,
-      "Value": "（恩佐斯）"
+      "Value": "使目标敌方单位进入睡眠。被攻击会惊醒睡眠中的单位。 |n|n|cffffcc001级|r - 睡眠<ANSL,Dur1>秒，消耗<ANSL,Cost1>点魔法值。 |n|cffffcc002级|r - 睡眠<ANSL,Dur2>秒，消耗<ANSL,Cost2>点魔法值。 |n|cffffcc003级|r - 睡眠<ANSL,Dur3>秒，消耗<ANSL,Cost3>点魔法值。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "睡眠 - [|cffffcc004级|r]"
+      "Value": "沉睡"
     },
     {
       "Level": 1,
@@ -40,9 +39,15 @@
       "Value": "使目标敌方单位进入睡眠，持续 60 秒。被攻击会惊醒睡眠中的单位。对英雄持续 20 秒。"
     },
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "使目标敌方单位进入睡眠。被攻击会惊醒睡眠中的单位。 |n|n|cffffcc001级|r - 睡眠<ANSL,Dur1>秒，消耗<ANSL,Cost1>点魔法值。 |n|cffffcc002级|r - 睡眠<ANSL,Dur2>秒，消耗<ANSL,Cost2>点魔法值。 |n|cffffcc003级|r - 睡眠<ANSL,Dur3>秒，消耗<ANSL,Cost3>点魔法值。"
+      "Value": "（恩佐斯）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "睡眠 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "ANSL"

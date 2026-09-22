@@ -1,0 +1,13 @@
+{
+  "OldId": "AI2m",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 法力值加成 (200)"
+    }
+  ]
+}

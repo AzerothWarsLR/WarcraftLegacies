@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（德莱尼）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤土元素"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤土元素"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤一个土元素攻击元素师的敌人。 |n持续 60 秒。 |n|n|cffffcc00能攻击地面和空中单位。|r"
     }
   ],

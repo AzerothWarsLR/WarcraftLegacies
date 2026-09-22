@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（中立生物 T2）"
+      "Value": "据点"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 T2）"
     }
   ],
   "NewId": "o03A"

@@ -1,0 +1,14 @@
+{
+  "OldId": "BEer",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cffff0000达拉然护盾|r"
+    }
+  ],
+  "NewId": "B0DS"
+}

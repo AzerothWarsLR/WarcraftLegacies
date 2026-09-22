@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（哨兵）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "女祭司"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练女祭司"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "艾露恩的神圣女祭司。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练女祭司"
+      "Value": "（哨兵）"
     }
   ],
   "NewId": "e006"

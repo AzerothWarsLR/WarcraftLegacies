@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（紫色 - 白银之手圣骑士）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "奉献打击"
@@ -109,6 +104,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "攻击时有 20% 的几率对附近单位造成 70 点伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（紫色 - 白银之手圣骑士）"
     }
   ],
   "NewId": "A04W"

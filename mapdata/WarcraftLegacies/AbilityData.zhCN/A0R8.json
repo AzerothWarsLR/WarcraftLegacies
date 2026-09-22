@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "隐形术"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（深绿色 - 咒术师）"

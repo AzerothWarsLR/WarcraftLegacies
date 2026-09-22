@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有致命一击的中型近战单位。可施放咆哮。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德鲁伊 - 塞纳留斯召唤）"
@@ -13,11 +18,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "野狼"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "拥有致命一击的中型近战单位。可施放咆哮。"
     }
   ],
   "NewId": "n08K"

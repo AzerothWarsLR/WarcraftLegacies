@@ -5,12 +5,7 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡其他）"
-    },
-    {
-      "Id": "unam",
+      "Id": "utip",
       "Type": 3,
       "Value": "塞尔萨玛"
     },
@@ -20,7 +15,12 @@
       "Value": "塞尔萨玛"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡其他）"
+    },
+    {
+      "Id": "unam",
       "Type": 3,
       "Value": "塞尔萨玛"
     }

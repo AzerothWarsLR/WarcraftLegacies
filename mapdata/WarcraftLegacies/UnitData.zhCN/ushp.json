@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "utip",
       "Type": 3,
-      "Value": "被诅咒的港口"
+      "Value": "召唤被诅咒的港口"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "船只建造设施。"
     },
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "被诅咒的港口"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 船坞）"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤被诅咒的港口"
     }
   ]
 }

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德莱尼）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "光铸龙骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤光铸龙骑士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "受纳鲁祝福的德莱尼精英战士。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤光铸龙骑士"
+      "Value": "（德莱尼）"
     }
   ],
   "NewId": "n0BM"

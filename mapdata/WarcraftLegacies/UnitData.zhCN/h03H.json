@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造船坞"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（吉尔尼斯船坞）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "船坞"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "船只建造设施。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造船坞"
     }
   ],
   "NewId": "h03H"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "一分为二的水晶魔像。对法术免疫。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（达拉然-活体碎片）"
@@ -13,11 +18,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "碎片魔像"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "一分为二的水晶魔像。对法术免疫。"
     }
   ],
   "NewId": "n0AE"

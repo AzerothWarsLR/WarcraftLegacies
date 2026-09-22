@@ -1,0 +1,29 @@
+{
+  "OldId": "ofor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族 研究）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战争磨坊"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造战争磨坊"
+    }
+  ],
+  "NewId": "otwm"
+}

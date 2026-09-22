@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（达拉然 - 战斗法师）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "相位之刃"
@@ -37,6 +32,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "攻击敌人时造成<A057,DataA2>点额外伤害，但每次攻击都会消耗法力值。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 战斗法师）"
     }
   ],
   "NewId": "A057"

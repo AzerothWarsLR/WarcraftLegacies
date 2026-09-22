@@ -5,6 +5,21 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活玛诺洛斯，毁灭者"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活玛诺洛斯"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "玛诺洛斯"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌 - 血契）"
@@ -16,16 +31,6 @@
     },
     {
       "Id": "utip",
-      "Type": 3,
-      "Value": "复活玛诺洛斯"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活玛诺洛斯"
-    },
-    {
-      "Id": "uawt",
       "Type": 3,
       "Value": "复活玛诺洛斯"
     }

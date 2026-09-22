@@ -5,29 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "不朽者"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "神秘型英雄，擅长圣光魔法并援助盟友。"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "先知维伦"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤维伦"
     },
     {
       "Id": "utpr",
@@ -35,9 +15,29 @@
       "Value": "复活维伦"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤维伦"
+    },
+    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活维伦"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长圣光魔法并援助盟友。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "先知维伦"
     }
   ],
   "NewId": "E01I"

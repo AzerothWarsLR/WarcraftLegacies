@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练治疗结界"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（霜狼 - 巫医）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "治疗结界"
     }
   ]
 }

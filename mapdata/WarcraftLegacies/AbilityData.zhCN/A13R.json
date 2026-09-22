@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（克尔苏加德）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "群体霜甲术"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习群体霜甲术 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "为目标区域内的所有友方单位施加霜甲术，持续<A13S,DataA1>秒。|n|n|cffffcc00等级 1|r - 提供<A13S,DataB1>点护甲，冷却时间<A13R,Cool1>秒。|n|cffffcc00等级 2|r - 提供<A13S,DataB2>点护甲，冷却时间<A13R,Cool2>秒。|n|cffffcc00等级 3|r - 提供<A13S,DataB3>点护甲，冷却时间<A13R,Cool3>秒。|n|cffffcc00等级 4|r - 提供<A13S,DataB4>点护甲，冷却时间<A13R,Cool4>秒。"
+      "Value": "为目标区域内的所有友方单位施加霜甲术，持续<A13S,DataA1>秒。|n|n|cffffcc00等级 1|r - 提供<A13S,DataB1>点护甲，冷却时间<A13R,Cool1>秒。|n|cffffcc00等级 2|r - 提供<A13S,DataB2>点护甲，冷却时间<A13R,Cool2>秒。|n|cffffcc00等级 3|r - 提供<A13S,DataB3>点护甲，冷却时间<A13R,Cool3>秒。|n|cffffcc00等级 4|r - 提供<A13S,DataB4>点护甲，冷却时间<A13R,Cool4>秒。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "为目标区域内的所有友方单位施加霜甲术，持续<A13S,DataA4>秒，提供<A13S,DataB4>点额外护甲，并使攻击该单位的单位减速 2 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克尔苏加德）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群体霜甲术 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A13R"

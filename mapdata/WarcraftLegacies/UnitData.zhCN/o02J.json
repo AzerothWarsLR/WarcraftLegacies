@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "狼人"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练狼人"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "凶猛的近战单位，能对敌人发动毁灭性打击。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练狼人"
+      "Value": "（吉尔尼斯）"
     }
   ],
   "NewId": "o02J"

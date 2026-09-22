@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（邪能）"
+      "Value": "训练通灵师"
     },
     {
       "Id": "unam",
@@ -20,9 +20,9 @@
       "Value": "兽人旧日岁月的通灵师，身经百战的老兵。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练通灵师"
+      "Value": "（邪能）"
     }
   ],
   "NewId": "u00V"

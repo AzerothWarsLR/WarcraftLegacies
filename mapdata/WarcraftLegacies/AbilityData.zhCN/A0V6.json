@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "粉碎"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（扎卡兹）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "普通攻击有 25% 的几率对周围单位造成 50 点伤害。"
     }
   ],

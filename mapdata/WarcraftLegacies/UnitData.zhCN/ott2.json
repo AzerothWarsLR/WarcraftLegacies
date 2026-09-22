@@ -1,0 +1,29 @@
+{
+  "OldId": "nbt2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "高级巨石塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化了望塔"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族 防御塔 2）"
+    }
+  ],
+  "NewId": "ott2"
+}

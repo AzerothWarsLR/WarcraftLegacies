@@ -5,20 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗喷雾"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（食人魔法师）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "治疗喷雾"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "喷出<A092,DataF1>波治疗迷雾，每波为一定区域内的所有友方单位恢复<A092,DataA1>点生命值。"
     }
   ],

@@ -5,27 +5,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔法岗哨"
+    },
+    {
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（德鲁伊）"
     },
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Level": 1,
       "Value": "风暴乌鸦形态"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "风暴乌鸦形态"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使猛禽德鲁伊能够变形为飞行单位，可攻击地面和空中单位。"
     }
   ],

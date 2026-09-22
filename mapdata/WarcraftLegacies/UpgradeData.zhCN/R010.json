@@ -5,27 +5,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "控制魔法"
+    },
+    {
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（铁炉堡）"
     },
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Level": 1,
       "Value": "强化法术抗性"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "研究强化法术抗性"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "强化战争魔像的法术抗性，使其受到的法术和魔法攻击伤害降低 90%。"
     }
   ],

@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "嗜血图腾"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练嗜血图腾"
     }
   ],
   "NewId": "o01D"

@@ -5,26 +5,31 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴乌鸦形态"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（棕色 - 猛禽德鲁伊）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "让德鲁伊变为风暴乌鸦形态，获得飞行能力。可施放轮回转生。|n|n|cffffcc00能攻击空中单位。|r"
     },
     {
-      "Level": 1,
       "Id": "aut1",
       "Type": 3,
+      "Level": 1,
       "Value": "猛禽德鲁伊形态"
     },
     {
-      "Level": 1,
       "Id": "auu1",
       "Type": 3,
+      "Level": 1,
       "Value": "让德鲁伊变回自然形态。"
     }
   ]

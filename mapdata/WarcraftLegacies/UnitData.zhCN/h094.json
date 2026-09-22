@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造攻城车间"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦攻城）"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "攻城武器生产建筑。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造攻城车间"
     }
   ],
   "NewId": "h094"

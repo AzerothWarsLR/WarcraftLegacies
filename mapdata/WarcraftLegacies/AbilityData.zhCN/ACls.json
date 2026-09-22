@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电之盾"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（中立敌对。棕色 - 伊森德雷、熊怪萨满祭司、伊利达雷先知）"

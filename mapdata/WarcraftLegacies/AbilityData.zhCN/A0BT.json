@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术书"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（麦迪文之书）"

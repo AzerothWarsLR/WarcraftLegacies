@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡工人）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "石匠"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练石匠"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "技艺娴熟的工匠，矮人奇迹的设计者。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练石匠"
+      "Value": "（铁炉堡工人）"
     }
   ],
   "NewId": "h019"

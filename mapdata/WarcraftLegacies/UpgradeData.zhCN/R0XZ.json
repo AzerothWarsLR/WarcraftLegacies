@@ -5,27 +5,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "防御"
+    },
+    {
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（洛丹伦-血色）"
     },
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Level": 1,
       "Value": "血色十字军"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "血色十字军"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "洛丹伦的土地已被瘟疫吞噬。血色十字军自其灰烬中崛起，满怀复仇之志。|n|n你将转变为血色十字军阵营，出生地为避风郡。"
     }
   ],

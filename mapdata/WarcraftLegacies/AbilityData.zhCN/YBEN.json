@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "诱捕"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（纳迦侍从）"

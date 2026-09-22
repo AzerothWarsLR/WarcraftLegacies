@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "霜甲术"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 冰雪亡魂狮鹫 死亡骑士）"

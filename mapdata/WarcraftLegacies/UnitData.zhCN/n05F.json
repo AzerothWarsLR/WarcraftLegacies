@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能 T1 虚空行者）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "虚空行者恶魔之门"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为虚空行者恶魔之门"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "与燃烧远征的虚空行者调谐的传送门，每 30 秒召唤 1 个。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "升级为虚空行者恶魔之门"
+      "Value": "（邪能 T1 虚空行者）"
     }
   ],
   "NewId": "n05F"

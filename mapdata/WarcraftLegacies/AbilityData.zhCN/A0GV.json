@@ -5,44 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（库尔提拉斯 - 艾什凡女士）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "使攻击有一定几率造成额外伤害。 |n|n|cffffcc001级|r - <A0GV,DataC1>点伤害。 |n|cffffcc002级|r - <A0GV,DataC2>点伤害。 |n|cffffcc003级|r - <A0GV,DataC3>点伤害。|n|cffffcc004级|r - <A0GV,DataC4>点伤害。"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "鹰眼 - [|cffffcc004级|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "攻击有<A0GV,DataA1>%的几率造成<A0GV,DataC1>点额外伤害。"
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "攻击有<A0GV,DataA2>%的几率造成<A0GV,DataC2>点额外伤害。"
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "攻击有<A0GV,DataA3>%的几率造成<A0GV,DataC3>点额外伤害。"
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "攻击有<A0GV,DataA4>%的几率造成<A0GV,DataC4>点额外伤害。"
+      "Value": "使攻击有一定几率造成额外伤害。 |n|n|cffffcc001级|r - <A0GV,DataC1>点伤害。 |n|cffffcc002级|r - <A0GV,DataC2>点伤害。 |n|cffffcc003级|r - <A0GV,DataC3>点伤害。|n|cffffcc004级|r - <A0GV,DataC4>点伤害。\n"
     },
     {
       "Id": "anam",
@@ -50,9 +15,10 @@
       "Value": "鹰眼"
     },
     {
-      "Id": "aret",
+      "Level": 4,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "学习鹰眼 - [|cffffcc00等级 %d|r]"
+      "Value": "鹰眼 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -74,6 +40,30 @@
     },
     {
       "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<A0GV,DataA1>%的几率造成<A0GV,DataC1>点额外伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<A0GV,DataA2>%的几率造成<A0GV,DataC2>点额外伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<A0GV,DataA3>%的几率造成<A0GV,DataC3>点额外伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击有<A0GV,DataA4>%的几率造成<A0GV,DataC4>点额外伤害。"
+    },
+    {
+      "Level": 1,
       "Id": "aut1",
       "Type": 3,
       "Value": "攻击有<A0GV,DataA1>%的几率造成<A0GV,DataC1>点额外伤害。"
@@ -95,6 +85,16 @@
       "Id": "aut1",
       "Type": 3,
       "Value": "攻击有<A0GV,DataA4>%的几率造成<A0GV,DataC4>点额外伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 艾什凡女士）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习鹰眼 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0GV"

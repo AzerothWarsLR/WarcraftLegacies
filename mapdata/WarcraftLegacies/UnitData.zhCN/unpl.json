@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 T1）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "浮空城"
     }
   ]
 }

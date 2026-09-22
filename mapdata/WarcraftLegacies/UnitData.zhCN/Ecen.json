@@ -5,19 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "暗夜精灵的半神"
     },
     {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "塞纳留斯"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长从森林中召唤生物并使用自然之力。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
     },
     {
       "Id": "utip",

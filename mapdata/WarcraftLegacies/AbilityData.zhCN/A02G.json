@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（莫阿姆）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "硬化"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习硬化 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "降低所有受到的攻击伤害。攻击伤害不能被降低到<A02G,DataB1>点以下。|n|n|cffffcc001级|r - 格挡<A02G,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A02G,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A02G,DataC3>点伤害。|n|cffffcc004级|r - 格挡<A02G,DataC4>点伤害。"
+      "Value": "降低所有受到的攻击伤害。攻击伤害不能被降低到<A02G,DataB1>点以下。|n|n|cffffcc001级|r - 格挡<A02G,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A02G,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A02G,DataC3>点伤害。|n|cffffcc004级|r - 格挡<A02G,DataC4>点伤害。\n"
     },
     {
       "Level": 2,
@@ -41,6 +31,12 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "硬化 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
@@ -67,10 +63,14 @@
       "Value": "该单位受到的所有攻击伤害降低<A02G,DataC1>点。伤害不能被降低到<A02G,DataB1>点以下。"
     },
     {
-      "Level": 1,
-      "Id": "atp1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "硬化 - [|cffffcc001级|r]"
+      "Value": "（莫阿姆）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习硬化 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A02G"

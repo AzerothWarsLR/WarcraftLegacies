@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（火焰坦克）"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -18,12 +13,17 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "火焰喷射器"
+      "Value": "致命一击"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（火焰坦克）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "火焰喷射器"
     }
   ],

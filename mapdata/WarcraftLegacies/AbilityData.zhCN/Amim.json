@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术免疫"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（另一个）"

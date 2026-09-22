@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "警戒结界"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（粉色 - 巫医）"

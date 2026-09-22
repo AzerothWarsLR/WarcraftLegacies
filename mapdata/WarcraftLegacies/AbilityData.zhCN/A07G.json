@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "强击光环"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（燃烧军团）"

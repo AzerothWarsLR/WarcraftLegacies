@@ -1,0 +1,38 @@
+{
+  "OldId": "Robs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "野蛮之力"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 1,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Level": 1,
+      "Value": "战鼓"
+    },
+    {
+      "Id": "gtp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "研究战鼓"
+    },
+    {
+      "Id": "gub1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "强化科多兽骑兵的战鼓光环。"
+    }
+  ],
+  "NewId": "RT09"
+}

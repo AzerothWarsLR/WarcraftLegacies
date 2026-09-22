@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（哨兵）"
+      "Value": "弓箭手"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "哨兵的灵巧弓箭手。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
     }
   ]
 }

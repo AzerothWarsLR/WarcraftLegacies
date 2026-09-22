@@ -1,0 +1,29 @@
+{
+  "OldId": "AOre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "重生"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习重生 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄被消灭后会复活。|n|n|cffffcc001级|r - 冷却时间<A022,Cool1>秒。|n|cffffcc002级|r - 冷却时间<A022,Cool2>秒。|n|cffffcc003级|r - 冷却时间<A022,Cool3>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族 - 精英）"
+    }
+  ],
+  "NewId": "VP50"
+}

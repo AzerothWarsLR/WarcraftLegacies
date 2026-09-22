@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "真视"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（青色 - 邪能怨灵。红色 - 影魔）"

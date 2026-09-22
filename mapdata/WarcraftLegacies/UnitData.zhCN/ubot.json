@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（天灾 - 燃烧军团）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "被诅咒的运输船"
@@ -18,6 +13,11 @@
       "Id": "utip",
       "Type": 3,
       "Value": "建造被诅咒的运输船"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 燃烧军团）"
     }
   ]
 }

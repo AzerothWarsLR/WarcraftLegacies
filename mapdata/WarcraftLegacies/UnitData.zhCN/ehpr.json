@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（哨兵）"
+      "Value": "角鹰兽骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练角鹰兽骑士"
     },
     {
       "Id": "utub",
@@ -15,9 +20,9 @@
       "Value": "哨兵的空中弓箭手，可以打击多个敌人。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练角鹰兽骑士"
+      "Value": "（哨兵）"
     }
   ]
 }

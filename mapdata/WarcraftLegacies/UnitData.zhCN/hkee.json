@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造要塞"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
@@ -13,6 +18,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦 T2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "要塞"
     }
   ]
 }

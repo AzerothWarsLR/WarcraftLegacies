@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（邪能，工人）"
+      "Value": "邪兽人苦工"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "邪部落机器的基础劳工。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能，工人）"
     }
   ]
 }

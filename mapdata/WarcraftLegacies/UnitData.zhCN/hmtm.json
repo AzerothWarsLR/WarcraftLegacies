@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（铁炉堡）"
+      "Value": "迫击炮小队"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "远程攻城武器。对建筑造成极高伤害，但缓慢且脆弱。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
     }
   ]
 }

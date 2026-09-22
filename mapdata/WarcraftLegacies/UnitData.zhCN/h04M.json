@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（吉尔尼斯）"
+      "Value": "训练牧师"
     },
     {
       "Id": "unam",
@@ -20,9 +20,9 @@
       "Value": "治疗型施法单位。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练牧师"
+      "Value": "（吉尔尼斯）"
     }
   ],
   "NewId": "h04M"

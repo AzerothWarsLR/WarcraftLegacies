@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（虚空领主）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "虚空爆裂"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（虚空领主）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "虚空爆裂"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "在大范围内召唤 6 波虚空爆炸，每波对小范围内的单位造成 25 点伤害。"
     }
   ],

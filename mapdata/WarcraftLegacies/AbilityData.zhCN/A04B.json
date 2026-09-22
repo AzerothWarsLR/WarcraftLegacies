@@ -15,15 +15,15 @@
       "Value": "恶魔召唤"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "恶魔召唤"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "开启一道传送门，让恶魔穿行其间，听命于施法者。"
     }
   ],

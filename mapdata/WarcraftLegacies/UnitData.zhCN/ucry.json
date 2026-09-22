@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（天灾）"
+      "Value": "地穴恶魔"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "为天灾复生的蛛魔躯壳。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
     }
   ]
 }

@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "anam",
+      "Type": 3,
+      "Value": "改良伐木技术"
+    },
+    {
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "该单位由 1 名地精操作，粉碎机被摧毁时他会跳出来。"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "地精驾驶员"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "地精驾驶员"
     },
     {

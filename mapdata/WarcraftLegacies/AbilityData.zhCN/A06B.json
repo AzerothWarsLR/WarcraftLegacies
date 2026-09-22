@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（邪部落 - 虚空召唤者）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "虚空召唤者之翼"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落 - 虚空召唤者）"
     }
   ],
   "NewId": "A06B"

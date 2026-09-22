@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练贸易亲王卫兵"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "洛丹伦王室的精锐护卫。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "贸易亲王卫兵"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "洛丹伦王室的精锐护卫。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练贸易亲王卫兵"
     }
   ],
   "NewId": "h090"

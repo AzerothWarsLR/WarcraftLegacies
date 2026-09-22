@@ -5,19 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪恶光环"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（魔枢假人生命）"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "巨龙形态"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "巨龙形态"
     }
   ],

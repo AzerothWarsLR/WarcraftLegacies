@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（克苏恩守卫，剑主）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "精英战斗经验"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩守卫，剑主）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "精英战斗经验"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "有 15% 的几率闪避攻击，并有 20% 的几率造成 2 倍正常伤害。"
     }
   ],

@@ -5,15 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（达拉然 - 水术师）"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "移除目标单位身上的所有魔法效果。敌方单位还会在<A07Q,DataD1>秒内无法移动，其移动速度降低至原先的 1/<A07Q,DataA1>；它们会在<A07Q,Dur1>秒内逐渐恢复移动速度。|n|cffffcc00对召唤单位造成<A07Q,DataC1>点伤害。|r"
+      "Value": "移除目标单位身上的所有魔法效果。敌方单位还会在<A07Q,DataD1>秒内无法移动，其移动速度降低至原先的 1/<A07Q,DataA1>；它们会在<A07Q,Dur1>秒内逐渐恢复移动速度。|n|cffffcc00对召唤单位造成<A07Q,DataC1>点伤害。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "净化"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 水术师）"
     }
   ],
   "NewId": "A07Q"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（哨兵）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "月猎手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练月猎手"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "效命于哨兵的狡黠猎物陷阱师。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练月猎手"
+      "Value": "（哨兵）"
     }
   ],
   "NewId": "n06C"

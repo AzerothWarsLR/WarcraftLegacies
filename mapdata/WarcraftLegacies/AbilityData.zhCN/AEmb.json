@@ -5,25 +5,30 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（绿色 / 浅蓝色 - 伊利丹）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
       "Value": "发射一道负能量波，燃烧目标敌方单位的法力。被燃烧的法力会爆燃，对目标造成等同于所燃烧法力值的伤害。 |n|n|cffffcc00等级 1|r - 最多燃烧 240 点法力。 |n|cffffcc00等级 2|r - 最多燃烧 300 点法力。 |n|cffffcc00等级 3|r - 最多燃烧 360 点法力。|n|cffffcc00等级 4|r - 最多燃烧 420 点法力。\n"
     },
     {
-      "Level": 4,
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力燃烧"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 / 浅蓝色 - 伊利丹）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 4,
       "Value": "法力燃烧 - [|cffffcc004 级|r]"
     },
     {
-      "Level": 4,
       "Id": "aub1",
       "Type": 3,
+      "Level": 4,
       "Value": "放出一道负能量箭矢，燃烧一个目标敌方单位至多<AEmb,DataA4>点魔法值。这些魔法值将会爆炸，造成等同于所燃烧魔法值的伤害。"
     }
   ]

@@ -10,9 +10,9 @@
       "Value": "装甲狼"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（吉尔尼斯）"
+      "Value": "训练装甲狼"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "脆弱但迅捷而强大的近战单位。拥有致命一击技能。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练装甲狼"
+      "Value": "（吉尔尼斯）"
     }
   ],
   "NewId": "n06L"

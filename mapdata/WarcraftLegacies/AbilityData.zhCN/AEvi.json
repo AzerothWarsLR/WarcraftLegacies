@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习恶魔变形 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "将伊利丹变形为一个拥有远程攻击和额外基础伤害的强大恶魔，持续<AEvi,HeroDur1>秒。|n|n|cffffcc00等级 1|r - 增加 500 点生命值和 60 点伤害。|n|cffffcc00等级 2|r - 增加 750 点生命值和 90 点伤害。 |n|cffffcc00等级 3|r - 增加 1000 点生命值和 120 点伤害。"
+      "Value": "将伊利丹变形为一个拥有远程攻击和额外基础伤害的强大恶魔，持续<AEvi,HeroDur1>秒。|n|n|cffffcc00等级 1|r - 增加 500 点生命值和 60 点伤害。|n|cffffcc00等级 2|r - 增加 750 点生命值和 90 点伤害。 |n|cffffcc00等级 3|r - 增加 1000 点生命值和 120 点伤害。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恶魔变形"
     },
     {
       "Level": 1,
@@ -49,6 +49,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "将伊利丹变形为一个拥有远程攻击的强大恶魔，获得<AEvi,DataE3>点额外生命值和 120 点额外伤害，持续<AEvi,HeroDur3>秒。"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习恶魔变形 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "ansf",

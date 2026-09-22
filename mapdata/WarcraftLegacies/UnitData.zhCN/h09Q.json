@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（血色）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "绯红指挥官"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练绯红指挥官"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "血色指挥官。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练绯红指挥官"
+      "Value": "（血色）"
     }
   ],
   "NewId": "h09Q"

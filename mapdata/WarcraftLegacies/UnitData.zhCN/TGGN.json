@@ -5,29 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "苔丝·格雷迈恩"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "吉尔尼斯公主"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "灵巧型英雄，擅长与敌人交战和脱离。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤苔丝"
     },
     {
       "Id": "utpr",
@@ -35,9 +15,29 @@
       "Value": "复活苔丝"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤苔丝"
+    },
+    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活苔丝"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长与敌人交战和脱离。"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "苔丝·格雷迈恩"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
     }
   ],
   "NewId": "TGGN"

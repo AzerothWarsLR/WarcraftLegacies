@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（巨魔 - 赞达拉）"
+      "Value": "妖术"
     },
     {
       "Level": 1,
@@ -20,6 +20,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "将一个敌方单位变成一只随机的小动物，持续<AChx,Dur2>秒。对英雄持续 2 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（巨魔 - 赞达拉）"
     }
   ],
   "NewId": "A0P1"

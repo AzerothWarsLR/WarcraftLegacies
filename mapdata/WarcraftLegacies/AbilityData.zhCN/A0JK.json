@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "沉默"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（邪部落 - 死亡骑士）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "阻止目标区域内的所有敌人施放法术，持续 10(2)秒。"
     }
   ],

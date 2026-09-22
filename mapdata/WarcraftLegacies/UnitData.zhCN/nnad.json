@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造背叛者祭坛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤英雄和准英雄。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（伊利达雷祭坛）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "背叛者祭坛"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "召唤英雄和准英雄。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造背叛者祭坛"
     }
   ]
 }

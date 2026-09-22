@@ -5,29 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "维克雷斯家族女族长"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "神秘型英雄，体质脆弱，却拥有极其强大的攻击和扰乱能力。"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "梅瑞狄斯·维克雷斯"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤梅瑞狄斯"
     },
     {
       "Id": "utpr",
@@ -35,9 +15,29 @@
       "Value": "复活梅雷迪斯"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤梅瑞狄斯"
+    },
+    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活梅雷迪斯"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，体质脆弱，却拥有极其强大的攻击和扰乱能力。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "梅瑞狄斯·维克雷斯"
     }
   ],
   "NewId": "U026"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "邪能弩手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练邪能弩手"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "外域兽人中技艺精湛的射手。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练邪能弩手"
+      "Value": "（邪能）"
     }
   ],
   "NewId": "n058"

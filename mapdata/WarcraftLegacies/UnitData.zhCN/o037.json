@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "月光束"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练月光束"
     }
   ],
   "NewId": "o037"

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（地精火炮）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "洲际轰炸"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（地精火炮）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "洲际轰炸"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "发射火炮，对 450 范围内的敌人造成 1800 点伤害。射程 40000。需要 25 秒施法时间。也会伤害友方单位。"
     }
   ],

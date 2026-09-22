@@ -5,28 +5,33 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "诺森德海岸"
+    },
+    {
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（洛丹伦）"
     },
     {
+      "Id": "gnam",
+      "Type": 3,
       "Level": 1,
+      "Value": "诺森德远征"
+    },
+    {
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "研究诺森德远征"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "为阿尔萨斯提供发动诺森德远征所需的资源。|n|n|cffffcc00完成「诺森德海岸」任务所必需。"
-    },
-    {
       "Level": 1,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "诺森德远征"
+      "Value": "为阿尔萨斯提供发动诺森德远征所需的资源。|n|n|cffffcc00完成「诺森德海岸」任务所必需。"
     }
   ],
   "NewId": "R06F"

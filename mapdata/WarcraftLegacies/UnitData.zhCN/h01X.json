@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "横向木门"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（大门 - 开启）"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "修复破损的大门。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "横向木门"
     }
   ],
   "NewId": "h01X"

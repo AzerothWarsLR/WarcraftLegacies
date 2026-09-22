@@ -5,15 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（天灾 - 通灵师）"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "亡者复生 - [|cffffcc00级别 2|r]"
+      "Value": "亡者复生"
     },
     {
       "Level": 1,
@@ -28,16 +22,27 @@
       "Value": "从一具尸体中召唤 1 个骷髅和 1 个法师，持续<Arai,Dur1>秒。"
     },
     {
-      "Level": 2,
-      "Id": "aut1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "|cffc3dbff点击右键以激活自动施法。"
+      "Value": "（天灾 - 通灵师）"
     },
     {
+      "Id": "atp1",
+      "Type": 3,
       "Level": 2,
+      "Value": "亡者复生 - [|cffffcc00级别 2|r]"
+    },
+    {
+      "Id": "aut1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "|cffc3dbff右键点击以开启自动施放。"
+    },
+    {
       "Id": "auu1",
       "Type": 3,
-      "Value": "|cffc3dbff点击右键以取消自动施法。"
+      "Level": 2,
+      "Value": "|cffc3dbff右键点击以关闭自动施放。"
     }
   ]
 }

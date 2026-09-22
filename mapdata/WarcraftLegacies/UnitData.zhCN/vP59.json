@@ -1,0 +1,29 @@
+{
+  "OldId": "opeo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "勇者工人"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本工人单位。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族 工人）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练勇者工人"
+    }
+  ],
+  "NewId": "vP59"
+}

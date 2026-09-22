@@ -5,24 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（燃烧军团）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "阿克蒙德的使者"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "安纳塞隆"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "灵巧型英雄，擅长造成魔法伤害和支援军队。"
     },
     {
       "Id": "utip",
@@ -38,6 +23,21 @@
       "Id": "uawt",
       "Type": 3,
       "Value": "复活阿克蒙德的使者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长造成魔法伤害和支援军队。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "安纳塞隆"
     }
   ],
   "NewId": "U00L"

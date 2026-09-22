@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（天灾）"
+      "Value": "食尸鬼"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "从死亡中重塑的恐怖复生尸骸。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
     }
   ]
 }

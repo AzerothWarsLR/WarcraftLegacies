@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（沃金）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "巫毒恢复"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习巫毒恢复 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "激活巫毒恢复，每秒治疗 320 范围内的单位。 |n|n|cffffcc001级|r - 每秒恢复 25 点生命值。 |n|cffffcc002级|r - 每秒恢复 35 点生命值。 |n|cffffcc003级|r - 每秒恢复 45 点生命值。|n|cffffcc004级 -|r 每秒恢复 55 点生命值。"
+      "Value": "激活巫毒恢复，每秒治疗 320 范围内的单位。 |n|n|cffffcc001级|r - 每秒恢复 25 点生命值。 |n|cffffcc002级|r - 每秒恢复 35 点生命值。 |n|cffffcc003级|r - 每秒恢复 45 点生命值。|n|cffffcc004级 -|r 每秒恢复 55 点生命值。\n"
     },
     {
       "Level": 1,
@@ -68,21 +58,31 @@
     },
     {
       "Level": 1,
-      "Id": "aut1",
-      "Type": 3,
-      "Value": "停用巫毒恢复"
-    },
-    {
-      "Level": 1,
-      "Id": "auu1",
-      "Type": 3,
-      "Value": "停用巫毒恢复以停止消耗魔法值。"
-    },
-    {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "激活巫毒恢复，每秒为 320 范围内的单位恢复 25 点生命值。|n在停用前会持续消耗魔法值。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（沃金）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习巫毒恢复 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "aut1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "停用巫毒恢复"
+    },
+    {
+      "Id": "auu1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "停用巫毒恢复以停止消耗魔法值。"
     }
   ],
   "NewId": "A0TZ"

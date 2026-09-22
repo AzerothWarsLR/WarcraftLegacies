@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "生出小蜘蛛"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(地精伐木机"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "炮手飞行员"
     }
   ],
   "NewId": "A0JX"

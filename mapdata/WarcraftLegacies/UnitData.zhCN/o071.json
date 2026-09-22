@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（战歌）"
+      "Value": "训练暗矛狂战士"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "强大的巨魔猎手。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "暗矛狂战士"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练暗矛狂战士"
     }
   ],
   "NewId": "o071"

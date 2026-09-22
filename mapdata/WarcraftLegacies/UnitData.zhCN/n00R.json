@@ -1,0 +1,19 @@
+{
+  "OldId": "nfsp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鱼人巫师"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立敌对, Boss）"
+    }
+  ],
+  "NewId": "n00R"
+}

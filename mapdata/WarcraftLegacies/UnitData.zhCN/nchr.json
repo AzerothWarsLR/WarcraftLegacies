@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "邪能狼骑兵"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练邪能狼骑兵"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "拥有高生命恢复速度的机动劫掠者，灌注了恶魔之血。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练邪能狼骑兵"
+      "Value": "（邪能）"
     }
   ]
 }

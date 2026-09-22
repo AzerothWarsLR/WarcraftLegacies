@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造污水港"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（中立生物 船坞）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "污水港"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "船只建造设施。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造污水港"
     }
   ],
   "NewId": "o03V"

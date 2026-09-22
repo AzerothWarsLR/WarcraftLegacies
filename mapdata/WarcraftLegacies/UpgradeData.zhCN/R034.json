@@ -5,10 +5,9 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "gnsf",
+      "Id": "gnam",
       "Type": 3,
-      "Value": "（邪部落 - 龙类）"
+      "Value": "强弓"
     },
     {
       "Level": 1,
@@ -35,9 +34,15 @@
       "Value": "使黑曜石龙类的攻击距离提高 100。"
     },
     {
+      "Id": "gnsf",
+      "Type": 3,
       "Level": 1,
+      "Value": "（邪部落 - 龙类）"
+    },
+    {
       "Id": "gnam",
       "Type": 3,
+      "Level": 1,
       "Value": "强化吐息"
     }
   ],

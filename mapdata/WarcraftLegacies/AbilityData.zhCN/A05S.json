@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（战歌 - 雷克萨）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "兽群"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 雷克萨）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "兽群"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "雷克萨召唤野兽协助他作战。|n|n|cffffcc00- 召唤米莎|n- 召唤野猪人|n- 召唤灵魂|r"
     }
   ],

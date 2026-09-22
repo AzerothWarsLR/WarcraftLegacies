@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "假人"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "训练假人"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "假人"
     }
   ],
   "NewId": "h06H"

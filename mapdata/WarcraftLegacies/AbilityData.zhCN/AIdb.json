@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 暂时范围护甲加成"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（附带生命与魔法治疗） （所有王冠）"

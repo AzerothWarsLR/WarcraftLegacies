@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（暴风城 - 伯瓦尔）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "向大领主集结！"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习向大领主集结！ - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "伯瓦尔号召周围的友方单位向他集结，提高他们的攻击力，持续 20 秒。|n|cffffcc00|n1级 |r - 临时提高 20% 攻击力。|n|cffffcc002级 |r - 临时提高 30% 攻击力。|n|cffffcc003级 |r - 临时提高 40% 攻击力。|n|cffffcc004级 |r - 临时提高 50% 攻击力。"
+      "Value": "伯瓦尔号召周围的友方单位向他集结，提高他们的攻击力，持续 20 秒。|n|cffffcc00|n1级 |r - 临时提高 20% 攻击力。|n|cffffcc002级 |r - 临时提高 30% 攻击力。|n|cffffcc003级 |r - 临时提高 40% 攻击力。|n|cffffcc004级 |r - 临时提高 50% 攻击力。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使周围的友方单位获得 50% 的攻击力加成。|n持续 20 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城 - 伯瓦尔）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习向大领主集结！ - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A03C"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（增益施加）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "圣洁之光"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（增益施加）"
     }
   ],
   "NewId": "A00C"

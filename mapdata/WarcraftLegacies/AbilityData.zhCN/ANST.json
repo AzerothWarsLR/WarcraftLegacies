@@ -5,19 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（恩佐斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习召唤触须 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "在目标位置召唤触须。持续 60 秒。 |n|n|cffffcc001级|r - 3 根触须。|n|cffffcc002级|r - 6 根触须。|n|cffffcc003级|r - 9 根触须。"
+      "Value": "在目标位置召唤触须。持续 60 秒。 |n|n|cffffcc001级|r - 3 根触须。|n|cffffcc002级|r - 6 根触须。|n|cffffcc003级|r - 9 根触须。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "孳生触须"
     },
     {
       "Level": 1,
@@ -54,6 +49,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "生出 9 根强大的触须攻击敌人。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（恩佐斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤触须 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "ANST"

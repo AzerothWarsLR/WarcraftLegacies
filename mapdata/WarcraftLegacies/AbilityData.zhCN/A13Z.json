@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "先祖坚韧"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（角斗士）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "先祖坚韧"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使施法者获得 25% 的伤害加成和 99999 点额外护甲。|n持续 10 秒。"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "先祖坚韧"
     }
   ],
   "NewId": "A13Z"

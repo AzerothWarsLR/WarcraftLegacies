@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（伊利达雷专家）"
+      "Value": "建造孵化场"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "空中单位生产建筑。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷专家）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "孵化场"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造孵化场"
     }
   ]
 }

@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（凯瑟琳）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "刺杀"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习刺杀 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "英雄瞄准并向一个敌方单位射击，造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <A0DT,DataA1>点伤害，昏迷<A0DT,Dur1>秒，对英雄为<A0DT,HeroDur1,.>。|n|cffffcc002级|r - <A0DT,DataA2>点伤害，昏迷<A0DT,Dur2>秒，对英雄为<A0DT,HeroDur2,.>。|n|cffffcc003级|r - <A0DT,DataA3>点伤害，昏迷<A0DT,Dur3>秒，对英雄为<A0DT,HeroDur3,.>。"
+      "Value": "英雄瞄准并向一个敌方单位射击，造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <A0DT,DataA1>点伤害，昏迷<A0DT,Dur1>秒，对英雄为<A0DT,HeroDur1,.>。|n|cffffcc002级|r - <A0DT,DataA2>点伤害，昏迷<A0DT,Dur2>秒，对英雄为<A0DT,HeroDur2,.>。|n|cffffcc003级|r - <A0DT,DataA3>点伤害，昏迷<A0DT,Dur3>秒，对英雄为<A0DT,HeroDur3,.>。\n"
     },
     {
       "Level": 1,
@@ -59,6 +49,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄瞄准并向一个敌方单位射击，造成<A0DT,DataA3>点伤害，并使目标昏迷<A0DT,Dur3>秒，对英雄则为<A0DT,HeroDur3,.>。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（凯瑟琳）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习刺杀 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0DT"

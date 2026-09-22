@@ -8,6 +8,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "古尔丹的遗骸"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练古尔丹的遗骸"
     }
   ],
   "NewId": "o01U"

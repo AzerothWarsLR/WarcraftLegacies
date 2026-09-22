@@ -5,20 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（青色 - 玛瑟里顿。战歌 - 雷克萨）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "发出一声恐怖的嚎叫，使附近的敌方单位在恐惧中颤抖，降低其攻击力。 |n持续<ANht,Dur1>秒。 |n|n|cffffcc001级|r - 攻击力降低 25%。 |n|cffffcc002级|r - 攻击力降低 40%。 |n|cffffcc003级|r - 攻击力降低 55%。 |n|cffffcc004级|r - 攻击力降低 70%。"
+      "Value": "发出一声恐怖的嚎叫，使附近的敌方单位在恐惧中颤抖，降低其攻击力。 |n持续<ANht,Dur1>秒。 |n|n|cffffcc001级|r - 攻击力降低 25%。 |n|cffffcc002级|r - 攻击力降低 40%。 |n|cffffcc003级|r - 攻击力降低 55%。 |n|cffffcc004级|r - 攻击力降低 70%。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "恐惧嚎叫 - [|cffffcc004级|r]"
+      "Value": "恐惧嚎叫"
     },
     {
       "Level": 1,
@@ -43,6 +37,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄发出一声恐怖的嚎叫，使附近敌方单位的攻击力降低 70%，持续<ANht,Dur4>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 玛瑟里顿。战歌 - 雷克萨）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "恐惧嚎叫 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "A07M"

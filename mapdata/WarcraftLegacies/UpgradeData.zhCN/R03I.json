@@ -6,12 +6,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（邪部落）"
-    },
-    {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "艾瑞达秘术师专家级训练"
@@ -45,6 +39,12 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高艾瑞达秘术师的法力值上限和法力恢复速度，并使其能够施放群体嗜血。"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 1,
+      "Value": "（邪部落）"
     }
   ],
   "NewId": "R03I"

@@ -5,20 +5,38 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（莫格莱尼）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "当该英雄攻击时，有 20% 的几率复活附近的友方单位。|n|cffffcc00等级 1|r - 3 个单位。 |n|cffffcc00等级 2|r - 6 个单位。 |n|cffffcc00等级 3|r - 9 个单位。"
+      "Value": "当该英雄攻击时，有 20% 的几率复活附近的友方单位。|n|cffffcc00等级 1|r - 3 个单位。 |n|cffffcc00等级 2|r - 6 个单位。 |n|cffffcc00等级 3|r - 9 个单位。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灰烬使者之志"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
       "Value": "灰烬使者之志 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灰烬使者之志 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灰烬使者之志 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灰烬使者之志 - [|cffffcc003 级|r]"
     },
     {
       "Level": 1,
@@ -45,32 +63,14 @@
       "Value": "当该英雄攻击时，有 15% 的几率向<A024,DataB4>个目标掷出闪电，对每个目标造成<A024,DataA4>点伤害。"
     },
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "灰烬使者之志"
+      "Value": "（莫格莱尼）"
     },
     {
       "Id": "aret",
       "Type": 3,
       "Value": "学习灰烬使者之志 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "灰烬使者之志 - [|cffffcc001 级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "灰烬使者之志 - [|cffffcc002 级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "灰烬使者之志 - [|cffffcc003 级|r]"
     }
   ],
   "NewId": "A122"

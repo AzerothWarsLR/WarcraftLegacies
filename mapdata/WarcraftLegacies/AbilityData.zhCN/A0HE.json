@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 攻击速度加成"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（恶魔之魂）"

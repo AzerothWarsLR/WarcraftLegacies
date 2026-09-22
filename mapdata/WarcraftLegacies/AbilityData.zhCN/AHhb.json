@@ -5,20 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（伯瓦尔-戴林-亚历克斯）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "一道圣光，能为友方生命单位恢复生命值，或对敌方亡灵单位造成伤害。 |n|n|cffffcc001级|r - 恢复 200 点生命值。 |n|cffffcc002级|r - 恢复 400 点生命值。 |n|cffffcc003级|r - 恢复 600 点生命值。 |n|cffffcc004级|r - 恢复 800 点生命值。"
+      "Value": "一道圣光，能为友方生命单位恢复生命值，或对敌方亡灵单位造成伤害。 |n|n|cffffcc001级|r - 恢复 200 点生命值。 |n|cffffcc002级|r - 恢复 400 点生命值。 |n|cffffcc003级|r - 恢复 600 点生命值。 |n|cffffcc004级|r - 恢复 800 点生命值。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "圣光术 - [|cffffcc004级|r]"
+      "Value": "圣光术"
     },
     {
       "Level": 1,
@@ -43,6 +37,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "一道圣光，能为友方生命单位恢复 800 点生命值，或对敌方亡灵单位造成一半的伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（伯瓦尔-戴林-亚历克斯）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "圣光术 - [|cffffcc004级|r]"
     }
   ]
 }

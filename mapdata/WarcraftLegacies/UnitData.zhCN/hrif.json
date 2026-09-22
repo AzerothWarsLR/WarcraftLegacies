@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（铁炉堡）"
+      "Value": "火枪手"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "技艺高超的神射手，也是火枪的爱好者。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
     }
   ]
 }

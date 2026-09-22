@@ -1,0 +1,13 @@
+{
+  "OldId": "Aorb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "加强型防御"
+    }
+  ]
+}

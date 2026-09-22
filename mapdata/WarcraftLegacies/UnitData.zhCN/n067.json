@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "小蜘蛛"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "小蜘蛛"
     }
   ],
   "NewId": "n067"

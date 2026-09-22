@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "树苗"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练树苗"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "基础近战单位，可反弹所受的近战伤害。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练树苗"
+      "Value": "（德鲁伊）"
     }
   ],
   "NewId": "n05H"

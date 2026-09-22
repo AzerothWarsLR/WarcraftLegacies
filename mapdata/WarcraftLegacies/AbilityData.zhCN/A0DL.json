@@ -10,9 +10,9 @@
       "Value": "（亚历山德罗斯）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "圣餐"
     },
     {
@@ -21,9 +21,9 @@
       "Value": "圣餐"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使亚历山德罗斯每秒恢复<A0DL,DataB1,%>%的生命值。"
     }
   ],

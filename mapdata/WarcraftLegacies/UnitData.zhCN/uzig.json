@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 农场）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "通灵塔"
     }
   ]
 }

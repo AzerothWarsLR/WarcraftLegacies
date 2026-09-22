@@ -1,0 +1,19 @@
+{
+  "OldId": "ANcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "引导"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    }
+  ],
+  "NewId": "CK02"
+}

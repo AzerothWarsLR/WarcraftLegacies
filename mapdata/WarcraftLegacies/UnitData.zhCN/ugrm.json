@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "飞行攻击单位。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 - 石像鬼）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "飞行攻击单位。"
+      "Value": "石像鬼石像形态"
     }
   ]
 }

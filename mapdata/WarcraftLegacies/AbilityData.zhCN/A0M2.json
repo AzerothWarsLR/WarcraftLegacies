@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（加里维克斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "财富之诺"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习财富之诺 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "强化周围的友方单位，在<A0M2,Dur1>秒内提高其伤害和护甲。|n|cffffcc001级|r - 伤害提高 20%，护甲提高 2 点。|n|cffffcc002级|r - 伤害提高 25%，护甲提高 3 点。|n|cffffcc003级|r - 伤害提高 30%，护甲提高 4 点。|n|cffffcc004级|r - 伤害提高 35%，护甲提高 5 点。"
+      "Value": "强化周围的友方单位，在<A0M2,Dur1>秒内提高其伤害和护甲。|n|cffffcc001级|r - 伤害提高 20%，护甲提高 2 点。|n|cffffcc002级|r - 伤害提高 25%，护甲提高 3 点。|n|cffffcc003级|r - 伤害提高 30%，护甲提高 4 点。|n|cffffcc004级|r - 伤害提高 35%，护甲提高 5 点。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "强化周围的友方单位，使其伤害提高<A0M2,DataA4,%>%、护甲提高<A0M2,DataB4>点，持续<A0M2,Dur4>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（加里维克斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习财富之诺 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0M2"

@@ -1,0 +1,13 @@
+{
+  "OldId": "Adt1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "侦测者"
+    }
+  ]
+}

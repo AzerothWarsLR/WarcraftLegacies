@@ -5,24 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "洛丹伦王储"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "阿尔萨斯·米奈希尔"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "战斗型英雄，擅长治疗盟友并杀伤敌人。"
     },
     {
       "Id": "utip",
@@ -38,6 +23,21 @@
       "Id": "uawt",
       "Type": 3,
       "Value": "复活王储"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长治疗盟友并杀伤敌人。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "瓦罗克·萨鲁法尔"
     }
   ]
 }

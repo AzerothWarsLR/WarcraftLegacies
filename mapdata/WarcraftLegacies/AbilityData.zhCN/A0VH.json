@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品栏"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（锻造厂）"

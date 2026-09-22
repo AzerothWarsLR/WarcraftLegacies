@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造猎手塔"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵塔）"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba防御塔|r"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造猎手塔"
     }
   ],
   "NewId": "h03M"

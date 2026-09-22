@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "减速光环"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（黑洞）"

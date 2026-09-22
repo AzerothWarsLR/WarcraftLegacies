@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（橙色 - 地卜师）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "掘地术"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（橙色 - 地卜师）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "掘地术"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "从地面升起一块坚硬的岩石，阻断敌人的去路。|n持续至被摧毁为止，并会不断损失生命值。"
     }
   ],

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿努巴拉克甲虫）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "生成甲虫"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿努巴拉克甲虫）"
     }
   ],
   "NewId": "A0KI"

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德鲁伊）"
+      "Value": "繁育海龟幼崽"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "轻型远程两栖单位，其带刺甲壳会伤害近战攻击它的敌人。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "繁育海龟幼崽"
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海龟幼崽"
     }
   ]
 }

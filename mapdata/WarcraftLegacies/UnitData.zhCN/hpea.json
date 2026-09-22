@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（洛丹伦、暴风城、工人）"
+      "Value": "农夫"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "中坚工人与建造者。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦、暴风城、工人）"
     }
   ]
 }

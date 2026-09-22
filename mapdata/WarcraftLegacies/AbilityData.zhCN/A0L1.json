@@ -5,54 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（绿色 罗曼斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "冰枪术"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习冰枪术 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "向一个敌方单位射出一支冰霜魔法长枪，造成伤害并使目标昏迷。|n|n|cffffcc001级|r - 150 点伤害，昏迷 4 秒。|n|cffffcc002级|r - 225 点伤害，昏迷 5 秒。|n|cffffcc003级|r - 300 点伤害，昏迷 6 秒。|n|cffffcc004级|r - 375 点伤害，昏迷 7 秒。"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "冰枪术 - [|cffffcc001级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "冰枪术 - [|cffffcc002级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "冰枪术 - [|cffffcc003级|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "冰枪术 - [|cffffcc004级|r]"
+      "Value": "向一个敌方单位射出一支冰霜魔法长枪，造成伤害并使目标昏迷。|n|n|cffffcc001级|r - 150 点伤害，昏迷 4 秒。|n|cffffcc002级|r - 225 点伤害，昏迷 5 秒。|n|cffffcc003级|r - 300 点伤害，昏迷 6 秒。|n|cffffcc004级|r - 375 点伤害，昏迷 7 秒。\n"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "朝目标敌方单位发射一支冰霜魔法长枪，造成 150 点伤害，并使目标昏迷 4 秒。（对英雄减半）"
+      "Value": "向一个目标敌方单位射出一支冰霜魔法长枪，造成 150 点伤害，并使目标昏迷 4 秒。（对英雄减半）"
     },
     {
       "Level": 2,
@@ -71,6 +37,40 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "朝目标敌方单位发射一支冰霜魔法长枪，造成 375 点伤害，并使目标昏迷 7 秒。（对英雄减半）"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 罗曼斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习冰枪术 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "冰枪术 - [|cffffcc001级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "冰枪术 - [|cffffcc002级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "冰枪术 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "冰枪术 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "A0L1"

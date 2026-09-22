@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（天空之墙）"
+      "Value": "召唤元素领主"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "掌控四大元素的元素领主。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天空之墙）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "元素领主"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤元素领主"
     }
   ],
   "NewId": "n08S"

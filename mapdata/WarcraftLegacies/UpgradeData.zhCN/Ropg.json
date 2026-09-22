@@ -5,21 +5,26 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "掠夺"
+    },
+    {
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（粉色/灰色研究）"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "[|cffffcc00R|r] - 掠夺"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使苦工、兽人步兵、狼骑兵和兽人勇士的攻击在命中敌方建筑时获取资源。"
     }
   ]

@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造档案馆"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（伊利达雷魔法）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "档案馆"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "施法单位生产建筑。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造档案馆"
     }
   ],
   "NewId": "n0A3"

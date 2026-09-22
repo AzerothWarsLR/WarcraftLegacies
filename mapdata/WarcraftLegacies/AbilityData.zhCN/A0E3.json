@@ -1,0 +1,19 @@
+{
+  "OldId": "ANbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战斗咆哮"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    }
+  ],
+  "NewId": "A0E3"
+}

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（滑流传送门）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "反传送门阻挡"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（滑流传送门）"
     }
   ],
   "NewId": "A012"

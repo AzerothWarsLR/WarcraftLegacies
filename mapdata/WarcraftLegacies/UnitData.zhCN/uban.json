@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（天灾）"
+      "Value": "女妖"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "被天灾奴役的复生精灵之魂。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
     }
   ]
 }

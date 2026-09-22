@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗结界"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（暗影施法者）"

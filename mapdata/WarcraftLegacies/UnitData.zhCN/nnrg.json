@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（伊利达雷）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "海洋的强大保卫者。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "王室禁卫"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练王室禁卫"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "海洋的强大保卫者。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
     }
   ]
 }

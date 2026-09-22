@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "火枪手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练火枪手"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "库尔提拉斯海军的坚定游侠。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练火枪手"
+      "Value": "（库尔提拉斯）"
     }
   ],
   "NewId": "n07G"

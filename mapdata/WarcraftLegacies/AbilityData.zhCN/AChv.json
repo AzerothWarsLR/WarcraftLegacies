@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗波"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（先知、主教）"

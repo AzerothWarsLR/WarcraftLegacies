@@ -5,19 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（战歌）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "战歌战斗大师"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "战斗型英雄，擅长强化部队和近身战斗。"
     },
     {
       "Id": "utip",
@@ -38,6 +28,16 @@
       "Id": "upro",
       "Type": 3,
       "Value": "加尔戈克"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长强化部队和近身战斗。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
     }
   ],
   "NewId": "O005"

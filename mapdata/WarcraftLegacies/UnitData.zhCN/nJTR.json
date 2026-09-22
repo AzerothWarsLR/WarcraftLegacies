@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "天启者乔纳森"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "拥有季风与操纵死尸的重型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "天启者乔纳森"
     }
   ],
   "NewId": "nJTR"

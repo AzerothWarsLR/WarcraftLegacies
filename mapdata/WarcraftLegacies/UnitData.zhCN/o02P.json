@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德莱尼 T1）"
+      "Value": "建造水晶大厅"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "主要建筑。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼 T1）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "水晶大厅"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造水晶大厅"
     }
   ],
   "NewId": "o02P"

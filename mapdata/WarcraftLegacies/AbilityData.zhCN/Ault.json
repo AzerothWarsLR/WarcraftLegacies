@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "夜视能力"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（浅蓝色 - 所有单位。棕色 - 所有单位）"

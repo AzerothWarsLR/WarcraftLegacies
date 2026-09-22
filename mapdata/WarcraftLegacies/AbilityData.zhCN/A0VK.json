@@ -5,20 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "酸液炸弹"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（哨兵 - 猎月者）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "向目标投掷一瓶酸液，对目标附近的敌方单位造成<A0VK,DataD1>点伤害，并使其护甲降低<A0VK,DataC1>点，持续<A0VK,Dur1>秒。"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "酸液炸弹"
     }
   ],

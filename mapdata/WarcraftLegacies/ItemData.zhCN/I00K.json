@@ -5,24 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "ides",
-      "Type": 3,
-      "Value": "|cffffcc00传说|r|n|cffffdead异界元素摩摩尔的精华。其中附有强大的防御法术。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "购买购买狂怒护手"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cffff8c00神器|r|n使英雄的魔法值提高 200 点，魔法恢复速度提高 1 点。|n提供法术护盾，每 15 秒阻挡一次敌方法术。|n|cffffcc00典故|r|n|cffffdead异界元素摩摩尔的精华。其中附有强大的防御法术。\n"
     },
     {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "|cffffcc00传说|r|n|cffffdead异界元素摩摩尔的精华。其中附有强大的防御法术。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "摩摩尔的精华"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买狂怒护手"
     }
   ],
   "NewId": "I00K"

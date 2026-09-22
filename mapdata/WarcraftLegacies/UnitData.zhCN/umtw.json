@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（天灾）"
+      "Value": "建造绞肉车"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "清道夫"
     },
     {
       "Id": "utub",
@@ -15,9 +20,9 @@
       "Value": "改装后的车辆，用于运送和抛射尸体。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造绞肉车"
+      "Value": "（天灾）"
     }
   ]
 }

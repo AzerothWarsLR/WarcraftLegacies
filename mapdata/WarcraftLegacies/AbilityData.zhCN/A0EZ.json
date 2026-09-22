@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（燃烧军团 - 魅魔姐妹）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "精神鞭笞"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团 - 魅魔姐妹）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "精神鞭笞"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "对目标单位施加一道诅咒，使其在接下来的<A0EZ,Dur1>秒内每秒失去 25 点生命值和 15 点法力值。"
     }
   ],

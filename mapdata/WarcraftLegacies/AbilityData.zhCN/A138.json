@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（水术师）"
-    },
-    {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "灌注了奥术魔法的冰冻射击使目标的攻击速度降低 80%，持续 3 秒。"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "冰冻射击"
     },
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（水术师）"
+    },
+    {
+      "Id": "aub1",
+      "Type": 3,
       "Level": 1,
+      "Value": "灌注了奥术魔法的冰冻射击使目标的攻击速度降低 80%，持续 3 秒。"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "冰冻射击"
     }
   ],

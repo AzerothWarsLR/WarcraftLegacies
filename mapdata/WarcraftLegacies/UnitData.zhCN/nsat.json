@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（野外生物）"
+      "Value": "训练萨特欺诈者"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "轻型远程单位。可施放减速与诱捕。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练萨特欺诈者"
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨特欺诈者"
     }
   ]
 }

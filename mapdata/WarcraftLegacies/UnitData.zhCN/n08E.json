@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练暗影祭司"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暗影巫毒巨魔。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "暗影祭司"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "暗影巫毒巨魔。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练暗影祭司"
     }
   ],
   "NewId": "n08E"

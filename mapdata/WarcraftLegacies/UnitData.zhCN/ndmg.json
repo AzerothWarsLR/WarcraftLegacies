@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（燃烧军团攻城）"
+      "Value": "召唤恶魔之门"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "高级部队生产建筑。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤恶魔之门"
+      "Value": "（燃烧军团攻城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恶魔之门"
     }
   ]
 }

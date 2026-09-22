@@ -10,6 +10,11 @@
       "Value": "强化天怒之塔"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为强化天怒之塔"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "强化防御建筑。"
@@ -18,11 +23,6 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（日怒塔）"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化天怒之塔"
     }
   ],
   "NewId": "n0E1"

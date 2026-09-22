@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（燧发枪手）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "狙击"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燧发枪手）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "狙击"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "该单位瞄准并射击一个敌方单位，造成 75 点伤害，并使目标昏迷 4 秒（英雄为 0.5 秒）。"
     }
   ],

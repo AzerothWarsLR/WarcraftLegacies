@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "轰炸机"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练轰炸机"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "库尔提拉斯的战争武器，用于侦察敌方基地并为地面部队提供空中支援。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练轰炸机"
+      "Value": "（库尔提拉斯）"
     }
   ],
   "NewId": "h04O"

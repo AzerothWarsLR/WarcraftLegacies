@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（铁炉堡）"
+      "Value": "狮鹫骑士"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "强大的飞行生物，由一名蛮锤投掷手骑乘。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
     }
   ]
 }

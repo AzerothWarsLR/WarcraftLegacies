@@ -5,26 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（白银之手侍从）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
-      "Value": "烈焰之剑"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "烈焰之剑"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "相位之刃 - [|cffffcc002级|r]"
+      "Value": "灼热之箭"
     },
     {
       "Level": 1,
@@ -37,6 +20,23 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "对敌人的攻击附加<A057,DataA2>点额外伤害，但每次攻击都会消耗法力。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（白银之手侍从）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "烈焰之剑"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "相位之刃 - [|cffffcc002级|r]"
     }
   ],
   "NewId": "A13D"

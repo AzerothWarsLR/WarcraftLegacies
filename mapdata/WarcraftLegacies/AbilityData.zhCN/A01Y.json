@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（神器）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "物品栏（虚拟掉落）"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（神器）"
     }
   ],
   "NewId": "A01Y"

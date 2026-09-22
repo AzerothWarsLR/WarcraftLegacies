@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（野外生物）"
+      "Value": "召唤丛林守护者"
     },
     {
       "Id": "upro",
@@ -18,6 +18,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长使用自然法术。可学习纠缠根须、自然之力、荆棘光环和宁静。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
     }
   ],
   "NewId": "E00P"

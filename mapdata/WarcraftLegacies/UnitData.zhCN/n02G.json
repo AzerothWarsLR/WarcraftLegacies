@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "水晶魔像"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "向敌人投掷巨石的强力近战单位。对法术免疫。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水晶魔像"
     }
   ],
   "NewId": "n02G"

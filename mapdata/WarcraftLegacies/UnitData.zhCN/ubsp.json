@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（天灾）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "黑曜石毁灭者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练黑曜石毁灭者"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "被唤醒的黑曜石雕像，魔法的吞噬者。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练黑曜石毁灭者"
+      "Value": "（天灾）"
     }
   ]
 }

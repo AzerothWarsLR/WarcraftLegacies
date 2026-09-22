@@ -5,29 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "高阶萨满"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "先知努波顿"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "神秘型英雄，擅长治疗盟友并扰乱敌人。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤努波顿"
     },
     {
       "Id": "utpr",
@@ -35,9 +15,29 @@
       "Value": "复活努波顿"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤努波顿"
+    },
+    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活努波顿"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长治疗盟友并扰乱敌人。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "先知努波顿"
     }
   ],
   "NewId": "E01J"

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（青色 - 祖鲁希德终极技能）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "连锁爆炸"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 祖鲁希德终极技能）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "连锁爆炸 (|cffffcc00Q|r)"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "释放一道连锁火焰，在命中的每个单位身上爆裂，初始造成 200 点伤害，每多命中一个目标伤害降低 10%。最多命中 8 个单位。|n|n冷却时间 5 秒。"
     }
   ],

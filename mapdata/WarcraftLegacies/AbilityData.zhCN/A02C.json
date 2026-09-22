@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯-女巫）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤火元素"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 女巫）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤火元素"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤一个火元素，攻击女巫的敌人。|n持续 60 秒。|n|n|cffffcc00能攻击地面和空中单位。|r"
     }
   ],

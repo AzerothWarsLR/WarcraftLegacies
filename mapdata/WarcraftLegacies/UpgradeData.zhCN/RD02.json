@@ -5,27 +5,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Value": "箭术"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Level": 1,
       "Value": "卡利姆多荒野适应"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使游侠的生命值提高 300 点。"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "卡利姆多荒野适应"
     },
     {
-      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（德莱尼）"
     }
   ],

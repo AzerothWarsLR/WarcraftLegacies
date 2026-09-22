@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（天空之墙）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练疾风守卫"
     }
   ],
   "NewId": "o02A"

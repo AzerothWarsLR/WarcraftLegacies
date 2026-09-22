@@ -8,6 +8,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（等级 4）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "口袋工厂"
     }
   ],
   "NewId": "n04M"

@@ -6,12 +6,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（燃烧军团）"
-    },
-    {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "纳斯雷兹姆术士专家级训练"
@@ -45,6 +39,12 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高纳斯雷兹姆术士的法力值上限，并使其获得施放能量波的能力。"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 1,
+      "Value": "（燃烧军团）"
     }
   ],
   "NewId": "R042"

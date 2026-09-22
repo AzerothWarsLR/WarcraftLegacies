@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "警戒塔"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（吉尔尼斯塔）"
@@ -12,7 +17,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "|cff2fc6ba防御塔|r"
+      "Value": "主要防御建筑。"
     }
   ],
   "NewId": "h03A"

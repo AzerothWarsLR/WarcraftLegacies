@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "收割女巫"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练收割女巫"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "吉尔尼斯的女巫。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练收割女巫"
+      "Value": "（吉尔尼斯）"
     }
   ],
   "NewId": "h04X"

@@ -5,26 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "arut",
       "Type": 3,
-      "Value": "（洛丹伦-乌瑟尔-督察伊德拉克斯）"
+      "Value": "为 450 范围内的周围友方单位提供额外护甲。 |n|n|cffffcc001级|r - 护甲提高<AHad,DataA1,.>点。 |n|cffffcc002级|r - 护甲提高<AHad,DataA2,.>点。 |n|cffffcc003级|r - 护甲提高<AHad,DataA3,.>点。|n|cffffcc004级|r - 护甲提高<AHad,DataA4,.>点。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "虔诚光环 - [|cffffcc004级|r]"
+      "Value": "虔诚光环"
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
       "Value": "为 450 范围内的周围友方单位提供<AHad,DataA4,.>点额外护甲。"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "为 450 范围内的周围友方单位提供额外护甲。 |n|n|cffffcc001级|r - 护甲提高<AHad,DataA1,.>点。 |n|cffffcc002级|r - 护甲提高<AHad,DataA2,.>点。 |n|cffffcc003级|r - 护甲提高<AHad,DataA3,.>点。|n|cffffcc004级|r - 护甲提高<AHad,DataA4,.>点。"
     },
     {
       "Level": 1,
@@ -43,6 +37,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "为 450 范围内的周围友方单位提供<AHad,DataA3,.>点额外护甲。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦-乌瑟尔-督察伊德拉克斯）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "虔诚光环 - [|cffffcc004级|r]"
     }
   ]
 }

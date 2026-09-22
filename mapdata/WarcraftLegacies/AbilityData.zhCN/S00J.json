@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "坚韧光环"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（巨魔敌对）"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "祖尔法拉克光环"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "祖尔法拉克光环"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使<S00J,Area1>范围内单位的移动速度提高<S00J,DataA1,%>%。"
     }
   ],

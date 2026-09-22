@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "圣殿骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练圣殿骑士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "血色十字军的正义战士。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练圣殿骑士"
+      "Value": "（洛丹伦）"
     }
   ],
   "NewId": "h06B"

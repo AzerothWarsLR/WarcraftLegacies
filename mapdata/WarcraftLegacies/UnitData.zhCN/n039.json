@@ -5,17 +5,17 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "巨树"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德鲁伊 - 玛法里奥）"
     },
     {
       "Id": "unam",
-      "Type": 3,
-      "Value": "巨树"
-    },
-    {
-      "Id": "utip",
       "Type": 3,
       "Value": "巨树"
     }

@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "土元素"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练土元素"
     }
   ],
   "NewId": "h09V"

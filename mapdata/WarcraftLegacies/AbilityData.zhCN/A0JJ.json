@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 生命值/法力值恢复"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（太阳之井的井水）"

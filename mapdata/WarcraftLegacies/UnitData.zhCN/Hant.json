@@ -5,19 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "肯瑞托大法师"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "神秘型英雄，擅长召唤和远程伤害法术。"
     },
     {
       "Id": "utip",
@@ -38,6 +28,16 @@
       "Id": "upro",
       "Type": 3,
       "Value": "安东尼达斯"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长召唤和远程伤害法术。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
     }
   ]
 }

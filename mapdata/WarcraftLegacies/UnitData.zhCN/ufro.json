@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（天灾）"
+      "Value": "冰霜巨龙"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "冰封荒原的亡灵巨龙。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
     }
   ]
 }

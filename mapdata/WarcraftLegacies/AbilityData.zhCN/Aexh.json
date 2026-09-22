@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "发掘尸体"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 清道夫）"

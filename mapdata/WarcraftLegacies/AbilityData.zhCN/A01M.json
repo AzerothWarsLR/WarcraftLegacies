@@ -5,19 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（射程 1000）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "反传送门阻挡（单位）"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（射程 1000）"
+    },
+    {
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "灼烧周围的敌方单位，每秒造成 5 点伤害并燃烧 1 点魔法值。"
     }
   ],

@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "该单位由 2 名地精驾驶，坦克被摧毁时他们会跳出。"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "地精驾驶员"
     },
     {
+      "Id": "aub1",
+      "Type": 3,
       "Level": 1,
+      "Value": "该单位由 2 名地精驾驶，坦克被摧毁时他们会跳出。"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "地精驾驶员"
     },
     {

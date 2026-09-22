@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "加强型地洞升级"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（粉色/灰色/青色）"

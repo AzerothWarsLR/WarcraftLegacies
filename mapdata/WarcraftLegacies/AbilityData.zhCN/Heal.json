@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（青色 - 祖鲁希德）"
+      "Value": "治疗波"
     },
     {
       "Level": 1,
@@ -32,6 +32,11 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "治疗波(|cffffcc00Q|r) - [|cffffcc00级别 4|r]"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 祖鲁希德）"
     }
   ],
   "NewId": "Heal"

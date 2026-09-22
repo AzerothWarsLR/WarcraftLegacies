@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "格里洛克之眼"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练格里洛克之眼"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "血环氏族对战争的贡献，用于侦察敌人的领地。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练格里洛克之眼"
+      "Value": "（邪能）"
     }
   ],
   "NewId": "u018"

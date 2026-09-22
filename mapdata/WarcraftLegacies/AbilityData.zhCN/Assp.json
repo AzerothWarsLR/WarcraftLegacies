@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "生出小蜘蛛"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（野怪 - 女王纳扎雷特）"

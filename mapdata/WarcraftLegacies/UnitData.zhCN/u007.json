@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（燃烧军团 - 精英）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "恐惧魔王"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练恐惧魔王"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "由提克迪奥斯亲自挑选的精英纳斯雷兹姆。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练恐惧魔王"
+      "Value": "（燃烧军团 - 精英）"
     }
   ],
   "NewId": "u007"

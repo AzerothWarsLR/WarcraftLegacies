@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤秘法防御者"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤秘法防御者"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤 3 个符文石守卫，持续 45 秒。"
     }
   ],

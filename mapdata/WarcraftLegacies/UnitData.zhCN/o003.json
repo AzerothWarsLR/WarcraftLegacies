@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "便携火炮"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造便携火炮"
     }
   ],
   "NewId": "o003"

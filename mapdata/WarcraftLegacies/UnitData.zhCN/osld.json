@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（兽人部落 魔法）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "施法单位生产建筑。"
+      "Value": "灵魂小屋"
     }
   ]
 }

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "加强型防御"
+    },
+    {
       "Level": 1,
       "Id": "gnsf",
       "Type": 3,

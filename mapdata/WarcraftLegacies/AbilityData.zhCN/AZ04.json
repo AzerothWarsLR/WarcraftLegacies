@@ -1,0 +1,19 @@
+{
+  "OldId": "AChx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "妖术"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落-Far Seer）"
+    }
+  ],
+  "NewId": "AZ04"
+}

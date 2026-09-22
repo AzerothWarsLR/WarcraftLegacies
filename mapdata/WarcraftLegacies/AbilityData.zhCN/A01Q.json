@@ -5,19 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿卡玛）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习暗影光环 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "降低周围敌方单位的攻击力，并使该单位有一定几率闪避攻击。|n|n|cffffcc001级|r - 攻击力降低 20%，并有<A0Z1,DataA1,%>%的几率闪避攻击。|n|cffffcc002级|r - 攻击力降低 30%，并有<A0Z1,DataA2,%>%的几率闪避攻击。|n|cffffcc003级|r - 攻击力降低 40%，并有<A0Z1,DataA3,%>%的几率闪避攻击。|n|cffffcc004级|r - 攻击力降低 50%，并有<A0Z1,DataA4,%>%的几率闪避攻击。"
+      "Value": "降低周围敌方单位的攻击力，并使该单位有一定几率闪避攻击。|n|n|cffffcc001级|r - 攻击力降低 20%，并有<A0Z1,DataA1,%>%的几率闪避攻击。|n|cffffcc002级|r - 攻击力降低 30%，并有<A0Z1,DataA2,%>%的几率闪避攻击。|n|cffffcc003级|r - 攻击力降低 40%，并有<A0Z1,DataA3,%>%的几率闪避攻击。|n|cffffcc004级|r - 攻击力降低 50%，并有<A0Z1,DataA4,%>%的几率闪避攻击。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暗影光环"
     },
     {
       "Level": 1,
@@ -68,9 +63,14 @@
       "Value": "使周围敌方单位的攻击力降低 50%，并使该单位获得<A0Z1,DataA4,%>%的几率闪避攻击。"
     },
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "暗影光环"
+      "Value": "（阿卡玛）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习暗影光环 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A01Q"

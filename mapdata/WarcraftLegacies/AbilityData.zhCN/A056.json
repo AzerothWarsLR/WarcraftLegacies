@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿尔萨斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤王室禁卫"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习召唤王室禁卫 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "阿尔萨斯召唤他的精锐保镖前来护卫。他们拥有防御、嘲讽和抗性体肤技能。 |n增援持续 60 秒。 |n|n|cffffcc001级|r - 2 名王室禁卫。|n|cffffcc002级|r - 3 名王室禁卫。|n|cffffcc003级|r - 4 名王室禁卫。 |n|cffffcc004级|r - 5 名王室禁卫。"
+      "Value": "阿尔萨斯召唤他的精锐保镖前来护卫。他们拥有防御、嘲讽和抗性体肤技能。 |n增援持续 60 秒。 |n|n|cffffcc001级|r - 2 名王室禁卫。|n|cffffcc002级|r - 3 名王室禁卫。|n|cffffcc003级|r - 4 名王室禁卫。 |n|cffffcc004级|r - 5 名王室禁卫。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤 5 名皇家卫兵。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿尔萨斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤王室禁卫 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A056"

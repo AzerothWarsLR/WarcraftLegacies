@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（霜狼 攻城）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "高级部队生产建筑。"
+      "Value": "牛头人图腾"
     }
   ]
 }

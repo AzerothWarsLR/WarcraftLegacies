@@ -10,21 +10,6 @@
       "Value": "高阶督军"
     },
     {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "纳因图斯"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（伊利达雷）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "战斗型英雄，擅长强化周围的部队并召唤爪牙。"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤纳因图斯"
@@ -38,6 +23,21 @@
       "Id": "uawt",
       "Type": 3,
       "Value": "复活督军"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长强化周围的部队并召唤爪牙。"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "纳因图斯"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
     }
   ],
   "NewId": "U00S"

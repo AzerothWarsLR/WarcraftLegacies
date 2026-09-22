@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战斗戒备"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（青色 - 邪兽人地洞）"

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（远行者）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "佯攻"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（远行者）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "佯攻"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使远行者隐形、可穿越单位，且移动速度提高<A02I,DataB1,%>%，持续<A02I,Dur1>秒。"
     }
   ],

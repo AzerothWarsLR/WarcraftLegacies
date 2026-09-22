@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为烈焰之柱"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "向敌人投掷巨石。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "控制点防卫者"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "向敌人投掷巨石。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为烈焰之柱"
     }
   ],
   "NewId": "n0AA"

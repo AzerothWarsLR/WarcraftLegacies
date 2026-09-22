@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（哨兵）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "强大的艾露恩女祭司，专精于欺诈之术。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "月骑兵"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练月骑兵"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的艾露恩女祭司，专精于欺诈之术。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
     }
   ],
   "NewId": "e022"

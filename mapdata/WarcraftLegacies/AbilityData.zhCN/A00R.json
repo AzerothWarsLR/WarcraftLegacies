@@ -10,10 +10,15 @@
       "Value": "雷霆震裂（护甲减益施加）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "护甲降低 7 点"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（）"
     }
   ],
   "NewId": "A00R"

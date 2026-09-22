@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "紧急维修"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（炮艇）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "恢复<A0IY,DataA1>点生命值。"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "紧急维修"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
+      "Level": 1,
       "Value": "紧急维修"
     }
   ],

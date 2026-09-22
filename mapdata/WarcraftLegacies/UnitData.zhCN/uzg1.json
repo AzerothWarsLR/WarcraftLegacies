@@ -7,12 +7,17 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "|cff2fc6ba防御塔|r"
+      "Value": "主要防御建筑。"
     },
     {
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 防御塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "幽魂之塔"
     }
   ]
 }

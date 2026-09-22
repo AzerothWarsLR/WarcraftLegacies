@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "符文石守卫"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练符文石守卫"
     }
   ],
   "NewId": "h0CM"

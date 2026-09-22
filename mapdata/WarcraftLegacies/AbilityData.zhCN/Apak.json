@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "运货骡子"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（粉色 - 科多兽）"

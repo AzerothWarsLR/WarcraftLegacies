@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Value": "混乱"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Level": 1,
       "Value": "降服暗矛巨魔"
     }
   ],

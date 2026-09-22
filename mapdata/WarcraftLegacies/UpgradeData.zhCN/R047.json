@@ -5,27 +5,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "箭术"
+    },
+    {
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "强化树妖的减速毒药，将其移动速度降低效果提高至<A13W,DataB2,%>%，攻击速度降低效果提高至<A13W,DataC2,%>%，持续时间提高至<A13W,Dur2>秒。"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "研究致残毒药"
     },
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Level": 1,
       "Value": "致残毒药"
     },
     {
-      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（德鲁伊）"
     }
   ],

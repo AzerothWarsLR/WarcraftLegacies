@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（维伦）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "神圣风暴"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习神圣风暴 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "释放神圣烈焰，对附近的敌方地面单位造成伤害。|n持续消耗魔法值，直到取消激活。|n|n|cffffcc00等级 1|r - 每秒 35 点伤害。 |n|cffffcc00等级 2|r - 每秒 60 点伤害。 |n|cffffcc00等级 3|r - 每秒 85 点伤害。"
+      "Value": "释放神圣烈焰，对附近的敌方地面单位造成伤害。|n持续消耗魔法值，直到取消激活。|n|n|cffffcc00等级 1|r - 每秒 35 点伤害。 |n|cffffcc00等级 2|r - 每秒 60 点伤害。 |n|cffffcc00等级 3|r - 每秒 85 点伤害。\n"
     },
     {
       "Level": 1,
@@ -79,9 +69,19 @@
       "Value": "取消激活神圣风暴 - [|cffffcc003 级|r]"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（维伦）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣风暴 - [|cffffcc00等级 %d|r]"
+    },
+    {
       "Id": "auu1",
       "Type": 3,
+      "Level": 1,
       "Value": "取消激活神圣风暴，停止消耗魔法值。"
     }
   ]

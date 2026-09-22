@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "漩涡"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（库尔提拉斯 - 海潮贤者）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤一个无法移动的漩涡，减缓敌方单位的速度，使其攻击速度降低 15%，移动速度降低 10%。 |n持续<A0GI,Dur1>秒。"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "漩涡"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
+      "Level": 1,
       "Value": "漩涡"
     }
   ],

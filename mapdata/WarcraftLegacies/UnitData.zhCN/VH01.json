@@ -5,24 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "马林·诺格弗格"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "加基森男爵"
     },
     {
-      "Id": "unsf",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "（野外生物）"
+      "Value": "复活加基森男爵"
     },
     {
-      "Id": "utub",
+      "Id": "uawt",
       "Type": 3,
-      "Value": "炼金术士英雄，擅长防御和进攻作战。"
+      "Value": "复活加基森男爵"
     },
     {
       "Id": "utip",
@@ -30,14 +25,19 @@
       "Value": "召唤诺格弗格"
     },
     {
-      "Id": "utpr",
+      "Id": "utub",
       "Type": 3,
-      "Value": "复活诺格弗格"
+      "Value": "炼金术士英雄，擅长防御和进攻作战。"
     },
     {
-      "Id": "uawt",
+      "Id": "upro",
       "Type": 3,
-      "Value": "复活诺格弗格"
+      "Value": "马林·诺格弗格"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
     }
   ],
   "NewId": "VH01"

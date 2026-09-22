@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然 T2）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "秘法议会"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为秘法议会"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "主要建筑。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "升级为秘法议会"
+      "Value": "（达拉然 T2）"
     }
   ],
   "NewId": "h066"

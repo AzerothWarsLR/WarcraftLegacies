@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（橙色 - 要塞/都城）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "补充法力"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（橙色 - 要塞/都城）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "补充法力"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "为周围 6 个友方单位恢复 20 点法力值。"
     }
   ],

@@ -8,6 +8,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "阿曼尼战熊"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练阿曼尼战熊"
     }
   ]
 }

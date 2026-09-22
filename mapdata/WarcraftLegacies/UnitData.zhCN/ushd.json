@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（天灾）"
+      "Value": "牺牲"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "杀死侍僧，并从其尸体中复活一个阴影。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "牺牲"
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "影魔"
     }
   ]
 }

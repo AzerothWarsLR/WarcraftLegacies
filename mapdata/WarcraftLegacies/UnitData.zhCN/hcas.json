@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦 T3）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "城堡"
     }
   ]
 }

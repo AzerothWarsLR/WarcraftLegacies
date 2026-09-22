@@ -1,0 +1,42 @@
+{
+  "OldId": "AOmi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "镜像"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "制造施法者的幻象来攻击敌人，并驱散施法者身上的所有魔法效果。|n|n|cffffcc001级|r - 制造 3 个幻象，造成 60% 的伤害，承受 125% 的伤害。 |n|cffffcc002级|r - 制造 5 个幻象，造成 60% 的伤害，承受 125% 的伤害。 |n|cffffcc003级|r - 制造 7 个幻象，造成 60% 的伤害，承受 125% 的伤害。"
+    },
+    {
+      "Id": "aub1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "制造<AOmi,DataA2>个施法者的幻象，每个幻象造成<AOmi,DataB2,%>% 的伤害并承受<AOmi,DataC2,%>% 的伤害。驱散施法者身上的所有魔法效果。 |n持续<AOmi,Dur2>秒。"
+    },
+    {
+      "Id": "aub1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "制造<AOmi,DataA3>个施法者的幻象，每个幻象造成<AOmi,DataB3,%>% 的伤害并承受<AOmi,DataC3,%>% 的伤害。驱散施法者身上的所有魔法效果。 |n持续<AOmi,Dur3>秒。"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "镜像"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（Blademaster）"
+    }
+  ],
+  "NewId": "TP72"
+}

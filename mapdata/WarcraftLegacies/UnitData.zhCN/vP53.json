@@ -1,0 +1,29 @@
+{
+  "OldId": "owyv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "风骑士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "机动性极强的飞行生物。极擅长侦察。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练风骑士"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    }
+  ],
+  "NewId": "vP53"
+}

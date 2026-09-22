@@ -5,19 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "神圣药水"
+    },
+    {
       "Id": "utip",
       "Type": 3,
-      "Value": "购买神圣药水"
+      "Value": "购买神圣佳酿"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "使英雄在 7 秒内变为无敌。"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "神圣佳酿"
     }
   ]
 }

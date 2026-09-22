@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本观察塔。无法攻击。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（奎尔萨拉斯塔）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "基本观察塔。无法攻击。"
+      "Value": "哨塔"
     }
   ],
   "NewId": "h073"

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（见习法师）"
+      "Value": "减速术"
     },
     {
       "Level": 1,
@@ -34,15 +34,20 @@
       "Value": "使目标敌方空中单位的攻击速度降低<A0E9,DataB2,%>%，移动速度降低<A0E9,DataA2,%>%。 |n持续<A0E9,Dur2>秒。"
     },
     {
-      "Level": 2,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（见习法师）"
+    },
+    {
       "Id": "aut1",
       "Type": 3,
+      "Level": 2,
       "Value": "|cffc3dbff点击右键以激活自动施法。|r"
     },
     {
-      "Level": 2,
       "Id": "auu1",
       "Type": 3,
+      "Level": 2,
       "Value": "|cffc3dbff点击右键以取消自动施法。|r"
     }
   ],

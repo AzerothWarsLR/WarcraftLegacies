@@ -1,0 +1,13 @@
+{
+  "OldId": "AEHS",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗喷雾"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "otrb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "提供 10 人口，可提高可训练单位的数量上限。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族 农场）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "帐篷"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造帐篷"
+    }
+  ],
+  "NewId": "otfm"
+}

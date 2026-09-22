@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "向敌人投掷巨石。"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "升级为巨石塔"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巨石塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "向敌人投掷巨石。"
     }
   ]
 }

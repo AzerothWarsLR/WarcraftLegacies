@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恢复"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 侍僧。蓝色 - 艾瑞达召唤者）"

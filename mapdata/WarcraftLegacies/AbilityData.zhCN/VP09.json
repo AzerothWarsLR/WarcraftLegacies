@@ -5,15 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（铁炉堡）"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "|cffffcc00(W)|r - 驱散魔法"
+      "Value": "驱散魔法"
     },
     {
       "Level": 1,
@@ -26,6 +20,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "移除目标区域内单位身上的所有魔法效果。|n|cffffcc00对召唤单位造成<A02E,DataB2>点伤害。|r"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "|cffffcc00(W)|r - 驱散魔法"
     }
   ],
   "NewId": "VP09"

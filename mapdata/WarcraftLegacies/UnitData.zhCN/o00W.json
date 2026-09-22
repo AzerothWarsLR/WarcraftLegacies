@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "守望者之眼"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练守望者之眼"
     }
   ],
   "NewId": "o00W"

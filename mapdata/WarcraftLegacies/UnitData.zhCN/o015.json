@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤深渊恶魔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "燃烧军团深渊领主的仆从，渴望靠征服换取赏识而晋升。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能-传送门）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "深渊恶魔"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "燃烧军团深渊领主的仆从，渴望靠征服换取赏识而晋升。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤深渊恶魔"
     }
   ],
   "NewId": "o015"

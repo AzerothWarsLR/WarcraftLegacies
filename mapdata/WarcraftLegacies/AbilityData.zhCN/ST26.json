@@ -5,43 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（苔丝·格雷迈恩）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "使该英雄的攻击能额外向附近的敌方单位发射投射物。|n|n|cffffcc00级别 1|r - 攻击最多额外命中 2 个单位。|n|cffffcc00级别 2|r - 攻击最多额外命中 3 个单位。|n|cffffcc00级别 3|r - 攻击最多额外命中 4 个单位。|n|cffffcc00级别 4|r - 攻击最多额外命中 5 个单位。"
+      "Value": "使该英雄的攻击能额外向附近的敌方单位发射投射物。|n|n|cffffcc00级别 1|r - 攻击最多额外命中 2 个单位。|n|cffffcc00级别 2|r - 攻击最多额外命中 3 个单位。|n|cffffcc00级别 3|r - 攻击最多额外命中 4 个单位。|n|cffffcc00级别 4|r - 攻击最多额外命中 5 个单位。\n"
     },
     {
-      "Level": 1,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "多重射击 - [|cffffcc001级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "多重射击 - [|cffffcc002级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "多重射击 - [|cffffcc003级|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "多重射击 - [|cffffcc004级|r]"
+      "Value": "火箭弹幕"
     },
     {
       "Level": 1,
@@ -53,13 +24,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该英雄的攻击向最多 3 个附近的敌方单位发射额外投射物。"
+      "Value": "使该英雄的攻击能额外向最多 3 个附近的敌方单位发射一枚投射物。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该英雄的攻击向最多 4 个周围的敌方单位发射额外的箭矢。"
+      "Value": "使该英雄的攻击能额外向最多 4 个附近的敌方单位发射一枚投射物。"
     },
     {
       "Level": 4,
@@ -68,9 +39,38 @@
       "Value": "使该英雄的攻击向最多 5 个周围的敌方单位发射额外的箭矢。"
     },
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "多重射击"
+      "Value": "（苔丝·格雷迈恩）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "多重射击 - [|cffffcc001级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "多重射击 - [|cffffcc002级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "多重射击 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "火箭弹幕 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "ST26"

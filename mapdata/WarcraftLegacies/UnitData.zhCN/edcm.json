@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（熊形态）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "强大的前线近战单位。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "熊"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练熊"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的前线近战单位。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（熊形态）"
     }
   ]
 }

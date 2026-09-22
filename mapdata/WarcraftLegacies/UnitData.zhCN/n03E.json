@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造钢铁要塞"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌塔）"
@@ -17,12 +22,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "|cff2fc6ba防御塔|r"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造钢铁要塞"
+      "Value": "主要防御建筑。"
     }
   ],
   "NewId": "n03E"

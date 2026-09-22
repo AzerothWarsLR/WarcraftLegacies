@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练腐尸甲虫"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（红色 - 阿努巴拉克）（等级 2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐尸甲虫"
     }
   ]
 }

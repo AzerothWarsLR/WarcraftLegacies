@@ -5,19 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "奎尔萨拉斯王子"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "神秘型英雄，擅长造成魔法伤害。"
     },
     {
       "Id": "utip",
@@ -38,6 +28,16 @@
       "Id": "upro",
       "Type": 3,
       "Value": "凯尔萨斯·逐日者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长造成魔法伤害。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
     }
   ]
 }

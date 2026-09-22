@@ -5,21 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（浅蓝色/棕色 - 小精灵）"
-    },
-    {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "摧毁施法者，驱散所有魔法增益效果，并抽取施法者周围区域内每个单位<Adtn,DataA2>点法力值。|n|cffffcc00对召唤单位造成<Adtn,DataB2>点伤害。|r"
+      "Value": "摧毁施法者，驱散所有魔法增益效果，并抽取施法者周围区域内每个单位<Adtn,DataA2>点法力值。|n|cffffcc00对召唤单位造成<Adtn,DataB2>点伤害。|r\n"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "摧毁施法者，驱散所有魔法增益效果，并抽取施法者周围区域内每个单位<Adtn,DataA1>点法力值。|n|cffffcc00对召唤单位造成<Adtn,DataB1>点伤害。|r"
+      "Value": "摧毁施法者，驱散所有魔法增益效果，并抽取施法者周围区域内每个单位<Adtn,DataA1>点法力值。|n|cffffcc00对召唤单位造成<Adtn,DataB1>点伤害。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "自爆"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色/棕色 - 小精灵）"
     }
   ]
 }

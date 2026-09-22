@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（青色 - 亡灵法师）"
+      "Value": "邪恶狂热"
     },
     {
       "Level": 1,
@@ -20,6 +20,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使一个目标单位的攻击速度提高 75%，但每秒会消耗 1 点生命值。|n持续 45 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 亡灵法师）"
     }
   ],
   "NewId": "S004"

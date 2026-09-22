@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "陆战队员"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练陆战队员"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "擅长近身战斗的航海士兵。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练陆战队员"
+      "Value": "（库尔提拉斯）"
     }
   ],
   "NewId": "h041"

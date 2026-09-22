@@ -5,48 +5,38 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "arut",
       "Type": 3,
-      "Value": "（凯恩，玛诺洛斯）"
+      "Value": "猛击地面，对周围的敌方地面单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <AOw2,DataA1>点伤害，昏迷<AOw2,Dur1>秒。 |n|cffffcc002级|r - <AOw2,DataA2>点伤害，昏迷<AOw2,Dur2>秒。 |n|cffffcc003级|r - <AOw2,DataA3>点伤害，昏迷<AOw2,Dur3>秒。 |n|cffffcc004级|r - <AOw2,DataA4>点伤害，昏迷<AOw2,Dur4>秒。\n"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "战争践踏"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习战争践踏 - [|cffffcc00等级 %d|r]."
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "猛击地面，对周围的敌方地面单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <AOw2,DataA1>点伤害，昏迷<AOw2,Dur1>秒。 |n|cffffcc002级|r - <AOw2,DataA2>点伤害，昏迷<AOw2,Dur2>秒。 |n|cffffcc003级|r - <AOw2,DataA3>点伤害，昏迷<AOw2,Dur3>秒。 |n|cffffcc004级|r - <AOw2,DataA4>点伤害，昏迷<AOw2,Dur4>秒。"
+      "Value": "召唤水元素"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "战争践踏 - [|cffffcc001级|r]"
+      "Value": "召唤水元素 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "战争践踏 - [|cffffcc002级|r]"
+      "Value": "召唤水元素 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "战争践踏 - [|cffffcc003级|r]"
+      "Value": "召唤水元素 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "战争践踏 - [|cffffcc004级|r]"
+      "Value": "召唤水元素 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "猛击地面，对周围的敌方地面单位造成 100 点伤害，并使其昏迷<A0WN,Dur4>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（凯恩，玛诺洛斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习战争践踏 - [|cffffcc00等级 %d|r]."
     }
   ],
   "NewId": "A0WM"

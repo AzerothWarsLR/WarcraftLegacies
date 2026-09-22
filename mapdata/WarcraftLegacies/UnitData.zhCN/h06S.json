@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造蒸汽工坊"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（伊利达雷研究）"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "通用研发建筑。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造蒸汽工坊"
     }
   ],
   "NewId": "h06S"

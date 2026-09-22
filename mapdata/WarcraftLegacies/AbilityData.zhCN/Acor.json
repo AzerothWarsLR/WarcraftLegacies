@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "腐蚀吐息"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（棕色 - 奇美拉）"

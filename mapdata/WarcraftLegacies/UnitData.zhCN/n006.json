@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（日怒）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "奥术上古守护者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练奥术上古守护者"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "被奥术转化扭曲了形态的上古守护者。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练奥术上古守护者"
+      "Value": "（日怒）"
     }
   ],
   "NewId": "n006"

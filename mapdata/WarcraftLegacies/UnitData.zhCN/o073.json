@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（战歌）"
+      "Value": "训练莫克纳萨战士"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "骄傲不屈，百战锻造，受战歌之血与怒火的约束。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "莫克纳萨战士"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练莫克纳萨战士"
     }
   ],
   "NewId": "o073"

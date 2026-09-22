@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（日怒）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "天舰"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练天舰"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "飞行攻击炮艇。拥有巨大的魔法值储备，但不会自动回复。用它为你的能量货车提供可吸收的魔法值。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练天舰"
+      "Value": "（日怒）"
     }
   ],
   "NewId": "n0E8"

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "发掘尸体"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 血肉泰坦）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "每<Aexh,Dur1>秒在瘟疫泰坦体内生成一具尸体。"
     }
   ],

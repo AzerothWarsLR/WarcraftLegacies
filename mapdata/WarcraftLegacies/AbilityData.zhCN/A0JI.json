@@ -5,15 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（青色 - 邪兽人术士）"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "吞噬一片区域内单位身上的所有魔法增益。每吞噬一个单位的魔法，施法者便获得<A0JI,DataA1>点生命值和<A0JI,DataB1>点法力值。|n|cffffcc00对召唤单位造成<A0JI,DataE1>点伤害。|r"
+      "Value": "吞噬一片区域内单位身上的所有魔法增益。每吞噬一个单位的魔法，施法者便获得<A0JI,DataA1>点生命值和<A0JI,DataB1>点法力值。|n|cffffcc00对召唤单位造成<A0JI,DataE1>点伤害。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吞噬魔法"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 邪兽人术士）"
     }
   ],
   "NewId": "A0JI"

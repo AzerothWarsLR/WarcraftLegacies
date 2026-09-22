@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之雨"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（艾瑞达术士）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "从天空召下<TP32:ACrf,DataA1>枚火球点燃单位，受影响单位每秒受到<TP32:ACrf,DataE1>点伤害，持续<TP32:ACrf,Dur1>秒。"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "火焰风暴"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "火焰风暴"
     }
   ],

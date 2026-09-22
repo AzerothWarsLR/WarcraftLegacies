@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "维度发生器"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造维度发生器"
     }
   ],
   "NewId": "n00E"

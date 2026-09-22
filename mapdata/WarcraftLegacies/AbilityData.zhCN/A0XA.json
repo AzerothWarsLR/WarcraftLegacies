@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（自身施法 - 黄色，熔火恶犬）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "激怒"
@@ -37,6 +32,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使该单位的攻击速度提高<A0XA,DataA2,%>%，移动速度提高<A0XA,DataB2,%>%，持续<A0XA,Dur2>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（自身施法 - 黄色，熔火恶犬）"
     }
   ],
   "NewId": "A0XA"

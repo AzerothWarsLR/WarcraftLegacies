@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灼热之箭"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（中立敌对 - 月之女祭司）"

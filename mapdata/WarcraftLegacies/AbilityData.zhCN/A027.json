@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（霜狼）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤兽人步兵"
@@ -17,18 +12,23 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤<AOsf,DataB1>头幽灵狼为先知而战。|n持续<AOsf,Dur1>秒。|n|n|cffffcc001级|r - <osw1,realHP>点生命值，<osw1,mindmg1>-<osw1,maxdmg1>点攻击力。召唤 2 头狼。|n|cffffcc002级|r - <osw2,realHP>点生命值，<osw2,mindmg1>-<osw2,maxdmg1>点攻击力，且具有致命一击。召唤 2 头狼。|n|cffffcc003级|r - <osw3,realHP>点生命值，<osw3,mindmg1>-<osw3,maxdmg1>点攻击力，且具有致命一击。召唤 2 头狼。|n|cffffcc004级|r - <osw3,realHP>点生命值，<osw3,mindmg1>-<osw3,maxdmg1>点攻击力，且具有致命一击。召唤 4 头狼。|n|cffffcc005级|r - <osw3,realHP>点生命值，<osw3,mindmg1>-<osw3,maxdmg1>点攻击力，且具有致命一击。召唤 6 头狼。|n"
+      "Value": "召唤<AOsf,DataB1>头幽灵狼为先知而战。|n持续<AOsf,Dur1>秒。|n|n|cffffcc001级|r - <osw1,realHP>点生命值，<osw1,mindmg1>-<osw1,maxdmg1>点攻击力。召唤 2 头狼。|n|cffffcc002级|r - <osw2,realHP>点生命值，<osw2,mindmg1>-<osw2,maxdmg1>点攻击力，且具有致命一击。召唤 2 头狼。|n|cffffcc003级|r - <osw3,realHP>点生命值，<osw3,mindmg1>-<osw3,maxdmg1>点攻击力，且具有致命一击。召唤 2 头狼。|n|cffffcc004级|r - <osw3,realHP>点生命值，<osw3,mindmg1>-<osw3,maxdmg1>点攻击力，且具有致命一击。召唤 4 头狼。|n|cffffcc005级|r - <osw3,realHP>点生命值，<osw3,mindmg1>-<osw3,maxdmg1>点攻击力，且具有致命一击。召唤 6 头狼。|n\n"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤兽人步兵"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤<A027,DataB1>个兽人步兵，持续<A027,Dur1>秒。"
     }
   ],

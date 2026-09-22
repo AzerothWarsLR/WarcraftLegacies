@@ -18,6 +18,11 @@
       "Id": "fnam",
       "Type": 3,
       "Value": "风暴守卫"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（）"
     }
   ],
   "NewId": "TP43"

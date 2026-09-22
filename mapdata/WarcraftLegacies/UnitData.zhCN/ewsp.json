@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（德鲁伊，哨兵，工人）"
+      "Value": "小精灵"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "卡多雷的远古灵魂建造者。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊，哨兵，工人）"
     }
   ]
 }

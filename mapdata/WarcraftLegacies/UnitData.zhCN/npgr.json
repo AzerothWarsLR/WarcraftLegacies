@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造能量产生器"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "能量产生器"
     }
   ]
 }

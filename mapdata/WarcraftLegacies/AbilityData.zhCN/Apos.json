@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "占据"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 女妖）"

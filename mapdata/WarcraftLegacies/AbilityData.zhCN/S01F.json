@@ -8,6 +8,11 @@
       "Id": "anam",
       "Type": 3,
       "Value": "货舱（蒸汽坦克）"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（）"
     }
   ],
   "NewId": "S01F"

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（霜狼 - 德雷克塔尔召唤）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "轻型近战单位。"
+      "Value": "霜狼"
     }
   ]
 }

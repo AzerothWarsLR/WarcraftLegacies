@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（兽人部落）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
-      "Value": "激发癫狂"
+      "Value": "引导"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "激发癫狂"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "控制目标区域内最多 6 个非召唤的敌方单位。被控制的单位会在 30 秒后死亡。"
     }
   ],

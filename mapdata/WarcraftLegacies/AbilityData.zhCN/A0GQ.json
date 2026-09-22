@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吸血药水"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（刽子手）"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "屠戮"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "屠戮"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使该单位获得<A0GQ,DataA1>点额外伤害和<A0GQ,DataB1,%>%生命窃取，持续<A0GQ,Dur1>秒。"
     }
   ],

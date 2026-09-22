@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤虚空领主"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "披甲的恶魔，敌人的黑暗毁灭者。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能-传送门）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "虚空领主"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "披甲的恶魔，敌人的黑暗毁灭者。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤虚空领主"
     }
   ],
   "NewId": "n088"

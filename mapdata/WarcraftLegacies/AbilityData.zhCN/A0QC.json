@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（邪部落 - 碎手刽子手）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "雷霆一击"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落 - 碎手刽子手）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "雷霆一击"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "猛击地面，对附近的敌方地面单位造成 75 点伤害，并使其移动速度降低<S00H,DataA1,%>%，攻击速度降低<S00H,DataB1,%>%。对单位持续<S00H,Dur1>秒，对英雄持续<S00H,HeroDur1>秒。"
     }
   ],

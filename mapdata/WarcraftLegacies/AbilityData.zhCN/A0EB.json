@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（瘟疫幼虫）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "血肉爆裂"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（瘟疫幼虫）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "血肉爆裂"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "对小范围内的单位造成<A0EB,DataB1>点伤害。"
     }
   ],

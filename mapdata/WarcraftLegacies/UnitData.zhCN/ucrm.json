@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "远程战斗支援生物。可学习蛛网和钻地技能。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "远程战斗支援生物。可学习蛛网和钻地技能。"
+      "Value": "钻地的地穴恶魔"
     }
   ]
 }

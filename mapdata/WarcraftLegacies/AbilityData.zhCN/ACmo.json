@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（粉色 - 德雷克塔尔。野怪 - 达克苏尔、德莱尼先知）"
+      "Value": "季风"
     },
     {
       "Level": 2,
@@ -16,16 +16,21 @@
       "Value": "强化季风 (|cffffcc00Q|r)"
     },
     {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "召唤一场闪电风暴，打击中等目标区域内的敌方单位，造成 40 点伤害。|n持续<ACmo,Dur1>秒。"
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "季风 (|cffffcc00Q|r)"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 德雷克塔尔。野怪 - 达克苏尔、德莱尼先知）"
+    },
+    {
+      "Id": "aub1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "召唤一场闪电风暴，打击中等目标区域内的敌方单位，造成 40 点伤害。|n持续<ACmo,Dur1>秒。"
     }
   ]
 }

@@ -13,6 +13,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "基本观察塔。无法攻击。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "哨塔"
     }
   ],
   "NewId": "h0CD"

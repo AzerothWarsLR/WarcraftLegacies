@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "永久献祭"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（天灾 - 冰冠方尖碑）"

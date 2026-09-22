@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造尤格-萨隆的监狱"
     }
   ],
   "NewId": "yLL4"

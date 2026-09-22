@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型近战单位，具有致命一击。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（吉尔尼斯）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "中型近战单位，具有致命一击。"
+      "Value": "巨狼"
     }
   ]
 }

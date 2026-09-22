@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "日怒战士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练日怒战士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "奎尔萨拉斯的坚定保卫者。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练日怒战士"
+      "Value": "（奎尔萨拉斯）"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "OldId": "Nsjs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "酒仙"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    }
+  ],
+  "NewId": "TP80"
+}

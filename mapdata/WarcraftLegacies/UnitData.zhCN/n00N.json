@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（达拉然）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造控制点防卫者"
     }
   ],
   "NewId": "n00N"

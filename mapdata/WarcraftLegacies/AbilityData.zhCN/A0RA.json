@@ -5,60 +5,60 @@
   ],
   "Modifications": [
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "加兹鲁维燃烧额外的燃料，重置他所有技能的冷却时间。|n|n|cffffcc001级|r - 400 点魔法值。|n|cffffcc002级|r - 250 点魔法值。|n|cffffcc003级|r - 100 点魔法值。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战斗咆哮"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战斗咆哮 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战斗咆哮 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战斗咆哮 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "加兹鲁维对他的机甲进行超频，立即重置他的法术冷却时间。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "加兹鲁维对他的机甲进行超频，立即重置他的法术冷却时间。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "加兹鲁维对他的机甲进行超频，立即重置他的法术冷却时间。"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（加兹鲁维）"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "超频"
-    },
-    {
       "Id": "aret",
       "Type": 3,
       "Value": "学习超频 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "加兹鲁维燃烧额外的燃料，重置他所有技能的冷却时间。|n|n|cffffcc001级|r - 400 点魔法值。|n|cffffcc002级|r - 250 点魔法值。|n|cffffcc003级|r - 100 点魔法值。"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "超频 - [|cffffcc001级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "超频 - [|cffffcc002级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "超频 - [|cffffcc003级|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "加兹鲁维对他的机甲进行超频，立即重置他的法术冷却时间。"
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "加兹鲁维对他的机甲进行超频，立即重置他的法术冷却时间。"
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "加兹鲁维对他的机甲进行超频，立即重置他的法术冷却时间。"
     }
   ],
   "NewId": "A0RA"

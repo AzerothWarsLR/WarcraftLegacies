@@ -5,20 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤战鹰"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（霜狼）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤战鹰"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤一只具有<nwe3,realHP>点生命值的战鹰。具有真实视域技能。|n持续<A144:ANsw,Dur1>秒。"
     }
   ],

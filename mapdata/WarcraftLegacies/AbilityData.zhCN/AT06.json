@@ -1,0 +1,48 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤水元素"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习战争践踏 - [|cffffcc00等级 %d|r]."
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "召唤水元素 - [|cffffcc001级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "召唤水元素 - [|cffffcc002级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "召唤水元素 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "召唤水元素 - [|cffffcc004级|r]"
+    }
+  ],
+  "NewId": "AT06"
+}

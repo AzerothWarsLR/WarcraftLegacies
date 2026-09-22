@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德莱尼飞船）"
+      "Value": "建造生命之树"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "主要建筑，用于训练工人和采集资源。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼飞船）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "埃索达皇家号"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造生命之树"
     }
   ],
   "NewId": "e01X"

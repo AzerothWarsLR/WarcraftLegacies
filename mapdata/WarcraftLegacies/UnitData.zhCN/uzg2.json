@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "防御建筑，可造成冰冻伤害并减缓敌方单位。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 防御塔）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "防御建筑，可造成冰冻伤害并减缓敌方单位。"
+      "Value": "蛛魔塔"
     }
   ]
 }

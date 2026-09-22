@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯）"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "装设火炮的防御塔。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
     },
     {
       "Id": "unam",

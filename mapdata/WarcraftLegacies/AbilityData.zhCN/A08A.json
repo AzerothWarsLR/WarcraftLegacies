@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（燃烧军团）"
+      "Value": "地狱火"
     },
     {
       "Level": 2,
@@ -20,6 +20,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "从天空中召唤一个更强大的地狱火，对撞击点附近的敌方单位造成<A08A,DataA1>点伤害。地狱火持续 50 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
     }
   ],
   "NewId": "A08A"

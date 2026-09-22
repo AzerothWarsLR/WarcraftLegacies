@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造艾泽里特攻城坦克"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级攻城武器"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（兽人部落）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "艾泽里特攻城坦克"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "高级攻城武器"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造艾泽里特攻城坦克"
     }
   ],
   "NewId": "e01N"

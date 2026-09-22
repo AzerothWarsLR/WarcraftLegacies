@@ -5,6 +5,21 @@
   ],
   "Modifications": [
     {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活腐化者"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活腐化者"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "格罗玛什·地狱咆哮"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌 - 血契）"
@@ -15,14 +30,9 @@
       "Value": "战歌氏族的腐化者"
     },
     {
-      "Id": "utpr",
+      "Id": "utip",
       "Type": 3,
-      "Value": "复活腐化者"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活腐化者"
+      "Value": "召唤格罗玛什·地狱咆哮"
     }
   ]
 }

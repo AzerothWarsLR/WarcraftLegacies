@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "守望者地窟"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造守望者地窟"
     }
   ],
   "NewId": "n04G"

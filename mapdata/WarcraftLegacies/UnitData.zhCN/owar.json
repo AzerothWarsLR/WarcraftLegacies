@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "碎骨者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练碎骨者"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "外域的强壮骑兵。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练碎骨者"
+      "Value": "（邪能）"
     }
   ]
 }

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（奎尔萨拉斯）"
+      "Value": "龙鹰骑士"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "银月城的迅捷制空战士。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
     }
   ]
 }

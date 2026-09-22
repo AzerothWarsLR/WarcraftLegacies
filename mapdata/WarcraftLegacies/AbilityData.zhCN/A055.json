@@ -5,25 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯 - 安纳斯特里亚）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "安纳斯特里亚每次施放法术时都会生成一颗奥术法球。法球会环绕施法者飞行 30 秒，对撞击到的敌方单位造成伤害。|n|n|cffffcc001级|r - 30 点伤害|n|cffffcc002级|r - 45 点伤害|n|cffffcc003级|r - 60 点伤害|n|cffffcc004级|r - 75 点伤害"
+      "Value": "安纳斯特里亚每次施放法术时都会生成一颗奥术法球。法球会环绕施法者飞行 30 秒，对撞击到的敌方单位造成伤害。|n|n|cffffcc001级|r - 30 点伤害|n|cffffcc002级|r - 45 点伤害|n|cffffcc003级|r - 60 点伤害|n|cffffcc004级|r - 75 点伤害\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "防御法球"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
       "Value": "防御法球 - [|cffffcc004级|r]"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习防御法球 - [|cffffcc00等级 %d|r]"
     },
     {
       "Level": 1,
@@ -62,15 +57,20 @@
       "Value": "防御法球每次撞击会对每个单位造成 50 点伤害。"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "防御法球"
-    },
-    {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
       "Value": "防御法球每次撞击会对每个单位造成 60 点伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 安纳斯特里亚）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习防御法球 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A055"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野怪 - 其他）"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑，用于训练工人和采集资源。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野怪 - 其他）"
     },
     {
       "Id": "unam",

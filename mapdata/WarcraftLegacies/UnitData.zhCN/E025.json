@@ -5,24 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（哨兵）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "守望者的副官"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "娜萨"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "坚韧英雄，擅长前线输出和承受伤害。"
     },
     {
       "Id": "utip",
@@ -38,6 +23,21 @@
       "Id": "uawt",
       "Type": 3,
       "Value": "复活娜萨"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "坚韧英雄，擅长前线输出和承受伤害。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "娜萨"
     }
   ],
   "NewId": "E025"

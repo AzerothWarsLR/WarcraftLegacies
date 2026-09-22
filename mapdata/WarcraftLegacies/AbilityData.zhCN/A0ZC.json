@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪恶光环"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（龙喉战旗 1级）"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "活力光环"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "活力光环"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使周围友方单位的生命恢复速度提高 50%。"
     }
   ],

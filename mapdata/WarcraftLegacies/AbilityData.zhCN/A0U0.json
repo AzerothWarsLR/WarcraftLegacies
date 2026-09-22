@@ -5,24 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（棕色 塞纳留斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "自然之主"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习自然之主 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|cffffcc001级|r - 解锁森林蜘蛛。|n|cffffcc002级|r - 解锁野性之狼。|n|cffffcc003级|r - 解锁熊怪萨满长者。|n|cffffcc004级|r - 解锁伊森德雷。"
+      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|cffffcc001级|r - 解锁森林蜘蛛。|n|cffffcc002级|r - 解锁野性之狼。|n|cffffcc003级|r - 解锁熊怪萨满长者。|n|cffffcc004级|r - 解锁伊森德雷。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛|n- 召唤野性之狼|n- 召唤熊怪长者|n- 召唤伊森德雷|r\n"
     },
     {
       "Level": 1,
@@ -52,7 +48,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛"
+      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛|n- 召唤野性之狼|n- 召唤树苗长者|n- 召唤绿色巨龙|r"
     },
     {
       "Level": 2,
@@ -67,10 +63,14 @@
       "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛|n- 召唤野性之狼|n- 召唤熊怪长者"
     },
     {
-      "Level": 4,
-      "Id": "aub1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "塞纳留斯召唤荒野生物协助他战斗。|n|n|cffffcc00- 召唤森林蜘蛛|n- 召唤野性之狼|n- 召唤熊怪长者|n- 召唤伊森德雷|r\n"
+      "Value": "（棕色 塞纳留斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习自然之主 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0U0"

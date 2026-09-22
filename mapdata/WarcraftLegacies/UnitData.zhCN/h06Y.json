@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（暴风城塔）"
+      "Value": "奥术塔"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "魔法防御建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城塔）"
     }
   ],
   "NewId": "h06Y"

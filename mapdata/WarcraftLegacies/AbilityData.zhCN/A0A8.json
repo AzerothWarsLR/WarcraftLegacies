@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "要塞化"
     },
     {
@@ -21,9 +21,9 @@
       "Value": "（控制点） （共享）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "提高该控制点的控制等级，从而提升其生命值、攻击力与护甲。"
     }
   ],

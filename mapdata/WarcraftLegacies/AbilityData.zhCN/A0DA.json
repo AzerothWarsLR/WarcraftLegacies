@@ -5,24 +5,38 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（督军纳因图斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤深海鱼人"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习召唤深海鱼人 - [|cffffcc00等级 %d|r]."
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤深海鱼人潮汐战士，协助英雄作战<A0DA,Dur1>秒。|r|n|n|cffffcc001级|r - 召唤<A0DA,DataB1>个深海鱼人潮汐战士。|n|cffffcc002级|r - 召唤<A0DA,Datab2>个深海鱼人潮汐战士。|n|cffffcc003级|r - 召唤<A0DA,DataB3>个深海鱼人潮汐战士。|n|cffffcc004级|r - 召唤<A0DA,DataB4>个深海鱼人潮汐战士。"
+      "Value": "召唤深海鱼人潮汐战士，协助英雄作战<A0DA,Dur1>秒。|r|n|n|cffffcc001级|r - 召唤<A0DA,DataB1>个深海鱼人潮汐战士。|n|cffffcc002级|r - 召唤<A0DA,Datab2>个深海鱼人潮汐战士。|n|cffffcc003级|r - 召唤<A0DA,DataB3>个深海鱼人潮汐战士。|n|cffffcc004级|r - 召唤<A0DA,DataB4>个深海鱼人潮汐战士。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0DA,DataB1>个深海鱼人潮汐战士，协助英雄作战<A0DA,Dur1>秒。|n|cffffcc00能攻击地面单位。|r\n"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0DA,DataB2>个深海鱼人潮汐战士，协助英雄作战<A0DA,Dur2>秒。|n|cffffcc00能攻击地面单位。|r\n"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0DA,DataB3>个深海鱼人潮汐战士，协助英雄作战<A0DA,Dur3>秒。|n|cffffcc00能攻击地面单位。|r\n"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0DA,DataB4>个深海鱼人潮汐战士，协助英雄作战<A0DA,Dur4>秒。|n|cffffcc00能攻击地面单位。|r\n"
     },
     {
       "Level": 1,
@@ -49,28 +63,14 @@
       "Value": "召唤深海鱼人 - [|cffffcc004级|r]"
     },
     {
-      "Level": 1,
-      "Id": "aub1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "召唤<A0DA,DataB1>个深海鱼人潮汐战士，协助英雄作战<A0DA,Dur1>秒。|n|cffffcc00能攻击地面单位。|r"
+      "Value": "（督军纳因图斯）"
     },
     {
-      "Level": 2,
-      "Id": "aub1",
+      "Id": "aret",
       "Type": 3,
-      "Value": "召唤<A0DA,DataB2>个深海鱼人潮汐战士，协助英雄作战<A0DA,Dur2>秒。|n|cffffcc00能攻击地面单位。|r"
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "召唤<A0DA,DataB3>个深海鱼人潮汐战士，协助英雄作战<A0DA,Dur3>秒。|n|cffffcc00能攻击地面单位。|r"
-    },
-    {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "召唤<A0DA,DataB4>个深海鱼人潮汐战士，协助英雄作战<A0DA,Dur4>秒。|n|cffffcc00能攻击地面单位。|r"
+      "Value": "学习召唤深海鱼人 - [|cffffcc00等级 %d|r]."
     }
   ],
   "NewId": "A0DA"

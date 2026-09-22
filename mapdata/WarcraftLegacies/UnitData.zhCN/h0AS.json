@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（部落）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "侦察船"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造侦察船"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "小型侦察船。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造侦察船"
+      "Value": "（部落）"
     }
   ],
   "NewId": "h0AS"

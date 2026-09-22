@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪避"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(15%)（浅蓝色 - 影叶哨兵。野怪 - 海克斯）"

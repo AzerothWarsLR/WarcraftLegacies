@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 法力恢复"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（人类商店）"

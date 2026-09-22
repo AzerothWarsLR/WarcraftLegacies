@@ -5,20 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灵魂燃烧"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（青色 - 虚空幼龙、余烬牧师）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "灵魂燃烧"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "用魔法烈焰缠绕一个敌方单位，每秒造成<ANso,DataA1>点伤害，阻止其施放法术，并使其攻击力降低<ANso,DataC1,%>%。|n持续 14 秒。对英雄持续 6 秒。"
     }
   ],

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德鲁伊塔）"
+      "Value": "建造守护古树"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "卡多雷森林的防御型古树，会向敌人投掷巨石。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造守护古树"
+      "Value": "（德鲁伊塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "守护古树"
     }
   ]
 }

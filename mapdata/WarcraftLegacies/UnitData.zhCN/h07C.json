@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（铁炉堡兵营）"
+      "Value": "建造集结大厅"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "主要作战单位生产建筑。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡兵营）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "集结大厅"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造集结大厅"
     }
   ],
   "NewId": "h07C"

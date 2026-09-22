@@ -5,10 +5,9 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "gnsf",
+      "Id": "gnam",
       "Type": 3,
-      "Value": "（棕色研究）"
+      "Value": "自然祝福"
     },
     {
       "Level": 1,
@@ -29,9 +28,15 @@
       "Value": "研究自然祝福 - [|cffffcc003 级|r]"
     },
     {
+      "Id": "gnsf",
+      "Type": 3,
       "Level": 1,
+      "Value": "（棕色研究）"
+    },
+    {
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "强化所有古树，使其移动速度提高 20，生命值提高 10%，护甲小幅提高。使召唤树人的冷却时间缩短 10 秒。"
     }
   ]

@@ -1,0 +1,13 @@
+{
+  "OldId": "Rotr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "巨魔再生"
+    }
+  ]
+}

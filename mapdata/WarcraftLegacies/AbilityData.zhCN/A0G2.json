@@ -5,18 +5,7 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（库尔提拉斯 - 海潮贤者）"
-    },
-    {
       "Id": "anam",
-      "Type": 3,
-      "Value": "召唤海元素"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
       "Type": 3,
       "Value": "召唤海元素"
     },
@@ -24,7 +13,18 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一个海元素攻击施法者的敌人。拥有<n03V,realHP>点生命值，造成<n03V,mindmg1> - <n03V,maxdmg1>点伤害。 |n持续<A0G2,Dur1>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r"
+      "Value": "召唤一个海元素攻击施法者的敌人。拥有<n03V,realHP>点生命值，造成<n03V,mindmg1> - <n03V,maxdmg1>点伤害。 |n持续<A0G2,Dur1>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 海潮贤者）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "召唤海元素"
     }
   ],
   "NewId": "A0G2"

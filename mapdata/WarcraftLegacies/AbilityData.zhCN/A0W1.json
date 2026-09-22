@@ -5,19 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（卡加斯）（考雷斯特拉兹）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习火焰之息 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "对敌方单位吐出一股锥形火焰，造成伤害。 |n|n|cffffcc001级|r - 60 点伤害。 |n|cffffcc002级|r - 105 点伤害。 |n|cffffcc003级|r - 150 点伤害。 |n|cffffcc004级|r - 195 点伤害。"
+      "Value": "对敌方单位吐出一股锥形火焰，造成伤害。 |n|n|cffffcc001级|r - 60 点伤害。 |n|cffffcc002级|r - 105 点伤害。 |n|cffffcc003级|r - 150 点伤害。 |n|cffffcc004级|r - 195 点伤害。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之息"
     },
     {
       "Level": 1,
@@ -66,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "对敌方单位吐出一股锥形火焰，造成 195 点伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（卡加斯）（考雷斯特拉兹）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习火焰之息 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0W1"

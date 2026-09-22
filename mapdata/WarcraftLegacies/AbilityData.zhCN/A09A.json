@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "疾病之云"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（瘟疫结界 2 级）"

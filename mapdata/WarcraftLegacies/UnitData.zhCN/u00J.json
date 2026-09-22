@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "奥术货车"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥术货车"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "以灌注法力的钢材锻造而成，将多余的能量逸散到空气中。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造奥术货车"
+      "Value": "（奎尔萨拉斯）"
     }
   ],
   "NewId": "u00J"

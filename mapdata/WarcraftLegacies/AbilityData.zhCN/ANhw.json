@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（粉色 - 沃金）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一道能量波治疗一个目标，并在附近的友方单位之间弹跳。每次弹跳的治疗效果都会降低。 |n|n|cffffcc001级|r - 恢复<ANhw,DataA1>点生命值，弹跳<ANhw,DataB1>次，每次弹跳治疗效果降低 25%。|n|cffffcc002级|r - 恢复<ANhw,DataA2>点生命值，弹跳<ANhw,DataB2>次，每次弹跳治疗效果降低 20%。|n|cffffcc003级|r - 恢复<ANhw,DataA3>点生命值，弹跳<ANhw,DataB3>次，每次弹跳治疗效果降低 15%。|n|cffffcc004级|r - 恢复<ANhw,DataA4>点生命值，弹跳<ANhw,DataB4>次，每次弹跳治疗效果降低 10%。"
+      "Value": "召唤一道能量波治疗一个目标，并在附近的友方单位之间弹跳。每次弹跳的治疗效果都会降低。 |n|n|cffffcc001级|r - 恢复<ANhw,DataA1>点生命值，弹跳<ANhw,DataB1>次，每次弹跳治疗效果降低 25%。|n|cffffcc002级|r - 恢复<ANhw,DataA2>点生命值，弹跳<ANhw,DataB2>次，每次弹跳治疗效果降低 20%。|n|cffffcc003级|r - 恢复<ANhw,DataA3>点生命值，弹跳<ANhw,DataB3>次，每次弹跳治疗效果降低 15%。|n|cffffcc004级|r - 恢复<ANhw,DataA4>点生命值，弹跳<ANhw,DataB4>次，每次弹跳治疗效果降低 10%。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗波"
     },
     {
       "Level": 1,
@@ -37,6 +37,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤一道治疗能量波，最多弹跳<ANhw,DataB4>次，为主目标恢复<ANhw,DataA4>点生命值。每次弹跳的治疗效果降低 10%。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 沃金）"
     }
   ]
 }

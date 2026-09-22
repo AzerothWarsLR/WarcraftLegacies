@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "圣骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练圣骑士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "圣光的圣洁战士。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练圣骑士"
+      "Value": "（洛丹伦）"
     }
   ],
   "NewId": "h00F"

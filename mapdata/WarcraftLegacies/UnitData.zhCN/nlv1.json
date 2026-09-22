@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "火焰之地被驯服的元素。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（奎尔萨拉斯）"
@@ -15,9 +20,9 @@
       "Value": "火元素"
     },
     {
-      "Id": "utub",
+      "Id": "utip",
       "Type": 3,
-      "Value": "火焰之地被驯服的元素。"
+      "Value": "训练火元素"
     }
   ]
 }

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "毒鳍龙"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "凶猛的爬行两栖生物。"

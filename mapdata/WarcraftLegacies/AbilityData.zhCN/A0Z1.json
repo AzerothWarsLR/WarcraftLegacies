@@ -5,33 +5,10 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿卡玛）"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "有<A0Z1,DataA1,%>%的几率闪避攻击。"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "闪避"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "闪避"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "闪避"
     },
     {
       "Level": 2,
@@ -50,6 +27,29 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "有<A0Z1,DataA3,%>%的几率闪避攻击。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿卡玛）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "闪避"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "闪避"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "闪避"
     }
   ],
   "NewId": "A0Z1"

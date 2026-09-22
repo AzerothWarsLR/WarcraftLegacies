@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（部落）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "接舷战船"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造接舷战船"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "特种中型船只。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造接舷战船"
+      "Value": "（部落）"
     }
   ],
   "NewId": "h0B5"

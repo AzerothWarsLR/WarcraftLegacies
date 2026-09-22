@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（青色、灰色） （狼骑兵）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "流血之刃"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色、灰色） （狼骑兵）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "流血之刃"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使该单位的攻击降低目标 50% 的攻击速度。 |n|cffffcc00持续 0.5(0.15) 秒。"
     }
   ],

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（天灾）"
+      "Value": "憎恶"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "由尸块缝合而成的邪恶造物。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
     }
   ]
 }

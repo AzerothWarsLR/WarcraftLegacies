@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（泰丝）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "飞刀乱舞"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习飞刀乱舞 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "英雄倾注全部力量，使自身的攻击速度提高。持续 5 秒。|n|n|cffffcc001级|r - 攻击速度提高<A026,DataB1,%>%。|n|cffffcc002级|r - 攻击速度提高<A026,DataB2,%>%。|n|cffffcc003级|r - 攻击速度提高<A026,DataB3,%>%。|n|cffffcc004级|r - 攻击速度提高<A026,DataB4,%>%。"
+      "Value": "英雄倾注全部力量，使自身的攻击速度提高。持续 5 秒。|n|n|cffffcc001级|r - 攻击速度提高<A026,DataB1,%>%。|n|cffffcc002级|r - 攻击速度提高<A026,DataB2,%>%。|n|cffffcc003级|r - 攻击速度提高<A026,DataB3,%>%。|n|cffffcc004级|r - 攻击速度提高<A026,DataB4,%>%。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄倾注全部力量，使其攻击速度提高<A026,DataB4,%>%，持续 5 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（泰丝）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习飞刀乱舞 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A026"

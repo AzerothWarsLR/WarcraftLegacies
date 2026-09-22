@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城防御）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "后方元帅"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练后方元帅"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "南方人类军队的防御指挥官。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练后方元帅"
+      "Value": "（暴风城防御）"
     }
   ],
   "NewId": "h03U"

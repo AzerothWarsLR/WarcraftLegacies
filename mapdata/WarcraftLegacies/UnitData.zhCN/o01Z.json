@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "哨兵战旗"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练哨兵战旗"
     }
   ],
   "NewId": "o01Z"

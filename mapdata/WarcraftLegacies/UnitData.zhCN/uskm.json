@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（天灾 - 黑色城堡）"
+      "Value": "训练骷髅法|cffffcc00g|r师"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "弱小的远程骷髅战士。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练骷髅法|cffffcc00g|r师"
+      "Value": "（天灾 - 黑色城堡）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "骷髅法师"
     }
   ]
 }

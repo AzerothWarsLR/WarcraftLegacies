@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "沉睡"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（蓝色 - 恐惧魔王）"

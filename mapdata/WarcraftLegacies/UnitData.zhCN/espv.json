@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练复仇的化身"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵 - 玛维）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "复仇的化身"
     }
   ]
 }

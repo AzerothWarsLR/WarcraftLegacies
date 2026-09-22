@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "凤凰烈焰"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（凤凰）"

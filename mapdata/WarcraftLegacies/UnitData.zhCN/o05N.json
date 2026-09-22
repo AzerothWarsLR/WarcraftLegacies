@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "治疗之花"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练治疗之花"
     }
   ],
   "NewId": "o05N"

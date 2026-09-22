@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "飞行器"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练飞行器"
     }
   ],
   "NewId": "u01B"

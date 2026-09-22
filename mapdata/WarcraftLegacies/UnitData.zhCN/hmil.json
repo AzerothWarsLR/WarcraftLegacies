@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练民兵"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦驻军）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "民兵"
     }
   ]
 }

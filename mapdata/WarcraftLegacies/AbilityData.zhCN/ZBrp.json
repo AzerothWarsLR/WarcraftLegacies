@@ -5,9 +5,10 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Level": 1,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "（增益施加）"
+      "Value": "寒冰屏障"
     },
     {
       "Level": 2,
@@ -16,16 +17,15 @@
       "Value": "增强心灵之火"
     },
     {
-      "Level": 2,
-      "Id": "aub1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "使一个目标友方单位的攻击力提高<Ainf,DataA2,%>%，护甲提高<Ainf,DataB2>。|n持续<Ainf,Dur1>秒。"
+      "Value": "（增益施加）"
     },
     {
-      "Level": 1,
-      "Id": "atp1",
+      "Id": "aub1",
       "Type": 3,
-      "Value": "寒冰屏障"
+      "Level": 2,
+      "Value": "使一个目标友方单位的攻击力提高<Ainf,DataA2,%>%，护甲提高<Ainf,DataB2>。|n持续<Ainf,Dur1>秒。"
     },
     {
       "Id": "anam",

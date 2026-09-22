@@ -5,6 +5,21 @@
   ],
   "Modifications": [
     {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长在全世界施加影响。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "上古之神"
@@ -15,24 +30,9 @@
       "Value": "克苏恩"
     },
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "灵巧型英雄，擅长在全世界施加影响。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
-      "Value": "（克苏恩）"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活克苏恩"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活克苏恩"
+      "Value": "（兽人部落）"
     }
   ],
   "NewId": "U00R"

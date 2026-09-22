@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "装载"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（船只）（地精）"

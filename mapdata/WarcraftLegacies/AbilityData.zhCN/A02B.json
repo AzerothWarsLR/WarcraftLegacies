@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（战歌 - 杰尔戈什）（基尔加丹）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "流星雨"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习流星雨"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "在<A02B,Area1>的目标半径内从天空召唤流星，对敌方单位造成伤害并使其昏迷<A02N,DataB1>秒。|n|n|cffffcc001级|r - <A02B,DataB1>颗流星，每颗造成<A02N,DataA1>点伤害。|n|cffffcc002级|r - <A02B,DataB2>颗流星，每颗造成<A0FF,DataA1>点伤害。|n|cffffcc003级|r - <A02B,DataB3>颗流星，每颗造成<A0LG,DataA1>点伤害。"
+      "Value": "在<A02B,Area1>的目标半径内从天空召唤流星，对敌方单位造成伤害并使其昏迷<A02N,DataB1>秒。|n|n|cffffcc001级|r - <A02B,DataB1>颗流星，每颗造成<A02N,DataA1>点伤害。|n|cffffcc002级|r - <A02B,DataB2>颗流星，每颗造成<A0FF,DataA1>点伤害。|n|cffffcc003级|r - <A02B,DataB3>颗流星，每颗造成<A0LG,DataA1>点伤害。\n"
     },
     {
       "Level": 1,
@@ -59,6 +49,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "从天空召唤<A02B,DataB3>颗流星，每颗造成<A0LG,DataA1>点伤害并使目标昏迷<A0LG,DataB1>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 杰尔戈什）（基尔加丹）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习流星雨"
     }
   ],
   "NewId": "A02B"

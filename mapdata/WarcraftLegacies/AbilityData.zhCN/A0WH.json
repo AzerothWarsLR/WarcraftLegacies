@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "翠绿魔珠"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习翠绿魔珠 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "为施法者的攻击增加额外伤害。|n |n|cffffcc001级|r - 25 点伤害。 |n|cffffcc002级|r - 40 点伤害。 |n|cffffcc003级|r - 55 点伤害。 |n|cffffcc004级|r - 70 点伤害。"
+      "Value": "为施法者的攻击增加额外伤害。|n |n|cffffcc001级|r - 25 点伤害。 |n|cffffcc002级|r - 40 点伤害。 |n|cffffcc003级|r - 55 点伤害。 |n|cffffcc004级|r - 70 点伤害。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "为施法者的攻击增加<A0WH,DataA4>点额外伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习翠绿魔珠 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0WH"

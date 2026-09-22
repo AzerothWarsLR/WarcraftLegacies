@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（伊利达雷 T2）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "主要建筑。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "背叛者尖塔"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "升级为背叛者尖塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷 T2）"
     }
   ],
   "NewId": "n04T"

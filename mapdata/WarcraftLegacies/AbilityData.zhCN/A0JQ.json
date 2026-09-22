@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "烈焰风暴"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（人类）"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "圣光之雨"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "圣光之雨"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "为目标区域内的所有友方单位恢复 125 点生命值。"
     }
   ],

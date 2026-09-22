@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（棕色 - 丛林守护者）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "自然之怒"
@@ -19,6 +14,12 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "自然之怒 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然之怒 - [|cffffcc002级|r]"
     },
     {
       "Level": 1,
@@ -33,10 +34,9 @@
       "Value": "用一道德鲁伊能量波冲击敌方单位，对目标造成<A0CO,DataB2>点伤害，并造成<A0CO,DataA2>点溅射伤害。"
     },
     {
-      "Level": 2,
-      "Id": "atp1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "自然之怒 - [|cffffcc002级|r]"
+      "Value": "（棕色 - 丛林守护者）"
     }
   ],
   "NewId": "A0CO"

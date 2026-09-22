@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（血色兽栏）"
+      "Value": "建造栖木"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "空中单位生产建筑。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色兽栏）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "栖木"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造栖木"
     }
   ],
   "NewId": "h0BL"

@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "强化防御建筑。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德莱尼 防御塔 2）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "强化水晶守护者"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "升级为强化水晶守护者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼 防御塔 2）"
     }
   ],
   "NewId": "u01Q"

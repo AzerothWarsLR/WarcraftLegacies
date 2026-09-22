@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（邪能 T3）"
+      "Value": "堡垒"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 T3）"
     }
   ],
   "NewId": "o030"

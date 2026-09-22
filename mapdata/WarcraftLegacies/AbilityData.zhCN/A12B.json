@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（燃烧军团 - 恶魔卫士）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "猎犬伙伴"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团 - 恶魔卫士）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "猎犬伙伴"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "召唤一头恶魔猎犬为你作战，持续 60 秒。"
     }
   ],

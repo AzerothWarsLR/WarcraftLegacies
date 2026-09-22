@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落 工人）"
+      "Value": "苦工"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "基本工人单位。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落 工人）"
     }
   ]
 }

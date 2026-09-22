@@ -10,9 +10,9 @@
       "Value": "强化灵魂之塔"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（燃烧军团 防御塔）"
+      "Value": "(|cffffff00Z|r)升级到强化灵魂之塔"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "强化防御建筑。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "(|cffffff00Z|r)升级到强化灵魂之塔"
+      "Value": "（燃烧军团 防御塔）"
     }
   ],
   "NewId": "u00I"

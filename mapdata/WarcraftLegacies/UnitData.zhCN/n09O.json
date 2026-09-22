@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野外生物）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "兽人死亡骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练兽人死亡骑士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "第二次大战中的旧死亡骑士。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练兽人死亡骑士"
+      "Value": "（野外生物）"
     }
   ],
   "NewId": "n09O"

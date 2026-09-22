@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致命一击"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（深绿色 - 军情七处特工，达拉然 - 巴可）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "普通攻击有 15% 的几率造成 1.5 倍普通攻击伤害。"
     }
   ],

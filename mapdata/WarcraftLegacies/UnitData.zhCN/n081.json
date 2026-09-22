@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤恶魔之门"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "未调谐的传送门，随时准备召唤燃烧远征的军队。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能 T0 红）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "未调谐恶魔之门"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "未调谐的传送门，随时准备召唤燃烧远征的军队。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤恶魔之门"
     }
   ],
   "NewId": "n081"

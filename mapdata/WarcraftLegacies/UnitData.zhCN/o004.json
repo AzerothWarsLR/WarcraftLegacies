@@ -5,12 +5,12 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "utip",
       "Type": 3,
       "Value": "石槌要塞"
     },
     {
-      "Id": "utip",
+      "Id": "unam",
       "Type": 3,
       "Value": "石槌要塞"
     }

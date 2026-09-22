@@ -5,15 +5,21 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（青色 - 邪兽人术士）"
+      "Value": "火焰箭"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "火焰之箭 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火焰之箭 - [|cffffcc002 级|r]"
     },
     {
       "Level": 1,
@@ -23,15 +29,14 @@
     },
     {
       "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "火焰之箭 - [|cffffcc002 级|r]"
-    },
-    {
-      "Level": 2,
       "Id": "aub1",
       "Type": 3,
       "Value": "掷出一支火焰之箭，击昏一个目标敌方单位 2 秒，造成 75 点伤害。对英雄持续 0.1 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 邪兽人术士）"
     }
   ]
 }

@@ -5,27 +5,32 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Value": "月井之春"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Level": 1,
       "Value": "强化月亮井"
     },
     {
-      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "研究强化月亮井"
     },
     {
-      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（德鲁伊）"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使月亮井可储存的法力值提高 175，法力恢复速度提高 5%。"
     }
   ],

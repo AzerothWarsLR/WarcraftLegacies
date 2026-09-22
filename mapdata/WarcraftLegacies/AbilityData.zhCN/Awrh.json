@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战争践踏"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（熊怪战士）"

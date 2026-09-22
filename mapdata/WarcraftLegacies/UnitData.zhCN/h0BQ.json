@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（血色祭坛）"
+      "Value": "建造十字军祭坛"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "召唤英雄和准英雄。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色祭坛）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "十字军祭坛"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造十字军祭坛"
     }
   ],
   "NewId": "h0BQ"

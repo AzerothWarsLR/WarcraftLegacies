@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "防护之戒+4"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "购买防护之戒"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "防护之戒"
     }
   ]
 }

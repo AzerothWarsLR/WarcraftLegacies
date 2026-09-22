@@ -5,20 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（兽人部落）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "阻止目标区域内的所有敌人施放法术。  |n|n|cffffcc001级|r - 影响目标点<A0XS,Area1>半径内的单位。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。 |n|cffffcc002级|r - 影响目标点<A0XS,Area2>半径内的单位。对单位持续<A0XS,Dur2>秒，对英雄持续<A0XS,HeroDur2>秒。|n|cffffcc003级|r - 影响目标点<A0XS,Area3>半径内的单位。对单位持续<A0XS,Dur3>秒，对英雄持续<A0XS,HeroDur3>秒。"
+      "Value": "阻止目标区域内的所有敌人施放法术。  |n|n|cffffcc001级|r - 影响目标点<A0XS,Area1>半径内的单位。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。 |n|cffffcc002级|r - 影响目标点<A0XS,Area2>半径内的单位。对单位持续<A0XS,Dur2>秒，对英雄持续<A0XS,HeroDur2>秒。|n|cffffcc003级|r - 影响目标点<A0XS,Area3>半径内的单位。对单位持续<A0XS,Dur3>秒，对英雄持续<A0XS,HeroDur3>秒。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "沉默 - [|cffffcc004级|r]"
+      "Value": "沉默"
     },
     {
       "Level": 1,
@@ -43,6 +37,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "阻止目标点<A0XS,Area4>半径内的所有敌人施放法术。对单位持续<A0XS,Dur4>秒，对英雄持续<A0XS,HeroDur4>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "沉默 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "A0XS"

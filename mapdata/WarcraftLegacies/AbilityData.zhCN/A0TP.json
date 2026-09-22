@@ -5,19 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿卡玛）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "暗影突袭"
     },
     {
-      "Id": "aret",
+      "Id": "arut",
       "Type": 3,
-      "Value": "学习暗影突袭 - [|cffffcc00等级 %d|r]"
+      "Value": "阿卡玛传送到目标单位身后并造成伤害。生命值低于 25% 的非英雄单位会被斩杀，并刷新暗影突袭。|n|n|cffffcc001级|r - 造成 200 点伤害。|n|cffffcc002级|r - 造成 300 点伤害。|n|cffffcc003级|r - 造成 400 点伤害。|n|cffffcc004级|r - 造成 500 点伤害。\n"
     },
     {
       "Level": 1,
@@ -68,9 +63,14 @@
       "Value": "阿卡玛传送到目标单位身后并造成 500 点伤害。生命值低于 25% 的非英雄单位会被斩杀，并刷新暗影突袭。"
     },
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "阿卡玛传送到目标单位身后并造成伤害。生命值低于 25% 的非英雄单位会被斩杀，并刷新暗影突袭。|n|n|cffffcc001级|r - 造成 200 点伤害。|n|cffffcc002级|r - 造成 300 点伤害。|n|cffffcc003级|r - 造成 400 点伤害。|n|cffffcc004级|r - 造成 500 点伤害。"
+      "Value": "（阿卡玛）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习暗影突袭 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0TP"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "战士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "丹莫罗的坚强守卫。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练战士"
+      "Value": "（铁炉堡）"
     }
   ],
   "NewId": "h018"

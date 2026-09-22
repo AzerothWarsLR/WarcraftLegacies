@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "女巫猎人"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练女巫猎人"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "余烬骑士团的游侠。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练女巫猎人"
+      "Value": "（库尔提拉斯）"
     }
   ],
   "NewId": "n09B"

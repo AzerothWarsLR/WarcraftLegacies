@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（邪能-传送门）"
+      "Value": "召唤苦痛女王"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "残酷欢愉之母。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤苦痛女王"
+      "Value": "（邪能-传送门）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "苦难女王"
     }
   ]
 }

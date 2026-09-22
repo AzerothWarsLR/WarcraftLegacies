@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（燃烧军团）"
+      "Value": "建造地狱火毁灭战舰"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地狱火毁灭战车"
     },
     {
       "Id": "utub",
@@ -15,9 +20,9 @@
       "Value": "地狱锻造的毁灭引擎。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造地狱火毁灭战舰"
+      "Value": "（燃烧军团）"
     }
   ],
   "NewId": "n04L"

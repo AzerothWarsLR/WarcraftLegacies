@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能 T2 深渊魔）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "深渊魔恶魔之门"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为深渊魔恶魔之门"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "与燃烧远征的深渊魔调谐的传送门，每 60 秒召唤 1 个。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "升级为深渊魔恶魔之门"
+      "Value": "（邪能 T2 深渊魔）"
     }
   ],
   "NewId": "n06H"

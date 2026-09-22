@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "暴风城骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练暴风城骑士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "阿拉索的强力近战骑士。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练暴风城骑士"
+      "Value": "（暴风城）"
     }
   ],
   "NewId": "h054"

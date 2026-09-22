@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德莱尼 专精）"
+      "Value": "建造水晶尖塔"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "高级部队生产建筑。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼 专精）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "水晶尖塔"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造水晶尖塔"
     }
   ],
   "NewId": "o055"

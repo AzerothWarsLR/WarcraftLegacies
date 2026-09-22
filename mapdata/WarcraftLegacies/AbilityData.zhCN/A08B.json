@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "燃油"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（邪部落）"

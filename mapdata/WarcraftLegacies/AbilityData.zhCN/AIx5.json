@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 英雄属性加成"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（+3 所有属性）"

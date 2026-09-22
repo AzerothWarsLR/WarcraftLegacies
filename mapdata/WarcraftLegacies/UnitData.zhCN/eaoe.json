@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德鲁伊魔法）"
+      "Value": "建造知识古树"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "施法单位生产建筑。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造知识古树"
+      "Value": "（德鲁伊魔法）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "知识古树"
     }
   ]
 }

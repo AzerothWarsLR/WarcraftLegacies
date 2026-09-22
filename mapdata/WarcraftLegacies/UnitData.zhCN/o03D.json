@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造教派集会所"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（中立生物 兵营）"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "主要作战单位生产建筑。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造教派集会所"
     }
   ],
   "NewId": "o03D"

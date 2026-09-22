@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "警戒塔"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（库尔提拉斯塔）"

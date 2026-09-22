@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（粉色/灰色 - 主基地建筑）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "为了部落！"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色/灰色 - 主基地建筑）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "为了部落！"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "施加嗜血，使目标区域内的单位攻击速度提高 30%，移动速度提高 20%；施法距离更远。 |n持续 30 秒。"
     }
   ],

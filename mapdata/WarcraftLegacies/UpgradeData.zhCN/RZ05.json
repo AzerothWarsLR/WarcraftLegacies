@@ -1,0 +1,38 @@
+{
+  "OldId": "Rolf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "火油瓶"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 1,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "gub1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "强化蝙蝠骑士的不稳定化合物，将其初始伤害提高至 1000，溅射伤害提高至 300。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Level": 1,
+      "Value": "火油瓶"
+    },
+    {
+      "Id": "gtp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "研究空投毒素"
+    }
+  ],
+  "NewId": "RZ05"
+}

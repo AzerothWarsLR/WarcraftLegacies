@@ -10,9 +10,9 @@
       "Value": "大十字军"
     },
     {
-      "Id": "upro",
+      "Id": "utip",
       "Type": 3,
-      "Value": "赛丹·达索汉"
+      "Value": "召唤赛丹"
     },
     {
       "Id": "utub",
@@ -20,14 +20,14 @@
       "Value": "战斗型英雄，擅长强化周围的部队。"
     },
     {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "赛丹·达索汉"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（血色）"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤赛丹"
     }
   ],
   "NewId": "H08G"

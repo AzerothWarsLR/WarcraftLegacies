@@ -5,25 +5,30 @@
   ],
   "Modifications": [
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "为周围的友方单位提供额外护甲。 |n|n|cffffcc001级|r - 基础护甲提高 1.5。 |n|cffffcc002级|r - 基础护甲提高 3。 |n|cffffcc003级|r - 基础护甲提高 4.5。 |n|cffffcc004级|r - 基础护甲提高 6。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虔诚光环"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（战旗）"
     },
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "为周围的友方单位提供额外护甲。 |n|n|cffffcc001级|r - 基础护甲提高 1.5。 |n|cffffcc002级|r - 基础护甲提高 3。 |n|cffffcc003级|r - 基础护甲提高 4.5。 |n|cffffcc004级|r - 基础护甲提高 6。"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "虔诚光环"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "为周围的友方单位提供 4 点额外护甲。"
     }
   ],

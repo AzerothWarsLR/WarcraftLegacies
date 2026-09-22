@@ -5,12 +5,12 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（哨兵 T3）"
+      "Value": "哨兵飞地"
     },
     {
-      "Id": "unam",
+      "Id": "utip",
       "Type": 3,
       "Value": "哨兵飞地"
     },
@@ -20,9 +20,9 @@
       "Value": "主要建筑。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "哨兵飞地"
+      "Value": "（哨兵 T3）"
     }
   ],
   "NewId": "n06P"

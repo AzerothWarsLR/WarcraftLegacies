@@ -1,0 +1,13 @@
+{
+  "OldId": "Agyd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "产生尸体"
+    }
+  ]
+}

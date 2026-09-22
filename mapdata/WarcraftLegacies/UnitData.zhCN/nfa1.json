@@ -1,0 +1,13 @@
+{
+  "OldId": "nfa1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "口袋工厂"
+    }
+  ]
+}

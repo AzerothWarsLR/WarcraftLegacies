@@ -5,14 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（暴风城 T2）"
+      "Value": "要塞"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造要塞"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城 T2）"
     }
   ],
   "NewId": "h06M"

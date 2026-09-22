@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（食人魔法师）"
+      "Value": "回春术"
     },
     {
       "Level": 2,
@@ -38,6 +38,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "为一个目标友方单位恢复<A07U,DataA3>点生命值，在<A07U,Dur3>秒内完成。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（食人魔法师）"
     }
   ],
   "NewId": "A04C"

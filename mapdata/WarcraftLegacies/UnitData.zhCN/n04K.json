@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（燃烧军团）"
+      "Value": "魅魔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练魅魔"
     },
     {
       "Id": "utub",
@@ -15,9 +20,9 @@
       "Value": "虚空中善于操控的恶魔。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练魅魔"
+      "Value": "（燃烧军团）"
     }
   ],
   "NewId": "n04K"

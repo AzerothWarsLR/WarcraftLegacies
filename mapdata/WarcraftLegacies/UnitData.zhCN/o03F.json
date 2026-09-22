@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（中立生物 专精）"
+      "Value": "建造巨龙孵化场"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "空中单位生产建筑。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 专精）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "巨龙孵化场"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造巨龙孵化场"
     }
   ],
   "NewId": "o03F"

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（40%）"
+      "Value": "闪避"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（（40%））"
+    },
+    {
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "有<MD20,DataA1,%>% 的几率闪避一次攻击。"
     }
   ],

@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（亡灵阿尔萨斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "收割"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习收割 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "立即杀死附近的等级最低的非英雄敌方单位，每杀死一个单位，施法者便会在 30 秒内获得 8 点力量。 |n|n|cffffcc001级|r - 杀死 2 个单位。|n|cffffcc002级|r - 杀死 3 个单位。|n|cffffcc003级|r - 杀死 4 个单位。|n|cffffcc004级|r - 杀死 5 个单位。"
+      "Value": "立即杀死附近的等级最低的非英雄敌方单位，每杀死一个单位，施法者便会在 30 秒内获得 8 点力量。 |n|n|cffffcc001级|r - 杀死 2 个单位。|n|cffffcc002级|r - 杀死 3 个单位。|n|cffffcc003级|r - 杀死 4 个单位。|n|cffffcc004级|r - 杀死 5 个单位。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "立即杀死附近的 5 个等级最低的非英雄敌方单位，每杀死一个单位，施法者便会在 8 秒内获得 30 点力量。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（亡灵阿尔萨斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习收割 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "ZB02"

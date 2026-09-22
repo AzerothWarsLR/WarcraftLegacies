@@ -1,0 +1,29 @@
+{
+  "OldId": "obar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要作战单位生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "试炼场"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "试炼场"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族 兵营）"
+    }
+  ],
+  "NewId": "otwc"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "ovln",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族 商店）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血蹄贸易站"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造血蹄贸易站"
+    }
+  ],
+  "NewId": "otsh"
+}

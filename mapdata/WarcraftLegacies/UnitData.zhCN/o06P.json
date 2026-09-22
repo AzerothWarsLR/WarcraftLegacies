@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "狼人萨满祭司"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练狼人萨满祭司"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "效力于吉尔尼斯的强大狼人萨满祭司。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练狼人萨满祭司"
+      "Value": "（吉尔尼斯）"
     }
   ],
   "NewId": "o06P"

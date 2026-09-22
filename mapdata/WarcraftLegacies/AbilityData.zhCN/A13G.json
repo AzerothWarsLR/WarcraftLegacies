@@ -5,25 +5,38 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（德鲁伊 - 托尔托拉）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习地震洪流 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "英雄从大地中迸发出一股强大的洪流，击昏并伤害一条直线上的敌人。|n|n|cffffcc00等级 1|r - <AUim,DataC1>点伤害，击昏 1 秒。 |n|cffffcc00等级 2|r - <AUim,DataC2>点伤害，击昏 1.5(1.25) 秒。 |n|cffffcc00等级 3|r - <AUim,DataC3>点伤害，击昏 2(1.5) 秒。 |n|cffffcc00等级 4|r - <AUim,DataC4>点伤害，击昏 2.5(1.75) 秒。"
+      "Value": "英雄从大地中迸发出一股强大的洪流，击昏并伤害一条直线上的敌人。|n|n|cffffcc00等级 1|r - <AUim,DataC1>点伤害，击昏 1 秒。 |n|cffffcc00等级 2|r - <AUim,DataC2>点伤害，击昏 1.5(1.25) 秒。 |n|cffffcc00等级 3|r - <AUim,DataC3>点伤害，击昏 2(1.5) 秒。 |n|cffffcc00等级 4|r - <AUim,DataC4>点伤害，击昏 2.5(1.75) 秒。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "地震洪流"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
       "Value": "地震洪流 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地震洪流 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地震洪流 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "地震洪流 - [|cffffcc003 级|r]"
     },
     {
       "Level": 1,
@@ -50,27 +63,14 @@
       "Value": "英雄从大地中迸发出一股强大的洪流，击昏并伤害一条直线上的敌人，造成<AUim,DataC4>点伤害，并使其昏迷 2.5 秒（对英雄 1.75 秒）。"
     },
     {
-      "Level": 1,
-      "Id": "atp1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "地震洪流 - [|cffffcc001 级|r]"
+      "Value": "（德鲁伊 - 托尔托拉）"
     },
     {
-      "Level": 2,
-      "Id": "atp1",
+      "Id": "aret",
       "Type": 3,
-      "Value": "地震洪流 - [|cffffcc002 级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "地震洪流 - [|cffffcc003 级|r]"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "地震洪流"
+      "Value": "学习地震洪流 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A13G"

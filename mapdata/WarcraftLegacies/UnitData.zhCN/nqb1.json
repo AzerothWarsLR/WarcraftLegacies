@@ -5,14 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（霜狼-猎头者）"
+      "Value": "训练豪猪"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "暗矛部族的伙伴。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼-猎头者）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "豪猪"
     }
   ]
 }

@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "诺莫瑞根"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造诺莫瑞根"
     }
   ],
   "NewId": "h013"

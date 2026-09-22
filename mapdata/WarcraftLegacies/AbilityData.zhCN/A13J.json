@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（火枪手、黑曜石灭除者、活化护甲）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
-      "Value": "法术抗性"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "法术抗性"
+      "Value": "艾露恩的赐福"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "使受到的魔法攻击和法术伤害降低 15%。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（火枪手、黑曜石灭除者、活化护甲）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "法术抗性"
     }
   ],
   "NewId": "A13J"

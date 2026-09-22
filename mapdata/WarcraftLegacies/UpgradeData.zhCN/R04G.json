@@ -6,21 +6,27 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（燃烧军团）"
-    },
-    {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "强化腐臭蝠群"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "高级腐臭蝠群"
     },
     {
       "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究强化腐臭蝠群"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究高级腐臭蝠群"
     },
     {
       "Level": 1,
@@ -30,26 +36,20 @@
     },
     {
       "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "高级腐臭蝠群"
-    },
-    {
-      "Level": 2,
-      "Id": "gtp1",
-      "Type": 3,
-      "Value": "研究高级腐臭蝠群"
-    },
-    {
-      "Level": 2,
       "Id": "gub1",
       "Type": 3,
       "Value": "强化恐惧魔王的腐臭蝠群，将其伤害提高至<ACca,DataA3>，最大伤害提高至<ACca,DataB3>，并将其冷却时间缩短至<ACca,Cool3>秒。"
     },
     {
-      "Level": 2,
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 2,
       "Value": "（燃烧军团）"
     }
   ],

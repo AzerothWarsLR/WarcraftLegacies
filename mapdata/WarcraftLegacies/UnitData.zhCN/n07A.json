@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食人魔战士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的前线士兵。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "食人魔战士"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "强大的前线士兵。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练食人魔战士"
     }
   ],
   "NewId": "n07A"

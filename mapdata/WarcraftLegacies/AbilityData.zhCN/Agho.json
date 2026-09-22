@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "幽魂"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（青色 - 邪能怨灵。红色 - 克尔苏加德的幽灵/影魔）"

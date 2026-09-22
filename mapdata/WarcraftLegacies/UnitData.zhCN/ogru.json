@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "兽人步兵"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "部落的骄傲，荣耀的战士。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
     }
   ]
 }

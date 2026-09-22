@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜新星"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（中立敌对与被遗忘者）"

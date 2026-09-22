@@ -5,20 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜新星"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（天灾 - 巫妖）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "冰霜新星"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "用一波冰霜冲击敌方单位，对目标造成<ZBFN,DataB1>点伤害，并造成<ZBFN,DataA1>点新星伤害。冰霜伤害会降低单位的移动速度和攻击速度，持续<ZBFN,Dur1>秒。"
     }
   ],

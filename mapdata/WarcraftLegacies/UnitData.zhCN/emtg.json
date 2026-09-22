@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（德鲁伊）"
+      "Value": "山岭巨人"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "巨型近战单位，能够承受惊人的伤害。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
     }
   ]
 }

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "邪能烈焰召唤出的魔像。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能-传送门-萨格拉斯之眼）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "邪能烈焰召唤出的魔像。"
+      "Value": "地狱火"
     }
   ],
   "NewId": "n05D"

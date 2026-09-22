@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ides",
-      "Type": 3,
-      "Value": "提高智力"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cffff8c00神器|r|n使智力提高<A0F6,DataB1>点。激活后可恢复饮用者 5000 点生命值和 5000 点魔法值。|n|cffffcc00典故|r|n|cffffdead太阳之井最初源自从永恒之井中窃取的一瓶井水，此后已成长为深不可测的力量源泉。即便只是这小小一瓶，也蕴含着足以让饮用者永生不死的力量。\n"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "提高智力"
     },
     {
       "Id": "unam",

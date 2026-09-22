@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（浅蓝色 - 泰兰德）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "夜幕"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 泰兰德）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "夜幕"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "月之女祭司引导她极为强大的法术，在天空中投下夜幕的幻象，持续 30 秒。冷却时间 90 秒。"
     }
   ],

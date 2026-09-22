@@ -6,9 +6,21 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
+      "Id": "gnam",
       "Type": 3,
-      "Value": "（天灾）"
+      "Value": "通灵师专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "通灵师专家级训练"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "通灵师专家级训练"
     },
     {
       "Level": 1,
@@ -35,16 +47,16 @@
       "Value": "提高通灵师的法力值上限和法力恢复速度，并使其获得施放邪恶狂热的能力。"
     },
     {
-      "Level": 2,
       "Id": "gnsf",
       "Type": 3,
+      "Level": 1,
       "Value": "（天灾）"
     },
     {
-      "Level": 3,
-      "Id": "gnam",
+      "Id": "gnsf",
       "Type": 3,
-      "Value": "通灵师专家级训练"
+      "Level": 2,
+      "Value": "（天灾）"
     }
   ]
 }

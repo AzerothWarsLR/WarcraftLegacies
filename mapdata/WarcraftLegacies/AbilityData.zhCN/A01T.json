@@ -5,26 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（战歌 - 食人魔领主）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
-      "Value": "震荡波"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "震荡波 - [|cffffcc001级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "震荡波 - [|cffffcc002级|r]"
+      "Value": "粉碎波浪"
     },
     {
       "Level": 1,
@@ -37,6 +20,23 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "发出一道巨浪，对一条直线上的每个敌方地面单位造成<A01T,DataA2>点伤害，最多造成<A01T,DataB2>点总伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 食人魔领主）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "震荡波 - [|cffffcc001级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "震荡波 - [|cffffcc002级|r]"
     }
   ],
   "NewId": "A01T"

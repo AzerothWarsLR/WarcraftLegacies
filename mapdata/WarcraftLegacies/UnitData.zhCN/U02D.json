@@ -5,19 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能部落）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "死亡骑士领主"
     },
     {
-      "Id": "upro",
+      "Id": "utip",
       "Type": 3,
-      "Value": "塔隆·血魔"
+      "Value": "召唤塔隆·血魔"
     },
     {
       "Id": "utub",
@@ -25,9 +20,14 @@
       "Value": "战斗型英雄，擅长支援军队并造成魔法伤害。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤塔隆·血魔"
+      "Value": "（邪能部落）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "塔隆·血魔"
     }
   ],
   "NewId": "U02D"

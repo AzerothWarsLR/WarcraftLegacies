@@ -5,19 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "外域之主"
     },
     {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "玛瑟里顿"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，专精于以各种形式造成伤害。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
     },
     {
       "Id": "utip",

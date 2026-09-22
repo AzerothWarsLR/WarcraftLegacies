@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "绿龙"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练绿龙"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "受泰坦托付守护艾泽拉斯自然界的巨龙。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练绿龙"
+      "Value": "（德鲁伊）"
     }
   ],
   "NewId": "n065"

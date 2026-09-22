@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然塔）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "肯瑞托塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为肯瑞托塔"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "达拉然的防御塔。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "升级为肯瑞托塔"
+      "Value": "（达拉然塔）"
     }
   ]
 }

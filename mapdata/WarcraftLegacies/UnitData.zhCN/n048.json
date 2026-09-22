@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "血法师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练血法师"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "屈从于血魔法诱惑的法师。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练血法师"
+      "Value": "（奎尔萨拉斯）"
     }
   ],
   "NewId": "n048"

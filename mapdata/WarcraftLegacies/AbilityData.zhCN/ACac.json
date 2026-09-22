@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "统御光环"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（灰色 - 暗矛督军）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使附近友方单位的攻击获得 5% 的额外伤害。"
     }
   ]

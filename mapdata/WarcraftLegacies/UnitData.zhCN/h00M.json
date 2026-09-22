@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造横向木门"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（大门 - 损毁）"
@@ -13,11 +18,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "横向木门"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造横向木门"
     }
   ],
   "NewId": "h00M"

@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（野外生物）"
+      "Value": "伐木机"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练伐木机"
     },
     {
       "Id": "utub",
@@ -15,9 +20,9 @@
       "Value": "地精伐木机。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练伐木机"
+      "Value": "（野外生物）"
     }
   ],
   "NewId": "n062"

@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（领主）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "风暴佳酿"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习暴风佳酿 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "英雄治疗周围大范围内的所有盟友。 |n|n|cffffcc001级|r - 恢复 150 点生命值。 |n|cffffcc002级|r - 恢复 225 点生命值。 |n|cffffcc003级|r - 恢复 300 点生命值。 |n|cffffcc004级|r - 恢复 375 点生命值。"
+      "Value": "英雄治疗周围大范围内的所有盟友。 |n|n|cffffcc001级|r - 恢复 150 点生命值。 |n|cffffcc002级|r - 恢复 225 点生命值。 |n|cffffcc003级|r - 恢复 300 点生命值。 |n|cffffcc004级|r - 恢复 375 点生命值。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "为大范围内的友方单位恢复 375 点生命值。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（领主）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣干涉 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0H1"

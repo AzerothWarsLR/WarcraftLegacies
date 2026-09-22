@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野外生物）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "驯服了虚空龙的暮光之锤狂信徒。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "虚空骑士"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练虚空骑士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "驯服了虚空龙的暮光之锤狂信徒。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
     }
   ],
   "NewId": "o04J"

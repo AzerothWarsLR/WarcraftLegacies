@@ -5,20 +5,25 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咆哮"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（蓝色 - 霸主）"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "咆哮"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使周围友方单位的攻击力提高 50%。 |n持续 15 秒。"
     }
   ],

@@ -5,12 +5,7 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊 - 塞纳留斯召唤）"
-    },
-    {
-      "Id": "unam",
+      "Id": "utip",
       "Type": 3,
       "Value": "黑寡妇"
     },
@@ -20,7 +15,12 @@
       "Value": "会使敌人中毒并携带幼蛛参战的重型近战单位。可施放蛛网。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯召唤）"
+    },
+    {
+      "Id": "unam",
       "Type": 3,
       "Value": "黑寡妇"
     }

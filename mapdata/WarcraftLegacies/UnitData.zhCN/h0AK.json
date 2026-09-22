@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造船坞"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "联盟的造船设施。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（铁炉堡其他）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "米奈希尔港"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "联盟的造船设施。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造船坞"
     }
   ],
   "NewId": "h0AK"

@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Value": "叛逆者"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Level": 1,
       "Value": "任务完成：叛逆者"
     }
   ],

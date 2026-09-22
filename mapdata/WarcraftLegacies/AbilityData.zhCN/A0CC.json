@@ -5,26 +5,21 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（铁炉堡 - 战争魔像）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
-      "Value": "法术抗性"
+      "Value": "艾露恩的赐福"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "法术抗性 - [|cffffcc001级|r]"
+      "Value": "艾露恩的赐福 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "法术抗性 - [|cffffcc002级|r]"
+      "Value": "艾露恩的赐福 - [|cffffcc002级|r]"
     },
     {
       "Level": 1,
@@ -37,6 +32,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使受到的法术与魔法攻击伤害降低 90%。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡 - 战争魔像）"
     }
   ],
   "NewId": "A0CC"

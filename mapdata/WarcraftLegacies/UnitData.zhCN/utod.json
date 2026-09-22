@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 魔法）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "诅咒神殿"
     }
   ]
 }

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "影遁"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（哨兵 - 大多数单位）"

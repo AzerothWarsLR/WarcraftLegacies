@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（邪能）"
+      "Value": "建造投石车"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "投石车"
     },
     {
       "Id": "utub",
@@ -15,9 +20,9 @@
       "Value": "邪能毁灭的攻城器械，艾泽拉斯建筑的末日。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造投石车"
+      "Value": "（邪能）"
     }
   ],
   "NewId": "o01O"

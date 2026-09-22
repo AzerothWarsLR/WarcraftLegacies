@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "伊森德雷"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "重型远程飞行单位，造成冰霜伤害并减缓敌方单位。可吞噬敌人，并对魔法免疫。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伊森德雷"
     }
   ],
   "NewId": "n04X"

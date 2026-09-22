@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "克尔苏加德"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤克尔苏加德"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 - 巫妖）"
@@ -13,11 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "天灾大巫妖"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤克尔苏加德"
     }
   ]
 }

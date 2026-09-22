@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "单位物品栏"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（亡灵 - 红色、蓝色）"

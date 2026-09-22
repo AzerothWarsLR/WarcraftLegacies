@@ -5,24 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "鹰巢山领主"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "弗斯塔德·蛮锤"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "狂野灵巧型英雄，擅长支援军队。"
     },
     {
       "Id": "utip",
@@ -38,6 +23,21 @@
       "Id": "uawt",
       "Type": 3,
       "Value": "复活鹰巢山领主"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "狂野灵巧型英雄，擅长支援军队。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "弗斯塔德·蛮锤"
     }
   ],
   "NewId": "H028"

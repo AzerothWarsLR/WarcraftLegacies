@@ -6,30 +6,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（通用升级）"
-    },
-    {
-      "Level": 2,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（通用升级）"
-    },
-    {
-      "Level": 3,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（通用升级）"
-    },
-    {
-      "Level": 4,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（所有队伍）"
-    },
-    {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "强化火炮"
@@ -81,6 +57,30 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "进一步提高所有海军单位的攻击力。"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 1,
+      "Value": "（通用升级）"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 2,
+      "Value": "（通用升级）"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 3,
+      "Value": "（通用升级）"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 4,
+      "Value": "（所有队伍）"
     }
   ],
   "NewId": "R00C"

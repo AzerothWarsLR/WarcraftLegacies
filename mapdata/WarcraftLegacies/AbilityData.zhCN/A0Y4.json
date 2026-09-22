@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使 800 范围内的元素领主和玩家拥有的英雄护甲提高 20 点，生命恢复速度提高 25。|n|cffffcc00持续 15 秒。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咆哮"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（元素领主）"
     },
     {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "使 800 范围内的元素领主和玩家拥有的英雄护甲提高 20 点，生命恢复速度提高 25。|n|cffffcc00持续 15 秒。"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "大地守护"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
+      "Level": 1,
       "Value": "大地守护"
     }
   ],

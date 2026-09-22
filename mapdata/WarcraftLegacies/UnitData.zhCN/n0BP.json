@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德莱尼）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "光铸毁灭战舰"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练光铸毁灭战舰"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "拥有纳鲁强化弹射攻击的强大支援施法者。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练光铸毁灭战舰"
+      "Value": "（德莱尼）"
     }
   ],
   "NewId": "n0BP"

@@ -10,15 +10,15 @@
       "Value": "（阿尔萨斯假人）"
     },
     {
-      "Level": 4,
       "Id": "atp1",
       "Type": 3,
+      "Level": 4,
       "Value": "凋零缠绕 - [|cffffcc004级|r]"
     },
     {
-      "Level": 4,
       "Id": "aub1",
       "Type": 3,
+      "Level": 4,
       "Value": "一道死亡能量，可为友方亡灵单位恢复<AUdc,DataA4>点生命值，或对敌方生命单位造成一半的伤害。"
     },
     {

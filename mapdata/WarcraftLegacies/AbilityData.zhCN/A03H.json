@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "寒冰箭矢"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（奎尔萨拉斯 - 游侠）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "冰霜攻击中灌注了奥术魔法，使目标的移动速度降低 50%，攻击速度降低 40%，持续 3 秒。"
     }
   ],

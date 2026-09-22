@@ -7,7 +7,12 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "深渊领主发出令人胆寒的嚎叫，使周围的敌方单位在恐惧中战栗，降低他们的攻击力。 |n持续<ANht,Dur1>秒。 |n|n|cffffcc001级|r - 攻击力降低<ANht,DataA1,%>%。 |n|cffffcc002级|r - 攻击力降低<ANht,DataA2,%>%。 |n|cffffcc003级|r - 攻击力降低<ANht,DataA3,%>%。 |n|cffffcc004级|r - 攻击力降低<ANht,DataA4,%>%。 |n|cffffcc005级|r - 攻击力降低<ANht,DataA5,%>%。 |n|cffffcc006级|r - 攻击力降低<ANht,DataA6,%>%。"
+      "Value": "深渊领主发出令人胆寒的嚎叫，使周围的敌方单位在恐惧中战栗，降低他们的攻击力。 |n持续<ANht,Dur1>秒。 |n|n|cffffcc001级|r - 攻击力降低<ANht,DataA1,%>%。 |n|cffffcc002级|r - 攻击力降低<ANht,DataA2,%>%。 |n|cffffcc003级|r - 攻击力降低<ANht,DataA3,%>%。 |n|cffffcc004级|r - 攻击力降低<ANht,DataA4,%>%。 |n|cffffcc005级|r - 攻击力降低<ANht,DataA5,%>%。 |n|cffffcc006级|r - 攻击力降低<ANht,DataA6,%>%。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
     },
     {
       "Level": 4,

@@ -1,0 +1,13 @@
+{
+  "OldId": "nctl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐化的生命之树"
+    }
+  ]
+}

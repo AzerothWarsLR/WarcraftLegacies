@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Level": 1,
       "Value": "霜狼已存在"
     }
   ],

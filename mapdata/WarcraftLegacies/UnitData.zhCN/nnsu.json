@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（伊利达雷）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "伊利达雷骄傲而强大的女巫。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "盘牙召唤者"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练盘牙召唤者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "伊利达雷骄傲而强大的女巫。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
     }
   ]
 }

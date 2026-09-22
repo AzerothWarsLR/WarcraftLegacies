@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练龙卷风"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（等级 2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙卷风"
     }
   ],
   "NewId": "n06A"

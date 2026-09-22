@@ -18,6 +18,11 @@
       "Id": "fnam",
       "Type": 3,
       "Value": "复苏之风"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（）"
     }
   ],
   "NewId": "TP48"

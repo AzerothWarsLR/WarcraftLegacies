@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（熔火恶犬，黄色）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "灼热撕咬"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（熔火恶犬，黄色）"
     }
   ],
   "NewId": "A0X9"

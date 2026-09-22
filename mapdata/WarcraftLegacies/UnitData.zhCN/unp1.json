@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾 T2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "亡者大厅"
     }
   ]
 }

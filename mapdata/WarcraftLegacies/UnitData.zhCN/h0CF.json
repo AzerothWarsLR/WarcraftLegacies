@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（日怒）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "弓手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练弓手"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "被同族流放的游侠。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练弓手"
+      "Value": "（日怒）"
     }
   ],
   "NewId": "h0CF"

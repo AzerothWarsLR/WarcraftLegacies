@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "毁灭宝珠"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（达拉然 - 蓝龙）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使该单位的攻击增加<A08W,DataA1>点额外伤害，并使其攻击造成范围伤害。"
     }
   ],

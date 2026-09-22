@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "猛击"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（领主、食人魔领主、牛头人角斗士）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "攻击时有 20% 的几率造成 50 点额外伤害，并使对手昏迷 2 秒。（英雄为 1 秒）"
     }
   ],

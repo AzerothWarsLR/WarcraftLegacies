@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（战歌）"
-    },
-    {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "使目标单位的攻击速度提高 40%。|n持续 20 秒。"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "风怒"
     },
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落/牛头人部族）"
+    },
+    {
+      "Id": "aub1",
+      "Type": 3,
       "Level": 1,
+      "Value": "使目标单位的攻击速度提高 40%。|n持续 20 秒。"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "风怒"
     }
   ],

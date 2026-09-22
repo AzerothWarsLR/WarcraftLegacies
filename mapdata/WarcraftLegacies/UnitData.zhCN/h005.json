@@ -1,0 +1,24 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "纵向木门"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（大门 - 开启）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "纵向木门"
+    }
+  ],
+  "NewId": "h005"
+}

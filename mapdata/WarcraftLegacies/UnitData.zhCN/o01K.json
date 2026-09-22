@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "潮汐巨蛇"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练潮汐巨蛇"
     }
   ],
   "NewId": "o01K"

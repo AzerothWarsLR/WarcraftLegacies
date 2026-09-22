@@ -5,42 +5,32 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "arut",
       "Type": 3,
-      "Value": "（泰丝）"
+      "Value": "英雄消失，进入隐形状态并获得<ST8K,DataA1>点额外伤害。即使英雄攻击或施放法术，隐形效果也不会消失。|n|n|cffffcc001级|r - 持续 10 秒。|n|cffffcc002级|r - 持续 15 秒。|n|cffffcc003级|r - 持续 20 秒。\n"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "消失"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习消失 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "英雄消失，进入隐形状态并获得<ST8K,DataA1>点额外伤害。即使英雄攻击或施放法术，隐形效果也不会消失。|n|n|cffffcc001级|r - 持续 10 秒。|n|cffffcc002级|r - 持续 15 秒。|n|cffffcc003级|r - 持续 20 秒。"
+      "Value": "咆哮"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "消失 - [|cffffcc001级|r]"
+      "Value": "咆哮 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "消失 - [|cffffcc002级|r]"
+      "Value": "咆哮 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "消失 - [|cffffcc003级|r]"
+      "Value": "咆哮 - [|cffffcc003级|r]"
     },
     {
       "Level": 1,
@@ -59,6 +49,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄消失，进入隐形状态，并在 20 秒内获得<ST8K,DataA1>点伤害。即使英雄攻击或施放法术，隐形效果也不会消失。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（泰丝）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习消失 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "ST9J"

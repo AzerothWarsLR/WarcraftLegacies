@@ -8,6 +8,11 @@
       "Id": "anam",
       "Type": 3,
       "Value": "英雄光晕原点"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（）"
     }
   ],
   "NewId": "A0GK"

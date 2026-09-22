@@ -5,48 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "arut",
       "Type": 3,
-      "Value": "（娜萨，乌索克）"
+      "Value": "降低所有来袭攻击的伤害。伤害不能被降低到<A109,DataB1>点以下。 |n|n|cffffcc001级|r - 格挡<A109,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A109,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A109,DataC3>点伤害。 |n|cffffcc004级|r - 格挡<A109,DataC4>点伤害。\n"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "硬化"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习硬化 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "降低所有来袭攻击的伤害。伤害不能被降低到<A109,DataB1>点以下。 |n|n|cffffcc001级|r - 格挡<A109,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A109,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A109,DataC3>点伤害。 |n|cffffcc004级|r - 格挡<A109,DataC4>点伤害。"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "硬化 - [|cffffcc001级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "硬化 - [|cffffcc002级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "硬化 - [|cffffcc003级|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "硬化 - [|cffffcc004级|r]"
+      "Value": "硬化体肤"
     },
     {
       "Level": 1,
@@ -71,6 +37,40 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "将所有来袭攻击的伤害降低<A109,DataC4>点。伤害不能被降低到<A109,DataB4>点以下。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（娜萨，乌索克）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习硬化 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "硬化体肤 - [|cffffcc001级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "硬化 - [|cffffcc002级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "硬化 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "硬化 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "A109"

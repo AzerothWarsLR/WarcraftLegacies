@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吸收法力"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（天灾 - 毁灭者）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "抽取一个己方单位的所有法力值，并将其传输给施法者。"
     }
   ]

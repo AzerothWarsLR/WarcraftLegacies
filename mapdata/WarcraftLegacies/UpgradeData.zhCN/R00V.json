@@ -6,12 +6,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（铁炉堡）"
-    },
-    {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "符文牧师专家级训练"
@@ -45,6 +39,12 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高符文牧师的法力值上限和法力恢复速度，并使其能够施放护盾符文。"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 1,
+      "Value": "（铁炉堡）"
     }
   ],
   "NewId": "R00V"

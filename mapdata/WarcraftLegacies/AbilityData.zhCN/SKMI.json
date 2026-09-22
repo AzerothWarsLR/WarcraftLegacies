@@ -1,0 +1,18 @@
+{
+  "OldId": "SKMI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "镜像"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "创造出施法者的幻象来对敌作战，并驱散施法者身上的所有魔法效果。|n|n|cffffcc00等级 1|r - 制造<SKMI,DataA1>个幻象，其造成 <SKMI,DataB1,%>% 的伤害，并承受 <SKMI,DataC1,%>% 的伤害。 |n|cffffcc00等级 2|r - 制造<SKMI,DataA2>个幻象，其造成 <SKMI,DataB2,%>% 的伤害，并承受 <SKMI,DataC2,%>% 的伤害。 |n|cffffcc00等级 3|r - 制造<SKMI,DataA3>个幻象，其造成 <SKMI,DataB3,%>% 的伤害，并承受 <SKMI,DataC3,%>% 的伤害。\n"
+    }
+  ]
+}

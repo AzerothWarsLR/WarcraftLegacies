@@ -5,14 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（燃烧军团其他）"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "军团传送器"
+      "Value": "召唤军团枢纽"
     },
     {
       "Id": "utub",
@@ -20,9 +15,14 @@
       "Value": "用于召唤燃烧军团大军的恶魔枢纽"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤军团枢纽"
+      "Value": "（燃烧军团 其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "军团传送器"
     }
   ],
   "NewId": "n0BE"

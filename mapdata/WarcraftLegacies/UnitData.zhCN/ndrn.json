@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（伊利达雷）"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "基础前线战士。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "死誓"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练死誓"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基础前线战士。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
     }
   ]
 }

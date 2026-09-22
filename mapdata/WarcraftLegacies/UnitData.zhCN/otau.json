@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（牛头人部族）"
+      "Value": "牛头人"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "宣誓效忠萨尔的强大血蹄战士。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
     }
   ]
 }

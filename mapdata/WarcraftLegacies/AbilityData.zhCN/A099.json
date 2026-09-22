@@ -10,15 +10,15 @@
       "Value": "群体反魔法护罩"
     },
     {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "群体反魔法护罩"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "创造一道屏障，可阻挡<A0JN,DataC1>点法术伤害，使效果范围内的所有友方单位免受其影响。|n持续<A0JN,Dur1>秒。"
     }
   ],

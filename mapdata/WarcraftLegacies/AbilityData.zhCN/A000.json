@@ -1,9 +1,19 @@
 {
-  "OldId": "AHmt",
+  "OldId": "Afzy",
   "Unk": [
     0
   ],
   "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "流沙"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "延迟 2 秒后，将该玩家附近的单位（含施法者）传送至范围内的一处友方建筑或单位旁。 |n|cffffcc00等级 1|r - 传送 <A000,DataA1> 个单位，射程 <A000,Rng1>，冷却 <A000,Cool1> 秒。|n|cffffcc00等级 2|r - 传送 <A000,DataA2> 个单位，射程 <A000,Rng2>，冷却 <A000,Cool2> 秒。|n|cffffcc00等级 3|r - 传送 <A000,DataA3> 个单位，射程 <A000,Rng3>，冷却 <A000,Cool3> 秒。\n"
+    },
     {
       "Id": "ansf",
       "Type": 3,
@@ -32,6 +42,35 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使单位的攻击速度提高<A0XM,DataA1,%>%，移动速度提高<A0XM,DataB1,%>%，持续<A0EH,Dur1>秒。"
+    },
+    {
+      "Id": "aut1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "|cffc3dbff点击右键以激活自动施法。|r"
+    },
+    {
+      "Id": "auu1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "|cffc3dbff点击右键以取消自动施法。|r"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群体传送"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "流沙 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "aub1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "1 秒后，将该玩家附近的<A000,DataA3>个单位（含施法者）传送至<A000,Rng3>范围内的一名友方地面单位或建筑。"
     }
   ],
   "NewId": "A000"

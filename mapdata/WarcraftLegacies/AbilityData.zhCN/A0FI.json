@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（青色 - 祖鲁希德）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "陨石"
     },
     {
-      "Level": 1,
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 祖鲁希德）"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "陨石"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "从天空召唤一颗炽热的陨石，对区域内的单位造成 100 点伤害，并在命中时使其昏迷 2 秒。留下 8 个熔岩爪牙，持续 10 秒。|n|n 300 作用范围，12 秒冷却时间。"
     }
   ],

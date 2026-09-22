@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Value": "加冕"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Level": 1,
       "Value": "加冕"
     }
   ],

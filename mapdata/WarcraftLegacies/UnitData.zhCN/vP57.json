@@ -1,0 +1,29 @@
+{
+  "OldId": "ospm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "先祖之魂"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "永久处于虚灵状态的灵魂，专猎魔法与机械敌人。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练先祖之魂"
+    }
+  ],
+  "NewId": "vP57"
+}

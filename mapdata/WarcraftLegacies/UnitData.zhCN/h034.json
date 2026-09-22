@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（奎尔萨拉斯魔法）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "施法单位生产建筑。"
+      "Value": "奥秘圣殿"
     }
   ],
   "NewId": "h034"

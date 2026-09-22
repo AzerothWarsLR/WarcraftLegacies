@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（拉格纳罗斯）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "熔火恶犬"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤熔火恶犬"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "来自火焰之地的双头嚼石兽。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤熔火恶犬"
+      "Value": "（拉格纳罗斯）"
     }
   ],
   "NewId": "n0CG"

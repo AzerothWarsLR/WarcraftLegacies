@@ -1,0 +1,13 @@
+{
+  "OldId": "AIsx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 攻击速度加成"
+    }
+  ]
+}

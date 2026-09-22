@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练劫掠者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "奥特兰克黑石营地的蛮横兽人战士。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（燃烧军团）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "劫掠者"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "奥特兰克黑石营地的蛮横兽人战士。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练劫掠者"
     }
   ],
   "NewId": "o01F"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯-精英）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "远行者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练远行者"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "奎尔萨拉斯敏捷、致命而技艺精湛的游侠。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练远行者"
+      "Value": "（奎尔萨拉斯-精英）"
     }
   ],
   "NewId": "n00A"

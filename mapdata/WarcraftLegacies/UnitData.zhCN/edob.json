@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造猎手大厅"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "通用研发建筑。"
@@ -15,9 +20,9 @@
       "Value": "（哨兵研究）"
     },
     {
-      "Id": "utip",
+      "Id": "unam",
       "Type": 3,
-      "Value": "建造猎手大厅"
+      "Value": "猎手大厅"
     }
   ]
 }

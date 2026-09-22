@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "灵魂"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练灵魂"
     }
   ],
   "NewId": "n01J"

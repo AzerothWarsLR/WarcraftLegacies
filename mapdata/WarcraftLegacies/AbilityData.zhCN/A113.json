@@ -5,37 +5,37 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "熊形态"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（攻城古树）"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "攻城形态"
-    },
-    {
-      "Level": 1,
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "攻城形态"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "使攻城古树扎根不动，以赋予其强大的远程攻击能力。"
     },
     {
-      "Level": 1,
       "Id": "aut1",
       "Type": 3,
+      "Level": 1,
       "Value": "移动形态"
     },
     {
-      "Level": 1,
       "Id": "auu1",
       "Type": 3,
+      "Level": 1,
       "Value": "使古树能够再次移动。"
     }
   ],

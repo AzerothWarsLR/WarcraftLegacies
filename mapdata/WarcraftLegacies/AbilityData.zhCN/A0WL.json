@@ -5,48 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "arut",
       "Type": 3,
-      "Value": "（萨尔，洛坎）"
+      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到伤害。 |n|n|cffffcc001级|r - 每秒受到<A0WL,DataA1>点伤害，持续<A0WL,Dur1>秒（英雄为<A0WL,HeroDur1,.>秒）。 |n|cffffcc002级|r - 每秒受到<A0WL,DataA2>点伤害，持续<A0WL,Dur2>秒（英雄为<A0WL,HeroDur2,.>秒）。 |n|cffffcc003级|r - 每秒受到<A0WL,DataA3>点伤害，持续<A0WL,Dur3>秒（英雄为<A0WL,HeroDur3,.>秒）。 |n|cffffcc004级|r - 每秒受到<A0WL,DataA4>点伤害，持续<A0WL,Dur4>秒（英雄为<A0WL,HeroDur4,.>秒）。\n"
     },
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "万能枷锁"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习万能枷锁 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到伤害。 |n|n|cffffcc001级|r - 每秒受到<A0WL,DataA1>点伤害，持续<A0WL,Dur1>秒（英雄为<A0WL,HeroDur1,.>秒）。 |n|cffffcc002级|r - 每秒受到<A0WL,DataA2>点伤害，持续<A0WL,Dur2>秒（英雄为<A0WL,HeroDur2,.>秒）。 |n|cffffcc003级|r - 每秒受到<A0WL,DataA3>点伤害，持续<A0WL,Dur3>秒（英雄为<A0WL,HeroDur3,.>秒）。 |n|cffffcc004级|r - 每秒受到<A0WL,DataA4>点伤害，持续<A0WL,Dur4>秒（英雄为<A0WL,HeroDur4,.>秒）。"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "万能枷锁 - [|cffffcc001 级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "万能枷锁 - [|cffffcc002 级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "万能枷锁 - [|cffffcc003 级|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "万能枷锁 - [|cffffcc004 级|r]"
+      "Value": "空中枷锁"
     },
     {
       "Level": 2,
@@ -71,6 +37,40 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "用魔法束缚一个目标敌方单位，使其无法移动或攻击，并每秒受到<A0WL,DataA1>点伤害。 |n对单位持续<A0WL,Dur1>秒，对英雄持续<A0WL,HeroDur1,.>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（萨尔，洛坎）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习万能镣铐 - [|cffffcc00%d 级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 1,
+      "Value": "万能枷锁 - [|cffffcc001 级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 2,
+      "Value": "万能枷锁 - [|cffffcc002 级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 3,
+      "Value": "万能枷锁 - [|cffffcc003 级|r]"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "万能枷锁 - [|cffffcc004 级|r]"
     }
   ],
   "NewId": "A0WL"

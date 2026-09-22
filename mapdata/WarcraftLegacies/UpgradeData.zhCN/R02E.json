@@ -6,12 +6,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（阿拉索 - 洛丹伦）"
-    },
-    {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "圣光礼赞专家级训练"
@@ -45,6 +39,12 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高特遣牧师或牧师的法力值上限和法力恢复速度，并使其能够施放圣光之雨。"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 1,
+      "Value": "（阿拉索 - 洛丹伦）"
     }
   ],
   "NewId": "R02E"

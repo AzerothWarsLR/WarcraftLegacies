@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "狼骑兵"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "迅捷凶猛的狼骑兵，拥有极高的生命恢复速度。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
     }
   ]
 }

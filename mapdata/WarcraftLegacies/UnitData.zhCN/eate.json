@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德鲁伊祭坛）"
+      "Value": "建造长者祭坛"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "召唤英雄和准英雄。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造长者祭坛"
+      "Value": "（德鲁伊祭坛）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "长者祭坛"
     }
   ]
 }

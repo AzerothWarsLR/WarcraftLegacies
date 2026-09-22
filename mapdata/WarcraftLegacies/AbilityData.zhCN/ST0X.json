@@ -5,42 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（布丽吉特）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "神圣打击"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习神圣打击 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成伤害并使其昏迷。|n|n|cffffcc00级别 1|r - <ST0X,DataA1>点伤害，并使敌方地面单位昏迷<ST0X,Dur1>秒。|n|cffffcc00级别 2|r - <ST0X,DataA2>点伤害，并使敌方地面单位昏迷<ST0X,Dur2>秒。|n|cffffcc00级别 3|r - <ST0X,DataA3>点伤害，并使敌方地面单位昏迷<ST0X,Dur3>秒。"
+      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成伤害并使其昏迷。|n|n|cffffcc00级别 1|r - <ST0X,DataA1>点伤害，并使敌方地面单位昏迷<ST0X,Dur1>秒。|n|cffffcc00级别 2|r - <ST0X,DataA2>点伤害，并使敌方地面单位昏迷<ST0X,Dur2>秒。|n|cffffcc00级别 3|r - <ST0X,DataA3>点伤害，并使敌方地面单位昏迷<ST0X,Dur3>秒。\n"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "神圣打击 - [|cffffcc00级别 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA2>点伤害，并使其昏迷<ST0X,Dur2>秒。"
-    },
-    {
-      "Level": 3,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA3>点伤害，并使其昏迷<ST0X,Dur3>秒。"
     },
     {
       "Level": 2,
@@ -55,10 +33,32 @@
       "Value": "神圣打击 - [|cffffcc00级别 3|r]"
     },
     {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA2>点伤害，并使其昏迷<ST0X,Dur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA3>点伤害，并使其昏迷<ST0X,Dur3>秒。"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "从天空中召唤一柄神圣之锤，对一定区域内的敌方地面单位造成<ST0X,DataA1>点伤害，并使其昏迷<ST0X,Dur1>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（布丽吉特）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣打击 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "ST0X"

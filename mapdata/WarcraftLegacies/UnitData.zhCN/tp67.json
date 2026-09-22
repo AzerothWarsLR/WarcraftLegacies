@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练岗哨守卫"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "警戒结界"
     }
   ],
   "NewId": "tp67"

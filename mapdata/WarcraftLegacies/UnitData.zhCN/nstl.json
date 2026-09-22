@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（野外生物）"
+      "Value": "训练萨特窃魂者"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "支援型施法者，拥有暗影突袭、吞噬魔法与残废技能。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练萨特窃魂者"
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨特窃魂者"
     }
   ]
 }

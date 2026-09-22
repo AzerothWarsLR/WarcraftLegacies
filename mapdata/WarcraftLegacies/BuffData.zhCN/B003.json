@@ -18,6 +18,11 @@
       "Id": "fnam",
       "Type": 3,
       "Value": "圣洁之光"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（）"
     }
   ],
   "NewId": "B003"

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "钻地"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（天灾 - 地穴恶魔）"
     },
     {
-      "Level": 1,
       "Id": "aut1",
       "Type": 3,
+      "Level": 1,
       "Value": "破土而出"
     }
   ]

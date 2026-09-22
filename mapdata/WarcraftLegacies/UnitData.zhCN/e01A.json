@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "烈焰复仇"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练烈焰复仇"
     }
   ],
   "NewId": "e01A"

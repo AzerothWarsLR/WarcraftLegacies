@@ -5,20 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（伊利丹）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "有一定几率躲避攻击。 |n|n|cffffcc001级|r - 敌人有<ZBEV,DataA1,%>% 的几率攻击落空。 |n|cffffcc002级|r - 敌人有<ZBEV,DataA2,%>% 的几率攻击落空。 |n|cffffcc003级|r - 敌人有<ZBEV,DataA3,%>% 的几率攻击落空。 |n|cffffcc004级|r - 敌人有<ZBEV,DataA4,%>% 的几率攻击落空。"
+      "Value": "有一定几率躲避攻击。 |n|n|cffffcc001级|r - 敌人有<ZBEV,DataA1,%>% 的几率攻击落空。 |n|cffffcc002级|r - 敌人有<ZBEV,DataA2,%>% 的几率攻击落空。 |n|cffffcc003级|r - 敌人有<ZBEV,DataA3,%>% 的几率攻击落空。 |n|cffffcc004级|r - 敌人有<ZBEV,DataA4,%>% 的几率攻击落空。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "闪避 - [|cffffcc004 级|r]"
+      "Value": "闪避"
     },
     {
       "Level": 4,
@@ -43,6 +37,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "有<ZBEV,DataA3,%>% 的几率躲避一次攻击。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（伊利丹）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "闪避 - [|cffffcc004 级|r]"
     }
   ],
   "NewId": "ZBEV"

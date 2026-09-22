@@ -1,0 +1,18 @@
+{
+  "OldId": "AOcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电链"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "朝目标敌人发射一道闪电箭，闪电会在命中后跳向附近的敌人，造成的伤害随每次跳跃而衰减。|n|n|cffffcc00等级 1|r - <AOcl,DataA1>点伤害，跳跃<AOcl,DataB1>次。|n|cffffcc00等级 2|r - <AOcl,DataA2>点伤害，跳跃<AOcl,DataB2>次。|n|cffffcc00等级 3|r - <AOcl,DataA3>点伤害，跳跃<AOcl,DataB3>次。 |n|cffffcc00等级 4|r - <AOcl,DataA4>点伤害，跳跃<AOcl,DataB4>次。\n"
+    }
+  ]
+}

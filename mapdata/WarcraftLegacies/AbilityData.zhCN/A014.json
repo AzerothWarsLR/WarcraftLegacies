@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（洛丹伦法师）"
-    },
-    {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "召唤 3 波寒冰碎片从天而降，每波对小范围内的单位造成<ACbz,DataB1>点伤害。"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "寒冰陨落"
     },
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦法师）"
+    },
+    {
+      "Id": "aub1",
+      "Type": 3,
       "Level": 1,
+      "Value": "召唤 3 波寒冰碎片从天而降，每波对小范围内的单位造成<ACbz,DataB1>点伤害。"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "寒冰陨落"
     }
   ],

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯 T3）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "宫殿"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级为宫殿"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "主要建筑。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "升级为宫殿"
+      "Value": "（奎尔萨拉斯 T3）"
     }
   ],
   "NewId": "h03T"

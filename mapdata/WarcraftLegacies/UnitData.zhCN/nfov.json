@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练霸主"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "拥有恐惧嚎叫、分裂攻击与吸血光环的重型近战单位。"
     },
     {
-      "Id": "utip",
+      "Id": "unam",
       "Type": 3,
-      "Value": "训练霸主"
+      "Value": "主宰"
     }
   ]
 }

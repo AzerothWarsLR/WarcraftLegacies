@@ -10,9 +10,9 @@
       "Value": "（山岳化身）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "最近的<Atau,DataA1>个敌人会被迫攻击该单位。"
     }
   ],

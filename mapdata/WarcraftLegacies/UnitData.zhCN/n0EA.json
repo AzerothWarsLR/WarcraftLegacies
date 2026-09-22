@@ -8,6 +8,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "达拉然护盾等级 3"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练达拉然护盾等级 3"
     }
   ],
   "NewId": "n0EA"

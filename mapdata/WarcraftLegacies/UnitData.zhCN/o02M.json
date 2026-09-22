@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（战歌）"
+      "Value": "训练战歌兽人步兵"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "战歌氏族不屈的骄傲，于战斗中铸就，为荣耀所约束。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "战歌兽人步兵"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练战歌兽人步兵"
     }
   ],
   "NewId": "o02M"

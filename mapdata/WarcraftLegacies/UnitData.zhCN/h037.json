@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡精英）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "工程师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练工程师"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "机械工具大师。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练工程师"
+      "Value": "（铁炉堡精英）"
     }
   ],
   "NewId": "h037"

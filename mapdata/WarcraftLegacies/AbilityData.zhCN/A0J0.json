@@ -5,24 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（魔枢）"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "群体冰枪术"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习群体冰枪术 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "向目标区域内的每一个敌方单位发射一批冰枪，造成伤害并使每个目标昏迷<A0IK,Dur1>秒（英雄减半）。|n|n|cffffcc001级|r - 造成<A0IK,DataA1>点伤害。|n|cffffcc002级|r - 造成<A0IK,DataA2>点伤害。|n|cffffcc003级|r - 造成<A0IK,DataA3>点伤害。|n|cffffcc004级|r - 造成<A0IKL,DataA4>点伤害。"
+      "Value": "向目标区域内的每一个敌方单位发射一批冰枪，造成伤害并使每个目标昏迷<A0IK,Dur1>秒（英雄减半）。|n|n|cffffcc001级|r - 造成<A0IK,DataA1>点伤害。|n|cffffcc002级|r - 造成<A0IK,DataA2>点伤害。|n|cffffcc003级|r - 造成<A0IK,DataA3>点伤害。|n|cffffcc004级|r - 造成<A0IKL,DataA4>点伤害。\n"
     },
     {
       "Level": 1,
@@ -71,6 +56,21 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "向目标区域内的每一个敌方单位发射一批冰枪，造成<A0IK,DataA4>点伤害并使每个目标昏迷<A0IK,Dur4>秒（英雄减半）。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（魔枢）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "群体冰枪术"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群体冰枪术 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0J0"

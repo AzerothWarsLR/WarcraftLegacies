@@ -5,10 +5,9 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "gnsf",
+      "Id": "gnam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "萨满祭司专家级训练"
     },
     {
       "Level": 1,
@@ -33,6 +32,12 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高萨满祭司的法力值上限和法力恢复速度，并使其获得施放嗜血术的能力。"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
     }
   ]
 }

@@ -5,20 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯 - 希尔瓦娜斯，燃烧军团 - 玛尔加尼斯）"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "阻止目标区域内的所有敌人施放法术。 |n|n|cffffcc001级|r - 小范围，持续<A083,Dur1>秒（英雄为<A083,HeroDur1>秒）。 |n|cffffcc002级|r - 中范围，持续<A083,Dur2>秒（英雄为<A083,HeroDur2>秒）。 |n|cffffcc003级|r - 中范围，持续<A083,Dur3>秒（英雄为<A083,HeroDur3>秒）。 |n|cffffcc004级|r - 大范围，持续<A083,Dur4>秒（英雄为<A083,HeroDur4>秒）。"
+      "Value": "阻止目标区域内的所有敌人施放法术。 |n|n|cffffcc001级|r - 小范围，持续<A083,Dur1>秒（英雄为<A083,HeroDur1>秒）。 |n|cffffcc002级|r - 中范围，持续<A083,Dur2>秒（英雄为<A083,HeroDur2>秒）。 |n|cffffcc003级|r - 中范围，持续<A083,Dur3>秒（英雄为<A083,HeroDur3>秒）。 |n|cffffcc004级|r - 大范围，持续<A083,Dur4>秒（英雄为<A083,HeroDur4>秒）。\n"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "沉默 - [|cffffcc004级|r]"
+      "Value": "沉默"
     },
     {
       "Level": 1,
@@ -43,6 +37,17 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "阻止中等目标区域内的所有敌人施放法术，持续<A083,Dur4>秒。对英雄持续<A083,HeroDur4>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 希尔瓦娜斯，燃烧军团 - 玛尔加尼斯）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Level": 4,
+      "Value": "沉默 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "A083"

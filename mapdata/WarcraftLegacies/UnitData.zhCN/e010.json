@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造创造古树"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德鲁伊研究）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "创造古树"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "通用研发建筑。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造创造古树"
     }
   ],
   "NewId": "e010"

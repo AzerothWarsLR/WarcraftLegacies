@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
+      "Value": "达克萨隆要塞"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Level": 1,
       "Value": "任务完成：达克萨隆要塞"
     }
   ],

@@ -5,25 +5,30 @@
   ],
   "Modifications": [
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤数波寒冰碎片从天而降，对目标区域内的单位造成伤害。 |n|n|cffffcc001级|r - <AHbz,DataA1>波碎片，每波造成<AHbz,DataB1>点伤害。 |n|cffffcc002级|r - <AHbz,DataA2>波碎片，每波造成<AHbz,DataB2>点伤害。 |n|cffffcc003级|r - <AHbz,DataA3>波碎片，每波造成<AHbz,DataB3>点伤害。 |n|cffffcc004级|r - <AHbz,DataA4>波碎片，每波造成<AHbz,DataB4>点伤害。\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暴风雪"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（达拉然-吉安娜）"
     },
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "召唤数波寒冰碎片从天而降，对目标区域内的单位造成伤害。 |n|n|cffffcc001级|r - <AHbz,DataA1>波碎片，每波造成<AHbz,DataB1>点伤害。 |n|cffffcc002级|r - <AHbz,DataA2>波碎片，每波造成<AHbz,DataB2>点伤害。 |n|cffffcc003级|r - <AHbz,DataA3>波碎片，每波造成<AHbz,DataB3>点伤害。 |n|cffffcc004级|r - <AHbz,DataA4>波碎片，每波造成<AHbz,DataB4>点伤害。"
-    },
-    {
-      "Level": 4,
       "Id": "atp1",
       "Type": 3,
+      "Level": 4,
       "Value": "暴风雪 - [|cffffcc004级|r]"
     },
     {
-      "Level": 4,
       "Id": "aub1",
       "Type": 3,
+      "Level": 4,
       "Value": "召唤<AHbz,DataA4>波寒冰碎片从天而降，每波对一定区域内的单位造成<AHbz,DataB4>点伤害。"
     }
   ]

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（库尔提拉斯研究）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "通用研发建筑。"
+      "Value": "铁匠铺"
     }
   ],
   "NewId": "h07O"

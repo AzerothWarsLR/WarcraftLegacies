@@ -1,0 +1,19 @@
+{
+  "OldId": "AHbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "猛击"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    }
+  ],
+  "NewId": "AT10"
+}

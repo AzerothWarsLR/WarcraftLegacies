@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（野外生物塔）"
+      "Value": "建造领地幼龙"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "龙喉氏族的了望塔。"
     },
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物塔）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "领地幼龙"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造领地幼龙"
     }
   ],
   "NewId": "o06B"

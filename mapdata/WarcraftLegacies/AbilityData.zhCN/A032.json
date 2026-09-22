@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（橙色安东尼达斯）（麦迪文）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "奥术轰击"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习奥术轰击 - [|cffffcc00等级 %d|r]"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "以奥术飞弹轰击目标区域，使敌方地面单位昏迷 1 秒并对其造成伤害。射程 1200。|n|n|cffffcc001级|r - 总计<A032,DataA1>点伤害。|n|cffffcc002级|r - 总计<A032,DataA2>点伤害。|n|cffffcc003级|r - 总计<A032,DataA3>点伤害。|n|cffffcc004级|r - 总计<A032,DataA4>点伤害。"
+      "Value": "以奥术飞弹轰击目标区域，使敌方地面单位昏迷 1 秒并对其造成伤害。射程 1200。|n|n|cffffcc001级|r - 总计<A032,DataA1>点伤害。|n|cffffcc002级|r - 总计<A032,DataA2>点伤害。|n|cffffcc003级|r - 总计<A032,DataA3>点伤害。|n|cffffcc004级|r - 总计<A032,DataA4>点伤害。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "以奥术飞弹轰击目标区域，对周围的敌方地面单位最多造成<A032,DataA4>点伤害，并使其昏迷 1 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（橙色安东尼达斯）（麦迪文）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习奥术轰击 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A032"

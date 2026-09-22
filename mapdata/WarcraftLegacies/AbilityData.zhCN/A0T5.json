@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "当“阿古斯入侵”任务完成后，传送器将会激活。"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "军团传送器"
     },
     {
+      "Id": "aub1",
+      "Type": 3,
       "Level": 1,
+      "Value": "当“阿古斯入侵”任务完成后，传送器将会激活。"
+    },
+    {
       "Id": "atp1",
       "Type": 3,
+      "Level": 1,
       "Value": "军团传送"
     },
     {

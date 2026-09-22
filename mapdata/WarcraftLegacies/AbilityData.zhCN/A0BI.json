@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（深绿色 元帅）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "多层锁甲"
@@ -37,6 +32,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "厚重的钢板使元帅受到的伤害减少 15 点。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 元帅）"
     }
   ],
   "NewId": "A0BI"

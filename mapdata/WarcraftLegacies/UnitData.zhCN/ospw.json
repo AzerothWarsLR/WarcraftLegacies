@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（牛头人部族）"
+      "Value": "灵魂行者"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "血蹄部族的神秘牛头人萨满。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
     }
   ]
 }

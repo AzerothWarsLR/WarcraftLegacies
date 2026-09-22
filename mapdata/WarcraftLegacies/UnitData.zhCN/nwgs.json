@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（伊利达雷）"
+      "Value": "飞蛇"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "伊利达雷的敏捷飞行生物。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
     }
   ]
 }

@@ -5,15 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（毁灭者）"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "吞噬一定区域内所有单位身上的魔法增益效果。每个被吞噬魔法的单位可给予施法者<Advm,DataA1>点生命值和<Advm,DataB1>点法力值。|n|cffffcc00对召唤单位造成<Advm,DataE1>点伤害。|r"
+      "Value": "吞噬一定区域内所有单位身上的魔法增益效果。每个被吞噬魔法的单位可给予施法者<Advm,DataA1>点生命值和<Advm,DataB1>点法力值。|n|cffffcc00对召唤单位造成<Advm,DataE1>点伤害。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吞噬魔法"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（毁灭者）"
     }
   ]
 }

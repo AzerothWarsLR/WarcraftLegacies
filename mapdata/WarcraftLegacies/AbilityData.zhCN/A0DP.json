@@ -5,24 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（泰兰德 - 纳萨诺斯）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "箭雨"
     },
     {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习箭雨"
-    },
-    {
       "Id": "arut",
       "Type": 3,
-      "Value": "用箭雨轰炸一片区域，使敌方地面单位昏迷 2 秒并对其造成伤害。射程 1200。 |n|n|cffffcc001级|r - 总计 200 点伤害。|n|cffffcc002级|r - 总计 300 点伤害。|n|cffffcc003级|r - 总计 400 点伤害。|n|cffffcc004级|r - 总计 500 点伤害。"
+      "Value": "用箭雨轰炸一片区域，使敌方地面单位昏迷 2 秒并对其造成伤害。射程 1200。 |n|n|cffffcc001级|r - 总计 200 点伤害。|n|cffffcc002级|r - 总计 300 点伤害。|n|cffffcc003级|r - 总计 400 点伤害。|n|cffffcc004级|r - 总计 500 点伤害。\n"
     },
     {
       "Level": 1,
@@ -71,6 +61,16 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "用箭雨轰炸一片区域，对周围的敌方地面单位最多造成 500 点伤害，并使其昏迷 2 秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（泰兰德 - 纳萨诺斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习箭雨"
     }
   ],
   "NewId": "A0DP"

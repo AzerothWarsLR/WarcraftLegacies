@@ -5,24 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（中立生物 魔法）"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "施法单位生产建筑。"
     },
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "实验室"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "建造实验室"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 魔法）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "实验室"
     }
   ],
   "NewId": "o03S"

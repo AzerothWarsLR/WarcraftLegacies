@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "城镇传送卷轴"
+    },
+    {
       "Id": "ides",
       "Type": 3,
       "Value": "将部队运送至一个友方单位或建筑。"
@@ -12,17 +17,12 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "购买购买传送卷轴"
+      "Value": "购买传送卷轴"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "将英雄及其附近的部队传送至目标友方单位或建筑。|n|n|cffe8e800施法时间为 9 秒。|r"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "传送卷轴"
     }
   ],
   "NewId": "I000"

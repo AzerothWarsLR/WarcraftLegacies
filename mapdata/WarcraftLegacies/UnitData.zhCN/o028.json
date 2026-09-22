@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "提供 10 人口，可提高可训练单位的数量上限。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌 农场）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "提供 10 人口，可提高可训练单位的数量上限。"
+      "Value": "地洞"
     }
   ],
   "NewId": "o028"

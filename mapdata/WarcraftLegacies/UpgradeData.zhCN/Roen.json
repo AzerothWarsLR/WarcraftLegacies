@@ -6,26 +6,26 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（哨兵）"
-    },
-    {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "诱捕"
     },
     {
+      "Id": "gnsf",
+      "Type": 3,
       "Level": 1,
+      "Value": "（哨兵）"
+    },
+    {
       "Id": "gtp1",
       "Type": 3,
+      "Level": 1,
       "Value": "研究强化诱捕"
     },
     {
-      "Level": 1,
       "Id": "gub1",
       "Type": 3,
+      "Level": 1,
       "Value": "提高诱捕技能的效果。对单位持续<Aens,Dur2>秒，并将施法距离提高至<Aens,Rng2>。"
     }
   ]

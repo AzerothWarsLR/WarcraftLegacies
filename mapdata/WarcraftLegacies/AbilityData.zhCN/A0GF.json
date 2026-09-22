@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术护盾"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（肯瑞托）（功能）"

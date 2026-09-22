@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "吉安娜的私人领主元素。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（达拉然-吉安娜）"
@@ -15,9 +20,9 @@
       "Value": "水领主元素"
     },
     {
-      "Id": "utub",
+      "Id": "utip",
       "Type": 3,
-      "Value": "吉安娜的私人领主元素。"
+      "Value": "训练水领主元素"
     }
   ]
 }

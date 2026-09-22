@@ -5,15 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（血色 - 武僧）"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "增强回春术"
+      "Value": "回春术"
     },
     {
       "Level": 1,
@@ -28,15 +22,21 @@
       "Value": "在<A09E,Dur2>秒内为一个目标友方单位恢复<A09E,DataA2>点生命值。"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "灵魂指引"
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "灵魂指引"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "增强回春术"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（血色 - 武僧）"
     }
   ],
   "NewId": "A0SH"

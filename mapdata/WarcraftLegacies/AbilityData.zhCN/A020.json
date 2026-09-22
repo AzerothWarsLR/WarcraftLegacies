@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（多个单位）"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "冲锋！"
@@ -19,6 +14,12 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "冲锋！"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强效冲锋！"
     },
     {
       "Level": 2,
@@ -33,10 +34,9 @@
       "Value": "使该单位的移动速度提高<A020,DataA1,%>%，攻击速度提高<A020,DataB1,%>%，持续<A020,Dur1>秒。"
     },
     {
-      "Level": 2,
-      "Id": "atp1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "强效冲锋！"
+      "Value": "（多个单位）"
     }
   ],
   "NewId": "A020"

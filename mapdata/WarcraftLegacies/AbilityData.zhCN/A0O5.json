@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电之盾"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（暮光）"
     },
     {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
+      "Level": 1,
       "Value": "在目标单位周围形成一道闪电护盾，每秒对其周围的单位造成 20 点伤害。|n持续 20 秒。"
     }
   ],

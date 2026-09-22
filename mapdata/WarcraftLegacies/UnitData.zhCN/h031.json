@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练王室禁卫"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "洛丹伦王室的精锐护卫。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦 - 阿尔萨斯）"
@@ -13,16 +23,6 @@
       "Id": "unam",
       "Type": 3,
       "Value": "王室禁卫"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "洛丹伦王室的精锐护卫。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练王室禁卫"
     }
   ],
   "NewId": "h031"

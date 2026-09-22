@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（牛头人部族）"
+      "Value": "科多兽"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "骑乘科多兽的鼓手，能鼓舞部落的士兵。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
     }
   ]
 }

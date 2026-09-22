@@ -5,12 +5,7 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（中立敌对）"
-    },
-    {
-      "Id": "unam",
+      "Id": "utip",
       "Type": 3,
       "Value": "黑鸦堡"
     },
@@ -20,7 +15,12 @@
       "Value": "古老精灵守望者的阴森堡垒。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立敌对）"
+    },
+    {
+      "Id": "unam",
       "Type": 3,
       "Value": "黑鸦堡"
     }

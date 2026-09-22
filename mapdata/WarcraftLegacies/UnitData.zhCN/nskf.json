@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "射出灼热之箭的轻型远程单位。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "射出灼热之箭的轻型远程单位。"
+      "Value": "燃烧弓箭手"
     }
   ]
 }

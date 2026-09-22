@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有致命一击的中型近战单位。可施放咆哮。"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物）"
     },
     {
-      "Id": "utub",
+      "Id": "unam",
       "Type": 3,
-      "Value": "拥有致命一击的中型近战单位。可施放咆哮。"
+      "Value": "恐狼"
     }
   ]
 }

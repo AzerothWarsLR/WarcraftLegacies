@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吞噬魔法"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(狼骑兵"

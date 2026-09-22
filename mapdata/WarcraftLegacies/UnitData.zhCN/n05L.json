@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城精英）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "咒术师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练咒术师"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "技艺精湛的施法者。"
     },
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练咒术师"
+      "Value": "（暴风城精英）"
     }
   ],
   "NewId": "n05L"

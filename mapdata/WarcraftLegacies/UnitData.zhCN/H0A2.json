@@ -10,9 +10,9 @@
       "Value": "血色指挥官"
     },
     {
-      "Id": "upro",
+      "Id": "utip",
       "Type": 3,
-      "Value": "雷诺·莫格莱尼"
+      "Value": "召唤雷诺"
     },
     {
       "Id": "utub",
@@ -20,14 +20,14 @@
       "Value": "战斗型英雄，擅长近身战斗和复仇。"
     },
     {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "雷诺·莫格莱尼"
+    },
+    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（血色）"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤雷诺"
     }
   ],
   "NewId": "H0A2"

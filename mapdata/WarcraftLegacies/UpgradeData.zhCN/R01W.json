@@ -6,12 +6,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnsf",
-      "Type": 3,
-      "Value": "（哨兵）"
-    },
-    {
-      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "月猎手专家级训练"
@@ -45,6 +39,12 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高月猎手的法力值上限和法力恢复速度，并使其获得精灵之火技能。"
+    },
+    {
+      "Id": "gnsf",
+      "Type": 3,
+      "Level": 1,
+      "Value": "（哨兵）"
     }
   ],
   "NewId": "R01W"

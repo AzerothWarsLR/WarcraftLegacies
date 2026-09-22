@@ -13,6 +13,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（铁炉堡空军）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "狮鹫巢"
     }
   ]
 }

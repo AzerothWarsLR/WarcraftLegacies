@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "飞行器炸弹"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（卡兹莫丹 - 直升机）"

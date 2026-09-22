@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（肯瑞托）"
+      "Value": "叉状闪电"
     },
     {
       "Level": 1,
@@ -32,6 +32,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "向目标敌方单位施放一道锥形闪电，最多可以攻击<A00I,DataB2>个敌方单位，造成<A00I,DataA2>点伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（肯瑞托）"
     }
   ],
   "NewId": "A00I"
