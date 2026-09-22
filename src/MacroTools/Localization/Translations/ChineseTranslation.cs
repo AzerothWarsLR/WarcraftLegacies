@@ -2584,6 +2584,33 @@ internal sealed class ChineseTranslation : ITranslation
     Add("{unit} has seized control of the portal to the Firelands, and can now summon Ragnaros.", "{unit}已夺取火焰之地传送门的控制权，现在可以召唤拉格纳罗斯。");
     Add("{unit} has seized control of the prison of Yogg-Saron, and can now free him.", "{unit}已夺取尤格-萨隆监狱的控制权，现在可以释放他。");
     Add("C'thun, the great distorter of flesh, needs to amass samples from many beings to create ", "克苏恩，这位伟大的血肉扭曲者，需要从众多生灵身上收集样本，以创造");
+    Add(" [Page {page}/{total}, add page # for more]", " [第 {page}/{total} 页，输入 page # 查看更多]");
+    Add(" [Page {page}/{total}]", " [第 {page}/{total} 页]");
+    Add("-{command}: {description}", "-{command}：{description}");
+    Add("[{index}] [{key}] {name}", "[{index}] [{key}] {name}");
+    Add("[{index}] [{key}] {name} - {progress}", "[{index}] [{key}] {name} - {progress}");
+    Add("{controlWord} of {faction}.", "已取得{faction}的控制权。");
+    Add("{controlWord} of all players.", "已取得所有玩家的控制权。");
+    Add("{name} ({value} gold/min)", "{name}（{value} 黄金/分钟）");
+    Add("After months of digging, excavating, and tomb raiding, {hero} and the Explorer's League have finally unearthed an artifact from Ul'dum: {artifact}.", "经过数月的挖掘、开凿与盗墓，{hero}与探险者协会终于从奥丹姆发掘出一件神器：{artifact}。");
+    Add("Anyone casts {ability}", "任意单位施放 {ability}");
+    Add("Anyone starts casting {ability}", "任意单位开始施放{ability}");
+    Add("Build {count} {building}s ({current}/{count})", "建造 {count} 座{building}（{current}/{count}）");
+    Add("Cast {ability}", "施放 {ability}");
+    Add("Cast {ability} from {unit}", "由{unit}施放{ability}");
+    Add("Chen Stormstout", "陈·风暴烈酒");
+    Add("End turn must be >= start turn", "结束回合必须大于或等于起始回合");
+    Add("Expected {faction} to have the Cult Spies Power.", "预期{faction}拥有教派间谍能力。");
+    Add("Failed to execute {GetObjectName(IncreaseControlLevelAbilityTypeId)}: {ex}.", "执行{GetObjectName(IncreaseControlLevelAbilityTypeId)}失败：{ex}。");
+    Add("False", "关");
+    Add("Interval must be > 0", "间隔必须大于 0");
+    Add("Setting hitpoints of selected units to {value}.", "正在将选中单位的生命值设为 {value}。");
+    Add("Start casting {ability}", "开始施放{ability}");
+    Add("Surrendered control", "交出控制权");
+    Add("Took control", "取得控制权");
+    Add("True", "开");
+    Add("Without Grom's leadership to restrain the Warband, the ogres are slaughtered.", "没有格罗姆的领导来约束战歌部众，食人魔惨遭屠戮。");
+
   }
 
   /// <summary>
