@@ -1,0 +1,29 @@
+{
+  "OldId": "oshm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "圣光的强大追随者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "光耀执政官"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练光耀执政官"
+    }
+  ],
+  "NewId": "o05C"
+}

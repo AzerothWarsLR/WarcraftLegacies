@@ -1,0 +1,19 @@
+{
+  "OldId": "Apxf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（凤凰）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "凤凰烈焰"
+    }
+  ],
+  "NewId": "A0EL"
+}

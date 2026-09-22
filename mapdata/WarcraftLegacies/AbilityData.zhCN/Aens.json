@@ -1,0 +1,36 @@
+{
+  "OldId": "Aens",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（探险者、长弓手、狩猎、狼骑兵）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "诱捕 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "诱捕 - [|cffffcc00级别 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个目标敌方单位被束缚在地面上，使其在<Aens,Dur2>秒内无法移动。被诱捕的空中单位可以像地面单位一样被攻击。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "诱捕"
+    }
+  ]
+}

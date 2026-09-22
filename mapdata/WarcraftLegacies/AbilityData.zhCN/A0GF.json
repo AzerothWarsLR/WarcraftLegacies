@@ -1,0 +1,19 @@
+{
+  "OldId": "ANss",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（肯瑞托）（功能）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术护盾"
+    }
+  ],
+  "NewId": "A0GF"
+}

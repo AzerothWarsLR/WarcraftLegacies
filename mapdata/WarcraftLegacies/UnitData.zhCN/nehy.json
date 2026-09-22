@@ -1,0 +1,18 @@
+{
+  "OldId": "nehy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有精灵之火的重型两栖远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "古老多头蛇"
+    }
+  ]
+}

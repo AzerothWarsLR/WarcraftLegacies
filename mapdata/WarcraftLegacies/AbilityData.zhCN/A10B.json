@@ -1,0 +1,31 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（纳迦侍从）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将该单位受到的所有攻击伤害降低<A10B,DataC1>点。伤害不能被降低到<A10B,DataB1>点以下。"
+    }
+  ],
+  "NewId": "A10B"
+}

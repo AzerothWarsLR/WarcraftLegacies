@@ -1,0 +1,26 @@
+{
+  "OldId": "Aroa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咆哮"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "达拉然护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在达拉然上空展开一道魔法穹顶，逐渐覆盖整座城市，每 2 秒对被困其中的亡灵单位造成 20 点伤害。持续 90 秒。"
+    }
+  ],
+  "NewId": "A0E0"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "edoc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "攻城古树"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练攻城古树"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "近战攻城单位，可以变形成无法移动的远程攻城单位。"
+    }
+  ],
+  "NewId": "e012"
+}

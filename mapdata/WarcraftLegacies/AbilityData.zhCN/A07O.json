@@ -1,0 +1,19 @@
+{
+  "OldId": "AHta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（地精）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暴露"
+    }
+  ],
+  "NewId": "A07O"
+}

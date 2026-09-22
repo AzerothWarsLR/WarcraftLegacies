@@ -1,0 +1,28 @@
+{
+  "OldId": "ndmg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团攻城）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造恶魔之门"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恶魔之门"
+    }
+  ]
+}

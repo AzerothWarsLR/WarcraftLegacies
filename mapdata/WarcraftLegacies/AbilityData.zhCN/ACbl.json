@@ -1,0 +1,18 @@
+{
+  "OldId": "ACbl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（中立敌对 1）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "嗜血"
+    }
+  ]
+}

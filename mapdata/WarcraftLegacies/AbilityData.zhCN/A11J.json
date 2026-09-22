@@ -1,0 +1,19 @@
+{
+  "OldId": "Alit",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦迪文）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电攻击"
+    }
+  ],
+  "NewId": "A11J"
+}

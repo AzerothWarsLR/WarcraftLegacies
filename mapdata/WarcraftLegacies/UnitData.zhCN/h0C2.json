@@ -1,0 +1,19 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "风行者之塔"
+    }
+  ],
+  "NewId": "h0C2"
+}

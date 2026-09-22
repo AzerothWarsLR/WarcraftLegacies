@@ -1,0 +1,31 @@
+{
+  "OldId": "ANca",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "顺劈斩"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时，其<AT12,DataA1,%>%的伤害会穿透至被攻击主目标附近的敌人。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "顺劈斩"
+    }
+  ],
+  "NewId": "AT12"
+}

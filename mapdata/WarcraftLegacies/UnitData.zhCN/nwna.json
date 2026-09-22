@@ -1,0 +1,18 @@
+{
+  "OldId": "nwna",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战单位，具有猛击、战争践踏和重生。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "远古雪怪"
+    }
+  ]
+}

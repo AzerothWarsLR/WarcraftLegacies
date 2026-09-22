@@ -1,0 +1,29 @@
+{
+  "OldId": "oalt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌 祭坛）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "征服者祭坛"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造征服者祭坛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤英雄和准英雄。"
+    }
+  ],
+  "NewId": "o020"
+}

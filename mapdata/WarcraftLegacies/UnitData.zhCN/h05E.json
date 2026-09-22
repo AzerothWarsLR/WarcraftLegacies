@@ -1,0 +1,24 @@
+{
+  "OldId": "hbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "守望堡兵营"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "阿拉索王国最外围的前哨。"
+    }
+  ],
+  "NewId": "h05E"
+}

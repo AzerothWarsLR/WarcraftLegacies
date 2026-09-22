@@ -1,0 +1,25 @@
+{
+  "OldId": "Ahea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（治疗鳞茎）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一名受伤的友方非机械单位恢复 60 点生命值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗术"
+    }
+  ],
+  "NewId": "A0HR"
+}

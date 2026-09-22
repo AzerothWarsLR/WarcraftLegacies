@@ -1,0 +1,31 @@
+{
+  "OldId": "Arpm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "能量网格"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "能量网格"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为至多 50 个附近友方单位恢复 25 点魔法值。消耗 25 点魔法值，每恢复一个单位额外消耗 25 点魔法值，最多消耗 625 点魔法值。"
+    }
+  ],
+  "NewId": "A12P"
+}

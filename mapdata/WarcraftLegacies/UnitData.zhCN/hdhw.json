@@ -1,0 +1,23 @@
+{
+  "OldId": "hdhw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "银月城的迅捷制空战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙鹰骑士"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "OldId": "Hmbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活山丘王子"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "铜须部族的至高领主"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活山丘王子"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长进攻作战并扰乱敌方部队。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤穆拉丁"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "穆拉丁·铜须"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "YTpc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "大型路径阻挡物"
+    }
+  ],
+  "NewId": "B009"
+}

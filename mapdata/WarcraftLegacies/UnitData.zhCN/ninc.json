@@ -1,0 +1,28 @@
+{
+  "OldId": "ninc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练燃烧弓箭手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "燃烧军团的弓箭手。拥有攻城型次要攻击。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "燃烧弓箭手"
+    }
+  ]
+}

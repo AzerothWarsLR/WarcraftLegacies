@@ -1,0 +1,24 @@
+{
+  "OldId": "ogru",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战歌氏族的骄傲，荣耀的战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "库卡隆先锋"
+    }
+  ],
+  "NewId": "o072"
+}

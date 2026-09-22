@@ -1,0 +1,43 @@
+{
+  "OldId": "Harf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活至高国王"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 至高王）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "至高王"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活至高国王"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤国王"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "阿尔萨斯·米奈希尔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长摧毁敌人并持久作战。"
+    }
+  ]
+}

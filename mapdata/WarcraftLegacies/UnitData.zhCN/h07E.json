@@ -1,0 +1,29 @@
+{
+  "OldId": "htow",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡 T1）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "采矿殖民地"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造采矿殖民地"
+    }
+  ],
+  "NewId": "h07E"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "ofrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗神殿"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷/邪部落）"
+    }
+  ],
+  "NewId": "o00F"
+}

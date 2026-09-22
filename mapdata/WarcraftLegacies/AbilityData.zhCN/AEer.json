@@ -1,0 +1,35 @@
+{
+  "OldId": "AEer",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯（幽魂））"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使根须从地面迸发而出，暂时固定、缴械并伤害一个目标敌人。|n|n|cffffcc00等级 1|r - 每秒<AEer,DataA1>点伤害，持续<AEer,Dur1>秒。 |n|cffffcc00等级 2|r - 每秒<AEer,DataA2>点伤害，持续<AEer,Dur2>秒。 |n|cffffcc00等级 3|r - 每秒<AEer,DataA3>点伤害，持续<AEer,Dur3>秒。|n|cffffcc00等级 4|r - 每秒<AEer,DataA4>点伤害，持续<AEer,Dur4>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "纠缠根须 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使根须从地面迸发而出，固定并缴械一个目标敌方单位<AEer,Dur4>秒，并每秒造成<AEer,DataA4>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "纠缠根须"
+    }
+  ]
+}

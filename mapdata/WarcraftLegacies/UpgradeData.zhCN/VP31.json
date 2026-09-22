@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhhb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "闪电大师"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究闪电大师"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使狮鹫骑士获得闪电大师技能，使其攻击有机会以叉状闪电击中敌人。"
+    }
+  ],
+  "NewId": "VP31"
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": "Robf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "邪能骷髅"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究邪能灌注骷髅"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使邪能兽人步兵在死亡时转化为骷髅兽人步兵，使其能够继续战斗 40 秒。"
+    }
+  ],
+  "NewId": "R098"
+}

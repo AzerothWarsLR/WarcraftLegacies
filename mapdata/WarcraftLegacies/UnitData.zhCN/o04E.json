@@ -1,0 +1,29 @@
+{
+  "OldId": "ohun",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "占骨者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练占骨者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "掌控灵魂与巫毒之术的巨魔大师。"
+    }
+  ],
+  "NewId": "o04E"
+}

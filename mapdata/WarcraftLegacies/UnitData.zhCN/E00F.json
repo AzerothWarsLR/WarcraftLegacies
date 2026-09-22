@@ -1,0 +1,34 @@
+{
+  "OldId": "Eevm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）（变形）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空领主"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长在战斗中灵活机动。可学习献祭、闪避、法力燃烧和恶魔变形。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤索兰莉安"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "索兰莉安"
+    }
+  ],
+  "NewId": "E00F"
+}

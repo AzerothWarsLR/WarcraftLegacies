@@ -1,0 +1,55 @@
+{
+  "OldId": "Aspo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（地穴恶魔）"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一次带毒的攻击，每秒造成<A0JL:aspo,DataA2>点伤害，并使目标敌人的移动速度降低<A0JL:aspo,DataB2,%>%、攻击力降低<A0JL:aspo,DataC2,%>%，持续<A0JL:aspo,Dur2>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "减速毒药 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "减速毒药 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一次带毒的攻击，每秒造成<A0JL:aspo,DataA3>点伤害，并使目标敌人的移动速度降低<A0JL:aspo,DataB3,%>%、攻击力降低<A0JL:aspo,DataC3,%>%，持续<A0JL:aspo,Dur3>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "减速毒药"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一次带毒的攻击，每秒造成<A0JL,DataA1>点伤害，并使敌方单位的攻击力降低<A0JL,DataC1,%>%，持续<A0JL,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "减速毒药"
+    }
+  ],
+  "NewId": "A0JL"
+}

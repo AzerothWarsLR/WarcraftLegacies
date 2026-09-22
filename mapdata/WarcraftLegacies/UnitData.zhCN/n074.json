@@ -1,0 +1,19 @@
+{
+  "OldId": "nnwq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "女王妮萨阿兹雷"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有邪恶光环的重型近战单位。施放亡者复生与腐臭蝠群。"
+    }
+  ],
+  "NewId": "n074"
+}

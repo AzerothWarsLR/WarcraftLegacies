@@ -1,0 +1,31 @@
+{
+  "OldId": "AImt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 提瑞斯法守护者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "传送"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "传送"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "施法<A0C5,DataB1>秒后，将施法者传送到目标友方单位身边。"
+    }
+  ],
+  "NewId": "A0C5"
+}

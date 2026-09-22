@@ -1,0 +1,28 @@
+{
+  "OldId": "ubdd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 准英雄）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "飞行准英雄，擅长造成范围伤害并使建筑失效。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练萨菲隆"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨菲隆"
+    }
+  ]
+}

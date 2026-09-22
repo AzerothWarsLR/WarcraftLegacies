@@ -1,0 +1,23 @@
+{
+  "OldId": "utom",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 商店）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "遗物陵墓"
+    }
+  ]
+}

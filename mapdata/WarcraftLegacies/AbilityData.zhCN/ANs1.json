@@ -1,0 +1,24 @@
+{
+  "OldId": "ANs1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（伐木机）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "口袋工厂 (|cffffcc00Q|r)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "口袋工厂"
+    }
+  ]
+}

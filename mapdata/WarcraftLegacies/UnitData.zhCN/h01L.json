@@ -1,0 +1,29 @@
+{
+  "OldId": "hfoo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "领主"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练领主"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "近战单位，矮人氏族的首领。"
+    }
+  ],
+  "NewId": "h01L"
+}

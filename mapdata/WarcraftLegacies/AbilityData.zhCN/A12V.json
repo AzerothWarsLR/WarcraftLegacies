@@ -1,0 +1,31 @@
+{
+  "OldId": "AHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "祝福之地"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "祝福之地"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个祝福法阵，治疗目标区域内的友方地面单位。|n|n为每个单位治疗 150 点生命值，随后每秒治疗 10 点生命值，持续 35 秒。"
+    }
+  ],
+  "NewId": "A12V"
+}

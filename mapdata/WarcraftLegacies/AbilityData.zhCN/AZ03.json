@@ -1,0 +1,19 @@
+{
+  "OldId": "ACrk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落-先知）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "抗性体肤"
+    }
+  ],
+  "NewId": "AZ03"
+}

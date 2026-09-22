@@ -1,0 +1,19 @@
+{
+  "OldId": "AId1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（附加特效）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "霜之哀伤辉光"
+    }
+  ],
+  "NewId": "A08V"
+}

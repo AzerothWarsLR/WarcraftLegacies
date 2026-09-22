@@ -1,0 +1,29 @@
+{
+  "OldId": "hatw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "魔法防御建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥术塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到奥术塔"
+    }
+  ],
+  "NewId": "h074"
+}

@@ -1,0 +1,25 @@
+{
+  "OldId": "AHre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯-牧师）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围 1 个友方单位的尸体复活。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "复活术"
+    }
+  ],
+  "NewId": "A0MX"
+}

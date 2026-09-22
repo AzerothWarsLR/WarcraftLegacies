@@ -1,0 +1,14 @@
+{
+  "OldId": "ofrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "祖尔格拉布神龛"
+    }
+  ],
+  "NewId": "o018"
+}

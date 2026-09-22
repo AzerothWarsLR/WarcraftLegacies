@@ -1,0 +1,28 @@
+{
+  "OldId": "edob",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造猎手大厅"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵研究）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "猎手大厅"
+    }
+  ]
+}

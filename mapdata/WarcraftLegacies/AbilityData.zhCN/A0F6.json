@@ -1,0 +1,19 @@
+{
+  "OldId": "AIi6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（+9 智力）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 英雄属性加成"
+    }
+  ],
+  "NewId": "A0F6"
+}

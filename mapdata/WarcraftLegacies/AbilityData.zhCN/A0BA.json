@@ -1,0 +1,31 @@
+{
+  "OldId": "AEmb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色教士）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法力燃烧"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "发射一道负能量波，最多燃烧目标敌方单位 55 点法力值。被燃烧的法力会爆燃，造成等同于所燃烧法力值的伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力燃烧"
+    }
+  ],
+  "NewId": "A0BA"
+}

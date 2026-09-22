@@ -1,0 +1,31 @@
+{
+  "OldId": "ACvp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（狼人）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "狼人之咬"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狼人之咬"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位获得所造成伤害的 25% 作为生命值。"
+    }
+  ],
+  "NewId": "A132"
+}

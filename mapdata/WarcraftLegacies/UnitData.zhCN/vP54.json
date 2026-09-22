@@ -1,0 +1,29 @@
+{
+  "OldId": "oshm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主力施法单位，擅长支援前线部队。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "唤地者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练唤地者"
+    }
+  ],
+  "NewId": "vP54"
+}

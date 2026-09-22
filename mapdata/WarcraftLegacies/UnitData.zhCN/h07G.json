@@ -1,0 +1,29 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡 T3）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大要塞"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到大要塞"
+    }
+  ],
+  "NewId": "h07G"
+}

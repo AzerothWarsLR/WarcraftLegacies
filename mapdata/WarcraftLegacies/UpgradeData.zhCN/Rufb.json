@@ -1,0 +1,25 @@
+{
+  "OldId": "Rufb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使冰霜巨龙的攻击暂时中止生产。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "冰冻吐息"
+    }
+  ]
+}

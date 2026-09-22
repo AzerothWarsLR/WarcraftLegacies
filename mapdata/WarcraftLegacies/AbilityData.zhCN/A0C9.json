@@ -1,0 +1,31 @@
+{
+  "OldId": "ACav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（任意主基地） （通用）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "强化防御"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化防御"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该基地坐落于坚固的防御要地。为 2000 范围内的附近建筑提供 6 点额外护甲。"
+    }
+  ],
+  "NewId": "A0C9"
+}

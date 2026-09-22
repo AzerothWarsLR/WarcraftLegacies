@@ -1,0 +1,23 @@
+{
+  "OldId": "hbot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（联盟）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "运输船"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练运输船"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "次元要塞。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "风暴要塞"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯其他）"
+    }
+  ],
+  "NewId": "n05X"
+}

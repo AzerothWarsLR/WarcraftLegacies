@@ -1,0 +1,39 @@
+{
+  "OldId": "Ulic",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "上古之神"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "克苏恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活克苏恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长在全世界施加影响。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（克苏恩）"
+    }
+  ],
+  "NewId": "U00R"
+}

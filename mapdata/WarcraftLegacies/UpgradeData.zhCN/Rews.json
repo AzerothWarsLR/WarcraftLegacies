@@ -1,0 +1,19 @@
+{
+  "OldId": "Rews",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究 |cffffcc00R|r 月井之春"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "月井之春"
+    }
+  ]
+}

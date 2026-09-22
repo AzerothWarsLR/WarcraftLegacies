@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhpt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（兽人部落/牛头人部族）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "飞行路线"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "建立飞行路线"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "建立连接奥格瑞玛与雷霆崖的飞行路线。"
+    }
+  ],
+  "NewId": "R09N"
+}

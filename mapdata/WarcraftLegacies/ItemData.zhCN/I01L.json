@@ -1,0 +1,24 @@
+{
+  "OldId": "ckng",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "恶魔之魂的碎片，提供攻击速度加成。"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00神器|r|n使攻击速度提高<A0HE,DataA1,%>%。|n|cffffcc00典故|r|n|cffffdead一块吞噬光线的恶魔之魂碎片。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑曜石碎片"
+    }
+  ],
+  "NewId": "I01L"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "nhym",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "镰刀德鲁伊"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练镰刀德鲁伊"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "进攻型施法者。"
+    }
+  ],
+  "NewId": "n06K"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "AIms",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青铜碎片）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 移动速度加成"
+    }
+  ],
+  "NewId": "A0HD"
+}

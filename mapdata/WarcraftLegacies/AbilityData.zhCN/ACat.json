@@ -1,0 +1,30 @@
+{
+  "OldId": "ACat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（沃恩、流浪者）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化强击光环"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一种光环，使附近友方单位的远程攻击伤害提高 15%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "强击光环"
+    }
+  ]
+}

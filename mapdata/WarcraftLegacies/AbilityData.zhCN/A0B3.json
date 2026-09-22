@@ -1,0 +1,25 @@
+{
+  "OldId": "Advm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 天选者。蓝色 - 末日守卫、卡扎克）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "吞噬一定区域内单位身上的所有魔法增益。每吞噬一个单位的魔法，施法者可获得<A0B3,DataA1>点生命值和<A0B3,DataB1>点法力值。|n|cffffcc00对召唤单位造成<A0B3,DataE1>点伤害。|r"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吞噬魔法"
+    }
+  ],
+  "NewId": "A0B3"
+}

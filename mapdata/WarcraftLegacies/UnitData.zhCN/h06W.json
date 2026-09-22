@@ -1,0 +1,29 @@
+{
+  "OldId": "hgtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "弓箭手驻守的防御塔。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "警戒塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到警戒塔"
+    }
+  ],
+  "NewId": "h06W"
+}

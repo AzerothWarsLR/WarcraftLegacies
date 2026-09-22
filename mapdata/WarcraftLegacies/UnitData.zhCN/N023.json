@@ -1,0 +1,39 @@
+{
+  "OldId": "Nalc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活巫妖王"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "天灾之主"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "巫妖王"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活巫妖王"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤The 诅咒教派的主人王"
+    }
+  ],
+  "NewId": "N023"
+}

@@ -1,0 +1,32 @@
+{
+  "OldId": "Rolf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化蝙蝠骑士的不稳定化合物，将其初始伤害提高至 1000，溅射伤害提高至 300。"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "火油瓶"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究空投毒素"
+    }
+  ]
+}

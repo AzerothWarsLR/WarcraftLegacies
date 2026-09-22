@@ -1,0 +1,19 @@
+{
+  "OldId": "Aasl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（荆棘藤蔓）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "减速光环"
+    }
+  ],
+  "NewId": "TP21"
+}

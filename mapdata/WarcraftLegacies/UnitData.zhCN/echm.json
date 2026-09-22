@@ -1,0 +1,23 @@
+{
+  "OldId": "echm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "双头飞行巨龙。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奇美拉"
+    }
+  ]
+}

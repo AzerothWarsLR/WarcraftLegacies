@@ -1,0 +1,29 @@
+{
+  "OldId": "hkee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "塞尔萨玛"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "塞尔萨玛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "塞尔萨玛"
+    }
+  ],
+  "NewId": "h05H"
+}

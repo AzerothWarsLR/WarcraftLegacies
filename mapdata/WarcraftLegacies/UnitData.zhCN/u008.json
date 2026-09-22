@@ -1,0 +1,29 @@
+{
+  "OldId": "uzg1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灌注奥术能量的防御塔，可发射散发攻击性魔法能量的魔法碎片。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造水晶守护者"
+    }
+  ],
+  "NewId": "u008"
+}

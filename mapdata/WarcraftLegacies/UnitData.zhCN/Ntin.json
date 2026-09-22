@@ -1,0 +1,43 @@
+{
+  "OldId": "Ntin",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活加兹鲁维"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "首席工程师"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活加兹鲁维"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加兹鲁维"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "全能战斗型英雄，擅长扰乱敌方军队。"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "加兹鲁维"
+    }
+  ]
+}

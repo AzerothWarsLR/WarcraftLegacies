@@ -1,0 +1,31 @@
+{
+  "OldId": "ACav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的护甲提高其基础护甲的 50%，不包括任何升级带来的加成。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "保护光环"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "保护光环"
+    }
+  ],
+  "NewId": "A107"
+}

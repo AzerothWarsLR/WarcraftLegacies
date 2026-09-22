@@ -1,0 +1,31 @@
+{
+  "OldId": "ACes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位的攻击会立即杀死生命值低于其伤害 300% 的单位，以及生命值低于其伤害 115% 的英雄。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "斩杀"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "斩杀"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（剑圣）"
+    }
+  ],
+  "NewId": "TP73"
+}

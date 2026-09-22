@@ -1,0 +1,19 @@
+{
+  "OldId": "BOac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "原始光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到原始光环的影响，攻击力提高。"
+    }
+  ],
+  "NewId": "B083"
+}

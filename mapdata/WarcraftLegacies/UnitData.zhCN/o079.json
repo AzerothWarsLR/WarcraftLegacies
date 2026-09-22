@@ -1,0 +1,19 @@
+{
+  "OldId": "nfsp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海巫"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    }
+  ],
+  "NewId": "o079"
+}

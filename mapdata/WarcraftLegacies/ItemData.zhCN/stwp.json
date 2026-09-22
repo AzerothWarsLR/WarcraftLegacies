@@ -1,0 +1,28 @@
+{
+  "OldId": "stwp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "将部队运送至一处己方单位或建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "城镇传送卷轴"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买城镇传送卷轴"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "将英雄及其附近的所有部队传送至目标己方建筑。|n|n|cffe8e800施法时间为<A002,DataB1>秒。|r"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "opeo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物暮光之锤、工人）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "上古之神的癫狂追随者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "教徒"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练教徒"
+    }
+  ],
+  "NewId": "o04B"
+}

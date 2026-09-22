@@ -1,0 +1,29 @@
+{
+  "OldId": "hgtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化了望塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦塔）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到强化了望塔"
+    }
+  ],
+  "NewId": "h006"
+}

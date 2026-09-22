@@ -1,0 +1,19 @@
+{
+  "OldId": "Sca1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（蒸汽坦克 → 火炮坦克）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "混乱"
+    }
+  ],
+  "NewId": "TP03"
+}

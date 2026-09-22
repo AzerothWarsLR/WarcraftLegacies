@@ -1,0 +1,35 @@
+{
+  "OldId": "AEah",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 塞纳留斯）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "一种光环，使附近友方单位获得伤害护盾，将近战攻击者的一部分伤害返还给它。|n|n|cffffcc00等级 1|r - 返还 8% 伤害。 |n|cffffcc00等级 2|r - 返还 16% 伤害。 |n|cffffcc00等级 3|r - 返还 24% 伤害。|n|cffffcc00等级 4|r - 返还 32% 伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "荆棘光环 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一种光环，使附近友方单位获得伤害护盾，将敌方单位近战攻击伤害的<AEah,DataA4,%>% 返还给它。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "荆棘光环"
+    }
+  ]
+}

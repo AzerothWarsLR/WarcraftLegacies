@@ -1,0 +1,43 @@
+{
+  "OldId": "Ocbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "召唤凯恩"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血蹄部族的酋长"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "召唤凯恩"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤凯恩"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "凯恩·血蹄"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长吸收伤害和近身战斗。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "fgbd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "为你召唤 2 条蓝龙作战。|n持续 180 秒。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蓝色幼龙蛋"
+    }
+  ]
+}

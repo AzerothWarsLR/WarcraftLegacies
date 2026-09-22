@@ -1,0 +1,19 @@
+{
+  "OldId": "nogm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "石拳痛击者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "食人魔军团的大型残暴战士。"
+    }
+  ],
+  "NewId": "n07Z"
+}

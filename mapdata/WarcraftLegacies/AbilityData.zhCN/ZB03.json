@@ -1,0 +1,19 @@
+{
+  "OldId": "Aasl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（增益施加）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "收割"
+    }
+  ],
+  "NewId": "ZB03"
+}

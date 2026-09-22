@@ -1,0 +1,54 @@
+{
+  "OldId": "AOsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "一道冲击波从英雄身上向外扩散，对一条直线上的地面单位造成伤害。 |n|n|cffffcc001级|r - <AOsh,DataA1>点伤害。 |n|cffffcc002级|r - <AOsh,DataA2>点伤害。 |n|cffffcc003级|r - <AOsh,DataA3>点伤害。|n|cffffcc004级|r - <AOsh,DataA4>点伤害。|n|cffffcc005级|r - <AOsh,DataA5>点伤害。|n|cffffcc006级|r - <AOsh,DataA6>点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "震荡|cffffcc00波|r - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "震荡|cffffcc00波|r - [|cffffcc005级|r]"
+    },
+    {
+      "Level": 6,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "震荡|cffffcc00波|r - [|cffffcc006级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道冲击波向外扩散，对一条直线上的地面单位造成<AOsh,DataA4>点伤害。"
+    },
+    {
+      "Level": 5,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道冲击波向外扩散，对一条直线上的地面单位造成<AOsh,DataA5>点伤害。"
+    },
+    {
+      "Level": 6,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道冲击波向外扩散，对一条直线上的地面单位造成<AOsh,DataA6>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "震荡波"
+    }
+  ]
+}

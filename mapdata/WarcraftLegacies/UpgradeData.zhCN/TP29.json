@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhse",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "火炮"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究火炮"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "将蒸汽坦克升级为远程火炮，提高其攻击距离和伤害，并赋予火箭弹幕，使其攻击时向附近的敌方空中单位发射额外弹幕。|n|n|cffc864c8无法与火焰喷射器同时研究。|r"
+    }
+  ],
+  "NewId": "TP29"
+}

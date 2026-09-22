@@ -1,0 +1,23 @@
+{
+  "OldId": "hvlt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然商店）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥秘宝库"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "BOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "神圣之力"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到神圣力量的影响，移动速度和攻击速度提高。"
+    }
+  ],
+  "NewId": "B00D"
+}

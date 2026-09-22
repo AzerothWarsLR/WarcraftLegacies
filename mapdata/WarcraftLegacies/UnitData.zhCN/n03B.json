@@ -1,0 +1,19 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "将单位传送至另一处矿道地铁。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "矿道地铁"
+    }
+  ],
+  "NewId": "n03B"
+}

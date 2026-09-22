@@ -1,0 +1,24 @@
+{
+  "OldId": "ohwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（海潮贤者 - 库尔提拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "漩涡"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练漩涡"
+    }
+  ],
+  "NewId": "o019"
+}

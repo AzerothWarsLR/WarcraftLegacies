@@ -1,0 +1,38 @@
+{
+  "OldId": "Hlgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大元帅"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大元帅"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤奥斯玛·加里索斯"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长支援军队。"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "奥斯玛·加里索斯"
+    }
+  ]
+}

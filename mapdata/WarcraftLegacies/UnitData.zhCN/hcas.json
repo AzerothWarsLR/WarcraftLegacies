@@ -1,0 +1,23 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦 T3）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "城堡"
+    }
+  ]
+}

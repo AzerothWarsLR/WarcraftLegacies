@@ -1,0 +1,26 @@
+{
+  "OldId": "ACav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "维护费 -2 黄金/分钟"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "每分钟消耗 2 黄金"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位每分钟将消耗 2 黄金。"
+    }
+  ],
+  "NewId": "A0ZF"
+}

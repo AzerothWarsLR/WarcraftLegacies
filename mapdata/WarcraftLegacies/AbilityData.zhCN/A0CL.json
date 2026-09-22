@@ -1,0 +1,25 @@
+{
+  "OldId": "ACcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡 - 狮鹫骑士）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道闪电，最多弹射 5 次，对主要目标造成 75 点伤害。每次弹射的伤害递减 5%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电链"
+    }
+  ],
+  "NewId": "A0CL"
+}

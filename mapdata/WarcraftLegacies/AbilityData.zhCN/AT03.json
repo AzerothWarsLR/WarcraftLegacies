@@ -1,0 +1,43 @@
+{
+  "OldId": "Aspo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "减速毒药"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "减速毒药 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一次毒药攻击，每秒造成<AT03,DataA1>点伤害，并使敌方单位的攻击力降低<AT03,DataC1,%>%，持续<AT03,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一次毒药攻击，每秒造成<AT03,DataA2>点伤害，并使目标敌人的移动速度降低<AT03,DataB2,%>%、攻击力降低<AT03,DataC2,%>%，持续<AT03,Dur2>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "减速毒药"
+    }
+  ],
+  "NewId": "AT03"
+}

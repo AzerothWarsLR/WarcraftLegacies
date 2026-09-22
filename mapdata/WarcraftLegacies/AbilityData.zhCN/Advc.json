@@ -1,0 +1,18 @@
+{
+  "OldId": "Advc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 科多兽。青色 - 黑龙）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吞噬货物"
+    }
+  ]
+}

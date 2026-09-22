@@ -1,0 +1,29 @@
+{
+  "OldId": "ocat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "邪能毁灭的攻城器械，艾泽拉斯建筑的末日。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练投石车"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "投石车"
+    }
+  ],
+  "NewId": "o01O"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "uzig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团 农场）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "灵魂囚笼"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "提供 8 点人口，可提高可训练单位的数量上限。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造灵魂囚笼"
+    }
+  ],
+  "NewId": "u00E"
+}

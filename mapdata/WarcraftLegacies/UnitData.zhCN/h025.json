@@ -1,0 +1,29 @@
+{
+  "OldId": "hctw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暴风城火炮"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型防御建筑。对成群的部队尤其有效。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城塔）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造强化|cffffcc00炮|r塔"
+    }
+  ],
+  "NewId": "h025"
+}

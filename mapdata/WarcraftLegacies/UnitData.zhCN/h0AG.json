@@ -1,0 +1,29 @@
+{
+  "OldId": "hbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色兵营）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "刀剑大厅"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造刀剑大厅"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要作战单位生产建筑。"
+    }
+  ],
+  "NewId": "h0AG"
+}

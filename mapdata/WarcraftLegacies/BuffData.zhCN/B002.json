@@ -1,0 +1,14 @@
+{
+  "OldId": "AEsd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "召唤目标"
+    }
+  ],
+  "NewId": "B002"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "YT36",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "（横向暴风城）"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "黑铁大桥"
+    }
+  ],
+  "NewId": "B01E"
+}

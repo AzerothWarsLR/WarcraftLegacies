@@ -1,0 +1,14 @@
+{
+  "OldId": "BSTN",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "神圣猛击"
+    }
+  ],
+  "NewId": "B062"
+}

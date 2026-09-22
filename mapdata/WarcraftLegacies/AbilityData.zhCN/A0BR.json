@@ -1,0 +1,77 @@
+{
+  "OldId": "Absk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦迪文）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "能量涌动"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习能量涌动 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄倾注全部力量，使自身的攻击速度大幅提高。持续 5 秒。|n|n|cffffcc001级|r - 攻击速度提高 200%。|n|cffffcc002级|r - 攻击速度提高 300%。|n|cffffcc003级|r - 攻击速度提高 400%。|n|cffffcc004级|r - 攻击速度提高 500%。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "能量涌动 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "能量涌动 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "能量涌动 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "能量涌动 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄倾注全部力量，使其在 5 秒内攻击速度提高 200%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄倾注全部力量，使其在 5 秒内攻击速度提高 300%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄倾注全部力量，使其在 5 秒内攻击速度提高 400%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄倾注全部力量，使其在 5 秒内攻击速度提高 500%。"
+    }
+  ],
+  "NewId": "A0BR"
+}

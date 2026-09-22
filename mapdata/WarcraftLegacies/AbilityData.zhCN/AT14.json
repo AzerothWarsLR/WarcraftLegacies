@@ -1,0 +1,41 @@
+{
+  "OldId": "ANsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "群体嗜血"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习沉默 - [|cffffcc00%d级|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "大幅提高目标区域内单位的攻击速度和移动速度。 |n|n|cffffcc00等级 1|r - 攻击速度提高 90%，移动速度提高 120%。持续 30 秒。 |n|cffffcc00等级 2|r - 攻击速度提高 110%，移动速度提高 130%。持续 30 秒 |n|cffffcc00等级 3|r - 攻击速度提高 130%，移动速度提高 140%。持续 30 秒"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体嗜血"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使目标区域内的单位攻击速度提高<AT14,DataD1,%>%、移动速度提高<AT14,DataC1,%>%。|n持续<AT14,Dur1>秒。"
+    }
+  ],
+  "NewId": "AT14"
+}

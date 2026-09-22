@@ -1,0 +1,43 @@
+{
+  "OldId": "Rowd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究巫医专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究巫医大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高巫医的法力值上限和法力恢复速度，并使其获得施放静滞陷阱的能力。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高巫医的法力值上限和法力恢复速度，并使其获得施放治疗结界的能力。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "巫医专家级训练"
+    }
+  ]
+}

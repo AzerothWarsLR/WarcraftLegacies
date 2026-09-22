@@ -1,0 +1,19 @@
+{
+  "OldId": "Buhf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "超频"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位的攻击速度提高，但受到的伤害增加。"
+    }
+  ],
+  "NewId": "B02M"
+}

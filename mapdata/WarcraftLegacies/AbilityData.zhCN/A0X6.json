@@ -1,0 +1,54 @@
+{
+  "OldId": "ANfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（纳兹夏尔女士，纳迦）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一道锥形闪电，对敌人造成伤害。 |n|n|cffffcc001级|r - 对每个单位造成<A0X6,DataA1>点伤害。 |n|cffffcc002级|r - 对每个单位造成<A0X6,DataA2>点伤害。 |n|cffffcc003级|r - 对每个单位造成<A0X6,DataA3>点伤害。 |n|cffffcc004级|r - 对每个单位造成<A0X6,DataA4>点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位施放一道锥形闪电，最多可以攻击<A0X6,DataB1>个敌方单位，造成<A0X6,DataA1>点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位施放一道锥形闪电，最多可以攻击<A0X6,DataB2>个敌方单位，造成<A0X6,DataA2>点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位施放一道锥形闪电，最多可以攻击<A0X6,DataB3>个敌方单位，造成<A0X6,DataA3>点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位施放一道锥形闪电，最多可以攻击<A0X6,DataB4>个敌方单位，造成<A0X6,DataA4>点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "叉状闪电 - [|cffffcc004级|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "叉状闪电"
+    }
+  ],
+  "NewId": "A0X6"
+}

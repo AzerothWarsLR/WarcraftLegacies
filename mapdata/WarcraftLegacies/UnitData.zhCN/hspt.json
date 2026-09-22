@@ -1,0 +1,23 @@
+{
+  "OldId": "hspt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "受训专门摧毁施法者的精锐战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "破法者"
+    }
+  ]
+}

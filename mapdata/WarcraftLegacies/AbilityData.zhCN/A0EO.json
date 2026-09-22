@@ -1,0 +1,25 @@
+{
+  "OldId": "ACr2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（熊怪萨满长者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在<A0EO,Dur1>秒内为目标友方单位恢复<A0EO,DataA1>点生命值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "回春术"
+    }
+  ],
+  "NewId": "A0EO"
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "nbda",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙人学徒"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有闪避与回春术的轻型远程单位。"
+    }
+  ]
+}

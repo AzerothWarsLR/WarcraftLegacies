@@ -1,0 +1,29 @@
+{
+  "OldId": "nbal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "无畏舰"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练无畏舰"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba坦克 单位|r"
+    }
+  ],
+  "NewId": "n0CZ"
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "Sca1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌-血契兽人步兵）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "甲壳护盾"
+    }
+  ]
+}

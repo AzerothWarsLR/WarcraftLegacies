@@ -1,0 +1,24 @@
+{
+  "OldId": "Aliq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 蝙蝠骑士）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "投掷易爆的液体，使建筑每秒额外受到 5 点伤害。正在受到火油伤害的建筑无法被修理，其攻击速度降低<Aliq,DataC1,%>%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火油瓶"
+    }
+  ]
+}

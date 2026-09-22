@@ -1,0 +1,14 @@
+{
+  "OldId": "Agyd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "制造制造巨魔尸体"
+    }
+  ],
+  "NewId": "A088"
+}

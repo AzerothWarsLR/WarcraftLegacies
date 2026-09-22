@@ -1,0 +1,25 @@
+{
+  "OldId": "ACrj",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（纳斯雷兹姆渗透者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为目标友方单位恢复<A0YY,DataA1>点生命值，效果持续<A0YY,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "回春术"
+    }
+  ],
+  "NewId": "A0YY"
+}

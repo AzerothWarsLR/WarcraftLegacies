@@ -1,0 +1,29 @@
+{
+  "OldId": "hars",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯魔法）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "潮汐学院"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造潮汐学院"
+    }
+  ],
+  "NewId": "h07Q"
+}

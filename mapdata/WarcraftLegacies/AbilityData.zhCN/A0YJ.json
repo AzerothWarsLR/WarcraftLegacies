@@ -1,0 +1,25 @@
+{
+  "OldId": "Ainf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使目标友方单位的攻击力提高 20%，护甲提高 5 点，生命恢复速度提高 1 点。|n持续<Ainf,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "心灵之火"
+    }
+  ],
+  "NewId": "A0YJ"
+}

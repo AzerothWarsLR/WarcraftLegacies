@@ -1,0 +1,28 @@
+{
+  "OldId": "nsat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练萨特欺诈者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程单位。可施放减速与诱捕。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨特欺诈者"
+    }
+  ]
+}

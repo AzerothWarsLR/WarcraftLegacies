@@ -1,0 +1,14 @@
+{
+  "OldId": "Aoar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "世界之树的治愈"
+    }
+  ],
+  "NewId": "A00H"
+}

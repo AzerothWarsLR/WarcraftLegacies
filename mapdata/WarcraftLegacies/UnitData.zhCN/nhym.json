@@ -1,0 +1,23 @@
+{
+  "OldId": "nhym",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "精通冰霜奥术的法师。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水术师"
+    }
+  ]
+}

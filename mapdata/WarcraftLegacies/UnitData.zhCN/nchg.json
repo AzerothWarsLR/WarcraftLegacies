@@ -1,0 +1,28 @@
+{
+  "OldId": "nchg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "邪能兽人步兵"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练邪能兽人步兵"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灌注恶魔之血的残暴战士。"
+    }
+  ]
+}

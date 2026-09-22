@@ -1,0 +1,24 @@
+{
+  "OldId": "ACrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（末日守卫）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一波波火焰，对区域内的单位造成伤害。每波火焰造成 25 点伤害。|n持续<ACrf,DataA1>波。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之雨"
+    }
+  ]
+}

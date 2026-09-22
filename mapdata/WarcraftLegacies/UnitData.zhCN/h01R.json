@@ -1,0 +1,29 @@
+{
+  "OldId": "htow",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯 T1）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造城镇大厅"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "议政厅"
+    }
+  ],
+  "NewId": "h01R"
+}

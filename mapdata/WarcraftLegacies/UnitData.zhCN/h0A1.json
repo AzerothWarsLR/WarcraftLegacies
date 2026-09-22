@@ -1,0 +1,29 @@
+{
+  "OldId": "hcth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 阿尔萨斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "上将卫队"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练上将卫队"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "洛丹伦王室的精锐护卫。"
+    }
+  ],
+  "NewId": "h0A1"
+}

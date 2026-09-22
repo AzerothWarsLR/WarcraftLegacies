@@ -1,0 +1,29 @@
+{
+  "OldId": "ofor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌 研究）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "精炼厂"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造精炼厂"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    }
+  ],
+  "NewId": "o009"
+}

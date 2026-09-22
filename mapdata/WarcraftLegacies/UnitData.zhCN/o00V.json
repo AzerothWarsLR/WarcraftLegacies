@@ -1,0 +1,24 @@
+{
+  "OldId": "ofrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "达萨罗"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造达萨罗"
+    }
+  ],
+  "NewId": "o00V"
+}

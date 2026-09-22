@@ -1,0 +1,65 @@
+{
+  "OldId": "ACad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（塔隆·血魔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "群体亡者再临"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群体亡者再临 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "复活周围的大量尸体为巫妖王作战。持续 60 秒。|n|n|cffffcc001级|r - 复活周围 50 具尸体。冷却时间 240 秒。 |n|cffffcc002级|r - 复活周围 100 具尸体。冷却时间 180 秒。 |n|cffffcc003级|r - 复活周围 200 具尸体。冷却时间 120 秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体亡者再临 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体亡者再临 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体亡者再临 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "复活周围 50 具尸体为巫妖王作战。持续 60 秒。冷却时间 240 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "复活周围 100 具尸体为巫妖王作战。持续 60 秒。冷却时间 180 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "复活周围 200 具尸体为巫妖王作战。持续 60 秒。冷却时间 120 秒。"
+    }
+  ],
+  "NewId": "A0PA"
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": "Hvsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活阿达尔"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "纳鲁"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "阿达尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活阿达尔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿达尔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "宇宙英雄，擅长团队战斗支援。"
+    }
+  ],
+  "NewId": "H09M"
+}

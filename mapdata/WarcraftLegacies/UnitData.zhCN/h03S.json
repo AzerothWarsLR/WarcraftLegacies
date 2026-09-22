@@ -1,0 +1,29 @@
+{
+  "OldId": "hkee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 T2）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "宅邸"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到宅邸"
+    }
+  ],
+  "NewId": "h03S"
+}

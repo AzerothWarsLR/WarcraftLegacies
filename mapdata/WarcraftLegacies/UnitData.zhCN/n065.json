@@ -1,0 +1,29 @@
+{
+  "OldId": "nbdk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "绿龙"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "受泰坦托付守护艾泽拉斯自然界的巨龙。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练绿龙"
+    }
+  ],
+  "NewId": "n065"
+}

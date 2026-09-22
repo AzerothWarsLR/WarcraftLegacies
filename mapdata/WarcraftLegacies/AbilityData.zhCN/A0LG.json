@@ -1,0 +1,14 @@
+{
+  "OldId": "AUin",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "流星雨（3级伤害法术）"
+    }
+  ],
+  "NewId": "A0LG"
+}

@@ -1,0 +1,77 @@
+{
+  "OldId": "AOwk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使英雄进入隐形状态，并在一段设定的时间内提高移动速度。当英雄攻击某个单位、打破隐形状态时，会造成额外伤害。 |n|n|cffffcc001级|r - 移动速度提高<TPY1,DataB1,%>%，额外伤害<TPY1,DataC1>点，持续<TPY1,Dur1>秒。 |n|cffffcc002级|r - 移动速度提高<TPY1,DataB2,%>%，额外伤害<TPY1,DataC2>点，持续<TPY1,Dur2>秒。 |n|cffffcc003级|r - 移动速度提高<TPY1,DataB3,%>%，额外伤害<TPY1,DataC3>点，持续<TPY1,Dur3>秒。|n|cffffcc004级|r - 移动速度提高<TPY1,DataB4,%>%，额外伤害<TPY1,DataC4>点，持续<TPY1,Dur4>秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "幻影步 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使英雄进入隐形状态，并在<TPY1,Dur1>秒内移动速度提高<TPY1,DataB1,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC1>点额外伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使英雄进入隐形状态，并在<TPY1,Dur2>秒内移动速度提高<TPY1,DataB2,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC2>点额外伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使英雄进入隐形状态，并在<TPY1,Dur3>秒内移动速度提高<TPY1,DataB3,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC3>点额外伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使英雄进入隐形状态，并在<TPY1,Dur4>秒内移动速度提高<TPY1,DataB4,%>%。如果英雄攻击某个单位、打破隐形状态，该次攻击将造成<TPY1,DataC4>点额外伤害。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团英雄）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "幻影步 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "幻影步 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "幻影步 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习幻影步 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "幻影步"
+    }
+  ],
+  "NewId": "TPY1"
+}

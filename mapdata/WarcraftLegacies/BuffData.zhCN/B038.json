@@ -1,0 +1,19 @@
+{
+  "OldId": "BHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "奥伯丁海军"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "奥伯丁海军"
+    }
+  ],
+  "NewId": "B038"
+}

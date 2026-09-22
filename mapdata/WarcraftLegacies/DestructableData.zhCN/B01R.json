@@ -1,0 +1,14 @@
+{
+  "OldId": "DTes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "异种蝎卵囊"
+    }
+  ],
+  "NewId": "B01R"
+}

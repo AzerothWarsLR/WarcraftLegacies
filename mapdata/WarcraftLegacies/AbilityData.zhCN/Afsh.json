@@ -1,0 +1,24 @@
+{
+  "OldId": "Afsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（卡兹莫丹 - 迫击炮小队）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使用破片榴弹，提高对无护甲和中型护甲单位造成的伤害。对主目标造成<Afsh,DataC1>点额外伤害，对中型作用范围造成<Afsh,DataD1>点，对大型作用范围造成<Afsh,DataE1>点。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "破片榴弹"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "OldId": "Rosp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（邪部落/兽人部落/牛头人部族）"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究尖刺屏障"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "强化研究尖刺屏障"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "尖刺屏障"
+    }
+  ]
+}

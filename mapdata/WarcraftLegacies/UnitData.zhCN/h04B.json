@@ -1,0 +1,24 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然地卜师岩石）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "岩石"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基础了望塔。没有攻击力，但可升级为防御塔、奥术塔或炮塔。可学习魔法岗哨技能。"
+    }
+  ],
+  "NewId": "h04B"
+}

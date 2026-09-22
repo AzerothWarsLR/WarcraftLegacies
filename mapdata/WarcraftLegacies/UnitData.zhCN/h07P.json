@@ -1,0 +1,29 @@
+{
+  "OldId": "harm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯专家）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "攻城武器生产建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造车间"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "车间"
+    }
+  ],
+  "NewId": "h07P"
+}

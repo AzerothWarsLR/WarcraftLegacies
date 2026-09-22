@@ -1,0 +1,29 @@
+{
+  "OldId": "nhyc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔投石手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食人魔投石手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "体型庞大的食人魔，可远距离投掷石块。擅长摧毁敌方建筑。|n|n|cffffcc00能攻击地面单位。"
+    }
+  ],
+  "NewId": "vP50"
+}

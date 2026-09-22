@@ -1,0 +1,28 @@
+{
+  "OldId": "otbk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大而敏捷的巨魔猎手。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "掷斧者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练掷斧者"
+    }
+  ]
+}

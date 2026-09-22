@@ -1,0 +1,19 @@
+{
+  "OldId": "BOwk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "幻影步"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于隐形状态，可以穿过单位并移动得更快。若其攻击或施放技能，就会重新显形。"
+    }
+  ],
+  "NewId": "TP60"
+}

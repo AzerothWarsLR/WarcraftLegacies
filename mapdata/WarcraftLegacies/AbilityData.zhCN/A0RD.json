@@ -1,0 +1,19 @@
+{
+  "OldId": "ACfb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电打击 微型昏迷"
+    }
+  ],
+  "NewId": "A0RD"
+}

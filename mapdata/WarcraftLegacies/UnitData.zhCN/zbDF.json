@@ -1,0 +1,29 @@
+{
+  "OldId": "ushd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "寒冰屏障"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "永久隐形的灵魂，可以看见其他隐形单位，但无法攻击。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（可驱散假人）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练寒冰屏障"
+    }
+  ],
+  "NewId": "zbDF"
+}

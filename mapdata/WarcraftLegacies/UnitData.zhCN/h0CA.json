@@ -1,0 +1,29 @@
+{
+  "OldId": "hars",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒专家）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "上古之池"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造上古之池"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    }
+  ],
+  "NewId": "h0CA"
+}

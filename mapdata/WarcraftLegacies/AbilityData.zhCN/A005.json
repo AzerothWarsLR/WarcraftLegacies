@@ -1,0 +1,19 @@
+{
+  "OldId": "Acor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（斯库拉）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "腐蚀吐息"
+    }
+  ],
+  "NewId": "A005"
+}

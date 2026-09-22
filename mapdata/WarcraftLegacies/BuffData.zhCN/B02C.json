@@ -1,0 +1,19 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "集结于国王麾下！"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到大领主伯瓦尔的集结，攻击力提高。"
+    }
+  ],
+  "NewId": "B02C"
+}

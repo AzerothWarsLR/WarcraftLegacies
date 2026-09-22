@@ -1,0 +1,44 @@
+{
+  "OldId": "Huth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "圣光之锤"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "守备官玛尔拉德"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，出色的前线支援者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤玛尔拉德"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活玛尔拉德"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活玛尔拉德"
+    }
+  ],
+  "NewId": "H09S"
+}

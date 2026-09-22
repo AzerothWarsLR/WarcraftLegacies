@@ -1,0 +1,18 @@
+{
+  "OldId": "nmrr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可诱捕敌人的轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鱼人猎手"
+    }
+  ]
+}

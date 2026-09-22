@@ -1,0 +1,29 @@
+{
+  "OldId": "nmrk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城商店）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "拍卖行"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造拍卖行"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    }
+  ],
+  "NewId": "n07T"
+}

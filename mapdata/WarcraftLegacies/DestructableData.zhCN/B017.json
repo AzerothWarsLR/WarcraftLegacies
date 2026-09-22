@@ -1,0 +1,14 @@
+{
+  "OldId": "LTbs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "暴风城传送门台座"
+    }
+  ],
+  "NewId": "B017"
+}

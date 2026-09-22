@@ -1,0 +1,23 @@
+{
+  "OldId": "hsor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "奎尔萨拉斯的多面手施法者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "女巫"
+    }
+  ]
+}

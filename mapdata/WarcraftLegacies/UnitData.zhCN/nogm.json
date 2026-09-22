@@ -1,0 +1,18 @@
+{
+  "OldId": "nogm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "食人魔军团的大型残暴战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔重殴者"
+    }
+  ]
+}

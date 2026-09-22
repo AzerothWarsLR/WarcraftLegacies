@@ -1,0 +1,31 @@
+{
+  "OldId": "Abtl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色 - 要塞塔楼）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战斗岗位(|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "让周围的火枪手跑入要塞。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战斗戒备"
+    }
+  ],
+  "NewId": "A00P"
+}

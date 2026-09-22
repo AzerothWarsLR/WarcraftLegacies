@@ -1,0 +1,24 @@
+{
+  "OldId": "hgtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "弓箭手驻守的防御塔。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    }
+  ],
+  "NewId": "h03W"
+}

@@ -1,0 +1,31 @@
+{
+  "OldId": "ACua",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（荆棘藤蔓生命恢复）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使敌方地面单位的移动速度降低 60%，并使友方地面单位每秒的生命恢复量提高 2 点。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "荆棘藤蔓"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "荆棘藤蔓"
+    }
+  ],
+  "NewId": "TP22"
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "DTg5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "格雷迈恩之门"
+    }
+  ],
+  "NewId": "B01A"
+}

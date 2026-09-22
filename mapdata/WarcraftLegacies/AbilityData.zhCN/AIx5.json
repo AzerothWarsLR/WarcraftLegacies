@@ -1,0 +1,18 @@
+{
+  "OldId": "AIx5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（+3 所有属性）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 英雄属性加成"
+    }
+  ]
+}

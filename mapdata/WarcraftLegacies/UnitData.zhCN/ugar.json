@@ -1,0 +1,23 @@
+{
+  "OldId": "ugar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "天空中的邪恶生物。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "石像鬼"
+    }
+  ]
+}

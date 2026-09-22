@@ -1,0 +1,29 @@
+{
+  "OldId": "nheb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色特殊）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "神圣堡垒"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造神圣堡垒"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "至高圣光生产建筑。"
+    }
+  ],
+  "NewId": "n035"
+}

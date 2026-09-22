@@ -1,0 +1,31 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯 - 灰色卫兵）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "雷霆一击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "雷霆一击"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "猛击地面，对附近的敌方地面单位造成 55 点伤害，并使其移动速度降低<MD14,DataA1,%>%、攻击速度降低<MD14,DataB1,%>%。对单位持续<MD14,Dur1>秒，对英雄持续<MD14,HeroDur1>秒。"
+    }
+  ],
+  "NewId": "MD13"
+}

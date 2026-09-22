@@ -1,0 +1,31 @@
+{
+  "OldId": "AOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（玛法里奥）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤树人"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤树人"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<SLS0,DataB1>个树人，持续<SLS0,Dur1>秒。"
+    }
+  ],
+  "NewId": "SLS0"
+}

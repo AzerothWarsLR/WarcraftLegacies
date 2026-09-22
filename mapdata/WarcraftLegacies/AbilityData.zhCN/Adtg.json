@@ -1,0 +1,18 @@
+{
+  "OldId": "Adtg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 诺达希尔。青色 - 黑龙。粉色 - 驭风者。灰色 - 雷克萨的猎鹰）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "真视"
+    }
+  ]
+}

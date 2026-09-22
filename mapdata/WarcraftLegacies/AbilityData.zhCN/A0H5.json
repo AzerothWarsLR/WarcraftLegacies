@@ -1,0 +1,31 @@
+{
+  "OldId": "Ahwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个无法移动的结界，每<A12Z,Cool1>秒复活 1 个单位。 |n持续<A0H5,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "集结战旗"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "集结战旗"
+    }
+  ],
+  "NewId": "A0H5"
+}

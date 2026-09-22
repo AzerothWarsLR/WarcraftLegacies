@@ -1,0 +1,18 @@
+{
+  "OldId": "Aloa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（城堡）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "装载"
+    }
+  ]
+}

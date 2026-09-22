@@ -1,0 +1,44 @@
+{
+  "OldId": "Hapm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活洛瑟玛·塞隆"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯藩属）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奎尔萨拉斯摄政王"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "洛瑟玛·塞隆"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活洛瑟玛·塞隆"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤洛瑟玛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长范围伤害。"
+    }
+  ],
+  "NewId": "H02E"
+}

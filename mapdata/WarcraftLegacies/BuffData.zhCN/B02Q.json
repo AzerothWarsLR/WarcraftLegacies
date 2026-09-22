@@ -1,0 +1,19 @@
+{
+  "OldId": "BOac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|c00FF0000恐惧光环|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到恐惧光环的影响，攻击力降低。"
+    }
+  ],
+  "NewId": "B02Q"
+}

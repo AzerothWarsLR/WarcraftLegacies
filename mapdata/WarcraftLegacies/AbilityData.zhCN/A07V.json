@@ -1,0 +1,31 @@
+{
+  "OldId": "ACif",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 暴风城骑士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "鼓舞"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "鼓舞 (|cffcece00W|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使骑士的护甲提高 10 点，持续 15 秒。"
+    }
+  ],
+  "NewId": "A07V"
+}

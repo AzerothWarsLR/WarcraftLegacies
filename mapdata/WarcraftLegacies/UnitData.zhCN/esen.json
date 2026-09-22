@@ -1,0 +1,23 @@
+{
+  "OldId": "esen",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "骑乘作战的哨兵战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "女猎手"
+    }
+  ]
+}

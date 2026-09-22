@@ -1,0 +1,28 @@
+{
+  "OldId": "uske",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 通灵师）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练骷髅战士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "弱小的骷髅战士，在大规模亡灵军队中可作为有效的炮灰。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "骷髅战士"
+    }
+  ]
+}

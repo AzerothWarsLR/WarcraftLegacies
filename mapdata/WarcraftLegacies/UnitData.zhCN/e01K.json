@@ -1,0 +1,29 @@
+{
+  "OldId": "ebal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "连发弩炮"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练连发弩炮"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba攻城 单位|r"
+    }
+  ],
+  "NewId": "e01K"
+}

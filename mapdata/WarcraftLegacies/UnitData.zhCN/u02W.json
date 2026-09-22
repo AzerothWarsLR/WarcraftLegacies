@@ -1,0 +1,29 @@
+{
+  "OldId": "uobs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "能量货车"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "在风暴熔炉中锻造的法力电池，可压制日怒对魔法的渴求。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练能量货车"
+    }
+  ],
+  "NewId": "u02W"
+}

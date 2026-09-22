@@ -1,0 +1,23 @@
+{
+  "OldId": "ospm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "血蹄部族的神秘牛头人萨满，处于虚灵形态。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "灵魂行者"
+    }
+  ]
+}

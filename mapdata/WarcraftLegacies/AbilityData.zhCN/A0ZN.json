@@ -1,0 +1,25 @@
+{
+  "OldId": "Afod",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（葛利安索恩）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "瞬间将一个生物由内向外翻转，造成 1000 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "死亡一指"
+    }
+  ],
+  "NewId": "A0ZN"
+}

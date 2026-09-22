@@ -1,0 +1,24 @@
+{
+  "OldId": "npgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "维度发生器"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造维度发生器"
+    }
+  ],
+  "NewId": "n00E"
+}

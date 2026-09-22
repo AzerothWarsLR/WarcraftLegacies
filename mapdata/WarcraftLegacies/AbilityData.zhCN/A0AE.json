@@ -1,0 +1,26 @@
+{
+  "OldId": "ACav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暗影迷宫"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "暗影迷宫"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使半径<A0AE,Area1>范围内的敌方单位护甲降低 4 点。"
+    }
+  ],
+  "NewId": "A0AE"
+}

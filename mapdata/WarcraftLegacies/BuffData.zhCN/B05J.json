@@ -1,0 +1,19 @@
+{
+  "OldId": "BUav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "格瑞姆巴托"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "对敌方单位造成伤害时，恢复相当于该伤害 10% 的生命值。"
+    }
+  ],
+  "NewId": "B05J"
+}

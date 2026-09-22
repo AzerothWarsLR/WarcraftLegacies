@@ -1,0 +1,23 @@
+{
+  "OldId": "npn5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（陈）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "迅捷的风暴熊猫人战士。拥有抗性皮肤。可施放驱散魔法、飓风术与疾风步。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "风暴之灵"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒农场）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "提供 100 人口，可提高可训练单位的数量上限。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "植物园"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造植物园"
+    }
+  ],
+  "NewId": "h0C7"
+}

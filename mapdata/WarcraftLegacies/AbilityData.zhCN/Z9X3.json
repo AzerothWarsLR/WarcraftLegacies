@@ -1,0 +1,77 @@
+{
+  "OldId": "AHhb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（萨莉）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "一道圣光，可以为友方生命单位恢复生命值，或对敌方亡灵单位造成伤害。 |n|n|cffffcc001级|r - 恢复 400 点生命值。 |n|cffffcc002级|r - 恢复 600 点生命值。 |n|cffffcc003级|r - 恢复 800 点生命值。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷圣光术 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道圣光，能为友方生命单位恢复 400 点生命值，或对敌方亡灵单位造成一半的伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道圣光，能为友方生命单位恢复 600 点生命值，或对敌方亡灵单位造成一半的伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道圣光，能为友方生命单位恢复 800 点生命值，或对敌方亡灵单位造成一半的伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道圣光，能为友方生命单位恢复 800 点生命值，或对敌方亡灵单位造成一半的伤害。"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习迅捷圣光术 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷圣光术 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷圣光术 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷圣光术 - [|cffffcc003级|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "迅捷圣光术"
+    }
+  ],
+  "NewId": "Z9X3"
+}

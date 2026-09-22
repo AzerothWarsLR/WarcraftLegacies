@@ -1,0 +1,19 @@
+{
+  "OldId": "BHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "鲜血之地"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于血之领域中，生命值正在迅速恢复。"
+    }
+  ],
+  "NewId": "B06L"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "osld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔洞穴"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造食人魔洞穴"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "食人魔生产建筑。"
+    }
+  ],
+  "NewId": "o006"
+}

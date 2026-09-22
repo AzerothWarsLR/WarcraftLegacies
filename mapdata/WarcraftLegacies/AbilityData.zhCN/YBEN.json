@@ -1,0 +1,19 @@
+{
+  "OldId": "Aens",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（纳迦侍从）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "诱捕"
+    }
+  ],
+  "NewId": "YBEN"
+}

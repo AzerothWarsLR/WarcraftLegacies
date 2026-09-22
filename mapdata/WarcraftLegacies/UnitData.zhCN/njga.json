@@ -1,0 +1,18 @@
+{
+  "OldId": "njga",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "古老丛林捕猎者"
+    }
+  ]
+}
