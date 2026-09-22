@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Map.Tests;
 /// <summary>
 /// A locale overlay overrides text, and nothing else.
 /// <para>
-/// A field outside <see cref="TextFields"/> holds a key or a statistic - a sound set, a model path, an id list, hit
+/// A field outside <see cref="_textFields"/> holds a key or a statistic - a sound set, a model path, an id list, hit
 /// points, a mana cost. Overriding one gives players of that language different numbers from everyone else, and
 /// conflicts with every later change to the data. Text that already reads the same as the base is just as unwanted:
 /// it overrides nothing and gets in the way.
@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Map.Tests;
 /// </summary>
 public sealed class LocaleOverlayTests
 {
-  private static readonly HashSet<string> TextFields = new(StringComparer.Ordinal)
+  private static readonly HashSet<string> _textFields = new(StringComparer.Ordinal)
   {
     "unam", "upro", "unsf", "utip", "utub", "utpr", "uawt", "ides", "iub1", "iico",
     "anam", "ansf", "aub1", "atp1", "arut", "aret", "aut1", "auu1",
@@ -23,7 +23,7 @@ public sealed class LocaleOverlayTests
     "bnam", "bsuf",
   };
 
-  private static readonly string[] OverlaidKinds =
+  private static readonly string[] _overlaidKinds =
   {
     "UnitData", "AbilityData", "UpgradeData", "ItemData", "BuffData", "DestructableData",
   };
@@ -37,7 +37,7 @@ public sealed class LocaleOverlayTests
     {
       foreach (var modification in Modifications(overlay.OverlayPath))
       {
-        if (!TextFields.Contains(modification.Field))
+        if (!_textFields.Contains(modification.Field))
         {
           offenders.Add($"{overlay.Name}: {modification.Field}");
         }
@@ -81,7 +81,7 @@ public sealed class LocaleOverlayTests
   {
     var mapData = Path.Combine(RepositoryRoot(), "mapdata", "WarcraftLegacies");
 
-    foreach (var kind in OverlaidKinds)
+    foreach (var kind in _overlaidKinds)
     {
       var overlayDirectory = Path.Combine(mapData, kind + ".zhCN");
       if (!Directory.Exists(overlayDirectory))

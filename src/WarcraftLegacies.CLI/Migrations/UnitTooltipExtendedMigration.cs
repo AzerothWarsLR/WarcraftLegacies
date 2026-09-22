@@ -171,6 +171,10 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
       ? unit.TextTooltipExtended
       : stated;
 
+    // The description the build text states ends its own line, so appending it whole adds a line to the break that
+    // separates it from the sections below - the tooltip reads a blank line taller than every other gap in it.
+    // Trimmed here rather than in the data: the value is authored text, and the break belongs to the composition.
+    description = description?.TrimEnd();
 
     if (!string.IsNullOrWhiteSpace(description))
     {
@@ -184,7 +188,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
       .Where(HasVisibleIcon)
       .Where(x => !x.TechtreeRequirements.Any())
       .OrderBy(GetPriority)
-      .Select((x) => x.TextName)
+      .Select((x) => TranslateName(x.TextName))
       .ToArray();
     if (innateAbilities.Length != 0)
     {
@@ -198,7 +202,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
       .Where(HasVisibleIcon).Where(HasVisibleIcon)
       .Where(x => x.TechtreeRequirements.Any())
       .OrderBy(GetPriority)
-      .Select(x => x.TextName)
+      .Select(x => TranslateName(x.TextName))
       .ToArray();
     if (learnableAbilities.Length != 0)
     {
@@ -215,7 +219,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
     var heroAbilities = unit.AbilitiesHero
       .OrderBy(GetPriority)
-      .Select((x) => x.TextName)
+      .Select((x) => TranslateName(x.TextName))
       .ToArray();
 
     if (heroAbilities.Length != 0)
@@ -233,7 +237,7 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
     var unitsSold = unit.TechtreeUnitsSold
       .OrderBy(GetPriority)
-      .Select(x => x.TextName)
+      .Select(x => TranslateName(x.TextName))
       .ToArray();
 
     if (unitsSold.Length != 0)
@@ -285,9 +289,12 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
   private static void AppendUpgradesTo(StringBuilder tooltipBuilder, Unit unit)
   {
+    // The name goes through the same table the ability and unit lists use. A unit the map does not state at all has
+    // no locale overlay, so its name is the game's own English - the corrupted night elf halls upgrade into a stock
+    // `ncta`, and the line read `Upgrades to: Corrupted Tree of Ages` in an otherwise translated tooltip.
     var upgradesTo = unit.TechtreeUpgradesTo
       .OrderBy(GetPriority)
-      .Select(x => x.TextName)
+      .Select(x => TranslateName(x.TextName))
       .ToArray();
 
     if (upgradesTo.Length != 0)
@@ -298,9 +305,11 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
 
   private static void AppendSoldItems(StringBuilder tooltipBuilder, Unit unit)
   {
+    // Translated the same way the upgrades list is: what a shop sells is named from the object database, and an item
+    // the map does not name is the game's own English.
     var soldItems = GetTechtreeItemsSoldAndMade(unit)
       .OrderBy(GetPriority)
-      .Select(x => x.TextName)
+      .Select(x => TranslateName(x.TextName))
       .ToArray();
 
     if (soldItems.Length != 0)
@@ -343,7 +352,14 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
       return;
     }
 
-    tooltipBuilder.Append(LineSeparator + LineSeparator);
+    // Two breaks separate one paragraph of the tooltip from the next, and the line before this section may already
+    // end in one: `AppendLine` writes the role line and the description line, and a unit with no skill, research,
+    // resource or limit line after them carries that break into this one. Writing `|n|n` unconditionally left every
+    // such unit a blank line taller than the rest, which is what made a description-only unit read
+    // `描述。|n|n|n|cffffcc00可攻击地面单位。|r`. A builder that already ends in a break takes a single `|n`.
+    var endsWithBreak = tooltipBuilder.Length != 0 &&
+      (tooltipBuilder[tooltipBuilder.Length - 1] == '\n' || tooltipBuilder[tooltipBuilder.Length - 1] == '\r');
+    tooltipBuilder.Append(endsWithBreak ? LineSeparator : LineSeparator + LineSeparator);
 
     if (CanTargetGround(targetsAllowed))
     {
@@ -381,6 +397,20 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
     }
     return unit.TextName;
   }
+
+  /// <summary>
+  /// The name a composed tooltip prints for a unit, ability, upgrade or item the map did not name itself.
+  /// <para>
+  /// The migration reads these names out of the object database, which holds the game's own English for anything the
+  /// map leaves stock - Faerie Fire, Spiked Shell, Improved Lumber Harvesting - and no locale overlay exists for a
+  /// record the map does not state at all. `BuildText.Translate` is the build's own table, keyed by the words a
+  /// reader sees, so an entry here is what keeps a green ability line from ending in English. It returns its input
+  /// unchanged for a name the table does not state and for a build with no locale, so the English map data composes
+  /// exactly what it always has.
+  /// </para>
+  /// </summary>
+  private static string TranslateName(string name) =>
+    string.IsNullOrEmpty(name) ? name : BuildText.Translate(name);
 
   private static bool HasVisibleIcon(Ability ability)
   {
@@ -457,13 +487,13 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
   {
     try
     {
-      return upgrade.TextName[0];
+      return TranslateName(upgrade.TextName[0]);
     }
     catch
     {
       try
       {
-        return upgrade.TextName[1];
+        return TranslateName(upgrade.TextName[1]);
       }
       catch
       {
@@ -484,7 +514,6 @@ public sealed class UnitTooltipExtendedMigration : IMapMigration
       return 0;
     }
   }
-
   private static List<Target> GetAllTargetsAllowed(Unit unit)
   {
     List<Target> targetsAllowed = new();
