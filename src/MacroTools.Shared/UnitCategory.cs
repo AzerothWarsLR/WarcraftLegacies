@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MacroTools.Shared;
+﻿namespace MacroTools.Shared;
 
 /// <summary>
 /// An arbitrary category that units can be assigned to. Primarily used to know which units need to be swapped out
@@ -123,11 +121,7 @@ public static class UnitCategoryExtensions
     return category.ToString();
   }
 
-  /// <param name="translate">
-  /// Optional translator applied to each individual category name, so that a localized build gets localized
-  /// role labels. Left <see langword="null"/> the names come back in English.
-  /// </param>
-  public static string ToFriendlyString(this List<UnitCategory> categories, Func<string, string>? translate = null)
+  public static string ToFriendlyString(this List<UnitCategory> categories)
   {
     var parts = new List<string>(categories.Count);
 
@@ -136,7 +130,7 @@ public static class UnitCategoryExtensions
       var categoryName = category.ToFriendlyString();
       if (!string.IsNullOrEmpty(categoryName))
       {
-        parts.Add(translate?.Invoke(categoryName) ?? categoryName);
+        parts.Add(categoryName);
       }
     }
 
