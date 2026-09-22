@@ -38,8 +38,9 @@ public sealed class QuestDragonsOfNightmare : QuestData
   /// <param name="wayGateOneDestination"></param>
   /// <param name="wayGateTwoDestination"></param>
   /// <param name="icon">the icon shown in the quest menu</param>
-  public QuestDragonsOfNightmare(unit nightmareDragonKalimdor, unit nightmareDragonEk, string portalOneLocation, string portalTwoLocation, unit waygateOne, unit waygateTwo, Rectangle wayGateOneDestination, Rectangle wayGateTwoDestination, string icon) : base($"{nightmareDragonKalimdor.GetProperName()} and {nightmareDragonEk.GetProperName()}",
-   "Once protectors of the Emerald Dream, the now corrupted dragons came to Azeroth to spread the corruption. Stop them before the corruption begins to spread.",
+  public QuestDragonsOfNightmare(unit nightmareDragonKalimdor, unit nightmareDragonEk, string portalOneLocation, string portalTwoLocation, unit waygateOne, unit waygateTwo, Rectangle wayGateOneDestination, Rectangle wayGateTwoDestination, string icon) : base(
+    Loc.Format("{dragon1} and {dragon2}", ("{dragon1}", nightmareDragonKalimdor.GetProperName()), ("{dragon2}", nightmareDragonEk.GetProperName())),
+    "Once protectors of the Emerald Dream, the now corrupted dragons came to Azeroth to spread the corruption. Stop them before the corruption begins to spread.",
     @$"ReplaceableTextures\CommandButtons\{icon}.blp")
   {
     _waygateOne = waygateOne;

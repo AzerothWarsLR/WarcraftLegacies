@@ -21,6 +21,32 @@ public sealed class Team
   public string Name { get; }
 
   /// <summary>
+  /// The name of this <see cref="Team" /> as a player reads it.
+  /// <para>
+  /// A team a faction founds is named after that faction plus the word "Pact", and the name doubles as the key the
+  /// team is registered under, so <see cref="Name" /> stays as it was built and only the two parts are looked up.
+  /// Looking the whole name up leaves the scoreboard reading "Stormwind Pact" in an otherwise Chinese interface,
+  /// because no sheet pairs that composed name with anything.
+  /// </para>
+  /// </summary>
+  public string LocalizedName
+  {
+    get
+    {
+      var whole = Loc.Get(Name);
+      if (whole != Name)
+      {
+        return whole;
+      }
+
+      const string suffix = " Pact";
+      return Name.EndsWith(suffix, StringComparison.Ordinal)
+        ? Loc.Get(Name[..^suffix.Length]) + " " + Loc.Get("Pact")
+        : whole;
+    }
+  }
+
+  /// <summary>
   ///   Returns the number of real <see cref="player" />s within this <see cref="Team" />.
   /// </summary>
   public int Size => _members.Count;

@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ArtifactBased;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
@@ -45,7 +46,9 @@ public sealed class QuestKingdomOfManLordaeron : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Arthas gains {CompletionExperienceBonus} experience";
+    Loc.Format(
+      "You gain a research improving all of your units, the Crowns of Lordaeron and Stormwind are merged, and Arthas gains {xp} experience",
+      ("{xp}", CompletionExperienceBonus.ToString()));
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

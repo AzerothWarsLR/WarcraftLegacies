@@ -2,6 +2,7 @@
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -14,9 +15,14 @@ public sealed class QuestExpedition : QuestData
   private readonly ObjectiveAnyUnitInRect _heroEnteringExpeditionRegion;
 
   public override string RewardFlavour =>
-    $"After months of digging, excavating, and tomb raiding, {_heroEnteringExpeditionRegion.CompletingUnitName} and the Explorer's League have finally unearthed an artifact from Ul'dum: {GetObjectName(_rewardArtifactItemTypeId)}.";
+    Loc.Format(
+      "After months of digging, excavating, and tomb raiding, {unit} and the Explorer's League have finally unearthed an artifact from Ul'dum: {artifact}.",
+      ("{unit}", _heroEnteringExpeditionRegion.CompletingUnitName),
+      ("{artifact}", GetObjectName(_rewardArtifactItemTypeId)));
 
-  protected override string RewardDescription => $"The Artifact {GetObjectName(_rewardArtifactItemTypeId)} appears at Uldum";
+  protected override string RewardDescription =>
+    Loc.Format("The Artifact {artifact} appears at Uldum",
+      ("{artifact}", GetObjectName(_rewardArtifactItemTypeId)));
 
   public QuestExpedition(int rewardArtifactItemTypeId) : base("Secrets of Uldum",
     "Uldum was once a vast jungle, until the Forge of Origination stationed there wiped the slate clean. Now, buried under the sands lies a veritable trove of ancient relics.",

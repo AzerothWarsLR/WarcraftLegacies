@@ -20,7 +20,7 @@ public sealed class QuestDesolation : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"C'thun gain {SkillPoints} skill points";
+    Loc.Format("{hero} gain {points} skill points", ("{hero}", "C'thun"), ("{points}", SkillPoints.ToString()));
 
   /// <inheritdoc />
   public QuestDesolation(LegendaryHero cthun) : base("Desolation",

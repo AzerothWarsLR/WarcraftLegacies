@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -17,7 +18,7 @@ public sealed class QuestWorldStone : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"N'zoth gains {SkillPoints} skill points";
+    Loc.Format("{hero} gains {points} skill points", ("{hero}", "N'zoth"), ("{points}", SkillPoints.ToString()));
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestWorldStone"/> class.

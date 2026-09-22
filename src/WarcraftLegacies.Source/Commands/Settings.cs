@@ -1,5 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -21,15 +22,20 @@ public sealed class Settings : Command
   public override string Execute(player commandUser, params string[] parameters)
   {
     var playerSettings = commandUser.GetPlayerSettings();
-    return @"Current settings:
-Camera distance: " + playerSettings.CamDistance + @"
+    return Loc.Format(@"Current settings:
+Camera distance: {distance}
 
-Show quest text: " + playerSettings.ShowQuestText + @"
+Show quest text: {questText}
 
-Play dialogue: " + playerSettings.PlayDialogue + @"
+Play dialogue: {dialogue}
 
-Show captions: " + playerSettings.ShowCaptions + @"
+Show captions: {captions}
 
-Smart follow: " + playerSettings.SmartFollowEnabled;
+Smart follow: {smartFollow}",
+      ("{distance}", playerSettings.CamDistance.ToString()),
+      ("{questText}", playerSettings.ShowQuestText.ToString()),
+      ("{dialogue}", playerSettings.PlayDialogue.ToString()),
+      ("{captions}", playerSettings.ShowCaptions.ToString()),
+      ("{smartFollow}", playerSettings.SmartFollowEnabled.ToString()));
   }
 }

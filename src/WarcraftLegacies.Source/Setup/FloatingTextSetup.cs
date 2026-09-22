@@ -1,4 +1,5 @@
-﻿namespace WarcraftLegacies.Source.Setup;
+﻿using MacroTools.Localization;
+namespace WarcraftLegacies.Source.Setup;
 
 /// <summary>
 /// Responsible for setting up all floating text on the map.
@@ -16,22 +17,22 @@ public static class FloatingTextSetup
     timer.Start(delay, false, () =>
     {
       var eastToWest = texttag.Create();
-      eastToWest.SetText("To the west of Kalimdor", fontSize);
+      eastToWest.SetText(Loc.Get("To the west of Kalimdor"), fontSize);
       eastToWest.SetPosition(Regions.East_of_Azeroth.Center.X, Regions.East_of_Azeroth.Center.Y, 0);
       eastToWest.SetColor(255, 255, 255, 0);
 
       var westToEast = texttag.Create();
-      westToEast.SetText("To the east of Azeroth", fontSize);
+      westToEast.SetText(Loc.Get("To the east of Azeroth"), fontSize);
       westToEast.SetPosition(Regions.West_of_Kalimdor.Center.X, Regions.West_of_Kalimdor.Center.Y, 0);
       westToEast.SetColor(255, 255, 255, 0);
 
       var legionNorth = texttag.Create();
-      legionNorth.SetText("To Northrend", fontSize);
+      legionNorth.SetText(Loc.Get("To Northrend"), fontSize);
       legionNorth.SetPosition(22939, -29345, 0);
       legionNorth.SetColor(255, 255, 255, 0);
 
       var legionAlterac = texttag.Create();
-      legionAlterac.SetText("To Alterac", fontSize);
+      legionAlterac.SetText(Loc.Get("To Alterac"), fontSize);
       legionAlterac.SetPosition(23536, -29975, 0);
       legionAlterac.SetColor(255, 255, 255, 0);
 

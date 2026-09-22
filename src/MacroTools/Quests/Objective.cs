@@ -99,14 +99,11 @@ public abstract class Objective
 
   protected void SetDescription(string english, params (string Token, string Value)[] args)
   {
-    var fallback = english;
-    foreach (var (token, value) in args)
-    {
-      fallback = fallback.Replace(token, value);
-    }
-
-    Description = fallback;
-
+    // An objective is created before the local player's settings are loaded, and `Loc.Get` reads them, so the
+    // system language resolves the text now; the refresh below then honours a language the player chose. Stating
+    // the substituted English first would leave the quest log reading "Arthas Menethil is permanently dead" until
+    // the settings arrived, which reads as text that was never translated.
+    Description = Loc.Format(english, Loc.GetSystemLanguage(), args);
     SaveManager.RunWhenLocalPlayerSettingsReady(() => Description = Loc.Format(english, args));
   }
 

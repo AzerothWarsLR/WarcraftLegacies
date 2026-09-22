@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -41,6 +42,6 @@ public sealed class Cam : Command
     }
 
     PlayerData.ByHandle(commandUser).UpdatePlayerSetting("CamDistance", parsedHeight.Value);
-    return $"Setting camera height to {parsedHeight.Value}.";
+    return Loc.Format("Setting camera height to {height}.", ("{height}", parsedHeight.Value.ToString()));
   }
 }

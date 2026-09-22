@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Localization;
 
 namespace MacroTools.GameTime;
 
@@ -29,10 +30,11 @@ public static class GameTimeDialog
     delayedDisplayTimer.Start(2, false, () =>
     {
       _timerDialog.IsDisplayed = true;
-      _timerDialog.SetTitle("Game starts in:");
+      _timerDialog.SetTitle(Loc.Get("Game starts in:"));
       delayedDisplayTimer.Dispose();
     });
 
-    GameTimeManager.RegisterOnTurnRepeating(1, () => _timerDialog.SetTitle($"Turn {GameTimeManager.Turn}"));
+    GameTimeManager.RegisterOnTurnRepeating(1, () => _timerDialog.SetTitle(
+      Loc.Format("Turn {turn}", ("{turn}", GameTimeManager.Turn.ToString()))));
   }
 }

@@ -38,17 +38,10 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
       return;
     }
 
-    var choicePicksByButton = new Dictionary<button, TChoice>();
-    foreach (var choice in Choices.Where(x => IsChoiceActive(whichPlayer, x)))
-    {
-      var factionButton = _pickDialog.AddButton(Loc.Get(choice.Name), 0);
-      choicePicksByButton[factionButton] = choice;
-    }
-
     timer timer = timer.Create();
     timer.Start(4, false, () =>
     {
-      StartChoicePick(whichPlayer, choicePicksByButton);
+      StartChoicePick(whichPlayer);
       @event.ExpiredTimer.Dispose();
     });
 
@@ -60,17 +53,44 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     });
   }
 
-  private void StartChoicePick(player whichPlayer, Dictionary<button, TChoice> choicePicksByButton)
+  private void StartChoicePick(player whichPlayer)
   {
+    // The buttons are titled through the translation table, and the table the local player picks is not known until
+    // their settings have been read: with no loaded settings Loc.GetLanguage falls back to the client locale, which
+    // is a different language from the one the player chose and, on a client whose locale the game does not report,
+    // English. A button titled before that point therefore stays English for the whole dialog. The message already
+    // waits for the settings, so the buttons are built in the same place and inherit the same guarantees.
     if (player.LocalPlayer == whichPlayer)
     {
       SaveManager.RunWhenLocalPlayerSettingsReady(() =>
       {
+        var choicePicksByButton = new Dictionary<button, TChoice>();
+        foreach (var choice in Choices.Where(x => IsChoiceActive(whichPlayer, x)))
+        {
+          var factionButton = _pickDialog.AddButton(Loc.Get(choice.Name), 0);
+          choicePicksByButton[factionButton] = choice;
+        }
+
+        RegisterPickTriggers(whichPlayer, choicePicksByButton);
         _pickDialog?.SetMessage(Loc.Get(_dialogText));
         _pickDialog?.SetVisibility(player.LocalPlayer, true);
       });
+
+      return;
     }
 
+    var choicePicksByButton = new Dictionary<button, TChoice>();
+    foreach (var choice in Choices.Where(x => IsChoiceActive(whichPlayer, x)))
+    {
+      var factionButton = _pickDialog.AddButton(Loc.Get(choice.Name), 0);
+      choicePicksByButton[factionButton] = choice;
+    }
+
+    RegisterPickTriggers(whichPlayer, choicePicksByButton);
+  }
+
+  private void RegisterPickTriggers(player whichPlayer, Dictionary<button, TChoice> choicePicksByButton)
+  {
     foreach (var (button, choice) in choicePicksByButton)
     {
       var pickTrigger = trigger.Create();

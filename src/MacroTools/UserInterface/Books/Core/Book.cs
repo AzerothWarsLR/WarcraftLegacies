@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.UserInterface.Frames;
 using WCSharp.Shared.Data;
 
@@ -55,7 +56,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
     {
       Width = 0.09f,
       Height = 0.037f,
-      Text = "Next",
+      Text = Loc.Get("Next"),
       OnClick = MoveNext,
       Visible = true
     };
@@ -67,7 +68,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
     {
       Width = 0.09f,
       Height = 0.037f,
-      Text = "Previous",
+      Text = Loc.Get("Previous"),
       OnClick = MovePrevious,
       Visible = true
     };
@@ -77,7 +78,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
 
     _title = new TextFrame("ArtifactMenuTitle", this, 0)
     {
-      Text = "Artifacts"
+      Text = Loc.Get("Artifacts")
     };
     _title.SetPoint(framepointtype.Center, this, framepointtype.Top, 0, -0.025f);
     AddFrame(_title);
