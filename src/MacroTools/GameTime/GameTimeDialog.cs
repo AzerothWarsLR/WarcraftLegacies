@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Localization;
 
 namespace MacroTools.GameTime;
 
@@ -29,10 +30,15 @@ public static class GameTimeDialog
     delayedDisplayTimer.Start(2, false, () =>
     {
       _timerDialog.IsDisplayed = true;
-      _timerDialog.SetTitle("Game starts in:");
+      _timerDialog.SetTitle(Loc.Get("Game starts in:"));
       delayedDisplayTimer.Dispose();
     });
 
-    GameTimeManager.RegisterOnTurnRepeating(1, () => _timerDialog.SetTitle($"Turn {GameTimeManager.Turn}"));
+    // The title goes through the table like any other text a player reads. Interpolating the turn into the string
+    // first would produce a title no table can key on - "Turn 3" is not an entry, "Turn {turn}" is - so it stayed
+    // English however complete the translation was. The turn is substituted afterwards, as Loc.Format does for the
+    // objective lines, because a translated template keeps the token rather than the number.
+    GameTimeManager.RegisterOnTurnRepeating(1, () =>
+      _timerDialog.SetTitle(Loc.Format("Turn {turn}", ("{turn}", GameTimeManager.Turn.ToString()))));
   }
 }
