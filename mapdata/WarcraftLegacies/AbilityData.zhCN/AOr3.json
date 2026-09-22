@@ -5,21 +5,21 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "重生"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "被消灭时，该单位会原地复活。重生有<AOr3,Cool1>秒冷却时间。"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "重生"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "重生"
-    },
-    {
-      "Id": "aub1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "被消灭时，该单位会原地复活。重生有<AOr3,Cool1>秒冷却时间。"
     }
   ]
 }

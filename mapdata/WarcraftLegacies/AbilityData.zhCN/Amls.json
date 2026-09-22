@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "空中枷锁"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（龙鹰骑士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "空中枷锁"
     }
   ]
 }

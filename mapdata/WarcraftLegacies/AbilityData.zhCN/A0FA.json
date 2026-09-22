@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "虹吸仪式"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习虹吸仪式 - [|cffffcc00%d 级|r]"
     },
     {
       "Id": "arut",
@@ -49,16 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "在<A0FA,DataA3>秒内，每秒从目标区域内最多 24 个单位身上吸取 60 点生命值和 30 点法力值。仅当施法者需要时，才会从友方单位身上吸取生命值和法力值。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习虹吸仪式 - [|cffffcc00%d 级|r]"
     }
   ],
   "NewId": "A0FA"

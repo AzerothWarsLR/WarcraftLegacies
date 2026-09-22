@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城 - 伯瓦尔）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "向大领主集结！"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习向大领主集结！ - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使周围的友方单位获得 50% 的攻击力加成。|n持续 20 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（暴风城 - 伯瓦尔）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习向大领主集结！ - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A03C"

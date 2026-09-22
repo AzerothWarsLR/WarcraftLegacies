@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌 - 血契）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "混乱苦工"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "部落的堕落劳工。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（战歌 - 血契）"
     }
   ],
   "NewId": "o00E"

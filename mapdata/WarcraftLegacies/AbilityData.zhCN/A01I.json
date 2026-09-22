@@ -15,15 +15,15 @@
       "Value": "十字军光环"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "十字军光环"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使周围敌方单位的移动速度降低 10%。"
     }
   ],

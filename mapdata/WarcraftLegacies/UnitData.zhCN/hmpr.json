@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "牧师"
+      "Value": "（奎尔萨拉斯）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "圣光庇护的信徒。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（奎尔萨拉斯）"
+      "Value": "牧师"
     }
   ]
 }

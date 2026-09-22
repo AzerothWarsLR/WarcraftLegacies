@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "回春术"
+      "Value": "（先知）"
     },
     {
       "Level": 1,
@@ -16,9 +16,9 @@
       "Value": "在 10 秒内为一个目标友方单位恢复 500 点生命值。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（先知）"
+      "Value": "回春术"
     }
   ]
 }

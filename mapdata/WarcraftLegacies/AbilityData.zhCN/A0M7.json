@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "诅咒光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（燃烧军团）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "诅咒光环"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "诅咒光环"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "诅咒半径 1500 内的敌方单位，使其护甲降低 6 点。"
     }
   ],

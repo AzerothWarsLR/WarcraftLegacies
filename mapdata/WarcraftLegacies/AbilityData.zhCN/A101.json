@@ -5,6 +5,21 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "圣光军团魔像召唤"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习地狱火 - [|cffffcc00等级 %d|r]"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "召唤一个地狱火从天而降，对一定区域内敌方地面单位造成<AUin,DataA1>点伤害，并使其昏迷<AUin,Dur1>秒。地狱火持续<AUin,DataB1>秒。|n|cffffcc001级|r - <AUin,DataA1>点伤害，持续<AUin,DataB1>秒。|n|cffffcc002级|r - <AUin,DataA2>点伤害，持续<AUin,DataB2>秒。|n|cffffcc003级|r - <AUin,DataA3>点伤害，持续<AUin,DataB3>秒。\n"
@@ -38,21 +53,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤一个地狱火从天而降，对一定区域内敌方地面单位造成<AUin,DataA3>点伤害，并使其昏迷<AUin,Dur3>秒。地狱火持续<AUin,DataB3>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（德莱尼）"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "圣光军团魔像召唤"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习地狱火 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A101"

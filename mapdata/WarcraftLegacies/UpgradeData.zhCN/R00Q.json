@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "魔法岗哨"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（天灾）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "冰寒光环"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "冰寒光环"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使死亡骑士降低附近敌方单位 20% 的移动速度。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔法岗哨"
     }
   ],
   "NewId": "R00Q"

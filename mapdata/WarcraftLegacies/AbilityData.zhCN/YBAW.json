@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "治疗波"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（先知）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤两道治疗能量波，每道最多可跳跃<YBAW,DataB1>次。第一道为主目标恢复<YBAW,DataA1>点生命值，第二道恢复<YBWW,DataA1>点生命值。每次跳跃的治疗效果降低<YBAW,DataC1,%>%。"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "分裂治疗波"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗波"
     }
   ],
   "NewId": "YBAW"

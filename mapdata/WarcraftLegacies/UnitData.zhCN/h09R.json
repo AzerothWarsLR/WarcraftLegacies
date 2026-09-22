@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "守备官"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "圣光的圣洁战士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德莱尼）"
     }
   ],
   "NewId": "h09R"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 - 精英）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "刽子手"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "碎手氏族的强大兽人勇士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能 - 精英）"
     }
   ],
   "NewId": "o01L"

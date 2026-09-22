@@ -10,15 +10,15 @@
       "Value": "（战歌 - 假人）"
     },
     {
+      "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Level": 2,
       "Value": "强化反魔法护罩"
     },
     {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Level": 2,
       "Value": "创造一道屏障，使目标单位免受 800 点法术伤害。|n持续<Aam2,Dur1>秒。"
     }
   ],

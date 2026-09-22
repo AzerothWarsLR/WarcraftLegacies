@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿兹尔）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "震地碎片"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习震地碎片 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "向目标区域内的每一个敌方单位投掷一块巨大的岩石碎片，造成<A0GL,DataA4>点伤害并使每个目标昏迷<A0GL,Dur4>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿兹尔）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习震地碎片 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0OD"

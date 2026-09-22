@@ -5,14 +5,26 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "战斗咆哮"
     },
     {
-      "Id": "ansf",
+      "Level": 1,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "（达拉然）"
+      "Value": "取消护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "提前解除达拉然护盾，并释放安东尼达斯。"
     }
   ],
   "NewId": "A0E3"

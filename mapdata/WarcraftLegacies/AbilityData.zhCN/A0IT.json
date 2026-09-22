@@ -5,14 +5,31 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暮光战斗法师）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习天神下凡 - [|cffffcc00等级 %d|r]"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "激活天神下凡后，山丘之王将获得额外护甲、额外生命值、额外伤害和法术免疫。|n|cffffcc001级|r - 20 点伤害，5 点护甲，300 点生命值，30 秒。|n|cffffcc002级|r - 40 点伤害，10 点护甲，600 点生命值，45 秒。|n|cffffcc003级|r - 60 点伤害，15 点护甲，900 点生命值，60 秒。\n"
     },
     {
-      "Id": "anam",
+      "Level": 2,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "天神下凡"
+      "Value": "激活化身 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活化身 - [|cffffcc003级|r]"
     },
     {
       "Level": 2,
@@ -33,26 +50,9 @@
       "Value": "激活天神下凡，使战斗大师获得 20 点额外护甲、500 点额外生命值、45 点额外伤害和法术免疫。|n持续 15 秒。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（暮光战斗法师）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习天神下凡 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "激活化身 - [|cffffcc002级|r]"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 3,
-      "Value": "激活化身 - [|cffffcc003级|r]"
+      "Value": "天神下凡"
     }
   ],
   "NewId": "A0IT"

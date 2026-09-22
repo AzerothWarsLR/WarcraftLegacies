@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "疾风步"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（灰色 - 剑圣，猎巫人，神射手）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "疾风步"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使该单位能够隐形，且移动速度提高<A03T,DataB1,%>%，持续 8 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "疾风步"
     }
   ],
   "NewId": "A03T"

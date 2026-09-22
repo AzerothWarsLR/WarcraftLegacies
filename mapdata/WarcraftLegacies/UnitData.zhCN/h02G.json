@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "维库战士"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "维库人的强悍战士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（天灾）"
     }
   ],
   "NewId": "h02G"

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色 - 达格兰·索瑞森）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "烈焰仪式"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习火焰仪式 - [|cffffcc00等级 %d|r]。"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄召唤<A0JF,DataB4>个火元素并肩作战。火元素具有献祭、焚身化骨和火焰之息技能。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（黄色 - 达格兰·索瑞森）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习火焰仪式 - [|cffffcc00等级 %d|r]。"
     }
   ],
   "NewId": "A0JF"

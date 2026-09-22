@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "旋风炮"
@@ -13,11 +18,6 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练旋风炮"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
     },
     {
       "Id": "utub",

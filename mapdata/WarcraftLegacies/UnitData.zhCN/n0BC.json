@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "建造太阳塔"
@@ -13,11 +18,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "灌注太阳之井魔法的塔楼。"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "控制点防卫者"
     },
     {
       "Id": "unsf",

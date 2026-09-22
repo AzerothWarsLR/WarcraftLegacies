@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utpr",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "复活诅咒教派的主人"
+      "Value": "（天灾 - 幽灵）"
     },
     {
-      "Id": "uawt",
+      "Id": "unam",
       "Type": 3,
-      "Value": "复活诅咒教派的主人"
+      "Value": "诅咒教派的主人"
     },
     {
       "Id": "utip",
@@ -25,14 +25,14 @@
       "Value": "克尔苏加德"
     },
     {
-      "Id": "unsf",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "（天灾 - 幽灵）"
+      "Value": "复活通灵师"
     },
     {
-      "Id": "unam",
+      "Id": "uawt",
       "Type": 3,
-      "Value": "诅咒教派的主人"
+      "Value": "复活通灵师"
     }
   ],
   "NewId": "U00M"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "审判官"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "血色的探求施法者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（血色）"
     }
   ],
   "NewId": "n068"

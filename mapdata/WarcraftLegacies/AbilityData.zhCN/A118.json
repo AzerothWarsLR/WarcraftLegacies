@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（监工伊德拉）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "潮汐波"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习潮汐波 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -33,19 +43,9 @@
       "Value": "潮汐波 - [|cffffcc003级|r]"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（监工伊德拉）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习潮汐波 - [|cffffcc00等级 %d|r]"
-    },
-    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "掀起一道巨大的海浪，对一条直线上的每个敌方地面单位造成<A118,DataA1>点伤害，最大伤害为<A118,DataB1>点。"
     }
   ],

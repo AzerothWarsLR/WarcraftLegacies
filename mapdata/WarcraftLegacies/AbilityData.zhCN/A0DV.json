@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（罗宁）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "烈焰地狱"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习烈焰地狱 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -55,16 +65,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤一根烈焰之柱，在 3 秒内对地面单位造成 117 点燃烧伤害。当火柱消退后，火焰中的单位会在 6 秒内继续受到 138 点伤害。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（罗宁）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习烈焰地狱 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0DV"

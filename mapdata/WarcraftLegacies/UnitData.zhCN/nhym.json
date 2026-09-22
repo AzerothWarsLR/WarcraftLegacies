@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "水术师"
+      "Value": "（达拉然）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "精通冰霜奥术的法师。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（达拉然）"
+      "Value": "水术师"
     }
   ]
 }

@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤灵魂熔炉"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（燃烧军团研究）"
@@ -23,6 +18,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造灵魂熔炉"
     }
   ],
   "NewId": "n040"

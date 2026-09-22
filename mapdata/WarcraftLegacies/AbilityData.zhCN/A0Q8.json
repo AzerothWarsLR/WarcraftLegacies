@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "永久献祭"
+      "Value": "（青色 - 祖鲁希德终极技能）"
     },
     {
       "Level": 1,
@@ -16,9 +16,9 @@
       "Value": "灼烧周围的敌方单位，每秒造成 25 点伤害。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（青色 - 祖鲁希德终极技能）"
+      "Value": "永久献祭"
     }
   ],
   "NewId": "A0Q8"

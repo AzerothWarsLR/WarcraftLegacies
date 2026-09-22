@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "火焰之息"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（达格兰的火元素）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "火焰之息"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "对敌方单位吐出一股锥形火焰，造成 75 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之息"
     }
   ],
   "NewId": "A089"

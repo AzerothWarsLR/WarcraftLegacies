@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "长管火枪"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（铁炉堡 蒸汽坦克）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "超频"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究超频"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使蒸汽坦克能够超频，攻击速度提高<A0F5,DataB1,%>%，但在<A0F5,Dur1>秒内受到的伤害提高<A0F5,DataC1,%>%。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "长管火枪"
     }
   ],
   "NewId": "R00T"

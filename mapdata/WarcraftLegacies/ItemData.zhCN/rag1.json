@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "ides",
       "Type": 3,
-      "Value": "敏捷便鞋+3"
+      "Value": "使敏捷提高 4 点。"
     },
     {
       "Id": "utip",
@@ -15,14 +15,14 @@
       "Value": "购买敏捷便鞋+4"
     },
     {
-      "Id": "ides",
-      "Type": 3,
-      "Value": "使敏捷提高 4 点。"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "装备时使英雄的敏捷提高 4 点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "敏捷便鞋+4"
     }
   ]
 }

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "荆棘藤蔓"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（收获女巫）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "荆棘藤蔓"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "荆棘藤蔓"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "从地面升起锋利而多刺的藤蔓，使敌方地面单位的移动速度降低 60%，并使友方地面单位每秒的生命恢复量提高 2 点。"
     }
   ],

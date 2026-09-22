@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练岗哨守卫"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练岗哨守卫"
     },
     {
       "Id": "unam",

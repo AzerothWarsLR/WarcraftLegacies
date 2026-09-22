@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（布里吉特）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "神圣干涉"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣干涉 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -27,6 +37,18 @@
       "Value": "请大家喝一轮 - [|cffffcc002级|r]"
     },
     {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "请大家喝一轮 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "请大家喝一轮 - [|cffffcc004级|r]"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -39,38 +61,16 @@
       "Value": "为大范围内的友方单位恢复 225 点生命值。"
     },
     {
-      "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "为大范围内的友方单位恢复 375 点生命值。"
-    },
-    {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
       "Value": "为大范围内的友方单位恢复 300 点生命值。"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（布里吉特）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习神圣干涉 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 3,
-      "Value": "请大家喝一轮 - [|cffffcc003级|r]"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
       "Level": 4,
-      "Value": "请大家喝一轮 - [|cffffcc004级|r]"
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为大范围内的友方单位恢复 375 点生命值。"
     }
   ],
   "NewId": "A0UE"

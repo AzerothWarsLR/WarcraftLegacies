@@ -5,18 +5,17 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奇美拉）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "闪电弹幕"
     },
     {
       "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "闪电弹幕"
-    },
-    {
-      "Level": 2,
       "Id": "atp1",
       "Type": 3,
       "Value": "闪电弹幕"
@@ -29,14 +28,15 @@
     },
     {
       "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电弹幕"
+    },
+    {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
       "Value": "发动一连串猛攻，攻击速度提高 250%，持续<A0JA,Dur1>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奇美拉）"
     }
   ],
   "NewId": "A0JA"

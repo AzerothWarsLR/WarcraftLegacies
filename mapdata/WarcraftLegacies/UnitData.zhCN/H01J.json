@@ -5,17 +5,27 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活灰烬使者"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "灰烬使者"
     },
     {
-      "Id": "utpr",
+      "Id": "upro",
       "Type": 3,
-      "Value": "复活灰烬使者"
+      "Value": "大领主亚历山德罗斯·莫格莱尼"
     },
     {
-      "Id": "uawt",
+      "Id": "utpr",
       "Type": 3,
       "Value": "复活灰烬使者"
     },
@@ -28,16 +38,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "神圣战士英雄，擅长在近身战斗中造成高额伤害。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "大领主亚历山德罗斯·莫格莱尼"
     }
   ],
   "NewId": "H01J"

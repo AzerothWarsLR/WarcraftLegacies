@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "法师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "造成伤害的施法者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
     }
   ]
 }

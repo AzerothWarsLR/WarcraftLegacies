@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤恶魔卫士"
+      "Value": "（燃烧军团）"
     },
     {
       "Id": "unam",
@@ -20,9 +20,9 @@
       "Value": "燃烧军团的中坚士兵。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（燃烧军团）"
+      "Value": "训练恶魔卫士"
     }
   ],
   "NewId": "n04H"

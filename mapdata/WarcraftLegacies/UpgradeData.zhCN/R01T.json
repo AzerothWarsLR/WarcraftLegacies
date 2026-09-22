@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "防御"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（库尔提拉斯 - 轰炸机）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "集束火箭"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究集束火箭"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使轰炸机能够施放集束火箭，对区域内的敌方单位造成伤害并使其昏迷。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "防御"
     }
   ],
   "NewId": "R01T"

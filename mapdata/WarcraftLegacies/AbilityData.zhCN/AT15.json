@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族 - 烈日行者勇士）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤水元素"
@@ -15,33 +20,57 @@
       "Value": "学习战争践踏 - [|cffffcc00等级 %d|r]."
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "重击地面，昏迷并伤害附近的敌方地面单位。"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤水元素 - [|cffffcc001级|r]"
     },
     {
+      "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Level": 2,
       "Value": "召唤水元素 - [|cffffcc002级|r]"
     },
     {
+      "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Level": 3,
       "Value": "召唤水元素 - [|cffffcc003级|r]"
     },
     {
+      "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Level": 4,
       "Value": "召唤水元素 - [|cffffcc004级|r]"
     },
     {
-      "Id": "ansf",
+      "Level": 1,
+      "Id": "aub1",
       "Type": 3,
-      "Value": "（牛头人部族 - Sunwalker Champion）"
+      "Value": "重击地面，对附近的敌方地面单位造成 25 点伤害，并使其昏迷。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "重击地面，对附近的敌方地面单位造成 50 点伤害，并使其昏迷。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "重击地面，对附近的敌方地面单位造成 75 点伤害，并使其昏迷。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "重击地面，对附近的敌方地面单位造成 100 点伤害，并使其昏迷。"
     }
   ],
   "NewId": "AT15"

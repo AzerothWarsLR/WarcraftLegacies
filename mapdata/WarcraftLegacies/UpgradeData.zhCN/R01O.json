@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "防御"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（库尔提拉斯 - 海巨人）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "粉碎波浪"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究粉碎之潮"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使海巨人能够施放粉碎之潮，对一条直线上的单位造成伤害。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "防御"
     }
   ],
   "NewId": "R01O"

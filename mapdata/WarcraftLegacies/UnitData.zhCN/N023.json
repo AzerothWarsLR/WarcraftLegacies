@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤巫妖王"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活巫妖王"
-    },
-    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活巫妖王"
@@ -33,6 +23,16 @@
       "Id": "upro",
       "Type": 3,
       "Value": "巫妖王"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活巫妖王"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤The 诅咒教派的主人王"
     }
   ],
   "NewId": "N023"

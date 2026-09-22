@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "萨满祭司"
+      "Value": "（兽人部落）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "主力施法单位，擅长支援前线部队。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "萨满祭司"
     }
   ]
 }

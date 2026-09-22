@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 玛瑟里顿）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "爆炸"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习爆炸 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "以一场巨大的爆炸轰击敌人，造成 460 点伤害和 160 点溅射伤害。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（青色 - 玛瑟里顿）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习爆炸 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A04N"

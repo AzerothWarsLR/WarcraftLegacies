@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "食人魔军团的施法战士。可施放嗜血。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "石拳法师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "食人魔军团的施法战士。可施放嗜血。"
     }
   ],
   "NewId": "n080"

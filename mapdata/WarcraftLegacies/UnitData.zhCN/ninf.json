@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "地狱火"
+      "Value": "（燃烧军团）"
     },
     {
       "Id": "utip",
@@ -20,9 +20,9 @@
       "Value": "笼罩邪能烈焰的锻造恶魔。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（燃烧军团）"
+      "Value": "地狱火"
     }
   ]
 }

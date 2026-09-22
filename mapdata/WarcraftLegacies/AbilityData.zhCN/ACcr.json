@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "残废术"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（青色 - 卡扎克）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "残废"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使一个目标敌方单位的移动速度降低 75%，攻击速度降低 50%，伤害降低 50%。|n持续 45 秒。对英雄持续 7 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "残废术"
     }
   ]
 }

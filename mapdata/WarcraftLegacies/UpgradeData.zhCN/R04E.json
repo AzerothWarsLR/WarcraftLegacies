@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "月井之春"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（德鲁伊）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "伊瑟拉的恩赐"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究伊瑟拉的恩赐"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使世界之树能够使用焕然新生"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "月井之春"
     }
   ],
   "NewId": "R04E"

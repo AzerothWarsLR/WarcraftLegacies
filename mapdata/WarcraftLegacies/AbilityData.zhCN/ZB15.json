@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "闪避"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（乌索克）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使该单位的攻击迸发冲击波，对正前方一条直线上的敌方地面单位造成其攻击伤害 50% 的伤害。"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "巨型攻击"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪避"
     }
   ],
   "NewId": "ZB15"

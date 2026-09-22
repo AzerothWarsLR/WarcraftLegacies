@@ -6,21 +6,9 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnam",
+      "Id": "gnsf",
       "Type": 3,
-      "Value": "强弓"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "强弓"
-    },
-    {
-      "Level": 3,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "强弓"
+      "Value": "（浅蓝色研究）"
     },
     {
       "Level": 1,
@@ -47,10 +35,22 @@
       "Value": "使弓箭手、公会游侠、月之女祭司、月骑兵和角鹰兽骑士的攻击距离再提高 100。"
     },
     {
-      "Id": "gnsf",
-      "Type": 3,
       "Level": 1,
-      "Value": "（浅蓝色研究）"
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强弓"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强弓"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强弓"
     }
   ]
 }

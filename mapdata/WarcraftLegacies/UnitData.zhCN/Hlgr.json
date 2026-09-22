@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "大元帅"
-    },
-    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活大元帅"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大元帅"
     },
     {
       "Id": "utip",
@@ -20,19 +25,14 @@
       "Value": "召唤奥斯玛·加里索斯"
     },
     {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "加尔鲁什·地狱咆哮"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长支援军队。"
     },
     {
-      "Id": "unsf",
+      "Id": "upro",
       "Type": 3,
-      "Value": "（血色）"
+      "Value": "加尔鲁什·地狱咆哮"
     }
   ]
 }

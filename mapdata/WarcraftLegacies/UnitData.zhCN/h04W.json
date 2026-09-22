@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造蒸汽坦克"
+      "Value": "（库尔提拉斯）"
     },
     {
       "Id": "unam",
@@ -20,9 +20,9 @@
       "Value": "装甲厚重的载具，擅长击落空中单位。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（库尔提拉斯）"
+      "Value": "训练蒸汽坦克"
     }
   ],
   "NewId": "h04W"

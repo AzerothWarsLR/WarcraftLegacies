@@ -5,21 +5,21 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "永恒守望者"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
       "Value": "任务完成：永恒守望者"
     },
     {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（暴风城）"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "永恒守望者"
     }
   ],
   "NewId": "R016"

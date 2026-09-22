@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "机动性极强的飞行生物。极擅长侦察。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "鹰骑士"
@@ -13,16 +23,6 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练鹰骑士"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "机动性极强的飞行生物。极擅长侦察。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（血色）"
     }
   ],
   "NewId": "o06V"

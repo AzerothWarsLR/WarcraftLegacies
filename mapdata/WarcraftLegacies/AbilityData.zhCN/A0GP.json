@@ -5,14 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "向目标区域内的每个敌方单位发射一枚炮弹，造成伤害并使每个目标昏迷<A0GL,Dur1>秒。 |n|n|cffffcc001级|r - 造成<A0GL,DataA1>点伤害。|n|cffffcc002级|r - 造成<A0GL,DataA2>点伤害。|n|cffffcc003级|r - 造成<A0GL,DataA3>点伤害。|n|cffffcc004级|r - 造成<A0GL,DataA4>点伤害。\n"
+      "Value": "（库尔提拉斯 - 艾什凡女士）"
     },
     {
       "Id": "anam",
       "Type": 3,
       "Value": "引导"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习散射弹 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "向目标区域内的每个敌方单位发射一枚炮弹，造成伤害并使每个目标昏迷<A0GL,Dur1>秒。 |n|n|cffffcc001级|r - 造成<A0GL,DataA1>点伤害。|n|cffffcc002级|r - 造成<A0GL,DataA2>点伤害。|n|cffffcc003级|r - 造成<A0GL,DataA3>点伤害。|n|cffffcc004级|r - 造成<A0GL,DataA4>点伤害。\n"
     },
     {
       "Level": 1,
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "向目标区域内的每个敌方单位发射一枚炮弹，造成<A0GL,DataA4>点伤害，并使每个目标昏迷<A0GL,Dur4>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（库尔提拉斯 - 艾什凡女士）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习散射弹 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0GP"

@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "顺劈斩"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（天选者、霸主）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该单位的攻击威力巨大，其<ACce,DataA1,%>%的伤害会溅射到主要攻击目标附近的敌人身上。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "顺劈斩"
     }
   ]
 }

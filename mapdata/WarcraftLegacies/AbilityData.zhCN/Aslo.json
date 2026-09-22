@@ -5,6 +5,17 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 女巫，战歌 - 缚魔法师）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化减速术"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -20,17 +31,6 @@
       "Id": "anam",
       "Type": 3,
       "Value": "减速术"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯 - 女巫，战歌 - 缚魔法师）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "强化减速术"
     }
   ]
 }

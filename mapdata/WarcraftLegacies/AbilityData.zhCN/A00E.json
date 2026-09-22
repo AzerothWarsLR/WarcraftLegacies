@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "艾露恩的凝视"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（哨兵）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "艾露恩的凝视"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使 350 效果范围内的所有友方单位隐形。若隐形单位发起攻击、使用技能或施放法术，它就会显形。|n持续 60 秒。"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "艾露恩的凝视"
     }
   ],

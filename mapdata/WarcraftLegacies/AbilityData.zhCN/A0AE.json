@@ -10,21 +10,16 @@
       "Value": "暗影迷宫"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "暗影迷宫"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使半径<A0AE,Area1>范围内的敌方单位护甲降低 4 点。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（）"
     }
   ],
   "NewId": "A0AE"

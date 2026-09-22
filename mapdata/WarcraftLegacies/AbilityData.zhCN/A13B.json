@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "物品 - 治疗"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（个人坦克）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 治疗"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "紧急维修"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "地精坦克指挥官对他的机器进行紧急修理。恢复 250 点生命值。冷却时间 0 秒。"
     }
   ],

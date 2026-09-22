@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大祭司"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "艾露恩的大祭司"
@@ -15,29 +25,19 @@
       "Value": "复活大祭司"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤泰兰德"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活大祭司"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "泰兰德·语风"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长强化你的后排并持续造成魔法伤害。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（哨兵）"
+      "Value": "召唤泰兰德"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "泰兰德·语风"
     }
   ]
 }

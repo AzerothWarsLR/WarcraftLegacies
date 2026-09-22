@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "血卫士"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "凯尔最强大的副官。对魔法使用者极为有效。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（日怒）"
     }
   ],
   "NewId": "n0E7"

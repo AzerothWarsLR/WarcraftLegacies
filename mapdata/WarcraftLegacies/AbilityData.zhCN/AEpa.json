@@ -5,6 +5,17 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城神射手）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "淬毒之箭"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -13,17 +24,6 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "淬毒之箭"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（暴风城神射手）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 1,
       "Value": "淬毒之箭"
     }
   ]

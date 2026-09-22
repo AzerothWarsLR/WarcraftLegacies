@@ -8,6 +8,16 @@
       "Id": "ftip",
       "Type": 3,
       "Value": "|cffff0000达拉然护盾|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位正受到达拉然护盾的伤害。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "达拉然护盾"
     }
   ],
   "NewId": "B0DS"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "狡诈者"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "玛尔加尼斯"
     },
     {
       "Id": "utub",
@@ -20,14 +20,14 @@
       "Value": "神秘型英雄，擅长渗透和扰乱敌人。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（燃烧军团）"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤玛尔加尼斯"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "玛尔加尼斯"
     }
   ]
 }

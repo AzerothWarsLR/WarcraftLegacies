@@ -10,9 +10,10 @@
       "Value": "用火箭轰炸一片区域，使敌方单位昏迷 1 秒，并对周围的敌方单位造成伤害。|n|n|cffffcc001级|r - 45 点伤害。|n|cffffcc002级|r - 75 点伤害。|n|cffffcc003级|r - 110 点伤害。|n|cffffcc004级|r - 150 点伤害。\n"
     },
     {
-      "Id": "anam",
+      "Level": 4,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "集束火箭"
+      "Value": "集束火箭 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -39,10 +40,9 @@
       "Value": "用火箭轰炸一片区域，对周围的敌方单位最多造成 150 点伤害，并使其昏迷 1 秒。"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 4,
-      "Value": "集束火箭 - [|cffffcc004级|r]"
+      "Value": "集束火箭"
     }
   ]
 }

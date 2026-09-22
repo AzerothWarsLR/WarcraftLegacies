@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "暴露"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（人类箭塔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暴露"
     }
   ]
 }

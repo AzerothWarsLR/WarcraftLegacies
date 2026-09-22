@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "法力燃烧"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（托尔卡拉）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力燃烧"
     }
   ],
   "NewId": "A09O"

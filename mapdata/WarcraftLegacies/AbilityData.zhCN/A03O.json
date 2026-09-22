@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "致命一击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（破坏者，刺客，朱倍尔，炽天使）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致命一击"
     }
   ],
   "NewId": "A03O"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（拉格纳罗斯）"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "训练暗炉泰坦"
@@ -13,11 +18,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "黑铁王国无可阻挡的魔像巨像。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（拉格纳罗斯）"
     },
     {
       "Id": "unam",

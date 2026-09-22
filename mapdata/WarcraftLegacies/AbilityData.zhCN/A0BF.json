@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "物品 - 强效王冠治疗"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（含生命与法力治疗） （王冠已合并）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 强效王冠治疗"
     }
   ],
   "NewId": "A0BF"

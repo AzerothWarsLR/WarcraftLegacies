@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯，工人）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "建筑师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "奎尔萨拉斯建筑的聪慧建造者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯，工人）"
     }
   ]
 }

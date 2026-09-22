@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "翠绿魔珠"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习翠绿魔珠 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "为施法者的攻击增加<A0WH,DataA4>点额外伤害。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习翠绿魔珠 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0WH"

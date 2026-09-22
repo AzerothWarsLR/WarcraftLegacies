@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（泰兰德 - 纳萨诺斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "箭雨"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习箭雨"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "用箭雨轰炸一片区域，对周围的敌方地面单位最多造成 500 点伤害，并使其昏迷 2 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（泰兰德 - 纳萨诺斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习箭雨"
     }
   ],
   "NewId": "A0DP"

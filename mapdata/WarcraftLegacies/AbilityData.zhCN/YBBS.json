@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "闪烁突袭"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（死亡誓约者）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "闪烁突袭"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪烁突袭"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "施法者传送到目标单位身后，并造成 25 点伤害。"
     }
   ],

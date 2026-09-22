@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "来自深渊的扭曲触须。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "恩佐斯触须"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自深渊的扭曲触须。"
     },
     {
       "Id": "unsf",

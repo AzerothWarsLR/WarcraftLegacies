@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "圣光主教"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "圣光的忠实而坚定的信徒。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（血色）"
     }
   ],
   "NewId": "n09N"

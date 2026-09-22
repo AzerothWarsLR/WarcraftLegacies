@@ -5,15 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
       "Id": "gnam",
       "Type": 3,
       "Value": "食尸鬼狂暴"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（天灾）"
     }
   ]
 }

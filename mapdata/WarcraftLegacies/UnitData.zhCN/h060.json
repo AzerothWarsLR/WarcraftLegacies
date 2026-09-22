@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "航母旗舰"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造航母旗舰"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "融合矮人工程学与暴风城造船术之天才所打造的强大旗舰。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（暴风城）"
+      "Value": "训练航母旗舰"
     }
   ],
   "NewId": "h060"

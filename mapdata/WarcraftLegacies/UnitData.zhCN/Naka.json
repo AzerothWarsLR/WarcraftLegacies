@@ -5,6 +5,21 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长渗透和刺杀关键目标。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿卡玛"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "大贤者"
@@ -13,21 +28,6 @@
       "Id": "upro",
       "Type": 3,
       "Value": "阿卡玛"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "灵巧型英雄，擅长渗透和刺杀关键目标。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（伊利达雷）"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤阿卡玛"
     }
   ]
 }

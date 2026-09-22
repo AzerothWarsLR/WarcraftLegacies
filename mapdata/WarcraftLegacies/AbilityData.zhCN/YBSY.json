@@ -5,12 +5,6 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "召唤绿色巨龙为你作战。她具有真视。|n持续<ACs7,Dur4>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（塞纳留斯）"
@@ -21,10 +15,16 @@
       "Value": "召唤伊森德雷"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤伊森德雷"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤绿色巨龙为你作战。她具有真视。|n持续<ACs7,Dur4>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
     }
   ],
   "NewId": "YBSY"

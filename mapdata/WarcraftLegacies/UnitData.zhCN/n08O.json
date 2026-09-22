@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "食人魔法师"
+      "Value": "（牛头人部族）"
     },
     {
       "Id": "utip",
@@ -20,9 +20,9 @@
       "Value": "食人魔的强大支援型施法者。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（牛头人部族）"
+      "Value": "食人魔法师"
     }
   ],
   "NewId": "n08O"

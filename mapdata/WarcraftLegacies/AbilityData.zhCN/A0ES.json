@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "掠夺"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（邪部落/霜狼/战歌 - 碎骨者、兽人步兵、狼骑兵）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "掠夺"
     }
   ],
   "NewId": "A0ES"

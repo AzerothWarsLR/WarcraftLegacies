@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "自毁"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（工人）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "自毁"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "立即杀死该单位。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "自毁"
     }
   ],
   "NewId": "A041"

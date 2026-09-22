@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "箭术"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
       "Value": "法力虹吸"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使斯库拉能够使用汲取魔法，从敌人身上吸取法力并转移给友军。"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究汲取魔法"
     },
     {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "箭术"
     }
   ],
   "NewId": "R017"

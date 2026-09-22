@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "巫医"
+      "Value": "（兽人部落）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "暗矛部族的巫毒大师。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "巫医"
     }
   ]
 }

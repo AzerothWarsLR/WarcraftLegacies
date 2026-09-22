@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城 - 瓦里安）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "洛戈什之怒"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习洛戈什之怒 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "戈德林之魂前来伴随瓦里安，使他的攻击速度提高<A0W4,DataB4,%>%，移动速度提高<A0W4,DataA4,%>%，持续<A0W4,Dur4>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（暴风城 - 瓦里安）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习洛戈什之怒 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0W4"

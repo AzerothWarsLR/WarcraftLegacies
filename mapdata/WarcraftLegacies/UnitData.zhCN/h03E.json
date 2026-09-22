@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造狼人庄园"
+      "Value": "（吉尔尼斯专精）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "高级部队生产建筑。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（吉尔尼斯专精）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "狼人庄园"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造狼人庄园"
     }
   ],
   "NewId": "h03E"

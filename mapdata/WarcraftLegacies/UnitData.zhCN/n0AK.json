@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "见习法师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "轻型远程单位。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然）"
     }
   ],
   "NewId": "n0AK"

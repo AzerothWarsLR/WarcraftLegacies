@@ -5,10 +5,9 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "aub1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "召唤 2 个水元素攻击施法者的敌人。这些水元素具有 900 点生命值，持续 90 秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "（潮汐领主）"
     },
     {
       "Id": "anam",
@@ -16,15 +15,16 @@
       "Value": "召唤水元素"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（潮汐领主）"
-    },
-    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤水元素"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 2 个水元素攻击施法者的敌人。这些水元素具有 900 点生命值，持续 90 秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
     }
   ],
   "NewId": "AELE"

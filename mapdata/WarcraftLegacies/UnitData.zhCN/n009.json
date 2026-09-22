@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练亡魂"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "灌注了不灭灵魂的重型近战单位。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（天灾）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "亡魂"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练亡魂"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灌注了不灭灵魂的重型近战单位。"
     }
   ],
   "NewId": "n009"

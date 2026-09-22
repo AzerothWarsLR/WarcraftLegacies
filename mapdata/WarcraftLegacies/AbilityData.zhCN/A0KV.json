@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "疾风步"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（绿色 - 希尔瓦娜斯。青色 - 雷德。淡蓝色 - 珊蒂斯。灰色 - 格罗姆。红色 - 希尔瓦娜斯）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "疾风步"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使英雄隐形，并使移动速度提高 15%，持续 12 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "疾风步"
     }
   ],
   "NewId": "A0KV"

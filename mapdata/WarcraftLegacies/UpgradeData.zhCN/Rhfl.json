@@ -5,15 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
       "Id": "gnam",
       "Type": 3,
       "Value": "照明弹"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（铁炉堡）"
     }
   ]
 }

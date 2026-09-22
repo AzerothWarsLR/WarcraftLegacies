@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "为事业而团结"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -33,9 +28,14 @@
       "Value": "（十字军 1）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "为事业而团结"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "为事业而团结"
     }
   ],

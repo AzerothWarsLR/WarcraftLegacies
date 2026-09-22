@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "粉碎"
+      "Value": "（牛头人）"
     },
     {
       "Level": 1,
@@ -22,9 +22,9 @@
       "Value": "粉碎 - [|cffffcc00级别 2|r]"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（牛头人）"
+      "Value": "粉碎"
     }
   ]
 }

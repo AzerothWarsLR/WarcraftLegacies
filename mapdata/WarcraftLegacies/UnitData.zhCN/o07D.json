@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "会使敌人中毒的轻型近战单位。也可影遁。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "鱼人夜行者"
     }
   ],
   "NewId": "o07D"

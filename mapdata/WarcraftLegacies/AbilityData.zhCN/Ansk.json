@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "硬化体肤"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（卡兹莫丹 - 未使用？）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化体肤"
     }
   ]
 }

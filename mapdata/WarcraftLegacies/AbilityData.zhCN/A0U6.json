@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "静滞陷阱"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（巨魔 赞达拉）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "静滞陷阱"
     }
   ],
   "NewId": "A0U6"

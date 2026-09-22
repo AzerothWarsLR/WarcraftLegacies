@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "星术师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "进攻型施法者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（日怒）"
     }
   ],
   "NewId": "h0CH"

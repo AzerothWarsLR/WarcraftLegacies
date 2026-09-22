@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "腐臭蝠群"
+      "Value": "（恐惧魔王、女王纳扎雷兹）"
     },
     {
       "Level": 1,
@@ -20,12 +20,6 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "腐臭蝠群 - [|cffffcc002 级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "腐臭蝠群 - [|cffffcc003 级|r]"
     },
     {
       "Level": 1,
@@ -41,14 +35,20 @@
     },
     {
       "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "腐臭蝠群 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 3,
       "Id": "aub1",
       "Type": 3,
       "Value": "放出一大群蝙蝠，对一条直线上的每个敌方单位造成<ACca,DataA3>点伤害，最多造成<ACca,DataB3>点伤害。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（恐惧魔王、女王纳扎雷兹）"
+      "Value": "腐臭蝠群"
     }
   ]
 }

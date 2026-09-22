@@ -6,32 +6,32 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（阿拉索 - T1）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "老兵卫队"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究老兵卫队"
+    },
+    {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "训练时着重强调防御能力，获得以下提升：|n|n- 元帅生命值提高 200。|n- 使元帅获得|cffcece00戒备 |r技能，可使附近友方单位在 2 秒内获得 100 点额外护甲。|n- 使元帅获得|cffcece00防御阵型 |r技能，可使附近敌方单位的攻击伤害降低 10%。|n- |cffcece00钢板 |r额外格挡 6 点伤害。|n|cffcece00- 战斗经验 |r额外获得 5% 的闪避。\n"
+      "Value": "训练时着重强调防御能力，获得以下提升：|n|n- 维库战士生命值提高 200。|n- 使维库战士获得|cffcece00戒备 |r技能，可使附近友方单位在 2 秒内获得 100 点额外护甲。|n- 使维库战士获得|cffcece00防御阵型 |r技能，可使附近敌方单位的攻击伤害降低 10%。|n- |cffcece00钢板 |r额外格挡 6 点伤害。|n|cffcece00- 战斗经验 |r额外获得 5% 的闪避。\n"
     },
     {
       "Id": "gnam",
       "Type": 3,
       "Value": "防御"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（阿拉索 - T1）"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Level": 1,
-      "Value": "老兵卫队"
-    },
-    {
-      "Id": "gtp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "研究老兵卫队"
     }
   ],
   "NewId": "R03D"

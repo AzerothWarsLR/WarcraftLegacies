@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "风暴涌动"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（天空之墙）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "风暴涌动"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "元素领主向目标位置释放一股能量爆发，对敌方地面单位造成 50 点伤害，并对其施加 3 秒的净化效果。对召唤单位造成 500 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴涌动"
     }
   ],
   "NewId": "A104"

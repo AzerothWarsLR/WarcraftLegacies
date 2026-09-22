@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "召唤燃烧军团"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（所有阵营）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤燃烧军团"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "将燃烧军团召唤至艾泽拉斯。"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤"
     }
   ],

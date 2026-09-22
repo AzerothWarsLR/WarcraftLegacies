@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活雷德"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "黑石氏族的大酋长"
@@ -15,29 +25,19 @@
       "Value": "复活雷德"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤雷德"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活雷德"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "达尔雷德·黑手"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "灵巧型英雄，专精于造成伤害和扰乱敌人。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（邪能）"
+      "Value": "召唤雷德"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "达尔雷德·黑手"
     }
   ]
 }

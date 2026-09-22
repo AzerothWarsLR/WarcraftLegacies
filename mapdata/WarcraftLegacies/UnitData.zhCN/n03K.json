@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "牧师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "圣光纯洁性的虔诚信徒。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
     }
   ],
   "NewId": "n03K"

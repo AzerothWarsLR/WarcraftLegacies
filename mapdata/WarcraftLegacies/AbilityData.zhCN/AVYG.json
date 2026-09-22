@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "英雄激励他的部下，在短时间内大幅提高他们的移动速度。 |n|n|cffffcc001级|r - 移动速度提高 40%。 |n|cffffcc002级|r - 移动速度提高 60%。 |n|cffffcc003级|r - 移动速度提高 80%。 |n|cffffcc004级|r - 移动速度提高 100%。|n|n持续 10 秒。\n"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（瓦兰奈尔）"
@@ -25,51 +20,56 @@
       "Value": "学习集结 - [|cffffcc00等级 %d|r]"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄激励他的部下，在短时间内大幅提高他们的移动速度。 |n|n|cffffcc001级|r - 移动速度提高 40%。 |n|cffffcc002级|r - 移动速度提高 60%。 |n|cffffcc003级|r - 移动速度提高 80%。 |n|cffffcc004级|r - 移动速度提高 100%。|n|n持续 10 秒。\n"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "群体加速"
     },
     {
+      "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Level": 2,
       "Value": "集结 - [|cffffcc002级|r]"
     },
     {
+      "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Level": 3,
       "Value": "集结 - [|cffffcc003级|r]"
     },
     {
+      "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Level": 4,
       "Value": "集结 - [|cffffcc004级|r]"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "英雄强化周围的友方单位，使其移动速度提高 60%，持续 10 秒。"
     },
     {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Level": 2,
-      "Value": "英雄激励他的部下，使他们的移动速度提高 60%，持续 10 秒。"
+      "Value": "英雄强化周围的友方单位，使其移动速度提高 60%，持续 10 秒。"
     },
     {
+      "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Level": 3,
       "Value": "英雄激励他的部下，使他们的移动速度提高 80%，持续 10 秒。"
     },
     {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Level": 4,
       "Value": "英雄激励他的部下，使他们的移动速度提高 100%，持续 10 秒。"
     }
   ],

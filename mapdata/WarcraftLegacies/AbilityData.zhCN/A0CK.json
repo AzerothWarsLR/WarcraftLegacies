@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "祖达克光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（巨魔敌对）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "祖达克光环"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "祖达克光环"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使 5000 半径内的单位和建筑的法力恢复速度提高 0.8。"
     }
   ],

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "火箭弹幕"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（防守方上古守护者岩石）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该防御塔会额外发射最多 9 枚投射物，每枚对附近的敌人造成 10 点伤害"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火箭弹幕"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "多重射击"
     }
   ],

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "狼人之咬"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（死亡面具 狼人）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "狼人之咬"
     }
   ],
   "NewId": "A131"

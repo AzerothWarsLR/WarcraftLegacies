@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造农庄"
+      "Value": "（库尔提拉斯农场）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "提供 8 点人口，可提高可训练单位的数量上限。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯农场）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "农庄"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造农庄"
     }
   ],
   "NewId": "h07N"

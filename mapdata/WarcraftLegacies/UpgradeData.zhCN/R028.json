@@ -6,6 +6,12 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "魅魔专家级训练"
@@ -39,12 +45,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高魅魔的法力值上限和法力恢复速度，并使其能够施放心灵鞭笞。"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（燃烧军团）"
     }
   ],
   "NewId": "R028"

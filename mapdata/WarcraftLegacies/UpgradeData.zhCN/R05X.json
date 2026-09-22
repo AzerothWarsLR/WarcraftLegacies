@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "利爪之印"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（德鲁伊）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "乌索尔的祝福"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究乌索尔的祝福"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "强化利爪德鲁伊与熊，使其护甲提高 1 点，生命值提高 150 点，伤害提高 10 点。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "利爪之印"
     }
   ],
   "NewId": "R05X"

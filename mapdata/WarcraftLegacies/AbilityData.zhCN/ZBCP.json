@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "关闭传送门"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（燃烧军团传送器）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "关闭所有已激活的传送门，从而能够形成新的传送门。但奥特兰克传送门封闭所需的时间要长得多。"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
+      "Value": "关闭传送门"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
       "Value": "关闭传送门"
     }
   ],

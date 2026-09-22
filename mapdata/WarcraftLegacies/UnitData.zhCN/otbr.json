@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "蝙蝠骑士"
+      "Value": "（兽人部落）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "天空中的迅捷飞行轰炸单位。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "蝙蝠骑士"
     }
   ]
 }

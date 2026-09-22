@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "火焰箭"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（费洛梅恩）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰箭"
     }
   ],
   "NewId": "A02X"

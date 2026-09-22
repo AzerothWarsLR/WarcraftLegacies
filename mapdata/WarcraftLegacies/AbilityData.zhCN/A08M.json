@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城 - 瓦里安）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "暴风号角"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习暴风号角 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -49,16 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄吹响暴风号角，使附近的友方单位获得额外 45 点攻击力和 12 点防御力。|n持续 25 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（暴风城 - 瓦里安）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习暴风号角 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A08M"

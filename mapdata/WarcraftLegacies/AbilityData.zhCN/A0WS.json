@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "闪电攻击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（元素领主）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电攻击"
     }
   ],
   "NewId": "A0WS"

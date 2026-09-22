@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿尔萨斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤王室禁卫"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤王室禁卫 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤 5 名皇家卫兵。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿尔萨斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习召唤王室禁卫 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A056"

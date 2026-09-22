@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克尔苏加德，瓦丝琪女士）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "智慧议会"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习智慧议会 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄念动神秘咒语，提高周围盟友的魔法力量。为周围的所有盟友恢复 200 点魔法值。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（克尔苏加德，瓦丝琪女士）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习智慧议会 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A033"

@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 艾什凡女士）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习弹雨倾泻 - [|cffffcc00等级 %d|r]"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "召唤一波波炮弹从天而降，对区域内的单位造成伤害。 |n|n|cffffcc001级|r - 每波<A0GW,DataB1>点伤害，共<A0GW,DataA1>波。 |n|cffffcc002级|r - 每波<A0GW,DataB2>点伤害，共<A0GW,DataA2>波。|n|cffffcc003级|r - 每波<A0GW,DataB3>点伤害，共<A0GW,DataA3>波。 |n|cffffcc004级|r - 每波<A0GW,DataB4>点伤害，共<A0GW,DataA4>波。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "弹雨倾泻"
     },
     {
       "Level": 1,
@@ -45,6 +50,11 @@
       "Value": "召唤一波波炮弹从天而降，对区域内的单位造成伤害。每波造成<A0GW,DataB4>点伤害。 |n持续<A0GW,DataA4>波。"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "弹雨倾泻"
+    },
+    {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤一波波炮弹从天而降，对区域内的单位造成伤害。每波造成<A0GW,DataB1>点伤害。 |n持续<A0GW,DataA1>波。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（库尔提拉斯 - 艾什凡女士）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习弹雨倾泻 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0GW"

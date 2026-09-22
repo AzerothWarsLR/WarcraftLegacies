@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "暴风城冠军"
+      "Value": "（暴风城 - 精英）"
     },
     {
-      "Id": "utip",
+      "Id": "unam",
       "Type": 3,
-      "Value": "训练暴风城冠军"
+      "Value": "暴风城勇士"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "暴风城军队的精英近战勇士。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（暴风城 - 精英）"
+      "Value": "训练暴风城勇士"
     }
   ],
   "NewId": "h05F"

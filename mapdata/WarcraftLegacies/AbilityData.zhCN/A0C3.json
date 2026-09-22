@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "法力护盾"
+      "Value": "（达拉然 - 战斗法师 - 肯瑞托）"
     },
     {
       "Level": 1,
@@ -22,9 +22,9 @@
       "Value": "激活一道护盾，每点法力值可吸收<A0C3,DataA2>点伤害。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（达拉然 - 战斗法师 - 肯瑞托）"
+      "Value": "法力护盾"
     }
   ],
   "NewId": "A0C3"

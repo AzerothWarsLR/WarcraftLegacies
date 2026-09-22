@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "玛尔加尼斯宝珠"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（附加特效）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "玛尔加尼斯宝珠"
     }
   ],
   "NewId": "A0FL"

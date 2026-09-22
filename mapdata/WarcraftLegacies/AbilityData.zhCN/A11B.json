@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（托尔托拉、纳兹亚女士、纳迦）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "潮汐风暴"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习潮汐风暴 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -49,16 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "每秒召唤<A11B,DataA3>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC3>点伤害。|n持续<A11B,Dur3>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（托尔托拉、纳兹亚女士、纳迦）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习潮汐风暴 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A11B"

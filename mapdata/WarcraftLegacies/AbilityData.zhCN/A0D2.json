@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "驱散魔法"
+      "Value": "（达拉然 - 奥术师）"
     },
     {
       "Level": 1,
@@ -34,9 +34,9 @@
       "Value": "移除目标区域内单位身上的所有增益。|n|cffffcc00对召唤单位造成<A0D2,DataB2>点伤害。|r"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（达拉然 - 奥术师）"
+      "Value": "驱散魔法"
     }
   ],
   "NewId": "A0D2"

@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "箭术"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
       "Value": "无尽能量"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使奥术之井的法力恢复速度提高 100%。"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究无尽能量"
     },
     {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（德莱尼）"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "箭术"
     }
   ],
   "NewId": "RD09"

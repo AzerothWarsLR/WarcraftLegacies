@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "剑刃风暴"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（蓝色 - 朱倍索斯）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "在剑圣周围掀起一场毁灭性的剑刃风暴，使其免疫魔法，并对附近敌方地面单位每秒造成 75 点伤害。|n持续 3 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "剑刃风暴"
     }
   ],
   "NewId": "A040"

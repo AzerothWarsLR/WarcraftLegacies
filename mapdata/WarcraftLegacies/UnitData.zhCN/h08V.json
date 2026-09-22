@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "哨兵的装甲卫兵。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "刃轮女战士"
@@ -13,16 +23,6 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练刃轮女战士"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "哨兵的装甲卫兵。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（哨兵）"
     }
   ],
   "NewId": "h08V"

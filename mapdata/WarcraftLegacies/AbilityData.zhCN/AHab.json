@@ -5,14 +5,20 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（祖鲁赫德 - 吉安娜 - 玛法里奥 - 沃金 - 杰尔戈什）"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "使附近友方单位获得额外的魔法值恢复速度。|n|n|cffffcc00等级 1|r - 每秒提供 0.8 点。|n|cffffcc00等级 2|r - 每秒提供 1.10 点魔法值。 |n|cffffcc00等级 3|r - 每秒提供 1.40 点魔法值。 |n|cffffcc00等级 4|r - 每秒提供 1.70 点魔法值。\n"
     },
     {
-      "Id": "anam",
+      "Level": 4,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "辉煌光环"
+      "Value": "辉煌光环 - [|cffffcc004 级|r]"
     },
     {
       "Level": 1,
@@ -39,15 +45,9 @@
       "Value": "为附近单位每秒额外提供 1.7 点魔法值恢复速度。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（祖鲁赫德 - 吉安娜 - 玛法里奥 - 沃金 - 杰尔戈什）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 4,
-      "Value": "辉煌光环 - [|cffffcc004 级|r]"
+      "Value": "辉煌光环"
     }
   ]
 }

@@ -5,21 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤金度"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活金度"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活金度"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（中立生物 - 祖尔格拉布）"
@@ -33,6 +18,21 @@
       "Id": "upro",
       "Type": 3,
       "Value": "金度"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤金度"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活巫医"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活巫医"
     }
   ],
   "NewId": "o06X"

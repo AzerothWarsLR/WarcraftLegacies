@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "狼人诅咒"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习末日降临 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -16,25 +26,15 @@
     },
     {
       "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狼人诅咒"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "以狼人的撕咬诅咒一个目标。受诅咒的单位无法施放法术，并在 20 秒内每秒受到 30 点伤害（英雄为 2 秒）。若该单位在诅咒期间死亡，将变成一头狼。此诅咒无法被驱散。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习末日降临 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "狼人诅咒"
     }
   ],
   "NewId": "A0UQ"

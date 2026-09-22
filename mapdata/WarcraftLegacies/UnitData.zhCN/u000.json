@@ -5,7 +5,12 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 主基地）"
+    },
+    {
+      "Id": "unam",
       "Type": 3,
       "Value": "冰封王座"
     },
@@ -15,12 +20,7 @@
       "Value": "一座寒冰与暗影的堡垒，冰封王座是巫妖王耐奥祖的严寒牢狱。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（天灾 主基地）"
-    },
-    {
-      "Id": "unam",
+      "Id": "utip",
       "Type": 3,
       "Value": "冰封王座"
     }

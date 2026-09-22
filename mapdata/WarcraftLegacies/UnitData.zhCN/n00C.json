@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "符文牧师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "博学的战地牧师与符文匠。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡）"
     }
   ],
   "NewId": "n00C"

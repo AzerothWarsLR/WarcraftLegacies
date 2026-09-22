@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "虚空龙"
+      "Value": "（燃烧军团）"
     },
     {
       "Id": "utip",
@@ -20,9 +20,9 @@
       "Value": "来自外域的被奴役巨龙。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（燃烧军团）"
+      "Value": "虚空龙"
     }
   ],
   "NewId": "n04U"

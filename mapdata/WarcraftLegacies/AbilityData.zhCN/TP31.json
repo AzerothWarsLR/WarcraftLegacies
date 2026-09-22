@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "致命一击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（蒸汽坦克）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该单位的攻击已升级为远程炮击，造成更高的范围伤害，并且能够攻击空中单位。"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致命一击"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "火炮"
     }
   ],

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "减速毒药"
+      "Value": "（深绿色 - 矛兵，青色 - 魅魔）"
     },
     {
       "Level": 1,
@@ -22,9 +22,9 @@
       "Value": "一种毒性攻击，每秒造成<Aspo,DataA2>点伤害，并使目标敌人的移动速度降低<Aspo,DataB2,%>%、攻击速度降低<Aspo,DataC2,%>%，持续 3 秒。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（深绿色 - 矛兵，青色 - 魅魔）"
+      "Value": "减速毒药"
     }
   ]
 }

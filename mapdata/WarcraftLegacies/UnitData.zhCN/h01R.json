@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯 T1）"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（吉尔尼斯 T1）"
+      "Value": "建造城镇大厅"
     },
     {
       "Id": "unam",

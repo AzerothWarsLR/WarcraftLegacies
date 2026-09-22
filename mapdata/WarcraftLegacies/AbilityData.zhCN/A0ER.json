@@ -5,9 +5,20 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（蓝色 - 兽人骑兵）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "硬化体肤"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战争装甲"
     },
     {
       "Level": 1,
@@ -20,17 +31,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "该单位受到的所有攻击伤害降低<A0ER,DataC2>点。伤害不能被降低到<A0ER,DataB2>点以下。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": " （蓝色 - 兽人骑兵）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "战争装甲"
     }
   ],
   "NewId": "A0ER"

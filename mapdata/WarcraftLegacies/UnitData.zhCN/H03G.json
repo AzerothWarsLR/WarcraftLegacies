@@ -5,17 +5,27 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活黑石皇帝"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "黑石皇帝"
     },
     {
-      "Id": "utpr",
+      "Id": "upro",
       "Type": 3,
-      "Value": "复活黑石皇帝"
+      "Value": "达格兰·索瑞森大帝"
     },
     {
-      "Id": "uawt",
+      "Id": "utpr",
       "Type": 3,
       "Value": "复活黑石皇帝"
     },
@@ -28,16 +38,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "压迫型神秘英雄，擅长造成魔法伤害。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡）"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "达格兰·索瑞森大帝"
     }
   ],
   "NewId": "H03G"

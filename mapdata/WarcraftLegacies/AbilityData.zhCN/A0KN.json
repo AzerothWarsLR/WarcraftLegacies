@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦格尼-尤格）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "大地恩泽"
@@ -61,11 +66,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "喷洒<A0KN,DataF4>波治疗迷雾，每波为一片区域内的所有友方单位恢复<A0KN,DataA4>点生命值。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（麦格尼-尤格）"
     }
   ],
   "NewId": "A0KN"

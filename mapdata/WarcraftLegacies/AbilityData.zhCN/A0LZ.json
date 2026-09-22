@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "闪电攻击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（潮汐巨蛇）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电攻击"
     }
   ],
   "NewId": "A0LZ"

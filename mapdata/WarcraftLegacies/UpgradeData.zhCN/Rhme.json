@@ -6,63 +6,9 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnam",
+      "Id": "gnsf",
       "Type": 3,
-      "Value": "铜制武器"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "青铜制武器"
-    },
-    {
-      "Level": 3,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "铁制武器"
-    },
-    {
-      "Level": 4,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "钢制武器"
-    },
-    {
-      "Level": 5,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "秘银制武器"
-    },
-    {
-      "Level": 6,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "瑟银制武器"
-    },
-    {
-      "Level": 7,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "源质制武器"
-    },
-    {
-      "Level": 8,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "精金制武器"
-    },
-    {
-      "Level": 9,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "钛制武器"
-    },
-    {
-      "Level": 10,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "钢铁铸剑"
+      "Value": "（通用升级）"
     },
     {
       "Level": 1,
@@ -143,10 +89,64 @@
       "Value": "进一步提高大多数单位的攻击伤害。"
     },
     {
-      "Id": "gnsf",
-      "Type": 3,
       "Level": 1,
-      "Value": "（通用升级）"
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "铜制武器"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "青铜制武器"
+    },
+    {
+      "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "铁制武器"
+    },
+    {
+      "Level": 4,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "钢制武器"
+    },
+    {
+      "Level": 5,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "秘银制武器"
+    },
+    {
+      "Level": 6,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "瑟银制武器"
+    },
+    {
+      "Level": 7,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "源质制武器"
+    },
+    {
+      "Level": 8,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "精金制武器"
+    },
+    {
+      "Level": 9,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "钛制武器"
+    },
+    {
+      "Level": 10,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "钢铁铸剑"
     }
   ]
 }

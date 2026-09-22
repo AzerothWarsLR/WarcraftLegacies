@@ -6,6 +6,60 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 6|r]"
+    },
+    {
+      "Level": 7,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 7|r]"
+    },
+    {
+      "Level": 8,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 8|r]"
+    },
+    {
+      "Level": 9,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "反噬 - [|cffffcc00级别 9|r]"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "该防御塔的每次攻击都会销毁目标 24 点法力值，并造成与所销毁法力值相同的额外伤害。对英雄销毁 12 点法力值。|n|n此外，该防御塔的攻击还能对召唤单位造成 10 点额外伤害。|n|n|cffe8e800可从攻击力升级中获益。|r\n"
@@ -62,60 +116,6 @@
       "Id": "anam",
       "Type": 3,
       "Value": "反噬"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 4|r]"
-    },
-    {
-      "Level": 5,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 5|r]"
-    },
-    {
-      "Level": 6,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 6|r]"
-    },
-    {
-      "Level": 7,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 7|r]"
-    },
-    {
-      "Level": 8,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 8|r]"
-    },
-    {
-      "Level": 9,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "反噬 - [|cffffcc00级别 9|r]"
     }
   ]
 }

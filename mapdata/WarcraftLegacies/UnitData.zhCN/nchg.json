@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "邪能兽人步兵"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "灌注恶魔之血的残暴战士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能）"
     }
   ]
 }

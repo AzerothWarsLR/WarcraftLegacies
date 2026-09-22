@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "疾风步"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（哨兵）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使哨兵隐形，并在 10 秒内提高 10% 的移动速度。如果哨兵通过攻击打破隐形，该次攻击将造成 30 点额外伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "疾风步"
     }
   ]
 }

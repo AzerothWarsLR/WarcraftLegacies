@@ -5,15 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（红色研究）"
+    },
+    {
       "Id": "gnam",
       "Type": 3,
       "Value": "蛛网"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（红色研究）"
     }
   ]
 }

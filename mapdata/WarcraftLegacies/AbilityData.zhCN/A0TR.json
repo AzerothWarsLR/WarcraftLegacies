@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "灵魂巫毒"
+      "Value": "（赞达拉）"
     },
     {
       "Level": 1,
@@ -28,14 +28,14 @@
       "Value": "巫毒狂舞 - [|cffffcc003级|r]"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（赞达拉）"
+      "Value": "灵魂巫毒"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使骨卜者周围区域内的所有友方单位变为无敌。 |n骨卜者本身不会变为无敌。 |n持续 3 秒。"
     }
   ],

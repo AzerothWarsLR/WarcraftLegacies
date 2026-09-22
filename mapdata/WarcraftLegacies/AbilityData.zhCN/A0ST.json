@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "戈德林之嚎"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习戈德林之嚎 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -39,37 +49,27 @@
       "Value": "戈德林之嚎 - [|cffffcc004级|r]"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习戈德林之嚎 - [|cffffcc00等级 %d|r]"
-    },
-    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使附近的友方单位获得 15% 的伤害加成和 180% 的生命恢复速度提升。持续 25 秒。"
     },
     {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Level": 2,
       "Value": "使附近的友方单位获得 20% 的伤害加成和 260% 的生命恢复速度提升。持续 25 秒。"
     },
     {
+      "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Level": 3,
       "Value": "使附近的友方单位获得 25% 的伤害加成和 340% 的生命恢复速度提升。持续 25 秒。"
     },
     {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Level": 4,
       "Value": "使附近的友方单位获得 30% 的伤害加成和 420% 的生命恢复速度提升。持续 25 秒。"
     }
   ],

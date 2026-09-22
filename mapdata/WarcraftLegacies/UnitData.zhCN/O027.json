@@ -5,24 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活祖鲁希德"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "复活疲惫者|cffffcc00祖|r鲁希德"
-    },
-    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活祖鲁希德"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "旧部落的强大萨满，可以施放治疗链、嗜血图腾，并召唤虚空龙。"
     },
     {
       "Id": "unsf",
@@ -38,6 +23,21 @@
       "Id": "upro",
       "Type": 3,
       "Value": "疲惫的祖鲁希德"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活祖鲁希德"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "旧部落的强大萨满，可以施放治疗链、嗜血图腾，并召唤虚空龙。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤疲惫者|cffffcc00祖|r鲁希德"
     }
   ],
   "NewId": "O027"

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "治疗术"
+      "Value": "（通灵侍僧、编织者、魅魔）"
     },
     {
       "Level": 1,
@@ -17,15 +17,27 @@
     },
     {
       "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一个受伤的友方非机械单位恢复<A0AR,DataA2>点生命值。"
+    },
+    {
+      "Level": 2,
       "Id": "atp1",
       "Type": 3,
       "Value": "治疗 - [|cffffcc002级|r]"
     },
     {
       "Level": 2,
-      "Id": "aub1",
+      "Id": "aut1",
       "Type": 3,
-      "Value": "为一个受伤的友方非机械单位恢复<A0AR,DataA2>点生命值。"
+      "Value": "|cffc3dbff点击右键以激活自动施法。|r"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbff点击右键以取消自动施法。|r"
     },
     {
       "Level": 1,
@@ -34,21 +46,9 @@
       "Value": "为一个受伤的友方非机械单位恢复<A0AR,DataA1>点生命值。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（通灵侍僧、编织者、魅魔）"
-    },
-    {
-      "Id": "aut1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "|cffc3dbff点击右键以激活自动施法。|r"
-    },
-    {
-      "Id": "auu1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "|cffc3dbff点击右键以取消自动施法。|r"
+      "Value": "治疗术"
     }
   ],
   "NewId": "A0AR"

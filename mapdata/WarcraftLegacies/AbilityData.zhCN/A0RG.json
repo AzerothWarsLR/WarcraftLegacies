@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "恢复魔法值"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（暴风城法师塔）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "恢复魔法值"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "恢复魔法值"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "为目标单位恢复 250 点魔法值。|n|n|cffffcc00冷却时间 90 秒。|n全地图范围"
     }
   ],

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 - 希尔瓦娜斯。浅蓝色 - 珊蒂斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "瞄准射击"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习瞄准射击 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "向一个敌方目标射出一支附魔箭矢，造成 375 点伤害并昏迷目标 7 秒。对英雄持续 2 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（绿色 - 希尔瓦娜斯。浅蓝色 - 珊蒂斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习瞄准射击 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0PK"

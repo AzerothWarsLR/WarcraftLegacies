@@ -5,9 +5,16 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Level": 1,
+      "Id": "aub1",
       "Type": 3,
-      "Value": "虔诚光环"
+      "Value": "使附近玩家单位额外获得 1 点护甲。 |n|n|cffd45e19每种拥有此光环的不同类型单位都会使其效果叠加。|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "+2*2 护甲"
     },
     {
       "Level": 3,
@@ -16,26 +23,19 @@
       "Value": "+2*3 护甲"
     },
     {
-      "Id": "aub1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "使附近玩家单位额外获得 1 点护甲。 |n|n|cffd45e19每种拥有此光环的不同类型单位都会使其效果叠加。|r"
-    },
-    {
-      "Id": "aub1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "+2*2 护甲"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（十字军 2）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虔诚光环"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "为事业而团结"
     }
   ],

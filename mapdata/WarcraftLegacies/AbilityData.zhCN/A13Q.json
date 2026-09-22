@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "使穆拉丁有机会对他周围的所有敌人造成伤害。|n|n|cffffcc00等级 1|r - 20% 的几率造成 30 点伤害。|n|cffffcc00等级 2|r - 25% 的几率造成 50 点伤害。|n|cffffcc00等级 3|r - 30% 的几率造成 70 点伤害。|n|cffffcc00等级 4|r - 35% 的几率造成 90 点伤害。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "粉碎"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（邪能部落 - 碎骨者）"
@@ -25,10 +15,20 @@
       "Value": "学习风暴战锤 - [|cffffcc00等级 %d|r]"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使穆拉丁有机会对他周围的所有敌人造成伤害。|n|n|cffffcc00等级 1|r - 20% 的几率造成 30 点伤害。|n|cffffcc00等级 2|r - 25% 的几率造成 50 点伤害。|n|cffffcc00等级 3|r - 30% 的几率造成 70 点伤害。|n|cffffcc00等级 4|r - 35% 的几率造成 90 点伤害。\n"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "有 20% 的几率使一次攻击对附近单位造成 30 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "粉碎"
     }
   ],
   "NewId": "A13Q"

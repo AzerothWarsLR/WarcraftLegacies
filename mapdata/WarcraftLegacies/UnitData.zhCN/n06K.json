@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "镰刀德鲁伊"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "进攻型施法者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（吉尔尼斯）"
     }
   ],
   "NewId": "n06K"

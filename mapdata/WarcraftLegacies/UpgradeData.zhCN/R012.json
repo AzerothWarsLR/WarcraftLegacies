@@ -5,15 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "混乱"
+      "Value": "降服石槌食人魔"
     },
     {
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
-      "Value": "降服石槌食人魔"
+      "Value": "混乱"
     }
   ],
   "NewId": "R012"

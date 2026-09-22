@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡 - 弗斯塔德）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "锤击时刻！"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习锤击时刻！ - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "用战锤轰击一片区域，对附近的敌方地面单位最多造成<VP24,DataA4>点伤害，并使其短暂昏迷。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（铁炉堡 - 弗斯塔德）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习锤击时刻！ - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "VP24"

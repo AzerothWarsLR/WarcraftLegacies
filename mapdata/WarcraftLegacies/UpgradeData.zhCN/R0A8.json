@@ -5,14 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "塞拉摩"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
       "Value": "你的队伍控制着吉安娜·普罗德摩尔"
     }
   ],

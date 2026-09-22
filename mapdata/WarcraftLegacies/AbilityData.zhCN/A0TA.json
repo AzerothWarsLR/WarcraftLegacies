@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "回春术"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（地精）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "回春术"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "机械工具包"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "在 10 秒内为目标友方建筑或机械单位恢复<A0IL,DataA1>点生命值。"
     }
   ],

@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "荒芜精华"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 黑曜石雕像）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "荒芜精华(|cffffcc00Q|r)"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "为大量附近友方单位恢复<Arpl,DataA1>点生命值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "荒芜精华"
     }
   ]
 }

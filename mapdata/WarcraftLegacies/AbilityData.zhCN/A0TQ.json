@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（哨兵 - 珊蒂斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "穿刺之箭"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习穿刺之箭 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "释放一道巨大的波浪，对一条直线上的敌方单位造成<A0TQ,DataA4>点伤害，最高造成<A0TQ,DataB4>点伤害。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（哨兵 - 珊蒂斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习穿刺之箭 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0TQ"

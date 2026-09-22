@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练投刃车"
+      "Value": "（奎尔萨拉斯）"
     },
     {
       "Id": "unam",
@@ -15,9 +15,9 @@
       "Value": "投刃车"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（奎尔萨拉斯）"
+      "Value": "训练投刃车"
     },
     {
       "Id": "utub",

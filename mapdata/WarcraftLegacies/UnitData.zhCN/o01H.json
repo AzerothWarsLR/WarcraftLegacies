@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "癫狂的兽人战士。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "暮光之锤执行者"
@@ -13,16 +23,6 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练暮光之锤执行者"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "癫狂的兽人战士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野外生物）"
     }
   ],
   "NewId": "o01H"

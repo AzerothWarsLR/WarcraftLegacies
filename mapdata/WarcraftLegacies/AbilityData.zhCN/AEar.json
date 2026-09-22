@@ -5,31 +5,31 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "一种光环，使附近友方单位的远程攻击获得额外伤害。|n|n|cffffcc00等级 1|r - 基础远程伤害提高<AEar,DataA1,%>%。 |n|cffffcc00等级 2|r - 基础远程伤害提高<AEar,DataA2,%>%。 |n|cffffcc00等级 3|r - 基础远程伤害提高<AEar,DataA3,%>%。|n|cffffcc00等级 4|r - 基础远程伤害提高<AEar,DataA4,%>%。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "强击光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（绿色 - 希尔瓦娜斯。浅蓝色 - 泰兰德）"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "一种光环，使附近友方单位的远程攻击获得额外伤害。|n|n|cffffcc00等级 1|r - 基础远程伤害提高<AEar,DataA1,%>%。 |n|cffffcc00等级 2|r - 基础远程伤害提高<AEar,DataA2,%>%。 |n|cffffcc00等级 3|r - 基础远程伤害提高<AEar,DataA3,%>%。|n|cffffcc00等级 4|r - 基础远程伤害提高<AEar,DataA4,%>%。\n"
+    },
+    {
+      "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Level": 4,
       "Value": "强击光环 - [|cffffcc004 级|r]"
     },
     {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Level": 4,
       "Value": "一种光环，使附近友方单位的远程攻击获得<AEar,DataA4,%>% 的额外伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "强击光环"
     }
   ]
 }

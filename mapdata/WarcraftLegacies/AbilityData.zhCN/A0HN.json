@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "海军光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（伯拉勒斯要塞、奥伯丁）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "海军光环"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "海军光环。"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "强化<A0HN,Area1>范围内的友方舰船，使其移动速度提高<A0HN,DataA1,%>%，每秒生命恢复量提高<A0HN,DataB1>点。"
     }
   ],

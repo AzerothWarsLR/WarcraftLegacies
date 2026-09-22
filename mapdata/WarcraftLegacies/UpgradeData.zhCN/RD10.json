@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "箭术"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
       "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
       "Value": "纳鲁之盾"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使守备官能够使用纳鲁之盾，将受到的穿刺攻击伤害降低至<A12W,DataA1,%>%。"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究纳鲁之盾"
     },
     {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（德莱尼）"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "箭术"
     }
   ],
   "NewId": "RD10"

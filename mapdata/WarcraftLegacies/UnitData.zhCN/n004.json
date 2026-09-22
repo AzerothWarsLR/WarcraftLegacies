@@ -10,11 +10,6 @@
       "Value": "强化肯瑞托塔"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为强化肯瑞托塔"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba防御塔|r"
@@ -23,6 +18,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（达拉然塔）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到强化肯瑞托塔"
     }
   ],
   "NewId": "n004"

@@ -5,24 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "提瑞斯法宗母"
     },
     {
-      "Id": "utip",
+      "Id": "upro",
       "Type": 3,
-      "Value": "召唤艾格文"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活艾格文"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活艾格文"
+      "Value": "艾格文"
     },
     {
       "Id": "utub",
@@ -30,14 +25,19 @@
       "Value": "神秘型英雄，擅长造成魔法伤害。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（达拉然）"
+      "Value": "召唤艾格文"
     },
     {
-      "Id": "upro",
+      "Id": "uawt",
       "Type": 3,
-      "Value": "艾格文"
+      "Value": "复活艾格文"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活艾格文"
     }
   ],
   "NewId": "H09N"

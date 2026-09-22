@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "复活大范围内的尸体为巫妖王而战。持续 60 秒。|n|n|cffffcc001级|r - 复活 20 具尸体。冷却时间 2 分钟。|n|cffffcc002级|r - 复活 35 具尸体。冷却时间 2 分钟。|n|cffffcc003级|r - 复活 50 具尸体。冷却时间 2 分钟。\n"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（巫妖王）"
@@ -25,15 +20,20 @@
       "Value": "学习群体亡者再临 - [|cffffcc00等级 %d|r]"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "复活大范围内的尸体为巫妖王而战。持续 60 秒。|n|n|cffffcc001级|r - 复活 20 具尸体。冷却时间 2 分钟。|n|cffffcc002级|r - 复活 35 具尸体。冷却时间 2 分钟。|n|cffffcc003级|r - 复活 50 具尸体。冷却时间 2 分钟。\n"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "群体亡者再临"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "在目标区域内复活<A010,DataA1>个死亡单位，持续<A010,Dur1>秒。"
     }
   ],

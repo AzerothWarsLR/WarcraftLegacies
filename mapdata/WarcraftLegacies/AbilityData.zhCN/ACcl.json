@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "闪电链"
+      "Value": "（霜狼 - 先知）"
     },
     {
       "Level": 1,
@@ -22,15 +22,15 @@
       "Value": "闪电链 - [|cffffcc002 级|r]"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（霜狼 - 先知）"
-    },
-    {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Level": 2,
       "Value": "掷出一道闪电，最多弹跳<ACcl,DataB2>次，对主要目标造成<ACcl,DataA2>点伤害。每次弹跳造成的伤害都会降低。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电链"
     }
   ]
 }

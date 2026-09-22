@@ -5,21 +5,21 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "库尔提拉斯海军部"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（库尔提拉斯）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "任务完成：库尔提拉斯海军部"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "库尔提拉斯海军部"
     }
   ],
   "NewId": "R00L"

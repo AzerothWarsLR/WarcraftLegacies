@@ -5,14 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤海龟"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "海龟"
+      "Value": "（德鲁伊 - 托尔托拉）"
     },
     {
       "Id": "utub",
@@ -20,9 +15,14 @@
       "Value": "轻型近战两栖单位，其带刺甲壳会伤害近战攻击它的敌人。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（德鲁伊 - 托尔托拉）"
+      "Value": "训练海龟"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海龟"
     }
   ]
 }

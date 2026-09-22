@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色/棕色 - 小精灵）"
+    },
+    {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
@@ -20,11 +25,6 @@
       "Id": "anam",
       "Type": 3,
       "Value": "自爆"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（浅蓝色/棕色 - 小精灵）"
     }
   ]
 }

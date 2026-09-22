@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（物品 - 统御之盔）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "先见之明"
@@ -14,11 +19,6 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "先见之明 (|cffffcc00Q|r) - [|cffffcc001级|r]"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（物品 - 统御之盔）"
     }
   ],
   "NewId": "A082"

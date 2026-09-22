@@ -5,14 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "火焰浮龙"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤火焰浮龙"
+      "Value": "（拉格纳罗斯）"
     },
     {
       "Id": "utub",
@@ -20,9 +15,14 @@
       "Value": "来自火焰之地的强大翼龙。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（拉格纳罗斯）"
+      "Value": "火焰浮龙"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练火焰浮龙"
     }
   ],
   "NewId": "n0CF"

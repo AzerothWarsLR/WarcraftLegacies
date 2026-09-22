@@ -5,19 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "嗜血光环 级别 2"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（青色 - 祖鲁希德图腾）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "嗜血光环 级别 2"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使附近友方单位的移动速度提高 20%，攻击速度提高 15%。"
     }
   ],

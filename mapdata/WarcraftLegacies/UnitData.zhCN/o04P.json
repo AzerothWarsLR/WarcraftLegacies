@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "纳斯雷兹姆术士"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "暗影系的纳斯雷兹姆支援单位。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（燃烧军团）"
     }
   ],
   "NewId": "o04P"

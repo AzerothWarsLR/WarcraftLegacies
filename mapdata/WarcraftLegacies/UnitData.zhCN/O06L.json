@@ -5,9 +5,24 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活加尔鲁什"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "战歌氏族督军"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "加尔鲁什·地狱咆哮"
     },
     {
       "Id": "utpr",
@@ -20,24 +35,9 @@
       "Value": "召唤加尔鲁什"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活加尔鲁什"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，专精于强化他的前线。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（兽人部落）"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "加尔鲁什·地狱咆哮"
     }
   ],
   "NewId": "O06L"

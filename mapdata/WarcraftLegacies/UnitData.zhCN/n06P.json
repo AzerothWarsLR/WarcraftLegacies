@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵 T3）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "哨兵飞地"
@@ -12,17 +17,12 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "哨兵飞地"
+      "Value": "升级到哨兵飞地"
     },
     {
       "Id": "utub",
       "Type": 3,
       "Value": "主要建筑。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（哨兵 T3）"
     }
   ],
   "NewId": "n06P"

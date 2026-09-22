@@ -5,12 +5,22 @@
   ],
   "Modifications": [
     {
-      "Id": "utpr",
+      "Id": "uawt",
       "Type": 3,
       "Value": "复活污染者"
     },
     {
-      "Id": "uawt",
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "污染者"
+    },
+    {
+      "Id": "utpr",
       "Type": 3,
       "Value": "复活污染者"
     },
@@ -23,16 +33,6 @@
       "Id": "upro",
       "Type": 3,
       "Value": "阿克蒙德"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（燃烧军团）"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "污染者"
     }
   ]
 }

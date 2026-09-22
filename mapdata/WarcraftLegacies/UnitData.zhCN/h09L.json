@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造绯红大教堂"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（血色）"
@@ -18,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "绯红大教堂"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造绯红大教堂"
     }
   ],
   "NewId": "h09L"

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（领主）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "风暴佳酿"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣干涉 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "为大范围内的友方单位恢复 375 点生命值。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（领主）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习神圣干涉 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0H1"

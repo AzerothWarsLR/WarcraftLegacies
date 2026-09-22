@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造光铸之门"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "高级部队生产建筑。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德莱尼 精英）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "光铸之门"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造光铸之门"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
     }
   ],
   "NewId": "o05U"

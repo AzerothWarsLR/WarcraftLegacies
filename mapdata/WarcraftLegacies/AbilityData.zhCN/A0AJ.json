@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "重型装甲"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（行刑者） （血骑士）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "重型装甲"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "重型装甲"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使所有攻击对该单位造成的伤害减少 15 点。攻击伤害最低不会降至 10 点以下。"
     }
   ],

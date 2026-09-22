@@ -5,9 +5,10 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
+      "Level": 1,
+      "Id": "gnsf",
       "Type": 3,
-      "Value": "巫医专家级训练"
+      "Value": "（兽人部落）"
     },
     {
       "Level": 1,
@@ -34,10 +35,9 @@
       "Value": "提高巫医的法力值上限和法力恢复速度，并使其获得施放治疗结界的能力。"
     },
     {
-      "Level": 1,
-      "Id": "gnsf",
+      "Id": "gnam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "巫医专家级训练"
     }
   ]
 }

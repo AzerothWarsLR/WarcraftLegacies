@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "肉身形态"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（霜狼 - 灵魂行者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "肉身形态"
     }
   ]
 }

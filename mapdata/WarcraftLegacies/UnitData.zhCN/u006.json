@@ -5,7 +5,12 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团 魔法）"
+    },
+    {
+      "Id": "unam",
       "Type": 3,
       "Value": "召唤法阵"
     },
@@ -15,14 +20,9 @@
       "Value": "施法单位生产建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（燃烧军团 魔法）"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "召唤法阵"
+      "Value": "建造法阵"
     }
   ],
   "NewId": "u006"

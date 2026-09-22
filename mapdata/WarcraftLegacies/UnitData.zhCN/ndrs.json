@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "先知"
+      "Value": "（伊利达雷）"
     },
     {
       "Id": "utip",
@@ -20,9 +20,9 @@
       "Value": "支援型施法者，擅长区域封锁与治疗。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（伊利达雷）"
+      "Value": "先知"
     }
   ]
 }

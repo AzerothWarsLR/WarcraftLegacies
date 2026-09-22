@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "魔法飞弹"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（奥术师）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "魔法飞弹"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "魔法飞弹"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "向目标敌方单位发射一枚魔法飞弹，造成 60 点伤害，并使目标昏迷<A0D1,Dur1>秒。对英雄持续 0.1 秒。"
     }
   ],

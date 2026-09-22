@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 雷德）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "黑手之嚎"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习黑手之嚎 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使附近的友方单位获得 30% 的伤害加成和 420% 的生命恢复速度提升。持续 25 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（青色 - 雷德）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习黑手之嚎 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0AI"

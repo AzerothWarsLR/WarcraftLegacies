@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然-活体碎片）"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "土魔像死亡后的产物。对法术免疫。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（达拉然-活体碎片）"
+      "Value": "训练泥浆傀儡"
     },
     {
       "Id": "unam",

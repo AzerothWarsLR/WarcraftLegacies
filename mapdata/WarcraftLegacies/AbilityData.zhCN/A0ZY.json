@@ -5,14 +5,42 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "英雄精湛的弓术使其能够一次射出多支箭矢。 |n|n|cffffcc001级|r - 可一次射出 2 支箭矢。|n|cffffcc002级|r - 可一次射出 3 支箭矢。|n|cffffcc003级|r - 可一次射出 4 支箭矢。\n"
+      "Value": "（黑鸦堡垒）"
     },
     {
       "Id": "anam",
       "Type": 3,
       "Value": "火箭弹幕"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄精湛的弓术使其能够一次射出多支箭矢。 |n|n|cffffcc001级|r - 可一次射出 2 支箭矢。|n|cffffcc002级|r - 可一次射出 3 支箭矢。|n|cffffcc003级|r - 可一次射出 4 支箭矢。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多重射击"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多重射击 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多重射击 - [|cffffcc003级|r]"
     },
     {
       "Level": 1,
@@ -31,34 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄向目标射出多支箭矢。共射出<A047,DataC3>支箭矢。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（黑鸦堡垒）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "多重射击"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "多重射击 - [|cffffcc002级|r]"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 3,
-      "Value": "多重射击 - [|cffffcc003级|r]"
     }
   ],
   "NewId": "A0ZY"

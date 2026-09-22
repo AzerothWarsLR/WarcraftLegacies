@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "重生"
+      "Value": "（牛头人部族 - 精英）"
     },
     {
       "Id": "aret",
@@ -20,9 +20,15 @@
       "Value": "英雄被消灭后会复活。|n|n|cffffcc001级|r - 冷却时间<A022,Cool1>秒。|n|cffffcc002级|r - 冷却时间<A022,Cool2>秒。|n|cffffcc003级|r - 冷却时间<A022,Cool3>秒。"
     },
     {
-      "Id": "ansf",
+      "Level": 1,
+      "Id": "aub1",
       "Type": 3,
-      "Value": "（牛头人部族 - 精英）"
+      "Value": "死亡后，该牛头人将在 6 秒后复活。重生有<VP50,Cool1>秒冷却时间。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "重生"
     }
   ],
   "NewId": "VP50"

@@ -5,20 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有<A0NN,DataA1,%>% 的几率躲避一次攻击。"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "闪避"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（（30%））"
-    },
-    {
-      "Id": "aub1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "有<A0NN,DataA1,%>% 的几率躲避一次攻击。"
     }
   ],
   "NewId": "A0NN"

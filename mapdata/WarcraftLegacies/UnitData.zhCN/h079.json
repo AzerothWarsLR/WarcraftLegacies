@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "奥术塔"
+      "Value": "（达拉然塔）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "魔法防御建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（达拉然塔）"
+      "Value": "奥术塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到奥术塔"
     }
   ],
   "NewId": "h079"

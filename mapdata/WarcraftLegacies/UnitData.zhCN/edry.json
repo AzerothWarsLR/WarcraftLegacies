@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "树妖"
+      "Value": "（德鲁伊）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "带有毒素攻击的基本远程单位。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（德鲁伊）"
+      "Value": "树妖"
     }
   ]
 }

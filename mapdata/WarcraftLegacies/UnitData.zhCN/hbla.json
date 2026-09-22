@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "通用研发建筑。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（洛丹伦研究）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
     },
     {
       "Id": "unam",

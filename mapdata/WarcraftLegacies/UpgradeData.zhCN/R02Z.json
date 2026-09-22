@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "防御"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（阿拉索 - T2）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "反射装甲"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究反射装甲"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "将剑士升级为先锋，使其生命值提高 100，移动速度提高 15，护甲提高 1，攻击伤害提高 15。同时强化防御，使其反弹几率提高 5%，并额外降低 20% 受到的法术伤害。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "防御"
     }
   ],
   "NewId": "R02Z"

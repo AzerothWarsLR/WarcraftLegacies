@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）（坚硬水晶构造体）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "水晶魔像"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "由活性水晶构成的强韧召唤物。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然）（坚硬水晶构造体）"
     }
   ],
   "NewId": "n0AD"

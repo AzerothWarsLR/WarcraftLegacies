@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（大门 - 关闭）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "格雷迈恩之门"
@@ -12,12 +17,7 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "横向木门"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（大门 - 关闭）"
+      "Value": "升级到格雷迈恩之门"
     },
     {
       "Id": "utub",

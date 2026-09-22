@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "烈焰风暴"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（血法师）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "烈焰风暴"
     }
   ],
   "NewId": "A01H"

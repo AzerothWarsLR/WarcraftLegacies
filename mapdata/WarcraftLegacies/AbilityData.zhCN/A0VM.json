@@ -15,15 +15,15 @@
       "Value": "泰坦铸造"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "泰坦铸造"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "额外提高 9 点力量。"
     }
   ],

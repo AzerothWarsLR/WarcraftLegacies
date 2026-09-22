@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "嗜血"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（狼人萨满祭司）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使一个友方单位的攻击速度提高 30%，移动速度提高 20%。|n持续<A135,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "嗜血"
     }
   ],
   "NewId": "A135"

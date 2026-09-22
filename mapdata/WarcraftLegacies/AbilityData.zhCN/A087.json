@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "国王身着坚固的护甲，能够格挡敌人的攻击。 |n|n|cffffcc001级|r - 格挡 7 点伤害，攻击伤害最低为 4 点。|n|cffffcc002级|r - 格挡 14 点伤害，攻击伤害最低为 6 点。|n|cffffcc003级|r - 格挡 21 点伤害，攻击伤害最低为 7 点。|n|cffffcc004级|r - 格挡 28 点伤害，攻击伤害最低为 8 点。\n"
+      "Value": "（加林·托尔贝恩）"
     },
     {
       "Id": "anam",
@@ -15,25 +15,25 @@
       "Value": "硬化体肤"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（加林·托尔贝恩）"
-    },
-    {
       "Id": "aret",
       "Type": 3,
       "Value": "学习硬化 - [|cffffcc00等级 %d|r]"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "国王身着坚固的护甲，能够格挡敌人的攻击。 |n|n|cffffcc001级|r - 格挡 7 点伤害，攻击伤害最低为 4 点。|n|cffffcc002级|r - 格挡 14 点伤害，攻击伤害最低为 6 点。|n|cffffcc003级|r - 格挡 21 点伤害，攻击伤害最低为 7 点。|n|cffffcc004级|r - 格挡 28 点伤害，攻击伤害最低为 8 点。\n"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "硬化"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使该单位受到的所有攻击伤害降低<A087,DataC1>点。攻击伤害无法降低至<A087,DataB1>点以下。"
     }
   ],

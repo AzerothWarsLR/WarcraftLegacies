@@ -5,31 +5,31 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "定位原油"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "定位原油"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（地精 - 原油钻机建造者）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "定位原油"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "定位原油"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "在地图上标记所有原油矿藏的位置。"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "定位原油"
     }
   ],
   "NewId": "A0PJ"

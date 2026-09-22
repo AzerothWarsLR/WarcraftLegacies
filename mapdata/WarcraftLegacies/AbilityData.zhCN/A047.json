@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（希尔瓦娜斯，珊蒂斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "多重射击"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -49,16 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使该英雄的攻击向最多 7 个周围的敌方单位发射额外的箭矢。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（希尔瓦娜斯，珊蒂斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A047"

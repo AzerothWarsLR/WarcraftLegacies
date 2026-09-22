@@ -5,19 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "虚空寄生虫"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(邪能部落"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虚空寄生虫"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "虚空寄生虫"
     }
   ]

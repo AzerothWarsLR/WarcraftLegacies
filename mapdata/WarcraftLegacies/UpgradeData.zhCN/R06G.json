@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "防御"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（战歌）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "诺森德远征"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究诺森德远征"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "为战歌提供发动诺森德远征所需的资源。|n|n|cffffcc00完成「战歌要塞」任务所必需。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "防御"
     }
   ],
   "NewId": "R06G"

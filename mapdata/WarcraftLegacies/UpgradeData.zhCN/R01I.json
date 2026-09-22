@@ -6,6 +6,12 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "奥术师专家级训练"
@@ -15,12 +21,6 @@
       "Id": "gnam",
       "Type": 3,
       "Value": "奥术师大师级训练"
-    },
-    {
-      "Level": 3,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "奥术师专家级训练"
     },
     {
       "Level": 1,
@@ -33,12 +33,6 @@
       "Id": "gtp1",
       "Type": 3,
       "Value": "研究奥术师专家级训练"
-    },
-    {
-      "Level": 3,
-      "Id": "gtp1",
-      "Type": 3,
-      "Value": "研究奥术师宗师级训练"
     },
     {
       "Level": 1,
@@ -54,15 +48,21 @@
     },
     {
       "Level": 3,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "奥术师专家级训练"
+    },
+    {
+      "Level": 3,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究奥术师宗师级训练"
+    },
+    {
+      "Level": 3,
       "Id": "gub1",
       "Type": 3,
       "Value": "提高奥术师的法力值上限和法力恢复速度，并使其能够施放法术窃取。"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（达拉然）"
     }
   ],
   "NewId": "R01I"

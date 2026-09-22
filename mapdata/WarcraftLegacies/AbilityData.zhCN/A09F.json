@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": " 生命恢复光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（太阳之井）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": " 生命恢复光环"
     }
   ],
   "NewId": "A09F"

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（戴林）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "召唤海军上将卫兵"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤海军上将卫兵 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤 5 名海军上将卫兵。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（戴林）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习召唤海军上将卫兵 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0V2"

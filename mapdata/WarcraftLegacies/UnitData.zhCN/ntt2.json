@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造|cffffcc00r|r牛头人帐篷"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "提供人口，可提高可训练单位的数量上限。"
@@ -23,6 +18,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "牛头人帐篷"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造|cffffcc00r|r牛头人帐篷"
     }
   ]
 }

@@ -5,37 +5,37 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "护卫"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（暴风城 - 暴风城勇士）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "护卫"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "护卫"
     },
     {
+      "Level": 1,
       "Id": "aut1",
       "Type": 3,
-      "Level": 1,
       "Value": "护卫"
     },
     {
+      "Level": 1,
       "Id": "auu1",
       "Type": 3,
-      "Level": 1,
       "Value": "取消护卫以恢复正常移动速度，但会受到正常伤害。"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "激活后，受到的法术、魔法和穿刺攻击伤害降低至<A0J6,DataA1,%>%。护卫激活期间，移动速度降低<A0J6,DataC1,%>%。"
     }
   ],

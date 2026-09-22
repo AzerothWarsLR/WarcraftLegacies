@@ -5,14 +5,24 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "圣光之锤"
     },
     {
-      "Id": "utpr",
+      "Id": "upro",
       "Type": 3,
-      "Value": "复活玛尔拉德"
+      "Value": "守备官玛尔拉德"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，出色的前线支援者。"
     },
     {
       "Id": "utip",
@@ -25,19 +35,9 @@
       "Value": "复活玛尔拉德"
     },
     {
-      "Id": "utub",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "战斗型英雄，出色的前线支援者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德莱尼）"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "守备官玛尔拉德"
+      "Value": "复活玛尔拉德"
     }
   ],
   "NewId": "H09S"

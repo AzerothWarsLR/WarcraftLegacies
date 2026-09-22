@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "控制魔法"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（破法者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "控制魔法"
     }
   ]
 }

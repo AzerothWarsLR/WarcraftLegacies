@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "嘲讽"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（棕色 - 山岭巨人）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "最近的<Atau,DataA1>个敌人会被迫攻击该单位。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "嘲讽"
     }
   ]
 }

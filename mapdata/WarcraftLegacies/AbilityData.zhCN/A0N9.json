@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（血蹄图腾）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "群体加速"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习集结 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -19,6 +29,24 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "群体加速"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体加速 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体加速 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体加速 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -43,34 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄激励他的部下，使他们的移动速度提高 100%，持续 10 秒。"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "群体加速 - [|cffffcc002级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "群体加速 - [|cffffcc003级|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "群体加速 - [|cffffcc004级|r]"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（血蹄图腾）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习集结 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0N9"

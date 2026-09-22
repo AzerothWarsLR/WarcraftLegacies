@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "火焰之雨"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（暮锤氏族）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤 3 波火焰，对一片区域内的单位造成伤害。每波造成 25 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之雨"
     }
   ],
   "NewId": "A0OL"

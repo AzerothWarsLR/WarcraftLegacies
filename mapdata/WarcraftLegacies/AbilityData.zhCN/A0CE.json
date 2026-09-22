@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 玛法里奥）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "催生大树"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习催生大树 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "玛法里奥在目标地点种下一棵树，每 1.5 秒生成一个树人，直到它消失或被摧毁。持续 14 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（棕色 - 玛法里奥）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习催生大树 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0CE"

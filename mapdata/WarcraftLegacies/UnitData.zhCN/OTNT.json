@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "主要建筑。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（牛头人部族 T1）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
     },
     {
       "Id": "unam",
@@ -22,7 +22,7 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "酋长小屋"
+      "Value": "建造酋长小屋"
     }
   ],
   "NewId": "otnt"

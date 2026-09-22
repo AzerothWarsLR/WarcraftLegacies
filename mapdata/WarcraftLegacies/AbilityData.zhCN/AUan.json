@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克尔苏加德）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习亡者再临 - [|cffffcc00等级 %d|r]"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "复活<AUan,DataA1>个周围的阵亡单位为施法者作战。 |n持续 60 秒。|n|n|cffffcc001级|r - 无额外加成。|n|cffffcc002级|r - 复活的单位获得 20% 额外生命值和攻击力。 |n|cffffcc003级|r - 复活的单位获得 40% 额外生命值和攻击力。|n|cffffcc004级|r - 复活的单位获得 60% 额外生命值和攻击力。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "亡者再临"
     },
     {
       "Level": 1,
@@ -63,14 +68,9 @@
       "Value": "复活<AUan,DataA1>个周围的阵亡单位为施法者作战，并使它们的生命值和攻击伤害额外提高 60%。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（克尔苏加德）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习亡者再临 - [|cffffcc00等级 %d|r]"
+      "Value": "亡者再临"
     }
   ]
 }

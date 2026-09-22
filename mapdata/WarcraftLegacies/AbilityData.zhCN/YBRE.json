@@ -10,15 +10,15 @@
       "Value": "召唤礁石元素"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤礁石元素"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤 2 个具有粉碎波浪技能的礁石元素。持续<YBRE,Dur1>秒。"
     },
     {

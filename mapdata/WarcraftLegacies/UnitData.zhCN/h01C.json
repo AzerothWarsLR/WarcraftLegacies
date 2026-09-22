@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "猎手"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "提瑞斯法技艺高超的猎人。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
     }
   ],
   "NewId": "h01C"

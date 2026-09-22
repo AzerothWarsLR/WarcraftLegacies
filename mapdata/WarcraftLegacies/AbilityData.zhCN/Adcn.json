@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "消魔"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（粉色 - 灵魂行者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "消魔"
     }
   ]
 }

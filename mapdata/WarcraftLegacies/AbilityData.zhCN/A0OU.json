@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "长管火枪"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（巨魔图标）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "长管火枪"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "生成图腾"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "死亡时，骨卜者会在其尸体所在的位置生成一个永久图腾"
     }
   ],

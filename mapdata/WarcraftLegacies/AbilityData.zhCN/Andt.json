@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "暴露"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（中立 - 地精实验室）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "(|cffffcc00R|r)暴露"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暴露"
     }
   ]
 }

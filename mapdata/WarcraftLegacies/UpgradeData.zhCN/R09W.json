@@ -6,27 +6,21 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "邪钢精炼"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "研究强化强效腐臭蝠群"
     },
     {
       "Level": 1,
       "Id": "gtp1",
       "Type": 3,
       "Value": "邪钢精炼"
-    },
-    {
-      "Level": 2,
-      "Id": "gtp1",
-      "Type": 3,
-      "Value": "研究强化强效腐臭蝠群"
     },
     {
       "Level": 1,
@@ -36,20 +30,26 @@
     },
     {
       "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "强化强效腐臭蝠群"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究强化强效腐臭蝠群"
+    },
+    {
+      "Level": 2,
       "Id": "gub1",
       "Type": 3,
       "Value": "强化恐惧魔王的腐臭蜂群，将其伤害提高到 105、最大伤害提高到 100，并缩短冷却时间。"
     },
     {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（邪部落）"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
       "Level": 2,
+      "Id": "gnsf",
+      "Type": 3,
       "Value": "（燃烧军团）"
     }
   ],

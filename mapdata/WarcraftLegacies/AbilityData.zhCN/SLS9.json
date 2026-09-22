@@ -5,9 +5,20 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "野性之魂"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<SLS9,DataB1>个树人，持续<SLS9,Dur1>秒。"
     },
     {
       "Level": 2,
@@ -28,18 +39,6 @@
       "Value": "野性之魂 - [|cffffcc00级别 1|r]"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "野性之魂 - [|cffffcc00级别 4|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "召唤<SLS9,DataB1>个树人，持续<SLS9,Dur1>秒。"
-    },
-    {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
@@ -53,14 +52,15 @@
     },
     {
       "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "野性之魂 - [|cffffcc00级别 4|r]"
+    },
+    {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤<SLS9,DataB4>个树人，持续<SLS9,Dur4>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（德鲁伊）"
     }
   ],
   "NewId": "SLS9"

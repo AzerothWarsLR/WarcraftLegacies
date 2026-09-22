@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练防御者"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "丹莫罗的坚强守卫。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "巡山人"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练防御者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "丹莫罗的坚强守卫。"
     }
   ],
   "NewId": "h02A"

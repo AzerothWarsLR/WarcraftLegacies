@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "魔法岗哨"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（霜狼）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "硬化兽皮"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究硬化毛皮"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使牛头人、灵魂行者和牛头人角斗士受到的攻击伤害降低。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔法岗哨"
     }
   ],
   "NewId": "R00W"

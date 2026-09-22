@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "烈日行者勇士"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "烈日行者的神圣战士，蒙受圣光的赐福。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（牛头人部族 - 精英）"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练烈日行者勇士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "烈日行者的神圣战士，蒙受圣光的赐福。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "烈日行者勇士"
     }
   ],
   "NewId": "vP56"

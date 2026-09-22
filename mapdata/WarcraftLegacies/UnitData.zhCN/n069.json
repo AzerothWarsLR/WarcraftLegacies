@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练龙卷风"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（等级 1）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练龙卷风"
     },
     {
       "Id": "unam",

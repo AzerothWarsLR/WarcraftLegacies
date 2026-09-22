@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造贸易站"
+      "Value": "（吉尔尼斯商店）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "创建一个可购买物品的商店。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（吉尔尼斯商店）"
+      "Value": "建造贸易站"
     },
     {
       "Id": "unam",

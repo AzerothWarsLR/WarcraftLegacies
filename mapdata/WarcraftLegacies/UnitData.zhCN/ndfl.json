@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造被亵渎的生命之泉"
+      "Value": "（邪部落）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "腐化的生命之泉，为邪部落的士兵补充体力。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪部落）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "被污染的生命之泉"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造被亵渎的生命之泉"
     }
   ]
 }

@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造水晶守护者"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "主要防御建筑。"
@@ -23,6 +18,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "水晶守护者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造水晶守护者"
     }
   ],
   "NewId": "u00U"

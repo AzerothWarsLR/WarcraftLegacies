@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "复燃烈焰风暴"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习复燃烈焰风暴 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤一根烈焰之柱，每秒对地面单位造成<A0F9,DataA4>点伤害，持续<A0F9,HeroDur4>秒。烈焰之柱在<A0F9,Dur4>秒后减弱，在此期间柱内单位仍会持续受到每秒<A0F9,DataC4>点伤害。烈焰之柱前两次减弱后会再度复燃，持续时间相同。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习复燃烈焰风暴 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A04H"

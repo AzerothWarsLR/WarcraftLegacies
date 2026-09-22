@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "破法者"
+      "Value": "（奎尔萨拉斯）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "受训专门摧毁施法者的精锐战士。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（奎尔萨拉斯）"
+      "Value": "破法者"
     }
   ]
 }

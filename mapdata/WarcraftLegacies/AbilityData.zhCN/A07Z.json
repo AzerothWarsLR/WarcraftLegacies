@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（紫色 - 乌瑟尔）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "坚韧之力"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习坚韧之力 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使该单位的攻击力提高<A07Z,DataA4,%>%，护甲提高<A07Z,DataB4>点，生命恢复速度提高<A07Z,DataC4>，持续<A07Z,HeroDur4>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（紫色 - 乌瑟尔）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习坚韧之力 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A07Z"

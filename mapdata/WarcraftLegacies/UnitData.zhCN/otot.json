@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练静滞陷阱"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（霜狼）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练静滞陷阱"
     },
     {
       "Id": "unam",

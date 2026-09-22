@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "蜘蛛攻击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（中立生物 - 女王涅扎尔阿兹雷特。红色 - 地穴恶魔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "蜘蛛攻击"
     }
   ]
 }

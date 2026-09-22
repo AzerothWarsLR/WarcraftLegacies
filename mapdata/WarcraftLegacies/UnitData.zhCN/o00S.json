@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练混乱狼骑兵"
+      "Value": "（战歌）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "迅捷凶猛的狼骑兵，拥有极高的生命恢复速度。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（战歌）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "混乱狼骑兵"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练混乱狼骑兵"
     }
   ],
   "NewId": "o00S"

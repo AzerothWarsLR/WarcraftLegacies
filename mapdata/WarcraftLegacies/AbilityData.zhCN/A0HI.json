@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "嘲讽"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（黄色 - 领主）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "最近的<A0HI,DataA1>个敌人将被强制攻击该单位。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "嘲讽"
     }
   ],
   "NewId": "A0HI"

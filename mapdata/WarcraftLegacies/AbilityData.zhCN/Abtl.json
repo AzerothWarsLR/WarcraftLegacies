@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "战斗戒备"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（霜狼 - 战歌 - 地洞）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战斗戒备"
     }
   ]
 }

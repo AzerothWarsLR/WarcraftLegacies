@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "风暴战锤"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（卡兹莫丹 - 狮鹫骑士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴战锤"
     }
   ]
 }

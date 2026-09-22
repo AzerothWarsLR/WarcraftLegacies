@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "建筑伤害光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（毒云术 2）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "建筑伤害光环"
     }
   ],
   "NewId": "A11U"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "光铸神射手"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "受纳鲁赐予圣光之力的德莱尼精英射手。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德莱尼）"
     }
   ],
   "NewId": "n0BJ"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "修士"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "圣光的平和信徒。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（血色）"
     }
   ],
   "NewId": "h08K"

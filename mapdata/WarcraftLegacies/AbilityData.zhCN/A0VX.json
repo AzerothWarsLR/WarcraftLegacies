@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "从英雄的位置发射一道冲击波，对一条直线上的单位造成伤害。|n|n|cffffcc001级|r - 150 点伤害。最多 2000 点伤害。|n|cffffcc002级|r - 225 点伤害。最多 2350 点伤害。|n|cffffcc003级|r - 300 点伤害。最多 2600 点伤害。|n|cffffcc004级|r - 350 点伤害。最多 2950 点伤害。\n"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "粉碎波浪"
@@ -20,57 +15,57 @@
       "Value": "学习震荡波 - [|cffffcc00等级 %d|r]"
     },
     {
-      "Id": "atp1",
+      "Id": "arut",
       "Type": 3,
+      "Value": "从英雄的位置发射一道冲击波，对一条直线上的单位造成伤害。|n|n|cffffcc001级|r - 150 点伤害。最多 2000 点伤害。|n|cffffcc002级|r - 225 点伤害。最多 2350 点伤害。|n|cffffcc003级|r - 300 点伤害。最多 2600 点伤害。|n|cffffcc004级|r - 350 点伤害。最多 2950 点伤害。\n"
+    },
+    {
       "Level": 1,
-      "Value": "震荡波 - [|cffffcc001级|r]"
-    },
-    {
       "Id": "atp1",
       "Type": 3,
+      "Value": "粉碎波浪 - [|cffffcc001级|r]"
+    },
+    {
       "Level": 2,
-      "Value": "震荡波 - [|cffffcc002级|r]"
-    },
-    {
       "Id": "atp1",
       "Type": 3,
+      "Value": "粉碎波浪 - [|cffffcc002级|r]"
+    },
+    {
       "Level": 3,
-      "Value": "震荡波 - [|cffffcc003级|r]"
-    },
-    {
       "Id": "atp1",
       "Type": 3,
-      "Level": 4,
-      "Value": "震荡波 - [|cffffcc004级|r]"
+      "Value": "粉碎波浪 - [|cffffcc003级|r]"
     },
     {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "粉碎波浪 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "发出一道巨浪，对一条直线上的敌方单位造成 150 点伤害，最多造成 2000 点总伤害。"
     },
     {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Level": 2,
       "Value": "发出一道巨浪，对一条直线上的敌方单位造成 225 点伤害，最多造成 2350 点总伤害。"
     },
     {
+      "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Level": 3,
       "Value": "发出一道巨浪，对一条直线上的敌方单位造成 300 点伤害，最多造成 2600 点总伤害。"
     },
     {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Level": 4,
       "Value": "发出一道巨浪，对一条直线上的敌方单位造成 350 点伤害，最多造成 2950 点总伤害。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（1,2）"
     }
   ],
   "NewId": "A0VX"

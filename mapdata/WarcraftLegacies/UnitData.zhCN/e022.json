@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "月骑兵"
+      "Value": "（哨兵）"
     },
     {
       "Id": "utip",
@@ -20,9 +20,9 @@
       "Value": "强大的艾露恩女祭司，专精于欺诈之术。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（哨兵）"
+      "Value": "月骑兵"
     }
   ],
   "NewId": "e022"

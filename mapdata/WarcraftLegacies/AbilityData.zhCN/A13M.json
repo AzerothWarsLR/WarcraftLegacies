@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "伤害光环 1 级"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（达拉然护盾）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "伤害光环 1 级"
     }
   ],
   "NewId": "A13M"

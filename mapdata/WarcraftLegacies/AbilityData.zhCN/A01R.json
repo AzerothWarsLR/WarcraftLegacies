@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 瓦里安。粉色 - 凯恩，灰色 - 莫克纳萨）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "震荡波"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习震荡波 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "发出一道巨浪，对一条直线上的敌方单位造成 350 点伤害，最多造成 2950 点总伤害。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（深绿色 - 瓦里安。粉色 - 凯恩，灰色 - 莫克纳萨）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习震荡波 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A01R"

@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "坚韧光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（假单位）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "尚武精神"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使周围友方单位的移动速度提高 60%，攻击速度提高 30%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "耐久光环"
     }
   ],
   "NewId": "A0DS"

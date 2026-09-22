@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练投石机"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "重型近战单位，拥有咆哮、野性狂怒和强力猛击。可学习凶猛打击。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（血色）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "投石机"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战单位，拥有咆哮、野性狂怒和强力猛击。可学习凶猛打击。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造投石机"
     }
   ],
   "NewId": "e027"

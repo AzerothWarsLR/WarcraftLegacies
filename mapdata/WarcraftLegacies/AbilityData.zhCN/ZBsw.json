@@ -5,6 +5,17 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（沃金）"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒蛇结界 - [|cffffcc004级|r]"
+    },
+    {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
@@ -37,17 +48,6 @@
       "Id": "anam",
       "Type": 3,
       "Value": "毒蛇结界"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（沃金）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 4,
-      "Value": "毒蛇结界 - [|cffffcc004级|r]"
     }
   ],
   "NewId": "ZBsw"

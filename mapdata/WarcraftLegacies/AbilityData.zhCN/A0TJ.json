@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "爆头"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（橙色 库尔提拉斯陆战队员）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "爆头"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "爆头"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使攻击有 5% 的几率昏迷目标 0.5 秒（对英雄 0.1 秒）。"
     }
   ],

@@ -8,6 +8,11 @@
       "Id": "ansf",
       "Type": 3,
       "Value": "（增益施加）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "达拉然护盾"
     }
   ],
   "NewId": "A0E1"

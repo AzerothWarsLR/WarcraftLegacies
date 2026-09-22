@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "法术免疫"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（神圣护甲）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术免疫"
     }
   ]
 }

@@ -5,24 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "烈焰之柱"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为烈焰之柱"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能塔）"
     },
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "烈焰之柱"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到烈焰之柱"
     }
   ],
   "NewId": "n0AM"

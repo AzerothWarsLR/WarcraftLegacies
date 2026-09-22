@@ -5,38 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "使攻击有几率恢复半径 300 内附近友方单位的生命值，数值等于英雄造成的物理伤害的 20%。|n|n|cffffcc001级|r - 10% 几率。|n|cffffcc002级|r - 20% 几率。|n|cffffcc003级|r - 30% 几率。|n|cffffcc004级|r - 40% 几率。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "坚毅之心"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "坚毅之心 - [|cffffcc001级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "坚毅之心 - [|cffffcc002级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "坚毅之心 - [|cffffcc003级|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "坚毅之心 - [|cffffcc004级|r]"
+      "Value": "（图标）"
     },
     {
       "Level": 1,
@@ -63,14 +34,43 @@
       "Value": "使攻击有 40% 的几率恢复半径 300 内附近友方单位的生命值，数值等于英雄造成的物理伤害的 20%。"
     },
     {
-      "Id": "ansf",
+      "Level": 1,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "（图标）"
+      "Value": "坚毅之心 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "坚毅之心 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "坚毅之心 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "坚毅之心 - [|cffffcc004级|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使攻击有几率恢复半径 300 内附近友方单位的生命值，数值等于英雄造成的物理伤害的 20%。|n|n|cffffcc001级|r - 10% 几率。|n|cffffcc002级|r - 20% 几率。|n|cffffcc003级|r - 30% 几率。|n|cffffcc004级|r - 40% 几率。\n"
     },
     {
       "Id": "aret",
       "Type": 3,
       "Value": "学习坚毅之心 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "坚毅之心"
     }
   ],
   "NewId": "A0TY"

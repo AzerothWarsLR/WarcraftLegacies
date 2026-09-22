@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "升级为奥格瑞玛"
+      "Value": "（战歌）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "霜狼氏族的新家园。用于训练工人和采集资源。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（战歌）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "奥格瑞玛"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥格瑞玛"
     }
   ],
   "NewId": "o01B"

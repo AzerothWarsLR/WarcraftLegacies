@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "重生"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（中立敌对） （半神）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该单位死亡后将会复活。重生的冷却时间为 240 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "重生"
     }
   ]
 }

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "钻井平台建造船"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "一艘坚固的船只，可以建造原油钻机。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野外生物）"
     }
   ],
   "NewId": "o06G"

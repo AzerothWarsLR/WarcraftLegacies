@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯 - 苔丝）"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "投掷一把淬毒匕首，造成大量初始伤害，随后持续造成伤害。中毒单位在其持续时间内移动速度降低 75%。对单位和英雄持续 15 秒。|n|n|cffffcc00等级 1|r - <AEsh,DataE1>点直接伤害，<AEsh,DataA1>点持续伤害。 |n|cffffcc00等级 2|r - <AEsh,DataE2>点直接伤害，<AEsh,DataA2>点持续伤害。 |n|cffffcc00等级 3|r - <AEsh,DataE3>点直接伤害，<AEsh,DataA3>点持续伤害。|n|cffffcc00等级 4|r - <AEsh,DataE4>点直接伤害，<AEsh,DataA4>点持续伤害。\n"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "暗影突袭"
-    },
-    {
       "Level": 4,
-      "Id": "aub1",
+      "Id": "atp1",
       "Type": 3,
-      "Value": "向一名敌方单位投出淬毒匕首，造成<AEsh,DataE4>点初始伤害，并每<AEsh,Cast4>秒造成<AEsh,DataA4>点伤害，持续<AEsh,Dur4>秒。毒素会在持续时间内使目标单位的移动速度降低 75%。"
+      "Value": "暗影突袭 - [|cffffcc004 级|r]"
     },
     {
       "Level": 1,
@@ -39,15 +39,15 @@
       "Value": "向一名敌方单位投出淬毒匕首，造成<AEsh,DataE3>点初始伤害，并每<AEsh,Cast3>秒造成<AEsh,DataA3>点伤害，持续<AEsh,Dur3>秒。毒素会在持续时间内使目标单位的移动速度降低 75%。"
     },
     {
-      "Id": "ansf",
+      "Level": 4,
+      "Id": "aub1",
       "Type": 3,
-      "Value": "（吉尔尼斯 - 苔丝）"
+      "Value": "向一名敌方单位投出淬毒匕首，造成<AEsh,DataE4>点初始伤害，并每<AEsh,Cast4>秒造成<AEsh,DataA4>点伤害，持续<AEsh,Dur4>秒。毒素会在持续时间内使目标单位的移动速度降低 75%。"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 4,
-      "Value": "暗影突袭 - [|cffffcc004 级|r]"
+      "Value": "暗影突袭"
     }
   ]
 }

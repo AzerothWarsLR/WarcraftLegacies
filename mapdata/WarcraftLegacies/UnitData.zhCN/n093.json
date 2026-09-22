@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "特遣牧师"
+      "Value": "（暴风城）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "南方王国的圣人。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（暴风城）"
+      "Value": "特遣牧师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练特遣牧师"
     }
   ],
   "NewId": "n093"

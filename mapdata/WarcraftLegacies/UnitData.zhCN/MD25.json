@@ -5,19 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "暗矛勇士"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活洛坎"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活洛坎"
+      "Value": "（战歌）"
     },
     {
       "Id": "utip",
@@ -25,19 +15,29 @@
       "Value": "召唤洛坎"
     },
     {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "洛坎"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长破坏性和扰乱性魔法。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（战歌）"
+      "Value": "暗矛勇士"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活洛坎"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活洛坎"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "洛坎"
     }
   ],
   "NewId": "MD25"

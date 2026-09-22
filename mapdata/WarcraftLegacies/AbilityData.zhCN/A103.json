@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "巨型攻击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（德莱尼）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使该单位的攻击释放出波纹，对其前方一条直线上的敌方地面单位造成其攻击伤害 30% 的伤害。"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "巨型攻击"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "巨型攻击"
     }
   ],

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（加里维克斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "呼叫贸易亲王卫兵"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习呼叫贸易亲王卫兵 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤<A0OB,DataA4>名贸易亲王卫兵，持续<A0OB,Dur4>秒。每名卫兵都具有完美防御、嘲讽和抗性皮肤。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（加里维克斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习呼叫贸易亲王卫兵 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0OB"

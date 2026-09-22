@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "隐形术"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（德莱尼施法者建筑）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "隐形术"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "恢复魔法值"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "为地图上任意位置的一个目标单位恢复 240 点魔法值。"
     }
   ],

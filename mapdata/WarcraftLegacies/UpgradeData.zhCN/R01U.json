@@ -5,15 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "混乱"
+      "Value": "劫掠石槌"
     },
     {
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
-      "Value": "劫掠石槌"
+      "Value": "混乱"
     }
   ],
   "NewId": "R01U"

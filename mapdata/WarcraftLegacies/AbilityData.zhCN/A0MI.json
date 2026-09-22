@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "纯净灵魂"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（紫色 - 白银之手侍从）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "纯净灵魂"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "纯净灵魂"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该单位对疾病和凋零缠绕免疫，且无法被复活为亡灵。"
     }
   ],

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（塞纳留斯之魂）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "翡翠治疗"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习翡翠治疗 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -49,16 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "喷出 3 波治疗迷雾，每波为一定区域内的所有友方单位恢复 90 点生命值。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（塞纳留斯之魂）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习翡翠治疗 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0C6"

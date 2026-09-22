@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "冰霜攻击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（真实）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜攻击"
     }
   ]
 }

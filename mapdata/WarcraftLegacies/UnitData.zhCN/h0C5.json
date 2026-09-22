@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒 T3）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "圣所"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为圣所"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "主要建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（日怒 T3）"
+      "Value": "升级到圣所"
     }
   ],
   "NewId": "h0C5"

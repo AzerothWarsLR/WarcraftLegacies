@@ -5,24 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤|cffffcc00A|r阿曼尼督军"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活阿曼尼督军"
-    },
-    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活|cffffcc00A|r阿曼尼督军"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "灵巧型英雄，擅长快速消灭单体目标和迷惑敌人。可学习镜像、疾风步、致命一击和剑刃风暴。"
     },
     {
       "Id": "unsf",
@@ -38,6 +23,21 @@
       "Id": "upro",
       "Type": 3,
       "Value": "祖尔金"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活阿曼尼督军"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤|cffffcc00A|r阿曼尼督军"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长快速消灭单体目标和迷惑敌人。可学习镜像、疾风步、致命一击和剑刃风暴。"
     }
   ],
   "NewId": "o06Z"

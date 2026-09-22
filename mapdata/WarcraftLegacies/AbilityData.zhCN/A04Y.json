@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": " 生命恢复光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（都城 2）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": " 生命恢复光环"
     }
   ],
   "NewId": "A04Y"

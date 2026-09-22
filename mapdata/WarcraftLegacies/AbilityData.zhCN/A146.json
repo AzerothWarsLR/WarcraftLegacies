@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "建造迷你兵营"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（兽人部落）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "建造迷你兵营"
     }
   ],
   "NewId": "A146"

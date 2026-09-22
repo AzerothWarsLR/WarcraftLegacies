@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "猛击"
+      "Value": "（深绿色 - 准将。橙色 - 民兵）"
     },
     {
       "Level": 1,
@@ -34,9 +34,9 @@
       "Value": "该单位有 15% 的几率猛击目标，使其昏迷 1 秒，并额外造成 25 点伤害。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（深绿色 - 准将。橙色 - 民兵）"
+      "Value": "猛击"
     }
   ],
   "NewId": "A01K"

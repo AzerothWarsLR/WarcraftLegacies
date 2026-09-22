@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "装载"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（蒸汽坦克）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "装载"
     }
   ],
   "NewId": "S01H"

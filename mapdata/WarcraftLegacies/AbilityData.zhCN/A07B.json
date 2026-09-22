@@ -5,19 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "星界行走"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "将巴纳扎尔传送至目标友方地面单位或建筑。  |n|n|cffffcc001级|r - 冷却时间 45 秒，消耗 75 点法力值。 |n|cffffcc002级|r - 冷却时间 30 秒，消耗 50 点法力值。 |n|cffffcc003级|r - 冷却时间 15 秒，消耗 25 点法力值。|n|cffffcc004级|r - 无冷却时间，施放不消耗法力值。\n"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（所有恐惧魔王）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "星界行走"
     },
     {
       "Id": "aret",
@@ -25,15 +20,20 @@
       "Value": "学习星界行走 - [|cffffcc00等级 %d|r]"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将巴纳扎尔传送至目标友方地面单位或建筑。  |n|n|cffffcc001级|r - 冷却时间 45 秒，消耗 75 点法力值。 |n|cffffcc002级|r - 冷却时间 30 秒，消耗 50 点法力值。 |n|cffffcc003级|r - 冷却时间 15 秒，消耗 25 点法力值。|n|cffffcc004级|r - 无冷却时间，施放不消耗法力值。\n"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "星界行走"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "施法 3 秒后，将恐惧魔王传送至目标友方建筑。"
     }
   ],

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "工艺拙劣的机械地精近战战士。经过一段时间后自爆。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（等级 4）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "工艺拙劣的机械地精近战战士。经过一段时间后自爆。"
     },
     {
       "Id": "unam",

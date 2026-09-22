@@ -5,9 +5,15 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "疾病之云"
+      "Value": "（红色 - 清道夫）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化疾病之云"
     },
     {
       "Level": 1,
@@ -22,15 +28,9 @@
       "Value": "每次攻击都能释放出一股疾病之云。疾病之云每秒造成 2 点伤害。|n持续 120 秒。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（红色 - 清道夫）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "强化疾病之云"
+      "Value": "疾病之云"
     }
   ]
 }

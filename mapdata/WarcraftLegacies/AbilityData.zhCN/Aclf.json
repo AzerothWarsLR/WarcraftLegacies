@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "迷雾之云"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（奎尔萨拉斯 - 龙鹰骑士）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "对有远程攻击的敌方建筑施放，使其无法发动攻击。|n|cffffcc00持续<Aclf,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "迷雾之云"
     }
   ]
 }

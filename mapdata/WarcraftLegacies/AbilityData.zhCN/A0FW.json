@@ -5,10 +5,9 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "aub1",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "在目标单位周围形成一道治疗能量护盾，每秒为其周围的所有单位恢复 25 点生命值。 |n|cffffcc00持续<A0FW,Dur1>秒。\n"
+      "Value": "（达拉然 - 地卜师）"
     },
     {
       "Id": "anam",
@@ -16,15 +15,16 @@
       "Value": "闪电之盾"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（达拉然 - 地卜师）"
-    },
-    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "治疗护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在目标单位周围形成一道治疗能量护盾，每秒为其周围的所有单位恢复 25 点生命值。 |n|cffffcc00持续<A0FW,Dur1>秒。\n"
     }
   ],
   "NewId": "A0FW"

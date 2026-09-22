@@ -5,15 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "壁炉谷"
+      "Value": "任务完成：壁炉谷"
     },
     {
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
-      "Value": "任务完成：壁炉谷"
+      "Value": "壁炉谷"
     }
   ],
   "NewId": "R026"

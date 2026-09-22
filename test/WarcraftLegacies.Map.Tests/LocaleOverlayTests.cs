@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Map.Tests;
 /// <summary>
 /// A locale overlay overrides text, and nothing else.
 /// <para>
-/// A field outside <see cref="TextFields"/> holds a key or a statistic - a sound set, a model path, an id list, hit
+/// A field outside <see cref="_textFields"/> holds a key or a statistic - a sound set, a model path, an id list, hit
 /// points, a mana cost. Overriding one gives players of that language different numbers from everyone else, and
 /// conflicts with every later change to the data. Text that already reads the same as the base is just as unwanted:
 /// it overrides nothing and gets in the way.
@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Map.Tests;
 /// </summary>
 public sealed class LocaleOverlayTests
 {
-  private static readonly HashSet<string> TextFields = new(StringComparer.Ordinal)
+  private static readonly HashSet<string> _textFields = new(StringComparer.Ordinal)
   {
     "unam", "upro", "unsf", "utip", "utub", "utpr", "uawt", "ides", "iub1", "iico",
     "anam", "ansf", "aub1", "atp1", "arut", "aret", "aut1", "auu1",
@@ -23,7 +23,7 @@ public sealed class LocaleOverlayTests
     "bnam", "bsuf",
   };
 
-  private static readonly string[] OverlaidKinds =
+  private static readonly string[] _overlaidKinds =
   {
     "UnitData", "AbilityData", "UpgradeData", "ItemData", "BuffData", "DestructableData",
   };
@@ -31,21 +31,30 @@ public sealed class LocaleOverlayTests
   [Fact]
   public void OverlayOverridesTextOnly()
   {
-    var offenders = new List<string>();
+    var nonTextFields = new List<string>();
+    var nonTextValues = new List<string>();
 
     foreach (var overlay in Overlays())
     {
       foreach (var modification in Modifications(overlay.OverlayPath))
       {
-        if (!TextFields.Contains(modification.Field))
+        if (!_textFields.Contains(modification.Field))
         {
-          offenders.Add($"{overlay.Name}: {modification.Field}");
+          nonTextFields.Add($"{overlay.Name}: {modification.Field} = {modification.Value}");
+          continue;
+        }
+
+        if (!modification.IsText)
+        {
+          nonTextValues.Add($"{overlay.Name}: {modification.Field} = {modification.Value}");
         }
       }
     }
 
-    offenders.Should().BeEmpty("a locale overlay overrides text; {0} value(s) are a key or a statistic",
-      offenders.Count);
+    nonTextFields.Should().BeEmpty("a locale overlay overrides text; {0} value(s) are a key or a statistic",
+      nonTextFields.Count);
+    nonTextValues.Should().BeEmpty("even a text field holds text; {0} value(s) are not strings",
+      nonTextValues.Count);
   }
 
   [Fact]
@@ -56,6 +65,7 @@ public sealed class LocaleOverlayTests
     foreach (var overlay in Overlays())
     {
       var baseValues = Modifications(overlay.BasePath)
+        .Where(modification => modification.IsText)
         .ToDictionary(modification => (modification.Field, modification.Level), modification => modification.Value);
       if (baseValues.Values.Any(ContainsChinese))
       {
@@ -81,7 +91,7 @@ public sealed class LocaleOverlayTests
   {
     var mapData = Path.Combine(RepositoryRoot(), "mapdata", "WarcraftLegacies");
 
-    foreach (var kind in OverlaidKinds)
+    foreach (var kind in _overlaidKinds)
     {
       var overlayDirectory = Path.Combine(mapData, kind + ".zhCN");
       if (!Directory.Exists(overlayDirectory))
@@ -97,7 +107,15 @@ public sealed class LocaleOverlayTests
     }
   }
 
-  private static IEnumerable<(string Field, int? Level, string Value)> Modifications(string path)
+  /// <summary>
+  /// Every modification a record states, with the value read as text.
+  /// <para>
+  /// An entry that carries no string value is still yielded, holding the value's JSON spelling: a statistic written
+  /// as a number rather than a string is exactly what this test is here to catch, and skipping it would let one
+  /// through.
+  /// </para>
+  /// </summary>
+  private static IEnumerable<(string Field, int? Level, string Value, bool IsText)> Modifications(string path)
   {
     if (!File.Exists(path))
     {
@@ -112,9 +130,7 @@ public sealed class LocaleOverlayTests
 
     foreach (var modification in modifications.EnumerateArray())
     {
-      if (!modification.TryGetProperty("Id", out var id) ||
-          !modification.TryGetProperty("Value", out var value) ||
-          value.ValueKind != JsonValueKind.String)
+      if (!modification.TryGetProperty("Id", out var id))
       {
         continue;
       }
@@ -124,7 +140,10 @@ public sealed class LocaleOverlayTests
         ? levelElement.GetInt32()
         : (int?)null;
 
-      yield return (id.GetString() ?? "", level, value.GetString() ?? "");
+      var hasValue = modification.TryGetProperty("Value", out var value);
+      var isText = hasValue && value.ValueKind == JsonValueKind.String;
+
+      yield return (id.GetString() ?? "", level, hasValue ? value.ToString() : "", isText);
     }
   }
 

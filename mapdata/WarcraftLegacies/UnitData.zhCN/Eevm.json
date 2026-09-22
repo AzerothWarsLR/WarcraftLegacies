@@ -5,14 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤伊利丹"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "伊利丹·怒风"
+      "Value": "（变形 - 等级 1 - 伊利达雷）"
     },
     {
       "Id": "uawt",
@@ -20,19 +15,24 @@
       "Value": "复活恶魔猎手"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤伊利丹"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "致命英雄，擅长冲入战团并斩杀关键目标。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（变形 - 等级 1 - 伊利达雷）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "恶魔猎手"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "伊利丹·怒风"
     }
   ]
 }

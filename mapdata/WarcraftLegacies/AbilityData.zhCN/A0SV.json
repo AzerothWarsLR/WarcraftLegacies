@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（戈德林）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "白狼之怒"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习白狼之怒 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使该单位的攻击速度提高<A0SV,DataB4,%>%，移动速度提高<A0SV,DataA4,%>%，但受到的伤害增加<A0SV,DataC4,%>%。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（戈德林）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习白狼之怒 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0SV"

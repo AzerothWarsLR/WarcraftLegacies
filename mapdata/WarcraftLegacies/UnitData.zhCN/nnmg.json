@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "赎罪的上层精灵"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "远程施法单位。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（哨兵）"
     }
   ]
 }

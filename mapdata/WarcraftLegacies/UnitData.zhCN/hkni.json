@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "骑士"
+      "Value": "（洛丹伦）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "强大的骑乘战士。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（洛丹伦）"
+      "Value": "骑士"
     }
   ]
 }

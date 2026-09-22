@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "永久献祭"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "永久献祭"
     }
   ],
   "NewId": "A0A2"

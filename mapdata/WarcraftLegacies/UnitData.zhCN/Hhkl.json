@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "吉恩·格雷迈恩"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "吉尔尼斯国王"
     },
     {
-      "Id": "utpr",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "复活吉恩·格雷迈恩"
+      "Value": "（吉尔尼斯）"
     },
     {
       "Id": "utip",
@@ -20,24 +25,19 @@
       "Value": "召唤吉恩"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活吉恩·格雷迈恩"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，极具攻击性的英雄，擅长扰乱敌人。"
     },
     {
-      "Id": "upro",
+      "Id": "utpr",
       "Type": 3,
-      "Value": "吉恩·格雷迈恩"
+      "Value": "复活吉恩·格雷迈恩"
     },
     {
-      "Id": "unsf",
+      "Id": "uawt",
       "Type": 3,
-      "Value": "（吉尔尼斯）"
+      "Value": "复活吉恩·格雷迈恩"
     }
   ]
 }

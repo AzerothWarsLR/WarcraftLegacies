@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "战斗法师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "接受过近身自卫术训练的战斗法师。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然）"
     }
   ],
   "NewId": "h032"

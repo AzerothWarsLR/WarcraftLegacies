@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "库卡隆精英"
+      "Value": "（兽人部落-精英）"
     },
     {
       "Id": "utip",
@@ -20,9 +20,9 @@
       "Value": "兽人部落的精英卫兵。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落-精英）"
+      "Value": "库卡隆精英"
     }
   ],
   "NewId": "n03F"

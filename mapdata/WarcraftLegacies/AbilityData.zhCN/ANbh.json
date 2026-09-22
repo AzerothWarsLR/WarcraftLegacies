@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "猛击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（紫色资深圣骑士 - 皇家卫队 - 范达尔）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "攻击有 25% 的几率造成 25 点额外伤害，并使目标昏迷 2 秒（英雄为 0.5 秒）。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "猛击"
     }
   ]
 }

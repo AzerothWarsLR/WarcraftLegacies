@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤巨型海龟 |cffffcc00F|r"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "中型远程两栖单位，其带刺甲壳会伤害近战攻击它的敌人。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练巨型海龟 |cffffcc00F|r"
     },
     {
       "Id": "unam",

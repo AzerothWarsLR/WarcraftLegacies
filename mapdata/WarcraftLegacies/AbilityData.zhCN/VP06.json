@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "虔诚光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（贸易站）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虔诚光环"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "收入"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "每分钟给予 10 黄金。"
     }
   ],

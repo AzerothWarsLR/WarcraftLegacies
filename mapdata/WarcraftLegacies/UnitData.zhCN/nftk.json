@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练督军"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "达卡莱部族的致命领袖。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "督军"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练督军"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "达卡莱部族的致命领袖。"
     }
   ]
 }

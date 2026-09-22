@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "元帅"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "南方人类军队的指挥官。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城）"
     }
   ],
   "NewId": "h03K"

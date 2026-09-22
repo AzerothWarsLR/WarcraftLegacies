@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练凤凰"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（血法师召唤）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练凤凰"
     },
     {
       "Id": "unam",

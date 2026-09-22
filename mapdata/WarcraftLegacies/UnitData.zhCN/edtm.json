@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 风暴乌鸦）"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "训练猛禽德鲁伊"
@@ -13,11 +18,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "机动灵活的施法单位。可施放精灵之火和暗夜精灵形态。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊 - 风暴乌鸦）"
     },
     {
       "Id": "unam",

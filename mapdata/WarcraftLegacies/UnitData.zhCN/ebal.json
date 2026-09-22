@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "刃车"
+      "Value": "（哨兵）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "哨兵的优雅攻城武器。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（哨兵）"
+      "Value": "刃车"
     }
   ]
 }

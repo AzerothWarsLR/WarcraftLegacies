@@ -5,24 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "食人魔碾压者"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "魁梧的食人魔，可在近距离砸碎敌人。硬化体肤赋予其额外护甲。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（牛头人部族）"
     },
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔碾压者"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "训练食人魔碾压者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "魁梧的食人魔，可在近距离砸碎敌人。硬化体肤赋予其额外护甲。"
     }
   ],
   "NewId": "vP58"

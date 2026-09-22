@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "吸血光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（中立敌对。青色？）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "吸血光环"
     }
   ]
 }

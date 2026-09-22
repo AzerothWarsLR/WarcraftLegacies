@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "女猎手"
+      "Value": "（哨兵）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "骑乘作战的哨兵战士。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（哨兵）"
+      "Value": "女猎手"
     }
   ]
 }

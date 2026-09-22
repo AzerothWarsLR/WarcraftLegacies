@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "死誓"
+      "Value": "（伊利达雷）"
     },
     {
       "Id": "utip",
@@ -20,9 +20,9 @@
       "Value": "基础前线战士。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（伊利达雷）"
+      "Value": "死誓"
     }
   ]
 }

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "洛丹伦国王之剑"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（国王阿尔萨斯）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "洛丹伦国王之剑"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "洛丹伦国王之剑"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "由他父亲特别锻造的这把剑赋予阿尔萨斯力量，使他能将 40% 的伤害施加于主要攻击目标附近的敌人。"
     }
   ],

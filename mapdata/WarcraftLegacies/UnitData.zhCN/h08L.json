@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "骑兵"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "为血色大业而战的十字军骑士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（血色）"
     }
   ],
   "NewId": "h08L"

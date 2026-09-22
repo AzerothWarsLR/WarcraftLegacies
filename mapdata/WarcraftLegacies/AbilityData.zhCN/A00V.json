@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "奥术燃烧"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（橙色 - 肯瑞托）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "奥术燃烧"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥术燃烧"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "以奥术能量侵蚀一个敌方单位，每秒造成 60 点伤害，阻止其施放法术，并使其攻击力降低 50%。|n|n对单位持续 20 秒，对英雄持续 6 秒。"
     }
   ],

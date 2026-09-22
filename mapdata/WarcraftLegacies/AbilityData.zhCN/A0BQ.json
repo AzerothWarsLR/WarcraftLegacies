@@ -5,14 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "使该英雄的攻击向附近的敌方单位发射额外的投射物。|n|n|cffffcc001级|r - 攻击最多可攻击 3 个额外单位。|n|cffffcc002级|r - 攻击最多可攻击 4 个额外单位。|n|cffffcc003级|r - 攻击最多可攻击 5 个额外单位。|n|cffffcc004级|r - 攻击最多可攻击 6 个额外单位。\n"
+      "Value": "（麦迪文）"
     },
     {
       "Id": "anam",
       "Type": 3,
       "Value": "火箭弹幕"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "使该英雄的攻击向附近的敌方单位发射额外的投射物。|n|n|cffffcc001级|r - 攻击最多可攻击 3 个额外单位。|n|cffffcc002级|r - 攻击最多可攻击 4 个额外单位。|n|cffffcc003级|r - 攻击最多可攻击 5 个额外单位。|n|cffffcc004级|r - 攻击最多可攻击 6 个额外单位。\n"
     },
     {
       "Level": 1,
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使该英雄的攻击向最多 6 个附近的敌方单位发射额外投射物。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（麦迪文）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0BQ"

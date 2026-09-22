@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（血骑士侍从）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "烈焰之剑"
@@ -14,6 +19,12 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "烈焰之剑"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烈焰之剑 - [|cffffcc002级|r]"
     },
     {
       "Level": 1,
@@ -26,17 +37,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "对敌人进行攻击时增加<A057,DataA2>点额外伤害，但每次攻击都会消耗法力。"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "烈焰之剑 - [|cffffcc002级|r]"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（血骑士侍从）"
     }
   ],
   "NewId": "A0BW"

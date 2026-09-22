@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "召唤驻军"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（洛丹伦）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤驻军"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤驻军"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤<A0GA,DataB1>个民兵，持续<A0GA,Dur1>秒。"
     }
   ],

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "猎头者"
+      "Value": "（兽人部落）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "多才多艺的神射手，部落的忠实信徒。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（兽人部落）"
+      "Value": "猎头者"
     }
   ]
 }

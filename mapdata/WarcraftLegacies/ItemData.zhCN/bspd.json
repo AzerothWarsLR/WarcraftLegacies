@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "速度之靴"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "装备时使英雄的移动速度提高<AIms,DataA1>。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "速度之靴"
     }
   ]
 }

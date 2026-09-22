@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "防御"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（卡兹莫丹 - 防御者）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "激活后有<Adef,DataF1>% 的几率将穿刺攻击反弹给攻击者，对未被反弹的攻击也只承受<Adef,DataA1,%>% 的伤害，并使魔法伤害降低 20%。防御激活期间，移动速度降低<Adef,DataC1,%>%。"
     },
     {
+      "Level": 1,
       "Id": "auu1",
       "Type": 3,
-      "Level": 1,
       "Value": "取消后可恢复正常移动速度，但会受到穿刺与魔法攻击的正常伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "防御"
     }
   ],
   "NewId": "A0B8"

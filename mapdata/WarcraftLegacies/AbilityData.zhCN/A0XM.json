@@ -5,21 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "狂乱"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "狂乱 - [|cffffcc002级|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "狂乱 - [|cffffcc001级|r]"
+      "Value": "（自身施法 - 战歌）"
     },
     {
       "Level": 1,
@@ -29,26 +17,38 @@
     },
     {
       "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狂乱 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
       "Value": "该单位的攻击速度提升<A0XM,DataA2,%>%，移动速度提升<A0XM,DataB2,%>%，持续<A0EH,Dur1>秒。"
     },
     {
-      "Id": "ansf",
+      "Level": 1,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "（自身施法 - 战歌）"
+      "Value": "狂乱 - [|cffffcc001级|r]"
     },
     {
+      "Level": 2,
       "Id": "aut1",
       "Type": 3,
-      "Level": 2,
       "Value": "|cffc3dbff点击右键以激活自动施法。|r"
     },
     {
+      "Level": 2,
       "Id": "auu1",
       "Type": 3,
-      "Level": 2,
       "Value": "|cffc3dbff点击右键以取消自动施法。|r"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "狂乱"
     }
   ],
   "NewId": "A0XM"

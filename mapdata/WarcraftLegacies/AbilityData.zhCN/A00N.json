@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "翡翠烈焰"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（德鲁伊）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "翡翠烈焰"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "翡翠烈焰"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该单位的攻击会点燃地面，对区域内的单位造成持续伤害。"
     }
   ],

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "哈卡之血"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（沉没的神庙）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "哈卡之血"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "哈卡之血"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使友方单位获得每秒<A0MR,DataB1>点生命值的额外生命回复速度（半径<A0MR,Area1>）。"
     }
   ],

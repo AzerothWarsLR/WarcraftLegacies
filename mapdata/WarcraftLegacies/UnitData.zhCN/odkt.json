@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "艾瑞达秘术师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "效力于玛瑟里顿的强大艾瑞达术士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（邪能）"
     }
   ]
 }

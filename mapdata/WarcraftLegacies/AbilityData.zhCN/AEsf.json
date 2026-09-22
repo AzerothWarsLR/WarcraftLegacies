@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（泰兰德）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习星辰坠落 - [|cffffcc00等级 %d|r]"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。|n持续<AEsf,Dur1>秒。|n|n|cffffcc00等级 1|r - 45 点伤害。|n|cffffcc00等级 2|r - 60 点伤害。|n|cffffcc00等级 3|r - 80 点伤害。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "星辰坠落"
     },
     {
       "Level": 1,
@@ -51,14 +56,9 @@
       "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。每波造成 85 点伤害。|n持续<AEsf,Dur3>秒。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（泰兰德）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习星辰坠落 - [|cffffcc00等级 %d|r]"
+      "Value": "星辰坠落"
     }
   ]
 }

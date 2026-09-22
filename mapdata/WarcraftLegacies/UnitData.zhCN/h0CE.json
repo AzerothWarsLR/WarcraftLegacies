@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "血骑士侍从"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "灌注圣光的战士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（日怒）"
     }
   ],
   "NewId": "h0CE"

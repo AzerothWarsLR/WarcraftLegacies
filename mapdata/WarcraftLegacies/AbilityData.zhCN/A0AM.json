@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "顺劈斩"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(25%)(暴风城勇士"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该单位的攻击力道极大，其 25% 的伤害会波及主要攻击目标附近的敌人。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "顺劈斩"
     }
   ],
   "NewId": "A0AM"

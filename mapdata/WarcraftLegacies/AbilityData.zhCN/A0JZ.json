@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "反噬"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（德莱尼）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该单位的攻击每次命中会焚毁 10 点法力值（对英雄为 30 点），并对被攻击单位造成等同于所焚毁法力值的伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反噬"
     }
   ],
   "NewId": "A0JZ"

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造车间"
+      "Value": "（库尔提拉斯专家）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "攻城武器生产建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（库尔提拉斯专家）"
+      "Value": "建造车间"
     },
     {
       "Id": "unam",

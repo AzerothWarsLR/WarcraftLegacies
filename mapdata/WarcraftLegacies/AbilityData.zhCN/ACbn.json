@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "放逐"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（中立敌对） （麦迪文）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "放逐"
     }
   ]
 }

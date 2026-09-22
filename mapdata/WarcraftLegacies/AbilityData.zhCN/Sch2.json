@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "货舱"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 清道夫）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "货舱"
     }
   ]
 }

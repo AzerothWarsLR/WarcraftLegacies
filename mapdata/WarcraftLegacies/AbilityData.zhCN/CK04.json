@@ -15,15 +15,15 @@
       "Value": "（德鲁伊 - 塞纳留斯）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤森林蜘蛛"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤 3 只拥有蛛网和毒性攻击的蜘蛛。|n持续<ACs7,Dur1>秒。|n|n|cffffcc00能攻击地面单位。|r"
     }
   ],

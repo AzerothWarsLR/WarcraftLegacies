@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "永久献祭"
+      "Value": "（地狱火 2级）"
     },
     {
       "Level": 1,
@@ -22,9 +22,9 @@
       "Value": "灼烧周围的敌方单位，每秒造成 20 点伤害。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（地狱火 2级）"
+      "Value": "永久献祭"
     }
   ],
   "NewId": "A04Q"

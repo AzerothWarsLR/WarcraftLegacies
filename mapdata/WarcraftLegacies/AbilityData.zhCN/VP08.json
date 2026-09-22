@@ -5,38 +5,38 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团精英）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "闪避"
     },
     {
       "Level": 1,
-      "Id": "aub1",
+      "Id": "atp1",
       "Type": 3,
-      "Value": "使该单位每次对敌人造成伤害时恢复少量生命值。效果随升级提升。"
+      "Value": "闪避 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "使该单位每次对敌人造成伤害时恢复少量生命值。效果随升级提升。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（军团精英）"
-    },
-    {
       "Id": "atp1",
       "Type": 3,
+      "Value": "闪避 - [|cffffcc002级|r]"
+    },
+    {
       "Level": 1,
-      "Value": "吸血虹吸 - [|cffffcc001级|r]"
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位每次对敌人造成伤害时恢复少量生命值。效果随升级提升。"
     },
     {
-      "Id": "atp1",
-      "Type": 3,
       "Level": 2,
-      "Value": "吸血虹吸 - [|cffffcc002级|r]"
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位每次对敌人造成伤害时恢复少量生命值。效果随升级提升。"
     }
   ],
   "NewId": "VP08"

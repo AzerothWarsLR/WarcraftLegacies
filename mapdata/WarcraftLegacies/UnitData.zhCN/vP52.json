@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "食人魔领主"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "食人魔的勇士。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（牛头人部族 - 精英）"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练食人魔勇士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "食人魔的勇士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔领主"
     }
   ],
   "NewId": "vP52"

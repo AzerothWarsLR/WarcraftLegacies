@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "修补匠"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "精通科技的地精。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野外生物）"
     }
   ],
   "NewId": "o04Q"

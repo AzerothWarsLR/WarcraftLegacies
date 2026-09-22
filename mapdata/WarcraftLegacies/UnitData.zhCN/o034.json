@@ -15,6 +15,11 @@
       "Value": "|cff2fc6ba防御塔|r"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造了望塔"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "了望塔"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "轻型两栖近战单位。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（纳因图斯召唤）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型两栖近战单位。"
     },
     {
       "Id": "unam",

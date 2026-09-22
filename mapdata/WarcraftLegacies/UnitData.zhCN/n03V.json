@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练海元素"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "轻型远程单位。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（库尔提拉斯 - 潮汐贤者）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "海元素"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练海元素"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程单位。"
     }
   ],
   "NewId": "n03V"

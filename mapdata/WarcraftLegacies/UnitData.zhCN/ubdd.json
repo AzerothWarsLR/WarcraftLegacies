@@ -5,14 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "复活萨菲隆"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "萨菲隆"
+      "Value": "（天灾 - 准英雄）"
     },
     {
       "Id": "utub",
@@ -20,9 +15,14 @@
       "Value": "飞行准英雄，擅长造成范围伤害并使建筑失效。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（天灾 - 准英雄）"
+      "Value": "训练萨菲隆"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "萨菲隆"
     }
   ]
 }

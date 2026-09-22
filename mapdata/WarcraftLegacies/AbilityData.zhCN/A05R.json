@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "治疗护盾"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（铁炉堡 - 符文牧师）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "治疗护盾"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "治疗护盾"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "在目标单位周围形成一道治疗能量护盾，每秒为其周围的所有单位恢复 25 点生命值。持续<A05R,Dur1>秒。"
     }
   ],

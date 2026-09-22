@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "护盾符文"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（黄色符文祭司）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "护盾符文"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "护盾符文"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使目标友方单位的护甲提高 10 点。|n持续 60 秒。"
     }
   ],

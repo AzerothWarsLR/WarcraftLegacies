@@ -12,17 +12,17 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "(|cffffff00Z|r)升级到强化灵魂之塔"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "强化防御建筑。"
+      "Value": "升级到|cffffff00Z|r强化灵魂之塔"
     },
     {
       "Id": "unsf",
       "Type": 3,
       "Value": "（燃烧军团 防御塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强化防御建筑。"
     }
   ],
   "NewId": "u00I"

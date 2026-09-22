@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "教士"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "奎尔萨拉斯派往南方诸王国的传教士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城）"
     }
   ],
   "NewId": "h00J"

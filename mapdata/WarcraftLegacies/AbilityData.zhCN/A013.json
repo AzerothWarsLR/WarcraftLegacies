@@ -5,9 +5,43 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿纳斯特瑞安）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习吞噬魔法 - [|cffffcc00%d 级|r]"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "吞噬区域内单位身上的所有魔法增益，每吞噬一个单位便为施法者恢复魔法值和生命值。效果范围与对召唤单位造成的伤害随等级提升。|r|n|n|cffffcc001级|r - 恢复 30 点魔法值和生命值，效果范围 200，对召唤单位造成 300 点伤害。|n|cffffcc002级|r - 恢复 45 点魔法值和生命值，效果范围 225，对召唤单位造成 400 点伤害。|n|cffffcc003级|r - 恢复 60 点魔法值和生命值，效果范围 250，对召唤单位造成 500 点伤害。|n|cffffcc004级|r - 恢复 75 点魔法值和生命值，效果范围 275，对召唤单位造成 600 点伤害。\n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "吞噬魔法 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "吞噬魔法 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "吞噬魔法 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "吞噬魔法 - [|cffffcc004 级|r]"
     },
     {
       "Level": 1,
@@ -37,40 +71,6 @@
       "Id": "anam",
       "Type": 3,
       "Value": "吞噬魔法"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "吞噬魔法 - [|cffffcc001 级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "吞噬魔法 - [|cffffcc002 级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "吞噬魔法 - [|cffffcc003 级|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "吞噬魔法 - [|cffffcc004 级|r]"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿纳斯特瑞安）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习吞噬魔法 - [|cffffcc00%d 级|r]"
     }
   ],
   "NewId": "A013"

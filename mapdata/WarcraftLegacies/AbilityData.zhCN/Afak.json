@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "毁灭宝珠"
+      "Value": "（红色 - 毁灭者）"
     },
     {
       "Level": 1,
@@ -34,9 +34,9 @@
       "Value": "使该单位的攻击增加<Afak,DataA2>点额外伤害，并使其攻击造成范围伤害。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（红色 - 毁灭者）"
+      "Value": "毁灭宝珠"
     }
   ]
 }

@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造圣光祭坛"
+      "Value": "（德莱尼 祭坛）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "召唤英雄和准英雄。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德莱尼 祭坛）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "圣光祭坛"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造圣光祭坛"
     }
   ],
   "NewId": "o058"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 T2-血魔）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "恶魔卫士恶魔之门"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为恶魔卫士恶魔之门"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "与燃烧远征的恶魔卫士调谐的传送门，每 60 秒召唤 2 个。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（邪能 T2-血魔）"
+      "Value": "升级到恶魔卫士恶魔之门"
     }
   ],
   "NewId": "n05R"

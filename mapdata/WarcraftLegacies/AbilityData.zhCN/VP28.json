@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡 - 达格兰）"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "对敌方单位吐出锥形火焰，造成伤害。 |n|cffffcc00带有 |cff99ccff酩酊酒雾|r|cffffcc00 效果的单位被 |cff99ccff火焰之息|r|cffffcc00 击中时会被点燃，并持续受到燃烧伤害。|r |n|n|cffffcc001级|r - <VP28,DataA1>点初始伤害，每秒<VP28,DataE1>点伤害。 |n|cffffcc002级|r - <VP28,DataA2>点初始伤害，每秒<VP28,DataE2>点伤害。 |n|cffffcc003级|r - <VP28,DataA3>点初始伤害，每秒<VP28,DataE3>点伤害。 |n|cffffcc004级|r - <VP28,DataA4>点初始伤害，每秒<VP28,DataE4>点伤害。\n"
@@ -37,11 +42,6 @@
       "Id": "anam",
       "Type": 3,
       "Value": "火焰之息"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（铁炉堡 - 达格兰）"
     }
   ],
   "NewId": "VP28"

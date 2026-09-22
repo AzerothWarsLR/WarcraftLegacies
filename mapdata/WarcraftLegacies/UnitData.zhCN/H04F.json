@@ -5,19 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "大法师"
     },
     {
-      "Id": "utpr",
+      "Id": "upro",
       "Type": 3,
-      "Value": "复活大法师"
-    },
-    {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活大法师"
+      "Value": "大魔导师罗曼斯"
     },
     {
       "Id": "utip",
@@ -25,19 +25,19 @@
       "Value": "召唤罗曼斯"
     },
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大法师"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大法师"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长辅助魔法。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯）"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "大魔导师罗曼斯"
     }
   ],
   "NewId": "H04F"

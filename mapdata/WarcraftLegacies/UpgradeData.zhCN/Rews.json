@@ -5,15 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究 |cffffcc00R|r 月井之春"
+    },
+    {
       "Id": "gnam",
       "Type": 3,
       "Value": "月井之春"
-    },
-    {
-      "Id": "gtp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "研究 |cffffcc00R|r 月井之春"
     }
   ]
 }

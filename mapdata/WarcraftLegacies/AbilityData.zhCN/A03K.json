@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "永久献祭"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（标准）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "永久献祭"
     }
   ],
   "NewId": "A03K"

@@ -6,32 +6,32 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（阿拉索 - T2）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "斯托姆加德法师"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究斯托姆加德法师"
+    },
+    {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "来自斯托姆加德法师的教导使 |cffcece00特遣牧师|r 能够使用 |cffcece00法力燃烧|r。|n|n|cffcece00法力燃烧|r - 射出一道负能量箭矢，最多燃烧目标敌方单位 55 点法力值。燃烧的法力会爆燃，造成等同于所燃烧法力值的伤害。|n|n使 |cffcece00特遣牧师 |r和 |cffcece00特遣牧师|r 额外获得 +5 点伤害。\n"
+      "Value": "来自斯托姆加德牧师的教导使 |cffcece00牧师|r 能够使用 |cffcece00法力燃烧|r。|n|n|cffcece00法力燃烧|r - 射出一道负能量箭矢，最多燃烧目标敌方单位 55 点法力值。燃烧的法力会爆燃，造成等同于所燃烧法力值的伤害。|n|n使 |cffcece00牧师 |r和 |cffcece00牧师|r 额外获得 +5 点伤害。\n"
     },
     {
       "Id": "gnam",
       "Type": 3,
       "Value": "魔法岗哨"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（阿拉索 - T2）"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Level": 1,
-      "Value": "斯托姆加德法师"
-    },
-    {
-      "Id": "gtp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "研究斯托姆加德法师"
     }
   ],
   "NewId": "R03V"

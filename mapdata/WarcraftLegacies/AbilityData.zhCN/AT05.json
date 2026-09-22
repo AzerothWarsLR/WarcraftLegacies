@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "虔诚光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "虔诚光环"
     }
   ],
   "NewId": "AT05"

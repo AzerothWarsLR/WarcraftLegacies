@@ -8,6 +8,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（牛头人部族 伏兵）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "半人马弓箭手"
     }
   ],
   "NewId": "otca"

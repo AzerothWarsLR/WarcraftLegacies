@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造宝库"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "创建一个可购买物品的商店。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪能 商店）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "宝库"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造宝库"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
     }
   ],
   "NewId": "u00Q"

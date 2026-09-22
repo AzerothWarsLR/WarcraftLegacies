@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "余烬牧师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "圣光的忠实而坚定的信徒。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯）"
     }
   ],
   "NewId": "n09A"

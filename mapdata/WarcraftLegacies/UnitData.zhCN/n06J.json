@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造哨兵前哨"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "主要建筑。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵 T1）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "哨兵前哨"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造哨兵前哨"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
     }
   ],
   "NewId": "n06J"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "驱散枯萎（大）"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（若干建筑）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "驱散枯萎（大）"
     }
   ]
 }

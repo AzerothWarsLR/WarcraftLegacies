@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造奥伯丁"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "暗夜精灵在黑海岸的主要文明中心。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵其他）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "奥伯丁"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥伯丁"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暗夜精灵在黑海岸的主要文明中心。"
     }
   ],
   "NewId": "e00J"

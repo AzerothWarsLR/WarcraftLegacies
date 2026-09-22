@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "向敌人投掷巨石的强力近战单位。对法术免疫。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（达拉然-石制符记）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "向敌人投掷巨石的强力近战单位。对法术免疫。"
     },
     {
       "Id": "unam",

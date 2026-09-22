@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "女祭司武器"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（哨兵 - 女祭司）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "女祭司武器"
     }
   ],
   "NewId": "A07H"

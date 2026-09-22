@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "通往诺森德的传送门"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（燃烧军团）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "通往诺森德的传送门"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "通往诺森德的传送门"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "开启一道通往诺森德的双向传送门。传送门将在 10 秒后可以使用，并在施法者停止引导 5 秒后关闭。"
     }
   ],

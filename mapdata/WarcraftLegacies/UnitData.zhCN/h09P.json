@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "长弓手"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "提瑞斯法技艺高超的猎人。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（血色）"
     }
   ],
   "NewId": "h09P"

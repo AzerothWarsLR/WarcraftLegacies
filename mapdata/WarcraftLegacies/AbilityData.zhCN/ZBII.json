@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "无尽影响"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（克苏恩）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "无尽影响"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "无尽影响"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该英雄可以在你控制的任一英雄周围 800 码范围内的任意位置施放其技能。"
     }
   ],

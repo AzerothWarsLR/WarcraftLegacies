@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（淡蓝色 - 珊蒂斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "哨兵战旗"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习哨兵战旗 (|cffffcc00E|r) - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "放置一面战旗，为战旗旁的友方单位提供 30% 额外伤害。影响范围为 300。|n持续<AOsw,Dur4>秒"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（淡蓝色 - 珊蒂斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习哨兵战旗 (|cffffcc00E|r) - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0L9"

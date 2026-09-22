@@ -5,9 +5,15 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "反魔法护罩"
+      "Value": "（天灾） - 女妖）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化反魔法护罩"
     },
     {
       "Level": 2,
@@ -22,15 +28,9 @@
       "Value": "创造一道屏障，使目标单位免受 675 点法术、召唤或魔法伤害。|n持续<Aam2,Dur1>秒。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（天灾） - 女妖）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "强化反魔法护罩"
+      "Value": "反魔法护罩"
     }
   ]
 }

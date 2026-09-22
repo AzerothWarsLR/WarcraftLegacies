@@ -8,6 +8,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "（达拉然攻城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "传送门"
     }
   ],
   "NewId": "n0AO"

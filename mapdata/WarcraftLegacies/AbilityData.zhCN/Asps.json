@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "法术窃取"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（奎尔萨拉斯 - 破法者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术窃取"
     }
   ]
 }

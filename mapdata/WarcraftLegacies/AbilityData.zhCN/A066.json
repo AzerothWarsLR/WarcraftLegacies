@@ -5,14 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "降低所有受到的攻击伤害。攻击伤害无法降低至<A066,DataB1>点以下。 |n|n|cffffcc001级|r - 格挡<A066,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A066,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A066,DataC3>点伤害。 |n|cffffcc004级|r - 格挡<A066,DataC4>点伤害。\n"
+      "Value": "（雷克萨，佐诺兹）"
     },
     {
       "Id": "anam",
       "Type": 3,
       "Value": "硬化体肤"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习硬化 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "降低所有受到的攻击伤害。攻击伤害无法降低至<A066,DataB1>点以下。 |n|n|cffffcc001级|r - 格挡<A066,DataC1>点伤害。|n|cffffcc002级|r - 格挡<A066,DataC2>点伤害。|n|cffffcc003级|r - 格挡<A066,DataC3>点伤害。 |n|cffffcc004级|r - 格挡<A066,DataC4>点伤害。\n"
     },
     {
       "Level": 1,
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使受到的所有攻击伤害降低<A066,DataC4>点。攻击伤害无法降低至<A066,DataB4>点以下。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（雷克萨，佐诺兹）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习硬化 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A066"

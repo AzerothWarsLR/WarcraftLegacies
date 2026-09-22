@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "奥术歼灭者"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "攻城单位，可以变形成无法移动的远程炮台。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（奎尔萨拉斯）"
     }
   ],
   "NewId": "e024"

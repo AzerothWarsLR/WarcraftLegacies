@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "石像形态"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 石像鬼）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "将石像鬼变成一座雕像，获得法术免疫和额外护甲，并且拥有每秒 8 点的生命恢复速度。|n在此形态下石像鬼无法攻击。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "石像形态"
     }
   ]
 }

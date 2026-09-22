@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "剑士"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "阿拉索的士兵，随时准备保卫他的国家。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城）"
     }
   ],
   "NewId": "h02O"

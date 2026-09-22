@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "恶魔汇聚"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（聚焦恶魔之门 - 邪部落 假单位）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "恶魔汇聚"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "恶魔汇聚"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使你在外域恶魔之门中生成的单位改为从该建筑中出现。"
     }
   ],

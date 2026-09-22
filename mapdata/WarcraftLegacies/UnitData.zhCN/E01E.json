@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活上古守护者"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "上古守护者"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤戈德林"
     },
     {
       "Id": "utpr",
@@ -20,14 +25,9 @@
       "Value": "复活上古守护者"
     },
     {
-      "Id": "uawt",
+      "Id": "utip",
       "Type": 3,
-      "Value": "复活上古守护者"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "戈德林"
+      "Value": "召唤戈德林"
     },
     {
       "Id": "utub",
@@ -35,9 +35,9 @@
       "Value": "战斗型英雄，擅长近身战斗并增强附近的友军。"
     },
     {
-      "Id": "unsf",
+      "Id": "upro",
       "Type": 3,
-      "Value": "（吉尔尼斯）"
+      "Value": "戈德林"
     }
   ],
   "NewId": "E01E"

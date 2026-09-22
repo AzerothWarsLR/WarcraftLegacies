@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（橙色 - 戴林，紫色 - 加里索斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "强力守护"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习强力守护 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使受到的所有攻击伤害降低<A04K,DataC4>点。攻击伤害无法降低至<A04K,DataB4>点以下。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（橙色 - 戴林，紫色 - 加里索斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习强力守护 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A04K"

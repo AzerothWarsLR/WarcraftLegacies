@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "反噬"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（塞尔萨玛）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "攻击每命中一次销毁<Afbb,DataA1>点法力值。这些法力将会燃烧，对被攻击单位造成伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反噬"
     }
   ]
 }

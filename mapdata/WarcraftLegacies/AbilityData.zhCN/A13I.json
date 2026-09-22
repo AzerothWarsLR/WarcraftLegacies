@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（自身施放 - 地精攻城行者）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "溢流"
@@ -14,6 +19,12 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "溢流"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "溢流 - [|cffffcc002级|r]"
     },
     {
       "Level": 1,
@@ -26,17 +37,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使该单位的攻击速度提高<A0EH,DataA2,%>%，移动速度提高<A0EH,DataB2,%>%，持续<A0EH,Dur2>秒。"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "溢流 - [|cffffcc002级|r]"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（自身施放 - 地精攻城行者）"
     }
   ],
   "NewId": "A13I"

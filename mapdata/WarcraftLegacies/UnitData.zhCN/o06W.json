@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤迦尔达拉"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活巫医"
-    },
-    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活巫医"
@@ -33,6 +23,16 @@
       "Id": "upro",
       "Type": 3,
       "Value": "迦尔达拉"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活巫医"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤迦尔达拉"
     }
   ],
   "NewId": "o06W"

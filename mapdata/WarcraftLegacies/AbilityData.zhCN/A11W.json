@@ -11,38 +11,9 @@
     },
     {
       "Level": 4,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "制造一座能自动生产发条地精的工厂。|n|n发条地精具有 1050 点生命值和 37 - 39 点攻击力，还能在死亡时爆炸，对周围的敌方单位最多造成 180 点伤害。|n工厂持续 40 秒。 |n|n|cffffcc00发条地精只能攻击地面单位。|r\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "毒云术"
-    },
-    {
-      "Level": 4,
       "Id": "atp1",
       "Type": 3,
       "Value": "毒云术 - [|cffffcc004 级|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "毒云术 - [|cffffcc001 级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "毒云术 - [|cffffcc002 级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "毒云术 - [|cffffcc003 级|r]"
     },
     {
       "Level": 1,
@@ -63,14 +34,43 @@
       "Value": "召唤一团无法移动的剧毒废料。只要敌人停留在其中，毒云术就会持续对其造成每秒 75 点伤害。持续 20 秒。"
     },
     {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "制造一座能自动生产发条地精的工厂。|n|n发条地精具有 1050 点生命值和 37 - 39 点攻击力，还能在死亡时爆炸，对周围的敌方单位最多造成 180 点伤害。|n工厂持续 40 秒。 |n|n|cffffcc00发条地精只能攻击地面单位。|r\n"
+    },
+    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（诺格弗格）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "毒云术"
+    },
+    {
       "Id": "aret",
       "Type": 3,
       "Value": "学习毒云术 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒云术 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒云术 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "毒云术 - [|cffffcc003 级|r]"
     }
   ],
   "NewId": "A11W"

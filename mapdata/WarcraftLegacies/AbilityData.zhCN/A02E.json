@@ -5,9 +5,15 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "驱散魔法"
+      "Value": "（深绿色教士）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "|cffffcc00(W)|r - 驱散魔法"
     },
     {
       "Level": 1,
@@ -22,15 +28,9 @@
       "Value": "移除目标区域内单位身上的所有魔法效果。|n|cffffcc00对召唤单位造成<A02E,DataB2>点伤害。|r"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（深绿色教士）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "|cffffcc00(W)|r - 驱散魔法"
+      "Value": "驱散魔法"
     }
   ],
   "NewId": "A02E"

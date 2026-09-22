@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿达尔）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "眩目星光"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习眩目星光 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -33,12 +43,6 @@
       "Value": "眩目星光 - [|cffffcc003级|r]"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "眩目星光 - [|cffffcc004级|r]"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -58,19 +62,15 @@
     },
     {
       "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "眩目星光 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
       "Value": "释放一道强光，使 1000 半径内的所有敌方单位失明 15 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（阿达尔）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习眩目星光 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A105"

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "闪电震击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（黄色 - 狮鹫骑士）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "闪电震击"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电震击"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "用闪电震击敌人，每秒造成<A09C,DataA1>点伤害，使其无法施放法术，并使其攻击力降低 50%。|n对单位持续<A09C,Dur1>秒，对英雄持续<A09C,HeroDur1>秒。"
     }
   ],

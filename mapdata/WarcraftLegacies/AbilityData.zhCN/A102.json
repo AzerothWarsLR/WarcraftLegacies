@@ -5,19 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "暴露"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（德莱尼）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暴露"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "圣光闪现"
     }
   ],

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "雷霆崖守卫"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练雷霆崖守卫"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "至高岭部族的猎手。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（牛头人部族）"
+      "Value": "训练雷霆崖守卫"
     }
   ],
   "NewId": "n049"

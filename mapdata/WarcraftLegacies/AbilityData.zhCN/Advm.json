@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（毁灭者）"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -14,11 +19,6 @@
       "Id": "anam",
       "Type": 3,
       "Value": "吞噬魔法"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（毁灭者）"
     }
   ]
 }

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "秘术师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "精通奥术之道的女巫。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然）"
     }
   ],
   "NewId": "h01I"

@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "专业神射手，对空中单位拥有格外强大的攻击力。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "巨龙猎手"
@@ -13,16 +23,6 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练巨龙猎手"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "专业神射手，对空中单位拥有格外强大的攻击力。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野外生物）"
     }
   ],
   "NewId": "o05L"

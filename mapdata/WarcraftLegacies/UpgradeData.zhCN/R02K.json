@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "风暴战锤"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（卡兹莫丹）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "狮鹫优良品种"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究狮鹫优良品种"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使所有狮鹫额外获得 300 点生命值和 100 点攻击距离。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "风暴战锤"
     }
   ],
   "NewId": "R02K"

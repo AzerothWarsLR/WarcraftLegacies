@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "燧发枪手"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练燧发枪手"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "远程骑射手。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（库尔提拉斯）"
+      "Value": "训练燧发枪手"
     }
   ],
   "NewId": "h0A0"

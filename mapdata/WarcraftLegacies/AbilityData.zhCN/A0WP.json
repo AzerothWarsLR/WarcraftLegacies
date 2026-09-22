@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "黑暗仪式"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（图标）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "黑暗仪式"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "黑暗仪式"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "献祭一个友方亡灵单位，将其 35% 的生命值转化为施法者的生命值，并将其 25% 的生命值转化为魔法值。优先选择召唤单位。"
     }
   ],

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "圣光术"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（亚历山德罗斯）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "一道神圣之光，可为一个友方生命单位恢复<MD06,DataA1>点生命值，或对敌方亡灵单位造成一半的伤害。"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
+      "Value": "圣光术"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
       "Value": "圣光术"
     }
   ],

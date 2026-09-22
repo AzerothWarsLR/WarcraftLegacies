@@ -5,14 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "召唤复仇之魂攻击玛维的敌人。 |n持续 60 秒。 |n|n|cffffcc001级|r - 召唤 2 个复仇之魂。 |n|cffffcc002级|r - 召唤 3 个复仇之魂。 |n|cffffcc003级|r - 召唤 4 个复仇之魂。 |n|cffffcc004级|r - 召唤 5 个复仇之魂。\n"
-    },
-    {
       "Id": "anam",
       "Type": 3,
       "Value": "野性之魂"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（玛维）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习复仇之魂 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤复仇之魂攻击玛维的敌人。 |n持续 60 秒。 |n|n|cffffcc001级|r - 召唤 2 个复仇之魂。 |n|cffffcc002级|r - 召唤 3 个复仇之魂。 |n|cffffcc003级|r - 召唤 4 个复仇之魂。 |n|cffffcc004级|r - 召唤 5 个复仇之魂。\n"
     },
     {
       "Level": 1,
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤<YBAV,DataB4>个复仇之魂。 |n持续 60 秒。 |n|n|cffffcc00能攻击地面单位。|r"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（玛维）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习复仇之魂 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "YBAV"

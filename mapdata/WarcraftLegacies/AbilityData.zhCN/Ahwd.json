@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "治疗结界"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（霜狼 - 巫医）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤一个无法移动的结界，每秒为周围一个友方非机械单位恢复其生命值<Aoar,DataA1,%>% 的生命值。|n持续<Ahwd,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗结界"
     }
   ]
 }

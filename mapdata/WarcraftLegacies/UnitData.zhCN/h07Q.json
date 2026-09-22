@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造潮汐学院"
+      "Value": "（库尔提拉斯魔法）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "施法单位生产建筑。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯魔法）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "潮汐学院"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造潮汐学院"
     }
   ],
   "NewId": "h07Q"

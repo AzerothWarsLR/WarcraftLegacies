@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "掠夺"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（未使用 2）"
     },
     {
+      "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Level": 2,
       "Value": "烧杀抢掠"
     },
     {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Level": 2,
       "Value": "每次对敌方单位或建筑造成伤害的攻击都会带来一定的资源收益。不过这一版本的掠夺对单位和建筑均有效，但收益有所降低。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "掠夺"
     }
   ],
   "NewId": "A08C"

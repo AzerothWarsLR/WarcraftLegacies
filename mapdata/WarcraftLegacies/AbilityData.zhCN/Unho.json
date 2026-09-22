@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "硬化体肤"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 死亡骑士）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化体肤"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "邪恶护板"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "针对该单位的攻击，其伤害降低<Unho,DataC1>点。攻击伤害不能降低到<Unho,DataB1>点以下。"
     }
   ],

@@ -5,9 +5,10 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
+      "Level": 1,
+      "Id": "gnsf",
       "Type": 3,
-      "Value": "改良石工技术"
+      "Value": "（黄色/紫色/橙色/绿色/深绿色研究）"
     },
     {
       "Level": 1,
@@ -28,10 +29,9 @@
       "Value": "进一步提高建筑的护甲和生命值。"
     },
     {
-      "Id": "gnsf",
+      "Id": "gnam",
       "Type": 3,
-      "Level": 1,
-      "Value": "（黄色/紫色/橙色/绿色/深绿色研究）"
+      "Value": "改良石工技术"
     }
   ]
 }

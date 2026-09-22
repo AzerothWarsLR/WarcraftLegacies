@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "大法师议会"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "为附近属于玩家的单位恢复生命值和魔法值。|n|n|cffffcc001级|r - 恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。 |n|cffffcc002级|r - 恢复<TPWC,DataB2>点生命值和<TPWC,DataC2>点魔法值。 |n|cffffcc003级|r - 恢复<TPWC,DataB3>点生命值和<TPWC,DataB3>点魔法值。 |n|cffffcc004级|r - 恢复<TPWC,DataB4>点生命值和<TPWC,DataB4>点魔法值。\n"
     },
     {
       "Level": 1,
@@ -45,6 +45,16 @@
       "Value": "恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "为附近属于玩家的单位恢复生命值和魔法值。|n|n|cffffcc001级|r - 恢复<TPWC,DataB1>点生命值和<TPWC,DataC1>点魔法值。 |n|cffffcc002级|r - 恢复<TPWC,DataB2>点生命值和<TPWC,DataC2>点魔法值。 |n|cffffcc003级|r - 恢复<TPWC,DataB3>点生命值和<TPWC,DataB3>点魔法值。 |n|cffffcc004级|r - 恢复<TPWC,DataB4>点生命值和<TPWC,DataB4>点魔法值。\n"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习大法师议会 - [|cffffcc00等级 %d|r]"
+    },
+    {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "恢复<TPWC,DataB3>点生命值和<TPWC,DataC3>点魔法值。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（达拉然）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习大法师议会 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "TPWC"

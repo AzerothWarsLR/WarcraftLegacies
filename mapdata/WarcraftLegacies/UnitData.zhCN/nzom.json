@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
       "Id": "utip",
       "Type": 3,
       "Value": "训练僵尸"
@@ -13,11 +18,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "沦为亡者的可怜灵魂。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（天灾）"
     },
     {
       "Id": "unam",

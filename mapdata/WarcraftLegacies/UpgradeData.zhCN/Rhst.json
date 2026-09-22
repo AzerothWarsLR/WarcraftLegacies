@@ -5,9 +5,10 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
+      "Level": 1,
+      "Id": "gnsf",
       "Type": 3,
-      "Value": "女巫专家级训练"
+      "Value": "（奎尔萨拉斯）"
     },
     {
       "Level": 1,
@@ -22,10 +23,9 @@
       "Value": "提高女巫的法力值上限和法力恢复速度，并使其获得施放灵魂燃烧的能力。"
     },
     {
-      "Id": "gnsf",
+      "Id": "gnam",
       "Type": 3,
-      "Level": 1,
-      "Value": "（奎尔萨拉斯）"
+      "Value": "女巫专家级训练"
     }
   ]
 }

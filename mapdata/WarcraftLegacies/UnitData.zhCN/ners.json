@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "召唤艾瑞达巫师"
+      "Value": "（邪能-传送门）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "燃烧远征的神秘法师。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（邪能-传送门）"
+      "Value": "训练艾瑞达巫师"
     },
     {
       "Id": "unam",

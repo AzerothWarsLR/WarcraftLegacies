@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（克苏恩）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "不稳定进化"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习不稳定进化 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -34,12 +44,6 @@
     },
     {
       "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "不稳定进化 - [|cffffcc001级|r]"
-    },
-    {
-      "Level": 1,
       "Id": "aub1",
       "Type": 3,
       "Value": "强化目标位置附近所有玩家控制的非英雄、非召唤单位，使其伤害和攻击速度提高 100%，然后在 30 秒后杀死它们。"
@@ -63,14 +67,10 @@
       "Value": "在目标位置召唤一根拥有 4000 点生命值和 50 点基础伤害的强大触须。触须的攻击会对其正前方一条直线上的所有单位造成伤害。持续 60 秒。"
     },
     {
-      "Id": "ansf",
+      "Level": 1,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "（克苏恩）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习不稳定进化 - [|cffffcc00等级 %d|r]"
+      "Value": "不稳定进化 - [|cffffcc001级|r]"
     }
   ],
   "NewId": "ZBUE"

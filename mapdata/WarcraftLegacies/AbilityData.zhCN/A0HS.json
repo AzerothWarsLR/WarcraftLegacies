@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "炮手飞行员"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（地精坦克）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "炮手飞行员"
     }
   ],
   "NewId": "A0HS"

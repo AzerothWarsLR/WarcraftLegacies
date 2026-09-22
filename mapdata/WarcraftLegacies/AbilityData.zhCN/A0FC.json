@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（娜萨）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "倒刺网"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习倒刺网 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄用倒刺网诱捕一个敌人，使目标敌方单位在<AEer,Dur4>秒内无法移动且无法攻击，并每秒造成<AEer,DataA4>点伤害。对英雄持续 4 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（娜萨）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习倒刺网 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0FC"

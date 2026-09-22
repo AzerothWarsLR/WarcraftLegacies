@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大酋长"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "部落的大酋长"
@@ -15,29 +25,19 @@
       "Value": "复活大酋长"
     },
     {
-      "Id": "uawt",
-      "Type": 3,
-      "Value": "复活大酋长"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "萨尔"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "神秘型英雄，擅长强化盟友并造成魔法伤害。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（兽人部落）"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "召唤大酋长"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "萨尔"
     }
   ]
 }

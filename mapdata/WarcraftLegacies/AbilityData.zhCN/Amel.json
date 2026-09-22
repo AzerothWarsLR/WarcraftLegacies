@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "获取尸体"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 清道夫）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "获取尸体(|cffffcc00Q|r)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "获取尸体"
     }
   ]
 }

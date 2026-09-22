@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤恐惧神龛"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "燃烧军团追随者的集结地。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（燃烧军团 特殊）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "恐惧神龛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "燃烧军团追随者的集结地。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造恐惧神龛"
     }
   ],
   "NewId": "u005"

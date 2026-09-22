@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "箭雨"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（哨兵 - 弓箭手）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "箭雨"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "箭雨"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "射出一轮箭雨，每次命中对敌人造成<A06G,DataA1>点伤害，最多造成<A06G,DataD1>点伤害。使非英雄单位昏迷 0.75 秒。射程<A06G,Rng1>。"
     }
   ],

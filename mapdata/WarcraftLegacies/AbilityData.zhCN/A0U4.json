@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（灰色 - 雷克萨）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "狂野投掷"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习狂野投掷 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "向一个目标敌方单位投掷魔法战斧，造成 375 点伤害并昏迷目标 7 秒。对英雄持续 2.5 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（灰色 - 雷克萨）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习狂野投掷 (|cffffcc00Q|r) - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0U4"

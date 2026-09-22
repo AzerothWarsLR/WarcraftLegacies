@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "急速射击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（紫色 - 长弓手）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "急速射击"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "急速射击"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使该单位的攻击速度提高<A0AC,DataA1,%>%，持续<A0AC,Dur1>秒。"
     }
   ],

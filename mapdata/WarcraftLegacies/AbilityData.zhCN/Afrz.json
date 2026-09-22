@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "冰冻吐息"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（红色 - 萨菲隆，冰霜巨龙）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "攻击建筑会暂时停止该建筑的所有行为，持续<Afrz,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰冻吐息"
     }
   ]
 }

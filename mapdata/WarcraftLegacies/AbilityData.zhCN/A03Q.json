@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "守望者之眼"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（哨兵）（守望者地窟）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "守望者之眼"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "守望者之眼"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤一个无敌、隐形且无法移动的结界，提供一定区域的视野。|n能看见隐形单位。|n持续<A03Q,Dur1>秒。"
     }
   ],

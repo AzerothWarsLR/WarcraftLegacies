@@ -5,15 +5,15 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（卡兹莫丹）"
+    },
+    {
       "Id": "gnam",
       "Type": 3,
       "Value": "风暴战锤"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（卡兹莫丹）"
     }
   ]
 }

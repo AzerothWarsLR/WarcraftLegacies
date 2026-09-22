@@ -5,6 +5,16 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "与自然之灵相连的萨满祭司。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "元素师"
@@ -13,16 +23,6 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练元素师"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "与自然之灵相连的萨满祭司。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德莱尼）"
     }
   ],
   "NewId": "o05D"

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 乌瑟尔）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "奉献"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习奉献 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "猛击地面，对周围的敌方地面单位造成 220 点伤害，并使其移动速度和攻击速度降低 50%。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（洛丹伦 - 乌瑟尔）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习奉献 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0WE"

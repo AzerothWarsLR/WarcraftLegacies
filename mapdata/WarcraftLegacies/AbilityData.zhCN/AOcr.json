@@ -5,14 +5,20 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（露西尔）"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "攻击有一定几率造成双倍伤害。 |n|n|cffffcc001级|r - <AOcr,DataA1>% 几率。 |n|cffffcc002级|r - <AOcr,DataA2>% 几率。 |n|cffffcc003级|r - <AOcr,DataA3>% 几率。|n|cffffcc004级|r - <AOcr,DataA4>% 几率。\n"
     },
     {
-      "Id": "anam",
+      "Level": 4,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "致命一击"
+      "Value": "致命一击 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -39,15 +45,9 @@
       "Value": "攻击有<AOcr,DataA4>% 的几率造成双倍伤害。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（露西尔）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 4,
-      "Value": "致命一击 - [|cffffcc004级|r]"
+      "Value": "致命一击"
     }
   ]
 }

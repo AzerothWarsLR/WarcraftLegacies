@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "主要建筑。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德鲁伊 T3）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
     },
     {
       "Id": "unam",

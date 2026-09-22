@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "心灵之火"
+      "Value": "（深绿色教士）"
     },
     {
       "Level": 1,
@@ -17,12 +17,6 @@
     },
     {
       "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "|cffffcc00(E)|r - 强化心灵之火"
-    },
-    {
-      "Level": 3,
       "Id": "atp1",
       "Type": 3,
       "Value": "|cffffcc00(E)|r - 强化心灵之火"
@@ -64,9 +58,15 @@
       "Value": "|cffc3dbff点击右键以取消自动施法。|r"
     },
     {
-      "Id": "ansf",
+      "Level": 3,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "（深绿色教士）"
+      "Value": "|cffffcc00(E)|r - 强化心灵之火"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "心灵之火"
     }
   ],
   "NewId": "A02F"

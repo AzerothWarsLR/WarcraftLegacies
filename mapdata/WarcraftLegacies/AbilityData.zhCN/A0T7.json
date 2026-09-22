@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "强效圣光术"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（血色圣殿骑士）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "强效圣光术"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强效圣光术"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召出一道圣光，能为友方生命单位恢复 300 点生命值，或者对敌方亡灵单位造成一半的伤害。"
     }
   ],

@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "魔法岗哨"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（军团）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "战争装甲"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究战争装甲"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "为恶魔卫士和末日守卫装备邪能战争装甲，使恶魔卫士受到的攻击伤害降低<A0ER,DataC1>点，末日守卫降低<VP22,DataC1>点。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "魔法岗哨"
     }
   ],
   "NewId": "R03Z"

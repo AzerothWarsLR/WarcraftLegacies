@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "城堡"
+      "Value": "（暴风城 T3）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,14 @@
       "Value": "主要建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（暴风城 T3）"
+      "Value": "城堡"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到城堡"
     }
   ],
   "NewId": "h06N"

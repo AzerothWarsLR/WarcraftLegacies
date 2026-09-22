@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造熔岩洞穴群"
+      "Value": "（天空之墙 - 特种生产）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "火焰生产建筑。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（天空之墙 - 特种生产）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "熔岩洞穴群"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造熔岩洞穴群"
     }
   ],
   "NewId": "sELF"

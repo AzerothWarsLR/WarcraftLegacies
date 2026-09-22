@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤船坞"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "船只建造设施。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（燃烧军团 船坞）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "船坞"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造船坞"
     }
   ],
   "NewId": "u009"

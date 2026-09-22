@@ -6,6 +6,12 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（地精）"
+    },
+    {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "原油勘探"
@@ -57,12 +63,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "进一步提高所有海军单位的护甲。"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（地精）"
     }
   ],
   "NewId": "R097"

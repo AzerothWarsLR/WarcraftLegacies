@@ -5,6 +5,21 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长召唤野兽并集结盟友。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤雷克萨"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "兽王"
@@ -13,21 +28,6 @@
       "Id": "upro",
       "Type": 3,
       "Value": "雷克萨"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "战斗型英雄，擅长召唤野兽并集结盟友。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（牛头人部族）"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤雷克萨"
     }
   ]
 }

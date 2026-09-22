@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（高等精灵 安纳斯特里亚）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "奥术冲击"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习奥术冲击 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄以奥术能量轰击一片区域，对处于效果范围内的单位造成 240 点伤害。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（高等精灵 安纳斯特里亚）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习奥术冲击 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A04J"

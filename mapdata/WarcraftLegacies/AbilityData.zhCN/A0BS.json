@@ -5,9 +5,43 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦迪文）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "群鸦突袭"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群鸦突袭 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群鸦突袭 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群鸦突袭 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群鸦突袭 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群鸦突袭 - [|cffffcc004级|r]"
     },
     {
       "Level": 2,
@@ -37,40 +71,6 @@
       "Id": "arut",
       "Type": 3,
       "Value": "召唤一群乌鸦。每只乌鸦拥有<e00C,realHP>点生命值，并能造成<e00C,mindmg1> - <e00C,maxdmg1>点伤害。|n持续<A0BS,Dur1>秒。|n|n|cffffcc001级|r - 召唤<A0BS,DataB1>只乌鸦。|n|cffffcc002级|r - 召唤<A0BS,DataB2>只乌鸦。|n|cffffcc003级|r - 召唤<A0BS,DataB3>只乌鸦。|n|cffffcc004级|r - 召唤<A0BS,DataB4>只乌鸦。\n"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "群鸦突袭 - [|cffffcc001级|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "群鸦突袭 - [|cffffcc002级|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "群鸦突袭 - [|cffffcc003级|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "群鸦突袭 - [|cffffcc004级|r]"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（麦迪文）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习群鸦突袭 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0BS"

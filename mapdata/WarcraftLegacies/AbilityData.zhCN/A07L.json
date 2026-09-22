@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "驱散魔法"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（末日守卫、海妖）（尤格）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "驱散魔法"
     }
   ],
   "NewId": "A07L"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "游骑兵"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "南方之地的近战骑兵。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城）"
     }
   ],
   "NewId": "h01B"

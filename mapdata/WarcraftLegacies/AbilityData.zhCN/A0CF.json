@@ -5,9 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（部落）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
-      "Value": "尖刺障碍"
+      "Value": "尖刺屏障"
     },
     {
       "Id": "arut",
@@ -18,19 +23,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "尖刺障碍 - [|cffffcc001级|r]"
+      "Value": "尖刺屏障 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "尖刺障碍 - [|cffffcc001级|r]"
+      "Value": "尖刺屏障 - [|cffffcc001级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "尖刺障碍 - [|cffffcc002级|r]"
+      "Value": "尖刺屏障 - [|cffffcc002级|r]"
     },
     {
       "Level": 1,
@@ -49,11 +54,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "用尖刺和障碍强化建筑防御。提供 6 点额外护甲，并将 40% 的近战攻击伤害反弹给敌人。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（部落）"
     }
   ],
   "NewId": "A0CF"

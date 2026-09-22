@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（十字军 4）"
+    },
+    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -16,14 +21,9 @@
       "Value": "统御光环"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（十字军 4）"
-    },
-    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "为十字军而团结"
     }
   ],

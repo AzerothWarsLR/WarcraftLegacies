@@ -10,33 +10,33 @@
       "Value": "机械地精"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "关闭大门"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "关闭大门。"
     },
     {
+      "Level": 1,
       "Id": "aut1",
       "Type": 3,
-      "Level": 1,
       "Value": "开启大门"
     },
     {
+      "Level": 1,
       "Id": "auu1",
       "Type": 3,
-      "Level": 1,
       "Value": "开启大门。"
     },
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "（Vertical）"
+      "Value": "（纵向）"
     }
   ],
   "NewId": "A015"

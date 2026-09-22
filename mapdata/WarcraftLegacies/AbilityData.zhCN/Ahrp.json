@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "修理"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（工人）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "修理"
     }
   ]
 }

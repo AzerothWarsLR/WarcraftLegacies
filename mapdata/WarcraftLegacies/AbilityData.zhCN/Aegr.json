@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "艾露恩的赐福"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（浅蓝色 - 弓箭手、暗叶哨兵、侍僧、夜刃、女猎手、女祭司。棕色 - 树妖）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "艾露恩的赐福"
     }
   ]
 }

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（雷诺）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "强化风暴之锤"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习强化风暴之锤 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "向目标敌方单位投掷一柄魔法锤，造成 400 点伤害，并使目标昏迷 7 秒。对英雄持续 3.5 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（雷诺）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习强化风暴之锤 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0XO"

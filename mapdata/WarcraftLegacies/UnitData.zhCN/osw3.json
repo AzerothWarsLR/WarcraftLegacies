@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练影狼"
+      "Value": "霜狼 - 萨尔）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "萨尔所化、代表部落的野性化身。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "霜狼 - 萨尔）"
+      "Value": "训练影狼"
     },
     {
       "Id": "unam",

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 加伦、扎伊拉、拉格纳罗斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "迅捷光环"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习迅捷光环 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使周围友方单位的移动速度提高<A08N,DataA4,%>%。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（深绿色 - 加伦、扎伊拉、拉格纳罗斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习迅捷光环 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A08N"

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（提克迪奥斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "激发癫狂"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习激发癫狂 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -49,16 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "夺取目标区域内 14 个随机敌方单位的控制权。30 秒后，每个以此方式被控制的单位都会因疯狂而死。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（提克迪奥斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习激发癫狂 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A10M"

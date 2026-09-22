@@ -5,29 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "锈水财阀贸易亲王"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤加斯特·加里维克斯"
-    },
-    {
-      "Id": "utpr",
-      "Type": 3,
-      "Value": "复活贸易亲王"
-    },
-    {
       "Id": "uawt",
       "Type": 3,
       "Value": "复活贸易亲王"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "神秘型英雄，擅长召唤单位前来助战。"
     },
     {
       "Id": "unsf",
@@ -35,9 +15,29 @@
       "Value": "（野外生物）"
     },
     {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "锈水财阀贸易亲王"
+    },
+    {
       "Id": "upro",
       "Type": 3,
       "Value": "加斯特·加里维克斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活贸易亲王"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加斯特·加里维克斯"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长召唤单位前来助战。"
     }
   ],
   "NewId": "O04N"

@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然-精英）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "肯瑞托"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "达拉然的强大法师。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然-精英）"
     }
   ],
   "NewId": "n007"

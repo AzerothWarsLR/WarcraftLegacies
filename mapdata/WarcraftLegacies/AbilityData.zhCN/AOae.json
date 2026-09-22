@@ -5,31 +5,31 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "提高周围友方单位的移动速度和攻击速度。 |n|n|cffffcc001级|r - 移动速度提高<AOae,DataA1,%>%，攻击速度提高<AOae,DataB1,%>%。 |n|cffffcc002级|r - 移动速度提高<AOae,DataA2,%>%，攻击速度提高<AOae,DataB2,%>%。 |n|cffffcc003级|r - 移动速度提高<AOae,DataA3,%>%，攻击速度提高<AOae,DataB3,%>%。|n|cffffcc004级|r - 移动速度提高<AOae,DataA4,%>%，攻击速度提高<AOae,DataB4,%>%。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "坚韧光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（未使用？）"
     },
     {
-      "Id": "atp1",
+      "Id": "arut",
       "Type": 3,
-      "Level": 4,
-      "Value": "坚韧光环 - [|cffffcc004级|r]"
+      "Value": "提高周围友方单位的移动速度和攻击速度。 |n|n|cffffcc001级|r - 移动速度提高<AOae,DataA1,%>%，攻击速度提高<AOae,DataB1,%>%。 |n|cffffcc002级|r - 移动速度提高<AOae,DataA2,%>%，攻击速度提高<AOae,DataB2,%>%。 |n|cffffcc003级|r - 移动速度提高<AOae,DataA3,%>%，攻击速度提高<AOae,DataB3,%>%。|n|cffffcc004级|r - 移动速度提高<AOae,DataA4,%>%，攻击速度提高<AOae,DataB4,%>%。\n"
     },
     {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "耐久光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Level": 4,
       "Value": "使周围友方单位的移动速度提高<AOae,DataA4,%>%，攻击速度提高<AOae,DataB4,%>%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "耐久光环"
     }
   ]
 }

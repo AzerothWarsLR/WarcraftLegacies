@@ -5,27 +5,27 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "玛诺洛斯之血"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（战歌）"
     },
     {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
       "Value": "任务完成：玛诺洛斯之血"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究血怒"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "玛诺洛斯之血"
     }
   ],
   "NewId": "R00X"

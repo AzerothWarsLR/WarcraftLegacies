@@ -15,27 +15,27 @@
       "Value": "切换召唤"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "激活召唤"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "激活后，该恶魔之门在法力值达到上限时会生成恶魔。"
     },
     {
+      "Level": 1,
       "Id": "aut1",
       "Type": 3,
-      "Level": 1,
       "Value": "取消召唤"
     },
     {
+      "Level": 1,
       "Id": "auu1",
       "Type": 3,
-      "Level": 1,
       "Value": "取消后，该恶魔之门在法力值达到上限时不会生成恶魔。"
     }
   ],

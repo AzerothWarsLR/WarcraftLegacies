@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "心灵之火"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（暴风城假体）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "心灵之火"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "集结战旗"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "每<A12Z,Cool1>秒复活一名附近阵亡的盟友，使其再度作战。"
     }
   ],

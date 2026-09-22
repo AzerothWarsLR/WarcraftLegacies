@@ -5,24 +5,24 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "高级作战单位生产建筑。"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造洛阿神龛"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（中立生物 攻城）"
     },
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级作战单位生产建筑。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "洛阿神龛"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造洛阿神龛"
     }
   ],
   "NewId": "o04X"

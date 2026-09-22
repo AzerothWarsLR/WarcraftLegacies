@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒工人）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "技师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "奎尔萨拉斯建筑的聪慧建造者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（日怒工人）"
     }
   ],
   "NewId": "n0E2"

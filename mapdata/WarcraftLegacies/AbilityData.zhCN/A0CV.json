@@ -5,7 +5,18 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（工程师）"
+    },
+    {
       "Id": "anam",
+      "Type": 3,
+      "Value": "便携火炮"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
       "Type": 3,
       "Value": "便携火炮"
     },
@@ -14,17 +25,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "建造一座炮塔，自动攻击你的敌人。|n|n炮塔拥有 900 点生命值，造成攻城伤害。|n炮塔持续 40 秒。|n|n|cffffcc00炮塔能攻击地面和空中单位。|r\n"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（工程师）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 1,
-      "Value": "便携火炮"
     }
   ],
   "NewId": "A0CV"

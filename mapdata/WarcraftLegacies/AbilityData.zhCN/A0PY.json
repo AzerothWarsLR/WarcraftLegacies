@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "召唤拉格纳罗斯"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（全部）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤拉格纳罗斯"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤拉格纳罗斯"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "从火焰之地召唤拉格纳罗斯。"
     }
   ],

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "死亡面具"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "佩戴此面具时，英雄会恢复相当于其对敌方单位造成攻击伤害 25% 的生命值。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "死亡面具"
     }
   ]
 }

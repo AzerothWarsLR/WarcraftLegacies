@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "掌焰者"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "精通火焰法术的巫师。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（日怒）"
     }
   ],
   "NewId": "h0CG"

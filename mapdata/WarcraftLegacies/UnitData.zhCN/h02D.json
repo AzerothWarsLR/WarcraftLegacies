@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "地卜师"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "擅长御土之术的法师。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（达拉然）"
     }
   ],
   "NewId": "h02D"

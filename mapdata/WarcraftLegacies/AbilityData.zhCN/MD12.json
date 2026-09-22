@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "灵魂之触"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（奎尔萨拉斯 - 奥术货车）"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "为附近友方非机械单位恢复魔法值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灵魂之触"
     }
   ],
   "NewId": "MD12"

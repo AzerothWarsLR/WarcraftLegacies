@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "建造原油钻机"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（地精 - 原油钻机建造者）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "建造原油钻机"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "建造原油钻机"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "在目标位置建造一座原油钻机。|n|n|cff99b4d1必须建在海上的原油矿脉附近，且每处矿脉只能建造一座原油钻机。"
     }
   ],

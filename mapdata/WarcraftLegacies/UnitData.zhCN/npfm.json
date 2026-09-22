@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "被邪能放大的猎犬，法师的吞噬者。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（邪部落-传送门）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "被邪能放大的猎犬，法师的吞噬者。"
     },
     {
       "Id": "unam",

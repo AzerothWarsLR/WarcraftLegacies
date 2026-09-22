@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造奥术研习所"
+      "Value": "（洛丹伦魔法）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "施法单位生产建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（洛丹伦魔法）"
+      "Value": "建造奥术研习所"
     },
     {
       "Id": "unam",

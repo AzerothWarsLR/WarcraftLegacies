@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "骷髅投石车"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "野蛮的投石攻城武器。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野外生物）"
     }
   ],
   "NewId": "o04K"

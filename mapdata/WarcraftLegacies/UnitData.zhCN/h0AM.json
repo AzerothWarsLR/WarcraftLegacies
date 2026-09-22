@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪恶）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "火船"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造火船"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "短程中型船只。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（邪恶）"
+      "Value": "训练火船"
     }
   ],
   "NewId": "h0AM"

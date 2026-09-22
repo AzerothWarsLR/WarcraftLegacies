@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造火箭塔"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（野外生物塔）"
@@ -23,6 +18,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "火箭塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造火箭塔"
     }
   ],
   "NewId": "o03U"

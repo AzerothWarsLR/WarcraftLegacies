@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 萨尔）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "雷霆风暴"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习雷霆风暴 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -49,16 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "召唤一场闪电风暴轰击敌方单位，造成 115 点伤害。 |n持续 20 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（粉色 - 萨尔）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习雷霆风暴 - [|cffffcc00等级 %d|r]"
     }
   ]
 }

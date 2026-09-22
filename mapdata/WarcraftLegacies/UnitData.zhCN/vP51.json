@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "牛头人酋长"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "牛头人部族的领袖。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（牛头人部族 - 精英）"
@@ -23,6 +13,16 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练牛头人酋长"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "牛头人部族的领袖。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "牛头人酋长"
     }
   ],
   "NewId": "vP51"

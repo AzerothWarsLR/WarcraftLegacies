@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "狮鹫射手"
+      "Value": "（血色）"
     },
     {
       "Id": "utip",
@@ -20,9 +20,9 @@
       "Value": "技艺娴熟的狮鹫骑士。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（血色）"
+      "Value": "狮鹫射手"
     }
   ],
   "NewId": "e01L"

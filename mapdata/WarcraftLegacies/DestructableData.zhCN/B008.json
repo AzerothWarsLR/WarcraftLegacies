@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "（树木封锁）"
+    },
+    {
       "Id": "bnam",
       "Type": 3,
       "Value": "灰谷阻挡物"

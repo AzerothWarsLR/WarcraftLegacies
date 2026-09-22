@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵 - 精英）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "月亮女祭司"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "艾露恩的战斗女祭司。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（哨兵 - 精英）"
     }
   ],
   "NewId": "h04L"

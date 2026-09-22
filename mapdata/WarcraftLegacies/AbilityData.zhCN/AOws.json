@@ -5,31 +5,31 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "猛击地面，对周围的敌方地面单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <AOws,DataA1>点伤害，昏迷<AOws,Dur1>秒。 |n|cffffcc002级|r - <AOws,DataA2>点伤害，昏迷<AOws,Dur2>秒。 |n|cffffcc003级|r - <AOws,DataA3>点伤害，昏迷<AOws,Dur3>秒。|n|cffffcc004级|r - <AOws,DataA4>点伤害，昏迷<AOws,Dur4>秒。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "战争践踏"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "未使用"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "猛击地面，对周围的敌方地面单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <AOws,DataA1>点伤害，昏迷<AOws,Dur1>秒。 |n|cffffcc002级|r - <AOws,DataA2>点伤害，昏迷<AOws,Dur2>秒。 |n|cffffcc003级|r - <AOws,DataA3>点伤害，昏迷<AOws,Dur3>秒。|n|cffffcc004级|r - <AOws,DataA4>点伤害，昏迷<AOws,Dur4>秒。\n"
+    },
+    {
+      "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Level": 4,
       "Value": "战争践|cffffcc00踏|r - [|cffffcc004级|r]"
     },
     {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Level": 4,
       "Value": "猛击地面，对周围的敌方地面单位造成<AOws,DataA4>点伤害并使其昏迷<AOws,Dur4>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战争践踏"
     }
   ]
 }

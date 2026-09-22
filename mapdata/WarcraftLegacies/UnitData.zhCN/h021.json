@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练守望者"
+      "Value": "（野外生物）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "赞达拉的全能战士。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（野外生物）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "守望者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练守望者"
     }
   ],
   "NewId": "h021"

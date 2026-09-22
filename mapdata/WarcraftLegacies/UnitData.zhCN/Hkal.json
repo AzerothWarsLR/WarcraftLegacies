@@ -5,14 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活奎尔萨拉斯王子"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "奎尔萨拉斯王子"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤凯尔萨斯·逐日者"
     },
     {
       "Id": "utpr",
@@ -20,14 +25,9 @@
       "Value": "复活奎尔萨拉斯王子"
     },
     {
-      "Id": "uawt",
+      "Id": "utip",
       "Type": 3,
-      "Value": "复活奎尔萨拉斯王子"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "凯尔萨斯·逐日者"
+      "Value": "召唤凯尔萨斯·逐日者"
     },
     {
       "Id": "utub",
@@ -35,9 +35,9 @@
       "Value": "神秘型英雄，擅长造成魔法伤害。"
     },
     {
-      "Id": "unsf",
+      "Id": "upro",
       "Type": 3,
-      "Value": "（奎尔萨拉斯）"
+      "Value": "凯尔萨斯·逐日者"
     }
   ]
 }

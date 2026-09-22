@@ -5,19 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "防御者之盾视觉效果"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（德莱尼附属建筑）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "防御者之盾视觉效果"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "防御者之盾视觉效果"
     }
   ],

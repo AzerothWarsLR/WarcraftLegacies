@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "猛击"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（肯瑞托）（假人）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "猛击"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "法术护盾"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "每 15 秒可格挡一次敌人对该单位施放的负面法术。"
     }
   ],

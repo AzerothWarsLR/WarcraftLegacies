@@ -5,21 +5,21 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "诱捕"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（洛丹伦）"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使猎手能够使用诱捕，将一个敌方单位束缚在地面上，使其在<A0F3,Dur1>秒内无法移动。被诱捕的空中单位可被视为地面单位进行攻击。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "诱捕"
     }
   ],
   "NewId": "R01P"

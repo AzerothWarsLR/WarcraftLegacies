@@ -5,20 +5,20 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "月刃"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（浅蓝色 - 女猎手）"
     },
     {
+      "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Level": 2,
       "Value": "强化月刃"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "月刃"
     }
   ]
 }

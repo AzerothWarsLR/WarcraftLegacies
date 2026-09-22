@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "unam",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "苦工"
+      "Value": "（战歌 工人）"
     },
     {
       "Id": "utub",
@@ -15,9 +15,9 @@
       "Value": "勤恳卖力、累断腰的劳工。"
     },
     {
-      "Id": "unsf",
+      "Id": "unam",
       "Type": 3,
-      "Value": "（战歌 工人）"
+      "Value": "苦工"
     }
   ],
   "NewId": "o04L"

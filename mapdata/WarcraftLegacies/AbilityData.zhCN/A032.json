@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（橙色安东尼达斯）（麦迪文）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "奥术轰击"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习奥术轰击 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "以奥术飞弹轰击目标区域，对周围的敌方地面单位最多造成<A032,DataA4>点伤害，并使其昏迷 1 秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（橙色安东尼达斯）（麦迪文）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习奥术轰击 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A032"

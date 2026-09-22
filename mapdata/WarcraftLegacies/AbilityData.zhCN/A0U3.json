@@ -5,12 +5,6 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "召唤 2 个拥有闪电护盾和回春术的树苗萨满长者同伴。|n持续<ACs7,Dur3>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（棕色 塞纳留斯）"
@@ -21,10 +15,16 @@
       "Value": "召唤熊怪萨满长者"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤熊怪萨满长者"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 2 个拥有闪电护盾和回春术的棘语者怪萨满长者同伴。|n持续<ACs7,Dur3>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r\n"
     }
   ],
   "NewId": "A0U3"

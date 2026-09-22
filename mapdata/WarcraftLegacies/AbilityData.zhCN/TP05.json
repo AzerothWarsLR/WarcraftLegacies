@@ -5,9 +5,20 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "符文祭司)"
+    },
+    {
       "Id": "arut",
       "Type": 3,
       "Value": "用酒精浸透敌方单位，使其移动速度降低，并且攻击有几率未命中。 |n|cffffcc00持续<ANdh,Dur1>秒（英雄为 5 秒）。 |n|n|cffffcc001级|r - 移动速度降低 40%，未命中率 30%。 |n|cffffcc002级|r - 移动速度降低 45%，未命中率 40%。 |n|cffffcc003级|r - 移动速度降低 50%，未命中率 50%。 |n|cffffcc004级|r - 移动速度降低 55%，未命中率 60%。\n"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "酩酊酒雾 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -34,26 +45,15 @@
       "Value": "用酒精浸透敌方单位，使其移动速度降低 55%，并且攻击有 60% 的几率未命中。带有酩酊酒雾效果的单位被火焰之息击中时，会被点燃并受到燃烧伤害。 |n|cffffcc00持续<ANdh,Dur4>秒（英雄为 5 秒）。\n"
     },
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "酩酊酒雾"
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
       "Value": "酩酊酒雾"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Value": "酩酊酒雾 - [|cffffcc004级|r]"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "符文祭司)"
+      "Value": "酩酊酒雾"
     }
   ],
   "NewId": "TP05"

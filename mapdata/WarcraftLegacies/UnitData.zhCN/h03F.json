@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造猎手塔"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（哨兵）"
@@ -18,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "控制点防卫者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造猎手塔"
     },
     {
       "Id": "utub",

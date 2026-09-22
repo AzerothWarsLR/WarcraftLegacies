@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练米莎"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（灰色 - 雷克萨召唤）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练米莎"
     },
     {
       "Id": "unam",

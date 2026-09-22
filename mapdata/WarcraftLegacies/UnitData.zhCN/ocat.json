@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "训练投石车"
+      "Value": "（兽人部落）"
     },
     {
       "Id": "unam",
@@ -15,14 +15,14 @@
       "Value": "投石车"
     },
     {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练投石车"
+    },
+    {
       "Id": "utub",
       "Type": 3,
       "Value": "野蛮的投石攻城武器，浸满燃烧的油料。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（兽人部落）"
     }
   ]
 }

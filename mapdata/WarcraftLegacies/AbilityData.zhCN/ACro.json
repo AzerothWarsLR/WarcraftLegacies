@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "咆哮"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（野性恶狼/米莎）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咆哮"
     }
   ]
 }

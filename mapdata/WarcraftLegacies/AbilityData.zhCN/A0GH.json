@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "火箭弹幕"
+      "Value": "（库尔提拉斯）"
     },
     {
       "Level": 1,
@@ -17,20 +17,20 @@
     },
     {
       "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火箭弹幕 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
       "Value": "使该单位的攻击额外向周围最多 8 个敌方空中单位发射一枚投射物。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（库尔提拉斯）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "火箭弹幕 - [|cffffcc002级|r]"
+      "Value": "火箭弹幕"
     }
   ],
   "NewId": "A0GH"

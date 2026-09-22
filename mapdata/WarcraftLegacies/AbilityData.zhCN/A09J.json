@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色酒馆）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "痛饮"
@@ -32,11 +37,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "借助酒精的振奋之力，为周围的友方单位恢复<A09J,DataA2>点生命值。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（黄色酒馆）"
     }
   ],
   "NewId": "A09J"

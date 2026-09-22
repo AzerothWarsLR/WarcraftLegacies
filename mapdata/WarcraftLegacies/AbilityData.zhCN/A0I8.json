@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "血符文"
@@ -14,6 +19,12 @@
       "Id": "atp1",
       "Type": 3,
       "Value": "血符文 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的魔法攻击和法术伤害降低 5%。"
     },
     {
       "Level": 2,
@@ -28,12 +39,6 @@
       "Value": "血符文 - [|cffffcc003级|r]"
     },
     {
-      "Level": 1,
-      "Id": "aub1",
-      "Type": 3,
-      "Value": "使受到的魔法攻击和法术伤害降低 5%。"
-    },
-    {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
@@ -44,11 +49,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "使受到的魔法攻击和法术伤害降低 15%。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（邪部落）"
     }
   ],
   "NewId": "A0I8"

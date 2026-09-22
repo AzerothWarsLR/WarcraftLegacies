@@ -13,6 +13,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "纵向木门"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造纵向木门"
     }
   ],
   "NewId": "h009"

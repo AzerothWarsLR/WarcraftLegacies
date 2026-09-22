@@ -10,9 +10,9 @@
       "Value": "（德莱尼）"
     },
     {
+      "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Level": 2,
       "Value": "诅咒一名敌方单位，使其攻击有<Acrs,DataA2,%>%的几率落空。|n持续<Acrs,Dur2>秒。"
     }
   ],

@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "羽月光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（浅蓝色 - 羽月）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "羽月光环"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "羽月光环"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使<A0HL,Area1>范围内的友方远程单位攻击力提高<A0HL,DataA1,%>%。"
     }
   ],

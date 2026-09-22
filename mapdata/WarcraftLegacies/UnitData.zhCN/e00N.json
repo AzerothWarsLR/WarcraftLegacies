@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 精英）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "丛林守护者"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "强大的德鲁伊施法者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（德鲁伊 - 精英）"
     }
   ],
   "NewId": "e00N"

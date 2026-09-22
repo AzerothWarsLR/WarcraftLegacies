@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "凤凰变形 (凤凰蛋"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "凤凰变形 (凤凰蛋"
     }
   ]
 }

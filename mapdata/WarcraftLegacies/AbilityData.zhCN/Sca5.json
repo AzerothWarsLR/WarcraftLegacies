@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "甲壳护盾"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（战歌-血契苦工）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "甲壳护盾"
     }
   ]
 }

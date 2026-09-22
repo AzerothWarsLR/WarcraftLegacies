@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "无畏舰"
@@ -13,11 +18,6 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练无畏舰"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡）"
     },
     {
       "Id": "utub",

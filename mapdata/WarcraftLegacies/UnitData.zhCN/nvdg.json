@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "重型远程单位，可施放闪电链和霜甲术。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（萨格拉斯之眼）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型远程单位，可施放闪电链和霜甲术。"
     },
     {
       "Id": "unam",

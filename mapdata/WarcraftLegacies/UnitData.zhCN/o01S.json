@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造战争营地"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "主要作战单位生产建筑。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（战歌）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "战争营地"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造战争营地"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要作战单位生产建筑。"
     }
   ],
   "NewId": "o01S"

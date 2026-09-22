@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（亡灵阿尔萨斯）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "收割"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习收割 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "立即杀死附近的 5 个等级最低的非英雄敌方单位，每杀死一个单位，施法者便会在 8 秒内获得 30 点力量。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（亡灵阿尔萨斯）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习收割 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "ZB02"

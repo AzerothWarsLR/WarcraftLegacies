@@ -5,26 +5,26 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "硬化体肤"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（尚武之魂）"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "硬化"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "防止所有远程伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化体肤"
     }
   ],
   "NewId": "A0G8"

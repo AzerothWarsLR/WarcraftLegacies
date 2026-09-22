@@ -5,38 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "有几率对附近的敌人造成伤害。 |n|n|cffffcc001级|r - <VP07,DataA1>% 的几率，<VP07,DataB1>点伤害。 |n|cffffcc002级|r - <VP07,DataA2>% 的几率，<VP07,DataB2>点伤害。 |n|cffffcc003级|r - <VP07,DataA3>% 的几率，<VP07,DataB3>点伤害。 |n|cffffcc004级|r - <VP07,DataA4>% 的几率，<VP07,DataB4>点伤害。\n"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "粉碎"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "粉碎 - [|cffffcc00级别 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "粉碎 - [|cffffcc00级别 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "粉碎 - [|cffffcc00级别 4|r]"
-    },
-    {
-      "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "粉碎 - [|cffffcc00级别 1|r]"
+      "Value": "（军团英雄）"
     },
     {
       "Level": 1,
@@ -63,14 +34,43 @@
       "Value": "使攻击有<VP07,DataA4>% 的几率对附近的敌人造成<VP07,DataB4>点伤害。"
     },
     {
-      "Id": "ansf",
+      "Level": 2,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "（军团英雄）"
+      "Value": "粉碎 - [|cffffcc00级别 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "粉碎 - [|cffffcc00级别 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "粉碎 - [|cffffcc00级别 4|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "有几率对附近的敌人造成伤害。 |n|n|cffffcc001级|r - <VP07,DataA1>% 的几率，<VP07,DataB1>点伤害。 |n|cffffcc002级|r - <VP07,DataA2>% 的几率，<VP07,DataB2>点伤害。 |n|cffffcc003级|r - <VP07,DataA3>% 的几率，<VP07,DataB3>点伤害。 |n|cffffcc004级|r - <VP07,DataA4>% 的几率，<VP07,DataB4>点伤害。\n"
     },
     {
       "Id": "aret",
       "Type": 3,
       "Value": "学习粉碎 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "粉碎 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "粉碎"
     }
   ],
   "NewId": "VP07"

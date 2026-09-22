@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 - 洛瑟玛）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "烈焰爆裂"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习烈焰爆裂 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄发出一道火焰波，对周围的敌人造成伤害。每道火焰波造成 300 点伤害。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（绿色 - 洛瑟玛）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习烈焰爆裂 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0G4"

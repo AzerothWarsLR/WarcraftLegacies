@@ -6,6 +6,12 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
       "Value": "元素师专家级训练"
@@ -39,12 +45,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高元素使的法力值上限和法力恢复速度，并使其获得施放冰霜护甲的能力。"
-    },
-    {
-      "Id": "gnsf",
-      "Type": 3,
-      "Level": 1,
-      "Value": "（德莱尼）"
     }
   ],
   "NewId": "R078"

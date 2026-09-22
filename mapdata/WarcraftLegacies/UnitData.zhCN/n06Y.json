@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯独特）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "治疗尖塔"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为治疗尖塔"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "强大的支援建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（奎尔萨拉斯独特）"
+      "Value": "升级到治疗尖塔"
     }
   ],
   "NewId": "n06Y"

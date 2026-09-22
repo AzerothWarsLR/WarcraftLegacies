@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "真视"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（航母旗舰）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "真视"
     }
   ],
   "NewId": "A0S6"

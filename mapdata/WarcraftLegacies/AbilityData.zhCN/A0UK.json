@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 麦迪文）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "邪能裂隙"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习邪能裂隙 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -49,16 +59,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "释放一道直线前进的邪能波，造成<A0UK,DataC3>点伤害，并将敌方地面单位抛向空中。昏迷单位<A0UK,Dur3>秒，昏迷英雄<A0UK,HeroDur3>秒。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（达拉然 - 麦迪文）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习邪能裂隙 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0UK"

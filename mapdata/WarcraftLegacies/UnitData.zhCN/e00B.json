@@ -10,19 +10,14 @@
       "Value": "柳魔犬"
     },
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "训练柳魔犬"
-    },
-    {
       "Id": "utub",
       "Type": 3,
       "Value": "强大的前线近战单位。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（）"
+      "Value": "训练柳魔犬"
     }
   ],
   "NewId": "e00B"

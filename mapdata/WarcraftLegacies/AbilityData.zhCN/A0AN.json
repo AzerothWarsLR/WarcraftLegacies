@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "女神之惧"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（浅蓝色 阿玛拉）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "女神之惧"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "女神之惧"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使敌方单位对艾露恩心生恐惧，从而使其攻击力降低<Acht,DataA1,%>%，持续<Acht,Dur1>秒。"
     }
   ],

@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（维伦）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "神圣光环"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣光环 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -28,12 +38,6 @@
     },
     {
       "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "神圣光环"
-    },
-    {
-      "Level": 4,
       "Id": "atp1",
       "Type": 3,
       "Value": "神圣光环"
@@ -63,14 +67,10 @@
       "Value": "使周围友方单位的移动速度提高<A0DM,DataA4,%>%，生命恢复速度提高<A0DM,DataB4,.>。"
     },
     {
-      "Id": "ansf",
+      "Level": 4,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "（维伦）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习神圣光环 - [|cffffcc00等级 %d|r]"
+      "Value": "神圣光环"
     }
   ],
   "NewId": "A0DM"

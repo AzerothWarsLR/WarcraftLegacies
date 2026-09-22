@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷精英）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "海巫"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "纳沙塔尔宫廷的精锐战士。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（伊利达雷精英）"
     }
   ],
   "NewId": "h0AC"

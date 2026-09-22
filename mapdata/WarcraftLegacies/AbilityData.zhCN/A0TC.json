@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "鲁莽猛攻"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习鲁莽猛攻 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -33,12 +43,6 @@
       "Value": "鲁莽猛攻 - [|cffffcc003级|r]"
     },
     {
-      "Level": 4,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "鲁莽猛攻 - [|cffffcc004级|r]"
-    },
-    {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
@@ -58,19 +62,15 @@
     },
     {
       "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "鲁莽猛攻 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
       "Id": "aub1",
       "Type": 3,
       "Value": "重置施法者的技能冷却时间，但使其生命恢复速度降低 100，持续 1 秒。|n|cff99b4d1冷却时间 100 秒|r"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（血色）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习鲁莽猛攻 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0TC"

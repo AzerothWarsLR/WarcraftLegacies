@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "潮汐贤者"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "进攻型施法者。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（库尔提拉斯）"
     }
   ],
   "NewId": "h05K"

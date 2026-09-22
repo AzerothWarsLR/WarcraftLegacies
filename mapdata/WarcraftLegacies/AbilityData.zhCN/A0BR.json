@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（麦迪文）"
+    },
+    {
       "Id": "anam",
       "Type": 3,
       "Value": "能量涌动"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习能量涌动 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -61,16 +71,6 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "英雄倾注全部力量，使其在 5 秒内攻击速度提高 500%。"
-    },
-    {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（麦迪文）"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "学习能量涌动 - [|cffffcc00等级 %d|r]"
     }
   ],
   "NewId": "A0BR"

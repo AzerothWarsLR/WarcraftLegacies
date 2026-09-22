@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "攻城塔"
@@ -13,11 +18,6 @@
       "Id": "utip",
       "Type": 3,
       "Value": "训练攻城塔"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城）"
     },
     {
       "Id": "utub",

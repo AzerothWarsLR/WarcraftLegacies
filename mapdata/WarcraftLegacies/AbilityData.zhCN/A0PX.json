@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "硬化体肤"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（橙色 - 大地魔像）（图标）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化体肤"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "活性碎片"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "该单位死亡时会分裂为两个泥土魔像。"
     }
   ],

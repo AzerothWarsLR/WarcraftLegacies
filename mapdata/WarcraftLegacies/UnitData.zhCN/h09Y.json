@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "王座卫兵"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "洛丹伦最强壮的士兵，国王的护卫。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
     }
   ],
   "NewId": "h09Y"

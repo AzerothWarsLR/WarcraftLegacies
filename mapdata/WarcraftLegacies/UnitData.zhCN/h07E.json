@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
+      "Id": "unsf",
       "Type": 3,
-      "Value": "建造采矿殖民地"
+      "Value": "（铁炉堡 T1）"
     },
     {
       "Id": "utub",
@@ -15,14 +15,14 @@
       "Value": "主要建筑。"
     },
     {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（铁炉堡 T1）"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "采矿殖民地"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造采矿殖民地"
     }
   ],
   "NewId": "h07E"

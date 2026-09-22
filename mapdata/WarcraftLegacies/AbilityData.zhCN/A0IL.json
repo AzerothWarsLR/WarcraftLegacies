@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "机械工具包"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（工程师）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "机械工具包"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "机械工具包"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "为目标友方建筑或机械单位恢复<A0IL,DataA1>点生命值，在<A0IL,Dur1>秒内完成。"
     }
   ],

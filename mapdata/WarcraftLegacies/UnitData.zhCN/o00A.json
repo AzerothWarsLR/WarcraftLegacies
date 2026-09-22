@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落-精英）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "先知"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "年迈而睿智的萨满祭司。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（兽人部落-精英）"
     }
   ],
   "NewId": "o00A"

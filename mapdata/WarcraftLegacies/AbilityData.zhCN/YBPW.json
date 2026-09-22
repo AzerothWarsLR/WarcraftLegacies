@@ -10,15 +10,15 @@
       "Value": "召唤宠物狼"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤宠物狼"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "召唤一只白狼，一头强大的、具有<n057,realHP>点生命值的狼。|n永久持续。"
     },
     {

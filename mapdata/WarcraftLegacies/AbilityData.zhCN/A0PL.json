@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "瑟拉丹的祝福"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（野怪 - 瑟拉丹古树）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "瑟拉丹的祝福"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "瑟拉丹的祝福"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "强化半径<A0PL,Area1>内的友方单位，使其移动速度提高<A0PL,DataA1,%>%，攻击速度提高<A0PL,DataB1,%>%。"
     }
   ],

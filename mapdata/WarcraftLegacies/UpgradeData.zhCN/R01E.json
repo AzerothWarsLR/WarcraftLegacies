@@ -5,33 +5,33 @@
   ],
   "Modifications": [
     {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "迷雾之云"
-    },
-    {
+      "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Level": 1,
       "Value": "（洛丹伦）"
     },
     {
+      "Level": 1,
       "Id": "gtp1",
       "Type": 3,
-      "Level": 1,
       "Value": "研究空中枷锁"
     },
     {
+      "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使天马骑士获得空中枷锁技能，可用魔法束缚一个敌方空中单位，使其无法移动和攻击，并持续受到伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "空中枷锁"
     },
     {
       "Id": "gnam",
       "Type": 3,
-      "Level": 1,
-      "Value": "空中枷锁"
+      "Value": "迷雾之云"
     }
   ],
   "NewId": "R01E"

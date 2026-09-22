@@ -5,9 +5,19 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "大将军"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "布丽奇特·阿比迪斯"
     },
     {
       "Id": "utip",
@@ -18,16 +28,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "战斗型英雄，擅长近身战斗和激进进攻。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（血色）"
-    },
-    {
-      "Id": "upro",
-      "Type": 3,
-      "Value": "布丽奇特·阿比迪斯"
     }
   ],
   "NewId": "H00Y"

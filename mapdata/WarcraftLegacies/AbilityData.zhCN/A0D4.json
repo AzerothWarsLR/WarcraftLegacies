@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "铁炉堡光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（铁炉堡）"
     },
     {
-      "Id": "atp1",
+      "Id": "anam",
       "Type": 3,
-      "Level": 1,
       "Value": "铁炉堡光环"
     },
     {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "铁炉堡光环"
+    },
+    {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使附近建筑的攻击获得 20% 的额外伤害。"
     }
   ],

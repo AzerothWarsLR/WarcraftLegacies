@@ -5,7 +5,19 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（特遣牧师）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "回春术"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
       "Type": 3,
       "Value": "回春术"
     },
@@ -28,20 +40,8 @@
       "Value": "为一个目标友方单位恢复<A07U,DataA3>点生命值，在<A07U,Dur3>秒内完成。"
     },
     {
-      "Id": "ansf",
+      "Id": "anam",
       "Type": 3,
-      "Value": "（特遣牧师）"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 2,
-      "Value": "回春术"
-    },
-    {
-      "Id": "atp1",
-      "Type": 3,
-      "Level": 3,
       "Value": "回春术"
     }
   ],

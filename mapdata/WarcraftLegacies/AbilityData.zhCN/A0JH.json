@@ -5,9 +5,9 @@
   ],
   "Modifications": [
     {
-      "Id": "arut",
+      "Id": "ansf",
       "Type": 3,
-      "Value": "希尔瓦娜斯的弓术使她能够同时射出多支箭矢。 |n|n|cffffcc001级|r - 希尔瓦娜斯能一次射出 3 支箭矢。 |n|cffffcc002级|r - 希尔瓦娜斯能一次射出 5 支箭矢。|n|cffffcc003级|r - 希尔瓦娜斯能一次射出 7 支箭矢。\n"
+      "Value": "（蓝色燃烧堡垒）"
     },
     {
       "Id": "anam",
@@ -15,25 +15,25 @@
       "Value": "火箭弹幕"
     },
     {
-      "Id": "ansf",
-      "Type": 3,
-      "Value": "（蓝色燃烧堡垒）"
-    },
-    {
       "Id": "aret",
       "Type": 3,
       "Value": "学习多重射击 - [|cffffcc00等级 %d|r]"
     },
     {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "希尔瓦娜斯的弓术使她能够同时射出多支箭矢。 |n|n|cffffcc001级|r - 希尔瓦娜斯能一次射出 3 支箭矢。 |n|cffffcc002级|r - 希尔瓦娜斯能一次射出 5 支箭矢。|n|cffffcc003级|r - 希尔瓦娜斯能一次射出 7 支箭矢。\n"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "多重射击"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使该单位的攻击额外发射一枚投射物，最多可命中 4 个附近的敌方单位。"
     }
   ],

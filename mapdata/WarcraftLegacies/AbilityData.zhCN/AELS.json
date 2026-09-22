@@ -10,15 +10,15 @@
       "Value": "坐骑作战训练"
     },
     {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "灼热撕咬"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "攻击时，该单位使目标护甲降低 3 点，持续 5 秒。"
     },
     {

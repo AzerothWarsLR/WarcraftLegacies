@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "建造光铸熔炉"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（德莱尼 研究）"
@@ -23,6 +18,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "光铸熔炉"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造光铸熔炉"
     }
   ],
   "NewId": "o053"

@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然 T3）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "观星台"
-    },
-    {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "升级为观星台"
     },
     {
       "Id": "utub",
@@ -20,9 +20,9 @@
       "Value": "主要建筑。"
     },
     {
-      "Id": "unsf",
+      "Id": "utip",
       "Type": 3,
-      "Value": "（达拉然 T3）"
+      "Value": "升级到观星台"
     }
   ],
   "NewId": "h068"

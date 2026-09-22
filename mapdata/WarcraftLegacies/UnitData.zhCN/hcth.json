@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "白银之手侍从"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "灌注圣光的战士，对瘟疫与亡灵化免疫。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（洛丹伦）"
     }
   ]
 }

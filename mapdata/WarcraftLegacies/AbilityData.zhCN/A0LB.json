@@ -5,25 +5,25 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "统御光环"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（1级）（淡蓝色 - 珊蒂斯战旗）"
     },
     {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "统御光环"
+    },
+    {
+      "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Level": 1,
       "Value": "哨兵战旗光环"
     },
     {
+      "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Level": 1,
       "Value": "使周围友方单位的攻击力提高 7.5%。"
     }
   ],

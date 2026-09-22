@@ -5,6 +5,11 @@
   ],
   "Modifications": [
     {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "炮艇"
@@ -18,11 +23,6 @@
       "Id": "utub",
       "Type": 3,
       "Value": "矮人工程学落入了天真的人类手中。"
-    },
-    {
-      "Id": "unsf",
-      "Type": 3,
-      "Value": "（暴风城）"
     }
   ],
   "NewId": "n06N"

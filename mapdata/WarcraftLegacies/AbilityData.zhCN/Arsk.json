@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "抗性体肤"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "（棕色 - 山岭巨人）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "抗性体肤"
     }
   ]
 }

@@ -5,16 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": "utip",
-      "Type": 3,
-      "Value": "召唤毁灭祭坛"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "召唤英雄和准英雄。"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
       "Value": "（燃烧军团 祭坛）"
@@ -23,6 +13,16 @@
       "Id": "unam",
       "Type": 3,
       "Value": "毁灭祭坛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造毁灭祭坛"
     }
   ],
   "NewId": "u01N"

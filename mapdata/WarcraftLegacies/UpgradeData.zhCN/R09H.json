@@ -6,27 +6,9 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": "gnam",
+      "Id": "gnsf",
       "Type": 3,
-      "Value": "星术师专家级训练"
-    },
-    {
-      "Level": 2,
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "星术师大师级训练"
-    },
-    {
-      "Level": 1,
-      "Id": "gtp1",
-      "Type": 3,
-      "Value": "星术师专家级训练"
-    },
-    {
-      "Level": 2,
-      "Id": "gtp1",
-      "Type": 3,
-      "Value": "星术师大师级训练"
+      "Value": "（日怒）"
     },
     {
       "Level": 1,
@@ -41,10 +23,28 @@
       "Value": "提高星术师的法力值上限，并使其获得施放压制的能力。"
     },
     {
-      "Id": "gnsf",
-      "Type": 3,
       "Level": 1,
-      "Value": "（日怒）"
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "星术师专家级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "星术师专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "星术师大师级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "星术师大师级训练"
     }
   ],
   "NewId": "R09H"
