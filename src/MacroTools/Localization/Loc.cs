@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Localization.Translations;
+using MacroTools.Save;
 
 namespace MacroTools.Localization;
 
@@ -65,18 +66,44 @@ public static class Loc
   }
 
   /// <summary>
-  /// Gets the local player's currently selected language, falling back to <see cref="GetSystemLanguage"/> if no
-  /// language has been explicitly selected. Returns <c>"en"</c> when there is no local player to ask, which is the
-  /// case outside the game.
+  /// Gets the local player's currently selected language, falling back to <see cref="GetSystemLanguage"/> when the
+  /// player has not chosen one.
+  /// <para>
+  /// The two ways this can have no answer to give are graded rather than collapsed into English, because they mean
+  /// different things. <b>There is no local player</b> - outside the game, or in a test - and there is nothing to
+  /// ask, so <c>"en"</c> is returned and the caller stays quiet. <b>There is a local player, but their settings have
+  /// not been read yet</b>: reading <c>PlayerData.PlayerSettings</c> before the save loads does not throw, it quietly
+  /// hands back a fresh default whose <c>Language</c> is <see langword="null"/>, and treating that as English is what
+  /// left everything drawn in the first seconds of a game - the faction choice buttons, the game mode announcement,
+  /// discovered quests, the turn timer - in English while text drawn a little later came out translated. The client's
+  /// own locale is the right answer there, and it is available from the first frame.
+  /// </para>
+  /// <para>
+  /// <see cref="SaveManager.LocalPlayerSettingsReady"/> tells the two apart: it is set only for the local player, and
+  /// only once their settings are in <see cref="SaveManager.SavesByPlayer"/>. An exception is not a usable signal -
+  /// the same code path raises one in both cases, and the fabricated-default case raises nothing at all.
+  /// </para>
   /// </summary>
   public static string GetLanguage()
   {
     try
     {
+      if (player.LocalPlayer == null)
+      {
+        return "en";
+      }
+
+      if (!SaveManager.LocalPlayerSettingsReady)
+      {
+        return GetSystemLanguage();
+      }
+
       return player.LocalPlayer.GetPlayerData().PlayerSettings.Language ?? GetSystemLanguage();
     }
     catch (Exception)
     {
+      // Nothing about the local player can be read at all - outside the game, or the engine refused the call. There
+      // is no client locale to fall back on either, so stay in English rather than guessing.
       return "en";
     }
   }
