@@ -1207,7 +1207,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Frozen Throne", "冰封王座");
     Add("Frozen Throne (Empty)", "冰封王座（空）");
     Add("Frozen Throne (Ruptured)", "冰封王座（破裂）");
-    Add("G'Hanir, the Mother Tree", "加尼尔，母树");
+    Add("G'Hanir, the Mother Tree", "加尼尔，母亲之树");
     Add("Gain 200 gold and a base in Upper Netherstorm", "获得 200 黄金和一处位于上层虚空风暴的基地");
     Add("Gain 250 gold and a base in Area 52", "获得 250 黄金和一处位于 52 区的基地");
     Add("Gain 500 gold.", "获得 500 黄金");
