@@ -871,7 +871,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Anubris", "阿努布里斯");
     Add("Anya Eversong", "安雅·永歌");
     Add("Anyone casts {spell}", "任意单位施放 {spell}");
-    Add("Aosp", "尖刺障碍");
+    Add("Aosp", "尖刺屏障");
     Add("Aphx", "凤凰变形（卵化）");
     Add("Apiv", "永久隐身");
     Add("Araj the Summoner", "召唤者阿拉基");
@@ -1878,7 +1878,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Specialist Production", "特种生产");
     Add("Spell Immunity, Spell Immunity", "法术免疫, 法术免疫");
     Add("Spider Attack", "蜘蛛攻击");
-    Add("Spiked Barricades,Spiked Barricades,Improved Spiked Barricades", "尖刺障碍,尖刺障碍,中级尖刺障碍");
+    Add("Spiked Barricades,Spiked Barricades,Improved Spiked Barricades", "尖刺屏障,尖刺屏障,中级尖刺屏障");
     Add("Sten Azureshield", "斯滕·碧蓝之盾");
     Add("Stonefury", "石怒");
     Add("Stonetalon Peak", "石爪峰");
@@ -2187,7 +2187,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Tortolla has finally awoken from his ancient slumber.", "托尔托拉终于从远古的沉眠中苏醒。");
     Add("Tortolla was badly wounded during the War of the Ancients, and has been resting ever since.", "托尔托拉在上古之战中身负重伤，此后便一直沉眠至今。");
     Add("Town Hall", "城镇大厅");
-    Add("Town Portal Scroll", "回城卷轴");
+    Add("Town Portal Scroll", "城镇传送卷轴");
     Add("Transform your Earth Golems into Crystal Golems", "将你的土元素转化为水晶元素");
     Add("Tree of Life upgrade ability", "生命之树升级");
     Add("Tremble, mortals, and despair! Doom has come to this world!", "颤抖吧，凡人，绝望吧！末日就要降临了！");
@@ -2499,7 +2499,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("ability:ACm3", "法术免疫");
     Add("ability:Aall", "共享商店");
     Add("ability:Aimp", "斩首之刃");
-    Add("ability:Aosp", "尖刺障碍");
+    Add("ability:Aosp", "尖刺屏障");
     Add("ability:Aspy", "召唤九头蛇");
     Add("ability:Atol", "生命之树升级");
     Add("an unknown capital", "一处未知的都城");
