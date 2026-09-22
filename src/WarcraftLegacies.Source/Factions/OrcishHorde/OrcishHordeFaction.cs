@@ -6,12 +6,15 @@ using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
+using MacroTools.Quests;
 using MacroTools.Researches;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Researches;
 using WCSharp.Shared.Data;
 
@@ -93,7 +96,31 @@ public sealed class OrcishHordeFaction : Faction
     new SeaWitchAssault(this, quest, greatHall, Regions.Darkspear_Isles, Regions.Sea_Witch_Spawn_1,
       Regions.Sea_Witch_Spawn_2, Regions.Sea_Witch_Spawn_3);
 
-    AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, this, quest));
+    var questOrgrimmar = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, this, quest));
+
+    var questCrossroads = new QuestCrossroads(Regions.Crossroads);
+    questCrossroads.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questCrossroads);
+
+    var questSenjinIsles = new QuestSenjinIsles();
+    questSenjinIsles.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questSenjinIsles);
+
+    var questSlayCenarius = AddQuest(new QuestSlayCenarius(questOrgrimmar));
+    var questDemolishElfCities = AddQuest(new QuestDemolishElfCities(questSlayCenarius));
+    var questThrallMaelstrom = AddQuest(new QuestThrallMaelstrom(AllLegends.Orc.Thrall, questOrgrimmar));
+    var questWarsongHold = AddQuest(new QuestWarsongHold(questThrallMaelstrom));
+    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Orc.Thrall, questWarsongHold, questDemolishElfCities));
 
     RegisterTrollRescue(Regions.Troll_Rescue_1);
     RegisterTrollRescue(Regions.Troll_Rescue_2);
