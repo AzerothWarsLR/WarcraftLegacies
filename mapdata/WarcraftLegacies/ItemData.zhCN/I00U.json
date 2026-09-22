@@ -10,14 +10,14 @@
       "Value": "提高力量、敏捷和智力，并可施放王冠治疗。"
     },
     {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00神器|r|n使力量、敏捷与智力提高<A0A1,DataA1>点。可使用强效王冠治疗，为附近所有友方单位恢复<A0BF,DataB1>点生命值、<A0BF,DataC1>点魔法值，并使其护甲提高<A0BF,DataA1>点，持续<A0BF,Dur1>秒。|n|cffffcc00典故|r|n|cffffdead由洛丹伦王冠与暴风王冠熔铸而成。"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "东部王国王冠"
-    },
-    {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "|cffff8c00神器|r|n使力量、敏捷与智力提高<A0A1,DataA1>点。可使用强效王冠治疗，为附近所有友方单位恢复<A0BF,DataB1>点生命值、<A0BF,DataC1>点魔法值，并使其护甲提高<A0BF,DataA1>点，持续<A0BF,Dur1>秒。|n|cffffcc00典故|r|n|cffffdead由洛丹伦王冠与暴风王冠熔铸而成。\n"
     }
   ],
   "NewId": "I00U"

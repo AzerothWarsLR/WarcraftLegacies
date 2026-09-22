@@ -17,31 +17,31 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "从英雄的位置发射一道冲击波，对一条直线上的单位造成伤害。|n|n|cffffcc001级|r - 150 点伤害。最多 2000 点伤害。|n|cffffcc002级|r - 225 点伤害。最多 2350 点伤害。|n|cffffcc003级|r - 300 点伤害。最多 2600 点伤害。|n|cffffcc004级|r - 350 点伤害。最多 2950 点伤害。\n"
+      "Value": "从英雄的位置发射一道冲击波，对一条直线上的单位造成伤害。|n|n|cffffcc001级|r - 150 点伤害。最多 2000 点伤害。|n|cffffcc002级|r - 225 点伤害。最多 2350 点伤害。|n|cffffcc003级|r - 300 点伤害。最多 2600 点伤害。|n|cffffcc004级|r - 350 点伤害。最多 2950 点伤害。"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎波浪 - [|cffffcc001级|r]"
+      "Value": "震荡波 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎波浪 - [|cffffcc002级|r]"
+      "Value": "震荡波 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎波浪 - [|cffffcc003级|r]"
+      "Value": "震荡波 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "粉碎波浪 - [|cffffcc004级|r]"
+      "Value": "震荡波 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,

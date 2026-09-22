@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "强化狂热，使其提高使用者<A0EH,DataA2,%>% 的攻击速度和<A0EH,DataB2,%>% 的移动速度。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "魔法岗哨"
     }
   ],
   "NewId": "R00Y"

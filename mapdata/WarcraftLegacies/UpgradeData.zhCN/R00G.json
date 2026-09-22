@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "使远行者能够使用佯攻，使其隐形<A02I,Dur1>秒，并提高<A02I,DataB1,%>% 的移动速度。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "照明弹"
     }
   ],
   "NewId": "R00G"

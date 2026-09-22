@@ -17,7 +17,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "当山岭之王的化身被激活时，穆拉丁将获得额外护甲、额外生命值、额外攻击力、法术免疫和顺劈斩攻击。穆拉丁还会周期性地嘲讽附近的敌人，迫使他们攻击自己。|n|n|cffffcc00等级 1|r - <MD07,DataC1> 点伤害，<MD07,DataA1> 点护甲，<MD07,DataB1> 点生命值，持续 <MD07,Dur1> 秒。|n|n|cffffcc00等级 2|r - <MD07,DataC2> 点伤害，<MD07,DataA2> 点护甲，<MD07,DataB2> 点生命值，持续 <MD07,Dur2> 秒。|n|n|cffffcc00等级 3|r - <MD07,DataC3> 点伤害，<MD07,DataA3> 点护甲，<MD07,DataB3> 点生命值，持续 <MD07,Dur3> 秒。\n"
+      "Value": "当山岭之王的化身被激活时，穆拉丁将获得额外护甲、额外生命值、额外攻击力、法术免疫和顺劈斩攻击。穆拉丁还会周期性地嘲讽附近的敌人，迫使他们攻击自己。|n|n|cffffcc00等级 1|r - <MD07,DataC1> 点伤害，<MD07,DataA1> 点护甲，<MD07,DataB1> 点生命值，持续 <MD07,Dur1> 秒。|n|n|cffffcc00等级 2|r - <MD07,DataC2> 点伤害，<MD07,DataA2> 点护甲，<MD07,DataB2> 点生命值，持续 <MD07,Dur2> 秒。|n|n|cffffcc00等级 3|r - <MD07,DataC3> 点伤害，<MD07,DataA3> 点护甲，<MD07,DataB3> 点生命值，持续 <MD07,Dur3> 秒。"
     },
     {
       "Level": 1,

@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "强化治疗术，将其治疗量提高至<A0AR,DataA2>，并使其法力值消耗降低至<A0AR,Cost2>。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "混乱"
     }
   ],
   "NewId": "R03L"

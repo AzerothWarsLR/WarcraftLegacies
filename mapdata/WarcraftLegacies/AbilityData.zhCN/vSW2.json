@@ -12,7 +12,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤 2 波迅猛的火焰，对区域内的单位造成伤害。每波火焰都会造成初始伤害，然后灼烧敌人<vSW2,Dur1>秒。 |n|n|cffffcc001级|r - <vSW2,DataB1>点波次伤害，每秒<vSW2f,DataE1>点伤害。 |n|cffffcc002级|r - <vSW2,DataB2>点波次伤害，每秒<vSW2,DataE2>点伤害。 |n|cffffcc003级|r - <vSW2,DataB3>点波次伤害，每秒<vSW2,DataE3>点伤害。\n"
+      "Value": "召唤 2 波迅猛的火焰，对区域内的单位造成伤害。每波火焰都会造成初始伤害，然后灼烧敌人<vSW2,Dur1>秒。 |n|n|cffffcc001级|r - <vSW2,DataB1>点波次伤害，每秒<vSW2f,DataE1>点伤害。 |n|cffffcc002级|r - <vSW2,DataB2>点波次伤害，每秒<vSW2,DataE2>点伤害。 |n|cffffcc003级|r - <vSW2,DataB3>点波次伤害，每秒<vSW2,DataE3>点伤害。"
     },
     {
       "Level": 4,

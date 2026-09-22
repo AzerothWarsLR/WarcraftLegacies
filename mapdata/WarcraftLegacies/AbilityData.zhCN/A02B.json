@@ -22,7 +22,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "在<A02B,Area1>的目标半径内从天空召唤流星，对敌方单位造成伤害并使其昏迷<A02N,DataB1>秒。|n|n|cffffcc001级|r - <A02B,DataB1>颗流星，每颗造成<A02N,DataA1>点伤害。|n|cffffcc002级|r - <A02B,DataB2>颗流星，每颗造成<A0FF,DataA1>点伤害。|n|cffffcc003级|r - <A02B,DataB3>颗流星，每颗造成<A0LG,DataA1>点伤害。\n"
+      "Value": "在<A02B,Area1>的目标半径内从天空召唤流星，对敌方单位造成伤害并使其昏迷<A02N,DataB1>秒。|n|n|cffffcc001级|r - <A02B,DataB1>颗流星，每颗造成<A02N,DataA1>点伤害。|n|cffffcc002级|r - <A02B,DataB2>颗流星，每颗造成<A0FF,DataA1>点伤害。|n|cffffcc003级|r - <A02B,DataB3>颗流星，每颗造成<A0LG,DataA1>点伤害。"
     },
     {
       "Level": 1,

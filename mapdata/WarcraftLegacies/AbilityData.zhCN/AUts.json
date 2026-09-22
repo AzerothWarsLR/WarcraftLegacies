@@ -12,7 +12,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "英雄长出带刺的角质甲壳，提高自身护甲，减少受到的所有伤害，并将伤害反弹给敌方近战攻击者。|n|n|cffffcc00级别 1|r - <AUts,DataC1>点额外护甲，反弹<AUts,DataA1,%>% 伤害。|n|cffffcc00级别 2|r - <AUts,DataC2>点额外护甲，英雄受到的所有伤害降低至<AUts,DataB2,%>%，反弹<AUts,DataA2,%>% 伤害。|n|cffffcc00级别 3|r - <AUts,DataC3>点额外护甲，英雄受到的所有伤害降低至<AUts,DataB3,%>%，反弹<AUts,DataA3,%>% 伤害。|n|cffffcc00级别 4|r - <AUts,DataC4>点额外护甲，英雄受到的所有伤害降低至<AUts,DataB4,%>%，反弹<AUts,DataA4,%>% 伤害。\n"
+      "Value": "英雄长出带刺的角质甲壳，提高自身护甲，减少受到的所有伤害，并将伤害反弹给敌方近战攻击者。|n|n|cffffcc00级别 1|r - <AUts,DataC1>点额外护甲，反弹<AUts,DataA1,%>% 伤害。|n|cffffcc00级别 2|r - <AUts,DataC2>点额外护甲，英雄受到的所有伤害降低至<AUts,DataB2,%>%，反弹<AUts,DataA2,%>% 伤害。|n|cffffcc00级别 3|r - <AUts,DataC3>点额外护甲，英雄受到的所有伤害降低至<AUts,DataB3,%>%，反弹<AUts,DataA3,%>% 伤害。|n|cffffcc00级别 4|r - <AUts,DataC4>点额外护甲，英雄受到的所有伤害降低至<AUts,DataB4,%>%，反弹<AUts,DataA4,%>% 伤害。"
     },
     {
       "Level": 4,

@@ -12,7 +12,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "阻止目标区域内的所有敌人施放法术。 |n|n|cffffcc001级|r - 小范围，持续<A083,Dur1>秒（英雄为<A083,HeroDur1>秒）。 |n|cffffcc002级|r - 中范围，持续<A083,Dur2>秒（英雄为<A083,HeroDur2>秒）。 |n|cffffcc003级|r - 中范围，持续<A083,Dur3>秒（英雄为<A083,HeroDur3>秒）。 |n|cffffcc004级|r - 大范围，持续<A083,Dur4>秒（英雄为<A083,HeroDur4>秒）。\n"
+      "Value": "阻止目标区域内的所有敌人施放法术。 |n|n|cffffcc001级|r - 小范围，持续<A083,Dur1>秒（英雄为<A083,HeroDur1>秒）。 |n|cffffcc002级|r - 中范围，持续<A083,Dur2>秒（英雄为<A083,HeroDur2>秒）。 |n|cffffcc003级|r - 中范围，持续<A083,Dur3>秒（英雄为<A083,HeroDur3>秒）。 |n|cffffcc004级|r - 大范围，持续<A083,Dur4>秒（英雄为<A083,HeroDur4>秒）。"
     },
     {
       "Level": 4,

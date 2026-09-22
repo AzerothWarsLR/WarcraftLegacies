@@ -42,7 +42,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "使目标敌方单位进入睡眠。被攻击会惊醒睡眠中的单位。 |n|n|cffffcc001级|r - 睡眠<ANSL,Dur1>秒，消耗<ANSL,Cost1>点魔法值。 |n|cffffcc002级|r - 睡眠<ANSL,Dur2>秒，消耗<ANSL,Cost2>点魔法值。 |n|cffffcc003级|r - 睡眠<ANSL,Dur3>秒，消耗<ANSL,Cost3>点魔法值。\n"
+      "Value": "使目标敌方单位进入睡眠。被攻击会惊醒睡眠中的单位。 |n|n|cffffcc001级|r - 睡眠<ANSL,Dur1>秒，消耗<ANSL,Cost1>点魔法值。 |n|cffffcc002级|r - 睡眠<ANSL,Dur2>秒，消耗<ANSL,Cost2>点魔法值。 |n|cffffcc003级|r - 睡眠<ANSL,Dur3>秒，消耗<ANSL,Cost3>点魔法值。"
     },
     {
       "Id": "anam",

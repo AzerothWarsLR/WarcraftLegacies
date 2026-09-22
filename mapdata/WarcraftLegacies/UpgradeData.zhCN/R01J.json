@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "提高诱捕技能的效果。对单位持续<Aens,Dur2>秒，并将施法距离提高至<Aens,Rng2>。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "诱捕"
     }
   ],
   "NewId": "R01J"

@@ -17,7 +17,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "用英雄巨大的利爪猛击地面，向前射出尖刺触须，对一条直线上的敌方地面单位造成伤害，并将其抛到空中。|n|n|cffffcc00级别 1|r - <AUim,DataC1>点伤害，昏迷 1 秒。|n|cffffcc00级别 2|r - <AUim,DataC2>点伤害，昏迷 1.5(1.25)秒。|n|cffffcc00级别 3|r - <AUim,DataC3>点伤害，昏迷 2(1.5)秒。|n|cffffcc00级别 4|r - <AUim,DataC4>点伤害，昏迷 2.5(1.75)秒。\n"
+      "Value": "用英雄巨大的利爪猛击地面，向前射出尖刺触须，对一条直线上的敌方地面单位造成伤害，并将其抛到空中。|n|n|cffffcc00级别 1|r - <AUim,DataC1>点伤害，昏迷 1 秒。|n|cffffcc00级别 2|r - <AUim,DataC2>点伤害，昏迷 1.5(1.25)秒。|n|cffffcc00级别 3|r - <AUim,DataC3>点伤害，昏迷 2(1.5)秒。|n|cffffcc00级别 4|r - <AUim,DataC4>点伤害，昏迷 2.5(1.75)秒。"
     },
     {
       "Level": 4,

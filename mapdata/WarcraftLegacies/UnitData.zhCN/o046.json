@@ -10,14 +10,14 @@
       "Value": "（野外生物塔）"
     },
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "主要防御建筑。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "了望塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
     }
   ],
   "NewId": "o046"

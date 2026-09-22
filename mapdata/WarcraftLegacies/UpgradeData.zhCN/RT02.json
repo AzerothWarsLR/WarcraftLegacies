@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "允许训练食人魔领主。|n|n|cffc864c8无法与牛头人酋长同时研究。|r"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "潜水"
     }
   ],
   "NewId": "RT02"

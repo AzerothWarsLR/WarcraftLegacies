@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "强化牛头人的粉碎，将其造成的伤害提高至<Awar,DataB2>，最大伤害半径提高至<Awar,DataD2>。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "粉碎伤害强化"
     }
   ]
 }

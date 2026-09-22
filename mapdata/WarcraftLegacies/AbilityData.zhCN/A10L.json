@@ -22,7 +22,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "向目标区域内的每个敌方单位射出一支附魔箭矢，造成伤害并使每个目标昏迷<A10O,Dur1>秒。 |n|n|cffffcc001级|r - 造成<A10O,DataA1>点伤害。|n|cffffcc002级|r - 造成<A10O,DataA2>点伤害。|n|cffffcc003级|r - 造成<A10O,DataA3>点伤害。|n|cffffcc004级|r - 造成<A10O,DataA4>点伤害。\n"
+      "Value": "向目标区域内的每个敌方单位射出一支附魔箭矢，造成伤害并使每个目标昏迷<A10O,Dur1>秒。 |n|n|cffffcc001级|r - 造成<A10O,DataA1>点伤害。|n|cffffcc002级|r - 造成<A10O,DataA2>点伤害。|n|cffffcc003级|r - 造成<A10O,DataA3>点伤害。|n|cffffcc004级|r - 造成<A10O,DataA4>点伤害。"
     },
     {
       "Level": 1,

@@ -22,7 +22,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "射出一支箭矢，使目标昏迷并造成可观的伤害。|n|n|cffffcc001级|r - 造成<A0CJ:ACfb,DataA1>点伤害，使目标昏迷<A0CJ:ACfb,Dur1>秒。对英雄持续<A0CJ:ACfb,HeroDur1>秒。|n|cffffcc002级|r - 造成<A0CJ:ACfb,DataA2>点伤害，使目标昏迷<A0CJ:ACfb,Dur2>秒。对英雄持续<A0CJ:ACfb,HeroDur2>秒。|n|cffffcc003级|r - 造成<A0CJ:ACfb,DataA3>点伤害，使目标昏迷<A0CJ:ACfb,Dur3>秒。对英雄持续<A0CJ:ACfb,HeroDur3>秒。|n|cffffcc004级|r - 造成<A0CJ:ACfb,DataA4>点伤害，使目标昏迷<A0CJ:ACfb,Dur4>秒。对英雄持续<A0CJ:ACfb,HeroDur4>秒。\n"
+      "Value": "射出一支箭矢，使目标昏迷并造成可观的伤害。|n|n|cffffcc001级|r - 造成<A0CJ:ACfb,DataA1>点伤害，使目标昏迷<A0CJ:ACfb,Dur1>秒。对英雄持续<A0CJ:ACfb,HeroDur1>秒。|n|cffffcc002级|r - 造成<A0CJ:ACfb,DataA2>点伤害，使目标昏迷<A0CJ:ACfb,Dur2>秒。对英雄持续<A0CJ:ACfb,HeroDur2>秒。|n|cffffcc003级|r - 造成<A0CJ:ACfb,DataA3>点伤害，使目标昏迷<A0CJ:ACfb,Dur3>秒。对英雄持续<A0CJ:ACfb,HeroDur3>秒。|n|cffffcc004级|r - 造成<A0CJ:ACfb,DataA4>点伤害，使目标昏迷<A0CJ:ACfb,Dur4>秒。对英雄持续<A0CJ:ACfb,HeroDur4>秒。"
     },
     {
       "Level": 1,

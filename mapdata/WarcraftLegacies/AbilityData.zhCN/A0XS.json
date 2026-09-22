@@ -12,7 +12,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "阻止目标区域内的所有敌人施放法术。  |n|n|cffffcc001级|r - 影响目标点<A0XS,Area1>半径内的单位。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。 |n|cffffcc002级|r - 影响目标点<A0XS,Area2>半径内的单位。对单位持续<A0XS,Dur2>秒，对英雄持续<A0XS,HeroDur2>秒。|n|cffffcc003级|r - 影响目标点<A0XS,Area3>半径内的单位。对单位持续<A0XS,Dur3>秒，对英雄持续<A0XS,HeroDur3>秒。\n"
+      "Value": "阻止目标区域内的所有敌人施放法术。  |n|n|cffffcc001级|r - 影响目标点<A0XS,Area1>半径内的单位。对单位持续<A0XS,Dur1>秒，对英雄持续<A0XS,HeroDur1>秒。 |n|cffffcc002级|r - 影响目标点<A0XS,Area2>半径内的单位。对单位持续<A0XS,Dur2>秒，对英雄持续<A0XS,HeroDur2>秒。|n|cffffcc003级|r - 影响目标点<A0XS,Area3>半径内的单位。对单位持续<A0XS,Dur3>秒，对英雄持续<A0XS,HeroDur3>秒。"
     },
     {
       "Level": 4,

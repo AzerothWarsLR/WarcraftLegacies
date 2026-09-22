@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "使火枪手对重型护甲单位造成的伤害提高<A0F4,DataB1,%>%。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "防御"
     }
   ],
   "NewId": "R00Z"

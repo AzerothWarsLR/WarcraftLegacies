@@ -22,7 +22,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "向四面八方释放闪电，对周围的所有敌方单位造成伤害。|n|n|cffffcc001级|r - 对每个目标造成<A08Q,DataA1>点伤害。|n|cffffcc002级|r - 对每个目标造成<A08Q,DataA2>点伤害。|n|cffffcc003级|r - 对每个目标造成<A08Q,DataA3>点伤害。\n"
+      "Value": "向四面八方释放闪电，对周围的所有敌方单位造成伤害。|n|n|cffffcc001级|r - 对每个目标造成<A08Q,DataA1>点伤害。|n|cffffcc002级|r - 对每个目标造成<A08Q,DataA2>点伤害。|n|cffffcc003级|r - 对每个目标造成<A08Q,DataA3>点伤害。"
     },
     {
       "Level": 1,

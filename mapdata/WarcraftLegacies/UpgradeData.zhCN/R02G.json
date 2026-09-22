@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "使绿龙的攻击点燃地面。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "腐蚀吐息"
     }
   ],
   "NewId": "R02G"

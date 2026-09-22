@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "强化肯瑞托的叉状闪电，将其伤害提高至<A00I,DataA2>。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "魔法岗哨"
     }
   ],
   "NewId": "R061"

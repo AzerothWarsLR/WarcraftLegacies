@@ -22,7 +22,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "释放一道邪能波，对一条直线上的单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <A0UK,DataC1>点伤害，昏迷<A0UK,Dur1>秒。 |n|cffffcc002级|r - <A0UK,DataC2>点伤害，昏迷<A0UK,Dur2>秒。 |n|cffffcc003级|r - <A0UK,DataC3>点伤害，昏迷<A0UK,Dur3>秒。\n"
+      "Value": "释放一道邪能波，对一条直线上的单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <A0UK,DataC1>点伤害，昏迷<A0UK,Dur1>秒。 |n|cffffcc002级|r - <A0UK,DataC2>点伤害，昏迷<A0UK,Dur2>秒。 |n|cffffcc003级|r - <A0UK,DataC3>点伤害，昏迷<A0UK,Dur3>秒。"
     },
     {
       "Level": 1,

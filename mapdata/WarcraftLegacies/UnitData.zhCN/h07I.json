@@ -10,11 +10,6 @@
       "Value": "（铁炉堡塔）"
     },
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "主要防御建筑。"
-    },
-    {
       "Id": "unam",
       "Type": 3,
       "Value": "警戒塔"
@@ -23,6 +18,11 @@
       "Id": "utip",
       "Type": 3,
       "Value": "升级到警戒塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
     }
   ],
   "NewId": "h07I"

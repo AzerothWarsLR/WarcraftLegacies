@@ -12,7 +12,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "猛击地面，对周围的敌方地面单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <AOws,DataA1>点伤害，昏迷<AOws,Dur1>秒。 |n|cffffcc002级|r - <AOws,DataA2>点伤害，昏迷<AOws,Dur2>秒。 |n|cffffcc003级|r - <AOws,DataA3>点伤害，昏迷<AOws,Dur3>秒。|n|cffffcc004级|r - <AOws,DataA4>点伤害，昏迷<AOws,Dur4>秒。\n"
+      "Value": "猛击地面，对周围的敌方地面单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <AOws,DataA1>点伤害，昏迷<AOws,Dur1>秒。 |n|cffffcc002级|r - <AOws,DataA2>点伤害，昏迷<AOws,Dur2>秒。 |n|cffffcc003级|r - <AOws,DataA3>点伤害，昏迷<AOws,Dur3>秒。|n|cffffcc004级|r - <AOws,DataA4>点伤害，昏迷<AOws,Dur4>秒。"
     },
     {
       "Level": 4,

@@ -12,7 +12,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "发出一声恐怖的嚎叫，使附近的敌方单位在恐惧中颤抖，降低其攻击力。 |n持续<ANht,Dur1>秒。 |n|n|cffffcc001级|r - 攻击力降低 25%。 |n|cffffcc002级|r - 攻击力降低 40%。 |n|cffffcc003级|r - 攻击力降低 55%。 |n|cffffcc004级|r - 攻击力降低 70%。\n"
+      "Value": "发出一声恐怖的嚎叫，使附近的敌方单位在恐惧中颤抖，降低其攻击力。 |n持续<ANht,Dur1>秒。 |n|n|cffffcc001级|r - 攻击力降低 25%。 |n|cffffcc002级|r - 攻击力降低 40%。 |n|cffffcc003级|r - 攻击力降低 55%。 |n|cffffcc004级|r - 攻击力降低 70%。"
     },
     {
       "Level": 4,

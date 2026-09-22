@@ -27,11 +27,6 @@
       "Id": "gnsf",
       "Type": 3,
       "Value": "（邪部落）"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "防御"
     }
   ],
   "NewId": "R02C"

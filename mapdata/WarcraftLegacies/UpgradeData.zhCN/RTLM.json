@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "收拾营地，开始向雷霆崖进军。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "牧师专家级训练"
     }
   ],
   "NewId": "RTLM"

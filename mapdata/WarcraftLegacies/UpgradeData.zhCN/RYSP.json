@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "强化毒鳍龙的减速毒药，将其每秒伤害提高至<YBSP,DataA2>。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "防御"
     }
   ],
   "NewId": "RYSP"

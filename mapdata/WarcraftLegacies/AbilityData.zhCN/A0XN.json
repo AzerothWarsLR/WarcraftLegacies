@@ -42,7 +42,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "用活体烈焰强化每次攻击，这些火焰会附着在目标身上。受此效果影响的单位在死亡时会被焚烧，对周围的所有敌方单位造成伤害。|n|n|cffffcc001级|r - <A0XN,DataB1>点焚烧伤害。|n|cffffcc002级|r - <A0XN,DataB2>点焚烧伤害。|n|cffffcc003级|r - <A0XN,DataB3>点焚烧伤害。|n|cffffcc004级|r - <A0XN,DataB4>点焚烧伤害。\n"
+      "Value": "用活体烈焰强化每次攻击，这些火焰会附着在目标身上。受此效果影响的单位在死亡时会被焚烧，对周围的所有敌方单位造成伤害。|n|n|cffffcc001级|r - <A0XN,DataB1>点焚烧伤害。|n|cffffcc002级|r - <A0XN,DataB2>点焚烧伤害。|n|cffffcc003级|r - <A0XN,DataB3>点焚烧伤害。|n|cffffcc004级|r - <A0XN,DataB4>点焚烧伤害。"
     },
     {
       "Id": "anam",

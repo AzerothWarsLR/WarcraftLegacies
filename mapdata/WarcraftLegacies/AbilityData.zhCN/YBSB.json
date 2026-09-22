@@ -25,6 +25,11 @@
       "Id": "ansf",
       "Type": 3,
       "Value": "（利爪德鲁伊）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤巨熊"
     }
   ],
   "NewId": "YBSB"

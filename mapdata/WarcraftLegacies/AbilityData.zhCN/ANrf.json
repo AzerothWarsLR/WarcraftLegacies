@@ -12,7 +12,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成初始伤害，随后灼烧敌人<ANrf,Dur1>秒。 |n|n|cffffcc001级|r - 每波<ANrf,DataB1>点伤害，<ANrf,DataA1>波，每秒<ANrf,DataE1>点伤害。 |n|cffffcc002级|r - 每波<ANrf,DataB2>点伤害，<ANrf,DataA2>波，每秒<ANrf,DataE2>点伤害。 |n|cffffcc003级|r - 每波<ANrf,DataB3>点伤害，<ANrf,DataA3>波，每秒<ANrf,DataE3>点伤害。 |n|cffffcc004级|r - 每波<ANrf,DataB4>点伤害，<ANrf,DataA4>波，每秒<ANrf,DataE4>点伤害。\n"
+      "Value": "召唤数波火焰从天而降，对一定区域内的单位造成伤害。每波火焰造成初始伤害，随后灼烧敌人<ANrf,Dur1>秒。 |n|n|cffffcc001级|r - 每波<ANrf,DataB1>点伤害，<ANrf,DataA1>波，每秒<ANrf,DataE1>点伤害。 |n|cffffcc002级|r - 每波<ANrf,DataB2>点伤害，<ANrf,DataA2>波，每秒<ANrf,DataE2>点伤害。 |n|cffffcc003级|r - 每波<ANrf,DataB3>点伤害，<ANrf,DataA3>波，每秒<ANrf,DataE3>点伤害。 |n|cffffcc004级|r - 每波<ANrf,DataB4>点伤害，<ANrf,DataA4>波，每秒<ANrf,DataE4>点伤害。"
     },
     {
       "Level": 4,

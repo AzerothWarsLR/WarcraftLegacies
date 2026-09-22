@@ -42,7 +42,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤数波流星从天而降，对周围的敌方单位造成伤害。|n持续 30 秒。|n|n|cffffcc001级|r - 每波造成<AEsf,DataA1>点伤害。|n|cffffcc002级|r - 每波造成<AEsf,DataA2>点伤害。|n|cffffcc003级|r - 每波造成<AEsf,DataA3>点伤害。|n|n持续<AEsf,Dur1>秒。|n\n"
+      "Value": "召唤数波流星从天而降，对周围的敌方单位造成伤害。|n持续 30 秒。|n|n|cffffcc001级|r - 每波造成<AEsf,DataA1>点伤害。|n|cffffcc002级|r - 每波造成<AEsf,DataA2>点伤害。|n|cffffcc003级|r - 每波造成<AEsf,DataA3>点伤害。|n|n持续<AEsf,Dur1>秒。|n"
     },
     {
       "Level": 1,

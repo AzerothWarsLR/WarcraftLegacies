@@ -22,7 +22,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一根烈焰之柱，对地面单位造成灼烧，持续<A0F9,HeroDur1>秒。烈焰之柱在<A0F9,Dur1>秒后减弱，在此期间柱内单位仍会持续受到较少的每秒伤害。烈焰之柱前两次减弱后会再度复燃，持续时间相同。 |n|n|cffffcc001级|r - 初始每秒<A0F9,DataA1>点伤害，减弱期间每秒<A0F9,DataC1>点伤害。|n|cffffcc002级|r - 初始每秒<A0F9,DataA2>点伤害，减弱期间每秒<A0F9,DataC2>点伤害。|n|cffffcc003级|r - 初始每秒<A0F9,DataA3>点伤害，减弱期间每秒<A0F9,DataC3>点伤害。|n|cffffcc004级|r - 初始每秒<A0F9,DataA4>点伤害，减弱期间每秒<A0F9,DataC4>点伤害。\n"
+      "Value": "召唤一根烈焰之柱，对地面单位造成灼烧，持续<A0F9,HeroDur1>秒。烈焰之柱在<A0F9,Dur1>秒后减弱，在此期间柱内单位仍会持续受到较少的每秒伤害。烈焰之柱前两次减弱后会再度复燃，持续时间相同。 |n|n|cffffcc001级|r - 初始每秒<A0F9,DataA1>点伤害，减弱期间每秒<A0F9,DataC1>点伤害。|n|cffffcc002级|r - 初始每秒<A0F9,DataA2>点伤害，减弱期间每秒<A0F9,DataC2>点伤害。|n|cffffcc003级|r - 初始每秒<A0F9,DataA3>点伤害，减弱期间每秒<A0F9,DataC3>点伤害。|n|cffffcc004级|r - 初始每秒<A0F9,DataA4>点伤害，减弱期间每秒<A0F9,DataC4>点伤害。"
     },
     {
       "Level": 1,

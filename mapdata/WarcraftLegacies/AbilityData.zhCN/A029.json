@@ -19,7 +19,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤一个水元素，它具有<h00U,realHP>点生命值，造成<h00U,mindmg1>-<h00U,maxdmg1>点伤害，并可学习冰霜射击技能。|n持续<A029,Dur1>秒。|n|n|cffffcc00能攻击地面和空中单位。|r\n"
+      "Value": "召唤一个水元素，它具有<h00U,realHP>点生命值，造成<h00U,mindmg1>-<h00U,maxdmg1>点伤害，并可学习冰霜射击技能。|n持续<A029,Dur1>秒。|n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Id": "anam",

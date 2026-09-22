@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "强化痛饮技能，使其恢复<A09J,DataA2>点生命值。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "风暴战锤"
     }
   ],
   "NewId": "R00N"

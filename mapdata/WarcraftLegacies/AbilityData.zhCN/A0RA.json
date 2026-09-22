@@ -22,25 +22,25 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "加兹鲁维燃烧额外的燃料，重置他所有技能的冷却时间。|n|n|cffffcc001级|r - 400 点魔法值。|n|cffffcc002级|r - 250 点魔法值。|n|cffffcc003级|r - 100 点魔法值。\n"
+      "Value": "加兹鲁维燃烧额外的燃料，重置他所有技能的冷却时间。|n|n|cffffcc001级|r - 400 点魔法值。|n|cffffcc002级|r - 250 点魔法值。|n|cffffcc003级|r - 100 点魔法值。"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "战斗咆哮 - [|cffffcc001级|r]"
+      "Value": "超频 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "战斗咆哮 - [|cffffcc002级|r]"
+      "Value": "超频 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "战斗咆哮 - [|cffffcc003级|r]"
+      "Value": "超频 - [|cffffcc003级|r]"
     },
     {
       "Level": 1,

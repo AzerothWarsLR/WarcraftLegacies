@@ -22,7 +22,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "乘着有利的风向飞行，提高移动速度和攻击速度。持续 5 秒。|n|n|cffffcc001级|r - 攻击速度提高<VP23,DataB1,%>%，移动速度提高<VP23,DataA1,%>%。|n|cffffcc002级|r - 攻击速度提高<VP23,DataB2,%>%，移动速度提高<VP23,DataA2,%>%。|n|cffffcc003级|r - 攻击速度提高<VP23,DataB3,%>%，移动速度提高<VP23,DataA3,%>%。|n|cffffcc004级|r - 攻击速度提高<VP23,DataB4,%>%，移动速度提高<VP23,DataA4,%>%。\n"
+      "Value": "乘着有利的风向飞行，提高移动速度和攻击速度。持续 5 秒。|n|n|cffffcc001级|r - 攻击速度提高<VP23,DataB1,%>%，移动速度提高<VP23,DataA1,%>%。|n|cffffcc002级|r - 攻击速度提高<VP23,DataB2,%>%，移动速度提高<VP23,DataA2,%>%。|n|cffffcc003级|r - 攻击速度提高<VP23,DataB3,%>%，移动速度提高<VP23,DataA3,%>%。|n|cffffcc004级|r - 攻击速度提高<VP23,DataB4,%>%，移动速度提高<VP23,DataA4,%>%。"
     },
     {
       "Level": 1,

@@ -27,11 +27,6 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "使猎手能够使用急速射击，使攻击速度提高<A0AC,DataA1,%>%，持续<A0AC,Dur1>秒。"
-    },
-    {
-      "Id": "gnam",
-      "Type": 3,
-      "Value": "魔法岗哨"
     }
   ],
   "NewId": "R04A"

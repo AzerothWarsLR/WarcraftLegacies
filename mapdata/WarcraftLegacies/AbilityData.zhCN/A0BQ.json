@@ -22,31 +22,31 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "使该英雄的攻击向附近的敌方单位发射额外的投射物。|n|n|cffffcc001级|r - 攻击最多可攻击 3 个额外单位。|n|cffffcc002级|r - 攻击最多可攻击 4 个额外单位。|n|cffffcc003级|r - 攻击最多可攻击 5 个额外单位。|n|cffffcc004级|r - 攻击最多可攻击 6 个额外单位。\n"
+      "Value": "使该英雄的攻击向附近的敌方单位发射额外的投射物。|n|n|cffffcc001级|r - 攻击最多可攻击 3 个额外单位。|n|cffffcc002级|r - 攻击最多可攻击 4 个额外单位。|n|cffffcc003级|r - 攻击最多可攻击 5 个额外单位。|n|cffffcc004级|r - 攻击最多可攻击 6 个额外单位。"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "火箭弹幕 - [|cffffcc001级|r]"
+      "Value": "多重射击 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "火箭弹幕 - [|cffffcc002级|r]"
+      "Value": "多重射击 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "火箭弹幕 - [|cffffcc003级|r]"
+      "Value": "多重射击 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "火箭弹幕 - [|cffffcc004级|r]"
+      "Value": "多重射击 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,
@@ -58,13 +58,13 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该英雄的攻击向最多 4 个附近的敌方单位发射额外投射物。"
+      "Value": "使该英雄的攻击向最多 4 个周围的敌方单位发射额外的箭矢。"
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使该英雄的攻击向最多 5 个附近的敌方单位发射额外投射物。"
+      "Value": "使该英雄的攻击向最多 5 个周围的敌方单位发射额外的箭矢。"
     },
     {
       "Level": 4,

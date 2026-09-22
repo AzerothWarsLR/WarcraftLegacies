@@ -12,7 +12,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "投掷一把淬毒匕首，造成大量初始伤害，随后持续造成伤害。中毒单位在其持续时间内移动速度降低 75%。对单位和英雄持续 15 秒。|n|n|cffffcc00等级 1|r - <AEsh,DataE1>点直接伤害，<AEsh,DataA1>点持续伤害。 |n|cffffcc00等级 2|r - <AEsh,DataE2>点直接伤害，<AEsh,DataA2>点持续伤害。 |n|cffffcc00等级 3|r - <AEsh,DataE3>点直接伤害，<AEsh,DataA3>点持续伤害。|n|cffffcc00等级 4|r - <AEsh,DataE4>点直接伤害，<AEsh,DataA4>点持续伤害。\n"
+      "Value": "投掷一把淬毒匕首，造成大量初始伤害，随后持续造成伤害。中毒单位在其持续时间内移动速度降低 75%。对单位和英雄持续 15 秒。|n|n|cffffcc00等级 1|r - <AEsh,DataE1>点直接伤害，<AEsh,DataA1>点持续伤害。 |n|cffffcc00等级 2|r - <AEsh,DataE2>点直接伤害，<AEsh,DataA2>点持续伤害。 |n|cffffcc00等级 3|r - <AEsh,DataE3>点直接伤害，<AEsh,DataA3>点持续伤害。|n|cffffcc00等级 4|r - <AEsh,DataE4>点直接伤害，<AEsh,DataA4>点持续伤害。"
     },
     {
       "Level": 4,

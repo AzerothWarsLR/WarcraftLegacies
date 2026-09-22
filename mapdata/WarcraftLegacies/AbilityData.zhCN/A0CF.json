@@ -17,7 +17,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "地穴领主生成一层带刺的角质护甲，提高自身防御力，并将伤害反弹给近战攻击者。|n|n|cffffcc001级|r - 反弹<AUts,DataA1,%>% 伤害，<AUts,DataC1>点额外护甲。|n|cffffcc002级|r - 反弹<AUts,DataA2,%>% 伤害，<AUts,DataC2>点额外护甲。|n|cffffcc003级|r - 反弹<AUts,DataA3,%>% 伤害，<AUts,DataC3>点额外护甲。|n|cffffcc004级|r - 反弹<AUts,DataA4,%>% 伤害，<AUts,DataC4>点额外护甲。|n|cffffcc005级|r - 反弹<AUts,DataA5,%>% 伤害，<AUts,DataC5>点额外护甲。\n"
+      "Value": "地穴领主生成一层带刺的角质护甲，提高自身防御力，并将伤害反弹给近战攻击者。|n|n|cffffcc001级|r - 反弹<AUts,DataA1,%>% 伤害，<AUts,DataC1>点额外护甲。|n|cffffcc002级|r - 反弹<AUts,DataA2,%>% 伤害，<AUts,DataC2>点额外护甲。|n|cffffcc003级|r - 反弹<AUts,DataA3,%>% 伤害，<AUts,DataC3>点额外护甲。|n|cffffcc004级|r - 反弹<AUts,DataA4,%>% 伤害，<AUts,DataC4>点额外护甲。|n|cffffcc005级|r - 反弹<AUts,DataA5,%>% 伤害，<AUts,DataC5>点额外护甲。"
     },
     {
       "Level": 1,

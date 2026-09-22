@@ -22,31 +22,31 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "召唤一个水元素攻击大法师的敌人。|n持续 60 秒。|r|n|n|cffffcc001级|r - 召唤 2 个精英水元素。|n|cffffcc002级|r - 召唤 3 个精英水元素。|n|cffffcc003级|r - 召唤 4 个精英水元素。|n|cffffcc004级|r - 召唤 5 个精英水元素。\n"
+      "Value": "召唤一个水元素攻击大法师的敌人。|n持续 60 秒。|r|n|n|cffffcc001级|r - 召唤 2 个精英水元素。|n|cffffcc002级|r - 召唤 3 个精英水元素。|n|cffffcc003级|r - 召唤 4 个精英水元素。|n|cffffcc004级|r - 召唤 5 个精英水元素。"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "野性之魂 - [|cffffcc001级|r]"
+      "Value": "召唤水元素 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "野性之魂 - [|cffffcc002级|r]"
+      "Value": "召唤水元素 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "野性之魂 - [|cffffcc003级|r]"
+      "Value": "召唤水元素 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "野性之魂 - [|cffffcc004级|r]"
+      "Value": "召唤水元素 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,

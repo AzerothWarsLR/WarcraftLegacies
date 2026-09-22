@@ -22,31 +22,31 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "用巨大的武器猛击地面，沿一条直线震裂大地，对所经之处的敌方地面单位造成伤害并将其抛向空中。|n|n|cffffcc001级|r - <A0K3,DataC1>点伤害，昏迷 1 秒。|n|cffffcc002级|r - <A0K3,DataC2>点伤害，昏迷 1.5(1.25)秒。|n|cffffcc003级|r - <A0K3,DataC3>点伤害，昏迷 2(1.5)秒。|n|cffffcc004级|r - <A0K3,DataC4>点伤害，昏迷 2.5(1.75)秒。\n"
+      "Value": "用巨大的武器猛击地面，沿一条直线震裂大地，对所经之处的敌方地面单位造成伤害并将其抛向空中。|n|n|cffffcc001级|r - <A0K3,DataC1>点伤害，昏迷 1 秒。|n|cffffcc002级|r - <A0K3,DataC2>点伤害，昏迷 1.5(1.25)秒。|n|cffffcc003级|r - <A0K3,DataC3>点伤害，昏迷 2(1.5)秒。|n|cffffcc004级|r - <A0K3,DataC4>点伤害，昏迷 2.5(1.75)秒。"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "穿刺 - [|cffffcc001级|r]"
+      "Value": "震地猛击 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "穿刺 - [|cffffcc002级|r]"
+      "Value": "震地猛击 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "穿刺 - [|cffffcc003级|r]"
+      "Value": "震地猛击 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "穿刺 - [|cffffcc004级|r]"
+      "Value": "震地猛击 - [|cffffcc004级|r]"
     },
     {
       "Level": 1,

@@ -17,7 +17,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "在<A0DD,Dur1>秒内为目标友方单位恢复生命值和法力值。|n|n|cffffcc001级|r - 恢复<A0DD,DataA1>点生命值和<A0DD,DataB1>点法力值。|n|cffffcc002级|r - 恢复<A0DD,DataA2>点生命值和<A0DD,DataB2>点法力值。|n|cffffcc003级|r - 恢复<A0DD,DataA3>点生命值和<A0DD,DataB3>点法力值。|n|cffffcc004级|r - 恢复<A0DD,DataA4>点生命值和<A0DD,DataB4>点法力值。\n"
+      "Value": "在<A0DD,Dur1>秒内为目标友方单位恢复生命值和法力值。|n|n|cffffcc001级|r - 恢复<A0DD,DataA1>点生命值和<A0DD,DataB1>点法力值。|n|cffffcc002级|r - 恢复<A0DD,DataA2>点生命值和<A0DD,DataB2>点法力值。|n|cffffcc003级|r - 恢复<A0DD,DataA3>点生命值和<A0DD,DataB3>点法力值。|n|cffffcc004级|r - 恢复<A0DD,DataA4>点生命值和<A0DD,DataB4>点法力值。"
     },
     {
       "Level": 1,

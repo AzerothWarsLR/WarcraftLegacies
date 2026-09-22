@@ -15,14 +15,14 @@
       "Value": "强化暮光之锤了望塔"
     },
     {
-      "Id": "utub",
-      "Type": 3,
-      "Value": "防御建筑。"
-    },
-    {
       "Id": "utip",
       "Type": 3,
       "Value": "升级到强化暮光之锤了望塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
     }
   ],
   "NewId": "o03H"
