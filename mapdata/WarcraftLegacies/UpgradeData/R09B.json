@@ -1,6 +1,6 @@
 {
   "OldId": "Robs",
-  "NewId": "R007",
+  "NewId": "R09B",
   "Unk": [
     0
   ],
@@ -9,6 +9,11 @@
       "Id": "gba1",
       "Type": 2,
       "Value": 25
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 0
     },
     {
       "Id": "gglb",

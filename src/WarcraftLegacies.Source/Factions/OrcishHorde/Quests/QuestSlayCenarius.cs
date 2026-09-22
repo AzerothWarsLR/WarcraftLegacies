@@ -25,7 +25,7 @@ public sealed class QuestSlayCenarius : QuestData
       ShowsInQuestLog = false,
       ShowsInPopups = false
     });
-    ResearchId = UPGRADE_R007_QUEST_COMPLETED_THE_DEMIGOD_S_END_ORCISH_HORDE;
+    ResearchId = UPGRADE_R09B_QUEST_COMPLETED_THE_DEMIGOD_S_END_ORCISH_HORDE;
   }
 
   public override string RewardFlavour =>
