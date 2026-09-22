@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Warcraft.Cartographer.Migrations;
+﻿using Warcraft.Cartographer.Migrations;
 using WarcraftLegacies.Shared;
 
 namespace WarcraftLegacies.CLI.Migrations;

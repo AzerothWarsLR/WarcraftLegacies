@@ -1,5 +1,4 @@
-﻿using System.IO;
-using Warcraft.Cartographer.Deserialization;
+﻿using Warcraft.Cartographer.Deserialization;
 
 namespace Warcraft.Cartographer.Paths;
 
