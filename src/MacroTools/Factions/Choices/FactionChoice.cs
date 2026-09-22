@@ -1,4 +1,5 @@
-﻿using MacroTools.UserInterface;
+﻿using MacroTools.Localization;
+using MacroTools.UserInterface;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.Factions.Choices;
@@ -20,7 +21,7 @@ public sealed class FactionChoice : IChoice
   {
     get
     {
-      var name = $"{Faction.Name} {Difficulty.ToColoredText()}";
+      var name = $"{Loc.Get(Faction.Name)} {Difficulty.ToColoredText()}";
       if (RequiresCheats)
       {
         name += " |cffD27575(CHEAT)|r";
