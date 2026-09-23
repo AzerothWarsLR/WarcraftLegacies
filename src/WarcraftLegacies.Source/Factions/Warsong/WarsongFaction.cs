@@ -76,7 +76,6 @@ public sealed class WarsongFaction : Faction
   {
     StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
-    AddQuest(new QuestRokhan(AllPreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
     AddQuest(new QuestWarsongHold());
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
     //AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Orc.GromHellscream)); // Also overlaps Tauren Tribes' Long March rescue at Stonemaul Keep

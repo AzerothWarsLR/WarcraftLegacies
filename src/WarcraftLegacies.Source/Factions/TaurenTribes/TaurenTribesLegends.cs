@@ -10,6 +10,7 @@ public sealed class TaurenTribesLegends
   public LegendaryHero CairneBloodhoof { get; }
   public LegendaryHero Rexxar { get; }
   public LegendaryHero Chen { get; }
+  public LegendaryHero Rokhan { get; }
   public LegendaryHero Magatha { get; }
 
   public TaurenTribesLegends()
@@ -29,6 +30,12 @@ public sealed class TaurenTribesLegends
       UnitType = UNIT_TP80_BREWMASTER_TAUREN_TRIBES
     };
 
+    Rokhan = new LegendaryHero("Rokhan")
+    {
+      UnitType = UNIT_MD25_DARKSPEAR_CHAMPION_TAUREN_TRIBES,
+      StartingXp = 1000
+    };
+
     Magatha = new LegendaryHero("Magatha Grimtotem")
     {
       UnitType = UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES
@@ -40,6 +47,7 @@ public sealed class TaurenTribesLegends
     LegendaryHeroManager.Register(CairneBloodhoof);
     LegendaryHeroManager.Register(Rexxar);
     LegendaryHeroManager.Register(Chen);
+    LegendaryHeroManager.Register(Rokhan);
     LegendaryHeroManager.Register(Magatha);
   }
 }

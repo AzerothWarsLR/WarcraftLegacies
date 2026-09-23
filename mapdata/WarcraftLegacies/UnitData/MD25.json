@@ -69,12 +69,12 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R037"
+      "Value": "RT17"
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "uhot",
@@ -127,7 +127,7 @@
     },
     {
       "Id": "ubpx",
-      "Value": 1
+      "Value": 2
     }
   ]
 }
