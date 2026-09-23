@@ -10,12 +10,21 @@ public sealed class ObjectiveEitherOf : Objective
 
   public Objective ObjectiveB { get; }
 
-  public ObjectiveEitherOf(Objective objectiveA, Objective objectiveB)
+  public ObjectiveEitherOf(Objective objectiveA, Objective objectiveB, string? description = null)
   {
     ObjectiveA = objectiveA;
     ObjectiveB = objectiveB;
     SaveManager.RunWhenLocalPlayerSettingsReady(() =>
-      SetDescription("{a} or {b}", ("{a}", objectiveA.Description), ("{b}", objectiveB.Description)));
+    {
+      if (description != null)
+      {
+        SetDescription(description);
+      }
+      else
+      {
+        SetDescription("{a} or {b}", ("{a}", objectiveA.Description), ("{b}", objectiveB.Description));
+      }
+    });
     objectiveA.ProgressChanged += OnChildProgressChanged;
     objectiveB.ProgressChanged += OnChildProgressChanged;
     Position = ObjectiveA.Position;
