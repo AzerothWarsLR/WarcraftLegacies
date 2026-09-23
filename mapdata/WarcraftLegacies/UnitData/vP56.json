@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "AT04,AT05,AT15,AT07,A064,Aion,A01T,ACrk"
+      "Value": "AT04,AT05,AT15,AT07,A064,Aion,A01T,ACrk,A0E6"
     },
     {
       "Id": "ua1t",
@@ -108,7 +108,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Ropm,Rhme,Rhar,Rguv,RT14"
+      "Value": "Ropm,Rhme,Rhar,Rguv,RT14,R00W"
     },
     {
       "Id": "ucs1",
@@ -136,7 +136,7 @@
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroTaurenChieftain.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSunTaurenChieftain.blp"
     },
     {
       "Id": "ucun",
@@ -181,7 +181,40 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.95
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\SunWalkerTaurenV1_03.mdl"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "ua1z",
+      "Value": 900
+    },
+    {
+      "Id": "uma1",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PriestMissile\\PriestMissile.mdl"
     }
   ]
 }

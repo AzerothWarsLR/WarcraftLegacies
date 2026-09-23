@@ -125,6 +125,16 @@
     {
       "Id": "ubpy",
       "Value": 0
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\CairneV2.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroTaunkaChieftain.blp"
     }
   ]
 }

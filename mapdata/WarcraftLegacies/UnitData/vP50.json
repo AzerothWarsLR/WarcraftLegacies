@@ -200,7 +200,7 @@
     {
       "Id": "ussc",
       "Type": 1,
-      "Value": 1.5
+      "Value": 1.2
     },
     {
       "Id": "uma2",
@@ -220,12 +220,12 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "units\\creeps\\Ogre\\Ogre.mdl"
+      "Value": "war3mapImported\\OgreStoneThrower_By_Kitabatake.mdl"
     },
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOgre.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Ogre_Archer_Blizzard_V1-1.blp"
     },
     {
       "Id": "utub",
@@ -240,7 +240,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.5
+      "Value": 1.1
     },
     {
       "Id": "usnd",

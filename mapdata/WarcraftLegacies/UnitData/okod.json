@@ -110,6 +110,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Kodo-mounted drummer which inspires the soldiers of the Horde."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TaurenKotoBeast.mdl"
     }
   ]
 }
