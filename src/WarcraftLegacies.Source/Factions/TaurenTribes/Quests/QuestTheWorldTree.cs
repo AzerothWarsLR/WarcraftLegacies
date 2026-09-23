@@ -20,7 +20,7 @@ public sealed class QuestTheWorldTree : QuestData
     "Nordrassil, the World Tree, towers over the slopes of Mount Hyjal. If the Tauren claim it, the Earth Mother's blessing will flow through Cairne Bloodhoof.",
     @"ReplaceableTextures\CommandButtons\BTNTreeOfEternity.blp")
   {
-    AddObjective(new ObjectiveControlPoint(UNIT_N01P_NORDRASSIL));
+    AddObjective(new ObjectiveControlPoint(UNIT_N01P_NORDRASSIL, 0));
     AddObjective(new ObjectiveSelfExists());
     AddObjective(new ObjectiveQuestComplete(previousQuest)
     {
