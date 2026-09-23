@@ -11,7 +11,7 @@ public sealed class QuestLinkWithTheMoon : QuestData
   public QuestLinkWithTheMoon(Capital templeOfTheMoon, QuestData previousQuest) : base(
     "Link with the Moon",
     "The Night Elves guard the sacred places of Elune jealously. Break their hold over the Temple of the Moon, and Magatha Grimtotem will lend her power to the Tauren.",
-    @"ReplaceableTextures\CommandButtons\BTNSpiritWalker.blp")
+    @"ReplaceableTextures\CommandButtons\BTNMagathaGrimtotem.blp")
   {
     AddObjective(new ObjectiveCapitalDead(templeOfTheMoon));
     AddObjective(new ObjectiveSelfExists());
