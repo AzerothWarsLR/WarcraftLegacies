@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "ACm2,Ault,AInv"
+      "Value": "ACm2,Ault,AInv,A0U0"
     },
     {
       "Id": "uagi",
@@ -42,7 +42,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "A0U0,A0FX,A03B,AEtq,Aamk"
+      "Value": "A0FX,A156,A03B,A159,Aamk"
     },
     {
       "Id": "uhpm",

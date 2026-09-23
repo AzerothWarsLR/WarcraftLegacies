@@ -269,6 +269,22 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Blasts enemy units with a wave of Druidic Energy that deals 250 damage to the target, and 200 splash damage."
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
     }
   ]
 }
