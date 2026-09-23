@@ -82,7 +82,21 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Improves Braves by increasing their hit points by 150 and upgrading Pulverize."
+      "Value": "Improves Tauren by increasing their hit points by 150 and upgrading Pulverize."
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSmash.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
     }
   ]
 }

@@ -68,6 +68,20 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "Improves Kodo Beast Riders\u0027 War Drums aura."
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDrum.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 2
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
     }
   ]
 }
