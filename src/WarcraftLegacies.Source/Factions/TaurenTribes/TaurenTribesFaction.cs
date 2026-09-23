@@ -66,6 +66,7 @@ public sealed class TaurenTribesFaction : Faction
   {
     RegisterQuests();
     RegisterFactionDependentInitializer<OrcishHordeFaction>(RegisterOrcishHordeQuests);
+    RegisterFactionDependentInitializer<OrcishHordeFaction>(RegisterOrcishHordeResearches);
     RegisterResearches();
     TaurenTribesSpells.Setup();
     TaurenTribesTraits.Setup();
@@ -90,6 +91,11 @@ public sealed class TaurenTribesFaction : Faction
   private void RegisterOrcishHordeQuests(OrcishHordeFaction orcishHorde)
   {
     AddQuest(new QuestDarkspearChampion(orcishHorde.GetQuestByType<QuestCountdownToExtinction>(), orcishHorde.GetQuestByType<QuestOrgrimmar>(), orcishHorde));
+  }
+
+  private void RegisterOrcishHordeResearches(OrcishHordeFaction orcishHorde)
+  {
+    ResearchManager.Register(new FlightPath(orcishHorde, this, UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE_TAUREN_TRIBES, 70));
   }
 
   private void RegisterResearches()

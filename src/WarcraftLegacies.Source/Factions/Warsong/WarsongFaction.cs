@@ -7,9 +7,7 @@ using MacroTools.Factions.Choices;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
-using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 using WarcraftLegacies.Source.Factions.Warsong.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
@@ -52,7 +50,6 @@ public sealed class WarsongFaction : Faction
     ReplaceWithFactionUnits(this);
     RegisterQuests();
     RegisterDialogue();
-    RegisterFlightPath();
     WarsongSpells.Setup();
     WarsongTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -143,14 +140,5 @@ public sealed class WarsongFaction : Faction
             EligibleFactions = new List<Faction>{this}
           }
         }));
-  }
-
-  private void RegisterFlightPath()
-  {
-
-    ResearchManager.Register(new FlightPath(
-      this,
-      UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE_TAUREN_TRIBES,
-      70));
   }
 }
