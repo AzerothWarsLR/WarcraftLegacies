@@ -5,6 +5,8 @@ using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.OrcishHorde;
+using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 using WarcraftLegacies.Source.Setup;
@@ -63,6 +65,7 @@ public sealed class TaurenTribesFaction : Faction
   public override void OnRegistered()
   {
     RegisterQuests();
+    RegisterFactionDependentInitializer<OrcishHordeFaction>(RegisterOrcishHordeQuests);
     RegisterResearches();
     TaurenTribesSpells.Setup();
     TaurenTribesTraits.Setup();
@@ -75,6 +78,18 @@ public sealed class TaurenTribesFaction : Faction
     _theLongMarch = new QuestTheLongMarch(AllLegends.Tauren.CairneBloodhoof, _thousandNeedlesTarget, _mulgoreTarget,
       Regions.ThunderBluff);
     StartingQuest = AddQuest(_theLongMarch);
+
+    var questStonemaulDiplomacy = AddQuest(new QuestStonemaulDiplomacy(Regions.StonemaulKeep,
+      AllPreplacedWidgets.Units.Get(UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL), AllLegends.Tauren.Rexxar, _theLongMarch));
+    AddQuest(new QuestTheDunemaulOgres(questStonemaulDiplomacy));
+
+    var questTheWorldTree = AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
+    AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.CenarionHold, AllLegends.Druids.TempleOfTheMoon, questTheWorldTree));
+  }
+
+  private void RegisterOrcishHordeQuests(OrcishHordeFaction orcishHorde)
+  {
+    AddQuest(new QuestDarkspearChampion(orcishHorde.GetQuestByType<QuestOrgrimmar>(), orcishHorde));
   }
 
   private void RegisterResearches()
