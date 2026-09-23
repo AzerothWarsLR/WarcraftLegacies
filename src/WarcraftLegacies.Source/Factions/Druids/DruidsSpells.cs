@@ -64,7 +64,7 @@ public static class DruidsSpells
         Base = 50,
         PerLevel = 50
       },
-      Radius = 450,
+      Radius = 650,
       EmergeRadius = 350,
       ChannelSeconds = 8,
       SummonSeconds = 40,
