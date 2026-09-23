@@ -9,7 +9,6 @@ public sealed class TaurenTribesLegends
 {
   public LegendaryHero CairneBloodhoof { get; }
   public LegendaryHero Rexxar { get; }
-  public LegendaryHero Chen { get; }
   public LegendaryHero Rokhan { get; }
   public LegendaryHero Magatha { get; }
 
@@ -23,11 +22,6 @@ public sealed class TaurenTribesLegends
     Rexxar = new LegendaryHero("Rexxar")
     {
       UnitType = UNIT_OREX_BEASTMASTER_TAUREN_TRIBES
-    };
-
-    Chen = new LegendaryHero("Chen Stormstout")
-    {
-      UnitType = UNIT_TP80_BREWMASTER_TAUREN_TRIBES
     };
 
     Rokhan = new LegendaryHero("Rokhan")
@@ -46,7 +40,6 @@ public sealed class TaurenTribesLegends
   {
     LegendaryHeroManager.Register(CairneBloodhoof);
     LegendaryHeroManager.Register(Rexxar);
-    LegendaryHeroManager.Register(Chen);
     LegendaryHeroManager.Register(Rokhan);
     LegendaryHeroManager.Register(Magatha);
   }
