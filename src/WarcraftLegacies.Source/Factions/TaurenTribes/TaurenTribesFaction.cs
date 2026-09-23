@@ -83,8 +83,8 @@ public sealed class TaurenTribesFaction : Faction
       AllPreplacedWidgets.Units.Get(UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL), AllLegends.Tauren.Rexxar, _theLongMarch));
     AddQuest(new QuestTheDunemaulOgres(questStonemaulDiplomacy));
 
-    var questTheWorldTree = AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
-    AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.CenarionHold, AllLegends.Druids.TempleOfTheMoon, questTheWorldTree));
+    AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
+    AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.TempleOfTheMoon, _theLongMarch));
   }
 
   private void RegisterOrcishHordeQuests(OrcishHordeFaction orcishHorde)
