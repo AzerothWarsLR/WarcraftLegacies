@@ -1,0 +1,24 @@
+{
+  "OldId": "BEer",
+  "NewId": "B0E2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Earth Mother\u0027s Roots"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is held in place by the Earth Mother\u0027s roots; it cannot move."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Earth Mother\u0027s Roots"
+    }
+  ]
+}
