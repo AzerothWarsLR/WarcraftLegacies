@@ -4,7 +4,6 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
-using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
