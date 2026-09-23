@@ -77,7 +77,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\FrostwolfBeastiary.mdl"
+      "Value": "war3mapImported\\TaurenWyvernRoost.mdl"
     },
     {
       "Id": "usca",
@@ -102,6 +102,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "War-beast production building."
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenWyvernRoost.blp"
     }
   ]
 }

@@ -34,7 +34,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R09X,R00C,R006,R04R,R09N,Rhme,Rhar,Rosp,Rorb"
+      "Value": "R09X,R00C,R006,R04R,R09N,Rhme,Rhar,Rosp,Rorb,R00W"
     },
     {
       "Id": "unsf",
@@ -70,6 +70,16 @@
       "Id": "utub",
       "Type": 3,
       "Value": "General research building. "
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TaurenArmory.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenArmory.blp"
     }
   ]
 }

@@ -91,12 +91,12 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.75
+      "Value": 0.8
     },
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\GreatHallHumanV1_02.mdl"
+      "Value": "war3mapImported\\TaurenGreatHall.mdl"
     },
     {
       "Id": "unam",
@@ -112,6 +112,11 @@
       "Id": "ussc",
       "Type": 1,
       "Value": 3
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenChieftainsHut.blp"
     }
   ]
 }
