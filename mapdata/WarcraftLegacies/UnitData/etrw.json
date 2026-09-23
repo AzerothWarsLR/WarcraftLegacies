@@ -1,0 +1,38 @@
+{
+  "OldId": "ohwd",
+  "NewId": "etrw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A157,A158,Amim"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Tree_AshenTree4.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTreeOfRenewal.blp"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tree of Renewal"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    }
+  ]
+}
