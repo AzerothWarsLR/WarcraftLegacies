@@ -126,6 +126,18 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "Increases Ogre Magi mana capacity and mana regeneration rate."
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRejuvenation.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingSpray.blp"
     }
   ]
 }
