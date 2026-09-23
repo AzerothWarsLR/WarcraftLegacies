@@ -10,28 +10,28 @@
       "Pointer": 1,
       "Id": "Oar1",
       "Type": 2,
-      "Value": 0.01
+      "Value": 0.015
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": "Oar1",
       "Type": 2,
-      "Value": 0.015
+      "Value": 0.017
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Oar1",
       "Type": 2,
-      "Value": 0.02
+      "Value": 0.018
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": "Oar1",
       "Type": 2,
-      "Value": 0.025
+      "Value": 0.02
     },
     {
       "Level": 1,
