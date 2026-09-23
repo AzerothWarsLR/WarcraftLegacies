@@ -16,7 +16,11 @@ public sealed class TaurenTribesLegends
   {
     CairneBloodhoof = new LegendaryHero("Cairne Bloodhoof")
     {
-      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES
+      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES,
+      StartingArtifacts = new()
+      {
+        new(item.Create(ITEM_I00L_BLOODHOOF_TOTEM, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+      }
     };
 
     Rexxar = new LegendaryHero("Rexxar")
@@ -27,12 +31,13 @@ public sealed class TaurenTribesLegends
     Rokhan = new LegendaryHero("Rokhan")
     {
       UnitType = UNIT_MD25_DARKSPEAR_CHAMPION_TAUREN_TRIBES,
-      StartingXp = 1000
+      StartingXp = 2800
     };
 
     Magatha = new LegendaryHero("Magatha Grimtotem")
     {
-      UnitType = UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES
+      UnitType = UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES,
+      StartingXp = 7000
     };
   }
 
