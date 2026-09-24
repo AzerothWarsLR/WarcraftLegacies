@@ -23,6 +23,11 @@
       "Id": "unam",
       "Type": 3,
       "Value": "Pack Kodo"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
     }
   ]
 }

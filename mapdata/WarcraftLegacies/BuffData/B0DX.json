@@ -1,0 +1,34 @@
+{
+  "OldId": "BOae",
+  "NewId": "B0DX",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Guiding Winds"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This air unit is under the effect of Guiding Winds; it has increased movement speed."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Guiding Winds"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASGale Winds SD.blp"
+    }
+  ]
+}

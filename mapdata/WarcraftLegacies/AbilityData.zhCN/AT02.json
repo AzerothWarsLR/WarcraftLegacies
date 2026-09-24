@@ -30,13 +30,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使附近友方单位的移动速度提高<AT02,DataA1,%>%。"
+      "Value": "使附近友方空中单位的移动速度提高<AT02,DataA1,%>%。"
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使附近友方单位的移动速度提高<AT02,DataA2,%>%。"
+      "Value": "使附近友方空中单位的移动速度提高<AT02,DataA2,%>%。"
     }
   ],
   "NewId": "AT02"

@@ -51,8 +51,8 @@ public static class TaurenTribesObjectInfo
     yield return new(UNIT_OSPW_SPIRIT_WALKER_TAUREN_TRIBES, Unlimited, Support);
     yield return new(UNIT_VP57_ANCESTRAL_SPIRIT_TAUREN_TRIBES, 3, AntiMage);
 
-    yield return new(UNIT_OWYV_WYVERN_TAUREN_TRIBES, 8, new List<UnitCategory> { Flyer, AntiAir });
-    yield return new(UNIT_VP55_EAGLE_SPIRIT_TAUREN_TRIBES, 4, new List<UnitCategory> { Flyer, Fighter });
+    yield return new(UNIT_OWYV_SPIRIT_WYVERN_TAUREN_TRIBES, 8, new List<UnitCategory> { Flyer, AntiAir });
+    yield return new(UNIT_VP55_SPIRIT_EAGLE_TAUREN_TRIBES, 4, new List<UnitCategory> { Flyer, Fighter });
 
     yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, 1, new List<UnitCategory> { Destroyer, Tank });
     yield return new(UNIT_OREX_BEASTMASTER_TAUREN_TRIBES, 1, new List<UnitCategory> { Fighter, Summoner });
@@ -80,6 +80,7 @@ public static class TaurenTribesObjectInfo
     yield return new(UPGRADE_RT12_MONSTROUS_STRENGTH_TAUREN_TRIBES, Unlimited);
     yield return new(UPGRADE_RT13_MASS_BLOODLUST_TAUREN_TRIBES, Unlimited);
     yield return new(UPGRADE_RT14_SUNWALKER_ADEPT_TRAINING_TAUREN_TRIBES, Unlimited);
+    yield return new(UPGRADE_R00W_TOUGHENED_HIDES_TAUREN_TRIBES, Unlimited);
 
 
 

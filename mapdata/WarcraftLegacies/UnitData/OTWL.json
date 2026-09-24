@@ -113,7 +113,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\GreatHallHumanV1_02.mdl"
+      "Value": "war3mapImported\\TaurenGreatHall.mdl"
     },
     {
       "Id": "unam",
@@ -128,7 +128,12 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.75
+      "Value": 0.8
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenChieftainsHall.blp"
     }
   ]
 }
