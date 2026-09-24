@@ -8,6 +8,9 @@ public sealed class EmeraldDreamEffectSettings
 {
   public string? DreamPath { get; init; }
   public string? FlashPath { get; init; }
+  public string? SleepPath { get; init; }
+  public string? BurstPath { get; init; }
+  public string? SoundLabel { get; init; }
   public (int Red, int Green, int Blue, int Alpha) DreamTint { get; init; } = (255, 255, 255, 255);
 }
 
@@ -43,6 +46,8 @@ public sealed class EmeraldDreamHazard : Hazard
 {
   private readonly unit _target;
   private effect? _dreamEffect;
+  private effect? _sleepEffect;
+  private sound? _dreamSound;
   private float _shareApplied;
 
   public float HealFraction { get; init; }
@@ -67,6 +72,23 @@ public sealed class EmeraldDreamHazard : Hazard
       _dreamEffect = effect.Create(Effects.DreamPath, _target, "origin");
     }
 
+    if (Effects.SleepPath != null)
+    {
+      _sleepEffect = effect.Create(Effects.SleepPath, _target, "overhead");
+    }
+
+    if (Effects.BurstPath != null)
+    {
+      effect.Create(Effects.BurstPath, _target, "origin").Dispose();
+    }
+
+    if (Effects.SoundLabel != null)
+    {
+      _dreamSound = sound.CreateFromLabel(Effects.SoundLabel, true, true, true, 10, 10);
+      _dreamSound.AttachToUnit(_target);
+      _dreamSound.Start();
+    }
+
     PlayFlash();
   }
 
@@ -89,6 +111,8 @@ public sealed class EmeraldDreamHazard : Hazard
     }
 
     _dreamEffect?.Dispose();
+    _sleepEffect?.Dispose();
+    _dreamSound?.Stop(true, true);
     _target.SetPausedEx(false);
     _target.IsInvulnerable = false;
     _target.SetVertexColor(255, 255, 255, 255);
