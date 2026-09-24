@@ -202,6 +202,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Heals a target friendly unit for \u003CA07U,DataA3\u003E hit points over \u003CA07U,Dur3\u003E seconds."
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RT07"
     }
   ]
 }

@@ -60,7 +60,7 @@ public static class TaurenTribesObjectInfo
     yield return new(UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES, 1, new List<UnitCategory> { Destroyer, Support });
 
     yield return new(UNIT_VP50_OGRE_STONE_THROWER_TAUREN_TRIBES, 6, Siege);
-    yield return new(UNIT_N08O_OGRE_MAGI_TAUREN_TRIBES, 12, Support);
+    yield return new(UNIT_N08O_OGRE_MAGI_TAUREN_TRIBES, 6, Support);
     yield return new(UNIT_VP58_OGRE_CRUSHER_TAUREN_TRIBES, Unlimited, Destroyer);
 
     yield return new(UNIT_OTKO_PACK_KODO_TAUREN_TRIBES, Unlimited);

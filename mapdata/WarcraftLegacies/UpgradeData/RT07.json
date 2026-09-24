@@ -119,13 +119,13 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Ogre Magi mana capacity and mana regeneration rate."
+      "Value": "Increases Ogre Magi mana capacity and mana regeneration rate, and gives them the ability to cast Rejuvenation."
     },
     {
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Ogre Magi mana capacity and mana regeneration rate."
+      "Value": "Increases Ogre Magi mana capacity and mana regeneration rate, and gives them the ability to cast Healing Spray."
     },
     {
       "Level": 1,

@@ -66,6 +66,11 @@
     {
       "Id": "abpx",
       "Value": 2
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RT07"
     }
   ]
 }
