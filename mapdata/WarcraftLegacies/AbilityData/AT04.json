@@ -9,6 +9,19 @@
       "Id": "ansf",
       "Type": 3,
       "Value": "(Tauren Tribes)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }
