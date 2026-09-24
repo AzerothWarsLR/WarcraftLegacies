@@ -38,7 +38,10 @@ public static class DruidsSpells
       {
         DreamPath = @"Abilities\Spells\NightElf\Tranquility\TranquilityTarget.mdl",
         FlashPath = @"Abilities\Spells\NightElf\Rejuvenation\RejuvenationTarget.mdl",
-        DreamTint = (110, 255, 180, 130)
+        DreamTint = (110, 255, 180, 130),
+        SleepPath = @"Abilities\Spells\Undead\Sleep\SleepTarget.mdl",
+        BurstPath = @"Abilities\Spells\NightElf\MoonWell\MoonWellCasterArt.mdl",
+        SoundLabel = "Tranquility"
       }
     });
 
