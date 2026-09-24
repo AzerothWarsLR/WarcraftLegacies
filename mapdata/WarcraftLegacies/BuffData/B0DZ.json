@@ -1,0 +1,29 @@
+{
+  "OldId": "Bcri",
+  "NewId": "B0DZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Crone\u0027s Curse"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is cursed; it attacks more slowly, and its death will heal nearby enemies."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Crone\u0027s Curse"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PAScurse_of_darkness.blp"
+    }
+  ]
+}

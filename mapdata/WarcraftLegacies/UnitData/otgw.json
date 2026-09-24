@@ -1,0 +1,33 @@
+{
+  "OldId": "ohwd",
+  "NewId": "otgw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A154,A155"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 150
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Grimtotem Ward"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes)"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_cr_GoblinWard.blp"
+    }
+  ]
+}
