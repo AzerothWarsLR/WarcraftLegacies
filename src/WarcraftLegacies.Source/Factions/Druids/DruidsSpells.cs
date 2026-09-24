@@ -41,5 +41,19 @@ public static class DruidsSpells
         DreamTint = (110, 255, 180, 130)
       }
     });
+
+    SpellRegistry.Register(new SeedOfRebirthSpell(ABILITY_A15O_SEED_OF_REBIRTH_MALFURION)
+    {
+      InitialDamage = new float[] { 75, 150, 200, 250 },
+      DamagePerSecond = new LeveledAbilityField<float> { Base = 5, PerLevel = 5 },
+      Duration = 15,
+      TickPeriod = 0.25f,
+      VisionRadius = 250,
+      TreantUnitTypeId = UNIT_EFON_TREANT_DRUIDS_SUMMONED,
+      BuffApplicatorId = ABILITY_A15P_SEED_OF_REBIRTH_BUFF_APPLICATOR,
+      SeedEffectPath = @"Abilities\Spells\NightElf\EntanglingRoots\EntanglingRootsTarget.mdl",
+      SeedEffectScale = 0.6f,
+      SproutEffectPath = @"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl"
+    });
   }
 }
