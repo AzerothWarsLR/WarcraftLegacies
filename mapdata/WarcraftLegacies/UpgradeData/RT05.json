@@ -115,13 +115,13 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Earthcaller mana capacity and mana regeneration rate."
+      "Value": "Increases Earthcaller mana capacity and mana regeneration rate, and gives them the ability to cast Stoneskin."
     },
     {
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Earthcaller mana capacity and mana regeneration rate."
+      "Value": "Increases Earthcaller mana capacity and mana regeneration rate, and gives them the ability to summon a Volcano Ward."
     },
     {
       "Id": "gbpx",
