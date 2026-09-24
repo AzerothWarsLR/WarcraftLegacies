@@ -26,7 +26,7 @@
       "Level": 1,
       "Pointer": 2,
       "Id": "spl2",
-      "Value": 10
+      "Value": 3
     },
     {
       "Level": 1,
@@ -64,7 +64,7 @@
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "T"
+      "Value": "E"
     },
     {
       "Level": 1,
@@ -77,6 +77,24 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Links \u003CAT13,DataB1\u003E units together, causing them to distribute \u003CAT13,DataA1,%\u003E% of damage taken amongst themselves. Lasts \u003CAT13,Dur1\u003E seconds."
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RT06"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
     }
   ]
 }

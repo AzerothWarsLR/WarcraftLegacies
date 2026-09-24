@@ -1,0 +1,227 @@
+{
+  "OldId": "Amfl",
+  "NewId": "A15K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "mfl1",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "mfl3",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "mfl4",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "mfl5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "mfl4",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "mfl1",
+      "Type": 2,
+      "Value": 0.65
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "mfl3",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 85
+    },
+    {
+      "Level": 2,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,enemies,ground"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bmfl,Bmfa"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "mfl6",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "mfl2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "acas",
+      "Type": 2,
+      "Value": 1.25
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Tauren Tribes - Ancestral Spirit)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes the Ancestral Spirit to channel negative magical energies that damage nearby enemies when they cast spells. |n|nLasts \u003CAmfl,Dur1\u003E seconds.|nDeals \u003CAmfl,DataA1,.\u003E damage per point of mana."
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Causes the Ancestral Spirit to channel negative magical energies that damage nearby enemies when they cast spells. |n|nLasts \u003CAmfl,Dur2\u003E seconds.|nDeals \u003CAmfl,DataA2,.\u003E damage per point of mana."
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Stop Mana Flare"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Stops channeling Mana Flare."
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mana Flare - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mana Flare - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Mana Flare"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    }
+  ]
+}

@@ -115,13 +115,13 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Spirit Walker mana capacity and mana regeneration rate."
+      "Value": "Increases Spirit Walker mana capacity and mana regeneration rate, and gives them the ability to cast Disenchant."
     },
     {
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Spirit Walker mana capacity and mana regeneration rate."
+      "Value": "Increases Spirit Walker mana capacity and mana regeneration rate, and gives them the ability to cast Spirit Link."
     },
     {
       "Id": "gbpx",

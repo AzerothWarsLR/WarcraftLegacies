@@ -8,12 +8,12 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "AT04,AT05,AT15,AT07,A064,Aion,A01T,ACrk,A0E6"
+      "Value": "AT04,A15G,AT07,Aion,ACrk,A0E6"
     },
     {
       "Id": "ua1t",
       "Type": 3,
-      "Value": "hero"
+      "Value": "magic"
     },
     {
       "Id": "ubld",
@@ -40,7 +40,7 @@
     {
       "Id": "udty",
       "Type": 3,
-      "Value": "hero"
+      "Value": "large"
     },
     {
       "Id": "ua1b",
@@ -119,11 +119,6 @@
       "Id": "uarm",
       "Type": 3,
       "Value": "Metal"
-    },
-    {
-      "Id": "udaa",
-      "Type": 3,
-      "Value": "AT15"
     },
     {
       "Id": "udef",
