@@ -27,12 +27,12 @@
     },
     {
       "Id": "usca",
-      "Type": 2,
+      "Type": 1,
       "Value": 1.0
     },
     {
       "Id": "ussc",
-      "Type": 2,
+      "Type": 1,
       "Value": 2.0
     },
     {
