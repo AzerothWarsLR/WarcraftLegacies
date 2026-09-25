@@ -74,6 +74,13 @@ public sealed class TaurenTribesFaction : Faction
     new GrantResearchOnLegendTrained(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES);
   }
 
+  /// <inheritdoc />
+  public override void OnNotPicked()
+  {
+    Regions.EarthmothersCradle.CleanupNeutralPassiveUnits();
+    base.OnNotPicked();
+  }
+
   private void RegisterQuests()
   {
     _theLongMarch = new QuestTheLongMarch(AllLegends.Tauren.CairneBloodhoof, _thousandNeedlesTarget, _mulgoreTarget,
@@ -86,6 +93,7 @@ public sealed class TaurenTribesFaction : Faction
 
     AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
     AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.TempleOfTheMoon, _theLongMarch));
+    AddQuest(new QuestEarthmothersCradle(Regions.EarthmothersCradle));
   }
 
   private void RegisterOrcishHordeQuests(OrcishHordeFaction orcishHorde)
