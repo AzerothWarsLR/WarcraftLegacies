@@ -1,47 +1,11 @@
 [
   {
-    "TypeId": 909127781,
+    "TypeId": 1295396974,
     "Variation": 0,
     "Position": {
-      "X": -20602.053,
-      "Y": -8767.805,
-      "Z": 150.23694
-    },
-    "Rotation": 5.547596,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 909127781,
-    "Flags": 2,
-    "OwnerId": 27,
-    "Unk1": 0,
-    "Unk2": 0,
-    "HP": -1,
-    "MP": -1,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "GoldAmount": 0,
-    "TargetAcquisition": -2,
-    "HeroLevel": 1,
-    "HeroStrength": 0,
-    "HeroAgility": 0,
-    "HeroIntelligence": 0,
-    "InventoryData": [],
-    "AbilityData": [],
-    "RandomDataMode": -1,
-    "CustomPlayerColorId": -1,
-    "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1935
-  },
-  {
-    "TypeId": 1278226533,
-    "Variation": 0,
-    "Position": {
-      "X": -20704,
-      "Y": -9184,
-      "Z": 123.625
+      "X": -21056,
+      "Y": -9280,
+      "Z": 69.0625
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -49,7 +13,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1278226533,
+    "SkinId": 1295396974,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -69,6 +33,42 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 900040
+    "CreationNumber": 900042
+  },
+  {
+    "TypeId": 1311977576,
+    "Variation": 0,
+    "Position": {
+      "X": -21120,
+      "Y": -9600,
+      "Z": 73.59375
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1311977576,
+    "Flags": 2,
+    "OwnerId": 27,
+    "Unk1": 0,
+    "Unk2": 0,
+    "HP": 10,
+    "MP": -1,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "GoldAmount": 0,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "HeroStrength": 0,
+    "HeroAgility": 0,
+    "HeroIntelligence": 0,
+    "InventoryData": [],
+    "AbilityData": [],
+    "RandomDataMode": -1,
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "CreationNumber": 900046
   }
 ]
