@@ -4,9 +4,9 @@ using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.ControlPointBased;
+using WarcraftLegacies.Source.GameLogic.SouthKalimdorGuard;
 using WarcraftLegacies.Source.Objectives.FactionBased;
-using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Objectives.TurnBased;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Sentinels.Quests;
@@ -19,23 +19,22 @@ public sealed class QuestFeathermoon : QuestData
   public QuestFeathermoon(Capital feathermoon, Rectangle rescueRect)
     : base(
       "Shores of Feathermoon",
-      "Without aid from the primary Sentinel force, Feathermoon Stronghold will undoubtedly fall to the assault of the Old Gods. We will need to restore it.",
+      "Feathermoon Stronghold has held out alone in the far south, cut off from the rest of the Sentinels. When the southern passes open, we can reach it once more, though the wilds of Southern Kalimdor beyond its walls still teem with hostile creatures.",
       @"ReplaceableTextures\CommandButtons\BTNBearDen.blp")
   {
     _feathermoon = feathermoon;
 
-    AddObjective(new ObjectiveBuildUniqueBuildingsInRect(Regions.FeathermoonUnlock, "in Feathermoon", 3));
-    AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON));
+    AddObjective(new ObjectiveTurn(SouthKalimdorGuardSystem.UnlockTurn));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
   }
 
   public override string RewardFlavour =>
-    "The Sentinels have rebuilt Feathermoon Stronghold to its former glory. Maiev Shadowsong now joins their efforts.";
+    "The Sentinels have relieved Feathermoon Stronghold, and its defenders rally to them once more. Maiev Shadowsong now joins their efforts.";
 
   protected override string RewardDescription => Loc.Format(
-    "Learn to train Maiev Shadowsong from the {altar} and gain control of the survivors hiding in Feathermoon.",
+    "Learn to train Maiev Shadowsong from the {altar} and gain control of Feathermoon Stronghold and the survivors hiding there.",
     ("{altar}", GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINELS_ALTAR)));
 
   protected override void OnAdd(Faction whichFaction)
