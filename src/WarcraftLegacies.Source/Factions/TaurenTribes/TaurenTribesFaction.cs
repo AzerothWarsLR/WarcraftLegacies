@@ -40,7 +40,7 @@ public sealed class TaurenTribesFaction : Faction
     };
     CinematicMusic = "SadMystery";
     IntroText = () => Loc.Format(
-      "You are playing as the {faction}.",
+      "You are playing as the wandering {faction}.\n\nYou begin as a people without a home. Start the Long March from your Chief's Lodge as soon as you can, and escort Cairne Bloodhoof and your pack kodos north across the plains to Mulgore, where the Tribes will raise their new home at Thunder Bluff. Centaur raiders will hound you every step of the way, and every kodo that survives makes your new home richer.\n\nOnce settled, win over the ogres of Stonemaul and Dunemaul, and stand beside your Orcish allies as the Horde claims its place in Kalimdor. The Night Elves' World Tree and Temple of the Moon lie within reach.\n\nWhen the southern passes open, the Tribes can claim Earthmother's Cradle in Un'Goro Crater.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Tauren Tribes")}|r"));
     Nicknames = new List<string>
     {
