@@ -40,7 +40,7 @@ public sealed class TaurenTribesFaction : Faction
     };
     CinematicMusic = "SadMystery";
     IntroText = () => Loc.Format(
-      "You are playing as the {faction}.",
+      "You are playing as the wandering {faction}.\n\nYou begin as a people without a home. Start the Long March from your Chief's Lodge as soon as you can, and escort Cairne Bloodhoof and your pack kodos north across the plains to Mulgore, where the Tribes will raise their new home at Thunder Bluff. Centaur raiders will hound you every step of the way, and every kodo that survives makes your new home richer.\n\nOnce settled, win over the ogres of Stonemaul and Dunemaul, and stand beside your Orcish allies as the Horde claims its place in Kalimdor. The Night Elves' World Tree and Temple of the Moon lie within reach.\n\nWhen the southern passes open, the Tribes can claim Earthmother's Cradle in Un'Goro Crater.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Tauren Tribes")}|r"));
     Nicknames = new List<string>
     {
@@ -74,6 +74,13 @@ public sealed class TaurenTribesFaction : Faction
     new GrantResearchOnLegendTrained(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES);
   }
 
+  /// <inheritdoc />
+  public override void OnNotPicked()
+  {
+    Regions.EarthmothersCradle.CleanupNeutralPassiveUnits();
+    base.OnNotPicked();
+  }
+
   private void RegisterQuests()
   {
     _theLongMarch = new QuestTheLongMarch(AllLegends.Tauren.CairneBloodhoof, _thousandNeedlesTarget, _mulgoreTarget,
@@ -86,6 +93,7 @@ public sealed class TaurenTribesFaction : Faction
 
     AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
     AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.TempleOfTheMoon, _theLongMarch));
+    AddQuest(new QuestEarthmothersCradle(Regions.EarthmothersCradle));
   }
 
   private void RegisterOrcishHordeQuests(OrcishHordeFaction orcishHorde)
