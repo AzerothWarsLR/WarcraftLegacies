@@ -87,6 +87,8 @@ public sealed class SentinelsFaction : Faction
     AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum));
     AddQuest(new QuestVaultoftheWardens(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestBreakTheBluff());
+    AddQuest(new QuestRazeOrgrimmar());
   }
 
   private void RegisterDialogue()
