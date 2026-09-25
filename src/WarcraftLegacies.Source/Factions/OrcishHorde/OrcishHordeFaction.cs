@@ -64,7 +64,7 @@ public sealed class OrcishHordeFaction : Faction
     };
     CinematicMusic = "SadMystery";
     IntroText = () => Loc.Format(
-      "You are playing as the {faction}.",
+      "You are playing as the battle-hardened {faction}.\n\nYou begin stranded on an island off the coast of Kalimdor, your fleet battered by the crossing. Protect your Great Hall and hold out against the murlocs of the Sea Witch until the ships are seaworthy again. Save all that you can, for whatever survives will sail with you to the mainland.\n\nOnce you reach Durotar, it falls to you to found Orgrimmar, a new home for the Horde.\n\nThe Night Elves will not welcome you. Stand with your Tauren allies, drive into Ashenvale, and burn the World Tree if you must.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Orcish Horde")}|r"));
     Nicknames = new List<string>
     {
