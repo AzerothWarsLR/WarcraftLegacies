@@ -86,11 +86,19 @@ public sealed class OrcishHordeFaction : Faction
     RegisterQuests();
   }
 
+  /// <inheritdoc />
+  public override void OnNotPicked()
+  {
+    Regions.DurotarUnlock.CleanupNeutralPassiveUnits();
+    base.OnNotPicked();
+  }
+
   private void RegisterQuests()
   {
     var greatHall = AllPreplacedWidgets.Units.GetClosest(UNIT_OGRE_GREAT_HALL_ORCISH_HORDE_T1, -2720f, -8544f);
 
-    var quest = new QuestCountdownToExtinction(greatHall, Regions.Darkspear_Isles, Regions.Horde_Landing_Durotar);
+    var quest = new QuestCountdownToExtinction(greatHall, Regions.Darkspear_Isles, Regions.Horde_Landing_Durotar,
+      Regions.DurotarUnlock);
     StartingQuest = AddQuest(quest);
 
     new SeaWitchAssault(this, quest, greatHall, Regions.Darkspear_Isles, Regions.Sea_Witch_Spawn_1,
