@@ -37,7 +37,7 @@ public sealed class SentinelsFaction : Faction
     CinematicMusic = "Comradeship";
     ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
     IntroText = () => Loc.Format(
-      "You are playing as the ever-watchful {faction}.\n\nThe Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods' invaders from Kalimdor until then.\n\nYour first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel bastion on the southern half of the continent.\n\nOnce you have secured your holdings, gather your army and destroy the Old Gods. Be cautious—they will outnumber you if given time to establish a foothold in Azeroth.",
+      "You are playing as the ever-watchful {faction}.\n\nYou begin in Darkshore, where wild creatures gone mad threaten your people. Clear them out and secure Darkshore and the Grove of the Ancients to rally Auberdine and Astranaar to your side.\n\nThe orcs of the Horde will soon land on Kalimdor's shores, and the Tauren are already migrating north to join them. The Druids are still waking from their slumber, so until they are ready, the defense of Kalimdor falls to you.\n\nWhen the southern passes open, Feathermoon Stronghold rejoins your cause. Gather your army and strike at the heart of the Horde: Orgrimmar and Thunder Bluff.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Sentinels")}|r"));
     Nicknames = new List<string>
     {
