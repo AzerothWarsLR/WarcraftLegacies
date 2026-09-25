@@ -1,0 +1,76 @@
+﻿using System.Collections.Generic;
+using MacroTools.ControlPoints;
+using MacroTools.Extensions;
+using MacroTools.Factions;
+using MacroTools.Legends;
+using MacroTools.Localization;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Factions.OrcishHorde.Powers;
+using WarcraftLegacies.Source.Objectives.ControlPointBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.QuestBased;
+
+namespace WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+
+public sealed class QuestThrallMaelstrom : QuestData
+{
+  private readonly LegendaryHero _thrall;
+
+  public QuestThrallMaelstrom(LegendaryHero thrall, QuestData previousQuest) : base("The World-Shaman",
+    "The elements of Azeroth are in terrible disarray, and the situation only grows worse as rising conflicts threaten to tear our world apart. Thrall, as one of the most formidable Shamans of his time, must take up the mantle of the World-Shaman if he is to save his people - and the world.",
+    @"ReplaceableTextures\CommandButtons\BTN_Lightning_Orc.blp")
+  {
+    _thrall = thrall;
+    var controlPoints = new List<ControlPoint>
+    {
+      ControlPointManager.Instance.GetFromUnitType(UNIT_N028_MAELSTROM),
+      ControlPointManager.Instance.GetFromUnitType(UNIT_N05Y_AZSUNA),
+      ControlPointManager.Instance.GetFromUnitType(UNIT_N032_SURAMAR),
+      ControlPointManager.Instance.GetFromUnitType(UNIT_N053_VAL_SHARAH),
+      ControlPointManager.Instance.GetFromUnitType(UNIT_N05Z_STORMHEIM),
+    };
+    AddObjective(new ObjectiveLegendLevel(_thrall, 8));
+    AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 90, 120, "Taming the Maelstrom"));
+    AddObjective(new ObjectiveControlPoints(controlPoints, "on the Broken Isles and near the Maelstrom"));
+    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+  }
+
+  public override string RewardFlavour =>
+    "Thrall has stabilized the power of the Maelstrom and stored it within the Doomhammer. He is no longer merely the Warchief of the Horde; he is the World-Shaman of all Azeroth.";
+
+  protected override string RewardDescription =>
+    "Thrall gains 2000 experience and 15 to all attributes, and you gain the Power Maelstrom Spirit";
+
+  protected override void OnComplete(Faction completingFaction)
+  {
+    if (_thrall.Unit != null)
+    {
+      _thrall.Unit.Name = Loc.Get("World-Shaman");
+      _thrall.Unit.AddHeroAttributes(15, 15, 15);
+      AddHeroXP(_thrall.Unit, 2000, true);
+    }
+
+    var maelstromWeapon = new MaelstromWeapon(0.15f, 100)
+    {
+      Effect = @"Doodads\Cinematic\Lightningbolt\Lightningbolt",
+      ValidUnitTypes = new[]
+      {
+        UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, UNIT_OGRU_GRUNT_ORCISH_HORDE, UNIT_OSHM_SHAMAN_ORCISH_HORDE,
+        UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE
+      },
+      IconName = "_Lightning_Orc"
+    };
+
+    completingFaction.AddPower(maelstromWeapon);
+
+    if (completingFaction.Player != null)
+    {
+      completingFaction.Player.DisplayPowerAcquired(maelstromWeapon);
+    }
+  }
+}

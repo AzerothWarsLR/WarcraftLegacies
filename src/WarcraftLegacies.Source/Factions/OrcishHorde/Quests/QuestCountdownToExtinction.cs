@@ -39,6 +39,7 @@ public sealed class QuestCountdownToExtinction : QuestData
 
   private readonly Rectangle _buildZone;
   private readonly Point _retreatDestination;
+  private readonly List<unit> _durotarRescueUnits;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestCountdownToExtinction"/> class.
@@ -46,13 +47,15 @@ public sealed class QuestCountdownToExtinction : QuestData
   /// <param name="greatHall">The starting Great Hall. Losing it fails the quest.</param>
   /// <param name="buildZone">The area that Red is allowed to build in on the landing island.</param>
   /// <param name="retreatRegion">Where survivors are sent, win or lose.</param>
-  public QuestCountdownToExtinction(unit greatHall, Rectangle buildZone, Rectangle retreatRegion) : base(
+  /// <param name="durotarUnlock">The Durotar base handed to the Horde, win or lose.</param>
+  public QuestCountdownToExtinction(unit greatHall, Rectangle buildZone, Rectangle retreatRegion, Rectangle durotarUnlock) : base(
     "Countdown to Extinction",
     "Thrall's fleet was battered by the crossing and needs time to be made seaworthy again. Until then, the Horde must hold this island against whatever the sea sends at them.",
     @"ReplaceableTextures\CommandButtons\BTNGhost.blp")
   {
     _buildZone = buildZone;
     _retreatDestination = retreatRegion.Center;
+    _durotarRescueUnits = durotarUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
     AddObjective(new ObjectiveUnitAlive(greatHall));
     SurviveAssault = new ObjectiveSurviveAssault("Survive the murloc assault");
@@ -71,14 +74,16 @@ public sealed class QuestCountdownToExtinction : QuestData
     "The Great Hall falls, but the survivors scramble aboard what's left of the fleet and limp toward Kalimdor regardless.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => "The fleet departs for Durotar, taking all surviving forces with it";
+  protected override string RewardDescription => "The fleet departs for Durotar, taking all surviving forces with it, and the Horde takes control of Durotar";
 
   /// <inheritdoc />
-  protected override string PenaltyDescription => "Surviving forces retreat to Durotar at reduced health";
+  protected override string PenaltyDescription => "Surviving forces retreat to Durotar at reduced health, and the Horde takes control of Durotar";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
+    completingFaction.Player.RescueGroup(_durotarRescueUnits);
+
     var completingPlayer = completingFaction.Player;
     if (completingPlayer == null)
     {
@@ -115,6 +120,8 @@ public sealed class QuestCountdownToExtinction : QuestData
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
   {
+    completingFaction.Player.RescueGroup(_durotarRescueUnits);
+
     var completingPlayer = completingFaction.Player;
     if (completingPlayer == null)
     {

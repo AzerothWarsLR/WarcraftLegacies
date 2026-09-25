@@ -31,6 +31,11 @@
       "Value": "PathTextures\\6x6SimpleSolid.tga"
     },
     {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R06G"
+    },
+    {
       "Id": "useu",
       "Type": 3,
       "Value": ""
