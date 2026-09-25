@@ -103,6 +103,7 @@ public static class Regions
   public static Rectangle DuskwoodCrypt { get; set; } = new Rectangle(9376f, -16032f, 9728f, -15616f);
   public static Rectangle DusthallowAmbient { get; set; } = new Rectangle(-12256f, -9920f, -8640f, -5728f);
   public static Rectangle Dustwallow_Ships { get; set; } = new Rectangle(-12416f, -8736f, -8768f, -6144f);
+  public static Rectangle EarthmothersCradle { get; set; } = new Rectangle(-14912f, -14912f, -13184f, -13632f);
   public static Rectangle East_Thandol { get; set; } = new Rectangle(16736f, 0f, 16928f, 224f);
   public static Rectangle East_of_Azeroth { get; set; } = new Rectangle(22144f, -9888f, 22592f, -9376f);
   public static Rectangle Eastern_Northrend { get; set; } = new Rectangle(-2272f, 20320f, 4608f, 22304f);
