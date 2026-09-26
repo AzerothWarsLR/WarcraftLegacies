@@ -308,7 +308,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 6 seconds.|n|n|cffffcc00Level 1|r - 100 healing, 2 bonus armor.|n|cffffcc00Level 2|r - 150 healing, 3 bonus armor.|n|cffffcc00Level 3|r - 200 healing, 4 bonus armor.|n|cffffcc00Level 4|r - 250 healing, 5 bonus armor."
+      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 8 seconds.|n|n|cffffcc00Level 1|r - 50 healing, 4 bonus armor.|n|cffffcc00Level 2|r - 75 healing, 6 bonus armor.|n|cffffcc00Level 3|r - 100 healing, 8 bonus armor.|n|cffffcc00Level 4|r - 125 healing, 10 bonus armor."
     },
     {
       "Id": "atat",
@@ -343,25 +343,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 6 seconds.|n|n|cffffcc00Level 1|r - 100 healing, 2 bonus armor."
+      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 8 seconds.|n|n|cffffcc00Level 1|r - 50 healing, 4 bonus armor."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 6 seconds.|n|n|cffffcc00Level 2|r - 150 healing, 3 bonus armor."
+      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 8 seconds.|n|n|cffffcc00Level 2|r - 75 healing, 6 bonus armor."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 6 seconds.|n|n|cffffcc00Level 3|r - 200 healing, 4 bonus armor."
+      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 8 seconds.|n|n|cffffcc00Level 3|r - 100 healing, 8 bonus armor."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 6 seconds.|n|n|cffffcc00Level 4|r - 250 healing, 5 bonus armor."
+      "Value": "Sends a wave of spirit water that heals a friendly unit, then jumps to up to 3 more injured allies, healing 15% less each jump. Every unit healed is wrapped in an Earthen Shield for 8 seconds.|n|n|cffffcc00Level 4|r - 125 healing, 10 bonus armor."
     }
   ]
 }

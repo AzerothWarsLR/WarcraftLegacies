@@ -64,8 +64,8 @@ public static class TaurenTribesSpells
     {
       Healing = new LeveledAbilityField<float>
       {
-        Base = 50,
-        PerLevel = 50
+        Base = 25,
+        PerLevel = 25
       },
       MaximumBounces = 3,
       HealingReductionPerBounce = 0.15f,
