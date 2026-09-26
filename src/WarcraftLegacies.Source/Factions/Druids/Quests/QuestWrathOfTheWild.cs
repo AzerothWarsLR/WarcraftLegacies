@@ -19,13 +19,14 @@ public sealed class QuestWrathOfTheWild : QuestData
   {
     AddObjective(new ObjectiveCapitalDead(AllLegends.Warsong.Orgrimmar));
     AddObjective(new ObjectiveSelfExists());
+    ResearchId = UPGRADE_R05A_QUEST_COMPLETED_WRATH_OF_THE_WILD_DRUIDS;
   }
 
   public override string RewardFlavour =>
     "Roots and thorns swallow the ruins of Orgrimmar. Malfurion Stormrage feels the forest breathe easier, and his power grows with it.";
 
   protected override string RewardDescription =>
-    "Malfurion gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, and you gain 500 gold";
+    "Malfurion gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, you gain 500 gold, and you can train Siege Ancients from the Ancient of War";
 
   protected override void OnComplete(Faction completingFaction)
   {
@@ -39,6 +40,8 @@ public sealed class QuestWrathOfTheWild : QuestData
     if (completingFaction.Player != null)
     {
       completingFaction.Player.Gold += GoldReward;
+      completingFaction.Player.DisplayUnitTypeAcquired(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE,
+        "You can now train Siege Ancients from the Ancient of War.");
     }
   }
 }
