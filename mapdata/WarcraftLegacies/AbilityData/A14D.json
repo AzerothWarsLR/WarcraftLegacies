@@ -1,0 +1,20 @@
+{
+  "OldId": "Agyv",
+  "NewId": "A14D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Lunar Sanctuary)"
+    }
+  ]
+}
