@@ -94,6 +94,7 @@ public sealed class QuestTheLongMarch : QuestData
       return;
     }
 
+    rewardedPlayer.SetTechResearched(UPGRADE_RT20_QUEST_CONCLUDED_THE_LONG_MARCH_TAUREN_TRIBES, 1);
     var multiplier = Math.Max(survivingKodos, 1);
     rewardedPlayer.Gold += GoldPerSurvivingKodo * multiplier;
 

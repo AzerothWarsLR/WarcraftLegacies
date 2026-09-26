@@ -40,14 +40,14 @@ public static class TaurenTribesObjectInfo
 
     yield return new(UNIT_VP51_TAUREN_CHIEFTAIN_TAUREN_TRIBES_ELITE, 0, new List<UnitCategory> { Elite, Fighter });
     yield return new(UNIT_VP52_OGRE_LORD_TAUREN_TRIBES_ELITE, 0, new List<UnitCategory> { Elite, Destroyer });
-    yield return new(UNIT_VP56_SUNWALKER_CHAMPION_TAUREN_TRIBES_ELITE, 6, new List<UnitCategory> { Elite, Support });
+    yield return new(UNIT_VP56_SUNWALKER_CHAMPION_TAUREN_TRIBES, 6, Support);
 
     yield return new(UNIT_OTAU_TAUREN_TAUREN_TRIBES, Unlimited, Tank);
     yield return new(UNIT_N049_BLUFFWATCHER_TAUREN_TRIBES, Unlimited, Marksman);
     yield return new(UNIT_OKOD_KODO_BEAST_TAUREN_TRIBES, 6, Support);
     yield return new(UNIT_VP59_BRAVE_WORKER_TAUREN_TRIBES_WORKER, Unlimited, Builder);
 
-    yield return new(UNIT_VP54_EARTHCALLER_TAUREN_TRIBES, Unlimited, Support);
+    yield return new(UNIT_VP54_EARTHCALLER_TAUREN_TRIBES, Unlimited, Destroyer);
     yield return new(UNIT_OSPW_SPIRIT_WALKER_TAUREN_TRIBES, Unlimited, Support);
     yield return new(UNIT_VP57_ANCESTRAL_SPIRIT_TAUREN_TRIBES, 3, AntiMage);
 
@@ -59,7 +59,7 @@ public static class TaurenTribesObjectInfo
     yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_TAUREN_TRIBES, 1, Support);
     yield return new(UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES, 1, new List<UnitCategory> { Destroyer, Support });
 
-    yield return new(UNIT_VP50_OGRE_STONE_THROWER_TAUREN_TRIBES, 6, Siege);
+    yield return new(UNIT_VP50_OGRE_STONE_THROWER_TAUREN_TRIBES, 8, Siege);
     yield return new(UNIT_N08O_OGRE_MAGI_TAUREN_TRIBES, 6, Support);
     yield return new(UNIT_VP58_OGRE_CRUSHER_TAUREN_TRIBES, Unlimited, Destroyer);
 
@@ -86,5 +86,7 @@ public static class TaurenTribesObjectInfo
 
     yield return new(UPGRADE_RTLM_START_THE_LONG_MARCH_TAUREN_TRIBES, 1);
     yield return new(UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES, Unlimited);
+    yield return new(UPGRADE_RT20_QUEST_CONCLUDED_THE_LONG_MARCH_TAUREN_TRIBES, Unlimited);
+    yield return new(UPGRADE_RT21_QUEST_CONCLUDED_STONEMAUL_DIPLOMACY_TAUREN_TRIBES, Unlimited);
   }
 }
