@@ -257,7 +257,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Hurls a fireball at a target area, then launches every orb orbiting the hero at the area for additional damage. The orbs are used up.|n|n|cffffcc00Level 1|r - 175 damage, plus 42 damage for each orb.|n|cffffcc00Level 2|r - 280 damage, plus 63 damage for each orb.|n|cffffcc00Level 3|r - 385 damage, plus 84 damage for each orb."
+      "Value": "Hurls a fireball at a target area, then launches every orb orbiting the hero at the area for additional damage. The orbs are used up.|n|n|cffffcc00Level 1|r - 175 damage, plus 50 damage for each orb.|n|cffffcc00Level 2|r - 280 damage, plus 75 damage for each orb.|n|cffffcc00Level 3|r - 385 damage, plus 100 damage for each orb."
     },
     {
       "Id": "atat",
@@ -286,19 +286,19 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a fireball that deals 175 damage to enemies in the area, then launches every orbiting orb at the area for 42 damage each."
+      "Value": "Hurls a fireball that deals 175 damage to enemies in the area, then launches every orbiting orb at the area for 50 damage each."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a fireball that deals 280 damage to enemies in the area, then launches every orbiting orb at the area for 63 damage each."
+      "Value": "Hurls a fireball that deals 280 damage to enemies in the area, then launches every orbiting orb at the area for 75 damage each."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a fireball that deals 385 damage to enemies in the area, then launches every orbiting orb at the area for 84 damage each."
+      "Value": "Hurls a fireball that deals 385 damage to enemies in the area, then launches every orbiting orb at the area for 100 damage each."
     }
   ]
 }

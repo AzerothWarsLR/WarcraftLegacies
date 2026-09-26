@@ -34,7 +34,7 @@ public static class QuelthalasSpells
     SpellRegistry.Register(new SunfireBarrageSpell(ABILITY_A14K_SUNFIRE_BARRAGE_ANASTERIAN)
     {
       FireballDamage = new LeveledAbilityField<float> { Base = 70, PerLevel = 105 },
-      OrbDamage = new LeveledAbilityField<float> { Base = 21, PerLevel = 21 },
+      OrbDamage = new LeveledAbilityField<float> { Base = 25, PerLevel = 25 },
       OrbBlastRadius = 150,
       FireballSpeed = 900,
       OrbSpeed = 1200,
