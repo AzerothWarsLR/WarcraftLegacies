@@ -108,6 +108,12 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "Establish the Flight Path, which connects Orgrimmar and Thunder Bluff."
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "RT20"
     }
   ]
 }
