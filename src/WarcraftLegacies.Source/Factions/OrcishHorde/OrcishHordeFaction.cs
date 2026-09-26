@@ -97,8 +97,15 @@ public sealed class OrcishHordeFaction : Faction
   {
     var greatHall = AllPreplacedWidgets.Units.GetClosest(UNIT_OGRE_GREAT_HALL_ORCISH_HORDE_T1, -2720f, -8544f);
 
+    var shipPositions = new List<Point> { new(-2368f, -9600f), new(-3136f, -9664f) };
+    var shipPeons = shipPositions.Select(SetupShipRepairPeon).ToList();
+
     var quest = new QuestCountdownToExtinction(greatHall, Regions.Darkspear_Isles, Regions.Horde_Landing_Durotar,
-      Regions.DurotarUnlock);
+      Regions.DurotarUnlock)
+    {
+      ShipPositions = shipPositions,
+      ShipPeons = shipPeons
+    };
     StartingQuest = AddQuest(quest);
 
     new SeaWitchAssault(this, quest, greatHall, Regions.Darkspear_Isles, Regions.Sea_Witch_Spawn_1,
@@ -134,9 +141,6 @@ public sealed class OrcishHordeFaction : Faction
     RegisterTrollRescue(Regions.Troll_Rescue_2);
     RegisterTrollRescue(Regions.Troll_Rescue_3);
 
-    SetupShipRepairPeon(-2368f, -9600f);
-    SetupShipRepairPeon(-3136f, -9664f);
-
     SetupInitialTowerAssault();
   }
 
@@ -159,11 +163,12 @@ public sealed class OrcishHordeFaction : Faction
     });
   }
 
-  private static void SetupShipRepairPeon(float shipX, float shipY)
+  private static unit SetupShipRepairPeon(Point ship)
   {
-    var peon = AllPreplacedWidgets.Units.GetClosest(UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, shipX, shipY);
+    var peon = AllPreplacedWidgets.Units.GetClosest(UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, ship.X, ship.Y);
     peon.IsInvulnerable = true;
     GameTimeManager.RegisterOnTurn(1, () => peon.SetAnimation("work"));
+    return peon;
   }
 
   private void RegisterTrollRescue(Rectangle rescueRegion)
