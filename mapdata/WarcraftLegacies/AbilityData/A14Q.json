@@ -256,7 +256,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, damaging and stunning all enemies it hits.|n|n|cffffcc00Level 1|r - 75 damage, \u003CA14R,Dur1,.\u003E (\u003CA14R,HeroDur1,.\u003E) seconds stun.|n|cffffcc00Level 2|r - 125 damage, \u003CA14R,Dur2,.\u003E (\u003CA14R,HeroDur2,.\u003E) seconds stun.|n|cffffcc00Level 3|r - 175 damage, \u003CA14R,Dur3,.\u003E (\u003CA14R,HeroDur3,.\u003E) seconds stun.|n|cffffcc00Level 4|r - 225 damage, \u003CA14R,Dur4,.\u003E (\u003CA14R,HeroDur4,.\u003E) seconds stun."
+      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, damaging all enemies it hits and slowing their movement speed by 50% and attack rate by 25%.|n|n|cffffcc00Level 1|r - 100 damage, \u003CA15Z,Dur1,.\u003E (\u003CA15Z,HeroDur1,.\u003E) seconds slow.|n|cffffcc00Level 2|r - 175 damage, \u003CA15Z,Dur2,.\u003E (\u003CA15Z,HeroDur2,.\u003E) seconds slow.|n|cffffcc00Level 3|r - 250 damage, \u003CA15Z,Dur3,.\u003E (\u003CA15Z,HeroDur3,.\u003E) seconds slow.|n|cffffcc00Level 4|r - 325 damage, \u003CA15Z,Dur4,.\u003E (\u003CA15Z,HeroDur4,.\u003E) seconds slow."
     },
     {
       "Id": "aret",
@@ -267,25 +267,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, dealing 75 damage and stunning for \u003CA14R,Dur1,.\u003E (\u003CA14R,HeroDur1,.\u003E) seconds."
+      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, dealing 100 damage and slowing their movement speed by 50% and attack rate by 25% for \u003CA15Z,Dur1,.\u003E (\u003CA15Z,HeroDur1,.\u003E) seconds."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, dealing 125 damage and stunning for \u003CA14R,Dur2,.\u003E (\u003CA14R,HeroDur2,.\u003E) seconds."
+      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, dealing 175 damage and slowing their movement speed by 50% and attack rate by 25% for \u003CA15Z,Dur2,.\u003E (\u003CA15Z,HeroDur2,.\u003E) seconds."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, dealing 175 damage and stunning for \u003CA14R,Dur3,.\u003E (\u003CA14R,HeroDur3,.\u003E) seconds."
+      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, dealing 250 damage and slowing their movement speed by 50% and attack rate by 25% for \u003CA15Z,Dur3,.\u003E (\u003CA15Z,HeroDur3,.\u003E) seconds."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, dealing 225 damage and stunning for \u003CA14R,Dur4,.\u003E (\u003CA14R,HeroDur4,.\u003E) seconds."
+      "Value": "Hurls a spinning axe that pierces enemies in a line and returns to Rexxar, dealing 325 damage and slowing their movement speed by 50% and attack rate by 25% for \u003CA15Z,Dur4,.\u003E (\u003CA15Z,HeroDur4,.\u003E) seconds."
     },
     {
       "Id": "atat",
