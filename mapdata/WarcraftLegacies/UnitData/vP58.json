@@ -12,7 +12,7 @@
     },
     {
       "Id": "ubld",
-      "Value": 20
+      "Value": 5
     },
     {
       "Id": "ucol",
@@ -141,6 +141,20 @@
     {
       "Id": "ua1r",
       "Value": 100
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "normal"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT21"
     }
   ]
 }
