@@ -60,9 +60,10 @@ public static class TaurenTribesSpells
       Damage = new LeveledAbilityField<float>
       {
         Base = 25f,
-        PerLevel = 50f
+        PerLevel = 75f
       },
-      StunAbilityId = ABILITY_A14R_WILD_THROW_DUMMY_STUN_REXXAR,
+      DebuffAbilityId = ABILITY_A15Z_WILD_THROW_SLOW_REXXAR,
+      DebuffOrderId = ORDER_SLOW,
       EffectModel = @"Abilities\Weapons\RexxarMissile\RexxarMissile",
       EffectScale = 1.8f
     };

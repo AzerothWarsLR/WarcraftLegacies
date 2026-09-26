@@ -69,7 +69,7 @@ public static class IronforgeSpells
         Base = 25f,
         PerLevel = 50f
       },
-      StunAbilityId = ABILITY_TP50_MURADIN_S_STORMBOLT_DUMMY_STUN_MURADIN,
+      DebuffAbilityId = ABILITY_TP50_MURADIN_S_STORMBOLT_DUMMY_STUN_MURADIN,
       EffectModel = @"Abilities\Spells\Human\StormBolt\StormBoltMissile.mdl"
     });
 
