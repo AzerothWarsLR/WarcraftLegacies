@@ -1,0 +1,22 @@
+{
+  "OldId": "Aegr",
+  "NewId": "A15X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Sentinels - Warden)"
+    }
+  ]
+}

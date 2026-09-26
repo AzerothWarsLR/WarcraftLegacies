@@ -5,6 +5,7 @@ using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.Quests;
+using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.Illidari;
@@ -16,6 +17,7 @@ using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Powers;
 using WarcraftLegacies.Source.Shared.Quests;
+using WarcraftLegacies.Source.Shared.Researches;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Sentinels;
@@ -59,6 +61,7 @@ public sealed class SentinelsFaction : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterPowers();
+    RegisterResearches();
     SentinelsSpells.Setup();
     SentinelsTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -74,6 +77,27 @@ public sealed class SentinelsFaction : Faction
     Regions.FeathermoonUnlock.CleanupNeutralPassiveUnits();
     Regions.TheAthenaeum.CleanupNeutralPassiveUnits();
     base.OnNotPicked();
+  }
+
+  private static void RegisterResearches()
+  {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_RV01_PRIESTESSES_OF_THE_MOON_SENTINELS, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE, 6);
+        }
+      },
+      new CustomResearch(UPGRADE_RV02_WARDENS_SENTINELS, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_H045_WARDEN_SENTINELS_ELITE, 6);
+        }
+      });
   }
 
   private void RegisterQuests()

@@ -26,7 +26,7 @@ public static class SentinelsObjectInfo
     yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, Builder);
     yield return new(UNIT_E006_PRIESTESS_SENTINELS, Unlimited, Support);
     yield return new(UNIT_N06C_MOONHUNTER_SENTINELS, Unlimited, Support);
-    yield return new(UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE, 6, new List<UnitCategory> { Marksman, Support });
+    yield return new(UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE, 0, new List<UnitCategory> { Elite, Marksman, Support });
     yield return new(UNIT_EARC_ARCHER_SENTINELS, Unlimited, Marksman);
     yield return new(UNIT_ESEN_HUNTRESS_SENTINELS, Unlimited, Fighter);
     yield return new(UNIT_H08V_GLAIVE_MAIDEN_SENTINELS, Unlimited, Tank);
@@ -36,7 +36,7 @@ public static class SentinelsObjectInfo
     yield return new(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS, 12, new List<UnitCategory> { Destroyer, Support });
     yield return new(UNIT_E022_MOON_RIDER_SENTINELS, 2, new List<UnitCategory> { Flyer, Marksman, Support });
     yield return new(UNIT_ECHM_CHIMAERA_SENTINELS, 6, new List<UnitCategory> { Flyer, Siege, Marksman });
-    yield return new(UNIT_H045_WARDEN_SENTINELS, 8, new List<UnitCategory> { Fighter, AntiMage });
+    yield return new(UNIT_H045_WARDEN_SENTINELS_ELITE, 0, new List<UnitCategory> { Elite, Fighter, AntiMage });
 
     yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
     yield return new(UNIT_H0AU_SCOUT_SHIP_NIGHTELVES, Unlimited);
@@ -62,5 +62,8 @@ public static class SentinelsObjectInfo
     yield return new(UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, Unlimited);
     yield return new(UPGRADE_R03J_WIND_WALK_SENTINELS, Unlimited);
     yield return new(UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, Unlimited);
+    yield return new(UPGRADE_RV01_PRIESTESSES_OF_THE_MOON_SENTINELS, Unlimited);
+    yield return new(UPGRADE_RV02_WARDENS_SENTINELS, Unlimited);
+    yield return new(UPGRADE_RV03_WARDENS_OF_THE_VAULT_SENTINELS, Unlimited);
   }
 }

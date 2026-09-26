@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.Factions.Sentinels.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits.Vengeance;
 
@@ -36,5 +37,16 @@ public static class SentinelsTraits
       Duration = 20,
       ReviveEffect = "Heal Blue.mdx"
     }, UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS);
+
+    UnitTypeTraitRegistry.Register(new SpiritOfVengeanceTrait
+    {
+      AbilityId = ABILITY_A15W_SPIRIT_OF_VENGEANCE_SENTINELS_WARDEN,
+      ChancePercent = 15,
+      SpiritModelPath = @"units\nightelf\SpiritOfVengeance\SpiritOfVengeance.mdl",
+      SpiritScale = 0.75f,
+      SpiritDistance = 90,
+      StrikeDelay = 0.4f,
+      FadeDuration = 0.5f
+    }, UNIT_H045_WARDEN_SENTINELS_ELITE);
   }
 }

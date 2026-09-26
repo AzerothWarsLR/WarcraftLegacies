@@ -1,0 +1,64 @@
+{
+  "OldId": "AEev",
+  "NewId": "A15W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSpiritOfVengeance.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Sentinels - Warden)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spirit of Vengeance"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Spirit of Vengeance"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Each attack has a 15% chance to call a Spirit of Vengeance, which strikes the target once for as much damage as the target\u0027s own attack, or the Warden\u0027s if that is higher."
+    }
+  ]
+}
