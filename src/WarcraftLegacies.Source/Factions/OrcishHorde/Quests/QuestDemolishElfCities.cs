@@ -25,13 +25,14 @@ public sealed class QuestDemolishElfCities : QuestData
       ShowsInQuestLog = false,
       ShowsInPopups = false
     });
+    ResearchId = UPGRADE_R062_QUEST_COMPLETED_KALIMDOR_ABLAZE_ORCISH_HORDE;
   }
 
   public override string RewardFlavour =>
     "Nordrassil burns, and with it the Night Elves' last hope of standing united against the Horde. Grom Hellscream leads the charge, his warband growing richer and more battle-hardened with every city razed.";
 
   protected override string RewardDescription =>
-    "Grom Hellscream gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, and you gain 500 gold";
+    "Grom Hellscream gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, you gain 500 gold, and you can train Garrosh Hellscream at the Altar of Storms";
 
   protected override void OnComplete(Faction completingFaction)
   {
@@ -45,6 +46,8 @@ public sealed class QuestDemolishElfCities : QuestData
     if (completingFaction.Player != null)
     {
       completingFaction.Player.Gold += GoldReward;
+      completingFaction.Player.DisplayUnitTypeAcquired(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_ORCISH_HORDE,
+        "You can now train Garrosh Hellscream at the Altar of Storms.");
     }
   }
 }
