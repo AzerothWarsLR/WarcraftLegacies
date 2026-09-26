@@ -275,6 +275,22 @@ public static class UniqueEliteNames
         "Nuada",
         "Oghma"
       },
+      [UNIT_E03H_HEARTWOOD_ANCIENT_DRUIDS_ELITE] =
+        new()
+        {
+          "Anubris",
+          "Bandalar",
+          "Califax",
+          "Centrius",
+          "Ceredwyn",
+          "Dagda",
+          "Gholbine",
+          "Larodar",
+          "Malorne",
+          "Nandieb",
+          "Nuada",
+          "Oghma"
+        },
       [UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE] =
         new()
         {
