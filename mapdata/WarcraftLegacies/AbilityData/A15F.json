@@ -10,7 +10,7 @@
       "Pointer": 1,
       "Id": "Hav1",
       "Type": 2,
-      "Value": 2
+      "Value": 8
     },
     {
       "Level": 1,
@@ -24,7 +24,7 @@
       "Pointer": 3,
       "Id": "Hav3",
       "Type": 2,
-      "Value": 8
+      "Value": 20
     },
     {
       "Level": 1,
@@ -90,7 +90,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The Ogre Lord flies into a rage, gaining 2 bonus armor, 250 bonus hit points and 8 bonus damage. Lasts 20 seconds."
+      "Value": "The Ogre Lord flies into a rage, gaining 8 bonus armor, 250 bonus hit points and 20 bonus damage. Lasts 20 seconds."
     }
   ]
 }

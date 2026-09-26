@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
+using WarcraftLegacies.Source.Factions.Frostwolf.Spells;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 
@@ -9,6 +10,36 @@ public static class TaurenTribesSpells
 {
   public static void Setup()
   {
+    var devour = new Devour(ABILITY_ADEV_DEVOUR_KODO_BEAST)
+    {
+      PercentageOfMaxHealth = 0.5f
+    };
+    SpellRegistry.Register(devour);
+
+    SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
+    {
+      Duration = 60,
+      HealthBonus = new LeveledAbilityField<float>
+      {
+        Base = 0.2f,
+        PerLevel = 0.1f
+      },
+      DamageBonus = new LeveledAbilityField<float>
+      {
+        Base = 0.2f,
+        PerLevel = 0.1f
+      },
+      SummonCap = new LeveledAbilityField<int>
+      {
+        Base = 6,
+        PerLevel = 6
+      },
+      RememberChance = 1f,
+      RememberableUnitTypeId = UNIT_OTAU_TAUREN_TAUREN_TRIBES,
+      SummonEffect = @"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl",
+      DeathEffect = @"Abilities\Spells\Orc\Disenchant\DisenchantSpecialArt.mdl"
+    });
+
     var warStompChieftainOgreLord = new MassAnySpell(ABILITY_AT06_WAR_STOMP_TAUREN_TRIBES)
     {
       Radius = 300,
@@ -33,8 +64,8 @@ public static class TaurenTribesSpells
     {
       Healing = new LeveledAbilityField<float>
       {
-        Base = 50,
-        PerLevel = 50
+        Base = 25,
+        PerLevel = 25
       },
       MaximumBounces = 3,
       HealingReductionPerBounce = 0.15f,

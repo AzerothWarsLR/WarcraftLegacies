@@ -52,7 +52,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 75
+      "Value": 50
     },
     {
       "Id": "ugor",
@@ -146,7 +146,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Tauren Tribes-Elite)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "uhot",

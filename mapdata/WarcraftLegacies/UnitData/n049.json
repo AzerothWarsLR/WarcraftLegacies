@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A144,A143,ACat,ACsk,Aihn,A0E6"
+      "Value": "A160,Aihn,A0E6"
     },
     {
       "Id": "ua2t",
@@ -22,7 +22,7 @@
     },
     {
       "Id": "ubld",
-      "Value": 8
+      "Value": 3
     },
     {
       "Id": "ucol",
@@ -32,7 +32,7 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 2.8
+      "Value": 1.9
     },
     {
       "Id": "ua2c",
@@ -45,7 +45,7 @@
     },
     {
       "Id": "udef",
-      "Value": 3
+      "Value": 1
     },
     {
       "Id": "ua2d",
@@ -53,7 +53,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 55
+      "Value": 22
     },
     {
       "Id": "ua2b",
@@ -74,7 +74,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 42
+      "Value": 15
     },
     {
       "Id": "ugor",
@@ -82,7 +82,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1155
+      "Value": 520
     },
     {
       "Id": "ulum",
@@ -94,11 +94,11 @@
     },
     {
       "Id": "umpi",
-      "Value": 350
+      "Value": 0
     },
     {
       "Id": "umpm",
-      "Value": 350
+      "Value": 0
     },
     {
       "Id": "ua2z",
@@ -110,7 +110,7 @@
     },
     {
       "Id": "ua1r",
-      "Value": 850
+      "Value": 550
     },
     {
       "Id": "ua2r",
@@ -146,7 +146,7 @@
     },
     {
       "Id": "umvs",
-      "Value": 215
+      "Value": 220
     },
     {
       "Id": "ua2p",
@@ -171,7 +171,7 @@
     {
       "Id": "ua1w",
       "Type": 3,
-      "Value": "msplash"
+      "Value": "missile"
     },
     {
       "Id": "ua2w",
@@ -200,7 +200,7 @@
     },
     {
       "Id": "ua1d",
-      "Value": 3
+      "Value": 2
     },
     {
       "Id": "ureq",
@@ -285,6 +285,15 @@
       "Id": "utip",
       "Type": 3,
       "Value": "Train Tauren Hunter"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "pierce"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 4
     }
   ]
 }
