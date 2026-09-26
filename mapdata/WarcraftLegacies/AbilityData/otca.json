@@ -1,0 +1,338 @@
+{
+  "OldId": "ANrf",
+  "NewId": "otca",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "channel"
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 2,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 3,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 4,
+      "Id": "aeff",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Thrall)"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElementalConvergence.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElementalConvergence.blp"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Elemental Convergence"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Elemental Convergence - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Channels for 2 seconds, then converges earth, wind, and fire at a target point, dealing damage to and stunning nearby enemies.|n|n|cffffcc00Level 1|r - 175 damage, stuns for 3 seconds (1 second against heroes).|n|cffffcc00Level 2|r - 250 damage, stuns for 4 seconds (2 seconds against heroes).|n|cffffcc00Level 3|r - 350 damage, stuns for 5 seconds (3 seconds against heroes).|n|cffffcc00Level 4|r - 450 damage, stuns for 6 seconds (4 seconds against heroes)."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Elemental Convergence - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Elemental Convergence - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Elemental Convergence - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Elemental Convergence - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Channels for 2 seconds, then converges earth, wind, and fire at the target point, dealing 175 damage to nearby enemies. Also stuns them for 3 seconds (1 second against heroes)."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Channels for 2 seconds, then converges earth, wind, and fire at the target point, dealing 250 damage to nearby enemies. Also stuns them for 4 seconds (2 seconds against heroes)."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Channels for 2 seconds, then converges earth, wind, and fire at the target point, dealing 350 damage to nearby enemies. Also stuns them for 5 seconds (3 seconds against heroes)."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Channels for 2 seconds, then converges earth, wind, and fire at the target point, dealing 450 damage to nearby enemies. Also stuns them for 6 seconds (4 seconds against heroes)."
+    }
+  ]
+}
