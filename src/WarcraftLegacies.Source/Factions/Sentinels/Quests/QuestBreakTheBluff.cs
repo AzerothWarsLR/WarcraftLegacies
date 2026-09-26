@@ -17,7 +17,7 @@ public sealed class QuestBreakTheBluff : QuestData
     "The Tauren have raised their great city atop the mesas of Mulgore and marched with the Horde against the forests of Kalimdor. Tear down Thunder Bluff and end their threat to the Sentinels.",
     @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
   {
-    AddObjective(new ObjectiveCapitalDead(AllLegends.Frostwolf.ThunderBluff));
+    AddObjective(new ObjectiveCapitalDead(AllLegends.Tauren.ThunderBluff));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R052_QUEST_COMPLETED_BREAK_THE_BLUFF_SENTINELS;
   }

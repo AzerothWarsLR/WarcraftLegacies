@@ -17,7 +17,7 @@ public sealed class QuestRazeOrgrimmar : QuestData
     "The orcs have carved a city out of the red rock of Durotar, and from it their warbands strike deep into Ashenvale. Raze Orgrimmar and the Horde's grip on Kalimdor will break.",
     @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
   {
-    AddObjective(new ObjectiveCapitalDead(AllLegends.Warsong.Orgrimmar));
+    AddObjective(new ObjectiveCapitalDead(AllLegends.Orc.Orgrimmar));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R007_QUEST_COMPLETED_RAZE_ORGRIMMAR_SENTINELS;
   }

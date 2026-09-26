@@ -17,7 +17,7 @@ public sealed class QuestSubdueTheTauren : QuestData
     "The Tauren once honoured the Earthmother alongside the druids, yet now they march with the Horde. Topple Thunder Bluff and humble them before the Cenarion Circle.",
     @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
   {
-    AddObjective(new ObjectiveCapitalDead(AllLegends.Frostwolf.ThunderBluff));
+    AddObjective(new ObjectiveCapitalDead(AllLegends.Tauren.ThunderBluff));
     AddObjective(new ObjectiveSelfExists());
   }
 
