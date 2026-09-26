@@ -110,12 +110,12 @@
     },
     {
       "Id": "ustr",
-      "Value": 17
+      "Value": 21
     },
     {
       "Id": "ustp",
       "Type": 2,
-      "Value": 2.2
+      "Value": 2.5
     },
     {
       "Id": "uagi",
@@ -124,16 +124,16 @@
     {
       "Id": "uagp",
       "Type": 2,
-      "Value": 1.0
+      "Value": 1.5
     },
     {
       "Id": "uint",
-      "Value": 19
+      "Value": 25
     },
     {
       "Id": "uinp",
       "Type": 2,
-      "Value": 3.2
+      "Value": 3.4
     },
     {
       "Id": "uhpm",
