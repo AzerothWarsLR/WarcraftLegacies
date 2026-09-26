@@ -54,19 +54,24 @@
       "Value": 15
     },
     {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
       "Level": 2,
       "Id": "amcs",
-      "Value": 110
+      "Value": 115
     },
     {
       "Level": 3,
       "Id": "amcs",
-      "Value": 120
+      "Value": 115
     },
     {
       "Level": 4,
       "Id": "amcs",
-      "Value": 130
+      "Value": 115
     },
     {
       "Level": 2,
