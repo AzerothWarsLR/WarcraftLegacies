@@ -261,7 +261,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Buries a corrupted orb into the ground that turns invisible to enemies after 2 seconds. When an enemy ground unit gets close it erupts, damaging and stunning nearby enemies, and corroding their armor for 8 seconds. Lasts 60 seconds.|n|n|cffffcc00Level 1|r - 250 damage, a 2 second stun (1 second on heroes) and 3 less armor.|n|cffffcc00Level 2|r - 375 damage, a 2.5 second stun (1.25 seconds on heroes) and 3 less armor.|n|cffffcc00Level 3|r - 500 damage, a 3 second stun (1.5 seconds on heroes) and 3 less armor."
+      "Value": "Buries a corrupted orb into the ground that turns invisible to enemies after 3 seconds. When an enemy ground unit gets close it erupts, damaging and stunning nearby enemies, and corroding their armor for 8 seconds. Lasts 60 seconds.|n|n|cffffcc00Level 1|r - 250 damage, a 2 second stun (1 second on heroes) and 3 less armor.|n|cffffcc00Level 2|r - 375 damage, a 2.5 second stun (1.25 seconds on heroes) and 3 less armor.|n|cffffcc00Level 3|r - 500 damage, a 3 second stun (1.5 seconds on heroes) and 3 less armor."
     },
     {
       "Id": "atat",

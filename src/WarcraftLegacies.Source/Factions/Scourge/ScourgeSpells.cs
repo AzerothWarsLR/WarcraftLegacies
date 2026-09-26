@@ -84,7 +84,7 @@ public static class ScourgeSpells
       Damage = new LeveledAbilityField<float> { Base = 125, PerLevel = 125 },
       BlastRadius = 300,
       TriggerRadius = 150,
-      ArmTime = 2,
+      ArmTime = 3,
       Lifetime = 60,
       StunAbilityId = ABILITY_A14T_CORRUPTION_MINE_STUN_CORRUPTION_MINE,
       CorruptionAbilityId = ABILITY_A14U_CORRUPTION_MINE_ARMOR_PENALTY_RIVENDARE,
