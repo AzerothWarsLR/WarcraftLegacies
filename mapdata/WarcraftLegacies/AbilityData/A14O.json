@@ -1,0 +1,58 @@
+{
+  "OldId": "ACav",
+  "NewId": "A14O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0DV"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShatteringWrath.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Buff Applicator)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Bestial Wrath (Buff Applicator)"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "OldId": "Arsp",
+  "NewId": "A14P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 130
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 110
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 155
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Nst1",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Nst2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Nst3",
+      "Type": 2,
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Nst4",
+      "Type": 2,
+      "Value": 275
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 400
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStampede.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Rexxar)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Stampede"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStampede.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Stampede - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls upon a stampede of quilbeasts to trample into enemy ranks. |n|n|cffffcc00Level 1|r -  Each stampeding quilbeast deals 45 damage. |n|cffffcc00Level 2|r -  Each stampeding quilbeast deals 80 damage. |n|cffffcc00Level 3|r -  Each stampeding quilbeast deals 115 damage. |n|nLasts 30 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stampede - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stampede - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Stampede - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls on a stampede of quilbeasts. Each quilbeast deals 45 damage. |nLasts 30 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls on a stampede of quilbeasts. Each quilbeast deals 80 damage. |nLasts 30 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls on a stampede of quilbeasts. Each quilbeast deals 115 damage. |nLasts 30 seconds."
+    }
+  ]
+}
