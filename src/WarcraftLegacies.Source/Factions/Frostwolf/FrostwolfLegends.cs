@@ -13,7 +13,6 @@ public sealed class FrostwolfLegends
     ThunderBluff = new Capital
     {
       Unit = AllPreplacedWidgets.Units.Get(UNIT_O00J_THUNDER_BLUFF_FROSTWOLF_OTHER),
-      Capturable = true,
       DeathMessage =
         "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
       Essential = true

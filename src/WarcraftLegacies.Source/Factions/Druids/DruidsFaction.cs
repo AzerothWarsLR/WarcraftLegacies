@@ -36,7 +36,7 @@ public sealed class DruidsFaction : Faction
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;
     IntroText = () => Loc.Format(
-      "You are playing as the ancient {faction}.\n\nYou begin isolated in the deepest parts of Mount Hyjal near the World Tree.\n\nThe Old Gods are gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. Use him to awaken Malfurion from his slumber as soon as possible.\n\nGather your forces and strike before the Old Gods can organize their efforts.",
+      "You are playing as the ancient {faction}.\n\nYou begin isolated in the deepest parts of Mount Hyjal, near the World Tree. Cenarius has emerged from his seclusion. Use him to carry the Horn of Cenarius to the Barrow Den and awaken Malfurion from his slumber as soon as possible.\n\nThe Horde is coming to Kalimdor. Soon orcish axes will bite into Ashenvale, and the Tauren migrating north already covet the World Tree itself. Heal the forest and awaken the Ancients of Hyjal to rebuild your strength before they arrive.\n\nStand with the Sentinels, and when you are ready, let the wild answer: bring down Orgrimmar and humble Thunder Bluff.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Druids of the Cenarion Circle")}|r"));
 
     Nicknames = new List<string>
@@ -72,6 +72,8 @@ public sealed class DruidsFaction : Faction
     AddQuest(new QuestShaladrassil(AllLegends.Neutral.Shaladrassil));
     AddQuest(new QuestTortolla(AllLegends.Druids.Tortolla));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestWrathOfTheWild());
+    AddQuest(new QuestSubdueTheTauren());
   }
 
   private void RegisterDialogue()
