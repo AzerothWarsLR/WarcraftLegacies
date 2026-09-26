@@ -29,7 +29,8 @@ public static class DruidsObjectInfo
     yield return new(UNIT_EFDR_FAERIE_DRAGON_DRUIDS, 6, new List<UnitCategory> { Support, Flyer });
     yield return new(UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS, Unlimited, Support);
     yield return new(UNIT_EDCM_BEAR_BEAR_FORM, Unlimited, Fighter);
-    yield return new(UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE, 6, new List<UnitCategory> { Elite, Support, Destroyer });
+    yield return new(UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE, 0, new List<UnitCategory> { Elite, Support, Destroyer });
+    yield return new(UNIT_E03H_HEARTWOOD_ANCIENT_DRUIDS_ELITE, 0, new List<UnitCategory> { Elite, Support });
     yield return new(UNIT_N05H_SAPLING_DRUIDS, Unlimited, Tank);
     yield return new(UNIT_N065_GREEN_DRAGON_DRUIDS, 6, Flyer);
     yield return new(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 6, Siege);
@@ -67,5 +68,7 @@ public static class DruidsObjectInfo
     yield return new(UPGRADE_R008_DOMINATION_POWER, Unlimited);
     yield return new(UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS, Unlimited);
     yield return new(UPGRADE_R09V_STORM_CROW_FORM_DRUIDS, Unlimited);
+    yield return new(UPGRADE_RK01_KEEPERS_OF_THE_GROVE_DRUIDS, Unlimited);
+    yield return new(UPGRADE_RK02_HEARTWOOD_ANCIENTS_DRUIDS, Unlimited);
   }
 }
