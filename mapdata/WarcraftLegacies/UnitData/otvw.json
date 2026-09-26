@@ -6,18 +6,13 @@
   ],
   "Modifications": [
     {
-      "Id": "uabi",
-      "Type": 3,
-      "Value": "A15N"
-    },
-    {
       "Id": "uhpm",
       "Value": 150
     },
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\EarthcallerWard.mdl"
+      "Value": "war3mapImported\\TaurenWardMolten.mdl"
     },
     {
       "Id": "uico",
@@ -27,7 +22,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.75
     },
     {
       "Id": "uaen",
@@ -114,6 +109,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "(Tauren Tribes)"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme"
     }
   ]
 }

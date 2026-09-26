@@ -32,7 +32,7 @@
     {
       "Level": 1,
       "Id": "amcs",
-      "Value": 75
+      "Value": 100
     },
     {
       "Level": 1,
@@ -92,7 +92,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Summons a small volcano ward that hurls molten rocks at up to 2 nearby enemies at once, dealing 12 to 17 damage to units in a small area where they land. Can be dispelled. Lasts 20 seconds."
+      "Value": "Summons a small volcano ward that hurls molten rocks at up to 3 nearby enemies at once, each dealing 12 to 17 damage, improved by attack upgrades. Can be dispelled. Lasts 20 seconds."
     }
   ]
 }
