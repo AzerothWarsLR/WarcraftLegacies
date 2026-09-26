@@ -54,10 +54,10 @@ public static class TaurenTribesObjectInfo
     yield return new(UNIT_OWYV_WYVERN_TAUREN_TRIBES, 8, new List<UnitCategory> { Flyer, AntiAir });
     yield return new(UNIT_VP55_EAGLE_SPIRIT_TAUREN_TRIBES, 4, new List<UnitCategory> { Flyer, Fighter });
 
-    yield return new(UNIT_TP80_BREWMASTER_TAUREN_TRIBES, 1, new List<UnitCategory> { Destroyer, Fighter });
-    yield return new(UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES, 1, new List<UnitCategory> { Destroyer, Support });
-    yield return new(UNIT_OREX_BEASTMASTER_TAUREN_TRIBES, 1, new List<UnitCategory> { Fighter, Summoner });
     yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, 1, new List<UnitCategory> { Destroyer, Tank });
+    yield return new(UNIT_OREX_BEASTMASTER_TAUREN_TRIBES, 1, new List<UnitCategory> { Fighter, Summoner });
+    yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_TAUREN_TRIBES, 1, Support);
+    yield return new(UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES, 1, new List<UnitCategory> { Destroyer, Support });
 
     yield return new(UNIT_VP50_OGRE_STONE_THROWER_TAUREN_TRIBES, 6, Siege);
     yield return new(UNIT_N08O_OGRE_MAGI_TAUREN_TRIBES, 12, Support);

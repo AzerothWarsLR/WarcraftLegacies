@@ -104,7 +104,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Ropm,Rhme,Rhar,Rguv"
+      "Value": "Ropm,Rhme,Rhar,Rguv,RT19"
     },
     {
       "Id": "ucs1",
@@ -132,7 +132,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "othl"
+      "Value": "othl,RT02"
     },
     {
       "Id": "ubpx",

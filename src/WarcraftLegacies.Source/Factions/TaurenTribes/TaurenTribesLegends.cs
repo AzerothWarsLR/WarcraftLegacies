@@ -9,14 +9,18 @@ public sealed class TaurenTribesLegends
 {
   public LegendaryHero CairneBloodhoof { get; }
   public LegendaryHero Rexxar { get; }
-  public LegendaryHero Chen { get; }
+  public LegendaryHero Rokhan { get; }
   public LegendaryHero Magatha { get; }
 
   public TaurenTribesLegends()
   {
     CairneBloodhoof = new LegendaryHero("Cairne Bloodhoof")
     {
-      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES
+      UnitType = UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES,
+      StartingArtifacts = new()
+      {
+        new(item.Create(ITEM_I00L_BLOODHOOF_TOTEM, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+      }
     };
 
     Rexxar = new LegendaryHero("Rexxar")
@@ -24,14 +28,16 @@ public sealed class TaurenTribesLegends
       UnitType = UNIT_OREX_BEASTMASTER_TAUREN_TRIBES
     };
 
-    Chen = new LegendaryHero("Chen Stormstout")
+    Rokhan = new LegendaryHero("Rokhan")
     {
-      UnitType = UNIT_TP80_BREWMASTER_TAUREN_TRIBES
+      UnitType = UNIT_MD25_DARKSPEAR_CHAMPION_TAUREN_TRIBES,
+      StartingXp = 2800
     };
 
     Magatha = new LegendaryHero("Magatha Grimtotem")
     {
-      UnitType = UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES
+      UnitType = UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES,
+      StartingXp = 7000
     };
   }
 
@@ -39,7 +45,7 @@ public sealed class TaurenTribesLegends
   {
     LegendaryHeroManager.Register(CairneBloodhoof);
     LegendaryHeroManager.Register(Rexxar);
-    LegendaryHeroManager.Register(Chen);
+    LegendaryHeroManager.Register(Rokhan);
     LegendaryHeroManager.Register(Magatha);
   }
 }

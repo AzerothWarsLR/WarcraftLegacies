@@ -69,9 +69,9 @@ public sealed class LongMarchCaravan
   private const float ArrivalPauseSeconds = 15.00f;
   private const float ThunderBluffPauseSeconds = 3.00f;
   private const float FormationSpacing = 200f;
-  private const float EscortMoveSpeed = 90f;
+  private const float EscortMoveSpeed = 100f;
   private const float GuardFormationSlotRadius = 600f;
-  private const float GuardCatchUpSpeed = 150f;
+  private const float GuardCatchUpSpeed = 165f;
   private const float GuardFlankOffset = 250f;
   private const float GuardVanguardOffset = 150f;
   private const float GuardEngagementRange = 350f;
@@ -624,7 +624,9 @@ public sealed class LongMarchCaravan
     {
       foreach (var guard in _guards.Where(guard => guard.Alive))
       {
-        guard.Rescue(player);
+        var tauren = unit.Create(player, UNIT_OTAU_TAUREN_TAUREN_TRIBES, guard.X, guard.Y, guard.Facing);
+        tauren.SetLifePercent(guard.GetLifePercent());
+        guard.Dispose();
       }
     }
   }

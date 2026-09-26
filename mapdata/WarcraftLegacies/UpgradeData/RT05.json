@@ -122,6 +122,14 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "Increases Earthcaller mana capacity and mana regeneration rate."
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
     }
   ]
 }

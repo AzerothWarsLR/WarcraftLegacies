@@ -63,6 +63,14 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "Increases Bluffwatchers\u0027 attack range."
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
     }
   ]
 }
