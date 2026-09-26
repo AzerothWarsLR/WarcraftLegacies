@@ -1,0 +1,86 @@
+{
+  "OldId": "Roch",
+  "NewId": "RV03",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "ratx"
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A00A"
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gef4",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gco4",
+      "Type": 3,
+      "Value": "A0DW"
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "glob",
+      "Value": 0
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroWarden.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Wardens of the Vault"
+    }
+  ]
+}
