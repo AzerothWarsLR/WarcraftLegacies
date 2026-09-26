@@ -30,7 +30,7 @@ public static class SentinelsSpells
       Effects = new LunarSanctuaryEffectSettings
       {
         BurstPath = @"war3mapImported\HolyNova_Fixed.mdx",
-        BurstScale = 3,
+        BurstScale = 1.5f,
         GlowPath = @"war3mapImported\StarfallCaster.mdx",
         GlowScale = 1.5f,
         RingPath = @"war3mapImported\Point Target.mdx",
