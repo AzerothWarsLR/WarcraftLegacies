@@ -82,7 +82,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "A14Y,A14Z,A150,A151"
+      "Value": "A14Y,A14Z,A150,A151,Aamk"
     },
     {
       "Id": "upra",
@@ -177,7 +177,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "AInv,Ault"
+      "Value": "AInv,Ault,A0GK"
     }
   ]
 }
