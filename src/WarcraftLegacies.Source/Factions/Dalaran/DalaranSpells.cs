@@ -1,7 +1,7 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Dalaran.Spells;
-using WarcraftLegacies.Source.Factions.Dalaran.Spells.ManaBomb;
+using WarcraftLegacies.Source.Factions.Dalaran.Spells.ArcaneCataclysm;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Spells;
 
@@ -84,13 +84,13 @@ public static class DalaranSpells
     SpellRegistry.Register(dalaranShield);
     SpellRegistry.Register(new DalaranShieldCancel(ABILITY_A0E3_CANCEL_SHIELD_DALARAN, dalaranShield));
 
-    var manaBomb = new ManaBombSpell(ABILITY_A14W_MANA_BOMB_ANTONIDAS)
+    var arcaneCataclysm = new ArcaneCataclysmSpell(ABILITY_A14W_ARCANE_CATACLYSM_ANTONIDAS)
     {
       GrowDuration = 5,
       DamageByLevel = new float[] { 300, 450, 600 },
       Radius = 275,
       MissileSpeed = 900
     };
-    SpellRegistry.Register(manaBomb);
+    SpellRegistry.Register(arcaneCataclysm);
   }
 }

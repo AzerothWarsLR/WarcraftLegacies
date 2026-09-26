@@ -1,9 +1,9 @@
 ﻿using MacroTools.Channels;
 using WCSharp.Missiles;
 
-namespace WarcraftLegacies.Source.Factions.Dalaran.Spells.ManaBomb;
+namespace WarcraftLegacies.Source.Factions.Dalaran.Spells.ArcaneCataclysm;
 
-public sealed class ManaBombChannel : Channel
+public sealed class ArcaneCataclysmChannel : Channel
 {
   private const string BallModel = @"war3mapImported\BlueBall.mdx";
   private const float MinScale = 0.6f;
@@ -25,7 +25,7 @@ public sealed class ManaBombChannel : Channel
   private float _elapsed;
   private float _scale = MinScale;
 
-  public ManaBombChannel(unit caster, int spellId) : base(caster, spellId)
+  public ArcaneCataclysmChannel(unit caster, int spellId) : base(caster, spellId)
   {
   }
 
@@ -66,7 +66,7 @@ public sealed class ManaBombChannel : Channel
       progress = 1f;
     }
 
-    var missile = new ManaBombMissile(Caster, TargetX, TargetY)
+    var missile = new ArcaneCataclysmMissile(Caster, TargetX, TargetY)
     {
       EffectString = BallModel,
       EffectScale = _scale,

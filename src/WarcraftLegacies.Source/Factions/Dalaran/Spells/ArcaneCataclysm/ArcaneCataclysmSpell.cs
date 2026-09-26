@@ -2,9 +2,9 @@
 using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Factions.Dalaran.Spells.ManaBomb;
+namespace WarcraftLegacies.Source.Factions.Dalaran.Spells.ArcaneCataclysm;
 
-public sealed class ManaBombSpell : Spell
+public sealed class ArcaneCataclysmSpell : Spell
 {
   public float GrowDuration { get; init; } = 3f;
 
@@ -14,14 +14,14 @@ public sealed class ManaBombSpell : Spell
 
   public float MissileSpeed { get; init; }
 
-  public ManaBombSpell(int id) : base(id)
+  public ArcaneCataclysmSpell(int id) : base(id)
   {
   }
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
     var level = GetAbilityLevel(caster);
-    var channel = new ManaBombChannel(caster, Id)
+    var channel = new ArcaneCataclysmChannel(caster, Id)
     {
       Interval = 0.03f,
       GrowDuration = GrowDuration,

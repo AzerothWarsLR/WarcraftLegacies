@@ -4,9 +4,9 @@ using MacroTools.Utils;
 using WCSharp.Effects;
 using WCSharp.Missiles;
 
-namespace WarcraftLegacies.Source.Factions.Dalaran.Spells.ManaBomb;
+namespace WarcraftLegacies.Source.Factions.Dalaran.Spells.ArcaneCataclysm;
 
-public sealed class ManaBombMissile : BasicMissile
+public sealed class ArcaneCataclysmMissile : BasicMissile
 {
   public float Damage { get; init; }
 
@@ -14,7 +14,7 @@ public sealed class ManaBombMissile : BasicMissile
 
   private bool _animated;
 
-  public ManaBombMissile(unit caster, float targetX, float targetY) : base(caster, targetX, targetY)
+  public ArcaneCataclysmMissile(unit caster, float targetX, float targetY) : base(caster, targetX, targetY)
   {
   }
 

@@ -275,12 +275,12 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Mana Bomb"
+      "Value": "Arcane Cataclysm"
     },
     {
       "Id": "aret",
       "Type": 3,
-      "Value": "Learn Mana Bomb - [|cffffcc00Level %d|r]"
+      "Value": "Learn Arcane Cataclysm - [|cffffcc00Level %d|r]"
     },
     {
       "Id": "arut",
@@ -291,19 +291,19 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Mana Bomb - [|cffffcc00Level 1|r]"
+      "Value": "Arcane Cataclysm - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Mana Bomb - [|cffffcc00Level 2|r]"
+      "Value": "Arcane Cataclysm - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Mana Bomb - [|cffffcc00Level 3|r]"
+      "Value": "Arcane Cataclysm - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
