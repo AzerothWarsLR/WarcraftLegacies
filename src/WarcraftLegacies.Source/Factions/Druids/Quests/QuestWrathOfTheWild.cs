@@ -17,7 +17,7 @@ public sealed class QuestWrathOfTheWild : QuestData
     "The orcs' axes have bitten deep into Ashenvale to feed the forges of Orgrimmar. Let the wild answer: bring the city down and the forest may yet heal.",
     @"ReplaceableTextures\CommandButtons\BTNEntanglingRoots.blp")
   {
-    AddObjective(new ObjectiveCapitalDead(AllLegends.Warsong.Orgrimmar));
+    AddObjective(new ObjectiveCapitalDead(AllLegends.Orc.Orgrimmar));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05A_QUEST_COMPLETED_WRATH_OF_THE_WILD_DRUIDS;
   }

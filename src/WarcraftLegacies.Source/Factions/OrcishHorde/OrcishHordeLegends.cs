@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.PreplacedWidgets;
 
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde;
@@ -12,6 +13,8 @@ public sealed class OrcishHordeLegends
   public LegendaryHero Voljin { get; }
   public LegendaryHero GromHellscream { get; }
   public LegendaryHero Garrosh { get; }
+  public Capital Orgrimmar { get; }
+  public Capital DarkspearHold { get; }
 
   public OrcishHordeLegends()
   {
@@ -44,6 +47,19 @@ public sealed class OrcishHordeLegends
       UnitType = UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_ORCISH_HORDE,
       StartingXp = 8800
     };
+
+    Orgrimmar = new Capital
+    {
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_WARSONG),
+      DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
+      Essential = true
+    };
+
+    DarkspearHold = new Capital
+    {
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O02D_DARKSPEAR_HOLD_FROSTWOLF_OTHER),
+      Essential = true
+    };
   }
 
   public void RegisterLegends()
@@ -52,5 +68,7 @@ public sealed class OrcishHordeLegends
     LegendaryHeroManager.Register(Voljin);
     LegendaryHeroManager.Register(GromHellscream);
     LegendaryHeroManager.Register(Garrosh);
+    CapitalManager.Register(Orgrimmar);
+    CapitalManager.Register(DarkspearHold);
   }
 }
