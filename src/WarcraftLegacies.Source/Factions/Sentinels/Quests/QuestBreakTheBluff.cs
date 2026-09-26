@@ -19,13 +19,14 @@ public sealed class QuestBreakTheBluff : QuestData
   {
     AddObjective(new ObjectiveCapitalDead(AllLegends.Frostwolf.ThunderBluff));
     AddObjective(new ObjectiveSelfExists());
+    ResearchId = UPGRADE_R052_QUEST_COMPLETED_BREAK_THE_BLUFF_SENTINELS;
   }
 
   public override string RewardFlavour =>
     "Thunder Bluff has fallen, and the Tauren are driven from their mesas. Tyrande Whisperwind leads the Sentinels onward, emboldened by the victory.";
 
   protected override string RewardDescription =>
-    "Tyrande Whisperwind gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, and you gain 500 gold";
+    "Tyrande Whisperwind gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, you gain 500 gold, you can train Moon Riders from Roosts, and you can research Upgrade Moon Glaive from the War Academy";
 
   protected override void OnComplete(Faction completingFaction)
   {
@@ -39,6 +40,8 @@ public sealed class QuestBreakTheBluff : QuestData
     if (completingFaction.Player != null)
     {
       completingFaction.Player.Gold += GoldReward;
+      completingFaction.Player.DisplayUnitTypeAcquired(UNIT_E022_MOON_RIDER_SENTINELS,
+        "You can now train Moon Riders from Roosts.");
     }
   }
 }

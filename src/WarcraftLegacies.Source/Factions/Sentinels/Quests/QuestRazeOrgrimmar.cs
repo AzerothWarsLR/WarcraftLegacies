@@ -19,13 +19,14 @@ public sealed class QuestRazeOrgrimmar : QuestData
   {
     AddObjective(new ObjectiveCapitalDead(AllLegends.Warsong.Orgrimmar));
     AddObjective(new ObjectiveSelfExists());
+    ResearchId = UPGRADE_R007_QUEST_COMPLETED_RAZE_ORGRIMMAR_SENTINELS;
   }
 
   public override string RewardFlavour =>
     "Orgrimmar lies in ruins, and the Horde's warbands scatter across Durotar. Shandris Feathermoon's huntresses return from the assault hardened and rich with plunder.";
 
   protected override string RewardDescription =>
-    "Shandris Feathermoon gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, and you gain 500 gold";
+    "Shandris Feathermoon gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, you gain 500 gold, and you can train Guild Rangers from Watcher's Bastions";
 
   protected override void OnComplete(Faction completingFaction)
   {
@@ -39,6 +40,8 @@ public sealed class QuestRazeOrgrimmar : QuestData
     if (completingFaction.Player != null)
     {
       completingFaction.Player.Gold += GoldReward;
+      completingFaction.Player.DisplayUnitTypeAcquired(UNIT_N034_GUILD_RANGER_SENTINELS,
+        "You can now train Guild Rangers from Watcher's Bastions.");
     }
   }
 }
