@@ -57,6 +57,8 @@ public sealed class DruidsFaction : Faction
     DruidsSpells.Setup();
     DruidsTraits.Setup();
     CenariusGhost.Setup(AllLegends.Druids.Cenarius, this);
+    MasterOfNatureProgression.Setup(ABILITY_A0U0_MASTER_OF_NATURE_BROWN_CENARIUS, UNIT_ECEN_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS,
+      UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 
