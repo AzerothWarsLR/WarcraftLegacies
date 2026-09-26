@@ -1,0 +1,58 @@
+{
+  "OldId": "ACav",
+  "NewId": "A14V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0DW"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Voodoo\\VoodooAuraTarget.mdl"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Buff Applicator)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Corruption Mine (Buff Applicator)"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}
