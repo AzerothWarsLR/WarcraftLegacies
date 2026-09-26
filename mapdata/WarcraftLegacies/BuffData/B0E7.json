@@ -1,0 +1,39 @@
+{
+  "OldId": "Basl",
+  "NewId": "B0E7",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cffff0000Seed of Rebirth|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has a seed growing inside it; it is taking damage over time and is revealed. If it dies, a Treant sprouts from its body."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Seed of Rebirth"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSeedOfMonstrosity.blp"
+    }
+  ]
+}
