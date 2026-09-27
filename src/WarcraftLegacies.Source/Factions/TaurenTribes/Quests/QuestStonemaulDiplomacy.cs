@@ -55,6 +55,7 @@ public sealed class QuestStonemaulDiplomacy : QuestData
       return;
     }
 
+    rewardedPlayer.SetTechResearched(UPGRADE_RT21_QUEST_CONCLUDED_STONEMAUL_DIPLOMACY_TAUREN_TRIBES, 1);
     rewardedPlayer.RescueGroup(_rescueUnits);
 
     var survivingOgres = GlobalGroup
@@ -77,5 +78,6 @@ public sealed class QuestStonemaulDiplomacy : QuestData
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
+    completingFaction.Player?.SetTechResearched(UPGRADE_RT21_QUEST_CONCLUDED_STONEMAUL_DIPLOMACY_TAUREN_TRIBES, 1);
   }
 }

@@ -115,13 +115,13 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Sunwalker Champion mana capacity and mana regeneration rate, and gives them the ability to cast War Stomp."
+      "Value": "Increases Sunwalker Champion mana capacity and mana regeneration rate, and gives them the ability to cast Aegis of Protection."
     },
     {
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Sunwalker Champion mana capacity and mana regeneration rate, and gives them the ability to cast Devotion Aura."
+      "Value": "Increases Sunwalker Champion mana capacity and mana regeneration rate, and gives them the ability to cast Resurrection."
     },
     {
       "Id": "gbpx",

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
@@ -9,6 +10,7 @@ using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Researches;
@@ -65,6 +67,7 @@ public sealed class TaurenTribesFaction : Faction
   public override void OnRegistered()
   {
     RegisterQuests();
+    RegisterDialogue();
     RegisterFactionDependentInitializer<OrcishHordeFaction>(RegisterOrcishHordeQuests);
     RegisterFactionDependentInitializer<OrcishHordeFaction>(RegisterOrcishHordeResearches);
     RegisterResearches();
@@ -72,6 +75,45 @@ public sealed class TaurenTribesFaction : Faction
     TaurenTribesTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     new GrantResearchOnLegendTrained(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES);
+  }
+
+  private void RegisterDialogue()
+  {
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar01",
+            "I have wandered alone for many years, little Misha. Yet sometimes, even I grow weary of this endless solitude.",
+            "Rexxar"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar02",
+            "I have watched the other races. I have seen their squabbling, their ruthlessness. Their wars do nothing but scar the land and drive the wild things to extinction.",
+            "Rexxar"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar03",
+            "No, they cannot be trusted. Only beasts are above deceit.",
+            "Rexxar")),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Tauren.Rexxar, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new Dialogue(
+          @"Sound\Dialogue\OrcExpCamp\OrcQuest04ax\D04ARokhan02",
+          "How you doin', mon?",
+          "Rokhan"),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Tauren.Rokhan, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
   }
 
   private void RegisterQuests()

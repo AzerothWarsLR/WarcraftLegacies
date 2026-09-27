@@ -119,25 +119,25 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Ogre Magi mana capacity and mana regeneration rate."
+      "Value": "Increases Ogre Magi mana capacity and mana regeneration rate, and gives them the ability to cast Flame Shield."
     },
     {
       "Level": 2,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Ogre Magi mana capacity and mana regeneration rate."
+      "Value": "Increases Ogre Magi mana capacity and mana regeneration rate, and gives them the ability to cast Innervate."
     },
     {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNRejuvenation.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlameWall.blp"
     },
     {
       "Level": 2,
       "Id": "gar1",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingSpray.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRestorationBlue.blp"
     }
   ]
 }
