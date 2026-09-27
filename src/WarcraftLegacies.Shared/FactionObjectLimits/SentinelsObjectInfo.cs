@@ -31,7 +31,7 @@ public static class SentinelsObjectInfo
     yield return new(UNIT_ESEN_HUNTRESS_SENTINELS, Unlimited, Fighter);
     yield return new(UNIT_H08V_GLAIVE_MAIDEN_SENTINELS, Unlimited, Tank);
     yield return new(UNIT_EBAL_GLAIVE_THROWER_SENTINELS, 8, Siege);
-    yield return new(UNIT_EHPR_HIPPOGRYPH_RIDER_SENTINELS, 6, new List<UnitCategory> { Flyer, Marksman });
+    yield return new(UNIT_EHPR_HIPPOGRYPH_RIDER_SENTINELS, 8, new List<UnitCategory> { Flyer, Marksman });
     yield return new(UNIT_N034_GUILD_RANGER_SENTINELS, 12, Marksman);
     yield return new(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS, 12, new List<UnitCategory> { Destroyer, Support });
     yield return new(UNIT_E022_MOON_RIDER_SENTINELS, 2, new List<UnitCategory> { Flyer, Marksman, Support });
