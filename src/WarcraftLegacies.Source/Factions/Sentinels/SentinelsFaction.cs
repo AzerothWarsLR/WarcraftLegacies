@@ -165,7 +165,7 @@ public sealed class SentinelsFaction : Faction
           "Bandu thoribas, mortals! You will pay for defiling these lands!",
           "Tyrande Whisperwind"),
         new[] { this }
-          .Concat(hordeLegends.Select(x => x.Unit?.Owner.GetPlayerData().Faction))
+          .Concat(hordeLegends.Where(x => x.Unit != null).Select(x => x.Unit!.Owner.GetPlayerData().Faction))
           .OfType<Faction>()
           .Distinct(),
         new[]
