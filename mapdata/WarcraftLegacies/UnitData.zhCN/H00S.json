@@ -1,0 +1,34 @@
+{
+  "OldId": "Hmbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "卡兹莫丹国王"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "麦格尼·铜须国王"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤麦格尼·铜须国王"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长防御作战和攻击魔法。"
+    }
+  ],
+  "NewId": "H00S"
+}

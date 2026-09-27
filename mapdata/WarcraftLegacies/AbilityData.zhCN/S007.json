@@ -1,0 +1,19 @@
+{
+  "OldId": "Sca2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 剑士升级为炎阳武士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "混乱"
+    }
+  ],
+  "NewId": "S007"
+}

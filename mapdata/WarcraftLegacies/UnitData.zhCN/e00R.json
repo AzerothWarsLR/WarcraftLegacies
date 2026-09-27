@@ -1,0 +1,29 @@
+{
+  "OldId": "eate",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "守望者祭坛"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造守望者祭坛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵祭坛）"
+    }
+  ],
+  "NewId": "e00R"
+}

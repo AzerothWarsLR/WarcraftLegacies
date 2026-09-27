@@ -1,0 +1,20 @@
+{
+  "OldId": "Awar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（亚历山德罗斯）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有 25% 的几率使一次攻击对周围的单位造成 75 点伤害。"
+    }
+  ],
+  "NewId": "A0MQ"
+}

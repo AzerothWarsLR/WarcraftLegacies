@@ -1,0 +1,28 @@
+{
+  "OldId": "rag1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "使敏捷提高 4 点。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买敏捷便鞋+4"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装备时使英雄的敏捷提高 4 点。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "敏捷便鞋+4"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "巨型火炮。可以消耗大量原油，向地图上任意位置发射一次毁灭性的延时打击。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "洲际炮击"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到洲际炮击"
+    }
+  ],
+  "NewId": "h011"
+}

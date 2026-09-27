@@ -1,0 +1,29 @@
+{
+  "OldId": "ntrv",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巫妖"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练巫妖"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "远程施法精英，能造成集中的爆发伤害。"
+    }
+  ],
+  "NewId": "zbli"
+}

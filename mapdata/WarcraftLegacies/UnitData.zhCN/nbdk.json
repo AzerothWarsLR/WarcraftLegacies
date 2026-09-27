@@ -1,0 +1,28 @@
+{
+  "OldId": "nbdk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑曜石幼龙"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练黑曜石幼龙"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "萨贝里安的后裔，被邪能龙喉氏族的奴役。"
+    }
+  ]
+}

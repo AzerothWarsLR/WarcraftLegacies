@@ -1,0 +1,29 @@
+{
+  "OldId": "nftr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "相位掷弹兵"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练相位掷弹兵"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "孤注一掷的邪教法师。"
+    }
+  ],
+  "NewId": "n087"
+}

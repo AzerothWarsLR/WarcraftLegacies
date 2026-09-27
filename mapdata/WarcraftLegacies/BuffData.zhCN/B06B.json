@@ -1,0 +1,19 @@
+{
+  "OldId": "Bblo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "疾风"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到疾风的影响，攻击速度和移动速度提高。"
+    }
+  ],
+  "NewId": "B06B"
+}

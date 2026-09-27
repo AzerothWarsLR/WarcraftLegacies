@@ -1,0 +1,28 @@
+{
+  "OldId": "edos",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵专精）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "栖地"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造栖地"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "空中单位生产建筑。"
+    }
+  ]
+}

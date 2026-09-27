@@ -1,0 +1,64 @@
+{
+  "OldId": "ANmo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（粉色 - 萨尔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "雷霆风暴"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习雷霆风暴 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一场闪电风暴轰击敌方单位，持续 20 秒。|n |n|cffffcc001级|r - 每次闪电打击造成 45 点伤害。 |n|cffffcc002级|r - 每次闪电打击造成 80 点伤害。 |n|cffffcc003级|r - 每次闪电打击造成 115 点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "雷霆风暴 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "雷霆风暴 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "雷霆风暴 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一场闪电风暴轰击敌方单位，造成 45 点伤害。 |n持续 20 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一场闪电风暴轰击敌方单位，造成 80 点伤害。 |n持续 20 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一场闪电风暴轰击敌方单位，造成 115 点伤害。 |n持续 20 秒。"
+    }
+  ]
+}

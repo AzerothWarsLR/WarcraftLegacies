@@ -1,0 +1,18 @@
+{
+  "OldId": "Aien",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暗夜精灵 - 浅蓝色、棕色）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "单位物品栏"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "OldId": "ANca",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（霜之哀伤）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "顺劈斩"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时，<A04M,DataA1,%>% 的伤害会溅射到受击主目标附近的敌人身上。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "顺劈斩"
+    }
+  ],
+  "NewId": "A04M"
+}

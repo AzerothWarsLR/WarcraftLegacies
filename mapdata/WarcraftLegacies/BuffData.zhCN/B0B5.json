@@ -1,0 +1,19 @@
+{
+  "OldId": "BOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "未染之地"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到未染荒野的影响，移动速度提高。"
+    }
+  ],
+  "NewId": "B0B5"
+}

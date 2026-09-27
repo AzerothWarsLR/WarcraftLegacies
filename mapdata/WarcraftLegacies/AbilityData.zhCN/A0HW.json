@@ -1,0 +1,31 @@
+{
+  "OldId": "ACls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（野怪 - 拉格纳罗斯、青色长老术士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "烈焰护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "烈焰护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在目标单位周围形成一道火焰护盾，每秒对其周围的单位造成 35 点伤害。 |n持续 20 秒。"
+    }
+  ],
+  "NewId": "A0HW"
+}

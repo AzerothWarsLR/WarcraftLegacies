@@ -1,0 +1,24 @@
+{
+  "OldId": "Aven",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落-驭风者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒造成 5 点毒素伤害，毒素伤害可以叠加，并使移动速度降低 25%。|n持续<Aven,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "毒矛"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "OldId": "nbt2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化巨石塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造强化巨石塔"
+    }
+  ]
+}

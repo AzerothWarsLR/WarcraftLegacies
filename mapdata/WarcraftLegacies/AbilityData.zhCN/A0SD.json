@@ -1,0 +1,31 @@
+{
+  "OldId": "AHbh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "神圣猛击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣猛击"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位有 100% 的几率击晕目标 0.1 秒，并额外造成 10 点伤害。"
+    }
+  ],
+  "NewId": "A0SD"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "hbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城 - 巫师圣殿）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "建筑工地"
+    }
+  ],
+  "NewId": "h053"
+}

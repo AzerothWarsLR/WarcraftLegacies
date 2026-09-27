@@ -1,0 +1,24 @@
+{
+  "OldId": "ncfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（寄生体）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型两栖近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水元素幼体"
+    }
+  ],
+  "NewId": "n033"
+}

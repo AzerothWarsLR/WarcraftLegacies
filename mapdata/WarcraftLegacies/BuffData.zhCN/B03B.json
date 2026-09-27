@@ -1,0 +1,29 @@
+{
+  "OldId": "BNdh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "烟雾弹"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到烟雾弹的打击，移动速度降低，攻击有几率落空。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "烟雾弹"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    }
+  ],
+  "NewId": "B03B"
+}
