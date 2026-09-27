@@ -215,7 +215,7 @@ public sealed class OrcishHordeFaction : Faction
     });
     AddQuest(questCrossroads);
 
-    var questSenjinIsles = new QuestSenjinIsles();
+    var questSenjinIsles = new QuestSenjinIsles(AllLegends.Orc.Voljin);
     questSenjinIsles.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
     {
       Progress = QuestProgress.Undiscovered,
