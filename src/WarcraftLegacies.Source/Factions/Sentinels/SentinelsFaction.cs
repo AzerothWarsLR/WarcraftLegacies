@@ -3,7 +3,6 @@ using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Researches;
@@ -206,17 +205,41 @@ public sealed class SentinelsFaction : Faction
       Loc.Get("Your Control Points increase your units' movement speed by 15% in a large radius."),
       "ANA_HealingButterfliesFixed"));
 
-    var worldTrees = new List<Capital>
+    var worldTreeProtections = new List<WorldTreeProtection>
     {
-      AllLegends.Druids.Nordrassil,
-      AllLegends.Neutral.Shaladrassil,
-      AllLegends.Druids.Vordrassil
+      new()
+      {
+        WorldTree = AllLegends.Druids.Nordrassil,
+        WorldTreeName = "Nordrassil",
+        RegionName = "Kalimdor",
+        Regions = new[] { Regions.ImmortalityKalimdor }
+      },
+      new()
+      {
+        WorldTree = AllLegends.Neutral.Shaladrassil,
+        WorldTreeName = "Shaladrassil",
+        RegionName = "Broken Isles",
+        Regions = new[] { Regions.ImmortalityBrokenIsles }
+      },
+      new()
+      {
+        WorldTree = AllLegends.Druids.Vordrassil,
+        WorldTreeName = "Vordrassil",
+        RegionName = "Northrend",
+        Regions = new[] { Regions.ImmortalityNorthrend }
+      },
+      new()
+      {
+        WorldTree = AllLegends.Neutral.Seradane,
+        WorldTreeName = "Seradane",
+        RegionName = "Eastern Kingdoms",
+        Regions = new[] { Regions.ImmortalityEasternKingdoms1, Regions.ImmortalityEasternKingdoms2 }
+      }
     };
-    AddPower(new Immortality(25, 45, worldTrees)
+    AddPower(new Immortality(25, 45, worldTreeProtections)
     {
       IconName = "ArcaneRessurection",
-      Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
-      ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
+      Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
     });
   }
 
