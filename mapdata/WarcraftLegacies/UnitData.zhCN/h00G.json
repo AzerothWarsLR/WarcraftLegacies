@@ -1,0 +1,19 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "卡拉赞"
+    }
+  ],
+  "NewId": "h00G"
+}

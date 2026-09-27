@@ -1,0 +1,65 @@
+{
+  "OldId": "AEfk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黄色 - 麦格尼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电奔流"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习闪电奔流 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "向四面八方释放闪电，对周围的所有敌方单位造成伤害。|n|n|cffffcc001级|r - 对每个目标造成<A08Q,DataA1>点伤害。|n|cffffcc002级|r - 对每个目标造成<A08Q,DataA2>点伤害。|n|cffffcc003级|r - 对每个目标造成<A08Q,DataA3>点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电奔流 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电奔流 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电奔流 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向四面八方释放多道闪电，对周围的所有敌方单位造成<A08Q,DataA1>点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向四面八方释放多道闪电，对周围的所有敌方单位造成<A08Q,DataA2>点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向四面八方释放多道闪电，对周围的所有敌方单位造成<A08Q,DataA3>点伤害。"
+    }
+  ],
+  "NewId": "A08Q"
+}

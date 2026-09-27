@@ -1,0 +1,25 @@
+{
+  "OldId": "Afbt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色 阿卡玛）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "阿卡玛的攻击每次命中任何单位都会摧毁<Afbt,DataA1>点魔法值，并造成等同于被摧毁魔法值的额外伤害。|n|n此外，阿卡玛的攻击对召唤单位额外造成<Afbt,DataE1>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反噬"
+    }
+  ],
+  "NewId": "A0TV"
+}

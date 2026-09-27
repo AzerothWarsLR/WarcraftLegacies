@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using WarcraftLegacies.Source.Factions.Draenei;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.Ironforge;
@@ -10,6 +11,7 @@ using WarcraftLegacies.Source.Factions.Lordaeron;
 using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.TaurenTribes;
 
@@ -29,7 +31,8 @@ public static class PlayerSetup
     SetupPlayer(player.Create(0), new OrcishHordeFaction());
     SetupPlayer(player.Create(9), new LordaeronFaction());
     SetupPlayer(player.Create(11), new DruidsFaction());
-    player.Create(18).GetPlayerData().SetTeam(TeamSetup.NightElves);
+    SetupPlayer(player.Create(18), new SentinelsFaction());
+    new DraeneiFaction().OnNotPicked();
     player.Create(15).GetPlayerData().SetTeam(TeamSetup.Outland);
     SetupPlayer(player.Create(22), new KultirasFaction());
     SetupPlayer(player.Create(23), new LegionFaction());

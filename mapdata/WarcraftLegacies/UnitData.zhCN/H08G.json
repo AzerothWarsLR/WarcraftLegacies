@@ -1,0 +1,34 @@
+{
+  "OldId": "Hpb1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大十字军"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "赛丹·达索汉"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长强化周围的部队。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤赛丹"
+    }
+  ],
+  "NewId": "H08G"
+}

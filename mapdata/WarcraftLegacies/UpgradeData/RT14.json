@@ -122,6 +122,14 @@
       "Id": "gub1",
       "Type": 3,
       "Value": "Increases Sunwalker Champion mana capacity and mana regeneration rate, and gives them the ability to cast Devotion Aura."
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
     }
   ]
 }

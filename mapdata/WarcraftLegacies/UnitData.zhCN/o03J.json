@@ -1,0 +1,29 @@
+{
+  "OldId": "ofor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 研究）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空熔炉"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造虚空熔炉"
+    }
+  ],
+  "NewId": "o03J"
+}

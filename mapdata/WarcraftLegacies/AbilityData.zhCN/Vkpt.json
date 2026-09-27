@@ -1,0 +1,25 @@
+{
+  "OldId": "ACsm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（斯库拉）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在斯库拉与目标之间转移魔法值。每秒从敌人身上抽取<Vkpt,DataB1>点魔法值，或每秒向友军输送<Vkpt,DataE1>点魔法值。|n|n法力虹吸可以使斯库拉的魔法值超过其上限，但多余的魔法值若不使用会迅速流失。|n持续 6 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力虹吸"
+    }
+  ],
+  "NewId": "Vkpt"
+}

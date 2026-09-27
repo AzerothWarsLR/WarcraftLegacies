@@ -1,0 +1,19 @@
+{
+  "OldId": "AId1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（附加特效）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "沃金之武器"
+    }
+  ],
+  "NewId": "A08D"
+}

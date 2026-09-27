@@ -1,0 +1,29 @@
+{
+  "OldId": "nsgn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练海巨人"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "行动缓慢的近战单位，能够发动毁灭性的范围攻击。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海巨人"
+    }
+  ],
+  "NewId": "n029"
+}

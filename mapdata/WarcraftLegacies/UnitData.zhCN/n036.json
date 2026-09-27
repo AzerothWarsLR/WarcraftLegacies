@@ -1,0 +1,19 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗之门"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（传送门）"
+    }
+  ],
+  "NewId": "n036"
+}

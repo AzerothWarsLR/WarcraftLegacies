@@ -18,6 +18,30 @@ public static class SentinelsSpells
     };
     SpellRegistry.Register(elunesGaze);
 
+    var lunarSanctuary = new LunarSanctuarySpell(ABILITY_A01D_LUNAR_SANCTUARY_LIGHT_BLUE_TYRANDE)
+    {
+      Radius = 350,
+      Duration = 10,
+      PulsePeriod = 1,
+      HealPerPulse = new LeveledAbilityField<float> { Base = 5, PerLevel = 5 },
+      ManaPerPulse = new LeveledAbilityField<float> { Base = 1, PerLevel = 1 },
+      SlowAuraAbilityId = ABILITY_A14C_SLOW_AURA_LUNAR_SANCTUARY,
+      TrueSightAbilityId = ABILITY_A14D_TRUE_SIGHT_LUNAR_SANCTUARY,
+      Effects = new LunarSanctuaryEffectSettings
+      {
+        BurstPath = @"war3mapImported\HolyNova_Fixed.mdx",
+        BurstScale = 1.5f,
+        GlowPath = @"war3mapImported\StarfallCaster.mdx",
+        GlowScale = 1.5f,
+        RingPath = @"war3mapImported\Point Target.mdx",
+        RingScale = 4.8f,
+        RingColor = (150, 200, 255),
+        RingAlpha = 200,
+        HealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      }
+    };
+    SpellRegistry.Register(lunarSanctuary);
+
     SpellRegistry.Register(new GlaiveTrapSpell(ABILITY_A14F_GLAIVE_TRAP_NAISHA)
     {
       Damage = new LeveledAbilityField<float> { Base = 50, PerLevel = 50 },

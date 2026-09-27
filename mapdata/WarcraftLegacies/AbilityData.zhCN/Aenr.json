@@ -1,0 +1,30 @@
+{
+  "OldId": "Aenr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 天选者）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "纠缠根须 - |cffffcc00(Q)|r"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使树根从地下爆出，缠绕一个目标敌方单位 10 秒（英雄为 3 秒），并每秒造成 50 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "纠缠根须"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "ANta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（皇家卫兵）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "嘲讽"
+    }
+  ],
+  "NewId": "A0DJ"
+}

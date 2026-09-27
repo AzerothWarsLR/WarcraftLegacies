@@ -1,0 +1,25 @@
+{
+  "OldId": "Scri",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（假单位）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "雷霆一击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "雷霆一击"
+    }
+  ],
+  "NewId": "S00H"
+}

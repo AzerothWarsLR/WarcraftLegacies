@@ -1,0 +1,31 @@
+{
+  "OldId": "ANdp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（萨格拉斯之眼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恶魔召唤"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "恶魔召唤"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "开启一道传送门，让恶魔穿行其间，听命于施法者。"
+    }
+  ],
+  "NewId": "A04B"
+}

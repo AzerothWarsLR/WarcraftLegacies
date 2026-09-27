@@ -1,0 +1,33 @@
+{
+  "OldId": "Uanb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "艾卓-尼鲁布国王"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长召唤昆虫爪牙并碾压敌人。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤阿努巴拉克"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "阿努巴拉克"
+    }
+  ]
+}

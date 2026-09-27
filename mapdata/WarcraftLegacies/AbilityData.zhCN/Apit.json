@@ -1,0 +1,13 @@
+{
+  "OldId": "Apit",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "商店购买物品"
+    }
+  ]
+}

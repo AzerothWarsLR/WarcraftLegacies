@@ -1,0 +1,29 @@
+{
+  "OldId": "owtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暮光之锤氏族的恐怖之塔。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "哨兵塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造哨兵塔"
+    }
+  ],
+  "NewId": "o03G"
+}

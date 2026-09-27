@@ -1,0 +1,14 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恶魔传送门"
+    }
+  ],
+  "NewId": "n037"
+}

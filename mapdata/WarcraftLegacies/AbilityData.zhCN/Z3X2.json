@@ -1,0 +1,31 @@
+{
+  "OldId": "Ahlh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使施法者每次施放法术时，为附近的友军恢复 50 点生命值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗狂热"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "治疗狂热"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（萨莉图标）"
+    }
+  ],
+  "NewId": "Z3X2"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "ntor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "达拉然护盾等级 1"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练达拉然护盾等级 1"
+    }
+  ],
+  "NewId": "n0D0"
+}

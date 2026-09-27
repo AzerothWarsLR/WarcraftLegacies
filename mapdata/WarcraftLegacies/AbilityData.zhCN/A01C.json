@@ -1,0 +1,72 @@
+{
+  "OldId": "ANav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（雷克萨）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "激活莫克纳萨化身时，雷克萨会获得额外护甲、额外生命值、额外攻击力和魔法免疫。|n持续 45 秒。|n|n|cffffcc001级|r - 额外 2 点护甲，额外 450 点生命值，额外 15 点攻击力。|n|cffffcc002级|r - 额外 4 点护甲，额外 900 点生命值，额外 30 点攻击力。|n|cffffcc003级|r - 额外 6 点护甲，额外 1350 点生命值，额外 45 点攻击力"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活化身 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活化身 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活化身可使雷克萨获得<A01C,DataA1>点额外护甲、<A01C,DataB1>点额外生命值、<A01C,DataC1>点额外攻击力和魔法免疫。|n持续<A01C,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活化身可使雷克萨获得<A01C,DataA2>点额外护甲、<A01C,DataB2>点额外生命值、<A01C,DataC2>点额外攻击力和魔法免疫。|n持续<A01C,Dur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活化身可使雷克萨获得<A01C,DataA3>点额外护甲、<A01C,DataB3>点额外生命值、<A01C,DataC3>点额外攻击力和魔法免疫。|n持续<A01C,Dur3>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "解除化身"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活化身 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "解除化身"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "天神下凡"
+    }
+  ],
+  "NewId": "A01C"
+}

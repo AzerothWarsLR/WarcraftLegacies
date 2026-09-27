@@ -1,0 +1,19 @@
+{
+  "OldId": "nbld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "法库雷斯特公爵"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有影遁与虔诚光环的重型近战单位。可施放圣盾。"
+    }
+  ],
+  "NewId": "n08I"
+}
