@@ -1,0 +1,18 @@
+{
+  "OldId": "ACad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（野怪 - 达克苏尔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "亡者再临"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "OldId": "AOcr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（瓦里安）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "当该英雄攻击时，有 15% 的几率使小片区域内的所有单位变为无敌。|n|cffffcc00等级 1|r - 持续 1 秒。范围 200 |n|cffffcc00等级 2|r - 持续 1.5 秒。范围 400 |n|cffffcc00等级 3|r - 持续 2 秒。范围 600"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "传奇战士 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "当该英雄攻击时，有 15% 的几率使 200 效果范围内的单位变为无敌，持续 1 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "当该英雄攻击时，有 15% 的几率使 400 效果范围内的单位变为无敌，持续 1.5 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "当该英雄攻击时，有 15% 的几率使 600 效果范围内的单位变为无敌，持续 3 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "当该英雄攻击时，有 15% 的几率向<A024,DataB4>个目标掷出闪电，对每个目标造成<A024,DataA4>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "传奇战士"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习传奇战士 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "传奇战士 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "传奇战士 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "传奇战士 - [|cffffcc003 级|r]"
+    }
+  ],
+  "NewId": "A12C"
+}

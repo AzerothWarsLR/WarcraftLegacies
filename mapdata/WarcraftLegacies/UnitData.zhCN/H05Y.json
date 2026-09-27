@@ -1,0 +1,44 @@
+{
+  "OldId": "Hjai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活巫师领主"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巫师领主"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "卡德加"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活巫师领主"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "奥术英雄，擅长造成魔法伤害和操控法力。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤卡德加"
+    }
+  ],
+  "NewId": "H05Y"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Brpl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "醉酒"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到酒精的影响，部分生命值已恢复。"
+    }
+  ],
+  "NewId": "B01G"
+}

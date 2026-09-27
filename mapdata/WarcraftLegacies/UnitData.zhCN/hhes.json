@@ -1,0 +1,23 @@
+{
+  "OldId": "hhes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "银月城的多面手防御者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "剑士"
+    }
+  ]
+}

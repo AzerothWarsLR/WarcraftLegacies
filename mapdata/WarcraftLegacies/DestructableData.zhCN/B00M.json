@@ -1,0 +1,14 @@
+{
+  "OldId": "ITtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "冰冠树木（反向）"
+    }
+  ],
+  "NewId": "B00M"
+}

@@ -1,0 +1,13 @@
+{
+  "OldId": "sreg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恢复卷轴"
+    }
+  ]
+}

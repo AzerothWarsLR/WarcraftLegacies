@@ -1,0 +1,44 @@
+{
+  "OldId": "Uktl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活索兰莉安"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大星术师"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活索兰莉安"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，以拥有强大的攻击和伤害能力而闻名。"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "索兰莉安"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤索兰莉安"
+    }
+  ],
+  "NewId": "U02V"
+}

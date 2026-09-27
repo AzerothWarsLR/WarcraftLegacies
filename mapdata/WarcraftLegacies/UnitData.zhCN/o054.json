@@ -1,0 +1,29 @@
+{
+  "OldId": "osld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼 魔法）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "星界圣殿"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造星界圣殿"
+    }
+  ],
+  "NewId": "o054"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Assp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（维库人）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "第二次生命"
+    }
+  ],
+  "NewId": "A0R1"
+}

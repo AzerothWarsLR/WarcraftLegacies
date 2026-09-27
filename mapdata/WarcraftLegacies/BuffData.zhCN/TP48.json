@@ -1,0 +1,24 @@
+{
+  "OldId": "Basl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00复苏之风|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位的生命值正在加速恢复。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "复苏之风"
+    }
+  ],
+  "NewId": "TP48"
+}

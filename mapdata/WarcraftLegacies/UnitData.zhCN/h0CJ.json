@@ -1,0 +1,29 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "赞达拉的敏捷骑士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战豹"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战豹"
+    }
+  ],
+  "NewId": "h0CJ"
+}

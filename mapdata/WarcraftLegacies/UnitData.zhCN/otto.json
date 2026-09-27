@@ -1,0 +1,23 @@
+{
+  "OldId": "otto",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼 攻城）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "牛头人图腾"
+    }
+  ]
+}

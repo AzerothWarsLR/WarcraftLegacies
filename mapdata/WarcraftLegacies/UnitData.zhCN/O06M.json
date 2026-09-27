@@ -1,0 +1,44 @@
+{
+  "OldId": "Orkn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活火焰晋升者"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火焰升腾者议员"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "伊格纳休斯"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活火焰晋升者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤火焰升腾者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "斗士英雄，擅长前线输出。"
+    }
+  ],
+  "NewId": "O06M"
+}

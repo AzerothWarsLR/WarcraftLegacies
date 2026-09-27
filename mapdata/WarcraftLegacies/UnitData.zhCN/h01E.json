@@ -1,0 +1,24 @@
+{
+  "OldId": "hpea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯，工人）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "基本工人单位。"
+    }
+  ],
+  "NewId": "h01E"
+}

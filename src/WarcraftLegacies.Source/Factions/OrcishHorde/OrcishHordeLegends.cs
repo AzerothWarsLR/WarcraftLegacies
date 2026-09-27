@@ -33,6 +33,7 @@ public sealed class OrcishHordeLegends
     GromHellscream = new LegendaryHero("Grom Hellscream")
     {
       UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_ORCISH_HORDE,
+      StartingXp = 2800,
       StartingArtifacts = new()
       {
         new(item.Create(ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))

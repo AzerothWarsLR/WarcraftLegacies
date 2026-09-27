@@ -1,0 +1,18 @@
+{
+  "OldId": "nmpe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷、恩佐斯、工人）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奴隶"
+    }
+  ]
+}

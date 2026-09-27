@@ -1,0 +1,24 @@
+{
+  "OldId": "osld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "长者大厅"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    }
+  ],
+  "NewId": "otsl"
+}

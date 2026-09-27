@@ -1,0 +1,18 @@
+{
+  "OldId": "nltc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有治疗与霜甲术的轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙虾人唤潮者"
+    }
+  ]
+}

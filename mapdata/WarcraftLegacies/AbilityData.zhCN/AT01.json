@@ -1,0 +1,37 @@
+{
+  "OldId": "Aakb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的伤害提高<AT01,DataA1,%>%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的伤害提高<AT01,DataA2,%>%。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战鼓 - [|cffffcc002级|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战鼓"
+    }
+  ],
+  "NewId": "AT01"
+}

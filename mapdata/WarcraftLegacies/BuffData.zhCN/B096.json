@@ -1,0 +1,14 @@
+{
+  "OldId": "BUts",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "荆棘（树人）"
+    }
+  ],
+  "NewId": "B096"
+}

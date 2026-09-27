@@ -1,0 +1,19 @@
+{
+  "OldId": "AHmt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "卷轴传送"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（城镇）"
+    }
+  ],
+  "NewId": "A002"
+}

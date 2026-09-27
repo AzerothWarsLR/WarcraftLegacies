@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhde",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "亡灵瘟疫"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究亡灵瘟疫"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "下令天灾的药剂师向洛丹伦释放毁灭性的瘟疫。|n|n研究此项目时，你将获得三个地点选项，可立即调动军队前往攻击洛丹伦。你也可以选择不调动军队。"
+    }
+  ],
+  "NewId": "R06I"
+}
