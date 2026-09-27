@@ -1,0 +1,77 @@
+{
+  "OldId": "ANcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿尔萨斯、塔隆·血魔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "群体凋零缠绕"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习群体凋零缠绕 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "向目标区域内的单位发射数道凋零缠绕，治疗友方亡灵单位，并对敌方活体单位造成一半伤害。|n|n|cffffcc001级|r - 恢复<ZB05,DataA1>点生命值。|n|cffffcc002级|r - 恢复<ZB05,DataA2>点生命值。|n|cffffcc003级|r - 恢复<ZB05,DataA3>点生命值。|n|cffffcc004级|r - 恢复<ZB05,DataA4>点生命值。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体凋零缠绕 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体凋零缠绕 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体凋零缠绕 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "群体凋零缠绕 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标区域内的单位发射数道凋零缠绕，为友方亡灵单位恢复<ZB05,DataA1>点生命值，并对敌方活体单位造成一半伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标区域内的单位发射数道凋零缠绕，为友方亡灵单位恢复<ZB05,DataA2>点生命值，并对敌方活体单位造成一半伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标区域内的单位发射数道凋零缠绕，为友方亡灵单位恢复<ZB05,DataA3>点生命值，并对敌方活体单位造成一半伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标区域内的单位发射数道凋零缠绕，为友方亡灵单位恢复<ZB05,DataA4>点生命值，并对敌方活体单位造成一半伤害。"
+    }
+  ],
+  "NewId": "ZB06"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Bfzy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "急速射击"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位的攻击速度提高。"
+    }
+  ],
+  "NewId": "B01R"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Aoar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 自然掩埋）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "治疗光环"
+    }
+  ],
+  "NewId": "A0G6"
+}

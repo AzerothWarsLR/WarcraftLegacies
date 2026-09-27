@@ -1,0 +1,19 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "激流堡"
+    }
+  ],
+  "NewId": "h02V"
+}

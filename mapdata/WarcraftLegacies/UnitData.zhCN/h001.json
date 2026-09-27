@@ -1,0 +1,19 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大熔炉"
+    }
+  ],
+  "NewId": "h001"
+}

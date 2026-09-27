@@ -1,0 +1,24 @@
+{
+  "OldId": "hatw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "满布法师的防御塔。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    }
+  ],
+  "NewId": "h05X"
+}

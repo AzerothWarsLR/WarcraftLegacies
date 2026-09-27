@@ -1,0 +1,29 @@
+{
+  "OldId": "hmtt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火炮坦克"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装甲极其厚重的载具。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练火炮坦克"
+    }
+  ],
+  "NewId": "tp02"
+}

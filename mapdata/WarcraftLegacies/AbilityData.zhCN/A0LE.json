@@ -1,0 +1,25 @@
+{
+  "OldId": "ACr2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（利爪德鲁伊）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为一个目标友方单位恢复<A0LE,DataA1>点生命值，在<A0LE,Dur1>秒内完成。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "回春术"
+    }
+  ],
+  "NewId": "A0LE"
+}

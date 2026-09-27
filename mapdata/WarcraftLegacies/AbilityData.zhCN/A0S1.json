@@ -1,0 +1,19 @@
+{
+  "OldId": "AUls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "轰炸行动"
+    }
+  ],
+  "NewId": "A0S1"
+}

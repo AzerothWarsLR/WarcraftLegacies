@@ -1,0 +1,29 @@
+{
+  "OldId": "hfoo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "血色十字军的多面手步兵。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "十字军"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练十字军"
+    }
+  ],
+  "NewId": "h08I"
+}

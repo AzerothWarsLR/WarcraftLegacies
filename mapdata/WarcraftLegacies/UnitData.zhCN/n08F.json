@@ -1,0 +1,14 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "幽暗城入口"
+    }
+  ],
+  "NewId": "n08F"
+}

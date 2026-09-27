@@ -1,0 +1,19 @@
+{
+  "OldId": "Rorb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（邪部落/兽人部落/牛头人部族）"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "加强型防御"
+    }
+  ]
+}

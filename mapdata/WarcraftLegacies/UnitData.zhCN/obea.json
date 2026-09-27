@@ -1,0 +1,23 @@
+{
+  "OldId": "obea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落 专精）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战争野兽生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "兽栏"
+    }
+  ]
+}

@@ -14,7 +14,7 @@ public sealed class UnitTooltipBasicMigration : IMapMigration
   /// <inheritdoc />
   public void Migrate(Map map, ObjectDatabase objectDatabase)
   {
-    var units = objectDatabase.GetUnits();
+    var units = objectDatabase.GetUnits().ToList();
     foreach (var unit in units)
     {
       try

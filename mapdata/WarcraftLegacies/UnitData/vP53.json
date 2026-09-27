@@ -41,7 +41,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 865
+      "Value": 1100
     },
     {
       "Id": "ulum",
@@ -103,6 +103,10 @@
       "Id": "utip",
       "Type": 3,
       "Value": "Train Wind Rider"
+    },
+    {
+      "Id": "udef",
+      "Value": 2
     }
   ]
 }

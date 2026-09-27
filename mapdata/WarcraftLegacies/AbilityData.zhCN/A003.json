@@ -1,0 +1,65 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（梅雷迪斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "刺耳华彩"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习刺耳华彩 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "释放一阵强大的音波尖啸，使半径 800 范围内的所有敌方单位陷入睡眠。|n|n|cffffcc001级|r - 睡眠 4 秒。|n|cffffcc002级|r - 睡眠 6 秒。|n|cffffcc003级|r - 睡眠 8 秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刺耳华彩 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刺耳华彩 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刺耳华彩 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一阵强大的音波尖啸，使半径 800 范围内的所有敌方单位陷入睡眠，持续 4 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一阵强大的音波尖啸，使半径 800 范围内的所有敌方单位陷入睡眠，持续 6 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一阵强大的音波尖啸，使半径 800 范围内的所有敌方单位陷入睡眠，持续 8 秒。"
+    }
+  ],
+  "NewId": "A003"
+}

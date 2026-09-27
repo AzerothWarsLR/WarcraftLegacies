@@ -1,0 +1,19 @@
+{
+  "OldId": "LTrc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bsuf",
+      "Type": 3,
+      "Value": "（安其拉神殿）"
+    },
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "力场墙阻挡物"
+    }
+  ],
+  "NewId": "B005"
+}

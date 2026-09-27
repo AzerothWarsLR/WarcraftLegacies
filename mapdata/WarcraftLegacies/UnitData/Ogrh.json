@@ -19,6 +19,14 @@
       "Value": 1.65
     },
     {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
       "Id": "udaa",
       "Type": 3,
       "Value": "A0EH"
@@ -48,11 +56,16 @@
     },
     {
       "Id": "upri",
-      "Value": 19
+      "Value": 21
     },
     {
       "Id": "umvs",
       "Value": 260
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R05R"
     },
     {
       "Id": "ustr",

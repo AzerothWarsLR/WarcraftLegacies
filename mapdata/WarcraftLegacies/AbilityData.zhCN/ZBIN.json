@@ -1,0 +1,31 @@
+{
+  "OldId": "ANic",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑曜石幼龙）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每次攻击都附带着缠绕目标的活性烈焰。若单位在该效果影响下死亡，则会被焚身化骨，对附近所有敌方单位造成最多<ZBIN,DataB1>点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "焚身化骨"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "焚身化骨"
+    }
+  ],
+  "NewId": "ZBIN"
+}

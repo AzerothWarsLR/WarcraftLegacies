@@ -1,0 +1,29 @@
+{
+  "OldId": "osld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 魔法）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗秘所"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造黑暗秘所"
+    }
+  ],
+  "NewId": "o033"
+}
