@@ -1,10 +1,8 @@
 ﻿using MacroTools.Factions.Choices;
 using WarcraftLegacies.Source.Factions.Dalaran;
-using WarcraftLegacies.Source.Factions.Draenei;
 // using WarcraftLegacies.Source.Factions.Frostwolf; // Disabled: player slot 0 is now Orcish Horde, Frostwolf and Warsong are being removed
 using WarcraftLegacies.Source.Factions.Gilneas;
 using WarcraftLegacies.Source.Factions.Illidari;
-using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Sunfury;
 // using WarcraftLegacies.Source.Factions.Warsong;
 
@@ -42,22 +40,6 @@ public static class FactionChoiceDialogSetup
       RequiresCheats = false
     };
     new FactionChoiceDialogPresenter(dalaran, gilneas).Run(player.Create(7));
-
-    var sentinels = new FactionChoice
-    {
-      Faction = new SentinelsFaction(),
-      Difficulty = FactionLearningDifficulty.Basic,
-      StartingArea = Regions.SentDraeSharedStartPos
-    };
-    var draenei = new FactionChoice
-
-    {
-      Faction = new DraeneiFaction(),
-      Difficulty = FactionLearningDifficulty.Advanced,
-      StartingArea = Regions.SentDraeSharedStartPos,
-      RequiresCheats = false
-    };
-    new FactionChoiceDialogPresenter(sentinels, draenei).Run(player.Create(18));
 
     // Disabled: player slot 0 is now Orcish Horde, Frostwolf and Warsong are being removed
     // var frostwolf = new FactionChoice

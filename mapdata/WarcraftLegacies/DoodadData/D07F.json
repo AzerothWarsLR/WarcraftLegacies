@@ -1,0 +1,43 @@
+{
+  "OldId": "DOtc",
+  "NewId": "D07F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "dfil",
+      "Type": 3,
+      "Value": "war3mapImported\\tauren tent big.mdx"
+    },
+    {
+      "Id": "dmas",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": "dmis",
+      "Type": 2,
+      "Value": 0.01
+    },
+    {
+      "Id": "dnam",
+      "Type": 3,
+      "Value": "Big Tauren Tent"
+    },
+    {
+      "Id": "donw",
+      "Value": 1
+    },
+    {
+      "Id": "dptx",
+      "Type": 3,
+      "Value": "PathTextures\\2x2Default.tga"
+    },
+    {
+      "Id": "dtil",
+      "Type": 3,
+      "Value": "*"
+    }
+  ]
+}
