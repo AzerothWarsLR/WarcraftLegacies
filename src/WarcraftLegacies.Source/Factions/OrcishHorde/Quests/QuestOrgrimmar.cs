@@ -14,14 +14,15 @@ namespace WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 public sealed class QuestOrgrimmar : QuestData
 {
   private readonly List<unit> _rescueUnits;
-  private const int RequiredResearchId = UPGRADE_R05O_BUILD_ORGRIMMAR_WARSONG;
 
   public QuestOrgrimmar(Rectangle rescueRect, Faction faction, QuestData countdownToExtinction) : base("To Tame a Land",
     "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
     @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
   {
-    AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_OFRT_FORTRESS_ORCISH_HORDE_T3));
-    AddObjective(new ObjectiveExpire(13, Title));
+    AddObjective(new ObjectiveBuildInRect(Regions.Orgrimmar, "in Orgrimmar", UNIT_OALT_ALTAR_OF_STORMS_ORCISH_HORDE_ALTAR));
+    AddObjective(new ObjectiveBuildInRect(Regions.Orgrimmar, "in Orgrimmar", UNIT_OFOR_WAR_MILL_ORCISH_HORDE_RESEARCH));
+    AddObjective(new ObjectiveBuildInRect(Regions.Orgrimmar, "in Orgrimmar", UNIT_OBAR_WAR_CAMP_ORCISH_HORDE_BARRACKS));
+    AddObjective(new ObjectiveExpire(15, Title));
     AddObjective(new ObjectiveSelfExists());
     AddObjective(new ObjectiveFactionQuestResolved(countdownToExtinction, faction)
     {
@@ -39,7 +40,7 @@ public sealed class QuestOrgrimmar : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    "Control of all units in Orgrimmar.";
+    "Control of all units in Orgrimmar, and Grom Hellscream becomes trainable at the Altar of Storms.";
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
@@ -70,11 +71,5 @@ public sealed class QuestOrgrimmar : QuestData
     rescuer.RescueGroup(_rescueUnits);
     OrgrimmarSetup.RevealUnits();
     OrgrimmarSetup.RevealDoodads(Regions.Orgrimmar);
-  }
-
-  /// <inheritdoc/>
-  protected override void OnAdd(Faction whichFaction)
-  {
-    whichFaction.ModObjectLimit(RequiredResearchId, 1);
   }
 }

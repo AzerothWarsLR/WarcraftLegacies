@@ -86,7 +86,7 @@
     },
     {
       "Id": "ua1s",
-      "Value": 6
+      "Value": 5
     },
     {
       "Id": "unsf",
@@ -137,6 +137,10 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "units\\orc\\HeadHunter\\HeadHunter.mdl"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 27
     }
   ]
 }

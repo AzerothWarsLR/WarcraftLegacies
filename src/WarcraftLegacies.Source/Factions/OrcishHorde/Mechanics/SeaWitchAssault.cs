@@ -358,6 +358,8 @@ public sealed class SeaWitchAssault
 
   private void OnSeaWitchKilled()
   {
+    var seaWitch = @event.Unit;
+    item.Create(FourCC("tkno"), seaWitch.X, seaWitch.Y);
     Conclude();
   }
 
