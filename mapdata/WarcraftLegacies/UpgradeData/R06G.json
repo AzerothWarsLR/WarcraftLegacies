@@ -50,12 +50,6 @@
     },
     {
       "Level": 1,
-      "Id": "greq",
-      "Type": 3,
-      "Value": "R062"
-    },
-    {
-      "Level": 1,
       "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostSpell.blp"

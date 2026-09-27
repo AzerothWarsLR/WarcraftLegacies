@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -24,6 +25,8 @@ namespace WarcraftLegacies.Source.Factions.Sentinels;
 
 public sealed class SentinelsFaction : Faction
 {
+  private const float NaishaDoubtsDelay = 180;
+
   /// <inheritdoc />
   public SentinelsFaction() : base("Sentinels", playercolor.Mint,
     @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
@@ -39,7 +42,7 @@ public sealed class SentinelsFaction : Faction
     CinematicMusic = "Comradeship";
     ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
     IntroText = () => Loc.Format(
-      "You are playing as the ever-watchful {faction}.\n\nThe Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods' invaders from Kalimdor until then.\n\nYour first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel bastion on the southern half of the continent.\n\nOnce you have secured your holdings, gather your army and destroy the Old Gods. Be cautious—they will outnumber you if given time to establish a foothold in Azeroth.",
+      "You are playing as the ever-watchful {faction}.\n\nYou begin in Darkshore, where wild creatures gone mad threaten your people. Clear them out and secure Darkshore and the Grove of the Ancients to rally Auberdine and Astranaar to your side.\n\nThe orcs of the Horde will soon land on Kalimdor's shores, and the Tauren are already migrating north to join them. The Druids are still waking from their slumber, so until they are ready, the defense of Kalimdor falls to you.\n\nWhen the southern passes open, Feathermoon Stronghold rejoins your cause. Gather your army and strike at the heart of the Horde: Orgrimmar and Thunder Bluff.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Sentinels")}|r"));
     Nicknames = new List<string>
     {
@@ -51,6 +54,7 @@ public sealed class SentinelsFaction : Faction
     };
     RegisterFactionDependentInitializer<DruidsFaction>(RegisterDruidsDialogue);
     RegisterFactionDependentInitializer<IllidariFaction>(RegisterIllidariQuests);
+    RegisterFactionDependentInitializer<IllidariFaction>(RegisterIllidariDialogue);
     RegisterFactionDependentInitializer<LegionFaction>(RegisterLegionDialogue);
     ProcessObjectInfo(SentinelsObjectInfo.GetAllObjectLimits());
   }
@@ -111,6 +115,8 @@ public sealed class SentinelsFaction : Faction
     AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum));
     AddQuest(new QuestVaultoftheWardens(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestBreakTheBluff());
+    AddQuest(new QuestRazeOrgrimmar());
   }
 
   private void RegisterDialogue()
@@ -162,6 +168,36 @@ public sealed class SentinelsFaction : Faction
       {
         new ObjectiveLegendMeetsLegend(AllLegends.Sentinels.Maiev, AllLegends.Sentinels.Tyrande)
       }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new Dialogue(
+        @"Sound\Dialogue\NightElfCampaign\NightElf01\N01Tyrande09",
+        "So, these orcs and humans presume to run rampant through our lands? They will regret ever stepping foot into Ashenvale. We will establish a base and deal with these outlanders as they deserve.",
+        "Tyrande Whisperwind"), new[]
+      {
+        this
+      }, new[]
+      {
+        new ObjectiveControlLegend(AllLegends.Sentinels.Tyrande, false)
+        {
+          EligibleFactions = new List<Faction> { this }
+        }
+      }));
+
+    var hordeLegends = new[] { AllLegends.Tauren.CairneBloodhoof, AllLegends.Orc.GromHellscream, AllLegends.Orc.Thrall };
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new Dialogue(
+          @"Sound\Dialogue\NightElfCampaign\NightElf01\N01Tyrande27",
+          "Bandu thoribas, mortals! You will pay for defiling these lands!",
+          "Tyrande Whisperwind"),
+        new[] { this }
+          .Concat(hordeLegends.Where(x => x.Unit != null).Select(x => x.Unit!.Owner.GetPlayerData().Faction))
+          .OfType<Faction>()
+          .Distinct(),
+        new[]
+        {
+          new ObjectiveLegendMeetsAnyLegend(AllLegends.Sentinels.Tyrande, hordeLegends)
+        }));
   }
 
   private void RegisterPowers()
@@ -203,6 +239,57 @@ public sealed class SentinelsFaction : Faction
   private void RegisterIllidariQuests(IllidariFaction illidari)
   {
     AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, AllLegends.Sentinels.Maiev, AllLegends.Sentinels.VaultOfTheWardens));
+  }
+
+  private void RegisterIllidariDialogue(IllidariFaction illidari)
+  {
+    var maievMeetsIllidan = new TriggeredDialogue(new Dialogue(
+        @"Sound\Dialogue\NightElfExpCamp\NightElf01x\S01Maiev41",
+        "These poor folk were slain just like the others. Illidan has much to answer for. He'll wish he were still chained in his cell when I get through with him.",
+        "Maiev Shadowsong"), new Faction[]
+      {
+        this,
+        illidari
+      }, new[]
+      {
+        new ObjectiveLegendMeetsLegend(AllLegends.Sentinels.Maiev, AllLegends.Naga.Illidan)
+      });
+    maievMeetsIllidan.Completed += _ => RegisterNaishaDoubtsDialogue();
+    TriggeredDialogueManager.Add(maievMeetsIllidan);
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new Dialogue(
+        @"Sound\Dialogue\NightElfExpCamp\NightElf01x\S01Maiev39",
+        "Naga? Many craven races have tempted our wrath over the centuries. None have survived!",
+        "Maiev Shadowsong"), new Faction[]
+      {
+        this,
+        illidari
+      }, new[]
+      {
+        new ObjectiveLegendMeetsAnyLegend(AllLegends.Sentinels.Maiev, AllLegends.Naga.Vashj, AllLegends.Naga.Najentus)
+      }));
+  }
+
+  private void RegisterNaishaDoubtsDialogue()
+  {
+    timer.Create().Start(NaishaDoubtsDelay, false, () =>
+    {
+      @event.ExpiredTimer.Dispose();
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(
+            new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf01x\S01Huntress14",
+              "Mistress, do you believe we can defeat Illidan even if we find him?",
+              "Naisha"),
+            new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf01x\S01Maiev15",
+              "Illidan has grown powerful: of that, there is no doubt. He consumed the energies of the Skull of Gul'dan. Now he is neither night elf nor demon, but something more.",
+              "Maiev Shadowsong")),
+          new[] { this },
+          new[]
+          {
+            new ObjectiveLegendMeetsLegend(AllLegends.Sentinels.Naisha, AllLegends.Sentinels.Maiev)
+          }));
+    });
   }
 
   private void RegisterLegionDialogue(LegionFaction legion)

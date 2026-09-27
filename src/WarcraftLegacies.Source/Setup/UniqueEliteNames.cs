@@ -260,6 +260,35 @@ public static class UniqueEliteNames
           "Samuro",
           "Tojara"
         },
+      [UNIT_VP51_TAUREN_CHIEFTAIN_TAUREN_TRIBES_ELITE] =
+        new()
+        {
+          "Durn Harpyslayer",
+          "Grok Bloodhorn",
+          "Kel Stonebull",
+          "Marn Thunderhorn",
+          "Tygore Dusthoof"
+        },
+      [UNIT_VP52_OGRE_LORD_TAUREN_TRIBES_ELITE] =
+        new()
+        {
+          "Gaz Boartusk",
+          "Gish Eagle Eye",
+          "Gorsh Talonfang",
+          "Mag Bearmaul",
+          "Maxx Rocmane",
+          "Mok Rocksnout",
+          "Tagar Bearclaw"
+        },
+      [UNIT_VP56_SUNWALKER_CHAMPION_TAUREN_TRIBES] =
+        new()
+        {
+          "Kam Ghoststeer",
+          "Malar Plainstrider",
+          "Mull Stormhoof",
+          "Tam Windtotem",
+          "Taur Runetotem"
+        },
       [UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE] =
         new()
       {
@@ -275,6 +304,22 @@ public static class UniqueEliteNames
         "Nuada",
         "Oghma"
       },
+      [UNIT_E03H_HEARTWOOD_ANCIENT_DRUIDS_ELITE] =
+        new()
+        {
+          "Anubris",
+          "Bandalar",
+          "Califax",
+          "Centrius",
+          "Ceredwyn",
+          "Dagda",
+          "Gholbine",
+          "Larodar",
+          "Malorne",
+          "Nandieb",
+          "Nuada",
+          "Oghma"
+        },
       [UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE] =
         new()
         {

@@ -1,0 +1,76 @@
+{
+  "OldId": "Rnsb",
+  "NewId": "RK02",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 0
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gtib",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "etoe"
+    },
+    {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Heartwood Ancients"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Heartwood Ancients"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnt.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Allows Heartwood Ancients to be trained from the Tree of Life, Tree of Ages, and Tree of Eternity.|n|n|cffc864c8Can\u0027t be researched with Keepers of the Grove.|r"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    }
+  ]
+}

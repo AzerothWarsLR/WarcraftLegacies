@@ -1,0 +1,118 @@
+{
+  "OldId": "ANab",
+  "NewId": "A161",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Nab3",
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Nab4",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Nab5",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Nab6",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcidBomb.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Tauren Tribes - Ogre Magi)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Acid Flask"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Acid Flask"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a flask of acid at a target, dealing 60 damage to it, then 15 damage per second to nearby enemy units and reducing their armor by 5.|nLasts 12 seconds, 6 seconds on heroes."
+    }
+  ]
+}
