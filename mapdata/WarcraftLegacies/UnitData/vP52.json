@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "VP50,A0GK,AT12,Aion,A01T,AT06,ACrk"
+      "Value": "A15C,A15E,A15F,A15M,Aion,ACrk,A0GK"
     },
     {
       "Id": "ua1t",
@@ -132,7 +132,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "othl,RT02"
+      "Value": "othl,RT02,RT21"
     },
     {
       "Id": "ubpx",

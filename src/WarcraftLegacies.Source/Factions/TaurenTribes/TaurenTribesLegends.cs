@@ -37,7 +37,7 @@ public sealed class TaurenTribesLegends
     Magatha = new LegendaryHero("Magatha Grimtotem")
     {
       UnitType = UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES,
-      StartingXp = 7000
+      StartingXp = 8800
     };
   }
 
