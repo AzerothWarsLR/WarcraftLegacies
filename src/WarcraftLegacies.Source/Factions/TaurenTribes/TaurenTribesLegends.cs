@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes;
 
@@ -11,6 +12,8 @@ public sealed class TaurenTribesLegends
   public LegendaryHero Rexxar { get; }
   public LegendaryHero Rokhan { get; }
   public LegendaryHero Magatha { get; }
+  public Capital ThunderBluff { get; }
+  public Capital StonemaulKeep { get; }
 
   public TaurenTribesLegends()
   {
@@ -39,6 +42,21 @@ public sealed class TaurenTribesLegends
       UnitType = UNIT_TP83_GRIMTOTEM_MATRIARCH_TAUREN_TRIBES,
       StartingXp = 8800
     };
+
+    ThunderBluff = new Capital
+    {
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O00J_THUNDER_BLUFF_FROSTWOLF_OTHER),
+      DeathMessage =
+        "The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.",
+      Essential = true
+    };
+
+    StonemaulKeep = new Capital
+    {
+      Unit = AllPreplacedWidgets.Units.Get(UNIT_O004_STONEMAUL_KEEP),
+      DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
+      Essential = true
+    };
   }
 
   public void RegisterLegends()
@@ -47,5 +65,7 @@ public sealed class TaurenTribesLegends
     LegendaryHeroManager.Register(Rexxar);
     LegendaryHeroManager.Register(Rokhan);
     LegendaryHeroManager.Register(Magatha);
+    CapitalManager.Register(ThunderBluff);
+    CapitalManager.Register(StonemaulKeep);
   }
 }
