@@ -1,21 +1,26 @@
 ﻿using System.Collections.Generic;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 
 public sealed class QuestSenjinIsles : QuestData
 {
   private readonly List<unit> _rescueUnits;
+  private readonly LegendaryHero _voljin;
 
-  public QuestSenjinIsles() : base("The Darkspear Trolls",
+  public QuestSenjinIsles(LegendaryHero voljin) : base("The Darkspear Trolls",
     "Mere months ago, Thrall's forces saved the Darkspear tribe from the brink of extinction at the hands of constant murloc raids. They have recently made a new home on the Echo Isles, and could prove formidable allies in the invasion of Kalimdor.",
     @"ReplaceableTextures\CommandButtons\BTNWitchDoctor.blp")
   {
+    _voljin = voljin;
     _rescueUnits = Regions.EchoUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     AddObjective(new ObjectiveAnyUnitInRect(Regions.EchoUnlock, "Echo Isles", true));
     AddObjective(new ObjectiveSelfExists());
@@ -28,7 +33,7 @@ public sealed class QuestSenjinIsles : QuestData
     "Vol'jin, foremost Shadow Hunter of the Darkspear Tribe, welcomes Thrall to his village with open arms. The trolls of the Echo Isles unanimously agree to join the Horde.";
 
   protected override string RewardDescription =>
-    "You gain control of Echo Isles, and learn to train Vol'jin from the Altar of Storms";
+    "You gain control of Echo Isles, and Vol'jin joins you";
 
   protected override void OnFail(Faction completingFaction)
   {
@@ -39,6 +44,14 @@ public sealed class QuestSenjinIsles : QuestData
     rescuer.RescueGroup(_rescueUnits);
   }
 
-  protected override void OnComplete(Faction completingFaction) =>
+  protected override void OnComplete(Faction completingFaction)
+  {
     completingFaction.Player.RescueGroup(_rescueUnits);
+
+    if (_voljin.Unit == null)
+    {
+      var echoIsles = ControlPointManager.Instance.GetFromUnitType(UNIT_N02V_ECHO_ISLES).Unit;
+      _voljin.ForceCreate(completingFaction.Player, new Point(echoIsles.X, echoIsles.Y), 270);
+    }
+  }
 }
