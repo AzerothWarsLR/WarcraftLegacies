@@ -4,7 +4,6 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
-using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
@@ -13,13 +12,11 @@ namespace WarcraftLegacies.Source.Factions.Warsong.Quests;
 public sealed class QuestOrgrimmar : QuestData
 {
   private readonly List<unit> _rescueUnits;
-  private const int RequiredResearchId = UPGRADE_R05O_BUILD_ORGRIMMAR_WARSONG;
 
   public QuestOrgrimmar(Rectangle rescueRect) : base("To Tame a Land",
     "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
     @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
   {
-    AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_O02S_FORTRESS_WARSONG_T3));
     AddObjective(new ObjectiveExpire(13, Title));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;
@@ -63,11 +60,5 @@ public sealed class QuestOrgrimmar : QuestData
     rescuer.RescueGroup(_rescueUnits);
     OrgrimmarSetup.RevealUnits();
     OrgrimmarSetup.RevealDoodads(Regions.Orgrimmar);
-  }
-
-  /// <inheritdoc/>
-  protected override void OnAdd(Faction whichFaction)
-  {
-    whichFaction.ModObjectLimit(RequiredResearchId, 1);
   }
 }
