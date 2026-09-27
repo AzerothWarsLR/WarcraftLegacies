@@ -1,0 +1,31 @@
+{
+  "OldId": "ACsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "动物伙伴"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "动物伙伴"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一只拥有真视能力的黑豹伙伴。|n持续 45 秒。 |n|n|cffffcc00可攻击地面单位。|r"
+    }
+  ],
+  "NewId": "A0ZW"
+}

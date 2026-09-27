@@ -1,0 +1,25 @@
+{
+  "OldId": "Amls",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦天马骑士）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用魔法束缚目标敌方空中单位，使其无法移动或攻击，并每秒受到<A0BJ,DataA1>点伤害。|n持续<A0BJ,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "空中枷锁"
+    }
+  ],
+  "NewId": "A0BJ"
+}

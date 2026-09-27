@@ -1,0 +1,19 @@
+{
+  "OldId": "BEme",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "升腾"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "转化为拥有强大元素能力的烈焰升腾者。"
+    }
+  ],
+  "NewId": "B05Q"
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "ATtr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "失事船只"
+    }
+  ],
+  "NewId": "B00E"
+}

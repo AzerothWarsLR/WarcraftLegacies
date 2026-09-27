@@ -1,0 +1,23 @@
+{
+  "OldId": "npgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造能量产生器"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "能量产生器"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "OldId": "AOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 塞纳留斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "自然光环"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习自然光环 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "降低周围敌方单位的移动速度和攻击速度。|n|n|cffffcc001级|r - 使敌方移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。|n|cffffcc002级|r - 使敌方移动速度降低<A03B,DataA2,%>%，攻击速度降低<A03B,DataB2,%>%。|n|cffffcc003级|r - 使敌方移动速度降低<A03B,DataA3,%>%，攻击速度降低<A03B,DataB3,%>%。|n|cffffcc004级|r - 使敌方移动速度降低<A03B,DataA4,%>%，攻击速度降低<A03B,DataB4,%>%。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然光环 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然光环 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然光环 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA1,%>%，攻击速度降低<A03B,DataB1,%>%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA2,%>%，攻击速度降低<A03B,DataB2,%>%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA3,%>%，攻击速度降低<A03B,DataB3,%>%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围敌方单位的移动速度降低<A03B,DataA4,%>%，攻击速度降低<A03B,DataB4,%>%。"
+    }
+  ],
+  "NewId": "A03B"
+}

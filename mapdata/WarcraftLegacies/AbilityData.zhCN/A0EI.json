@@ -1,0 +1,41 @@
+{
+  "OldId": "AImt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（肯瑞托）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "传送"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习星界行走 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "将巴纳扎尔传送至目标友方地面单位或建筑。  |n|n|cffffcc001级|r - 冷却时间 45 秒，消耗 75 点法力值。 |n|cffffcc002级|r - 冷却时间 30 秒，消耗 50 点法力值。 |n|cffffcc003级|r - 冷却时间 15 秒，消耗 25 点法力值。|n|cffffcc004级|r - 无冷却时间，施放不消耗法力值。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "传送"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在<A0EI,DataB1>秒后将施法者传送至目标友方建筑。"
+    }
+  ],
+  "NewId": "A0EI"
+}

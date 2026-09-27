@@ -1,0 +1,14 @@
+{
+  "OldId": "LTbs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "B_暗影树冠"
+    }
+  ],
+  "NewId": "B006"
+}

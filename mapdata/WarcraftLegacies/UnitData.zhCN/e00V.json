@@ -1,0 +1,29 @@
+{
+  "OldId": "edob",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵魔法）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "艾露恩神殿"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造艾露恩神殿"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    }
+  ],
+  "NewId": "e00V"
+}

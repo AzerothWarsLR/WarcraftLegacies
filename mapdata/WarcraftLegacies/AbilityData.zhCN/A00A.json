@@ -1,0 +1,25 @@
+{
+  "OldId": "ANbl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 守望者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位短距离传送，从而能够迅速进出战斗。|n冷却时间 12 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪现"
+    }
+  ],
+  "NewId": "A00A"
+}

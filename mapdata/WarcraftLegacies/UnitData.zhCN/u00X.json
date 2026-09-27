@@ -1,0 +1,14 @@
+{
+  "OldId": "ushd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "假人施法者"
+    }
+  ],
+  "NewId": "u00X"
+}

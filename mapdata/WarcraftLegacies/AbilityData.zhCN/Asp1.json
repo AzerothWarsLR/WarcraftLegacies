@@ -1,0 +1,18 @@
+{
+  "OldId": "Asp1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 玛维召唤）（复仇 - 级别 1）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "球体"
+    }
+  ]
+}

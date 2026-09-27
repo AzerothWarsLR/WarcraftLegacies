@@ -1,0 +1,23 @@
+{
+  "OldId": "npfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "邪能兽"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练邪能兽"
+    }
+  ]
+}

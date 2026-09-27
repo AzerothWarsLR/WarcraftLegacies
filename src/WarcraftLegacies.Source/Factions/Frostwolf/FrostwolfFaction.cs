@@ -3,10 +3,8 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
-using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Frostwolf.Quests;
-using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -46,7 +44,6 @@ public sealed class FrostwolfFaction : Faction
   public override void OnRegistered()
   {
     RegisterObjectLevels();
-    RegisterFlightPath();
     RegisterQuests();
     RegisterDialogue();
     FrostwolfSpells.Setup();
@@ -167,15 +164,5 @@ public sealed class FrostwolfFaction : Faction
         {
           new ObjectiveLegendMeetsLegend(AllLegends.Tauren.CairneBloodhoof, AllLegends.Orc.Thrall)
         }));
-  }
-
-
-
-  private void RegisterFlightPath()
-  {
-    ResearchManager.Register(new FlightPath(
-      this,
-      UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE_TAUREN_TRIBES,
-      70));
   }
 }

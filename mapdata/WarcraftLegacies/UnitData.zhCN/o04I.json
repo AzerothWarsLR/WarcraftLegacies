@@ -1,0 +1,29 @@
+{
+  "OldId": "odkt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战斗大师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战斗大师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "追随龙喉氏族的强大食人魔。"
+    }
+  ],
+  "NewId": "o04I"
+}

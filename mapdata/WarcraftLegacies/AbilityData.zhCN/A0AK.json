@@ -1,0 +1,19 @@
+{
+  "OldId": "ANre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（月光束） （艾露恩之镰）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力回复, 生命回复光环"
+    }
+  ],
+  "NewId": "A0AK"
+}

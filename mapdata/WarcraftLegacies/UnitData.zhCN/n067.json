@@ -1,0 +1,19 @@
+{
+  "OldId": "nspr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "小蜘蛛"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    }
+  ],
+  "NewId": "n067"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "AHtb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 假人）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "附魔箭矢"
+    }
+  ],
+  "NewId": "A10O"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "oalt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巫拉泰克神龛"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 祭坛）"
+    }
+  ],
+  "NewId": "o00Q"
+}

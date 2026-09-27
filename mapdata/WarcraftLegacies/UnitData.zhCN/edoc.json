@@ -1,0 +1,23 @@
+{
+  "OldId": "edoc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "远程支援型施法单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "利爪德鲁伊"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": "Hant",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大检察官"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "萨莉·怀特迈恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长治疗和辅助魔法。"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活大检察官"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活大检察官"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤萨莉"
+    }
+  ],
+  "NewId": "H08H"
+}

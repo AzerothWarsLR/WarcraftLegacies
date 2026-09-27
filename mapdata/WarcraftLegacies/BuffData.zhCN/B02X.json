@@ -1,0 +1,19 @@
+{
+  "OldId": "Blsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "治疗护盾"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有治疗护盾，站在其附近的友方单位会得到治疗。"
+    }
+  ],
+  "NewId": "B02X"
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "edcm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "柳魔犬"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的前线近战单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练柳魔犬"
+    }
+  ],
+  "NewId": "e00B"
+}

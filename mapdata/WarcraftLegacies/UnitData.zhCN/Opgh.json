@@ -1,0 +1,38 @@
+{
+  "OldId": "Opgh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活腐化者"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌 - 血契）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战歌氏族的腐化者"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活腐化者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤格罗玛什·地狱咆哮"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "格罗玛什·地狱咆哮"
+    }
+  ]
+}

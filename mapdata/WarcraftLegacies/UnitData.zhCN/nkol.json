@@ -1,0 +1,18 @@
+{
+  "OldId": "nkol",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有统御光环的重型近战单位。可猛击敌人。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "狗头人监工"
+    }
+  ]
+}

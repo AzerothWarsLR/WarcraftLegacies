@@ -1,0 +1,24 @@
+{
+  "OldId": "Bbsk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "冲锋"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "冲锋"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位的攻击和移动速度提高，但受到的伤害增加。"
+    }
+  ],
+  "NewId": "B005"
+}
