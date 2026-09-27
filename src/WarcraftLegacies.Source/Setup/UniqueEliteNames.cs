@@ -337,6 +337,24 @@ public static class UniqueEliteNames
           "Theta Saberfang",
           "Tygra Snowscar"
         },
+      [UNIT_H045_WARDEN_SENTINELS_ELITE] =
+        new()
+        {
+          "Alsa Iron-cell",
+          "Anaya Felgrove",
+          "Cordana Felsong",
+          "Drelanim Whisperwind",
+          "Felhala Starmoon",
+          "Kiri Starstalker",
+          "Malace Shade",
+          "Marin Bladewing",
+          "Mirana Starlight",
+          "Nalmeena Darkfollow",
+          "Saithis",
+          "Shalis Darkhunter",
+          "Sira Moonwarden",
+          "The Iron Raven"
+        },
       [UNIT_H09R_VINDICATOR_DRAENEI] =
         new()
         {

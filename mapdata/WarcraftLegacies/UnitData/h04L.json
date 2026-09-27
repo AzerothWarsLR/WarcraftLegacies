@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "S003,A0QZ,A119,AEst,A09Q,A111,Aien,A08P"
+      "Value": "S003,A0QZ,A119,AEst,A09Q,A111,Aien,A08P,A0GK"
     },
     {
       "Id": "uacq",
@@ -83,7 +83,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 800
+      "Value": 1000
     },
     {
       "Id": "umpi",
@@ -151,7 +151,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "n06P"
+      "Value": "n06P,RV01"
     },
     {
       "Id": "uico",
