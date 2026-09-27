@@ -40,7 +40,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 865
+      "Value": 1100
     },
     {
       "Id": "ulum",
@@ -121,6 +121,10 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\DruidoftheTalonMissile\\DruidoftheTalonMissile.mdl"
+    },
+    {
+      "Id": "udef",
+      "Value": 2
     }
   ]
 }
