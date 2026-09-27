@@ -1,4 +1,6 @@
-﻿using MacroTools.Factions;
+﻿using MacroTools.Artifacts;
+using MacroTools.Extensions;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -46,6 +48,13 @@ public sealed class QuestKelthuzadDies : QuestData
       _kelthuzad.PermaDies = false;
       _kelthuzad.ForceCreate(whichFaction.Player, Regions.FTSummon.Center,
         270);
+
+      var soulseeker = ArtifactManager.GetFromTypeId(ITEM_I026_SOULSEEKER);
+      if (soulseeker != null && _kelthuzad.Unit != null)
+      {
+        soulseeker.Item.IsDroppable = false;
+        _kelthuzad.Unit.AddItemSafe(soulseeker.Item);
+      }
     }
     else
     {
