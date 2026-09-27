@@ -91,7 +91,7 @@ public sealed class DruidsFaction : Faction
   {
     var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock,
       AllLegends.Druids.Nordrassil.Unit, Artifacts.HornOfCenarius,
-      AllLegends.Druids.Malfurion));
+      AllLegends.Druids.Malfurion, AllLegends.Druids.Cenarius));
     StartingQuest = newQuest;
     AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
     AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));

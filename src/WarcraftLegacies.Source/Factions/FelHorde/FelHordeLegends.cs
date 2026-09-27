@@ -40,7 +40,11 @@ public sealed class FelHordeLegends
     {
       UnitType = UNIT_U02D_DEATH_KNIGHT_LORD_FEL_HORDE,
       StartingXp = 5400,
-      PlayerColor = playercolor.Maroon
+      PlayerColor = playercolor.Maroon,
+      StartingArtifacts = new()
+      {
+        new(item.Create(ITEM_I027_GOREFIEND_S_TRUNCHEON, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+      }
     };
 
     BlackrockSpire = new Capital
