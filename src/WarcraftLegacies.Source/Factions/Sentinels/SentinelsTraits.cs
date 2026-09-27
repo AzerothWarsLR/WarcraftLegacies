@@ -21,7 +21,8 @@ public static class SentinelsTraits
       AbilityWhitelist = new List<int>
       {
         ABILITY_A0FC_BARBED_NET_NAISHA,
-        ABILITY_A0MG_QUICK_KNIVES_NAISHA,
+        ABILITY_A14F_GLAIVE_TRAP_NAISHA,
+        ABILITY_A14G_WATCHER_S_FOCUS_NAISHA,
       }
     }, UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS);
 

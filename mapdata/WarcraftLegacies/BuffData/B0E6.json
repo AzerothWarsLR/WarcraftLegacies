@@ -1,0 +1,29 @@
+{
+  "OldId": "Binf",
+  "NewId": "B0E6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Challenging Taunt"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This Ogre Lord is braced for battle; he has increased armor."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Challenging Taunt"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNThickFur.blp"
+    }
+  ]
+}

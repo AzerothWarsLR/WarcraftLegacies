@@ -35,7 +35,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "TP83,TP80,Ocbh,Orex"
+      "Value": "Ocbh,Orex,MD25,TP83"
     },
     {
       "Id": "ulum",
@@ -72,7 +72,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.8
     },
     {
       "Id": "uubs",

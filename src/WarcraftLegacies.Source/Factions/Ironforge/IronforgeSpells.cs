@@ -4,6 +4,7 @@ using WarcraftLegacies.Source.Factions.Gilneas.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells.GryphonOrbit;
 using WarcraftLegacies.Source.Factions.Ironforge.Spells.ThunderCrack;
+using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge;
 
@@ -68,7 +69,8 @@ public static class IronforgeSpells
         Base = 25f,
         PerLevel = 50f
       },
-      StunAbilityId = ABILITY_TP50_MURADIN_S_STORMBOLT_DUMMY_STUN_MURADIN,
+      DebuffAbilityId = ABILITY_TP50_MURADIN_S_STORMBOLT_DUMMY_STUN_MURADIN,
+      EffectModel = @"Abilities\Spells\Human\StormBolt\StormBoltMissile.mdl"
     });
 
     SpellRegistry.Register(new ThunderCrack(ABILITY_TP51_THUNDER_CRACK_MURADIN));
