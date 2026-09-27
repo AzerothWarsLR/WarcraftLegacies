@@ -4,19 +4,27 @@ using MacroTools.Spells;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Factions.Ironforge.Spells;
+namespace WarcraftLegacies.Source.Shared.Spells;
 
 /// <summary>
-/// Hurls a hammer that flies out then returns to the caster, damaging and stunning enemies in its path. Enemies
-/// can be hit once on the way out and again on the return.
+/// Hurls a projectile that flies out then returns to the caster, damaging and stunning enemies in its path.
+/// Enemies can be hit once on the way out and again on the return.
 /// </summary>
-internal sealed class Stormbolt : Spell
+public sealed class Stormbolt : Spell
 {
   /// <summary>Damage dealt per enemy hit at each level.</summary>
   public required LeveledAbilityField<float> Damage { get; init; }
 
   /// <summary>Ability used by the dummy caster to apply the stun.</summary>
-  public required int StunAbilityId { get; init; }
+  public required int DebuffAbilityId { get; init; }
+
+  public int DebuffOrderId { get; init; } = ORDER_THUNDERBOLT;
+
+  /// <summary>Model shown for the flying projectile.</summary>
+  public required string EffectModel { get; init; }
+
+  /// <summary>Scale of the flying projectile's model.</summary>
+  public float EffectScale { get; init; } = 1f;
 
   public Stormbolt(int id) : base(id)
   {
@@ -38,10 +46,11 @@ internal sealed class Stormbolt : Spell
     var targetX = casterX + range * Cos(angle);
     var targetY = casterY + range * Sin(angle);
 
-    MissileSystem.Add(new Projectile(caster, targetX, targetY)
+    MissileSystem.Add(new Projectile(caster, targetX, targetY, EffectModel, EffectScale)
     {
       Damage = Damage.GetValue(level),
-      StunAbilityId = StunAbilityId,
+      DebuffAbilityId = DebuffAbilityId,
+      DebuffOrderId = DebuffOrderId,
       Speed = speed,
       Level = level
     });
@@ -49,19 +58,20 @@ internal sealed class Stormbolt : Spell
 
   private sealed class Projectile : BasicMissile
   {
-    private const string EffectModel = @"Abilities\Spells\Human\StormBolt\StormBoltMissile.mdl";
     private const float ProjectileCollisionSize = 80;
     private const float TeleportCheckInterval = 0.1f;
 
     public required float Damage { get; init; }
-    public required int StunAbilityId { get; init; }
+    public required int DebuffAbilityId { get; init; }
+    public required int DebuffOrderId { get; init; }
     public required int Level { get; init; }
 
     private readonly float _teleportThresholdSq;
 
-    internal Projectile(unit caster, float targetX, float targetY) : base(caster, targetX, targetY)
+    internal Projectile(unit caster, float targetX, float targetY, string effectModel, float effectScale) : base(caster, targetX, targetY)
     {
-      EffectString = EffectModel;
+      EffectString = effectModel;
+      EffectScale = effectScale;
       CollisionRadius = ProjectileCollisionSize;
       Mode = FlightMode.FollowTerrain;
 
@@ -128,7 +138,7 @@ internal sealed class Stormbolt : Spell
 
       DummyCasterManager
         .GetGlobalDummyCaster()
-        .CastUnit(Caster, StunAbilityId, ORDER_THUNDERBOLT, Level, unit, DummyCastOriginType.Target);
+        .CastUnit(Caster, DebuffAbilityId, DebuffOrderId, Level, unit, DummyCastOriginType.Target);
 
       unit.TakeDamage(Caster, Damage);
     }
