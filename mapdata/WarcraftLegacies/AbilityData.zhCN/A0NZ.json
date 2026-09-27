@@ -1,0 +1,43 @@
+{
+  "OldId": "ANrg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（横向）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "关闭"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "关闭大门"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "关闭大门。"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "开启大门"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "开启大门。"
+    }
+  ],
+  "NewId": "A0NZ"
+}

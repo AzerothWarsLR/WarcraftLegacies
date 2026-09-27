@@ -1,0 +1,24 @@
+{
+  "OldId": "Bena",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "蛛网"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位被蛛网缠住，固定在地面无法移动。"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": " （空中）（真实）"
+    }
+  ],
+  "NewId": "B030"
+}

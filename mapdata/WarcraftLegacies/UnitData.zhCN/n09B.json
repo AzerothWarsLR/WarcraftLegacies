@@ -1,0 +1,29 @@
+{
+  "OldId": "nhea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "女巫猎人"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练女巫猎人"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "余烬骑士团的游侠。"
+    }
+  ],
+  "NewId": "n09B"
+}

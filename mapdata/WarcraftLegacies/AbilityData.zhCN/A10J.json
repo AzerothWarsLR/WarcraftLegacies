@@ -1,0 +1,31 @@
+{
+  "OldId": "AOcr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时有 20% 的几率向 5 个目标掷出闪电，对每个目标造成 75 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电大师"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电大师"
+    }
+  ],
+  "NewId": "A10J"
+}

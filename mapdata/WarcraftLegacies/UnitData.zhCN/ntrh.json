@@ -1,0 +1,28 @@
+{
+  "OldId": "ntrh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程两栖单位，其带刺甲壳会伤害近战攻击它的敌人。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海龟幼崽"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "繁育海龟幼崽"
+    }
+  ]
+}

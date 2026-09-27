@@ -1,0 +1,24 @@
+{
+  "OldId": "uplg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（等级 2）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练疾病之云"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "疾病之云"
+    }
+  ],
+  "NewId": "u00B"
+}

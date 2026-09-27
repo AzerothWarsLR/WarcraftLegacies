@@ -1,0 +1,14 @@
+{
+  "OldId": "AIha",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "技能冷却重置"
+    }
+  ],
+  "NewId": "A0HF"
+}

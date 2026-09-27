@@ -1,0 +1,29 @@
+{
+  "OldId": "eden",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊商店）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造远古奇迹殿堂"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奇迹古树"
+    }
+  ],
+  "NewId": "e019"
+}

@@ -1,0 +1,14 @@
+{
+  "OldId": "BTsc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "#暗影_大型"
+    }
+  ],
+  "NewId": "B026"
+}

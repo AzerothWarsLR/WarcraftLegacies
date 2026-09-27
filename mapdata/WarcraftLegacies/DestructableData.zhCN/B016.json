@@ -1,0 +1,14 @@
+{
+  "OldId": "LTs6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "祖达克石制坡道"
+    }
+  ],
+  "NewId": "B016"
+}

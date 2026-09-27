@@ -6,12 +6,17 @@ using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
+using MacroTools.Quests;
 using MacroTools.Researches;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+using WarcraftLegacies.Source.Factions.TaurenTribes;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Researches;
 using WCSharp.Shared.Data;
 
@@ -71,6 +76,7 @@ public sealed class OrcishHordeFaction : Faction
       "orcs"
     };
     ProcessObjectInfo(OrcishHordeObjectInfo.GetAllObjectLimits());
+    RegisterFactionDependentInitializer<TaurenTribesFaction>(RegisterTaurenDialogue);
   }
 
   /// <inheritdoc />
@@ -81,26 +87,152 @@ public sealed class OrcishHordeFaction : Faction
     OrcishHordeTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     RegisterQuests();
+    RegisterDialogue();
+  }
+
+  /// <inheritdoc />
+  public override void OnNotPicked()
+  {
+    Regions.DurotarUnlock.CleanupNeutralPassiveUnits();
+    base.OnNotPicked();
+  }
+
+  private void RegisterDialogue()
+  {
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Grunt01",
+            "Warchief, our ship sustained heavy damage when we passed through the raging maelstrom. It's unsalvageable.",
+            "Grunt"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Thrall02",
+            "I knew it. Can we confirm our location? Is this Kalimdor?",
+            "Thrall"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Grunt03",
+            "We traveled due west, as you instructed. This should be it.",
+            "Grunt")),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Orc.Thrall, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
+
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new Dialogue(@"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
+        "Yes! I feel the power once again! Come, my warriors; drink from the dark waters, and you will be reborn!",
+        "Grom Hellscream"),
+      new[] { this },
+      new List<Objective>
+      {
+        new ObjectiveControlLegend(AllLegends.Orc.GromHellscream, false)
+        {
+          EligibleFactions = new List<Faction> { this }
+        },
+        new ObjectiveControlCapital(AllLegends.Neutral.FountainOfBlood, false)
+        {
+          EligibleFactions = new List<Faction> { this }
+        }
+      }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc08\O08Grom33",
+            "Thrall... I see clearly now.  I'm... sorry.  I am so sorry..",
+            "Grom Hellscream")),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Orc.GromHellscream, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
+  }
+
+  private void RegisterTaurenDialogue(TaurenTribesFaction tauren)
+  {
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Thrall25",
+            "Who are you, warrior?",
+            "Thrall"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar26",
+            "I am Rexxar, last son of the Mok'Nathal.",
+            "Rexxar")),
+        new Faction[] { this, tauren },
+        new[]
+        {
+          new ObjectiveLegendMeetsLegend(AllLegends.Orc.Thrall, AllLegends.Tauren.Rexxar)
+        }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Cairne23",
+            "I am Cairne, chief of the Bloodhoof tauren. You greenskins fight with both savagery and valor. I am intrigued.",
+            "Cairne Bloodhoof"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Thrall24",
+            "I am Thrall, and these are my brethren, the orcs. We've come seeking the destiny promised to us.",
+            "Thrall")),
+        new Faction[] { this, tauren },
+        new[]
+        {
+          new ObjectiveLegendMeetsLegend(AllLegends.Tauren.CairneBloodhoof, AllLegends.Orc.Thrall)
+        }));
   }
 
   private void RegisterQuests()
   {
     var greatHall = AllPreplacedWidgets.Units.GetClosest(UNIT_OGRE_GREAT_HALL_ORCISH_HORDE_T1, -2720f, -8544f);
 
-    var quest = new QuestCountdownToExtinction(greatHall, Regions.Darkspear_Isles, Regions.Horde_Landing_Durotar);
+    var shipPositions = new List<Point> { new(-2368f, -9600f), new(-3136f, -9664f) };
+    var shipPeons = shipPositions.Select(SetupShipRepairPeon).ToList();
+
+    var quest = new QuestCountdownToExtinction(greatHall, Regions.Darkspear_Isles, Regions.Horde_Landing_Durotar,
+      Regions.DurotarUnlock)
+    {
+      ShipPositions = shipPositions,
+      ShipPeons = shipPeons
+    };
     StartingQuest = AddQuest(quest);
 
     new SeaWitchAssault(this, quest, greatHall, Regions.Darkspear_Isles, Regions.Sea_Witch_Spawn_1,
       Regions.Sea_Witch_Spawn_2, Regions.Sea_Witch_Spawn_3);
 
-    AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, this, quest));
+    var questOrgrimmar = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, this, quest));
+
+    var questCrossroads = new QuestCrossroads(Regions.Crossroads);
+    questCrossroads.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questCrossroads);
+
+    var questSenjinIsles = new QuestSenjinIsles(AllLegends.Orc.Voljin);
+    questSenjinIsles.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questSenjinIsles);
+
+    var questSlayCenarius = AddQuest(new QuestSlayCenarius(questOrgrimmar));
+    var questDemolishElfCities = AddQuest(new QuestDemolishElfCities(questSlayCenarius));
+    var questThrallMaelstrom = AddQuest(new QuestThrallMaelstrom(AllLegends.Orc.Thrall, questOrgrimmar));
+    var questWarsongHold = AddQuest(new QuestWarsongHold(questThrallMaelstrom));
+    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Orc.Thrall, questWarsongHold, questDemolishElfCities));
 
     RegisterTrollRescue(Regions.Troll_Rescue_1);
     RegisterTrollRescue(Regions.Troll_Rescue_2);
     RegisterTrollRescue(Regions.Troll_Rescue_3);
-
-    SetupShipRepairPeon(-2368f, -9600f);
-    SetupShipRepairPeon(-3136f, -9664f);
 
     SetupInitialTowerAssault();
   }
@@ -124,11 +256,12 @@ public sealed class OrcishHordeFaction : Faction
     });
   }
 
-  private static void SetupShipRepairPeon(float shipX, float shipY)
+  private static unit SetupShipRepairPeon(Point ship)
   {
-    var peon = AllPreplacedWidgets.Units.GetClosest(UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, shipX, shipY);
+    var peon = AllPreplacedWidgets.Units.GetClosest(UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, ship.X, ship.Y);
     peon.IsInvulnerable = true;
     GameTimeManager.RegisterOnTurn(1, () => peon.SetAnimation("work"));
+    return peon;
   }
 
   private void RegisterTrollRescue(Rectangle rescueRegion)

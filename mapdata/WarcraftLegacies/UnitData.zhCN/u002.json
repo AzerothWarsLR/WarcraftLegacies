@@ -1,0 +1,29 @@
+{
+  "OldId": "uzg1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 防御塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化幽魂之塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到强化幽魂之塔"
+    }
+  ],
+  "NewId": "u002"
+}

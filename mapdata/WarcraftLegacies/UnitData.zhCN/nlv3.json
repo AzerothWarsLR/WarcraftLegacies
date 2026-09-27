@@ -1,0 +1,18 @@
+{
+  "OldId": "nlv3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练熔岩爪牙"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "熔岩爪牙"
+    }
+  ]
+}

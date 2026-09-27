@@ -1,0 +1,14 @@
+{
+  "OldId": "ncop",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥卡兹岛"
+    }
+  ],
+  "NewId": "n09C"
+}

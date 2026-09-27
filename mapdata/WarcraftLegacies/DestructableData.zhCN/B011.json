@@ -1,0 +1,14 @@
+{
+  "OldId": "YTfb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "寻路阻挡物（巨型）"
+    }
+  ],
+  "NewId": "B011"
+}

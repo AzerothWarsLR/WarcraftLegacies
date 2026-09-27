@@ -1,0 +1,19 @@
+{
+  "OldId": "Aspd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "生成图腾"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（巨魔）"
+    }
+  ],
+  "NewId": "A0OP"
+}

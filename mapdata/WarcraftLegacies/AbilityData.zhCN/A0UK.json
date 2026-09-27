@@ -1,0 +1,65 @@
+{
+  "OldId": "AUim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 麦迪文）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪能裂隙"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习邪能裂隙 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "释放一道邪能波，对一条直线上的单位造成伤害并使其昏迷。 |n|n|cffffcc001级|r - <A0UK,DataC1>点伤害，昏迷<A0UK,Dur1>秒。 |n|cffffcc002级|r - <A0UK,DataC2>点伤害，昏迷<A0UK,Dur2>秒。 |n|cffffcc003级|r - <A0UK,DataC3>点伤害，昏迷<A0UK,Dur3>秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能裂隙 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能裂隙 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能裂隙 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道直线前进的邪能波，造成<A0UK,DataC1>点伤害，并将敌方地面单位抛向空中。昏迷单位<A0UK,Dur1>秒，昏迷英雄<A0UK,HeroDur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道直线前进的邪能波，造成<A0UK,DataC2>点伤害，并将敌方地面单位抛向空中。昏迷单位<A0UK,Dur2>秒，昏迷英雄<A0UK,HeroDur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道直线前进的邪能波，造成<A0UK,DataC3>点伤害，并将敌方地面单位抛向空中。昏迷单位<A0UK,Dur3>秒，昏迷英雄<A0UK,HeroDur3>秒。"
+    }
+  ],
+  "NewId": "A0UK"
+}

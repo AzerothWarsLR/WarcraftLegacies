@@ -1,0 +1,19 @@
+{
+  "OldId": "Rhcd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "迷雾之云"
+    }
+  ]
+}

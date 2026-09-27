@@ -1,0 +1,18 @@
+{
+  "OldId": "ndtp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "精通治疗魔法的暗影祭司。投掷火焰弹。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗巨魔暗影祭司"
+    }
+  ]
+}

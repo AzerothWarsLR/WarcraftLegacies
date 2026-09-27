@@ -1,0 +1,19 @@
+{
+  "OldId": "ACsk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（3/1 位置）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "抗性体肤"
+    }
+  ],
+  "NewId": "A08P"
+}

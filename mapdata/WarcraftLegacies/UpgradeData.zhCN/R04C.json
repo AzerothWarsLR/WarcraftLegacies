@@ -1,0 +1,51 @@
+{
+  "OldId": "Rhpt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（洛丹伦-白银之手）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "司祭入门训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "司祭大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "司祭入门训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究司祭大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高白银之手司祭的法力值上限、法力恢复速度、生命值和伤害，并使其获得施放致盲之光的能力。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高白银之手司祭的法力值上限、法力恢复速度、生命值和伤害，并使其获得施放治疗波的能力。"
+    }
+  ],
+  "NewId": "R04C"
+}

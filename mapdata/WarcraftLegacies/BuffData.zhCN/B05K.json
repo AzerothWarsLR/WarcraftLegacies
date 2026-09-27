@@ -1,0 +1,19 @@
+{
+  "OldId": "Bbsk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "血与雷霆"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于狂暴状态，造成的伤害提高，可吸收法术伤害并格挡其他伤害。"
+    }
+  ],
+  "NewId": "B05K"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "ANsb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（假人施法者 - 战争践踏 - 凯恩）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "击晕单位"
+    }
+  ],
+  "NewId": "A0WN"
+}

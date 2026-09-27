@@ -1,0 +1,29 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡农场）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "酒馆"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造酒馆"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "提供 16 点人口，可提高可训练单位的数量上限，并能治疗附近的友方单位。"
+    }
+  ],
+  "NewId": "h01S"
+}

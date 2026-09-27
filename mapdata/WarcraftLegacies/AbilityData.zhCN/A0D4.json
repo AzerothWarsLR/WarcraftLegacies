@@ -1,0 +1,31 @@
+{
+  "OldId": "ACac",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "铁炉堡光环"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "铁炉堡光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近建筑的攻击获得 20% 的额外伤害。"
+    }
+  ],
+  "NewId": "A0D4"
+}

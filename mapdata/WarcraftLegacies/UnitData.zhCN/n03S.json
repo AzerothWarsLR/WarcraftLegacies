@@ -1,0 +1,14 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水道"
+    }
+  ],
+  "NewId": "n03S"
+}

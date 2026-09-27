@@ -1,0 +1,51 @@
+{
+  "OldId": "Rost",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "纳斯雷兹姆术士专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "纳斯雷兹姆术士大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究纳斯雷兹姆术士专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究纳斯雷兹姆术士大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高纳斯雷兹姆术士的法力值上限，并使其获得施放萨格拉斯之视的能力。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高纳斯雷兹姆术士的法力值上限，并使其获得施放能量波的能力。"
+    }
+  ],
+  "NewId": "R042"
+}

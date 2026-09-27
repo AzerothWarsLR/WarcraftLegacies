@@ -1,0 +1,23 @@
+{
+  "OldId": "ncap",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "防御型古树。扎根于地面时，可以向附近的敌方单位投掷巨大的岩石。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造 [|cffffcc00W|r] 腐化的上古守护者"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐化的守护古树"
+    }
+  ]
+}

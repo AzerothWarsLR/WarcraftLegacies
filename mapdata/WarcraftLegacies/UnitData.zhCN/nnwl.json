@@ -1,0 +1,18 @@
+{
+  "OldId": "nnwl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可施放蛛网与亡者复生的轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蛛魔织网者"
+    }
+  ]
+}

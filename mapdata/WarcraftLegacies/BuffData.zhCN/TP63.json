@@ -1,0 +1,24 @@
+{
+  "OldId": "BOwk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00嘲讽|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位会周期性地迫使附近的敌人攻击它。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "嘲讽"
+    }
+  ],
+  "NewId": "TP63"
+}

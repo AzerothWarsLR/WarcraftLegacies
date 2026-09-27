@@ -1,0 +1,31 @@
+{
+  "OldId": "ACbz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奥术货车）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "奥术炮击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥术炮击"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 10 道奥术波；每道波对一小片区域内的单位造成 15 点伤害。"
+    }
+  ],
+  "NewId": "A054"
+}

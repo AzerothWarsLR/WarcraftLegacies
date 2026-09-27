@@ -1,0 +1,37 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团 - 末日守卫）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战争装甲"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战争装甲"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "针对该单位的攻击，其伤害降低<VP22,DataC1>点。攻击伤害不能降低到<VP22,DataB1>点以下。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位受到的所有攻击伤害降低<A0ER,DataC2>点。伤害不能被降低到<A0ER,DataB2>点以下。"
+    }
+  ],
+  "NewId": "VP22"
+}
