@@ -112,7 +112,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "Renb"
+      "Value": "Renb,RK01,RK02"
     },
     {
       "Id": "ua1s",
@@ -147,7 +147,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "e00N,ewsp"
+      "Value": "e00N,e03H,ewsp"
     },
     {
       "Id": "udup",
