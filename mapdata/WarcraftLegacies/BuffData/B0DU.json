@@ -1,0 +1,34 @@
+{
+  "OldId": "Binf",
+  "NewId": "B0DU",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Watcher\u0027s Focus"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit\u0027s attacks have an increased chance to strike critically."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonAmulet.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}
