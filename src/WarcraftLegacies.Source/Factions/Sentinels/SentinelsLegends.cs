@@ -40,14 +40,14 @@ public sealed class SentinelsLegends
     {
       UnitType = UNIT_ETYR_HIGH_PRIESTESS_OF_ELUNE_SENTINELS,
       PlayerColor = playercolor.Cyan,
-      StartingXp = 2800
+      StartingXp = 1800
     };
 
     Naisha = new LegendaryHero("Naisha")
     {
       UnitType = UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS,
       PlayerColor = playercolor.Pink,
-      StartingXp = 2800
+      StartingXp = 1800
     };
 
     Shandris = new LegendaryHero("Shandris Feathermoon")
