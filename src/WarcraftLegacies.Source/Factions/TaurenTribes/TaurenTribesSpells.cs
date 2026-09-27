@@ -39,6 +39,37 @@ public static class TaurenTribesSpells
     };
     SpellRegistry.Register(warStompSunwalkerChampion);
 
+    var bestialWrathRexxar = new BestialWrathSpell(ABILITY_A14L_BESTIAL_WRATH_REXXAR)
+    {
+      Radius = 600,
+      Duration = new LeveledAbilityField<float> { Base = 5, PerLevel = 1 },
+      AttackSpeedAbilityId = ABILITY_A14M_BESTIAL_WRATH_ATTACK_SPEED_REXXAR,
+      DamageBonusAbilityId = ABILITY_A14N_BESTIAL_WRATH_DAMAGE_BONUS_REXXAR,
+      BuffApplicatorId = ABILITY_A14O_BESTIAL_WRATH_BUFF_APPLICATOR_BUFF_APPLICATOR,
+      BuffId = BUFF_B0DV_BESTIAL_WRATH,
+      BeastUnitTypeIds = new[]
+      {
+        UNIT_NGZ4_MISHA_GREY_REXXAR_SUMMON,
+        UNIT_NQB4_BERSERK_QUILBEAST_LEVEL_4_GREY_REXXAR_SUMMON,
+        UNIT_N01J_SPIRIT_REXXAR
+      }
+    };
+    SpellRegistry.Register(bestialWrathRexxar);
+
+    var wildThrowRexxar = new Stormbolt(ABILITY_A14Q_WILD_THROW_REXXAR)
+    {
+      Damage = new LeveledAbilityField<float>
+      {
+        Base = 25f,
+        PerLevel = 75f
+      },
+      DebuffAbilityId = ABILITY_A15Z_WILD_THROW_SLOW_REXXAR,
+      DebuffOrderId = ORDER_SLOW,
+      EffectModel = @"Abilities\Weapons\RexxarMissile\RexxarMissile",
+      EffectScale = 1.8f
+    };
+    SpellRegistry.Register(wildThrowRexxar);
+
     SpellRegistry.Register(new SpiritMend(ABILITY_A14Y_SPIRIT_MEND_TAUREN_TRIBES_MAGATHA)
     {
       Healing = new LeveledAbilityField<float>

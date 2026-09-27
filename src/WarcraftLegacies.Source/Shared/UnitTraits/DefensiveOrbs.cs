@@ -13,6 +13,8 @@ namespace WarcraftLegacies.Source.Shared.UnitTraits;
 /// </summary>
 public sealed class DefensiveOrbs : UnitTrait, IEffectOnSpellEffect
 {
+  private static readonly Dictionary<unit, List<DefensiveOrbMissile>> _orbsByCaster = new();
+
   private readonly int _abilityTypeId;
 
   /// <summary>
@@ -73,6 +75,56 @@ public sealed class DefensiveOrbs : UnitTrait, IEffectOnSpellEffect
       Duration = OrbDuration
     };
     MissileSystem.Add(newOrb);
+    Track(caster, newOrb);
+  }
+
+  public static List<OrbSnapshot> TakeOrbs(unit caster)
+  {
+    var taken = new List<OrbSnapshot>();
+    if (!_orbsByCaster.TryGetValue(caster, out var orbs))
+    {
+      return taken;
+    }
+
+    foreach (var orb in orbs)
+    {
+      if (!orb.Active)
+      {
+        continue;
+      }
+
+      taken.Add(new OrbSnapshot(orb.MissileX, orb.MissileY, orb.EffectString));
+      orb.Active = false;
+    }
+
+    orbs.Clear();
+    return taken;
+  }
+
+  private static void Track(unit caster, DefensiveOrbMissile orb)
+  {
+    if (!_orbsByCaster.TryGetValue(caster, out var orbs))
+    {
+      orbs = new List<DefensiveOrbMissile>();
+      _orbsByCaster[caster] = orbs;
+    }
+
+    orbs.RemoveAll(existing => !existing.Active);
+    orbs.Add(orb);
+  }
+}
+
+public sealed class OrbSnapshot
+{
+  public float X { get; }
+  public float Y { get; }
+  public string? EffectPath { get; }
+
+  public OrbSnapshot(float x, float y, string? effectPath)
+  {
+    X = x;
+    Y = y;
+    EffectPath = effectPath;
   }
 }
 
