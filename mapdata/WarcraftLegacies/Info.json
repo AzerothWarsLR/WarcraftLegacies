@@ -285,7 +285,7 @@
   "Forces": [
     {
       "Flags": 7,
-      "Players": -4491992,
+      "Players": -4492024,
       "Name": "Scourge, Legion"
     },
     {
@@ -295,8 +295,8 @@
     },
     {
       "Flags": 7,
-      "Players": 264193,
-      "Name": "Frostwolf, Druids, Sentinels"
+      "Players": 264192,
+      "Name": "Night Elves"
     },
     {
       "Flags": 7,
@@ -305,8 +305,8 @@
     },
     {
       "Flags": 7,
-      "Players": 0,
-      "Name": "Skywall, Black Empire, Ahn\u0027qiraj"
+      "Players": 33,
+      "Name": "Horde"
     },
     {
       "Flags": 7,
