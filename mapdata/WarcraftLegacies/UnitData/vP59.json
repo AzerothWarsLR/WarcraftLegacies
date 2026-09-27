@@ -54,7 +54,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.75
     },
     {
       "Id": "utcc",
@@ -74,6 +74,16 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Basic worker unit."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Tauren_Worker.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenWorker_raw.blp"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "OldId": "Binf",
+  "NewId": "B0DY",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Earthen Shield"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is protected by an Earthen Shield; it has increased armor."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Earthen Shield"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASNatureHeal.blp"
+    }
+  ]
+}

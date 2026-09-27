@@ -1,0 +1,45 @@
+{
+  "OldId": "Atau",
+  "NewId": "A15B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Ancient Taunt"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Druids - Ancient Treant)"
+    }
+  ]
+}

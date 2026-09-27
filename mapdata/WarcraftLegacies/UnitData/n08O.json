@@ -49,7 +49,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Robs,Rhme,Rhar,RT07,Rguv"
+      "Value": "Robs,Rhme,Rhar,RT07,Rguv,RT19"
     },
     {
       "Id": "urac",
@@ -67,7 +67,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aion,A06Z,A092,A04C"
+      "Value": "Aion,A161,A162,A163"
     },
     {
       "Id": "udaa",
@@ -186,6 +186,11 @@
       "Id": "uabs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT21"
     }
   ]
 }
