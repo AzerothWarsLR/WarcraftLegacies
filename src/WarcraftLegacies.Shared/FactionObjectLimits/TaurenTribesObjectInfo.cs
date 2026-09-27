@@ -51,7 +51,7 @@ public static class TaurenTribesObjectInfo
     yield return new(UNIT_OSPW_SPIRIT_WALKER_TAUREN_TRIBES, Unlimited, Support);
     yield return new(UNIT_VP57_ANCESTRAL_SPIRIT_TAUREN_TRIBES, 3, AntiMage);
 
-    yield return new(UNIT_OWYV_SPIRIT_WYVERN_TAUREN_TRIBES, 8, new List<UnitCategory> { Flyer, AntiAir });
+    yield return new(UNIT_OWYV_SPIRIT_WYVERN_TAUREN_TRIBES, 12, new List<UnitCategory> { Flyer, AntiAir });
     yield return new(UNIT_VP55_SPIRIT_EAGLE_TAUREN_TRIBES, 4, new List<UnitCategory> { Flyer, Fighter });
 
     yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, 1, new List<UnitCategory> { Destroyer, Tank });
