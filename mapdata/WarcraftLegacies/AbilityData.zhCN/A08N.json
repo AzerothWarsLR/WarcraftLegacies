@@ -1,0 +1,77 @@
+{
+  "OldId": "AOae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 - 加伦、扎伊拉、拉格纳罗斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "迅捷光环"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习迅捷光环 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "这位英雄是一位娴熟的指挥官，他的才能令麾下军队的机动性大为提升。提高周围所有友方单位的移动速度。|n|n|cffffcc001级|r - 移动速度提高<A08N,DataA1,%>%。|n|cffffcc002级|r - 移动速度提高<A08N,DataA2,%>%。|n|cffffcc003级|r - 移动速度提高<A08N,DataA3,%>%。|n|cffffcc004级|r - 移动速度提高<A08N,DataA4,%>%。|n"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "迅捷光环 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A08N,DataA1,%>%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A08N,DataA2,%>%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A08N,DataA3,%>%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A08N,DataA4,%>%。"
+    }
+  ],
+  "NewId": "A08N"
+}

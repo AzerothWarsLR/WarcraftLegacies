@@ -1,0 +1,14 @@
+{
+  "OldId": "ATwf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "虚空风暴圆顶"
+    }
+  ],
+  "NewId": "B00Y"
+}

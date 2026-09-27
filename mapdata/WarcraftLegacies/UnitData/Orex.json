@@ -38,7 +38,7 @@
     },
     {
       "Id": "upri",
-      "Value": 18
+      "Value": 21
     },
     {
       "Id": "umvs",
@@ -92,6 +92,15 @@
     {
       "Id": "ubpx",
       "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT16"
     }
   ]
 }

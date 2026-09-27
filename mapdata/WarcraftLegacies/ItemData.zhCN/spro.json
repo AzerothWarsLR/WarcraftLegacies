@@ -1,0 +1,13 @@
+{
+  "OldId": "spro",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "保护卷轴"
+    }
+  ]
+}

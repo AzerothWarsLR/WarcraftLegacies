@@ -1,0 +1,19 @@
+{
+  "OldId": "Bbsk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "飞刀乱舞"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于飞刀连击状态，攻击速度大幅提高。"
+    }
+  ],
+  "NewId": "B060"
+}

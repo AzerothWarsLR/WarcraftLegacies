@@ -1,0 +1,19 @@
+{
+  "OldId": "BHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "要塞防御光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该建筑受到强化防御光环的影响，护甲提高。"
+    }
+  ],
+  "NewId": "B092"
+}

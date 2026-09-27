@@ -1,0 +1,31 @@
+{
+  "OldId": "AHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（天灾 - 瑞文戴尔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧光环"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "恐惧光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使 600 范围内附近敌方单位的护甲降低 6 点。"
+    }
+  ],
+  "NewId": "A08X"
+}

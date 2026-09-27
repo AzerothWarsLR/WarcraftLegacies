@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0H0,AT13,Adcn,Acpf,A0E6,Aion"
+      "Value": "A0H0,AT13,Adcn,A0E6,Aion"
     },
     {
       "Id": "ubld",
@@ -101,7 +101,7 @@
     {
       "Id": "ucut",
       "Type": 3,
-      "Value": "- Ethereal Form|n- Healing Surge,- Ethereal Form|n- Healing Surge|n- Disenchant,- Ethereal Form|n- Healing Surge|n- Disenchant|n- Spirit Link"
+      "Value": "- Healing Surge,- Healing Surge|n- Disenchant,- Healing Surge|n- Disenchant|n- Spirit Link"
     },
     {
       "Id": "uhot",

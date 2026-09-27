@@ -1,0 +1,25 @@
+{
+  "OldId": "Aeye",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个隐形且无法移动的猫头鹰结界，为你监视一片区域。 |n能看见隐形单位。 |n持续<Aeye,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "警戒结界"
+    }
+  ],
+  "NewId": "TP66"
+}

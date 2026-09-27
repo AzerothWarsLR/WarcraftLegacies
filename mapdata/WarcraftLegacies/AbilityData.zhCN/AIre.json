@@ -1,0 +1,18 @@
+{
+  "OldId": "AIre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（500 点生命值 200 点魔法值）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 生命值/法力值恢复"
+    }
+  ]
+}

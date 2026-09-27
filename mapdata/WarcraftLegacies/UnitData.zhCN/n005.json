@@ -1,0 +1,29 @@
+{
+  "OldId": "nntg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化潮汐守望者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到强化潮汐守望者"
+    }
+  ],
+  "NewId": "n005"
+}

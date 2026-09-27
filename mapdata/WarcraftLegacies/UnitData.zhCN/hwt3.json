@@ -1,0 +1,28 @@
+{
+  "OldId": "hwt3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然-吉安娜）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水领主元素"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "吉安娜的私人领主元素。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练水领主元素"
+    }
+  ]
+}

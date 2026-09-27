@@ -1,0 +1,24 @@
+{
+  "OldId": "uskm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城 特遣牧师）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "堕落灵魂"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练堕落灵魂"
+    }
+  ],
+  "NewId": "u01C"
+}

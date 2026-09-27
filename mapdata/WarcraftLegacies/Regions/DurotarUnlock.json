@@ -1,0 +1,16 @@
+{
+  "Left": -9600,
+  "Bottom": -3680,
+  "Right": -8960,
+  "Top": -3200,
+  "Name": "DurotarUnlock",
+  "CreationNumber": 513,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

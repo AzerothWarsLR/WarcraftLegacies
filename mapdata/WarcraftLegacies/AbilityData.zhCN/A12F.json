@@ -1,0 +1,19 @@
+{
+  "OldId": "Adis",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "驱散魔法"
+    }
+  ],
+  "NewId": "A12F"
+}

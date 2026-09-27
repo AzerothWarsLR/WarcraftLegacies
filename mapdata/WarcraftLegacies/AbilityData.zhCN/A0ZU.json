@@ -1,0 +1,31 @@
+{
+  "OldId": "AOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤泥土魔像"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤泥土魔像"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 1 个拥有法术免疫的泥土魔像，持续<A0ZU,Dur1>秒。 |n|n|cffffcc00可攻击地面单位。|r"
+    }
+  ],
+  "NewId": "A0ZU"
+}

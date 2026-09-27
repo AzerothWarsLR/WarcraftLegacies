@@ -1,0 +1,31 @@
+{
+  "OldId": "Aakb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战歌攻势"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战歌攻势"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使<A0DZ,Area1>范围内的友方单位伤害提高<A0DZ,DataA1,%>%。"
+    }
+  ],
+  "NewId": "A0DZ"
+}

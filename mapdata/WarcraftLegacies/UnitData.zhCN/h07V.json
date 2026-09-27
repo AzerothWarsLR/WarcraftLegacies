@@ -1,0 +1,29 @@
+{
+  "OldId": "hctw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化炮塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到强化炮塔"
+    }
+  ],
+  "NewId": "h07V"
+}

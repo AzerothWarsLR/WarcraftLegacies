@@ -1,0 +1,14 @@
+{
+  "OldId": "BOvc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "时光护盾（施法者）"
+    }
+  ],
+  "NewId": "B0B2"
+}

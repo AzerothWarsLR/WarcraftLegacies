@@ -1,0 +1,77 @@
+{
+  "OldId": "Aroa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉恩）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "狼人之吼"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习狼人之吼 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄以群山之力强化周围的盟友，提高其护甲，持续 30 秒。|n|cffffcc001级|r - 护甲提高<A02A,DataB1>点，攻击力提高<A02A,DataA1,%>%。|n|cffffcc002级|r - 护甲提高<A02A,DataB2>点，攻击力提高<A02A,DataA2,%>%。|n|cffffcc003级|r - 护甲提高<A02A,DataB3>点，攻击力提高<A02A,DataA3,%>%。|n|cffffcc004级|r - 护甲提高<A02A,DataB4>点，攻击力提高<A02A,DataA4,%>%。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狼人之吼 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狼人之吼 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狼人之吼 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "狼人之吼 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以自然之力强化周围的盟友，使其护甲提高<A02A,DataB1,%>，攻击力提高<A02A,DataA1,%>%，持续 30 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以自然之力强化周围的盟友，使其护甲提高<A02A,DataB2,%>，攻击力提高<A02A,DataA2,%>%，持续 30 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以自然之力强化周围的盟友，使其护甲提高<A02A,DataB3,%>，攻击力提高<A02A,DataA3,%>%，持续 30 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "英雄以自然之力强化周围的盟友，使其护甲提高<A02A,DataB4,%>，攻击力提高<A02A,DataA4,%>%，持续 30 秒。"
+    }
+  ],
+  "NewId": "A02A"
+}

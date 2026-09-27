@@ -1,0 +1,14 @@
+{
+  "OldId": "LT03",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "短石桥（纵向）"
+    }
+  ],
+  "NewId": "B01J"
+}

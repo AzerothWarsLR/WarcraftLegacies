@@ -1,0 +1,54 @@
+{
+  "OldId": "AEsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团英雄）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "投掷一把淬毒匕首，造成大量初始伤害，随后持续造成伤害。中毒单位在持续时间内移动速度和攻击速度降低 25%。对单位和英雄均持续 8 秒。毒素共触发 12 次。|n|n|cffffcc001级|r - <VP04,DataE1>点直接伤害，<VP04,DataA1>点持续伤害。 |n|cffffcc002级|r - <VP04,DataE2>点直接伤害，<VP04,DataA2>点持续伤害。 |n|cffffcc003级|r - <VP04,DataE3>点直接伤害，<VP04,DataA3>点持续伤害。|n|cffffcc004级|r - <VP04,DataE4>点直接伤害，<VP04,DataA4>点持续伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "暗影突袭 - [|cffffcc004 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把淬毒匕首，造成<VP04,DataE1>点初始伤害，并每<VP04,Cast1,.>秒造成<VP04,DataA1>点伤害，持续<VP04,Dur1>秒。毒素会在持续时间内使目标单位的移动速度降低<VP04,DataB1,%>%。毒素共触发 12 次。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把淬毒匕首，造成<VP04,DataE2>点初始伤害，并每<VP04,Cast2,.>秒造成<VP04,DataA2>点伤害，持续<VP04,Dur2>秒。毒素会在持续时间内使目标单位的移动速度降低<VP04,DataB2,%>%。毒素共触发 12 次。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把淬毒匕首，造成<VP04,DataE3>点初始伤害，并每<VP04,Cast3,.>秒造成<VP04,DataA3>点伤害，持续<VP04,Dur3>秒。毒素会在持续时间内使目标单位的移动速度降低<VP04,DataB3,%>%。毒素共触发 12 次。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向目标敌方单位投掷一把淬毒匕首，造成<VP04,DataE4>点初始伤害，并每<VP04,Cast4,.>秒造成<VP04,DataA4>点伤害，持续<VP04,Dur4>秒。毒素会在持续时间内使目标单位的移动速度降低<VP04,DataB4,%>%。毒素共触发 12 次。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "暗影突袭"
+    }
+  ],
+  "NewId": "VP04"
+}

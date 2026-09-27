@@ -1,0 +1,43 @@
+{
+  "OldId": "Orkn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活沃金"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暗矛部族的酋长"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活沃金"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤沃金"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长治疗和保护盟友。"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "洛坎"
+    }
+  ]
+}
