@@ -1,0 +1,29 @@
+{
+  "OldId": "nbal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "末日领主"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "受命守卫大恶魔的精锐防御者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练末日领主"
+    }
+  ],
+  "NewId": "n04O"
+}

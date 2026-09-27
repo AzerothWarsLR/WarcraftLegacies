@@ -100,6 +100,7 @@ public static class Regions
   public static Rectangle DunmoroghAmbient1 { get; set; } = new Rectangle(6688f, -8416f, 9536f, -4096f);
   public static Rectangle DunmoroghAmbient2 { get; set; } = new Rectangle(8320f, -8768f, 11744f, -6656f);
   public static Rectangle DunmoroghAmbient3 { get; set; } = new Rectangle(11680f, -7552f, 14464f, -4032f);
+  public static Rectangle DurotarUnlock { get; set; } = new Rectangle(-9600f, -3680f, -8960f, -3200f);
   public static Rectangle DuskwoodCrypt { get; set; } = new Rectangle(9376f, -16032f, 9728f, -15616f);
   public static Rectangle DusthallowAmbient { get; set; } = new Rectangle(-12256f, -9920f, -8640f, -5728f);
   public static Rectangle Dustwallow_Ships { get; set; } = new Rectangle(-12416f, -8736f, -8768f, -6144f);

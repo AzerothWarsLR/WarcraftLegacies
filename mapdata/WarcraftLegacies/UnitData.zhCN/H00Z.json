@@ -1,0 +1,44 @@
+{
+  "OldId": "Huth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活斯托姆加德王储"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "斯托姆加德王储"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "加林·托尔贝恩"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活斯托姆加德王储"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤加林·托尔贝恩"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "王者战士英雄，擅长支援军队。"
+    }
+  ],
+  "NewId": "H00Z"
+}

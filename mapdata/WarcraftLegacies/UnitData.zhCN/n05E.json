@@ -1,0 +1,19 @@
+{
+  "OldId": "nlv1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火元素"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练火元素"
+    }
+  ],
+  "NewId": "n05E"
+}

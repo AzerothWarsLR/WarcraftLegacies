@@ -1,0 +1,29 @@
+{
+  "OldId": "hdes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暗夜精灵）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "护卫舰"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "标准中型船只。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练护卫舰"
+    }
+  ],
+  "NewId": "h0AV"
+}

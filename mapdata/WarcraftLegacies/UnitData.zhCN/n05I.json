@@ -1,0 +1,29 @@
+{
+  "OldId": "ndmg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 T2 地狱犬群）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地狱犬群恶魔之门"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "与燃烧远征成群地狱犬调谐的传送门，每 30 秒召唤 3 只。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到地狱犬群恶魔之门"
+    }
+  ],
+  "NewId": "n05I"
+}

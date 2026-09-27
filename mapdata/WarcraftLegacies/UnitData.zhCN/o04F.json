@@ -1,0 +1,29 @@
+{
+  "OldId": "odoc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暗矛部族的巫毒大师。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "巫医"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练巫医"
+    }
+  ],
+  "NewId": "o04F"
+}

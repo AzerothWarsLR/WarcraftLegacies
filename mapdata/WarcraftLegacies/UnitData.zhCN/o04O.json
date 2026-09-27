@@ -1,0 +1,29 @@
+{
+  "OldId": "odoc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "地精的癫狂科学家。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "炼金术士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练炼金术士"
+    }
+  ],
+  "NewId": "o04O"
+}

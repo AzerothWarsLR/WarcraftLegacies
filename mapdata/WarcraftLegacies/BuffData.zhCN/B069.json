@@ -1,0 +1,19 @@
+{
+  "OldId": "BNsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "不屈灵魂"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（被遗忘者-瘟疫亡魂）"
+    }
+  ],
+  "NewId": "B069"
+}

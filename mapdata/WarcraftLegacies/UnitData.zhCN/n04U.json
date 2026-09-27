@@ -1,0 +1,29 @@
+{
+  "OldId": "nndr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练虚空龙"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自外域的被奴役巨龙。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空龙"
+    }
+  ],
+  "NewId": "n04U"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物 / 暮光）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "格瑞姆巴托"
+    }
+  ],
+  "NewId": "h01Z"
+}

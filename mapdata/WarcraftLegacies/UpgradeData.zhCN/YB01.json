@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "永生之力已激活"
+    }
+  ],
+  "NewId": "YB01"
+}

@@ -1,0 +1,31 @@
+{
+  "OldId": "AOcr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（火焰坦克）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位的攻击已改装为短程火焰喷射器，可以喷射出锥形火焰。|n|n|cffffcc00受 |cff99ccff酩酊酒雾|r|cffffcc00 影响的单位会点燃，在<TP26,Dur1>秒内每秒受到<TP26,DataE1>点伤害。|r\n"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰喷射器"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火焰喷射器"
+    }
+  ],
+  "NewId": "TP27"
+}

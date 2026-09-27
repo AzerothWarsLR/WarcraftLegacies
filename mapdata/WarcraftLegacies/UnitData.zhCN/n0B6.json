@@ -1,0 +1,29 @@
+{
+  "OldId": "nbt1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "向敌人投掷巨石。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造巨石塔"
+    }
+  ],
+  "NewId": "n0B6"
+}

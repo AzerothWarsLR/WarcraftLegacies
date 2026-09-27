@@ -1,0 +1,19 @@
+{
+  "OldId": "Aasl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（苔丝）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "消失增益"
+    }
+  ],
+  "NewId": "STB0"
+}

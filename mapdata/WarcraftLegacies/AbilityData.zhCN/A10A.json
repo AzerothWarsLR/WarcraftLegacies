@@ -1,0 +1,31 @@
+{
+  "OldId": "Ahlh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使施法者每次施放法术时生成一柄魔法战刃。战刃会环绕施法者飞行 20 秒，对其击中的敌方单位造成 50 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战刃风暴"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战刃风暴"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（娜萨图标）"
+    }
+  ],
+  "NewId": "A10A"
+}

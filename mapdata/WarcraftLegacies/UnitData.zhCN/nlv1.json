@@ -1,0 +1,28 @@
+{
+  "OldId": "nlv1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火元素"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "火焰之地被驯服的元素。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练火元素"
+    }
+  ]
+}
