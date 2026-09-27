@@ -80,7 +80,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.75
+      "Value": 0.8
     },
     {
       "Id": "unam",
@@ -108,11 +108,6 @@
       "Value": "buildings\\orc\\TaurenTotem\\TaurenTotem.mdl"
     },
     {
-      "Id": "ushb",
-      "Type": 3,
-      "Value": "ShadowTaurenTotem"
-    },
-    {
       "Id": "usnd",
       "Type": 3,
       "Value": "TaurenTotem"
@@ -121,6 +116,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenTotem.blp"
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": "ShadowTaurenTotem"
     }
   ]
 }

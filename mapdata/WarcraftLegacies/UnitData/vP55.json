@@ -140,27 +140,32 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Eagle Spirit"
+      "Value": "Spirit eagle of Mulgore whose Guiding Winds aura speeds up nearby friendly air units."
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Eagle Spirit"
+      "Value": "Spirit Eagle"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Great Eagle"
+      "Value": "Train Spirit Eagle"
     },
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "units\\creeps\\WarEagle\\WarEagle.mdl"
+      "Value": "war3mapImported\\SpiritEagle.mdl"
     },
     {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.0
     }
   ]
 }

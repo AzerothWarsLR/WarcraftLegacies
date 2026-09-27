@@ -66,7 +66,13 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Ogre Stone-heavers\u0027 attack range."
+      "Value": "Increases Ogre Stone Throwers\u0027 attack range."
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthOrb.blp"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Acmg,Afbk,Aion"
+      "Value": "Acmg,Afbk,Aion,Aetl,A0E6"
     },
     {
       "Id": "ubld",
@@ -107,7 +107,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.85
     },
     {
       "Id": "unam",
@@ -133,6 +133,16 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNEtherealFormOn.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TaurenDreamCatcher.mdl"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rowt,Ropm,Rguv,R00W"
     }
   ]
 }

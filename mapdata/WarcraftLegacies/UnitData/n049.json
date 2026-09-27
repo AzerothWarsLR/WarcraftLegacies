@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A144,A143,ACat,ACsk,Aihn"
+      "Value": "A144,A143,ACat,ACsk,Aihn,A0E6"
     },
     {
       "Id": "ua2t",
@@ -166,7 +166,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Rguv,RT04"
+      "Value": "Rhme,Rhar,Rguv,RT04,R00W"
     },
     {
       "Id": "ua1w",
@@ -269,7 +269,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.85
     },
     {
       "Id": "usnd",
