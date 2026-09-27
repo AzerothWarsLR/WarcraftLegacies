@@ -1,0 +1,29 @@
+{
+  "OldId": "Basl",
+  "NewId": "B0E1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Grimtotem Ward"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is near an enemy Grimtotem Ward; it moves and attacks more slowly."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Grimtotem Ward"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PAS_cr_GoblinWard.blp"
+    }
+  ]
+}

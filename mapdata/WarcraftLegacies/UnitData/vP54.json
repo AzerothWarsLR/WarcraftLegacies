@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aion,Apg2"
+      "Value": "Aion,Apg2,A15H,A15I,A0E6"
     },
     {
       "Id": "ubld",
@@ -67,7 +67,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Ropm,Rguv,RT05"
+      "Value": "Rhme,Rhar,Ropm,Rguv,RT05,R00W"
     },
     {
       "Id": "ua1s",
@@ -75,7 +75,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 700
+      "Value": 800
     },
     {
       "Id": "unsf",
@@ -110,12 +110,12 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "Units\\Creeps\\EarthPandarenBrewmaster\\EarthPandarenBrewmaster.mdl"
+      "Value": "war3mapImported\\HeroRunemaster.mdl"
     },
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthBrewmaster.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenRunemaster_raw.blp"
     }
   ]
 }

@@ -75,7 +75,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.8
     },
     {
       "Id": "uubs",
@@ -96,6 +96,16 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Spellcaster production building. "
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TaurenSpiritLodge.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenSpiritLodge.blp"
     }
   ]
 }

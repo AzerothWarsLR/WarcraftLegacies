@@ -36,7 +36,7 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
   /// Initializes a new instance of the <see cref="QuestScepterOfTheQueenSentinels"/> class.
   /// </summary>
   public QuestScepterOfTheQueenSentinels(QuestData prerequisite, Rectangle area) : base("Return to the Fold",
-    "Remnants of the ancient Highborne survive within the ruins of the Athenaeum. If Stonemaul falls, it would be safe for them to come out.",
+    "Remnants of the ancient Highborne survive within the ruins of the Athenaeum. Once the Gordunni ogres of Dire Maul are driven off, it will be safe for them to come out.",
     @"ReplaceableTextures\CommandButtons\BTNNagaWeaponUp2.blp")
   {
     _highBourneArea = area;

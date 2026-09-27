@@ -67,7 +67,13 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Improves Wyverns\u0027 Slow Poison attack."
+      "Value": "Improves Spirit Wyverns\u0027 Slow Poison attack."
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnvenomedSpear.blp"
     }
   ]
 }
