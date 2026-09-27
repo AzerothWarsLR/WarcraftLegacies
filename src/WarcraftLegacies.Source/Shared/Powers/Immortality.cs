@@ -22,6 +22,7 @@ public sealed class Immortality : Power
   private readonly int _healAmountPercentage;
   private readonly List<WorldTreeProtection> _worldTreeProtections;
   private readonly Dictionary<Objective, WorldTreeProtection> _protectionsByObjective = new();
+  private readonly HashSet<unit> _savedUnits = new();
 
   public string Effect { get; init; } = "";
 
@@ -73,13 +74,14 @@ public sealed class Immortality : Power
   private void OnDamage()
   {
     var damagedUnit = @event.Unit;
-    if (!(@event.Damage >= damagedUnit.Life) ||
+    if (!(@event.Damage >= damagedUnit.Life) || _savedUnits.Contains(damagedUnit) ||
         !(GetRandomInt(0, 100) < _healChancePercentage) || damagedUnit.IsUnitType(unittype.Structure) ||
         damagedUnit.IsUnitType(unittype.Mechanical) || !IsProtected(damagedUnit.GetPosition()))
     {
       return;
     }
 
+    _savedUnits.Add(damagedUnit);
     @event.Damage = 0;
     damagedUnit.Life = (int)(damagedUnit.MaxLife * ((float)_healAmountPercentage / 100));
     EffectSystem.Add(effect.Create(Effect, damagedUnit, "origin"), 1);
@@ -115,7 +117,7 @@ public sealed class Immortality : Power
       (Controls(x) ? ProtectedColor : UnprotectedColor) + Loc.Get(x.RegionName) + "|r"));
 
     Description = Loc.Format(
-                    "Each unit has a {chance}% chance to survive death, restoring {amount}% of its hit points.",
+                    "Each unit has a {chance}% chance to survive death once, restoring {amount}% of its hit points.",
                     ("{chance}", _healChancePercentage.ToString()),
                     ("{amount}", _healAmountPercentage.ToString()))
                   + "|n" + Loc.Get("Works where your team holds the World Tree:")
