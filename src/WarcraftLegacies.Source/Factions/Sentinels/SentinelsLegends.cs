@@ -21,7 +21,7 @@ public sealed class SentinelsLegends
     Maiev = new LegendaryHero("Maiev Shadowsong")
     {
       UnitType = UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
-      StartingXp = 2800
+      StartingXp = 5400
     };
 
     Auberdine = new Capital
@@ -40,7 +40,7 @@ public sealed class SentinelsLegends
     {
       UnitType = UNIT_ETYR_HIGH_PRIESTESS_OF_ELUNE_SENTINELS,
       PlayerColor = playercolor.Cyan,
-      StartingXp = 1000
+      StartingXp = 1800
     };
 
     Naisha = new LegendaryHero("Naisha")
