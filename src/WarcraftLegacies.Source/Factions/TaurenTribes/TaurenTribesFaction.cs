@@ -107,6 +107,20 @@ public sealed class TaurenTribesFaction : Faction
             EligibleFactions = new List<Faction> { this }
           }
         }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new Dialogue(
+          @"Sound\Dialogue\OrcExpCamp\OrcQuest04ax\D04ARokhan02",
+          "How you doin', mon?",
+          "Rokhan"),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Tauren.Rokhan, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
   }
 
   private void RegisterQuests()
