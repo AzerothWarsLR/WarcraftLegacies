@@ -7,13 +7,13 @@ public static class OrcishHordeSpells
 {
   public static void Setup()
   {
-    var elementalConvergence = new ElementalConvergenceSpell(ABILITY_OTCA_ELEMENTAL_CONVERGENCE_THRALL)
+    var elementalConvergence = new ElementalConvergenceSpell(ABILITY_A166_ELEMENTAL_CONVERGENCE_THRALL)
     {
       ChannelDuration = 2f,
       DamageByLevel = new float[] { 175, 250, 350, 450 },
       Radius = 225,
       MissileSpeed = 900,
-      StunAbilityId = ABILITY_OTCB_ELEMENTAL_CONVERGENCE_STUN_APPLICATOR_THRALL
+      StunAbilityId = ABILITY_OTCB_ELEMENTAL_CONVERGENCE_STUN_THRALL_ELEMENTAL_CONVERGENCE_STUN_APPLICATOR
     };
     SpellRegistry.Register(elementalConvergence);
   }
