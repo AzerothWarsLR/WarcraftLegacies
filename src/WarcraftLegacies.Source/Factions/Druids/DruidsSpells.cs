@@ -1,5 +1,6 @@
 ﻿using MacroTools.Spells;
 using WarcraftLegacies.Source.Factions.Druids.Spells;
+using WarcraftLegacies.Source.Factions.Druids.Spells.LivingWall;
 using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Druids;
@@ -57,6 +58,12 @@ public static class DruidsSpells
       SeedEffectPath = @"Abilities\Spells\NightElf\EntanglingRoots\EntanglingRootsTarget.mdl",
       SeedEffectScale = 0.6f,
       SproutEffectPath = @"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl"
+    });
+
+    SpellRegistry.Register(new LivingWallSpell(ABILITY_A14X_LIVING_WALL_KEEPER_OF_THE_GROVE)
+    {
+      ChannelDuration = 20,
+      TreeUnitTypeId = UNIT_E10A_LIVING_WALL_DRUIDS
     });
   }
 }
