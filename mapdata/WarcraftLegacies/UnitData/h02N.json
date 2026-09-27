@@ -44,7 +44,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R09X,R04R,R006,R00C,Rhme,Rhar"
+      "Value": "R09X,R04R,R006,R00C,Rhme,Rhar,RDTP"
     },
     {
       "Id": "upgr",
