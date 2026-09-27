@@ -40,7 +40,11 @@ public sealed class SentinelsLegends
     {
       UnitType = UNIT_ETYR_HIGH_PRIESTESS_OF_ELUNE_SENTINELS,
       PlayerColor = playercolor.Cyan,
-      StartingXp = 1800
+      StartingXp = 1800,
+      StartingArtifacts = new()
+      {
+        new(item.Create(ITEM_I028_BOW_OF_ELUNE_S_GRACE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+      }
     };
 
     Naisha = new LegendaryHero("Naisha")
