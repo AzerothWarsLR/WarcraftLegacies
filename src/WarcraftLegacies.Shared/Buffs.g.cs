@@ -192,6 +192,9 @@ public static class Buffs
   public const int BUFF_B0DU_WATCHER_S_FOCUS = 1110459477;
   public const int BUFF_B0DV_BESTIAL_WRATH = 1110459478;
   public const int BUFF_B0DW_CORRUPTION = 1110459479;
+  public const int BUFF_B0E3_TREE_OF_RENEWAL = 1110459699;
+  public const int BUFF_B0E4_TREE_OF_RENEWAL_ARMOR = 1110459700;
+  public const int BUFF_B0E5_LORD_OF_THE_FOREST = 1110459701;
   public const int BUFF_B0E7_SEED_OF_REBIRTH = 1110459703;
   public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
   public const int BUFF_BEAH_THORNS_AURA = 1111843176;
