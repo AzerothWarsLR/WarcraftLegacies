@@ -1,0 +1,18 @@
+{
+  "OldId": "nfps",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有驱散魔法与霜甲术的中型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "北极熊怪萨满"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "nwzg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "中型远程单位，可施放净化和闪电护盾。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "变节巫师"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "nenp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "会使敌人中毒的轻型近战单位。可施放纠缠根须。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "剧毒树人"
+    }
+  ]
+}

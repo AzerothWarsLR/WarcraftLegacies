@@ -1,0 +1,29 @@
+{
+  "OldId": "ogru",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "自豪而荣耀的圣光战士，正受训成为圣骑士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "防御者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练防御者"
+    }
+  ],
+  "NewId": "o05B"
+}

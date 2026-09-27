@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "你的队伍控制着吉安娜·普罗德摩尔"
+    }
+  ],
+  "NewId": "R0A8"
+}

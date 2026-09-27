@@ -1,0 +1,44 @@
+{
+  "OldId": "Orkn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活烬痕"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暮光之锤氏族的勇士"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "吞噬者余烬之痕"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活烬痕"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤烬痕"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长提升你军队的进攻潜力。"
+    }
+  ],
+  "NewId": "O04H"
+}

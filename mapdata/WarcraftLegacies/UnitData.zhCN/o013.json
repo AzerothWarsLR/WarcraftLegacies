@@ -1,0 +1,24 @@
+{
+  "OldId": "obea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑石塔"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "训练狼骑兵、科多兽、蝙蝠骑士和风骑士。"
+    }
+  ],
+  "NewId": "o013"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "ogru",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "剑圣"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练剑圣"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "依照燃刃氏族教义训练的精英战士。"
+    }
+  ],
+  "NewId": "o00G"
+}

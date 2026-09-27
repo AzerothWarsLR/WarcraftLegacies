@@ -1,0 +1,29 @@
+{
+  "OldId": "ogre",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌 T1）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造大厅"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "大厅"
+    }
+  ],
+  "NewId": "o00C"
+}

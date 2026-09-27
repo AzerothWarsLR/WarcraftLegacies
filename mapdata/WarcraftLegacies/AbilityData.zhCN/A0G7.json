@@ -1,0 +1,31 @@
+{
+  "OldId": "Arai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（库尔提拉斯 - 荆棘语者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "自然掩埋"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "自然掩埋"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从一具尸体中唤出一丛浆果灌木，持续<A0G7,Dur1>秒。浆果灌木会持续为周围的友方单位恢复生命值。"
+    }
+  ],
+  "NewId": "A0G7"
+}

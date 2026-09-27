@@ -1,0 +1,18 @@
+{
+  "OldId": "nmyr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "海卫"
+    }
+  ]
+}

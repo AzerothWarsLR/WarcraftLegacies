@@ -1,0 +1,23 @@
+{
+  "OldId": "nqb4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（等级 4）（灰色 - 雷克萨召唤）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练狂暴豪猪"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "狂暴豪猪"
+    }
+  ]
+}

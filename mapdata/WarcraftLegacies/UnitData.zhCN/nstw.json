@@ -1,0 +1,23 @@
+{
+  "OldId": "nstw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "投掷闪电弹的重型远程单位。拥有吞噬敌人的能力。可施放连环闪电与闪电护盾。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "风暴巨蜥"
+    }
+  ]
+}

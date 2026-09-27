@@ -1,0 +1,24 @@
+{
+  "OldId": "Auns",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 侍僧）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "(|cffffcc00W|r)反召唤建筑"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反召唤建筑"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "OldId": "Afak",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯 - 凯尔萨斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "翠绿魔珠"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习翠绿魔珠 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "为施法者的攻击增加额外伤害。|n |n|cffffcc001级|r - 25 点伤害。 |n|cffffcc002级|r - 40 点伤害。 |n|cffffcc003级|r - 55 点伤害。 |n|cffffcc004级|r - 70 点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "魔法宝珠 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "魔法宝珠 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "魔法宝珠 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "魔法宝珠 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为施法者的攻击增加<A0WH,DataA1>点额外伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为施法者的攻击增加<A0WH,DataA2>点额外伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为施法者的攻击增加<A0WH,DataA3>点额外伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为施法者的攻击增加<A0WH,DataA4>点额外伤害。"
+    }
+  ],
+  "NewId": "A0WH"
+}

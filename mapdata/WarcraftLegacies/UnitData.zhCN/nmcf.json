@@ -1,0 +1,18 @@
+{
+  "OldId": "nmcf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型两栖近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "深海峭壁鱼人"
+    }
+  ]
+}

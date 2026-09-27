@@ -1,0 +1,18 @@
+{
+  "OldId": "nnsg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷兵营）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "孵化场"
+    }
+  ]
+}

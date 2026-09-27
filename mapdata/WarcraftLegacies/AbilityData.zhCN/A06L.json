@@ -1,0 +1,31 @@
+{
+  "OldId": "ANms",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿纳斯特瑞安）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活法力护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活一个护盾，每点魔法值可吸收<A06L,DataA1>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力护盾"
+    }
+  ],
+  "NewId": "A06L"
+}

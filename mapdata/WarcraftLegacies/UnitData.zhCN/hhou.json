@@ -1,0 +1,23 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦农场）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "提供 8 点人口，可提高可训练单位的数量上限。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "农场"
+    }
+  ]
+}

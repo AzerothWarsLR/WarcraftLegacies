@@ -1,0 +1,77 @@
+{
+  "OldId": "AIdb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（领主）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴佳酿"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣干涉 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄治疗周围大范围内的所有盟友。 |n|n|cffffcc001级|r - 恢复 150 点生命值。 |n|cffffcc002级|r - 恢复 225 点生命值。 |n|cffffcc003级|r - 恢复 300 点生命值。 |n|cffffcc004级|r - 恢复 375 点生命值。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴佳酿"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴佳酿"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "请大家喝一轮 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "请大家喝一轮 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喝下一大桶麦酒，恢复<A0H1,DataB1>点生命值。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喝下一大桶麦酒，恢复<A0H1,DataB2>点生命值。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为大范围内的友方单位恢复 300 点生命值。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "为大范围内的友方单位恢复 375 点生命值。"
+    }
+  ],
+  "NewId": "A0H1"
+}

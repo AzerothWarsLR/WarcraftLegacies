@@ -1,0 +1,14 @@
+{
+  "OldId": "XErf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "火焰风暴（效果）"
+    }
+  ],
+  "NewId": "TP34"
+}
