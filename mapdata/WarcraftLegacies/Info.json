@@ -6,7 +6,7 @@
   "MapName": "Warcraft Legacies",
   "MapAuthor": "Technopig, Vampirika, Madsen",
   "MapDescription": "Check out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/pnWZs69",
-  "RecommendedPlayers": "16 Players ",
+  "RecommendedPlayers": "14 Players ",
   "CameraBounds": {
     "BottomLeft": {
       "X": -28160,
@@ -37,7 +37,7 @@
   "Tileset": 89,
   "LoadingScreenBackgroundNumber": 99,
   "LoadingScreenPath": "",
-  "LoadingScreenText": "Determine the fate of Azeroth as one of 20 factions from the Warcraft universe.\r\n\r\nFounders: Lordsebas, YakaryBovine\r\nDevelopers: Technopig, Madsen, Vampirika\r\nProgrammers: alrun3\r\nDiscord link: https://discord.gg/4eGZnR5",
+  "LoadingScreenText": "Determine the fate of Azeroth as one of 14 factions from the Warcraft universe.\r\n\r\nFounders: Lordsebas, YakaryBovine\r\nDevelopers: Technopig, Madsen, Vampirika\r\nProgrammers: alrun3\r\nDiscord link: https://discord.gg/4eGZnR5",
   "LoadingScreenTitle": "Warcraft Legacies",
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,
@@ -296,7 +296,7 @@
     {
       "Flags": 7,
       "Players": 264192,
-      "Name": "Night Elves"
+      "Name": "Sentinels, Druids"
     },
     {
       "Flags": 7,
@@ -306,7 +306,7 @@
     {
       "Flags": 7,
       "Players": 33,
-      "Name": "Horde"
+      "Name": "Orcish Horde, Tauren Tribes"
     },
     {
       "Flags": 7,
