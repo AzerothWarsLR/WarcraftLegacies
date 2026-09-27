@@ -30,6 +30,11 @@
       "Value": "human"
     },
     {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "RDTP"
+    },
+    {
       "Level": 1,
       "Id": "atar",
       "Type": 3,
