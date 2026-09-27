@@ -23,7 +23,6 @@ public sealed class Immortality : Power
   private readonly List<WorldTreeProtection> _worldTreeProtections;
   private readonly Dictionary<Objective, WorldTreeProtection> _protectionsByObjective = new();
 
-  /// <summary>The effect that appears when a unit is healed.</summary>
   public string Effect { get; init; } = "";
 
   public Immortality(int healChancePercentage, int healAmountPercentage, List<WorldTreeProtection> worldTreeProtections)
@@ -35,13 +34,11 @@ public sealed class Immortality : Power
     RefreshDescription();
   }
 
-  /// <inheritdoc />
   public override void OnAdd(player whichPlayer)
   {
     PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, whichPlayer.Id);
   }
 
-  /// <inheritdoc />
   public override void OnAdd(Faction whichFaction)
   {
     foreach (var worldTreeProtection in _worldTreeProtections)
@@ -58,13 +55,11 @@ public sealed class Immortality : Power
     RefreshDescription();
   }
 
-  /// <inheritdoc />
   public override void OnRemove(player whichPlayer)
   {
     PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, whichPlayer.Id);
   }
 
-  /// <inheritdoc />
   public override void OnRemove(Faction whichFaction)
   {
     foreach (var objective in _protectionsByObjective.Keys)
@@ -116,23 +111,14 @@ public sealed class Immortality : Power
 
   private void RefreshDescription()
   {
-    var worldTrees = _worldTreeProtections.Select(x =>
-      (Controls(x) ? ProtectedColor : UnprotectedColor) + Loc.Format("{tree} ({region})",
-        ("{tree}", Loc.Get(x.WorldTreeName)),
-        ("{region}", Loc.Get(x.RegionName))) + "|r").ToList();
-
-    var worldTreeLines = new List<string>();
-    for (var i = 0; i < worldTrees.Count; i += 2)
-    {
-      worldTreeLines.Add(string.Join(", ", worldTrees.Skip(i).Take(2)));
-    }
+    var regions = string.Join(", ", _worldTreeProtections.Select(x =>
+      (Controls(x) ? ProtectedColor : UnprotectedColor) + Loc.Get(x.RegionName) + "|r"));
 
     Description = Loc.Format(
-                    "{chance}% chance to survive lethal damage at {amount}% health in:",
+                    "Each unit has a {chance}% chance to survive death, restoring {amount}% of its hit points.",
                     ("{chance}", _healChancePercentage.ToString()),
                     ("{amount}", _healAmountPercentage.ToString()))
-                  + "|n" + string.Join(",|n", worldTreeLines) + "|n"
-                  + (ControlsAllWorldTrees() ? ProtectedColor : UnprotectedColor)
-                  + Loc.Get("All four: everywhere except Outland and Argus.") + "|r";
+                  + "|n" + Loc.Get("Works where your team holds the World Tree:")
+                  + "|n" + regions;
   }
 }

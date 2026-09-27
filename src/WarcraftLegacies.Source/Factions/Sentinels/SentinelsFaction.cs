@@ -210,28 +210,24 @@ public sealed class SentinelsFaction : Faction
       new()
       {
         WorldTree = AllLegends.Druids.Nordrassil,
-        WorldTreeName = "Nordrassil",
         RegionName = "Kalimdor",
         Regions = new[] { Regions.ImmortalityKalimdor }
       },
       new()
       {
         WorldTree = AllLegends.Neutral.Shaladrassil,
-        WorldTreeName = "Shaladrassil",
         RegionName = "Broken Isles",
         Regions = new[] { Regions.ImmortalityBrokenIsles }
       },
       new()
       {
         WorldTree = AllLegends.Druids.Vordrassil,
-        WorldTreeName = "Vordrassil",
         RegionName = "Northrend",
         Regions = new[] { Regions.ImmortalityNorthrend }
       },
       new()
       {
         WorldTree = AllLegends.Neutral.Seradane,
-        WorldTreeName = "Seradane",
         RegionName = "Eastern Kingdoms",
         Regions = new[] { Regions.ImmortalityEasternKingdoms1, Regions.ImmortalityEasternKingdoms2 }
       }
