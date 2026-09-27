@@ -12,7 +12,9 @@ public sealed class LunarSanctuaryEffectSettings
   public float GlowScale { get; init; } = 1;
   public string? RingPath { get; init; }
   public float RingScale { get; init; } = 1;
-  public (int Red, int Green, int Blue) RingColor { get; init; } = (255, 255, 255);
+  public int RingRed { get; init; } = 255;
+  public int RingGreen { get; init; } = 255;
+  public int RingBlue { get; init; } = 255;
   public int RingAlpha { get; init; } = 255;
   public string? BurstPath { get; init; }
   public float BurstScale { get; init; } = 1;
@@ -96,7 +98,7 @@ public sealed class LunarSanctuaryHazard : Hazard
     {
       _ringEffect = effect.Create(Effects.RingPath, Position.X, Position.Y);
       _ringEffect.Scale = Effects.RingScale;
-      _ringEffect.SetColor(Effects.RingColor.Red, Effects.RingColor.Green, Effects.RingColor.Blue);
+      _ringEffect.SetColor(Effects.RingRed, Effects.RingGreen, Effects.RingBlue);
       _ringEffect.SetAlpha(Effects.RingAlpha);
     }
   }

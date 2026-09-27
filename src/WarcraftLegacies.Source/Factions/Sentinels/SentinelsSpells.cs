@@ -35,7 +35,9 @@ public static class SentinelsSpells
         GlowScale = 1.5f,
         RingPath = @"war3mapImported\Point Target.mdx",
         RingScale = 4.8f,
-        RingColor = (150, 200, 255),
+        RingRed = 150,
+        RingGreen = 200,
+        RingBlue = 255,
         RingAlpha = 200,
         HealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       }
