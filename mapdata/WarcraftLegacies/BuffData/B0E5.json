@@ -1,0 +1,29 @@
+{
+  "OldId": "Bslo",
+  "NewId": "B0E5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Lord of the Forest"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit was struck by an emerging Ancient Treant; it moves and attacks more slowly."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Lord of the Forest"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSlow.blp"
+    }
+  ]
+}
