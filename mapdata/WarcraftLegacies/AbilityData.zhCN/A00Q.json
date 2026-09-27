@@ -1,0 +1,14 @@
+{
+  "OldId": "Abun",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "弹幕（要塞塔楼）"
+    }
+  ],
+  "NewId": "A00Q"
+}

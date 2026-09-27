@@ -1,0 +1,36 @@
+{
+  "OldId": "AOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤巨熊"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤巨熊"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一只具有猛击的熊，为德鲁伊作战。|n持续<YBSB,Dur1>秒。"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（利爪德鲁伊）"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤巨熊"
+    }
+  ],
+  "NewId": "YBSB"
+}

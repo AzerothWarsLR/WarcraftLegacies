@@ -1,0 +1,25 @@
+{
+  "OldId": "Aivs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 吉安娜）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个单位隐形。如果该单位进行攻击、使用技能或施放法术，就会显形。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "隐形术"
+    }
+  ],
+  "NewId": "A0TD"
+}

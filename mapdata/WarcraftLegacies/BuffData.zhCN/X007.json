@@ -1,0 +1,14 @@
+{
+  "OldId": "XHbz",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "奥术爆裂（效果）"
+    }
+  ],
+  "NewId": "X007"
+}

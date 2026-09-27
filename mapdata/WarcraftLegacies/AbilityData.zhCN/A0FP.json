@@ -1,0 +1,31 @@
+{
+  "OldId": "Ablo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 丛林守护者）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "急速"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "急速"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一个友方单位的攻击速度提高 20%，移动速度提高 20%。 |n持续 60 秒。"
+    }
+  ],
+  "NewId": "A0FP"
+}

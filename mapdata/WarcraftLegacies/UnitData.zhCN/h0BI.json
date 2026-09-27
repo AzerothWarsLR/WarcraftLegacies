@@ -1,0 +1,29 @@
+{
+  "OldId": "hctw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba防御塔|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "火炮塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造火炮塔"
+    }
+  ],
+  "NewId": "h0BI"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "owtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯 主防御塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "格雷迈恩之塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "防御建筑。可学习强化防御升级。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造强化|cffffcc00W|r了望塔"
+    }
+  ],
+  "NewId": "o05Q"
+}

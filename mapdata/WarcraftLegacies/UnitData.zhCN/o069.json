@@ -1,0 +1,29 @@
+{
+  "OldId": "osld",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 魔法）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗集会"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造黑暗集会"
+    }
+  ],
+  "NewId": "o069"
+}

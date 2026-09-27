@@ -69,6 +69,15 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\Female Tauren Druid.mdl"
+    },
+    {
+      "Id": "upri",
+      "Value": 19
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT18"
     }
   ]
 }

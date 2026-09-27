@@ -1,0 +1,31 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城施法者 T2）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "专注意志"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "专注意志"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "圣光的庇护使该单位受到的伤害降低 10 点"
+    }
+  ],
+  "NewId": "A0VF"
+}

@@ -1,0 +1,33 @@
+{
+  "OldId": "Rhss",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "秘银板甲"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究秘银板甲"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "为矮人战士和领主装备秘银护板，使矮人战士受到的攻击伤害降低<A02O,DataC1>，领主降低<VP20,DataC1>。"
+    }
+  ],
+  "NewId": "R00F"
+}

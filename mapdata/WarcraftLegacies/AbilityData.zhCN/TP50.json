@@ -1,0 +1,19 @@
+{
+  "OldId": "ANsb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "穆拉丁的风暴之锤 （假人昏迷）"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（穆拉丁）"
+    }
+  ],
+  "NewId": "TP50"
+}

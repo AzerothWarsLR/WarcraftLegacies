@@ -1,0 +1,29 @@
+{
+  "OldId": "hars",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然魔法）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥术圣殿"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥术圣殿"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    }
+  ],
+  "NewId": "h036"
+}

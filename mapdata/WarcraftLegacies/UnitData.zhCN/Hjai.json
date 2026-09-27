@@ -1,0 +1,33 @@
+{
+  "OldId": "Hjai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "达拉然大法师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长召唤并持续杀伤敌人。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤吉安娜"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "吉安娜·普罗德摩尔"
+    }
+  ]
+}

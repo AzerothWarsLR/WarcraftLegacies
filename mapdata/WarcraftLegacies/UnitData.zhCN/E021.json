@@ -1,0 +1,34 @@
+{
+  "OldId": "Eevm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（女妖形态）"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "梅瑞狄斯"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "维克雷斯家族女族长"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤梅瑞狄斯"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长在战斗中灵活机动。可学习献祭、闪避、法力燃烧和恶魔变形。"
+    }
+  ],
+  "NewId": "E021"
+}

@@ -1,0 +1,35 @@
+{
+  "OldId": "AUdc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 瑞文戴尔男爵）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "一道死亡能量，可以对敌方生命单位造成伤害，或为友方亡灵单位恢复生命值。 |n|n|cffffcc001级|r - 恢复<AUdc,DataA1>点生命值。 |n|cffffcc002级|r - 恢复<AUdc,DataA2>点生命值。 |n|cffffcc003级|r - 恢复<AUdc,DataA3>点生命值。 |n|cffffcc004级|r - 恢复<AUdc,DataA4>点生命值。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "凋零缠绕 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "一道死亡能量，可为友方亡灵单位恢复<AUdc,DataA4>点生命值，或对敌方生命单位造成一半的伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "凋零缠绕"
+    }
+  ]
+}

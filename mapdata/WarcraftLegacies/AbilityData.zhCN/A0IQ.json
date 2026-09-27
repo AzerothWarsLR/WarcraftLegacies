@@ -1,0 +1,37 @@
+{
+  "OldId": "Aspo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城 - 游骑）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "践踏"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "践踏"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位的攻击使目标移动速度降低<A0IQ,DataB1,%>%，持续<A0IQ,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位的攻击使目标移动速度降低<A0IQ,DataB2,%>%，持续<A0IQ,Dur2>秒。"
+    }
+  ],
+  "NewId": "A0IQ"
+}

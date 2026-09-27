@@ -1,0 +1,29 @@
+{
+  "OldId": "otau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "狂暴图腾部族最强壮的战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "牛头人角斗士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练牛头人角斗士"
+    }
+  ],
+  "NewId": "o06T"
+}
