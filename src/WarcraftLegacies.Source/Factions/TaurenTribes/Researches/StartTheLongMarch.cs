@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using MacroTools.ControlPoints;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
@@ -38,12 +40,13 @@ public sealed class StartTheLongMarch : Research
   {
     var kodoController = player.Create(KodoControllerSlot);
     kodoController.Name = "Kodo Caravan";
-    if (_taurenTribes.Player != null)
+    ControlPointManager.Instance.NonCapturingPlayers.Add(kodoController);
+    foreach (var ally in GetCaravanAllies())
     {
-      kodoController.SetAlliance(_taurenTribes.Player, alliancetype.Passive, true);
-      kodoController.SetAlliance(_taurenTribes.Player, alliancetype.SharedVision, true);
-      _taurenTribes.Player.SetAlliance(kodoController, alliancetype.Passive, true);
-      _taurenTribes.Player.SetAlliance(kodoController, alliancetype.SharedVision, true);
+      kodoController.SetAlliance(ally, alliancetype.Passive, true);
+      kodoController.SetAlliance(ally, alliancetype.SharedVision, true);
+      ally.SetAlliance(kodoController, alliancetype.Passive, true);
+      ally.SetAlliance(kodoController, alliancetype.SharedVision, true);
     }
 
     var allBuildings = new List<unit> { _tent };
@@ -91,5 +94,29 @@ public sealed class StartTheLongMarch : Research
     _quest.BeginMarch(kodos);
     new LongMarchCaravan(_taurenTribes, _quest, kodos, guards, thousandNeedlesControlPoint,
       mulgoreControlPoint, Regions.ThunderBluff);
+  }
+
+  private IEnumerable<player> GetCaravanAllies()
+  {
+    var taurenPlayer = _taurenTribes.Player;
+    if (taurenPlayer == null)
+    {
+      yield break;
+    }
+
+    yield return taurenPlayer;
+    var team = taurenPlayer.GetPlayerData().Team;
+    if (team == null)
+    {
+      yield break;
+    }
+
+    foreach (var faction in team.GetAllFactions())
+    {
+      if (faction.Player != null && faction.Player != taurenPlayer)
+      {
+        yield return faction.Player;
+      }
+    }
   }
 }
