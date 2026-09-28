@@ -102,6 +102,7 @@ public sealed class QuestCountdownToExtinction : QuestData
       }
 
       GrantTinyBuildingItems(completingPlayer);
+      EmptyBurrowsInZone(completingPlayer);
       DestroyBuildingsInZone(completingPlayer, showDeathEffects: false, refundCost: true);
       RelocateSurvivors(completingPlayer, 100f);
       completingPlayer.RepositionCamera(_retreatDestination);
@@ -155,6 +156,7 @@ public sealed class QuestCountdownToExtinction : QuestData
       return;
     }
 
+    EmptyBurrowsInZone(completingPlayer);
     DestroyBuildingsInZone(completingPlayer, showDeathEffects: true, refundCost: false);
     var survivorCount = RelocateSurvivors(completingPlayer, DefeatSurvivorLifePercent);
 
@@ -164,6 +166,18 @@ public sealed class QuestCountdownToExtinction : QuestData
     }
 
     completingPlayer.RepositionCamera(_retreatDestination);
+  }
+
+  private void EmptyBurrowsInZone(player owningPlayer)
+  {
+    var buildings = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
+      .Where(u => u.Alive && u.IsUnitType(unittype.Structure) && _buildZone.Contains(u.X, u.Y))
+      .ToList();
+
+    foreach (var building in buildings)
+    {
+      building.IssueOrder(ORDER_STAND_DOWN);
+    }
   }
 
   private void DestroyBuildingsInZone(player owningPlayer, bool showDeathEffects, bool refundCost)
