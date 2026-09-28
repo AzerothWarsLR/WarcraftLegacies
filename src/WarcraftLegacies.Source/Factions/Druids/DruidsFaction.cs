@@ -64,6 +64,12 @@ public sealed class DruidsFaction : Faction
     MasterOfNatureProgression.Setup(ABILITY_A0U0_MASTER_OF_NATURE_BROWN_CENARIUS, UNIT_ECEN_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS,
       UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    var cenarionHold = AllLegends.Druids.CenarionHold.Unit;
+    if (cenarionHold != null)
+    {
+      cenarionHold.SetOwner(player.NeutralPassive);
+      cenarionHold.IsInvulnerable = true;
+    }
   }
 
   private static void RegisterResearches()

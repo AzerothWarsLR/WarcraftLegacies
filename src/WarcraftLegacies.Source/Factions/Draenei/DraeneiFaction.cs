@@ -54,6 +54,12 @@ public sealed class DraeneiFaction : Faction
   {
     Regions.ExodarBaseUnlock.CleanupNeutralPassiveUnits();
     Regions.Darkshore.CleanupNeutralPassiveUnits();
+    var exodar = AllLegends.Draenei.LegendExodar.Unit;
+    if (exodar != null)
+    {
+      exodar.SetOwner(player.NeutralPassive);
+      exodar.IsInvulnerable = true;
+    }
     base.OnNotPicked();
   }
 
