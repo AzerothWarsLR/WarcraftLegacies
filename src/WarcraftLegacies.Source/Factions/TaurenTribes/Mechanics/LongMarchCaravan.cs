@@ -76,6 +76,9 @@ public sealed class LongMarchCaravan
   private const float GuardVanguardOffset = 150f;
   private const float GuardEngagementRange = 350f;
   private const float AmbushCheckInterval = 7.00f;
+  private const float AmbusherEngagedRange = 600f;
+  private const float AmbusherProgressDistance = 50f;
+  private const int AmbusherStuckPulseLimit = 4;
   private const float MinAmbushChance = 0.10f;
   private const float MaxAmbushChance = 0.65f;
   private const float InitialFormUpGraceSeconds = 8.00f;
@@ -90,6 +93,7 @@ public sealed class LongMarchCaravan
   private readonly List<unit> _kodos;
   private readonly List<unit> _guards;
   private readonly List<(unit Unit, bool PrefersPlayer)> _ambushers = new();
+  private readonly Dictionary<unit, (float BestDistance, int StuckPulses)> _ambusherProgress = new();
   private readonly List<List<unit>> _pendingAmbushWaves = new();
   private int _ambushWavesSpawned;
   private int _ambushWavesDefeatedReported;
@@ -727,9 +731,48 @@ public sealed class LongMarchCaravan
   private void RefreshAmbusherOrders(List<unit> livingKodos)
   {
     _ambushers.RemoveAll(ambusher => !ambusher.Unit.Alive);
+    RescueStuckAmbushers(livingKodos);
     foreach (var (ambusherUnit, prefersPlayer) in _ambushers)
     {
       IssueAmbusherOrder(ambusherUnit, prefersPlayer, livingKodos);
+    }
+  }
+
+  private void RescueStuckAmbushers(List<unit> livingKodos)
+  {
+    foreach (var deadAmbusher in _ambusherProgress.Keys.Where(ambusher => !ambusher.Alive).ToList())
+    {
+      _ambusherProgress.Remove(deadAmbusher);
+    }
+
+    if (livingKodos.Count == 0)
+    {
+      return;
+    }
+
+    foreach (var (ambusherUnit, _) in _ambushers)
+    {
+      var nearestKodo = livingKodos
+        .OrderBy(kodo => MathEx.GetDistanceBetweenPoints(kodo.GetPosition(), ambusherUnit.GetPosition()))
+        .First();
+      var distance = MathEx.GetDistanceBetweenPoints(nearestKodo.GetPosition(), ambusherUnit.GetPosition());
+
+      if (distance <= AmbusherEngagedRange
+          || !_ambusherProgress.TryGetValue(ambusherUnit, out var progress)
+          || distance < progress.BestDistance - AmbusherProgressDistance)
+      {
+        _ambusherProgress[ambusherUnit] = (distance, 0);
+        continue;
+      }
+
+      if (progress.StuckPulses + 1 < AmbusherStuckPulseLimit)
+      {
+        _ambusherProgress[ambusherUnit] = (progress.BestDistance, progress.StuckPulses + 1);
+        continue;
+      }
+
+      ambusherUnit.SetPosition(nearestKodo.X, nearestKodo.Y);
+      _ambusherProgress[ambusherUnit] = (0, 0);
     }
   }
 
