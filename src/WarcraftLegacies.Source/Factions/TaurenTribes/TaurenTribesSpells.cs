@@ -28,6 +28,12 @@ public static class TaurenTribesSpells
     };
     SpellRegistry.Register(voodooHex);
 
+    SpellRegistry.Register(new SpeedBurst(ABILITY_A164_WIND_WALK_TAUREN_TRIBES_SPIRIT_EAGLE)
+    {
+      SpeedBonus = 0.25f,
+      Duration = 5
+    });
+
     SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
     {
       Duration = 60,
