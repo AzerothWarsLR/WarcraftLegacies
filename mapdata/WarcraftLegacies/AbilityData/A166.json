@@ -333,6 +333,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Channels for 2 seconds, then converges earth, wind, and fire at the target point, dealing 450 damage to nearby enemies. Also stuns them for 6 seconds (4 seconds against heroes)."
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }
