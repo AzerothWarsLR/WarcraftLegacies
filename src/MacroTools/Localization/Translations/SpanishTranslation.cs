@@ -1622,8 +1622,8 @@ internal sealed class SpanishTranslation : ITranslation
       "Los Shen'dralar, los sobrevivientes Altos Nacidos del Hundimiento, juran lealtad a sus congéneres Elfos Nocturnos. Como muestra de su lealtad, ofrecen un artefacto que han custodiado durante miles de años: el Cetro de la Reina.",
     ["outside the Athenaeum"] = "fuera del Athenaeum",
     ["the Athenaeum"] = "el Athenaeum",
-    ["Gain the Scepter of the Queen, the Athenaeum, 4 {highborne}, and the ability to train {highborne} from the {temple}"] =
-      "Obtienes el Cetro de la Reina, el Athenaeum, 4 {highborne}, y la habilidad de entrenar {highborne} desde el {temple}",
+    ["Gain the Scepter of the Queen, the Athenaeum, and increase the {highborne} limit by {amount}"] =
+      "Obtienes el Cetro de la Reina, el Athenaeum, y el límite de {highborne} aumenta en {amount}",
 
     // Sentinels - QuestVaultoftheWardens
     ["Vault of the Wardens"] = "Vault of the Wardens",
