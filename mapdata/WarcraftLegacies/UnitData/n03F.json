@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0DS,A0EF,A0DX,A12I,A0GK,A000,A064,Aion,A01T,ACrk,A0B2"
+      "Value": "A0DS,A0EF,A0DX,A12I,A0GK,A000,A064,Aion,A01T,A0B2,A16E,AZ03"
     },
     {
       "Id": "ua1t",
@@ -161,7 +161,7 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Kor\u0027kron Elite"
+      "Value": "Train Kor'kron Elite"
     },
     {
       "Id": "utub",
@@ -171,7 +171,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Kor\u0027kron Elite"
+      "Value": "Kor'kron Elite"
     },
     {
       "Id": "usnd",
