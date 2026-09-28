@@ -1,0 +1,31 @@
+{
+  "OldId": "ANms",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（哨兵 - 赎罪的上层精灵）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活一道护盾，每点法力值可吸收<A16C,DataA1>点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活一道护盾，每点法力值可吸收<A16C,DataA2>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法力护盾"
+    }
+  ],
+  "NewId": "A16C"
+}
