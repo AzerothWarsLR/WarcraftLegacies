@@ -129,6 +129,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenChieftainsGreatHall.blp"
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "o00J,o004"
     }
   ]
 }
