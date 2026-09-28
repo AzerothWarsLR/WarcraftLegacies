@@ -16,6 +16,18 @@ public static class TaurenTribesSpells
     };
     SpellRegistry.Register(devour);
 
+    var voodooHex = new InspireMadness(ABILITY_MD28_VOODOO_HEX_ROKHAN)
+    {
+      Radius = 400,
+      CountBase = 5,
+      CountLevel = 5,
+      Duration = 60,
+      ChancePercentage = 60.0f,
+      EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
+      EffectScaleTarget = 0.5f
+    };
+    SpellRegistry.Register(voodooHex);
+
     SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
     {
       Duration = 60,
