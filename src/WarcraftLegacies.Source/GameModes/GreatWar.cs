@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.GameModes;
 public sealed class GreatWar : IGameMode
 {
   /// <inheritdoc />
-  public string Name => Loc.Get("Great War (8v8)");
+  public string Name => Loc.Get("Great War (7v7)");
 
   /// <inheritdoc />
   public void OnChoose()
