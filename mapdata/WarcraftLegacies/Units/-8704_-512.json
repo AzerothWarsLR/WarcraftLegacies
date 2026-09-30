@@ -1,19 +1,19 @@
 [
   {
-    "TypeId": 1869902959,
+    "TypeId": 1970431855,
     "Variation": 0,
     "Position": {
-      "X": -7328,
-      "Y": -4256,
-      "Z": 35.00432
+      "X": -9183.523,
+      "Y": -979.9509,
+      "Z": 101.5
     },
-    "Rotation": 4.712389,
+    "Rotation": 2.2809074,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1869902959,
+    "SkinId": 1970431855,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -33,6 +33,6 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1047
+    "CreationNumber": 900318
   }
 ]
