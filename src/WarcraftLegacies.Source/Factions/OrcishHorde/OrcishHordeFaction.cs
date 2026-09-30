@@ -227,7 +227,7 @@ public sealed class OrcishHordeFaction : Faction
     var questSlayCenarius = AddQuest(new QuestSlayCenarius(questOrgrimmar));
     var questDemolishElfCities = AddQuest(new QuestDemolishElfCities(questSlayCenarius));
     var questThrallMaelstrom = AddQuest(new QuestThrallMaelstrom(AllLegends.Orc.Thrall, questOrgrimmar));
-    var questWarsongHold = AddQuest(new QuestWarsongHold(questThrallMaelstrom));
+    var questWarsongHold = AddQuest(new QuestWarsongHold(questDemolishElfCities));
     AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Orc.Thrall, questWarsongHold, questDemolishElfCities));
 
     RegisterTrollRescue(Regions.Troll_Rescue_1);
