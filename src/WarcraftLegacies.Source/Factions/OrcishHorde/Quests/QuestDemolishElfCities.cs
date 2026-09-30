@@ -14,10 +14,10 @@ public sealed class QuestDemolishElfCities : QuestData
 
   public QuestDemolishElfCities(QuestData previousQuest) : base(
     "Kalimdor Ablaze",
-    "The Night Elves' cities stand as the last bastions of resistance against the Horde. Nordrassil itself, the World Tree where the druids first stirred, must burn along with the rest.",
+    "The Night Elves' cities stand as the last bastions of resistance against the Horde. Nordrassil itself, the World Tree where the druids first stirred, must fall to the Horde along with the rest.",
     @"ReplaceableTextures\CommandButtons\BTNTreeOfAges.blp")
   {
-    AddObjective(new ObjectiveCapitalDead(AllLegends.Druids.Nordrassil));
+    AddObjective(new ObjectiveControlCapital(AllLegends.Druids.Nordrassil, false));
     AddObjective(new ObjectiveCapitalDead(AllLegends.Sentinels.Auberdine));
     AddObjective(new ObjectiveQuestComplete(previousQuest)
     {
@@ -29,7 +29,7 @@ public sealed class QuestDemolishElfCities : QuestData
   }
 
   public override string RewardFlavour =>
-    "Nordrassil burns, and with it the Night Elves' last hope of standing united against the Horde. Grom Hellscream leads the charge, his warband growing richer and more battle-hardened with every city razed.";
+    "Nordrassil has fallen, and with it the Night Elves' last hope of standing united against the Horde. Grom Hellscream leads the charge, his warband growing richer and more battle-hardened with every city razed.";
 
   protected override string RewardDescription =>
     "Grom Hellscream gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, you gain 500 gold, and you can train Garrosh Hellscream at the Altar of Storms";
