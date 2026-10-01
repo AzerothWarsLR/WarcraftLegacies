@@ -151,7 +151,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": "ucut",
@@ -196,6 +196,10 @@
       "Id": "ucua",
       "Type": 3,
       "Value": "UI\\Widgets\\Console\\Human\\infocard-shaman.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

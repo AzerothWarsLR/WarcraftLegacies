@@ -69,6 +69,14 @@
       "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSymbolOfStrength.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
     }
   ]
 }
