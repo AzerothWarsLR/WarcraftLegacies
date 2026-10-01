@@ -243,8 +243,8 @@
       "Flags": 1,
       "Name": "Sentinels",
       "StartPosition": {
-        "X": -20672,
-        "Y": 8320
+        "X": -18112,
+        "Y": 15424
       },
       "AllyLowPriorityFlags": 4194321,
       "AllyHighPriorityFlags": 262164,
