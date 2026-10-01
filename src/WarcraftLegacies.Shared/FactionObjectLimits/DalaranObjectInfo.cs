@@ -69,5 +69,6 @@ public static class DalaranObjectInfo
     yield return new(UPGRADE_R06J_IMPROVED_SLOW_DALARAN, Unlimited);
     yield return new(UPGRADE_R061_IMPROVED_FORKED_LIGHTNING_DALARAN, Unlimited);
     yield return new(UPGRADE_R06O_IMPROVED_PHASE_BLADE_DALARAN, Unlimited);
+    yield return new(UPGRADE_RDTP_TELEPORTATION_DALARAN, Unlimited);
   }
 }
