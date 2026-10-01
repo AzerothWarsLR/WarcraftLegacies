@@ -41,7 +41,7 @@ public sealed class Team
 
       const string suffix = " Pact";
       return Name.EndsWith(suffix, StringComparison.Ordinal)
-        ? Loc.Get(Name[..^suffix.Length]) + " " + Loc.Get("Pact")
+        ? Loc.Get(Name.Substring(0, Name.Length - suffix.Length)) + " " + Loc.Get("Pact")
         : whole;
     }
   }
