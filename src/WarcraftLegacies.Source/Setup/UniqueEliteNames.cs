@@ -375,6 +375,26 @@ public static class UniqueEliteNames
           "Sira Moonwarden",
           "The Iron Raven"
         },
+      [UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS] =
+        new()
+        {
+          "Aelanis Duskwhisper",
+          "Aranthea Starweave",
+          "Belarion Moonshade",
+          "Caelith Silverbrook",
+          "Elandris Nightglade",
+          "Falathiel Dawnmantle",
+          "Ilyrae Thistlelight",
+          "Kaelen Ashenveil",
+          "Lorethas Starfall",
+          "Myrandel Sunshadow",
+          "Nalaris Windspire",
+          "Quilenna Mistbloom",
+          "Sathrenil Gloamshard",
+          "Tarenthis Silvermoor",
+          "Vaelthir Duskmantle",
+          "Ysindra Moonfall"
+        },
       [UNIT_H09R_VINDICATOR_DRAENEI] =
         new()
         {
