@@ -80,7 +80,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "RT01,RT02,RTLM"
+      "Value": "RT01,RT02"
     },
     {
       "Id": "ulum",

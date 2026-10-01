@@ -3,40 +3,80 @@ using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.PreplacedWidgets;
-using MacroTools.Researches;
-using WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
+using WCSharp.Events;
 
-namespace WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
+namespace WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
 
 /// <summary>
-/// When researched, packs the starting camp's buildings into pack kodos and starts <see cref="LongMarchCaravan"/>
-/// marching them toward Thunder Bluff.
+/// When Cairne Bloodhoof is first trained, grants the Tauren Tribes an escort of Tauren and Spirit Walkers, packs the
+/// starting camp's buildings into pack kodos and starts <see cref="LongMarchCaravan"/> marching them toward Thunder Bluff.
 /// </summary>
-public sealed class StartTheLongMarch : Research
+public sealed class LongMarchDeparture
 {
   private const int KodoControllerSlot = 8;
   private const float PackUpAnimationSeconds = 1.50f;
   private const int GuardCount = 4;
   private const float GuardSpawnSpacing = 60f;
+  private const int EscortTaurenCount = 8;
+  private const int EscortSpiritWalkerCount = 4;
+  private const float EscortSpawnSpacing = 90f;
+  private const float EscortSpawnOffsetY = -250f;
 
   private readonly Faction _taurenTribes;
   private readonly QuestTheLongMarch _quest;
   private readonly unit _tent;
   private readonly List<unit> _productionBuildings;
+  private bool _departed;
 
-  /// <inheritdoc />
-  public StartTheLongMarch(Faction taurenTribes, QuestTheLongMarch quest, unit tent, List<unit> productionBuildings)
-    : base(UPGRADE_RTLM_START_THE_LONG_MARCH_TAUREN_TRIBES, 0, 0)
+  /// <summary>
+  /// Initializes a new instance of the <see cref="LongMarchDeparture"/> class.
+  /// </summary>
+  public LongMarchDeparture(Faction taurenTribes, QuestTheLongMarch quest, unit tent, List<unit> productionBuildings)
   {
     _taurenTribes = taurenTribes;
     _quest = quest;
     _tent = tent;
     _productionBuildings = productionBuildings;
+    PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingTrained, OnCairneTrained,
+      UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES);
   }
 
-  /// <inheritdoc />
-  public override void OnResearch(player researchingPlayer)
+  private void OnCairneTrained()
+  {
+    var taurenPlayer = _taurenTribes.Player;
+    if (_departed || taurenPlayer == null || @event.TrainedUnit.Owner != taurenPlayer)
+    {
+      return;
+    }
+
+    _departed = true;
+    SpawnEscort(taurenPlayer);
+    Depart();
+  }
+
+  private void SpawnEscort(player taurenPlayer)
+  {
+    var spawnIndex = 0;
+    for (var i = 0; i < EscortTaurenCount; i++)
+    {
+      SpawnEscortUnit(taurenPlayer, UNIT_OTAU_TAUREN_TAUREN_TRIBES, spawnIndex++);
+    }
+
+    for (var i = 0; i < EscortSpiritWalkerCount; i++)
+    {
+      SpawnEscortUnit(taurenPlayer, UNIT_OSPW_SPIRIT_WALKER_TAUREN_TRIBES, spawnIndex++);
+    }
+  }
+
+  private void SpawnEscortUnit(player taurenPlayer, int unitTypeId, int spawnIndex)
+  {
+    var offsetX = (spawnIndex % 6 - 2.5f) * EscortSpawnSpacing;
+    var offsetY = EscortSpawnOffsetY - spawnIndex / 6 * EscortSpawnSpacing;
+    unit.Create(taurenPlayer, unitTypeId, _tent.X + offsetX, _tent.Y + offsetY, _tent.Facing);
+  }
+
+  private void Depart()
   {
     var kodoController = player.Create(KodoControllerSlot);
     kodoController.Name = "Kodo Caravan";

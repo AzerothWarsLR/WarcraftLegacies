@@ -8,6 +8,7 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+using WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -42,7 +43,7 @@ public sealed class TaurenTribesFaction : Faction
     };
     CinematicMusic = "SadMystery";
     IntroText = () => Loc.Format(
-      "You are playing as the wandering {faction}.\n\nYou begin as a people without a home. Start the Long March from your Chief's Lodge as soon as you can, and escort Cairne Bloodhoof and your pack kodos north across the plains to Mulgore, where the Tribes will raise their new home at Thunder Bluff. Centaur raiders will hound you every step of the way, and every kodo that survives makes your new home richer.\n\nOnce settled, win over the ogres of Stonemaul and Dunemaul, and stand beside your Orcish allies as the Horde claims its place in Kalimdor. The Night Elves' World Tree and Temple of the Moon lie within reach.\n\nWhen the southern passes open, the Tribes can claim Earthmother's Cradle in Un'Goro Crater.",
+      "You are playing as the wandering {faction}.\n\nYou begin on the move. Thunder Bluff is already yours, but none of your people can be trained until the march is over, so train Cairne Bloodhoof as soon as you can. The moment he takes up the lead, the Long March sets out with a war party of Tauren and Spirit Walkers; escort your pack kodos north across the plains to Mulgore. While they travel, the elders of Thunder Bluff can get on with your upgrades. Centaur raiders will hound you every step of the way, and every kodo that survives makes your new home richer.\n\nOnce settled, win over the ogres of Stonemaul and Dunemaul, and stand beside your Orcish allies as the Horde claims its place in Kalimdor. The Night Elves' World Tree and Temple of the Moon lie within reach.\n\nWhen the southern passes open, the Tribes can claim Earthmother's Cradle in Un'Goro Crater.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Tauren Tribes")}|r"));
     Nicknames = new List<string>
     {
@@ -74,7 +75,6 @@ public sealed class TaurenTribesFaction : Faction
     TaurenTribesSpells.Setup();
     TaurenTribesTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    new GrantResearchOnLegendTrained(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES);
   }
 
   /// <inheritdoc />
@@ -167,6 +167,6 @@ public sealed class TaurenTribesFaction : Faction
           faction?.ModObjectLimit(UNIT_VP52_OGRE_LORD_TAUREN_TRIBES_ELITE, 6);
         }
       });
-    ResearchManager.Register(new StartTheLongMarch(this, _theLongMarch, _tent, _productionBuildings));
+    new LongMarchDeparture(this, _theLongMarch, _tent, _productionBuildings);
   }
 }
