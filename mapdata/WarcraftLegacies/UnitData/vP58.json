@@ -154,7 +154,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "RT21"
+      "Value": "RT21,RT20"
     },
     {
       "Id": "ubpx",

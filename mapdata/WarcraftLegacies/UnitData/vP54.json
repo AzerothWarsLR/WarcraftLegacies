@@ -121,6 +121,11 @@
       "Id": "ucut",
       "Type": 3,
       "Value": "- Purge,- Purge|n- Stone Armor,- Purge|n- Stone Armor|n- Volcano Ward"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT20"
     }
   ]
 }

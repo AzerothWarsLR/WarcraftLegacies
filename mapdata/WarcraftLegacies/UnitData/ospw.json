@@ -107,6 +107,11 @@
       "Id": "uhot",
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT20"
     }
   ]
 }

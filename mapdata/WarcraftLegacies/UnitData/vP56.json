@@ -210,6 +210,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\PriestMissile\\PriestMissile.mdl"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT20"
     }
   ]
 }
