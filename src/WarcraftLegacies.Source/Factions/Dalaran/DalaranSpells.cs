@@ -65,7 +65,7 @@ public static class DalaranSpells
 
     var dalaranShield = new DalaranShield(ABILITY_A0E0_DALARAN_SHIELD)
     {
-      Center = Regions.Dalaran.Center,
+      Center = Regions.DalaranShield.Center,
       MaxRadius = 1640,
       MaxEffectScale = 2.3f,
       GrowthDuration = 4,
