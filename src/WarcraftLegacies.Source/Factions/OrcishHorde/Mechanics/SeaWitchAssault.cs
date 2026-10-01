@@ -11,16 +11,19 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
 
 /// <summary>
-/// Spawns four waves of murlocs against the Orcish Horde's landing island, with an independent Sea Witch
+/// Spawns three waves of murlocs against the Orcish Horde's landing island, with an independent Sea Witch
 /// that can be killed for an early win or flee once at low health via an invulnerable, uninterruptible
 /// teleport channel. She carries her health between waves, healing 10% of it on each respawn, and flees
-/// automatically a couple seconds after her wave's last murloc dies if she hasn't already. On the fourth
-/// wave she no longer flees at all. Clearing the fourth wave, or killing the Sea Witch, completes
-/// <see cref="QuestCountdownToExtinction"/>. Stops if the Great Hall dies.
+/// automatically a couple seconds after the next wave is called if she hasn't already. The next wave is called
+/// once only a few murlocs of the current wave remain, or after a time limit, whichever comes first. On the
+/// third wave she no longer flees at all. Killing every murloc once the third wave has spawned, or killing the
+/// Sea Witch, completes <see cref="QuestCountdownToExtinction"/>. Stops if the Great Hall dies.
 /// </summary>
 public sealed class SeaWitchAssault
 {
-  private const int TotalWaves = 4;
+  private const int TotalWaves = 3;
+  private const int NextWaveRemainingUnitThreshold = 3;
+  private const float NextWaveMaxDelaySeconds = 40f;
   private const float FirstWaveDelaySeconds = 75f;
   private const float TickInterval = 2f;
   private const float NextWaveDelaySeconds = 5f;
@@ -39,12 +42,12 @@ public sealed class SeaWitchAssault
     "Your efforts are futile, land dwellers. The darkness of the deeps is all that awaits you.",
     "Sea Witch");
 
-  private static readonly Dialogue _seaWitchWave3Dialogue = new(
+  private static readonly Dialogue _seaWitchWave2Dialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05SeaWitch18.flac",
     "Soon this land will be consumed by the tides! Prepare for the sea's cold embrace.",
     "Sea Witch");
 
-  private static readonly Dialogue _seaWitchWave4Dialogue = new(
+  private static readonly Dialogue _seaWitchFinalWaveDialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05SeaWitch20.flac",
     "Yes! At last, the end draws near. Your deaths are only the beginning - soon all land dwellers will be entombed in a watery grave.",
     "Sea Witch");
@@ -59,12 +62,7 @@ public sealed class SeaWitchAssault
     "We still need more time to finish the repairs, warchief.",
     "Grunt");
 
-  private static readonly Dialogue _repairsWave3Dialogue = new(
-    @"Sound\Dialogue\TutorialCampaign\Demo05\D05Grunt19.flac",
-    "It won't be much longer now, warchief - the ships are nearly ready.",
-    "Grunt");
-
-  private static readonly Dialogue _repairsWave4Dialogue = new(
+  private static readonly Dialogue _repairsFinalWaveDialogue = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Thrall21.flac",
     "Hold the line, my warriors! Our freedom is at hand!",
     "Thrall");
@@ -75,6 +73,7 @@ public sealed class SeaWitchAssault
   private readonly Point _attackTarget;
   private readonly Rectangle[] _spawnRegions;
   private readonly List<unit> _activeWaveUnits = new();
+  private readonly List<unit> _currentWaveUnits = new();
   private readonly HashSet<unit> _greatHallTargeters = new();
 
   private int _currentWave;
@@ -89,6 +88,7 @@ public sealed class SeaWitchAssault
   private timer? _waveDialogTimer;
   private timerdialog? _waveDialog;
   private timer? _waveClearCheckTimer;
+  private timer? _waveDeadlineTimer;
   private timer? _seaWitchCheckTimer;
   private timer? _seaWitchSpawnTimer;
   private timer? _teleportTimer;
@@ -143,8 +143,7 @@ public sealed class SeaWitchAssault
     }
 
     _currentWave = waveNumber;
-    _activeWaveUnits.Clear();
-    _greatHallTargeters.Clear();
+    _currentWaveUnits.Clear();
     _waveUnitCounter = 0;
     UpdateWaveDialog(waveNumber);
 
@@ -160,18 +159,15 @@ public sealed class SeaWitchAssault
         SpawnGroup(_spawnRegions[0], UNIT_O07C_MURLOC_HUNTSMAN_ORCISH_HORDE, 3);
         break;
       case 2:
-        SpawnGroup(_spawnRegions[1], UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, 7);
-        SpawnGroup(_spawnRegions[1], UNIT_O07C_MURLOC_HUNTSMAN_ORCISH_HORDE, 4);
+        SpawnGroup(_spawnRegions[1], UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, 6);
+        SpawnGroup(_spawnRegions[1], UNIT_O07C_MURLOC_HUNTSMAN_ORCISH_HORDE, 3);
         SpawnGroup(_spawnRegions[1], UNIT_O07D_MURLOC_NIGHTCRAWLER_ORCISH_HORDE, 1);
+        SpawnGroup(_spawnRegions[2], UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, 4);
+        SpawnGroup(_spawnRegions[2], UNIT_O07C_MURLOC_HUNTSMAN_ORCISH_HORDE, 2);
+        SpawnGroup(_spawnRegions[2], UNIT_O07D_MURLOC_NIGHTCRAWLER_ORCISH_HORDE, 2);
         _orcishHorde.Player?.QueueDialogue(_repairsWave2Dialogue);
         break;
       case 3:
-        SpawnGroup(_spawnRegions[2], UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, 5);
-        SpawnGroup(_spawnRegions[2], UNIT_O07C_MURLOC_HUNTSMAN_ORCISH_HORDE, 3);
-        SpawnGroup(_spawnRegions[2], UNIT_O07D_MURLOC_NIGHTCRAWLER_ORCISH_HORDE, 3);
-        _orcishHorde.Player?.QueueDialogue(_repairsWave3Dialogue);
-        break;
-      case 4:
         foreach (var spawnRegion in _spawnRegions)
         {
           SpawnGroup(spawnRegion, UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, 4);
@@ -180,7 +176,7 @@ public sealed class SeaWitchAssault
         }
 
         SpawnGroup(_spawnRegions[2], UNIT_N00R_MURLOC_SORCERER_NEUTRAL_HOSTILE_BOSS, 1);
-        _orcishHorde.Player?.QueueDialogue(_repairsWave4Dialogue);
+        _orcishHorde.Player?.QueueDialogue(_repairsFinalWaveDialogue);
         break;
     }
 
@@ -197,8 +193,16 @@ public sealed class SeaWitchAssault
       }
     });
 
+    _waveDeadlineTimer?.Dispose();
+    _waveDeadlineTimer = null;
+    if (waveNumber < TotalWaves)
+    {
+      _waveDeadlineTimer = timer.Create();
+      _waveDeadlineTimer.Start(NextWaveMaxDelaySeconds, false, CallNextWave);
+    }
+
     _waveClearCheckTimer ??= timer.Create();
-    _waveClearCheckTimer.Start(TickInterval, true, CheckWaveCleared);
+    _waveClearCheckTimer.Start(TickInterval, true, CheckWaveProgress);
   }
 
   private void UpdateWaveDialog(int waveNumber)
@@ -242,6 +246,7 @@ public sealed class SeaWitchAssault
 
       _waveUnitCounter++;
       _activeWaveUnits.Add(spawned);
+      _currentWaveUnits.Add(spawned);
     }
   }
 
@@ -277,8 +282,8 @@ public sealed class SeaWitchAssault
     var spawnDialogue = _currentWave switch
     {
       1 => _seaWitchAppearsDialogue,
-      3 => _seaWitchWave3Dialogue,
-      4 => _seaWitchWave4Dialogue,
+      2 => _seaWitchWave2Dialogue,
+      3 => _seaWitchFinalWaveDialogue,
       _ => null
     };
     if (spawnDialogue != null)
@@ -363,7 +368,7 @@ public sealed class SeaWitchAssault
     Conclude();
   }
 
-  private void CheckWaveCleared()
+  private void CheckWaveProgress()
   {
     foreach (var waveUnit in _activeWaveUnits)
     {
@@ -382,19 +387,34 @@ public sealed class SeaWitchAssault
       }
     }
 
-    if (_activeWaveUnits.Any(waveUnit => waveUnit.Alive))
-    {
-      return;
-    }
-
-    _waveClearCheckTimer?.Dispose();
-    _waveClearCheckTimer = null;
-
     if (_currentWave >= TotalWaves)
     {
+      if (_activeWaveUnits.Any(waveUnit => waveUnit.Alive))
+      {
+        return;
+      }
+
+      _waveClearCheckTimer?.Dispose();
+      _waveClearCheckTimer = null;
       Conclude();
       return;
     }
+
+    if (_currentWaveUnits.Count(waveUnit => waveUnit.Alive) <= NextWaveRemainingUnitThreshold)
+    {
+      CallNextWave();
+    }
+  }
+
+  private void CallNextWave()
+  {
+    if (_concluded || _currentWave >= TotalWaves || _waveTimer != null)
+    {
+      return;
+    }
+
+    _waveDeadlineTimer?.Dispose();
+    _waveDeadlineTimer = null;
 
     if (_seaWitch != null && _seaWitch.Alive && !_seaWitchCasting)
     {
@@ -445,6 +465,8 @@ public sealed class SeaWitchAssault
     _waveTimer = null;
     _waveClearCheckTimer?.Dispose();
     _waveClearCheckTimer = null;
+    _waveDeadlineTimer?.Dispose();
+    _waveDeadlineTimer = null;
     _seaWitchCheckTimer?.Dispose();
     _seaWitchCheckTimer = null;
     _seaWitchSpawnTimer?.Dispose();

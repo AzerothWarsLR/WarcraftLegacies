@@ -10,7 +10,7 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 
 /// <summary>
-/// The Orcish Horde's starting quest. Thrall's forces must hold the landing island against four waves of
+/// The Orcish Horde's starting quest. Thrall's forces must hold the landing island against three waves of
 /// murlocs, headed up by a Sea Witch, while the fleet is repaired.
 /// </summary>
 public sealed class QuestCountdownToExtinction : QuestData
