@@ -61,7 +61,7 @@ public sealed class OrcishHordeFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 130,
+      Income = 200,
       Turns = 10
     };
     CinematicMusic = "SadMystery";

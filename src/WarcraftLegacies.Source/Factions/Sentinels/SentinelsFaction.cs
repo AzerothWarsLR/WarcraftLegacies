@@ -36,7 +36,7 @@ public sealed class SentinelsFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 145,
+      Income = 195,
       Turns = 10
     };
     CinematicMusic = "Comradeship";
