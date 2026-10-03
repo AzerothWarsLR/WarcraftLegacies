@@ -1,4 +1,4 @@
-﻿﻿using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -32,10 +32,10 @@ public sealed class QuestSlayCenarius : QuestData
     "Cenarius falls before the Horde's onslaught. Grom Hellscream stands triumphant, and word of the Grunts' resilience in that battle spreads through the clans.";
 
   protected override string RewardDescription =>
-    "Grom Hellscream gains 5 Strength, 5 Agility, and 5 Intelligence, and Grunts permanently gain 25 hit points";
+    "Grom Hellscream gains 10 Strength, 10 Agility, and 5 Intelligence, and Grunts permanently gain 75 hit points";
 
   protected override void OnComplete(Faction completingFaction)
   {
-    AllLegends.Orc.GromHellscream.Unit?.AddHeroAttributes(5, 5, 5);
+    AllLegends.Orc.GromHellscream.Unit?.AddHeroAttributes(10, 10, 5);
   }
 }
