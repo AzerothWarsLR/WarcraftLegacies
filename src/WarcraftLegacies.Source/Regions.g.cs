@@ -161,6 +161,11 @@ public static class Regions
   public static Rectangle IllidanLast { get; set; } = new Rectangle(-18720f, 3712f, -18688f, 3744f);
   public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-640f, 5152f, 1536f, 6720f);
   public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
+  public static Rectangle ImmortalityBrokenIsles { get; set; } = new Rectangle(-5920f, -16896f, 5664f, 13568f);
+  public static Rectangle ImmortalityEasternKingdoms1 { get; set; } = new Rectangle(6528f, -24608f, 23296f, 13568f);
+  public static Rectangle ImmortalityEasternKingdoms2 { get; set; } = new Rectangle(12800f, 13568f, 23296f, 24576f);
+  public static Rectangle ImmortalityKalimdor { get; set; } = new Rectangle(-28160f, -21600f, -6400f, 24576f);
+  public static Rectangle ImmortalityNorthrend { get; set; } = new Rectangle(-9440f, 13440f, 9760f, 24448f);
   public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 8608f, -18208f);
   public static Rectangle Invasion1 { get; set; } = new Rectangle(-13248f, 3776f, -10656f, 4896f);
   public static Rectangle Invasion2 { get; set; } = new Rectangle(-14624f, 5184f, -13664f, 8992f);
