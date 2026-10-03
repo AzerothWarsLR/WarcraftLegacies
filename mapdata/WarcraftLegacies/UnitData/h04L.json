@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "S003,A0QZ,A119,AEst,A09Q,A111,Aien,A08P,A0GK"
+      "Value": "A16O,A16H,A16I,A16K,A16M,AEst,A09Q,A16N,Aien,A0GK"
     },
     {
       "Id": "uacq",
@@ -184,7 +184,7 @@
     {
       "Id": "ua1m",
       "Type": 3,
-      "Value": "Abilities\\Weapons\\SearingArrow\\SearingArrowMissile.mdl"
+      "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
     },
     {
       "Id": "usca",
