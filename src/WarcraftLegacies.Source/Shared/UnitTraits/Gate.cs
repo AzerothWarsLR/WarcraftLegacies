@@ -20,7 +20,6 @@ public sealed class Gate : UnitTrait, IEffectOnUpgrade, IEffectOnDeath, IEffectO
   /// </summary>
   /// <param name="openedId">The unit type ID of the gate while open.</param>
   /// <param name="deadId">The unit type ID of the gate while dead.</param>
-  /// <param name="openAnimation">The animation that shows the gate as open.</param>
   public Gate(int openedId, int deadId, string openAnimation = "death alternate")
   {
     _openedId = openedId;
