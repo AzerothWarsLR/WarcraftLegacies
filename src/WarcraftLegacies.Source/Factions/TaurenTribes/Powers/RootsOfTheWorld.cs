@@ -7,9 +7,6 @@ using WarcraftLegacies.Source.Factions.TaurenTribes.Spells;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes.Powers;
 
-/// <summary>
-/// Lets the owner's World Trees send units between each other.
-/// </summary>
 public sealed class RootsOfTheWorld : Power
 {
   private readonly int _spellbookId;
@@ -53,7 +50,6 @@ public sealed class RootsOfTheWorld : Power
 
   private List<WorldTreeTravelSpell> TravelSpells { get; }
 
-  /// <inheritdoc />
   public override void OnAdd(Faction whichFaction)
   {
     _faction = whichFaction;
@@ -75,7 +71,6 @@ public sealed class RootsOfTheWorld : Power
     Refresh();
   }
 
-  /// <inheritdoc />
   public override void OnRemove(Faction whichFaction)
   {
     foreach (var link in _links)
@@ -230,9 +225,6 @@ public sealed class RootsOfTheWorld : Power
   }
 }
 
-/// <summary>
-/// A World Tree in the <see cref="RootsOfTheWorld"/> network and the ability that travels to it.
-/// </summary>
 public sealed class WorldTreeLink
 {
   public WorldTreeLink(Capital tree, int travelAbilityId)

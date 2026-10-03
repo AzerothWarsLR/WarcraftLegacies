@@ -7,9 +7,6 @@ using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
 
-/// <summary>
-/// Completed while the faction itself owns a particular <see cref="Capital"/>, not just its team.
-/// </summary>
 public sealed class ObjectiveOwnCapital : Objective
 {
   private readonly Capital _target;
