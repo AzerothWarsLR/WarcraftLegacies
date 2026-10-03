@@ -1,4 +1,5 @@
-﻿﻿using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using MacroTools.Artifacts;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -44,7 +45,7 @@ public sealed class QuestThrallMaelstrom : QuestData
     "Thrall has stabilized the power of the Maelstrom and stored it within the Doomhammer. He is no longer merely the Warchief of the Horde; he is the World-Shaman of all Azeroth.";
 
   protected override string RewardDescription =>
-    "Thrall gains 2000 experience and 15 to all attributes, and you gain the Power Maelstrom Spirit";
+    "Thrall gains 2000 experience, 15 to all attributes and Drek'thar's Spellbook, and you gain the Power Maelstrom Spirit";
 
   protected override void OnComplete(Faction completingFaction)
   {
@@ -53,6 +54,10 @@ public sealed class QuestThrallMaelstrom : QuestData
       _thrall.Unit.Name = Loc.Get("World-Shaman");
       _thrall.Unit.AddHeroAttributes(15, 15, 15);
       AddHeroXP(_thrall.Unit, 2000, true);
+
+      var drektharsSpellbook = new Artifact(item.Create(ITEM_DTSB_DREK_THAR_S_SPELLBOOK, 0, 0));
+      ArtifactManager.Register(drektharsSpellbook);
+      _thrall.Unit.AddItemSafe(drektharsSpellbook.Item);
     }
 
     var maelstromWeapon = new MaelstromWeapon(0.15f, 100)
