@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -8,6 +9,7 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+using WarcraftLegacies.Source.Factions.TaurenTribes.Powers;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -20,6 +22,9 @@ namespace WarcraftLegacies.Source.Factions.TaurenTribes;
 
 public sealed class TaurenTribesFaction : Faction
 {
+  private const string MassTeleportEffect = @"Abilities\Spells\Human\MassTeleport\MassTeleportCaster.mdl";
+  private const string MassTeleportChannelEffect = @"Abilities\Spells\Human\MassTeleport\MassTeleportTo.mdl";
+
   private const float CampX = -9033.7f;
   private const float CampY = -11365.6f;
 
@@ -136,6 +141,20 @@ public sealed class TaurenTribesFaction : Faction
     AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
     AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.TempleOfTheMoon, _theLongMarch));
     AddQuest(new QuestEarthmothersCradle(Regions.EarthmothersCradle));
+
+    var worldTreeLinks = new List<WorldTreeLink>
+    {
+      new(AllLegends.Druids.Nordrassil, ABILITY_A16Q_TRAVEL_TO_NORDRASSIL_TAUREN_TRIBES_ROOTS_OF_THE_WORLD),
+      new(AllLegends.Neutral.Shaladrassil, ABILITY_A16R_TRAVEL_TO_SHALADRASSIL_TAUREN_TRIBES_ROOTS_OF_THE_WORLD),
+      new(AllLegends.Neutral.Seradane, ABILITY_A16S_TRAVEL_TO_THE_GREAT_TREE_OF_SERADANE_TAUREN_TRIBES_ROOTS_OF_THE_WORLD)
+    };
+    var rootsOfTheWorld = new RootsOfTheWorld(ABILITY_A16P_ROOTS_OF_THE_WORLD_TAUREN_TRIBES_ROOTS_OF_THE_WORLD,
+      ABILITY_A16T_CANCEL_TRAVEL_TAUREN_TRIBES_ROOTS_OF_THE_WORLD,
+      worldTreeLinks, 6, 1100, 90, 120, MassTeleportChannelEffect, MassTeleportEffect)
+    {
+      IconName = "Teleportation"
+    };
+    AddQuest(new QuestRootsOfTheWorld(worldTreeLinks.Select(x => x.Tree).ToList(), rootsOfTheWorld));
   }
 
   private void RegisterOrcishHordeQuests(OrcishHordeFaction orcishHorde)
