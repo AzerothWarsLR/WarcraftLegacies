@@ -203,6 +203,8 @@ public static class Buffs
   public const int BUFF_B0E5_LORD_OF_THE_FOREST = 1110459701;
   public const int BUFF_B0E6_CHALLENGING_TAUNT = 1110459702;
   public const int BUFF_B0E7_SEED_OF_REBIRTH = 1110459703;
+  public const int BUFF_B0EB_MASS_WIND_WALK = 1110459714;
+  public const int BUFF_B0EC_ELUNE_S_PROTECTION = 1110459715;
   public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
   public const int BUFF_BEAH_THORNS_AURA = 1111843176;
   public const int BUFF_BEAR_TRUESHOT_AURA = 1111843186;
