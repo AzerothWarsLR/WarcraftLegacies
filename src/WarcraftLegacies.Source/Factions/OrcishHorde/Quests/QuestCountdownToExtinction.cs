@@ -5,6 +5,7 @@ using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
@@ -101,10 +102,11 @@ public sealed class QuestCountdownToExtinction : QuestData
         return;
       }
 
-      GrantTinyBuildingItems(completingPlayer);
+      var tinyItemTypes = GetTinyBuildingItemTypes(completingPlayer);
       EmptyBurrowsInZone(completingPlayer);
       DestroyBuildingsInZone(completingPlayer, showDeathEffects: false, refundCost: true);
       RelocateSurvivors(completingPlayer, 100f);
+      GrantTinyBuildingItems(completingPlayer, tinyItemTypes);
       completingPlayer.RepositionCamera(_retreatDestination);
     });
   }
@@ -122,25 +124,29 @@ public sealed class QuestCountdownToExtinction : QuestData
     }
   }
 
-  private void GrantTinyBuildingItems(player owningPlayer)
+  private List<int> GetTinyBuildingItemTypes(player owningPlayer)
   {
-    var thrall = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
-      .FirstOrDefault(u => u.UnitType == UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE);
-    if (thrall == null)
-    {
-      thrall = unit.Create(owningPlayer, UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, _retreatDestination.X,
-        _retreatDestination.Y, 0);
-    }
-
-    var keyBuildingTypes = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
+    return GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
       .Where(u => u.Alive && u.IsUnitType(unittype.Structure) && _buildZone.Contains(u.X, u.Y)
         && _keyBuildingTinyItems.ContainsKey(u.UnitType))
-      .Select(u => u.UnitType)
-      .Distinct();
+      .Select(u => _keyBuildingTinyItems[u.UnitType])
+      .Distinct()
+      .ToList();
+  }
 
-    foreach (var unitType in keyBuildingTypes)
+  private void GrantTinyBuildingItems(player owningPlayer, List<int> itemTypes)
+  {
+    var thrallLegend = AllLegends.Orc.Thrall;
+    if (thrallLegend.Unit == null || !thrallLegend.Unit.Alive)
     {
-      thrall.AddItem(item.Create(_keyBuildingTinyItems[unitType], thrall.X, thrall.Y));
+      thrallLegend.ForceCreate(owningPlayer, _retreatDestination, 0);
+    }
+
+    var thrall = thrallLegend.Unit!;
+
+    foreach (var itemType in itemTypes)
+    {
+      thrall.AddItemSafe(item.Create(itemType, thrall.X, thrall.Y));
     }
   }
 
