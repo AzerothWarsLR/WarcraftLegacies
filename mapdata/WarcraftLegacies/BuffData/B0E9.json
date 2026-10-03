@@ -1,0 +1,34 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B0E9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASEagleSpirit.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Raking Talons"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Raking Talons (Spirit Eagle)"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit attacks and moves faster and deals Pierce damage, but takes increased damage."
+    }
+  ]
+}

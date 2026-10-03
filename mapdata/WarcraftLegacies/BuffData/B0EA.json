@@ -1,0 +1,34 @@
+{
+  "OldId": "Bbsk",
+  "NewId": "B0EA",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSpiritWorldRetreat.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Savage Frenzy"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Savage Frenzy (Spirit Wyvern)"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit attacks faster and deals Pierce damage, but takes increased damage."
+    }
+  ]
+}

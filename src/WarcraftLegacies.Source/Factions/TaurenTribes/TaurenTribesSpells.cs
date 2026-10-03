@@ -34,6 +34,16 @@ public static class TaurenTribesSpells
       Duration = 5
     });
 
+    SpellRegistry.Register(new PiercingFrenzy(ABILITY_A16F_RAKING_TALONS_TAUREN_TRIBES_SPIRIT_EAGLE)
+    {
+      Duration = 10
+    });
+
+    SpellRegistry.Register(new PiercingFrenzy(ABILITY_A16G_SAVAGE_FRENZY_TAUREN_TRIBES_SPIRIT_WYVERN)
+    {
+      Duration = 10
+    });
+
     SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
     {
       Duration = 60,
