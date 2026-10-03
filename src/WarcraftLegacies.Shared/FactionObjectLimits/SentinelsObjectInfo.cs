@@ -60,7 +60,6 @@ public static class SentinelsObjectInfo
     yield return new(UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH, Unlimited);
     yield return new(UPGRADE_ROEN_IMPROVED_ENSNARE_SENTINELS, Unlimited);
     yield return new(UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, Unlimited);
-    yield return new(UPGRADE_R03J_WIND_WALK_SENTINELS, Unlimited);
     yield return new(UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, Unlimited);
     yield return new(UPGRADE_RV01_PRIESTESSES_OF_THE_MOON_SENTINELS, Unlimited);
     yield return new(UPGRADE_RV02_WARDENS_SENTINELS, Unlimited);
