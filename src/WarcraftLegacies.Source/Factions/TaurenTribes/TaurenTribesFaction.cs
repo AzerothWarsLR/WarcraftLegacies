@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -43,7 +43,7 @@ public sealed class TaurenTribesFaction : Faction
     };
     CinematicMusic = "SadMystery";
     IntroText = () => Loc.Format(
-      "You are playing as the wandering {faction}.\n\nYou begin on the move. Thunder Bluff is already yours, but none of your people can be trained until the march is over, so train Cairne Bloodhoof as soon as you can. The moment he takes up the lead, the Long March sets out with a war party of Tauren and Spirit Walkers; escort your pack kodos north across the plains to Mulgore. While they travel, the elders of Thunder Bluff can get on with your upgrades. Centaur raiders will hound you every step of the way, and every kodo that survives makes your new home richer.\n\nOnce settled, win over the ogres of Stonemaul and Dunemaul, and stand beside your Orcish allies as the Horde claims its place in Kalimdor. The Night Elves' World Tree and Temple of the Moon lie within reach.\n\nWhen the southern passes open, the Tribes can claim Earthmother's Cradle in Un'Goro Crater.",
+      "You are playing as the wandering {faction}.\n\nDrought and the endless raids of the Centaur have driven the Tauren from their ancestral lands. Train Cairne Bloodhoof to lead the Long March across the Barrens to Thunder Bluff. Guard the kodo caravan every step of the way, for every kodo that reaches the bluffs makes your new home richer.\n\nOnce settled, repay your debt to the Horde. Win over the ogres of Stonemaul and Dunemaul, rally Rokhan and the Darkspear, and march on the Night Elves: break their hold on the Temple of the Moon and claim Nordrassil itself.\n\nWhen the southern passes open, the Tribes can raise a camp in Un'Goro Crater.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Tauren Tribes")}|r"));
     Nicknames = new List<string>
     {
