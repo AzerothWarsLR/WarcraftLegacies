@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿﻿using System.Collections.Generic;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -32,7 +32,7 @@ public sealed class QuestThrallMaelstrom : QuestData
     AddObjective(new ObjectiveLegendLevel(_thrall, 8));
     AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "the Maelstrom", _thrall, 90, 120, "Taming the Maelstrom"));
     AddObjective(new ObjectiveControlPoints(controlPoints, "on the Broken Isles and near the Maelstrom"));
-    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    AddObjective(new ObjectiveQuestResolved(previousQuest)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

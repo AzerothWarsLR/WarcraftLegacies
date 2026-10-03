@@ -15,7 +15,7 @@ public sealed class QuestLinkWithTheMoon : QuestData
   {
     AddObjective(new ObjectiveCapitalDead(templeOfTheMoon));
     AddObjective(new ObjectiveSelfExists());
-    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    AddObjective(new ObjectiveQuestResolved(previousQuest)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

@@ -1,4 +1,4 @@
-﻿using MacroTools.Extensions;
+﻿﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -19,7 +19,7 @@ public sealed class QuestSlayCenarius : QuestData
       OnlyCreditKiller = true,
       PermanentOnly = false
     });
-    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    AddObjective(new ObjectiveQuestResolved(previousQuest)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

@@ -29,7 +29,7 @@ public sealed class QuestStonemaulDiplomacy : QuestData
     AddObjective(new ObjectiveUnitIsDead(korgall));
     AddObjective(new ObjectiveControlPoint(UNIT_N022_STONEMAUL));
     AddObjective(new ObjectiveSelfExists());
-    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    AddObjective(new ObjectiveQuestResolved(previousQuest)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

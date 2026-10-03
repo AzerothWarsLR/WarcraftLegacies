@@ -19,7 +19,7 @@ public sealed class QuestDemolishElfCities : QuestData
   {
     AddObjective(new ObjectiveControlCapital(AllLegends.Druids.Nordrassil, false));
     AddObjective(new ObjectiveCapitalDead(AllLegends.Sentinels.Auberdine));
-    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    AddObjective(new ObjectiveQuestResolved(previousQuest)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

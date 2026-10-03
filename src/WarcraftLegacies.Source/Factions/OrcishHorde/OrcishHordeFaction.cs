@@ -207,7 +207,7 @@ public sealed class OrcishHordeFaction : Faction
     var questOrgrimmar = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, this, quest));
 
     var questCrossroads = new QuestCrossroads(Regions.Crossroads);
-    questCrossroads.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
+    questCrossroads.AddObjective(new ObjectiveQuestResolved(questOrgrimmar)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,
@@ -216,7 +216,7 @@ public sealed class OrcishHordeFaction : Faction
     AddQuest(questCrossroads);
 
     var questSenjinIsles = new QuestSenjinIsles(AllLegends.Orc.Voljin);
-    questSenjinIsles.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
+    questSenjinIsles.AddObjective(new ObjectiveQuestResolved(questOrgrimmar)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

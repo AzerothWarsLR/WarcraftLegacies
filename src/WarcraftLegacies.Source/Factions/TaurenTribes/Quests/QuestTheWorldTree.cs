@@ -22,7 +22,7 @@ public sealed class QuestTheWorldTree : QuestData
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N01P_NORDRASSIL, 0));
     AddObjective(new ObjectiveSelfExists());
-    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    AddObjective(new ObjectiveQuestResolved(previousQuest)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,
