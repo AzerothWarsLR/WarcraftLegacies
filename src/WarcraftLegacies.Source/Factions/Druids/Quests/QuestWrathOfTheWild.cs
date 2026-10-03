@@ -11,6 +11,7 @@ public sealed class QuestWrathOfTheWild : QuestData
 {
   private const int HeroXpReward = 2000;
   private const int GoldReward = 500;
+  private const int SiegeAncientLimitBonus = 4;
 
   public QuestWrathOfTheWild() : base(
     "Wrath of the Wild",
@@ -26,7 +27,7 @@ public sealed class QuestWrathOfTheWild : QuestData
     "Roots and thorns swallow the ruins of Orgrimmar. Malfurion Stormrage feels the forest breathe easier, and his power grows with it.";
 
   protected override string RewardDescription =>
-    "Malfurion gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, you gain 500 gold, and you can train Siege Ancients from the Ancient of War";
+    "Malfurion gains 2000 experience, 5 Strength, 5 Agility, and 5 Intelligence, you gain 500 gold, you can train 4 more Siege Ancients, and Siege Ancients gain 150 hit points and 10 attack damage";
 
   protected override void OnComplete(Faction completingFaction)
   {
@@ -40,8 +41,8 @@ public sealed class QuestWrathOfTheWild : QuestData
     if (completingFaction.Player != null)
     {
       completingFaction.Player.Gold += GoldReward;
-      completingFaction.Player.DisplayUnitTypeAcquired(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE,
-        "You can now train Siege Ancients from the Ancient of War.");
     }
+
+    completingFaction.ModObjectLimit(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, SiegeAncientLimitBonus);
   }
 }

@@ -33,7 +33,7 @@ public static class DruidsObjectInfo
     yield return new(UNIT_E03H_HEARTWOOD_ANCIENT_DRUIDS_ELITE, 0, new List<UnitCategory> { Elite, Support });
     yield return new(UNIT_N05H_SAPLING_DRUIDS, Unlimited, Tank);
     yield return new(UNIT_N065_GREEN_DRAGON_DRUIDS, 8, Flyer);
-    yield return new(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 8, Siege);
+    yield return new(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 4, Siege, "completing the quest Wrath of the Wild");
 
     yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
     yield return new(UNIT_H0AU_SCOUT_SHIP_NIGHTELVES, Unlimited);
