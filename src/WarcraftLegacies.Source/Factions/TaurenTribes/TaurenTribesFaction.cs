@@ -1,4 +1,4 @@
-﻿﻿using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -81,6 +81,7 @@ public sealed class TaurenTribesFaction : Faction
   public override void OnNotPicked()
   {
     Regions.EarthmothersCradle.CleanupNeutralPassiveUnits();
+    Regions.Highmountain_Unlock.CleanupNeutralPassiveUnits();
     base.OnNotPicked();
   }
 
@@ -132,6 +133,8 @@ public sealed class TaurenTribesFaction : Faction
     var questStonemaulDiplomacy = AddQuest(new QuestStonemaulDiplomacy(Regions.StonemaulKeep,
       AllPreplacedWidgets.Units.Get(UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL), AllLegends.Tauren.Rexxar, _theLongMarch));
     AddQuest(new QuestTheDunemaulOgres(questStonemaulDiplomacy));
+    AddQuest(new QuestHighmountain(AllLegends.Tauren.CairneBloodhoof, Regions.Highmountain_Unlock, _theLongMarch,
+      questStonemaulDiplomacy));
 
     AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
     AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.TempleOfTheMoon, _theLongMarch));
