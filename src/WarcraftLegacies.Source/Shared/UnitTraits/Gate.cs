@@ -13,16 +13,19 @@ public sealed class Gate : UnitTrait, IEffectOnUpgrade, IEffectOnDeath, IEffectO
 
   private readonly int _openedId;
   private readonly int _deadId;
+  private readonly string _openAnimation;
 
   /// <summary>
   /// Constructs a new <see cref="Gate"/>.
   /// </summary>
   /// <param name="openedId">The unit type ID of the gate while open.</param>
   /// <param name="deadId">The unit type ID of the gate while dead.</param>
-  public Gate(int openedId, int deadId)
+  /// <param name="openAnimation">The animation that shows the gate as open.</param>
+  public Gate(int openedId, int deadId, string openAnimation = "death alternate")
   {
     _openedId = openedId;
     _deadId = deadId;
+    _openAnimation = openAnimation;
   }
 
   /// <inheritdoc/>
@@ -42,7 +45,7 @@ public sealed class Gate : UnitTrait, IEffectOnUpgrade, IEffectOnDeath, IEffectO
     var triggerUnit = @event.Unit;
     if (triggerUnit.UnitType == _openedId)
     {
-      triggerUnit.SetAnimation("death alternate");
+      triggerUnit.SetAnimation(_openAnimation);
     }
   }
 
@@ -51,7 +54,7 @@ public sealed class Gate : UnitTrait, IEffectOnUpgrade, IEffectOnDeath, IEffectO
   {
     if (createdUnit.UnitType == _openedId)
     {
-      createdUnit.SetAnimation("death alternate");
+      createdUnit.SetAnimation(_openAnimation);
     }
 
     TurnBasedHitpointsManager.Register(createdUnit, HitPointPercentagePerTurn);
