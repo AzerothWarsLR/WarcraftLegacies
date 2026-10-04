@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.UnitTraits;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde.UnitTraits;
