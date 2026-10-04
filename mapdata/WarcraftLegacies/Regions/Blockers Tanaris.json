@@ -1,0 +1,16 @@
+{
+  "Left": -10496,
+  "Bottom": -13216,
+  "Right": -9280,
+  "Top": -12448,
+  "Name": "Blockers Tanaris",
+  "CreationNumber": 223,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

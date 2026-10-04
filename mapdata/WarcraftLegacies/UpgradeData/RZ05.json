@@ -1,0 +1,87 @@
+{
+  "OldId": "Rolf",
+  "NewId": "RZ05",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 80
+    },
+    {
+      "Id": "gtib",
+      "Value": 50
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "obea"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Auco"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Batriders\u0027 Unstable Concoction by increasing its initial damage to 1000 and splash damage to 300."
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnstableConcoction.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Airborne Toxins"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Airborne Toxins"
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
+    }
+  ]
+}

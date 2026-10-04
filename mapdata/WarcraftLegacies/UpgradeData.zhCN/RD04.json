@@ -1,0 +1,33 @@
+{
+  "OldId": "Remk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "校准水晶机构"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使连发弩炮的攻击速度提高 25%。"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究校准水晶机构"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    }
+  ],
+  "NewId": "RD04"
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "nbdw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙人战士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有闪避的重型近战单位。"
+    }
+  ]
+}

@@ -31,8 +31,8 @@ public sealed class GryphonOrbitSpell : Spell
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
     var level = caster.GetAbilityLevel(Id);
-    var duration = Duration.Base + Duration.PerLevel * level;
-    var damage = Damage.Base + Damage.PerLevel * level;
+    var duration = Duration.GetValue(level);
+    var damage = Damage.GetValue(level);
 
     var missiles = new List<GryphonOrbitMissile>();
     var borrowed = new List<BorrowedGryphon>();

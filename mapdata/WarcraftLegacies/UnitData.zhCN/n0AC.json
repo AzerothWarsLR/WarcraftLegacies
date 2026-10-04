@@ -1,0 +1,29 @@
+{
+  "OldId": "nbdk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "受泰坦托付守护艾泽拉斯魔法的巨龙。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蓝龙"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练蓝龙"
+    }
+  ],
+  "NewId": "n0AC"
+}

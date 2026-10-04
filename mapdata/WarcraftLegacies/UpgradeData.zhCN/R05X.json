@@ -1,0 +1,33 @@
+{
+  "OldId": "Reeb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "乌索尔的祝福"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究乌索尔的祝福"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化利爪德鲁伊与熊，使其护甲提高 1 点，生命值提高 150 点，伤害提高 10 点。"
+    }
+  ],
+  "NewId": "R05X"
+}

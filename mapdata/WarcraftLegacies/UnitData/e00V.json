@@ -52,7 +52,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R01W,R00S"
+      "Value": "R01W,R00S,RH01"
     },
     {
       "Id": "utra",

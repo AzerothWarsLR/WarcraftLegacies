@@ -85,7 +85,7 @@ public sealed class RestoreHealthFromEachTargetDamaged : UnitTrait, IAppliesEffe
       _ = Math.Max(diminishMultiplier, 0.0f);
     }
 
-    var healthPerTarget = ((caster.GetLevel() * HealthPerLevel) + (HealthPerTarget.Base + HealthPerTarget.PerLevel) * caster.GetAbilityLevel(_abilityTypeId));
+    var healthPerTarget = (caster.GetLevel() * HealthPerLevel) + HealthPerTarget.GetValue(caster.GetAbilityLevel(_abilityTypeId));
     caster.Life += healthPerTarget;
     EffectSystem.Add(effect.Create(Effect, caster, "origin"));
   }

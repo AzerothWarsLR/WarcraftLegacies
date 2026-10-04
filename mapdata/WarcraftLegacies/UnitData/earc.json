@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "SACS,S003,ANwk,A06G,Aien,Ault,Aegr"
+      "Value": "SACS,S003,A06G,Aien,Ault,Aegr"
     },
     {
       "Id": "ubld",
@@ -76,7 +76,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R002,Rhme,Rguv,Rhar,Reib,Remk,Reuv,R03J,Repm"
+      "Value": "R002,Rhme,Rguv,Rhar,Reib,Remk,Reuv,Repm"
     },
     {
       "Id": "uhpm",

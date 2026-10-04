@@ -1,0 +1,24 @@
+{
+  "OldId": "nbsm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "拉格纳罗斯召唤基座"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造拉格纳罗斯召唤基座"
+    }
+  ],
+  "NewId": "n02B"
+}

@@ -25,6 +25,12 @@
       "Value": 1
     },
     {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "osld"
+    },
+    {
       "Level": 2,
       "Id": "greq",
       "Type": 3,
@@ -66,7 +72,7 @@
       "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Value": "(Frostwolf)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Level": 1,

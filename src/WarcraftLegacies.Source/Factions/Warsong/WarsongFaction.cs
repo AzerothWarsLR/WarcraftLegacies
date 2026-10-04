@@ -7,10 +7,7 @@ using MacroTools.Factions.Choices;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
-using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
-using WarcraftLegacies.Source.Factions.Warsong.Mechanics;
 using WarcraftLegacies.Source.Factions.Warsong.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
@@ -25,7 +22,7 @@ public sealed class WarsongFaction : Faction
   public WarsongFaction() : base("Warsong", playercolor.Red,
     @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.Horde;
     UndefeatedResearch = UPGRADE_R05W_WARSONG_EXISTS;
     StartingGold = new StartingGold
     {
@@ -53,10 +50,8 @@ public sealed class WarsongFaction : Faction
     ReplaceWithFactionUnits(this);
     RegisterQuests();
     RegisterDialogue();
-    RegisterFlightPath();
     WarsongSpells.Setup();
     WarsongTraits.Setup();
-    BloodPactBattleSimulation.StartSimulation();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     Regions.BarrenAmbient2.CleanupHostileUnits();
     Regions.AshenvaleCreeps.CleanupHostileUnits();
@@ -76,17 +71,13 @@ public sealed class WarsongFaction : Faction
 
   private void RegisterQuests()
   {
-    StartingQuest = AddQuest(new QuestGrom(AllLegends.Warsong.GromHellscream, AllLegends.Warsong.Gargok));
-    AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
+    StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
-    AddQuest(new QuestRokhan(AllPreplacedWidgets.Units.Get(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
-    AddQuest(new QuestGarrosh());
-    AddQuest(new QuestKillOldGods());
     AddQuest(new QuestWarsongHold());
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
-    AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
-    AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
-    AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Warsong.GromHellscream));
+    //AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, AllLegends.Warsong, AllLegends.Orc.GromHellscream)); // Also overlaps Tauren Tribes' Long March rescue at Stonemaul Keep
+    //AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, AllLegends.Warsong, AllLegends.Orc.GromHellscream));
+    //AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, AllLegends.Warsong, AllLegends.Orc.GromHellscream)); // Also overlaps Tauren Tribes' Long March rescue at Thunder Bluff
   }
 
   private static void ReplaceWithFactionUnits(Faction pickedFaction)
@@ -118,7 +109,7 @@ public sealed class WarsongFaction : Faction
         this
       }, new List<Objective>
       {
-        new ObjectiveControlLegend(AllLegends.Warsong.GromHellscream, false)
+        new ObjectiveControlLegend(AllLegends.Orc.GromHellscream, false)
         {
           EligibleFactions = new List<Faction>
           {
@@ -144,19 +135,10 @@ public sealed class WarsongFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(AllLegends.Warsong.GromHellscream, false)
+          new ObjectiveControlLegend(AllLegends.Orc.GromHellscream, false)
           {
             EligibleFactions = new List<Faction>{this}
           }
         }));
-  }
-
-  private void RegisterFlightPath()
-  {
-
-    ResearchManager.Register(new FlightPath(
-      this,
-      UPGRADE_R09N_FLIGHT_PATH_WARSONG,
-      70));
   }
 }

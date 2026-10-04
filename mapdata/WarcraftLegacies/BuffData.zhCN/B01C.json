@@ -1,0 +1,14 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "瞬间复苏"
+    }
+  ],
+  "NewId": "B01C"
+}

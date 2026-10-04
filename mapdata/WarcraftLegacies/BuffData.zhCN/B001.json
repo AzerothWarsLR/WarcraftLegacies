@@ -1,0 +1,24 @@
+{
+  "OldId": "Basl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00圣洁之光|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位护甲提高。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "圣洁之光"
+    }
+  ],
+  "NewId": "B001"
+}

@@ -1,0 +1,23 @@
+{
+  "OldId": "ngz4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（灰色 - 雷克萨召唤）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练米莎"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "米莎"
+    }
+  ]
+}

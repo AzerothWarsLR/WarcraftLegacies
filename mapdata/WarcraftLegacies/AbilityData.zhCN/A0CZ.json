@@ -1,0 +1,31 @@
+{
+  "OldId": "Apig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（风暴云）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒对附近的敌方单位造成 40 点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "静电云"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "静电云"
+    }
+  ],
+  "NewId": "A0CZ"
+}

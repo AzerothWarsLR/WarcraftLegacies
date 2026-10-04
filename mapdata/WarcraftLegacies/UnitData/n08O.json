@@ -49,7 +49,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Robs,Rhme,Rhar,R00J,Rguv"
+      "Value": "Robs,Rhme,Rhar,RT07,Rguv,RT19"
     },
     {
       "Id": "urac",
@@ -67,7 +67,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aion,A06Z,A092,A04C"
+      "Value": "Aion,A161,A162,A163"
     },
     {
       "Id": "udaa",
@@ -129,11 +129,6 @@
       "Value": 3
     },
     {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "R012"
-    },
-    {
       "Id": "usca",
       "Type": 1,
       "Value": 1.1
@@ -141,7 +136,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "utip",
@@ -156,12 +151,12 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": "ucut",
       "Type": 3,
-      "Value": "- Purge,- Purgel|n- Rejuvenation|n,- Purgel|n- Rejuvenation|n- Healing Spray"
+      "Value": "- Acid Flask,- Acid Flask|n- Flame Shield,- Acid Flask|n- Flame Shield|n- Innervate"
     },
     {
       "Id": "ucun",
@@ -170,12 +165,12 @@
     },
     {
       "Id": "ubpx",
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Strong support spellcaster of the Horde."
+      "Value": "Strong support spellcaster of the Ogres."
     },
     {
       "Id": "ua1m",
@@ -191,6 +186,20 @@
       "Id": "uabs",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT21,RT20"
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-shaman.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

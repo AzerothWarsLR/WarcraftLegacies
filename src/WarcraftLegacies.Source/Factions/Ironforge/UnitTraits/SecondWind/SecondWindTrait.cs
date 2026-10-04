@@ -74,7 +74,7 @@ public sealed class SecondWindTrait : UnitTrait, IEffectOnCreated, IEffectOnDama
       return;
     }
 
-    var healPercentPerSecond = HealPercentPerSecond.Base + HealPercentPerSecond.PerLevel * level;
+    var healPercentPerSecond = HealPercentPerSecond.GetValue(level);
     BuffSystem.Add(new SecondWindCooldownBuff(target)
     {
       Active = true,

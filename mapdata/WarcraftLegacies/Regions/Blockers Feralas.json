@@ -1,0 +1,16 @@
+{
+  "Left": -14752,
+  "Bottom": -9984,
+  "Right": -13536,
+  "Top": -7904,
+  "Name": "Blockers Feralas",
+  "CreationNumber": 222,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "hctw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装设火炮的防御塔。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    }
+  ],
+  "NewId": "h09W"
+}

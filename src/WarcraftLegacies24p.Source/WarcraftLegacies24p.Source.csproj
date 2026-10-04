@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>11.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>WarcraftLegacies24p</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MacroTools.Shared\MacroTools.Shared.csproj" />
+    <ProjectReference Include="..\MacroTools\MacroTools.csproj" />
+  </ItemGroup>
+
+</Project>

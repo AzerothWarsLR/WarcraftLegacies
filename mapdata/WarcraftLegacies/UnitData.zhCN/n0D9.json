@@ -1,0 +1,19 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城 - 卡德加）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "冲流传送门"
+    }
+  ],
+  "NewId": "n0D9"
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": "Nbbc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活邪能大酋长"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "邪能部落的大酋长"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "卡加斯·刃拳"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活邪能大酋长"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长强化部队和近身战斗。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤卡加斯"
+    }
+  ],
+  "NewId": "N03D"
+}

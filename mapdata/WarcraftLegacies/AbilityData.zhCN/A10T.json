@@ -1,0 +1,65 @@
+{
+  "OldId": "ANbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "时光重生"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习时光重生 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "艾格文运用她强大的奥术力量重置自身的时间，瞬间将生命值恢复至全满并重置技能冷却。|n|n|cffffcc001级|r - 100 秒冷却时间。|n|cffffcc002级|r - 85 秒冷却时间。|n|cffffcc003级|r - 60 秒冷却时间。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "时光重生 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "时光重生 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "时光重生 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "艾格文运用她强大的凤凰术力量重置自身的时间，瞬间将生命值恢复至全满并重置技能冷却。|n|cff99b4d1100 秒冷却时间|r"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "艾格文运用她强大的凤凰术力量重置自身的时间，瞬间将生命值恢复至全满并重置技能冷却。|n|cff99b4d285 秒冷却时间|r"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "艾格文运用她强大的凤凰术力量重置自身的时间，瞬间将生命值恢复至全满并重置技能冷却。|n|cff99b4d160 秒冷却时间|r"
+    }
+  ],
+  "NewId": "A10T"
+}

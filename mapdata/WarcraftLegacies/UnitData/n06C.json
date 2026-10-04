@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "S003,ANwk,A0VK,ACss,Aien,Ault,Aegr,A0A7"
+      "Value": "S003,A0VK,ACss,Aien,Ault,Aegr,A0A7"
     },
     {
       "Id": "uacq",
@@ -70,7 +70,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 700
+      "Value": 800
     },
     {
       "Id": "ulum",
@@ -116,7 +116,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R03J,Reuv,R01W,Rhme,Rhar,Rguv"
+      "Value": "Reuv,R01W,Rhme,Rhar,Rguv"
     },
     {
       "Id": "uico",

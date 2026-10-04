@@ -1,0 +1,14 @@
+{
+  "OldId": "ncop",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "玛洛恩神殿"
+    }
+  ],
+  "NewId": "n0BI"
+}

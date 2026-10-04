@@ -44,7 +44,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R09X,R04R,R006,R00C,Rhme,Rhar"
+      "Value": "R09X,R04R,R006,R00C,Rhme,Rhar,RDTP"
     },
     {
       "Id": "upgr",
@@ -64,7 +64,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\LumberMillDalaranV1.03.mdl"
+      "Value": "war3mapImported\\LumberMillDalaranV1_03.mdl"
     },
     {
       "Id": "uhot",

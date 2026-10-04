@@ -69,7 +69,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rosp,R064,Renb,R013,Rhac"
+      "Value": "Rosp,R064,Renb,Rhac"
     },
     {
       "Id": "utyp",
@@ -138,6 +138,11 @@
       "Id": "umxp",
       "Type": 1,
       "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNGate.blp"
     }
   ]
 }

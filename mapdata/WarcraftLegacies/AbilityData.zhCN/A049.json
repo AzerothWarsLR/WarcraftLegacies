@@ -1,0 +1,14 @@
+{
+  "OldId": "Aspb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "萨格拉斯法术书"
+    }
+  ],
+  "NewId": "A049"
+}

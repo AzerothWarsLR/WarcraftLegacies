@@ -1,0 +1,77 @@
+{
+  "OldId": "AOcr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（铁炉堡 - 弗斯塔德）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时有 20% 的几率向 5 个目标掷出闪电，对每个目标造成 75 点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电大师"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电大师 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时有 30% 的几率向 5 个目标投掷闪电，对每个目标造成 75 点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时有 40% 的几率向 5 个目标投掷闪电，对每个目标造成 75 点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位攻击时有 50% 的几率向 5 个目标掷出闪电，对每个目标造成 75 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电大师 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电大师 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "闪电大师 - [|cffffcc004级|r]"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习闪电大师 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "有几率向 5 个目标投掷闪电，对每个目标造成 75 点伤害。 |n|n|cffffcc001级|r - 20% 的几率。 |n|cffffcc002级|r - 30% 的几率。 |n|cffffcc003级|r - 40% 的几率。 |n|cffffcc003级|r - 50% 的几率。"
+    }
+  ],
+  "NewId": "VP26"
+}

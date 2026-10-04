@@ -1,0 +1,24 @@
+{
+  "OldId": "uzg1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "在通幽魂之塔上方悬浮着一颗噼啪作响、蕴含致命魔法的不洁水晶。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "控制点防卫者"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    }
+  ],
+  "NewId": "u028"
+}

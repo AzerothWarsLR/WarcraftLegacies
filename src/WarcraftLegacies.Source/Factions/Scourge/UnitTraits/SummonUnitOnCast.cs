@@ -62,7 +62,7 @@ public sealed class SummonUnitOnCast : UnitTrait, IEffectOnSpellEffect
       return;
     }
 
-    var summonCount = SummonCount.Base + SummonCount.PerLevel * abilityLevel;
+    var summonCount = SummonCount.GetValue(abilityLevel);
 
     for (var i = 0; i < summonCount; i++)
     {

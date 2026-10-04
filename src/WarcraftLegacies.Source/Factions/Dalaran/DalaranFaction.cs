@@ -9,6 +9,7 @@ using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Dalaran.Mechanics;
 using WarcraftLegacies.Source.Factions.Dalaran.Quests;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Scourge;
@@ -67,6 +68,7 @@ public sealed class DalaranFaction : Faction
     RegisterDialogue();
     RegisterProtectors();
     DalaranSpells.Setup();
+    WaygateManager.Setup(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE, ABILITY_CK02_WAY_GATE_TRAVEL_DALARAN);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
   private static void ReplaceWithFactionUnits(Faction pickedFaction)

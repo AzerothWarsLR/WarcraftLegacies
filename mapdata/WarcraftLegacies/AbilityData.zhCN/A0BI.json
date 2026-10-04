@@ -1,0 +1,43 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色 元帅）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "多层锁甲"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "多层锁甲"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化多层锁甲"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "厚重的钢板使元帅受到的伤害减少 9 点。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "厚重的钢板使元帅受到的伤害减少 15 点。"
+    }
+  ],
+  "NewId": "A0BI"
+}

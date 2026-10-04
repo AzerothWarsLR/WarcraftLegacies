@@ -10,7 +10,8 @@ public sealed class DraeneiLegends
   public LegendaryHero Adal { get; }
   public LegendaryHero LegendNobundo { get; }
   public Capital LegendExodar { get; }
-  public Capital LegendExodarGenerator { get; }
+  // TODO: re-add
+  // public Capital LegendExodarGenerator { get; }
   public Capital Shattrah { get; }
   public Capital Halaar { get; }
 
@@ -28,10 +29,10 @@ public sealed class DraeneiLegends
       Essential = true
     };
 
-    LegendExodarGenerator = new Capital
-    {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI)
-    };
+    // LegendExodarGenerator = new Capital
+    // {
+    //   Unit = AllPreplacedWidgets.Units.Get(UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI)
+    // };
 
     Maraad = new LegendaryHero("Maraad")
     {
@@ -69,7 +70,8 @@ public sealed class DraeneiLegends
     LegendaryHeroManager.Register(Adal);
     LegendaryHeroManager.Register(LegendNobundo);
     CapitalManager.Register(LegendExodar);
-    CapitalManager.Register(LegendExodarGenerator);
+    // TODO: re-add
+    // CapitalManager.Register(LegendExodarGenerator);
     CapitalManager.Register(Shattrah);
     CapitalManager.Register(Halaar);
   }

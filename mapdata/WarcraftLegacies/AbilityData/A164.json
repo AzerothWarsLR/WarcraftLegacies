@@ -1,0 +1,80 @@
+{
+  "OldId": "AIv1",
+  "NewId": "A164",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Tauren Tribes - Spirit Eagle)"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Wind Walk"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The Spirit Eagle turns invisible and moves 25% faster for 5 seconds. Attacking or casting ends the effect."
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindWalkOn.blp"
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Wind Walk"
+    }
+  ]
+}

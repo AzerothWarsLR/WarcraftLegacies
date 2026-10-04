@@ -35,7 +35,8 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
   private static void ReplaceStartingUnitsWithFactionEquivalents(player pickingPlayer, FactionChoice choice,
     Faction pickedFaction)
   {
-    var startingUnits = GlobalGroup.EnumUnitsInRect(choice.StartingArea);
+    var startingUnits = GlobalGroup.EnumUnitsInRect(choice.StartingArea)
+      .Where(u => u.Owner == pickingPlayer || u.Owner == player.NeutralPassive);
 
     foreach (var unit in startingUnits)
     {

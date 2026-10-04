@@ -68,7 +68,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,R013,Rhac,Rgfo"
+      "Value": "Rhme,Rhac,Rgfo"
     },
     {
       "Id": "uabi",
@@ -92,7 +92,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\ElvenTowerV1.01.mdl"
+      "Value": "war3mapImported\\ElvenTowerV1_01.mdl"
     },
     {
       "Id": "uclg",

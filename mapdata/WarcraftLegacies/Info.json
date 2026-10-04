@@ -5,8 +5,8 @@
   "GameVersion": "2.0.4.23745",
   "MapName": "Warcraft Legacies",
   "MapAuthor": "Technopig, Vampirika, Madsen",
-  "MapDescription": "Check out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/pnWZs69",
-  "RecommendedPlayers": "16 Players ",
+  "MapDescription": "Check out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/ubQM7PgaG",
+  "RecommendedPlayers": "14 Players ",
   "CameraBounds": {
     "BottomLeft": {
       "X": -28160,
@@ -37,7 +37,7 @@
   "Tileset": 89,
   "LoadingScreenBackgroundNumber": 99,
   "LoadingScreenPath": "",
-  "LoadingScreenText": "Determine the fate of Azeroth as one of 20 factions from the Warcraft universe.\r\n\r\nFounders: Lordsebas, YakaryBovine\r\nDevelopers: Technopig, Madsen, Vampirika\r\nProgrammers: alrun3\r\nDiscord link: https://discord.gg/4eGZnR5",
+  "LoadingScreenText": "Determine the fate of Azeroth as one of 14 factions from the Warcraft universe.\r\n\r\nFounders: Lordsebas, YakaryBovine\r\nDevelopers: Technopig, Madsen, Vampirika\r\nProgrammers: alrun3\r\nDiscord link: https://discord.gg/ubQM7PgaG",
   "LoadingScreenTitle": "Warcraft Legacies",
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,
@@ -76,13 +76,13 @@
       "Controller": 1,
       "Race": 2,
       "Flags": 1,
-      "Name": "Frostwolf Clan",
+      "Name": "Orcish Horde",
       "StartPosition": {
-        "X": -10048,
-        "Y": 2048
+        "X": -2752,
+        "Y": -8896
       },
       "AllyLowPriorityFlags": 4456450,
-      "AllyHighPriorityFlags": 332032,
+      "AllyHighPriorityFlags": 262144,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -147,6 +147,21 @@
       "EnemyHighPriorityFlags": 0
     },
     {
+      "Id": 5,
+      "Controller": 1,
+      "Race": 2,
+      "Flags": 1,
+      "Name": "Tauren Tribes",
+      "StartPosition": {
+        "X": -9472,
+        "Y": -11136
+      },
+      "AllyLowPriorityFlags": 0,
+      "AllyHighPriorityFlags": 0,
+      "EnemyLowPriorityFlags": 0,
+      "EnemyHighPriorityFlags": 0
+    },
+    {
       "Id": 6,
       "Controller": 1,
       "Race": 2,
@@ -177,21 +192,6 @@
       "EnemyHighPriorityFlags": 0
     },
     {
-      "Id": 8,
-      "Controller": 1,
-      "Race": 4,
-      "Flags": 1,
-      "Name": "Skywall",
-      "StartPosition": {
-        "X": -12416,
-        "Y": -19712
-      },
-      "AllyLowPriorityFlags": 1,
-      "AllyHighPriorityFlags": 32768,
-      "EnemyLowPriorityFlags": 0,
-      "EnemyHighPriorityFlags": 0
-    },
-    {
       "Id": 9,
       "Controller": 1,
       "Race": 1,
@@ -216,25 +216,10 @@
         "X": -9344,
         "Y": 10560
       },
-      "AllyLowPriorityFlags": 332040,
+      "AllyLowPriorityFlags": 262152,
       "AllyHighPriorityFlags": 76,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
-    },
-    {
-      "Id": 12,
-      "Controller": 1,
-      "Race": 3,
-      "Flags": 1,
-      "Name": "Black Empire",
-      "StartPosition": {
-        "X": -28032,
-        "Y": -9216
-      },
-      "AllyLowPriorityFlags": 0,
-      "AllyHighPriorityFlags": 32768,
-      "EnemyLowPriorityFlags": 0,
-      "EnemyHighPriorityFlags": 0
     },
     {
       "Id": 15,
@@ -247,22 +232,7 @@
         "Y": 6016
       },
       "AllyLowPriorityFlags": 4194816,
-      "AllyHighPriorityFlags": 334081,
-      "EnemyLowPriorityFlags": 0,
-      "EnemyHighPriorityFlags": 0
-    },
-    {
-      "Id": 16,
-      "Controller": 1,
-      "Race": 3,
-      "Flags": 1,
-      "Name": "Ahn\u0027Qiraj",
-      "StartPosition": {
-        "X": -23232,
-        "Y": -19584
-      },
-      "AllyLowPriorityFlags": 0,
-      "AllyHighPriorityFlags": 0,
+      "AllyHighPriorityFlags": 264193,
       "EnemyLowPriorityFlags": 0,
       "EnemyHighPriorityFlags": 0
     },
@@ -273,8 +243,8 @@
       "Flags": 1,
       "Name": "Sentinels",
       "StartPosition": {
-        "X": -20672,
-        "Y": 8320
+        "X": -18112,
+        "Y": 15424
       },
       "AllyLowPriorityFlags": 4194321,
       "AllyHighPriorityFlags": 262164,
@@ -315,7 +285,7 @@
   "Forces": [
     {
       "Flags": 7,
-      "Players": -4561880,
+      "Players": -4492024,
       "Name": "Scourge, Legion"
     },
     {
@@ -325,8 +295,8 @@
     },
     {
       "Flags": 7,
-      "Players": 264193,
-      "Name": "Frostwolf, Druids, Sentinels"
+      "Players": 264192,
+      "Name": "Druids, Sentinels"
     },
     {
       "Flags": 7,
@@ -335,8 +305,8 @@
     },
     {
       "Flags": 7,
-      "Players": 69888,
-      "Name": "Skywall, Black Empire, Ahn\u0027qiraj"
+      "Players": 33,
+      "Name": "Orcish Horde, Tauren Tribes"
     },
     {
       "Flags": 7,
@@ -936,12 +906,6 @@
     {
       "Players": 131071,
       "Id": 1093742674,
-      "Level": 0,
-      "Availability": 0
-    },
-    {
-      "Players": 16646143,
-      "Id": 858861650,
       "Level": 0,
       "Availability": 0
     },
@@ -3854,10 +3818,6 @@
       "Id": 1229008961
     },
     {
-      "Players": 1024,
-      "Id": 860500033
-    },
-    {
       "Players": 14991359,
       "Id": 1128738881
     },
@@ -5263,59 +5223,11 @@
     },
     {
       "Players": 16777215,
-      "Id": 825241711
-    },
-    {
-      "Players": 16777215,
-      "Id": 808464495
-    },
-    {
-      "Players": 16777215,
-      "Id": 1144008815
-    },
-    {
-      "Players": 16777215,
-      "Id": 1378889839
-    },
-    {
-      "Players": 16777215,
-      "Id": 1228288110
-    },
-    {
-      "Players": 16777215,
-      "Id": 1446326382
-    },
-    {
-      "Players": 16777215,
       "Id": 959590504
     },
     {
       "Players": 16777215,
-      "Id": 1177628789
-    },
-    {
-      "Players": 16777215,
-      "Id": 1194406005
-    },
-    {
-      "Players": 16777215,
-      "Id": 1211183221
-    },
-    {
-      "Players": 16777215,
-      "Id": 1227960437
-    },
-    {
-      "Players": 16777215,
-      "Id": 825700462
-    },
-    {
-      "Players": 16777215,
       "Id": 1735224942
-    },
-    {
-      "Players": 16777215,
-      "Id": 959524981
     },
     {
       "Players": 16777215,
@@ -5364,22 +5276,6 @@
     {
       "Players": 131071,
       "Id": 1819571054
-    },
-    {
-      "Players": 16777215,
-      "Id": 1311846504
-    },
-    {
-      "Players": 16777215,
-      "Id": 1278226543
-    },
-    {
-      "Players": 16777215,
-      "Id": 858861685
-    },
-    {
-      "Players": 16777215,
-      "Id": 808857710
     },
     {
       "Players": 131071,
@@ -5564,10 +5460,6 @@
     {
       "Players": 16777215,
       "Id": 1395732591
-    },
-    {
-      "Players": 16777215,
-      "Id": 1228091496
     },
     {
       "Players": 16777215,
@@ -6299,10 +6191,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 859254894
-    },
-    {
-      "Players": 16777215,
       "Id": 960049262
     },
     {
@@ -6316,10 +6204,6 @@
     {
       "Players": 16777215,
       "Id": 1496854632
-    },
-    {
-      "Players": 16777215,
-      "Id": 1480077416
     },
     {
       "Players": 16777215,
@@ -6603,22 +6487,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 1311912047
-    },
-    {
-      "Players": 16777215,
-      "Id": 842150005
-    },
-    {
-      "Players": 16777215,
-      "Id": 825372789
-    },
-    {
-      "Players": 16777215,
-      "Id": 808595573
-    },
-    {
-      "Players": 16777215,
       "Id": 1852535375
     },
     {
@@ -6640,10 +6508,6 @@
     {
       "Players": 16777215,
       "Id": 1752328015
-    },
-    {
-      "Players": 16777215,
-      "Id": 1395732565
     },
     {
       "Players": 16777215,
@@ -6811,10 +6675,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 892350533
-    },
-    {
-      "Players": 16777215,
       "Id": 1752397384
     },
     {
@@ -6824,18 +6684,6 @@
     {
       "Players": 16777215,
       "Id": 1395667029
-    },
-    {
-      "Players": 16777215,
-      "Id": 1513107541
-    },
-    {
-      "Players": 16777215,
-      "Id": 1212231790
-    },
-    {
-      "Players": 16777215,
-      "Id": 1194405999
     },
     {
       "Players": 4079,
@@ -6859,99 +6707,7 @@
     },
     {
       "Players": 16777215,
-      "Id": 1177694325
-    },
-    {
-      "Players": 16777215,
-      "Id": 959590517
-    },
-    {
-      "Players": 16777215,
-      "Id": 1446260847
-    },
-    {
-      "Players": 16777215,
-      "Id": 1496592495
-    },
-    {
-      "Players": 16777215,
-      "Id": 1513369711
-    },
-    {
-      "Players": 16777215,
-      "Id": 1178153064
-    },
-    {
-      "Players": 16777215,
-      "Id": 926363758
-    },
-    {
-      "Players": 16777215,
       "Id": 876753006
-    },
-    {
-      "Players": 16777215,
-      "Id": 893530222
-    },
-    {
-      "Players": 16777215,
-      "Id": 826421358
-    },
-    {
-      "Players": 16777215,
-      "Id": 809644142
-    },
-    {
-      "Players": 16777215,
-      "Id": 1429614696
-    },
-    {
-      "Players": 16777215,
-      "Id": 1161375848
-    },
-    {
-      "Players": 16777215,
-      "Id": 843198574
-    },
-    {
-      "Players": 16777215,
-      "Id": 1447112814
-    },
-    {
-      "Players": 16777215,
-      "Id": 1413558382
-    },
-    {
-      "Players": 16777215,
-      "Id": 1463890030
-    },
-    {
-      "Players": 16777215,
-      "Id": 859975790
-    },
-    {
-      "Players": 16777215,
-      "Id": 1480667246
-    },
-    {
-      "Players": 16777215,
-      "Id": 1430335598
-    },
-    {
-      "Players": 16777215,
-      "Id": 1380003950
-    },
-    {
-      "Players": 16777215,
-      "Id": 1396781166
-    },
-    {
-      "Players": 16777215,
-      "Id": 1497444462
-    },
-    {
-      "Players": 16777215,
-      "Id": 1514221678
     },
     {
       "Players": 16777215,
@@ -7063,14 +6819,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 943796328
-    },
-    {
-      "Players": 16777215,
-      "Id": 1111568488
-    },
-    {
-      "Players": 16777215,
       "Id": 1195585646
     },
     {
@@ -7080,10 +6828,6 @@
     {
       "Players": 16777215,
       "Id": 1178808430
-    },
-    {
-      "Players": 16777215,
-      "Id": 1212362862
     },
     {
       "Players": 16777215,
@@ -7136,18 +6880,6 @@
     {
       "Players": 1,
       "Id": 1819044165
-    },
-    {
-      "Players": 1,
-      "Id": 1144074309
-    },
-    {
-      "Players": 1,
-      "Id": 1345335381
-    },
-    {
-      "Players": 1,
-      "Id": 1110585429
     },
     {
       "Players": 388,
@@ -7214,24 +6946,12 @@
       "Id": 909258837
     },
     {
-      "Players": 16777215,
-      "Id": 1094201454
-    },
-    {
       "Players": 132,
       "Id": 1395929198
     },
     {
-      "Players": 118783,
-      "Id": 1362440302
-    },
-    {
       "Players": 16777215,
       "Id": 1480011880
-    },
-    {
-      "Players": 16777215,
-      "Id": 1312239726
     },
     {
       "Players": 16777215,
@@ -7244,10 +6964,6 @@
     {
       "Players": 16777215,
       "Id": 1245261928
-    },
-    {
-      "Players": 16777215,
-      "Id": 1513304168
     },
     {
       "Players": 16777215,
@@ -7470,16 +7186,8 @@
       "Id": 875589748
     },
     {
-      "Players": 12950495,
+      "Players": 12950527,
       "Id": 1194733679
-    },
-    {
-      "Players": 12950495,
-      "Id": 892367724
-    },
-    {
-      "Players": 12950495,
-      "Id": 1328704627
     },
     {
       "Players": 12950495,
@@ -7487,54 +7195,14 @@
     },
     {
       "Players": 12950495,
-      "Id": 897214579
-    },
-    {
-      "Players": 12950495,
-      "Id": 896034675
-    },
-    {
-      "Players": 12950495,
-      "Id": 1227960431
-    },
-    {
-      "Players": 12950495,
-      "Id": 1161113711
-    },
-    {
-      "Players": 12950495,
-      "Id": 896034419
-    },
-    {
-      "Players": 12950495,
-      "Id": 1345466485
-    },
-    {
-      "Players": 12950495,
-      "Id": 909144940
-    },
-    {
-      "Players": 12950495,
-      "Id": 1513631854
-    },
-    {
-      "Players": 12950495,
       "Id": 1396191342
-    },
-    {
-      "Players": 12950495,
-      "Id": 827213922
-    },
-    {
-      "Players": 12950495,
-      "Id": 1280591215
     },
     {
       "Players": 16777215,
       "Id": 1261514856
     },
     {
-      "Players": 12950495,
+      "Players": 12950527,
       "Id": 1329082478
     },
     {
@@ -7578,6 +7246,358 @@
       "Id": 825258100
     },
     {
+      "Players": 131071,
+      "Id": 892350568
+    },
+    {
+      "Players": 16777215,
+      "Id": 959459432
+    },
+    {
+      "Players": 16777215,
+      "Id": 1110454376
+    },
+    {
+      "Players": 16777215,
+      "Id": 1329672302
+    },
+    {
+      "Players": 33,
+      "Id": 959795318
+    },
+    {
+      "Players": 33,
+      "Id": 892686454
+    },
+    {
+      "Players": 33,
+      "Id": 859132022
+    },
+    {
+      "Players": 33,
+      "Id": 875909238
+    },
+    {
+      "Players": 33,
+      "Id": 926240886
+    },
+    {
+      "Players": 32,
+      "Id": 842354806
+    },
+    {
+      "Players": 32,
+      "Id": 909463670
+    },
+    {
+      "Players": 32,
+      "Id": 825577590
+    },
+    {
+      "Players": 32,
+      "Id": 943018102
+    },
+    {
+      "Players": 32,
+      "Id": 808800374
+    },
+    {
+      "Players": 1024,
+      "Id": 860500033
+    },
+    {
+      "Players": 16777215,
+      "Id": 825241711
+    },
+    {
+      "Players": 16777215,
+      "Id": 808464495
+    },
+    {
+      "Players": 16777215,
+      "Id": 1144008815
+    },
+    {
+      "Players": 16777215,
+      "Id": 1378889839
+    },
+    {
+      "Players": 16777215,
+      "Id": 1228288110
+    },
+    {
+      "Players": 16777215,
+      "Id": 1446326382
+    },
+    {
+      "Players": 16777215,
+      "Id": 1177628789
+    },
+    {
+      "Players": 16777215,
+      "Id": 1194406005
+    },
+    {
+      "Players": 16777215,
+      "Id": 1211183221
+    },
+    {
+      "Players": 16777215,
+      "Id": 1227960437
+    },
+    {
+      "Players": 16777215,
+      "Id": 825700462
+    },
+    {
+      "Players": 16777215,
+      "Id": 959524981
+    },
+    {
+      "Players": 16777215,
+      "Id": 1311846504
+    },
+    {
+      "Players": 16777215,
+      "Id": 1278226543
+    },
+    {
+      "Players": 16777215,
+      "Id": 858861685
+    },
+    {
+      "Players": 16777215,
+      "Id": 808857710
+    },
+    {
+      "Players": 16777215,
+      "Id": 1228091496
+    },
+    {
+      "Players": 16777215,
+      "Id": 859254894
+    },
+    {
+      "Players": 16777215,
+      "Id": 1480077416
+    },
+    {
+      "Players": 16777215,
+      "Id": 1311912047
+    },
+    {
+      "Players": 16777215,
+      "Id": 842150005
+    },
+    {
+      "Players": 16777215,
+      "Id": 825372789
+    },
+    {
+      "Players": 16777215,
+      "Id": 808595573
+    },
+    {
+      "Players": 16777215,
+      "Id": 1395732565
+    },
+    {
+      "Players": 16777215,
+      "Id": 892350533
+    },
+    {
+      "Players": 16777215,
+      "Id": 1513107541
+    },
+    {
+      "Players": 16777215,
+      "Id": 1212231790
+    },
+    {
+      "Players": 16777215,
+      "Id": 1194405999
+    },
+    {
+      "Players": 16777215,
+      "Id": 1177694325
+    },
+    {
+      "Players": 16777215,
+      "Id": 959590517
+    },
+    {
+      "Players": 16777215,
+      "Id": 1446260847
+    },
+    {
+      "Players": 16777215,
+      "Id": 1496592495
+    },
+    {
+      "Players": 16777215,
+      "Id": 1513369711
+    },
+    {
+      "Players": 16777215,
+      "Id": 1178153064
+    },
+    {
+      "Players": 16777215,
+      "Id": 926363758
+    },
+    {
+      "Players": 16777215,
+      "Id": 893530222
+    },
+    {
+      "Players": 16777215,
+      "Id": 826421358
+    },
+    {
+      "Players": 16777215,
+      "Id": 809644142
+    },
+    {
+      "Players": 16777215,
+      "Id": 1429614696
+    },
+    {
+      "Players": 16777215,
+      "Id": 1161375848
+    },
+    {
+      "Players": 16777215,
+      "Id": 843198574
+    },
+    {
+      "Players": 16777215,
+      "Id": 1447112814
+    },
+    {
+      "Players": 16777215,
+      "Id": 1413558382
+    },
+    {
+      "Players": 16777215,
+      "Id": 1463890030
+    },
+    {
+      "Players": 16777215,
+      "Id": 859975790
+    },
+    {
+      "Players": 16777215,
+      "Id": 1480667246
+    },
+    {
+      "Players": 16777215,
+      "Id": 1430335598
+    },
+    {
+      "Players": 16777215,
+      "Id": 1380003950
+    },
+    {
+      "Players": 16777215,
+      "Id": 1396781166
+    },
+    {
+      "Players": 16777215,
+      "Id": 1497444462
+    },
+    {
+      "Players": 16777215,
+      "Id": 1514221678
+    },
+    {
+      "Players": 1,
+      "Id": 1144074309
+    },
+    {
+      "Players": 1,
+      "Id": 1345335381
+    },
+    {
+      "Players": 1,
+      "Id": 1110585429
+    },
+    {
+      "Players": 16777215,
+      "Id": 1094201454
+    },
+    {
+      "Players": 118783,
+      "Id": 1362440302
+    },
+    {
+      "Players": 16777215,
+      "Id": 1312239726
+    },
+    {
+      "Players": 12950495,
+      "Id": 892367724
+    },
+    {
+      "Players": 12950495,
+      "Id": 1328704627
+    },
+    {
+      "Players": 12950495,
+      "Id": 897214579
+    },
+    {
+      "Players": 12950495,
+      "Id": 896034675
+    },
+    {
+      "Players": 12950495,
+      "Id": 1227960431
+    },
+    {
+      "Players": 12950495,
+      "Id": 1161113711
+    },
+    {
+      "Players": 12950495,
+      "Id": 896034419
+    },
+    {
+      "Players": 12950495,
+      "Id": 1345466485
+    },
+    {
+      "Players": 12950495,
+      "Id": 909144940
+    },
+    {
+      "Players": 12950495,
+      "Id": 1513631854
+    },
+    {
+      "Players": 12950495,
+      "Id": 827213922
+    },
+    {
+      "Players": 12950495,
+      "Id": 1280591215
+    },
+    {
+      "Players": 16777215,
+      "Id": 943796328
+    },
+    {
+      "Players": 16777215,
+      "Id": 1111568488
+    },
+    {
+      "Players": 16777215,
+      "Id": 1212362862
+    },
+    {
+      "Players": 16777215,
+      "Id": 1513304168
+    },
+    {
       "Players": 16351,
       "Id": 1196765249
     },
@@ -7596,10 +7616,6 @@
     {
       "Players": 16777215,
       "Id": 1295069288
-    },
-    {
-      "Players": 16777215,
-      "Id": 1329672302
     },
     {
       "Players": 16777215,
@@ -7758,10 +7774,6 @@
       "Id": 1362178152
     },
     {
-      "Players": 131071,
-      "Id": 892350568
-    },
-    {
       "Players": 16777215,
       "Id": 892809326
     },
@@ -7872,10 +7884,6 @@
     {
       "Players": 16777215,
       "Id": 1312305256
-    },
-    {
-      "Players": 16777215,
-      "Id": 959459432
     },
     {
       "Players": 1966079,
@@ -8028,10 +8036,6 @@
     {
       "Players": 16777215,
       "Id": 1211445359
-    },
-    {
-      "Players": 16777215,
-      "Id": 1110454376
     },
     {
       "Players": 16777215,

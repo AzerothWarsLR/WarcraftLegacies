@@ -1,6 +1,4 @@
 ﻿using MacroTools.Legends;
-using WarcraftLegacies.Source.Factions.Ahnqiraj;
-using WarcraftLegacies.Source.Factions.BlackEmpire;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Draenei;
 using WarcraftLegacies.Source.Factions.Druids;
@@ -12,13 +10,14 @@ using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Kultiras;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Lordaeron;
+using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
-using WarcraftLegacies.Source.Factions.Skywall;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.Sunfury;
+using WarcraftLegacies.Source.Factions.TaurenTribes;
 using WarcraftLegacies.Source.Factions.Warsong;
 
 namespace WarcraftLegacies.Source.Shared;
@@ -76,6 +75,11 @@ public static class AllLegends
   public static IllidariLegends Naga { get; }
 
   /// <summary>
+  /// Contains references to all Orcish Horde <see cref="Legend"/>s.
+  /// </summary>
+  public static OrcishHordeLegends Orc { get; }
+
+  /// <summary>
   /// Contains references to all Quel'thalas <see cref="Legend"/>s.
   /// </summary>
   public static QuelthalasLegends Quel { get; }
@@ -100,17 +104,16 @@ public static class AllLegends
   /// </summary>
   public static WarsongLegends Warsong { get; }
 
-  public static AhnqirajLegends Ahnqiraj { get; }
-
-  public static BlackEmpireLegends BlackE { get; }
-
-  public static SkywallLegends Skywall { get; }
-
   public static GilneasLegends Gilneas { get; }
 
   public static ScarletLegends Scarlet { get; }
 
   public static SunfuryLegends Sunfury { get; }
+
+  /// <summary>
+  /// Contains references to all Tauren Tribes <see cref="Legend"/>s.
+  /// </summary>
+  public static TaurenTribesLegends Tauren { get; }
 
   /// <summary>
   /// Contains references to all Neutral <see cref="Legend"/>s.
@@ -128,6 +131,7 @@ public static class AllLegends
     Kultiras = new KultirasLegends();
     Legion = new LegionLegends();
     Lordaeron = new LordaeronLegends();
+    Orc = new OrcishHordeLegends();
     Naga = new IllidariLegends();
     Quel = new QuelthalasLegends();
     Scourge = new ScourgeLegends();
@@ -136,11 +140,9 @@ public static class AllLegends
     Warsong = new WarsongLegends();
     Neutral = new NeutralLegends();
     Gilneas = new GilneasLegends();
-    Ahnqiraj = new AhnqirajLegends();
-    BlackE = new BlackEmpireLegends();
-    Skywall = new SkywallLegends();
     Scarlet = new ScarletLegends();
     Sunfury = new SunfuryLegends();
+    Tauren = new TaurenTribesLegends();
   }
 
   /// <summary>
@@ -157,18 +159,17 @@ public static class AllLegends
     Kultiras.RegisterLegends();
     Legion.RegisterLegends();
     Lordaeron.RegisterLegends();
+    Orc.RegisterLegends();
     Naga.RegisterLegends();
     Quel.RegisterLegends();
     Scourge.RegisterLegends();
     Sentinels.RegisterLegends();
     Stormwind.RegisterLegends();
     Warsong.RegisterLegends();
-    Ahnqiraj.RegisterLegends();
-    BlackE.RegisterLegends();
-    Skywall.RegisterLegends();
     Neutral.RegisterLegends();
     Gilneas.RegisterLegends();
     Scarlet.RegisterLegends();
     Sunfury.RegisterLegends();
+    Tauren.RegisterLegends();
   }
 }

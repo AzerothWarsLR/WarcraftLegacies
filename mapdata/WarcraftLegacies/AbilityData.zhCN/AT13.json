@@ -1,0 +1,31 @@
+{
+  "OldId": "Aspp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灵魂链接"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灵魂链接"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将<AT13,DataB1>个单位连接在一起，使其彼此分担所受伤害的<AT13,DataA1,%>%。持续<AT13,Dur1>秒。"
+    }
+  ],
+  "NewId": "AT13"
+}

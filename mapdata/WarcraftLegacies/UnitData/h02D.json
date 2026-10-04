@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A02R,A0K6,A0FW,Aihn,A0ZU"
+      "Value": "A02R,A0K6,A0FW,Aihn,A0ZU,A16B"
     },
     {
       "Id": "udaa",
@@ -75,7 +75,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R00J,R01V,Rhme,Rhar,Rhpm,Rguv"
+      "Value": "R01V,Rhme,Rhar,Rhpm,Rguv"
     },
     {
       "Id": "ureq",
@@ -103,7 +103,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\MageDalaranV1.01.mdl"
+      "Value": "war3mapImported\\MageDalaranV1_01.mdl"
     },
     {
       "Id": "uhot",

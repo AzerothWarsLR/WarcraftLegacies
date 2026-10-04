@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Dialogues;
+using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
+using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Druids.Mechanics;
 using WarcraftLegacies.Source.Factions.Druids.Quests;
@@ -16,6 +17,7 @@ using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Powers;
 using WarcraftLegacies.Source.Shared.Quests;
+using WarcraftLegacies.Source.Shared.Researches;
 
 namespace WarcraftLegacies.Source.Factions.Druids;
 
@@ -25,18 +27,18 @@ public sealed class DruidsFaction : Faction
   public DruidsFaction() :
     base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.NightElves;
     UndefeatedResearch = UPGRADE_R06E_DRUIDS_EXISTS;
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 155,
+      Income = 190,
       Turns = 10
     };
     CinematicMusic = "DarkAgents";
     ControlPointDefenderUnitTypeId = UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;
     IntroText = () => Loc.Format(
-      "You are playing as the ancient {faction}.\n\nYou begin isolated in the deepest parts of Mount Hyjal near the World Tree.\n\nThe Old Gods are gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. Use him to awaken Malfurion from his slumber as soon as possible.\n\nGather your forces and strike before the Old Gods can organize their efforts.",
+      "You are playing as the ancient {faction}.\n\nYou begin isolated in the deepest parts of Mount Hyjal, near the World Tree. Cenarius has emerged from his seclusion. Use him to carry the Horn of Cenarius to the Barrow Den and awaken Malfurion from his slumber as soon as possible.\n\nThe Horde is coming to Kalimdor. Soon orcish axes will bite into Ashenvale, and the Tauren migrating north already covet the World Tree itself. Heal the forest and awaken the Ancients of Hyjal to rebuild your strength before they arrive.\n\nStand with the Sentinels, and when you are ready, let the wild answer: bring down Orgrimmar and humble Thunder Bluff.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Druids of the Cenarion Circle")}|r"));
 
     Nicknames = new List<string>
@@ -54,25 +56,56 @@ public sealed class DruidsFaction : Faction
     RegisterQuests();
     RegisterDialogue();
     RegisterPowers();
+    RegisterResearches();
     DruidsSpells.Setup();
     DruidsTraits.Setup();
     CenariusGhost.Setup(AllLegends.Druids.Cenarius, this);
+    MasterOfNatureProgression.Setup(ABILITY_A0U0_MASTER_OF_NATURE_BROWN_CENARIUS, UNIT_ECEN_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS,
+      UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    var cenarionHold = AllLegends.Druids.CenarionHold.Unit;
+    if (cenarionHold != null)
+    {
+      cenarionHold.SetOwner(player.NeutralPassive);
+      cenarionHold.IsInvulnerable = true;
+    }
+  }
+
+  private static void RegisterResearches()
+  {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_RK01_KEEPERS_OF_THE_GROVE_DRUIDS, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE, 6);
+        }
+      },
+      new CustomResearch(UPGRADE_RK02_HEARTWOOD_ANCIENTS_DRUIDS, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_E03H_HEARTWOOD_ANCIENT_DRUIDS_ELITE, 6);
+        }
+      });
   }
 
   private void RegisterQuests()
   {
     var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock,
       AllLegends.Druids.Nordrassil.Unit, Artifacts.HornOfCenarius,
-      AllLegends.Druids.Malfurion));
+      AllLegends.Druids.Malfurion, AllLegends.Druids.Cenarius));
     StartingQuest = newQuest;
     AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
     AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
     AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
-    AddQuest(new QuestDruidsKillCthun());
     AddQuest(new QuestShaladrassil(AllLegends.Neutral.Shaladrassil));
     AddQuest(new QuestTortolla(AllLegends.Druids.Tortolla));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
+    AddQuest(new QuestWrathOfTheWild());
+    AddQuest(new QuestSubdueTheTauren());
   }
 
   private void RegisterDialogue()
@@ -114,17 +147,37 @@ public sealed class DruidsFaction : Faction
 
   private void RegisterPowers()
   {
-    var worldTrees = new List<Capital>
+    var worldTreeProtections = new List<WorldTreeProtection>
     {
-      AllLegends.Druids.Nordrassil,
-      AllLegends.Neutral.Shaladrassil,
-      AllLegends.Druids.Vordrassil
+      new()
+      {
+        WorldTree = AllLegends.Druids.Nordrassil,
+        RegionName = "Kalimdor",
+        Regions = new[] { Regions.ImmortalityKalimdor }
+      },
+      new()
+      {
+        WorldTree = AllLegends.Neutral.Shaladrassil,
+        RegionName = "Broken Isles",
+        Regions = new[] { Regions.ImmortalityBrokenIsles }
+      },
+      new()
+      {
+        WorldTree = AllLegends.Druids.Vordrassil,
+        RegionName = "Northrend",
+        Regions = new[] { Regions.ImmortalityNorthrend }
+      },
+      new()
+      {
+        WorldTree = AllLegends.Neutral.Seradane,
+        RegionName = "Eastern Kingdoms",
+        Regions = new[] { Regions.ImmortalityEasternKingdoms1, Regions.ImmortalityEasternKingdoms2 }
+      }
     };
-    AddPower(new Immortality(20, 40, worldTrees)
+    AddPower(new Immortality(25, 45, worldTreeProtections)
     {
       IconName = "ArcaneRessurection",
-      Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
-      ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
+      Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
     });
   }
 
