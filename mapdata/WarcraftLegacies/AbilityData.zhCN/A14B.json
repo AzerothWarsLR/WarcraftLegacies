@@ -1,0 +1,19 @@
+{
+  "OldId": "AIbg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "建造迷你大厅"
+    }
+  ],
+  "NewId": "A14B"
+}

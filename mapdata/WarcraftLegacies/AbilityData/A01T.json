@@ -108,7 +108,11 @@
       "Pointer": 1,
       "Id": "Ucs1",
       "Type": 2,
-      "Value": 80
+      "Value": 100
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
     },
     {
       "Id": "aart",
@@ -123,7 +127,7 @@
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": "amat",
@@ -156,13 +160,24 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a gigantic wave which deals \u003CA01T,DataA1\u003E damage to each enemy land unit in a line, up to \u003CA01T,DataB1\u003E max damage."
+      "Value": "Sends a gigantic wave which deals <A01T,DataA1> damage to each enemy land unit in a line, up to <A01T,DataB1> max damage."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Sends a gigantic wave which deals \u003CA01T,DataA2\u003E damage to each enemy land unit in a line, up to \u003CA01T,DataB2\u003E max damage."
+      "Value": "Sends a gigantic wave which deals <A01T,DataA2> damage to each enemy land unit in a line, up to <A01T,DataB2> max damage."
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Ucs4",
+      "Type": 2,
+      "Value": 300
     }
   ]
 }

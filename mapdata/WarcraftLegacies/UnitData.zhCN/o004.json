@@ -1,0 +1,19 @@
+{
+  "OldId": "otto",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "石槌要塞"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "石槌要塞"
+    }
+  ],
+  "NewId": "o004"
+}

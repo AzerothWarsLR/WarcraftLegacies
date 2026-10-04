@@ -1,0 +1,64 @@
+{
+  "OldId": "AEtq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色 - 塞纳留斯）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习宁静 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤治疗能量之雨倾泻于大片区域，治疗友方盟友单位。|n持续<AEtq,Dur1>秒。 |n|n|cffffcc00等级 1|r - 每秒恢复<AEtq,DataA1>点生命值。180 秒冷却时间。 |n|cffffcc00等级 2|r - 每秒恢复<AEtq,DataA2>点生命值。165 秒冷却时间。 |n|cffffcc00等级 3|r - 每秒恢复<AEtq,DataA3>点生命值。150 秒冷却时间。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "宁静 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "宁静 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "宁静 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤治疗能量之雨倾泻于大片区域，每秒为友方盟友单位恢复 30 点生命值。|n持续 20 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤治疗能量之雨倾泻于大片区域，每秒为友方盟友单位恢复 40 点生命值。|n持续 20 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤治疗能量之雨倾泻于大片区域，每秒为友方盟友单位恢复 50 点生命值。|n持续 20 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "宁静"
+    }
+  ]
+}

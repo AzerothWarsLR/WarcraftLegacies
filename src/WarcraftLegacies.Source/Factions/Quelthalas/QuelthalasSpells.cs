@@ -1,4 +1,5 @@
 ﻿using MacroTools.Spells;
+using WarcraftLegacies.Source.Factions.Quelthalas.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas;
@@ -29,6 +30,24 @@ public static class QuelthalasSpells
       BurnReductionPerBounce = 0.1f,
       MaximumBounceRadius = 500,
       BurnedManaDamageMultiplier = 3f,
+    });
+
+    SpellRegistry.Register(new SunfireBarrageSpell(ABILITY_A14K_SUNFIRE_BARRAGE_ANASTERIAN)
+    {
+      FireballDamage = new LeveledAbilityField<float> { Base = 70, PerLevel = 105 },
+      OrbDamage = new LeveledAbilityField<float> { Base = 25, PerLevel = 25 },
+      OrbBlastRadius = 150,
+      FireballSpeed = 900,
+      OrbSpeed = 1200,
+      Effects = new SunfireBarrageEffectSettings
+      {
+        FireballPath = @"Abilities\Weapons\FireBallMissile\FireBallMissile.mdl",
+        FireballScale = 2,
+        FireballExplosionPath = @"Abilities\Spells\Other\Incinerate\FireLordDeathExplode.mdl",
+        FireballExplosionScale = 2,
+        OrbExplosionPath = @"Abilities\Spells\Other\Incinerate\FireLordDeathExplode.mdl",
+        OrbExplosionScale = 0.7f
+      }
     });
   }
 }

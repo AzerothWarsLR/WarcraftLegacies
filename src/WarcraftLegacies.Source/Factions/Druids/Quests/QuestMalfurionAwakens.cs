@@ -20,6 +20,7 @@ public sealed class QuestMalfurionAwakens : QuestData
   private readonly unit _worldTree;
   private readonly Artifact _hornofCenarius;
   private readonly LegendaryHero _malfurion;
+  private readonly LegendaryHero _cenarius;
   private readonly List<unit> _moongladeUnits;
   private readonly List<unit> _darnassusUnits;
 
@@ -31,13 +32,15 @@ public sealed class QuestMalfurionAwakens : QuestData
   /// <param name="worldTree">Starts invulnerable and is recued when the quest is completed.</param>
   /// <param name="hornofCenarius">Required to complete the quest.</param>
   /// <param name="malfurion">Awakened when the quest is completed.</param>
-  public QuestMalfurionAwakens(Rectangle moonglade, Rectangle darnassus, unit worldTree, Artifact hornofCenarius, LegendaryHero malfurion) : base("Awakening of Stormrage",
+  /// <param name="cenarius">Receives the Horn of Cenarius when the quest is completed.</param>
+  public QuestMalfurionAwakens(Rectangle moonglade, Rectangle darnassus, unit worldTree, Artifact hornofCenarius, LegendaryHero malfurion, LegendaryHero cenarius) : base("Awakening of Stormrage",
     "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage and his druids have slumbered within the Barrow Den. Now, their help is required once again.",
     @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
     _worldTree = worldTree;
     _hornofCenarius = hornofCenarius;
     _malfurion = malfurion;
+    _cenarius = cenarius;
     AddObjective(new ObjectiveAcquireArtifact(hornofCenarius));
     AddObjective(new ObjectiveArtifactInRect(hornofCenarius, Regions.Moonglade,
       "The Barrow Den"));
@@ -53,7 +56,7 @@ public sealed class QuestMalfurionAwakens : QuestData
   public override string RewardFlavour => "Malfurion has emerged from his deep slumber in the Barrow Den. Darnassus and the Moonglade ancients have been awakened.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => "Gain Nordrassil, the Darnassus base, the Moonglade base, the hero Malfurion, and the artifact G'hanir";
+  protected override string RewardDescription => "Gain Nordrassil, the Darnassus base, the Moonglade base, the hero Malfurion, and the artifact G'hanir. Cenarius takes up the Horn of Cenarius";
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
@@ -81,11 +84,15 @@ public sealed class QuestMalfurionAwakens : QuestData
       _malfurion.ForceCreate(completingFaction.Player, Regions.Moonglade.Center,
         270);
       _malfurion.Unit?.SetLevel(3, false);
-      _malfurion.Unit?.AddItemSafe(_hornofCenarius.Item);
+    }
+
+    if (_cenarius.Unit != null && _cenarius.Unit.Alive)
+    {
+      _cenarius.Unit.AddItemSafe(_hornofCenarius.Item);
     }
     else
     {
-      _hornofCenarius.Item.SetPositionSafe(@event.Unit.GetPosition());
+      _malfurion.Unit?.AddItemSafe(_hornofCenarius.Item);
     }
   }
 

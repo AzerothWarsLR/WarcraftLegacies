@@ -1,0 +1,64 @@
+{
+  "OldId": "AEsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（泰兰德）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习星辰坠落 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。|n持续<AEsf,Dur1>秒。|n|n|cffffcc00等级 1|r - 45 点伤害。|n|cffffcc00等级 2|r - 60 点伤害。|n|cffffcc00等级 3|r - 80 点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "星辰坠落 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "星辰坠落 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "星辰坠落 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。每波造成 45 点伤害。|n持续<AEsf,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。每波造成 60 点伤害。|n持续<AEsf,Dur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一波波坠落的星辰，伤害附近的敌方单位。每波造成 85 点伤害。|n持续<AEsf,Dur3>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "星辰坠落"
+    }
+  ]
+}

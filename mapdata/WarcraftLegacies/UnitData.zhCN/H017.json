@@ -1,0 +1,44 @@
+{
+  "OldId": "Hlgr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活伯瓦尔·弗塔根"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "联盟大领主"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "伯瓦尔·弗塔根"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活伯瓦尔·弗塔根"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，擅长强化附近的部队。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤伯瓦尔·弗塔根"
+    }
+  ],
+  "NewId": "H017"
+}

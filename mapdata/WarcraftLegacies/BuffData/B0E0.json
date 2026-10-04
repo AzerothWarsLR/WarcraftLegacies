@@ -1,0 +1,29 @@
+{
+  "OldId": "Boar",
+  "NewId": "B0E0",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Grimtotem Ward"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is near a Grimtotem Ward; it regains hit points every second."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Grimtotem Ward"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PAS_cr_GoblinWard.blp"
+    }
+  ]
+}

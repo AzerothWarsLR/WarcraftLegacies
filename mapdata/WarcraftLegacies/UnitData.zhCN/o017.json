@@ -1,0 +1,14 @@
+{
+  "OldId": "ofrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "基尔索罗堡垒"
+    }
+  ],
+  "NewId": "o017"
+}

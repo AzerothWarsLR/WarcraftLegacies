@@ -57,7 +57,7 @@ public sealed class ChainManaBurn : Spell
       .EnumUnitsInRange(target.X, target.Y, MaximumTotalRadius)
       .Where(x => IsValidTarget(caster, x))
       .ToList();
-    var manaBurned = ManaBurned.Base + ManaBurned.PerLevel * GetAbilityLevel(caster);
+    var manaBurned = ManaBurned.GetValue(GetAbilityLevel(caster));
     DoBounce(caster, caster, target, manaBurned, BurnedManaDamageMultiplier, MaximumBounces, possibleTargets);
   }
 

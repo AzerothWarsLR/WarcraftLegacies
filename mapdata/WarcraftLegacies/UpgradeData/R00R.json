@@ -71,7 +71,7 @@
       "Level": 1,
       "Id": "greq",
       "Type": 3,
-      "Value": "ofrt"
+      "Value": "osld"
     },
     {
       "Level": 1,
@@ -80,14 +80,14 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNChainLightning.blp"
     },
     {
-      "Id": "gbpx",
+      "Id": "gbpy",
       "Value": 1
     },
     {
       "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Value": "(Frostwolf)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Level": 1,

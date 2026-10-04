@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.Factions.Sentinels.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits.Vengeance;
 
@@ -21,7 +22,8 @@ public static class SentinelsTraits
       AbilityWhitelist = new List<int>
       {
         ABILITY_A0FC_BARBED_NET_NAISHA,
-        ABILITY_A0MG_QUICK_KNIVES_NAISHA,
+        ABILITY_A14F_GLAIVE_TRAP_NAISHA,
+        ABILITY_A14G_WATCHER_S_FOCUS_NAISHA,
       }
     }, UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS);
 
@@ -36,5 +38,23 @@ public static class SentinelsTraits
       Duration = 20,
       ReviveEffect = "Heal Blue.mdx"
     }, UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS);
+
+    UnitTypeTraitRegistry.Register(new SpiritOfVengeanceTrait
+    {
+      AbilityId = ABILITY_A15W_SPIRIT_OF_VENGEANCE_SENTINELS_WARDEN,
+      ChancePercent = 15,
+      SpiritModelPath = @"units\nightelf\SpiritOfVengeance\SpiritOfVengeance.mdl",
+      SpiritScale = 0.75f,
+      SpiritDistance = 90,
+      StrikeDelay = 0.4f,
+      FadeDuration = 0.5f
+    }, UNIT_H045_WARDEN_SENTINELS_ELITE);
+
+    UnitTypeTraitRegistry.Register(new MoonlitArrowsTrait
+    {
+      BonusDamage = 20,
+      DayMissile = @"Abilities\Weapons\MoonPriestessMissile\MoonPriestessMissile.mdl",
+      NightMissile = "SpiritArrow_ByEpsilon.mdx"
+    }, UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE);
   }
 }

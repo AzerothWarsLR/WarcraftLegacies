@@ -1,0 +1,16 @@
+{
+  "Left": -17408,
+  "Bottom": -12576,
+  "Right": -14080,
+  "Top": -8320,
+  "Name": "SouthKalimdor2",
+  "CreationNumber": 223,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "OldId": "AOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（戴林）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤海军上将卫兵"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习召唤海军上将卫兵 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "戴林召唤他的精锐卫队前来防御。他们拥有防御、嘲讽和抗性皮肤。 |n增援持续 60 秒。 |n|n|cffffcc001级|r - 2 名海军上将卫兵。|n|cffffcc002级|r - 3 名海军上将卫兵。|n|cffffcc003级|r - 4 名海军上将卫兵。 |n|cffffcc004级|r - 5 名海军上将卫兵。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤海军上将卫兵 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤海军上将卫兵 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤海军上将卫兵 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤海军上将卫兵 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 2 名海军上将卫兵。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 3 名海军上将卫兵。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 4 名海军上将卫兵。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 5 名海军上将卫兵。"
+    }
+  ],
+  "NewId": "A0V2"
+}

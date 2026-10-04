@@ -25,7 +25,7 @@ public sealed class SummoningMastery : UnitTrait, IEffectOnSummonedUnit
   {
     var abilityLevel = @event.SummoningUnit.GetAbilityLevel(_abilityTypeId);
     var summonedUnit = @event.SummonedUnit;
-    summonedUnit.MultiplyBaseDamage(1 + AttackDamagePercentageBonus.Base + AttackDamagePercentageBonus.PerLevel * abilityLevel, 0);
-    summonedUnit.MultiplyMaxHitpoints(1 + HitPointPercentageBonus.Base + HitPointPercentageBonus.PerLevel * abilityLevel);
+    summonedUnit.MultiplyBaseDamage(1 + AttackDamagePercentageBonus.GetValue(abilityLevel), 0);
+    summonedUnit.MultiplyMaxHitpoints(1 + HitPointPercentageBonus.GetValue(abilityLevel));
   }
 }

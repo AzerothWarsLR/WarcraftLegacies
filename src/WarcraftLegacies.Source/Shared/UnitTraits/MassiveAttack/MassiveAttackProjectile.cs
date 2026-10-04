@@ -30,7 +30,7 @@ public sealed class MassiveAttackProjectile : BasicMissile
 
   public override void OnCollision(unit unit)
   {
-    if (!IsValidTarget(Caster, unit))
+    if (!IsValidTarget(unit, Caster))
     {
       return;
     }
@@ -43,6 +43,6 @@ public sealed class MassiveAttackProjectile : BasicMissile
     target.Alive &&
     !target.IsUnitType(unittype.Structure) &&
     !target.IsUnitType(unittype.Ancient) &&
-    !caster.Owner.IsAlly(target.Owner)
-    | Hits.Contains(target);
+    !caster.Owner.IsAlly(target.Owner) &&
+    !Hits.Contains(target);
 }

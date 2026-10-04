@@ -1,0 +1,28 @@
+{
+  "OldId": "hpxe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯-安纳斯特里安）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "奥的脆弱之卵。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "凤凰蛋"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练凤凰蛋"
+    }
+  ]
+}

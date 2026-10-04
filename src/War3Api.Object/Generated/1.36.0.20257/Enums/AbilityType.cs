@@ -61,6 +61,8 @@ namespace War3Api.Object.Enums
         DarkRangerSilence = 1769164353,
         /// <summary>Death knight animate dead ('AUan').</summary>
         DeathKnightAnimateDead = 1851872577,
+        /// <summary>Death knight animate dead variant 2 ('AUa2').</summary>
+        DeathKnightAnimateDeadVariant2 = 845239617,
         /// <summary>Death knight death coil ('AUdc').</summary>
         DeathKnightDeathCoil = 1667519809,
         /// <summary>Death knight death pact ('AUdp').</summary>

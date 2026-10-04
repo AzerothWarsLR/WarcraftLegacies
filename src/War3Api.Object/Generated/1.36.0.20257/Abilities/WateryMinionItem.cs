@@ -11,28 +11,108 @@ namespace War3Api.Object.Abilities
 {
     public sealed class WateryMinionItem : Ability
     {
+        private readonly Lazy<ObjectProperty<string>> _dataSummonedUnitTypeRaw;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataSummonedUnitTypeModified;
+        private readonly Lazy<ObjectProperty<Unit>> _dataSummonedUnitType;
+        private readonly Lazy<ObjectProperty<int>> _dataSummonedUnitCount;
+        private readonly Lazy<ReadOnlyObjectProperty<bool>> _isDataSummonedUnitCountModified;
         public WateryMinionItem(): base(1836534081)
         {
+            _dataSummonedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSummonedUnitTypeRaw, SetDataSummonedUnitTypeRaw));
+            _isDataSummonedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitTypeModified));
+            _dataSummonedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataSummonedUnitType, SetDataSummonedUnitType));
+            _dataSummonedUnitCount = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonedUnitCount, SetDataSummonedUnitCount));
+            _isDataSummonedUnitCountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitCountModified));
         }
 
         public WateryMinionItem(int newId): base(1836534081, newId)
         {
+            _dataSummonedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSummonedUnitTypeRaw, SetDataSummonedUnitTypeRaw));
+            _isDataSummonedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitTypeModified));
+            _dataSummonedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataSummonedUnitType, SetDataSummonedUnitType));
+            _dataSummonedUnitCount = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonedUnitCount, SetDataSummonedUnitCount));
+            _isDataSummonedUnitCountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitCountModified));
         }
 
         public WateryMinionItem(string newRawcode): base(1836534081, newRawcode)
         {
+            _dataSummonedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSummonedUnitTypeRaw, SetDataSummonedUnitTypeRaw));
+            _isDataSummonedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitTypeModified));
+            _dataSummonedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataSummonedUnitType, SetDataSummonedUnitType));
+            _dataSummonedUnitCount = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonedUnitCount, SetDataSummonedUnitCount));
+            _isDataSummonedUnitCountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitCountModified));
         }
 
         public WateryMinionItem(ObjectDatabaseBase db): base(1836534081, db)
         {
+            _dataSummonedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSummonedUnitTypeRaw, SetDataSummonedUnitTypeRaw));
+            _isDataSummonedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitTypeModified));
+            _dataSummonedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataSummonedUnitType, SetDataSummonedUnitType));
+            _dataSummonedUnitCount = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonedUnitCount, SetDataSummonedUnitCount));
+            _isDataSummonedUnitCountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitCountModified));
         }
 
         public WateryMinionItem(int newId, ObjectDatabaseBase db): base(1836534081, newId, db)
         {
+            _dataSummonedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSummonedUnitTypeRaw, SetDataSummonedUnitTypeRaw));
+            _isDataSummonedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitTypeModified));
+            _dataSummonedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataSummonedUnitType, SetDataSummonedUnitType));
+            _dataSummonedUnitCount = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonedUnitCount, SetDataSummonedUnitCount));
+            _isDataSummonedUnitCountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitCountModified));
         }
 
         public WateryMinionItem(string newRawcode, ObjectDatabaseBase db): base(1836534081, newRawcode, db)
         {
+            _dataSummonedUnitTypeRaw = new Lazy<ObjectProperty<string>>(() => new ObjectProperty<string>(GetDataSummonedUnitTypeRaw, SetDataSummonedUnitTypeRaw));
+            _isDataSummonedUnitTypeModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitTypeModified));
+            _dataSummonedUnitType = new Lazy<ObjectProperty<Unit>>(() => new ObjectProperty<Unit>(GetDataSummonedUnitType, SetDataSummonedUnitType));
+            _dataSummonedUnitCount = new Lazy<ObjectProperty<int>>(() => new ObjectProperty<int>(GetDataSummonedUnitCount, SetDataSummonedUnitCount));
+            _isDataSummonedUnitCountModified = new Lazy<ReadOnlyObjectProperty<bool>>(() => new ReadOnlyObjectProperty<bool>(GetIsDataSummonedUnitCountModified));
+        }
+
+        public ObjectProperty<string> DataSummonedUnitTypeRaw => _dataSummonedUnitTypeRaw.Value;
+        public ReadOnlyObjectProperty<bool> IsDataSummonedUnitTypeModified => _isDataSummonedUnitTypeModified.Value;
+        public ObjectProperty<Unit> DataSummonedUnitType => _dataSummonedUnitType.Value;
+        public ObjectProperty<int> DataSummonedUnitCount => _dataSummonedUnitCount.Value;
+        public ReadOnlyObjectProperty<bool> IsDataSummonedUnitCountModified => _isDataSummonedUnitCountModified.Value;
+        private string GetDataSummonedUnitTypeRaw(int level)
+        {
+            return _modifications.GetModification(828733256, level).ValueAsString;
+        }
+
+        private void SetDataSummonedUnitTypeRaw(int level, string value)
+        {
+            _modifications[828733256, level] = new LevelObjectDataModification{Id = 828733256, Type = ObjectDataType.String, Value = value, Level = level};
+        }
+
+        private bool GetIsDataSummonedUnitTypeModified(int level)
+        {
+            return _modifications.ContainsKey(828733256, level);
+        }
+
+        private Unit GetDataSummonedUnitType(int level)
+        {
+            return GetDataSummonedUnitTypeRaw(level).ToUnit(this);
+        }
+
+        private void SetDataSummonedUnitType(int level, Unit value)
+        {
+            SetDataSummonedUnitTypeRaw(level, value.ToRaw(null, null));
+        }
+
+        private int GetDataSummonedUnitCount(int level)
+        {
+            return _modifications.GetModification(845510472, level).ValueAsInt;
+        }
+
+        private void SetDataSummonedUnitCount(int level, int value)
+        {
+            _modifications[845510472, level] = new LevelObjectDataModification{Id = 845510472, Type = ObjectDataType.Int, Value = value, Level = level, Pointer = 1};
+        }
+
+        private bool GetIsDataSummonedUnitCountModified(int level)
+        {
+            return _modifications.ContainsKey(845510472, level);
         }
     }
 }

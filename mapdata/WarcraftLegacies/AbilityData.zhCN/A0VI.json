@@ -1,0 +1,31 @@
+{
+  "OldId": "Ansk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（棕色雷象）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "将该单位受到的所有远程攻击伤害降低<A0VI,DataC1>点。攻击伤害不能被降低到<A0VI,DataB1>点以下。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化"
+    }
+  ],
+  "NewId": "A0VI"
+}

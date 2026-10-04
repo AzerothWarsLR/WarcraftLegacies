@@ -33,12 +33,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R09X,R00C,R006,R04R,Rhme,Rhar,Rosp,Rorb"
+      "Value": "R09X,R00C,R006,R04R,R09N,Rhme,Rhar,Rosp,Rorb"
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf Research)"
+      "Value": "(Orcish Horde Research)"
     },
     {
       "Id": "uhot",

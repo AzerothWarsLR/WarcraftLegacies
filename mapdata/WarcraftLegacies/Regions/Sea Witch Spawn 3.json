@@ -1,0 +1,16 @@
+{
+  "Left": -1280,
+  "Bottom": -8416,
+  "Right": -832,
+  "Top": -8000,
+  "Name": "Sea Witch Spawn 3",
+  "CreationNumber": 220,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 125,
+    "B": 0,
+    "A": 255
+  }
+}

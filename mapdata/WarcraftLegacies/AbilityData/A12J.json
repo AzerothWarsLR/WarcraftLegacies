@@ -55,11 +55,6 @@
       "Value": "air,friend,ground,neutral,organic,self"
     },
     {
-      "Id": "areq",
-      "Type": 3,
-      "Value": "R03Q"
-    },
-    {
       "Id": "ansf",
       "Type": 3,
       "Value": "(warsong)"

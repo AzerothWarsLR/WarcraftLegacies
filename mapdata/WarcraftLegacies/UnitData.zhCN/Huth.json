@@ -1,0 +1,33 @@
+{
+  "OldId": "Huth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "白银之手领袖"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，出色的前线支援者。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤乌瑟尔"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "光明使者乌瑟尔"
+    }
+  ]
+}

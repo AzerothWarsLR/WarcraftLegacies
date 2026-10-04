@@ -1,0 +1,29 @@
+{
+  "OldId": "nmrk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯商店）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "贸易站"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造贸易站"
+    }
+  ],
+  "NewId": "n07H"
+}

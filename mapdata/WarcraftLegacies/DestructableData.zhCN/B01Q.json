@@ -1,0 +1,14 @@
+{
+  "OldId": "ZTr3",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "异种蝎小型坡道（底部）"
+    }
+  ],
+  "NewId": "B01Q"
+}

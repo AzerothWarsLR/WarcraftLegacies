@@ -1,0 +1,13 @@
+{
+  "OldId": "nct2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "半人马帐篷"
+    }
+  ]
+}

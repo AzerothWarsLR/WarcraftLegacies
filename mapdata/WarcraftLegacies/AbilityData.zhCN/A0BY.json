@@ -1,0 +1,26 @@
+{
+  "OldId": "ANms",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 提瑞斯法守护者）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活法力护盾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活一道护盾，每点法力值可吸收<A0BY,DataA1>点伤害。"
+    }
+  ],
+  "NewId": "A0BY"
+}

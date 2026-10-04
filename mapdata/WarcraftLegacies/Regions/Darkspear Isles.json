@@ -1,0 +1,16 @@
+{
+  "Left": -4288,
+  "Bottom": -10048,
+  "Right": -608,
+  "Top": -7200,
+  "Name": "Darkspear Isles",
+  "CreationNumber": 221,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 128,
+    "B": 128,
+    "A": 255
+  }
+}

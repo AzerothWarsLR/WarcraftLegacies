@@ -1,10 +1,10 @@
 [
   {
-    "TypeId": 1245065326,
+    "TypeId": 1177956462,
     "Variation": 0,
     "Position": {
-      "X": -20704,
-      "Y": 8096,
+      "X": -20608,
+      "Y": 8128,
       "Z": 43
     },
     "Rotation": 4.712389,
@@ -13,9 +13,9 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1245065326,
+    "SkinId": 1177956462,
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 24,
     "Unk1": 0,
     "Unk2": 0,
     "HP": -1,
@@ -33,25 +33,25 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 2057
+    "CreationNumber": 1761
   },
   {
-    "TypeId": 1668246643,
-    "Variation": 18,
+    "TypeId": 1886283118,
+    "Variation": 0,
     "Position": {
-      "X": -20672,
-      "Y": 8320,
-      "Z": 48
+      "X": -20777.77,
+      "Y": 8083.385,
+      "Z": 65.73832
     },
-    "Rotation": 4.712389,
+    "Rotation": 4.4214916,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1668246643,
+    "SkinId": 1886283118,
     "Flags": 2,
-    "OwnerId": 18,
+    "OwnerId": 24,
     "Unk1": 0,
     "Unk2": 0,
     "HP": -1,
@@ -59,8 +59,8 @@
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "GoldAmount": 0,
-    "TargetAcquisition": 0,
-    "HeroLevel": 0,
+    "TargetAcquisition": -2,
+    "HeroLevel": 1,
     "HeroStrength": 0,
     "HeroAgility": 0,
     "HeroIntelligence": 0,
@@ -69,6 +69,42 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 127
+    "CreationNumber": 832
+  },
+  {
+    "TypeId": 1668179310,
+    "Variation": 0,
+    "Position": {
+      "X": -20718.303,
+      "Y": 8210.915,
+      "Z": 68.9134
+    },
+    "Rotation": 4.1492095,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1668179310,
+    "Flags": 2,
+    "OwnerId": 24,
+    "Unk1": 0,
+    "Unk2": 0,
+    "HP": -1,
+    "MP": -1,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "GoldAmount": 0,
+    "TargetAcquisition": -2,
+    "HeroLevel": 1,
+    "HeroStrength": 0,
+    "HeroAgility": 0,
+    "HeroIntelligence": 0,
+    "InventoryData": [],
+    "AbilityData": [],
+    "RandomDataMode": -1,
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "CreationNumber": 1322
   }
 ]

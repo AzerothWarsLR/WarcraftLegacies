@@ -91,7 +91,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R05R"
+      "Value": ""
     },
     {
       "Id": "ua1s",
@@ -186,7 +186,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "umdl",

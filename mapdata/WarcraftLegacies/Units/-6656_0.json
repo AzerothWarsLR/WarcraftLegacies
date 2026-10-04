@@ -1,11 +1,11 @@
 [
   {
-    "TypeId": 942813295,
+    "TypeId": 1918984815,
     "Variation": 0,
     "Position": {
-      "X": -6656,
-      "Y": -192,
-      "Z": 70.52969
+      "X": -6880,
+      "Y": 96,
+      "Z": 98.83789
     },
     "Rotation": 4.712389,
     "Scale": {
@@ -13,7 +13,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 942813295,
+    "SkinId": 1918984815,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -33,23 +33,23 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 3314
+    "CreationNumber": 900074
   },
   {
-    "TypeId": 1970431855,
+    "TypeId": 1853188207,
     "Variation": 0,
     "Position": {
-      "X": -6805.5234,
-      "Y": 168.08984,
-      "Z": 85.06764
+      "X": -7067.2134,
+      "Y": 207.55688,
+      "Z": 82.00561
     },
-    "Rotation": 5.070153,
+    "Rotation": 2.8636463,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1970431855,
+    "SkinId": 1853188207,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -69,23 +69,23 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 580
+    "CreationNumber": 900319
   },
   {
-    "TypeId": 1970431855,
+    "TypeId": 1853188207,
     "Variation": 0,
     "Position": {
-      "X": -6943.293,
-      "Y": 247.78125,
-      "Z": 67.05586
+      "X": -7063.765,
+      "Y": 117.60425,
+      "Z": 87.75
     },
-    "Rotation": 2.7645097,
+    "Rotation": 5.463056,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1970431855,
+    "SkinId": 1853188207,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -105,29 +105,29 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 571
+    "CreationNumber": 900320
   },
   {
-    "TypeId": 1969321071,
+    "TypeId": 1835561839,
     "Variation": 0,
     "Position": {
-      "X": -7001.508,
-      "Y": 70.28125,
-      "Z": 84.089455
+      "X": -6976.225,
+      "Y": 231.73047,
+      "Z": 85.19182
     },
-    "Rotation": 2.985793,
+    "Rotation": 4.100839,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1969321071,
+    "SkinId": 1835561839,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
     "Unk2": 0,
     "HP": -1,
-    "MP": -1,
+    "MP": 0,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "GoldAmount": 0,
@@ -141,6 +141,6 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1170
+    "CreationNumber": 900324
   }
 ]

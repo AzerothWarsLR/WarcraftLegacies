@@ -1,0 +1,29 @@
+{
+  "OldId": "hkee",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立敌对）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑鸦堡"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "黑鸦堡"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "古老精灵守望者的阴森堡垒。"
+    }
+  ],
+  "NewId": "h03C"
+}

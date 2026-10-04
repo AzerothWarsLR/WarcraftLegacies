@@ -1,0 +1,78 @@
+{
+  "OldId": "ckng",
+  "NewId": "I026",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A167"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "A167"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeadProphetStaff.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Can be used to restore mana to nearby friendly units."
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Soulseeker"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nCan be used to restore 50 mana to all nearby friendly units.|n|cffffcc00Lore|r|n|cffffdeadKel\u0027thuzad carried this staff as an archmage of the Kirin Tor\u0027s Council of Six. Years of forbidden necromancy twisted it into a vessel for the souls of the dead."
+    }
+  ]
+}

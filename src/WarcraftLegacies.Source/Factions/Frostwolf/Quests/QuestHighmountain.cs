@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
-using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WCSharp.Shared.Data;
@@ -29,11 +28,6 @@ public sealed class QuestHighmountain : QuestData
   /// <inheritdoc />
   public override string RewardFlavour =>
     "Cairne is welcomed in Highmountain like a lost-long friend. Eager to explore the world and fight alongside their long-lost brethren, the Highmountain send their best hunters to support the Horde, and offer their home as a traveler's respite.";
-
-  /// <inheritdoc />
-  protected override string RewardDescription =>
-    Loc.Format("Gain control of all units in Highmountain, and learn to train {unit}s from the {building}",
-      ("{unit}", GetObjectName(UNIT_N049_WANDERER_FROSTWOLF)), ("{building}", GetObjectName(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE)));
 
   protected override void OnFail(Faction completingFaction)
   {

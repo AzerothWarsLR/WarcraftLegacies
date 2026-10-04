@@ -8,7 +8,7 @@
     {
       "Id": "gba1",
       "Type": 2,
-      "Value": 300
+      "Value": 150
     },
     {
       "Id": "gba2",
@@ -25,6 +25,11 @@
       "Value": 300
     },
     {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
@@ -32,9 +37,25 @@
     },
     {
       "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "Quest Completed: The War of the Shifting Sands"
+      "Value": "Quest Completed: Wrath of the Wild"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rhpx"
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "ratx"
     }
   ]
 }

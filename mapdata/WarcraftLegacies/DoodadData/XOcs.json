@@ -18,6 +18,11 @@
       "Id": "dtil",
       "Type": 3,
       "Value": "*"
+    },
+    {
+      "Id": "ddes",
+      "Type": 2,
+      "Value": 0.15
     }
   ]
 }

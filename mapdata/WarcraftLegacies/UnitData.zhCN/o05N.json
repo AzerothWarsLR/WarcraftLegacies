@@ -1,0 +1,24 @@
+{
+  "OldId": "osp2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "治疗之花"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练治疗之花"
+    }
+  ],
+  "NewId": "o05N"
+}

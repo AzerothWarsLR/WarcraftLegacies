@@ -1,10 +1,10 @@
 [
   {
-    "TypeId": 1110519918,
+    "TypeId": 1328885864,
     "Variation": 0,
     "Position": {
-      "X": 8896,
-      "Y": 5056,
+      "X": 8832,
+      "Y": 4992,
       "Z": 206.25
     },
     "Rotation": 4.712389,
@@ -13,7 +13,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1110519918,
+    "SkinId": 1328885864,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -33,23 +33,23 @@
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 237
+    "CreationNumber": 1024
   },
   {
-    "TypeId": 1144139880,
+    "TypeId": 1194537070,
     "Variation": 0,
     "Position": {
-      "X": 8785.93,
-      "Y": 4950.785,
+      "X": 8768,
+      "Y": 4864,
       "Z": 206.25
     },
-    "Rotation": 4.1706862,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1144139880,
+    "SkinId": 1194537070,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -65,10 +65,16 @@
     "HeroAgility": 0,
     "HeroIntelligence": 0,
     "InventoryData": [],
-    "AbilityData": [],
+    "AbilityData": [
+      {
+        "AbilityId": 1479815233,
+        "IsAutocastActive": true,
+        "HeroAbilityLevel": 0
+      }
+    ],
     "RandomDataMode": -1,
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "CreationNumber": 1192
+    "CreationNumber": 233
   }
 ]

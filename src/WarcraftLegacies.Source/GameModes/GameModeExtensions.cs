@@ -21,16 +21,14 @@ public static class GameModeExtensions
     player.Create(9).GetPlayerData().SetTeam(TeamSetup.Legion);
     player.Create(2).GetPlayerData().SetTeam(TeamSetup.Legion);
     player.Create(7).GetPlayerData().SetTeam(TeamSetup.Legion);
-    player.Create(12).GetPlayerData().SetTeam(TeamSetup.Legion);
-    player.Create(16).GetPlayerData().SetTeam(TeamSetup.Legion);
-    player.Create(8).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(5).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(0).GetPlayerData().SetTeam(TeamSetup.Legion);
 
     player.Create(3).GetPlayerData().SetTeam(TeamSetup.Alliance);
     player.Create(23).GetPlayerData().SetTeam(TeamSetup.Alliance);
     player.Create(1).GetPlayerData().SetTeam(TeamSetup.Alliance);
     player.Create(4).GetPlayerData().SetTeam(TeamSetup.Alliance);
     player.Create(22).GetPlayerData().SetTeam(TeamSetup.Alliance);
-    player.Create(0).GetPlayerData().SetTeam(TeamSetup.Alliance);
     player.Create(11).GetPlayerData().SetTeam(TeamSetup.Alliance);
     player.Create(18).GetPlayerData().SetTeam(TeamSetup.Alliance);
 
