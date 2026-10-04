@@ -28,7 +28,7 @@ public sealed class QuestTheLongMarch : QuestData
 
   public QuestTheLongMarch(LegendaryHero cairneBloodhoof, Point thousandNeedles, Point mulgore,
     Rectangle thunderBluff) : base("The Long March",
-    "The Tauren tribes must abandon their ancestral camp and march east across the Barrens, to their new home at Thunder Bluff. The march sets out as soon as Cairne Bloodhoof takes up the lead, joined by a war party of Tauren and Spirit Walkers. Centaur raiders infest the plains between here and there. Until the march is over, no units can be trained, but the elders of Thunder Bluff can already begin their research.",
+    "The Tauren tribes must abandon their ancestral camp and march east across the Barrens, to their new home at Thunder Bluff. The march sets out as soon as Cairne Bloodhoof takes up the lead, joined by a war party of Tauren and Spirit Walkers. Centaur raiders infest the plains between here and there. Reach Thunder Bluff to begin bolstering your forces.",
     @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
   {
     AddObjective(new ObjectiveSelfExists());
