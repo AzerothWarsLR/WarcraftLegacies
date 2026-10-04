@@ -14,7 +14,7 @@ public sealed class QuestTheDunemaulOgres : QuestData
   {
     AddObjective(new ObjectiveControlPoint(UNIT_N020_TANARIS));
     AddObjective(new ObjectiveSelfExists());
-    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    AddObjective(new ObjectiveQuestResolved(previousQuest)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

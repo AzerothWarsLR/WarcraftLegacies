@@ -35,13 +35,13 @@ public sealed class SentinelsFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 145,
+      Income = 195,
       Turns = 10
     };
     CinematicMusic = "Comradeship";
     ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
     IntroText = () => Loc.Format(
-      "You are playing as the ever-watchful {faction}.\n\nYou begin in Darkshore, where wild creatures gone mad threaten your people. Clear them out and secure Darkshore and the Grove of the Ancients to rally Auberdine and Astranaar to your side.\n\nThe orcs of the Horde will soon land on Kalimdor's shores, and the Tauren are already migrating north to join them. The Druids are still waking from their slumber, so until they are ready, the defense of Kalimdor falls to you.\n\nWhen the southern passes open, Feathermoon Stronghold rejoins your cause. Gather your army and strike at the heart of the Horde: Orgrimmar and Thunder Bluff.",
+      "You are playing as the ever-watchful {faction}.\n\nYou begin on Teldrassil, sharing the island with the Druids' slumbering city of Darnassus. Across the water, wild creatures gone mad threaten Darkshore. Clear them out and secure Darkshore and the Grove of the Ancients to rally Auberdine and Astranaar to your side.\n\nThe orcs of the Horde will soon land on Kalimdor's shores, and the Tauren are already migrating north to join them. The Druids are still waking from their slumber, so until they are ready, the defense of Kalimdor falls to you.\n\nWhen the southern passes open, Feathermoon Stronghold rejoins your cause. Gather your army and strike at the heart of the Horde: Orgrimmar and Thunder Bluff.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Sentinels")}|r"));
     Nicknames = new List<string>
     {

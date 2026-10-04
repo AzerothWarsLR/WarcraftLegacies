@@ -263,31 +263,50 @@ public static class UniqueEliteNames
       [UNIT_VP51_TAUREN_CHIEFTAIN_TAUREN_TRIBES_ELITE] =
         new()
         {
+          "Brek Stonehoof",
           "Durn Harpyslayer",
+          "Gorm Ironhorn",
           "Grok Bloodhorn",
+          "Hoga Wildmane",
           "Kel Stonebull",
+          "Krang Earthshaker",
           "Marn Thunderhorn",
+          "Narm Grimhorn",
+          "Orm Mistrunner",
+          "Tonga Skyhorn",
           "Tygore Dusthoof"
         },
       [UNIT_VP52_OGRE_LORD_TAUREN_TRIBES_ELITE] =
         new()
         {
+          "Brug Stonefist",
+          "Dak Mossback",
           "Gaz Boartusk",
           "Gish Eagle Eye",
           "Gorsh Talonfang",
+          "Grok Skullsplitter",
+          "Korg Twotusk",
           "Mag Bearmaul",
           "Maxx Rocmane",
           "Mok Rocksnout",
-          "Tagar Bearclaw"
+          "Tagar Bearclaw",
+          "Urg Bonecrusher"
         },
       [UNIT_VP56_SUNWALKER_CHAMPION_TAUREN_TRIBES] =
         new()
         {
+          "Ahanu Sunhorn",
+          "Beran Lightstride",
+          "Hiral Sunmane",
+          "Kador Brightmane",
           "Kam Ghoststeer",
           "Malar Plainstrider",
           "Mull Stormhoof",
+          "Nahi Dawnstrider",
           "Tam Windtotem",
-          "Taur Runetotem"
+          "Tanka Morninghoof",
+          "Taur Runetotem",
+          "Yona Goldenmane"
         },
       [UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE] =
         new()
@@ -307,18 +326,19 @@ public static class UniqueEliteNames
       [UNIT_E03H_HEARTWOOD_ANCIENT_DRUIDS_ELITE] =
         new()
         {
-          "Anubris",
-          "Bandalar",
-          "Califax",
-          "Centrius",
-          "Ceredwyn",
-          "Dagda",
-          "Gholbine",
-          "Larodar",
-          "Malorne",
-          "Nandieb",
-          "Nuada",
-          "Oghma"
+          "Ashenbark",
+          "Barkhide",
+          "Briarbranch",
+          "Deeproot",
+          "Elderbough",
+          "Fernwhisper",
+          "Greenheart",
+          "Ironwood",
+          "Leafwarden",
+          "Mossbeard",
+          "Silverbough",
+          "Thornbark",
+          "Willowgrip"
         },
       [UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE] =
         new()
@@ -354,6 +374,26 @@ public static class UniqueEliteNames
           "Shalis Darkhunter",
           "Sira Moonwarden",
           "The Iron Raven"
+        },
+      [UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS] =
+        new()
+        {
+          "Aelanis Duskwhisper",
+          "Aranthea Starweave",
+          "Belarion Moonshade",
+          "Caelith Silverbrook",
+          "Elandris Nightglade",
+          "Falathiel Dawnmantle",
+          "Ilyrae Thistlelight",
+          "Kaelen Ashenveil",
+          "Lorethas Starfall",
+          "Myrandel Sunshadow",
+          "Nalaris Windspire",
+          "Quilenna Mistbloom",
+          "Sathrenil Gloamshard",
+          "Tarenthis Silvermoor",
+          "Vaelthir Duskmantle",
+          "Ysindra Moonfall"
         },
       [UNIT_H09R_VINDICATOR_DRAENEI] =
         new()

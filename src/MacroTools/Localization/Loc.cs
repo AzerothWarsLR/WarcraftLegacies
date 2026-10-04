@@ -96,10 +96,27 @@ public static class Loc
     var template = Get(english, language);
     foreach (var (token, value) in args)
     {
-      template = template.Replace(token, Get(value, language));
+      template = ReplaceLiteral(template, token, Get(value, language));
     }
 
     return template;
+  }
+
+  internal static string ReplaceLiteral(string text, string token, string value)
+  {
+    if (token.Length == 0)
+    {
+      return text;
+    }
+
+    var index = text.IndexOf(token);
+    while (index >= 0)
+    {
+      text = text.Substring(0, index) + value + text.Substring(index + token.Length);
+      index = text.IndexOf(token, index + value.Length);
+    }
+
+    return text;
   }
 
   [EditorBrowsable(EditorBrowsableState.Never)]

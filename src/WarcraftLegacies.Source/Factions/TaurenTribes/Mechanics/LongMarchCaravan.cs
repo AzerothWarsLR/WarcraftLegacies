@@ -66,32 +66,50 @@ public sealed class LongMarchCaravan
   private const int AmbushWaveSize = 3;
   private const float OrderPulseInterval = 3.00f;
   private const float ArrivalRadius = 500f;
-  private const float ArrivalPauseSeconds = 15.00f;
+  private const float ArrivalPauseSeconds = 6.00f;
   private const float ThunderBluffPauseSeconds = 3.00f;
   private const float FormationSpacing = 200f;
-  private const float EscortMoveSpeed = 100f;
+  private const float EscortMoveSpeed = 170f;
   private const float GuardFormationSlotRadius = 600f;
-  private const float GuardCatchUpSpeed = 165f;
+  private const float GuardCatchUpSpeed = 200f;
   private const float GuardFlankOffset = 250f;
   private const float GuardVanguardOffset = 150f;
   private const float GuardEngagementRange = 350f;
   private const float AmbushCheckInterval = 7.00f;
+  private const float AmbushSpawnDistance = 800f;
+  private const int AmbushSpawnAttempts = 8;
+  private const int MaxAmbushWaves = 3;
+  private const float MinSecondsBetweenAmbushes = 20f;
+  private const float AmbushHaltRange = 1500f;
+  private const float AmbusherEngagedRange = 600f;
+  private const float AmbusherProgressDistance = 50f;
+  private const int AmbusherStuckPulseLimit = 4;
   private const float MinAmbushChance = 0.10f;
   private const float MaxAmbushChance = 0.65f;
-  private const float InitialFormUpGraceSeconds = 8.00f;
+  private const float InitialFormUpGraceSeconds = 4.00f;
   private const float MaxPlayerDistance = 2500f;
   private const float RestCircleRadius = 350f;
   private const float RestCircleArrivalRadius = 60f;
-  private const float RestCircleSettleSeconds = 6.00f;
+  private const float RestCircleSettleSeconds = 3.00f;
   private const float RestCircleTurnSeconds = 1.00f;
+
+  private readonly Rectangle[] _ambushExcludedRegions =
+  {
+    Regions.StonemaulKeep,
+    Regions.SouthKalimdor1,
+    Regions.SouthKalimdor2,
+    Regions.SouthKalimdor3
+  };
 
   private readonly Faction _taurenTribes;
   private readonly QuestTheLongMarch _quest;
   private readonly List<unit> _kodos;
   private readonly List<unit> _guards;
   private readonly List<(unit Unit, bool PrefersPlayer)> _ambushers = new();
+  private readonly Dictionary<unit, (float BestDistance, int StuckPulses)> _ambusherProgress = new();
   private readonly List<List<unit>> _pendingAmbushWaves = new();
   private int _ambushWavesSpawned;
+  private float _secondsSinceLastAmbush = MinSecondsBetweenAmbushes;
   private int _ambushWavesDefeatedReported;
   private readonly List<unit> _thunderBluffRescueUnits;
   private readonly unit _thousandNeedlesControlPoint;
@@ -295,7 +313,7 @@ public sealed class LongMarchCaravan
       return;
     }
 
-    if (_ambushers.Count > 0)
+    if (AnyAmbusherNear(living))
     {
       foreach (var kodo in living)
       {
@@ -633,7 +651,9 @@ public sealed class LongMarchCaravan
 
   private void TryAmbush()
   {
-    if (_concluded || _ambushers.Count > 0 || _stage == Stage.CampExit)
+    _secondsSinceLastAmbush += AmbushCheckInterval;
+    if (_concluded || _ambushers.Count > 0 || _stage == Stage.CampExit || _ambushWavesSpawned >= MaxAmbushWaves
+        || _secondsSinceLastAmbush < MinSecondsBetweenAmbushes)
     {
       return;
     }
@@ -656,19 +676,14 @@ public sealed class LongMarchCaravan
       return;
     }
 
-    var origin = living[GetRandomInt(0, living.Count - 1)];
-    var averageX = living.Average(kodo => kodo.X);
-    var averageY = living.Average(kodo => kodo.Y);
-    var forwardAngle = Math.Atan2(_currentTarget.Y - averageY, _currentTarget.X - averageX);
-    var angle = forwardAngle + (GetRandomReal(-90, 90) * Math.PI / 180.0);
-    var spawnX = origin.X + (float)Math.Cos(angle) * 800;
-    var spawnY = origin.Y + (float)Math.Sin(angle) * 800;
-
-    if (IsInsideRect(spawnX, spawnY, _thunderBluff))
+    var spawnPoint = FindAmbushSpawnPoint(living);
+    if (spawnPoint == null)
     {
       return;
     }
 
+    var spawnX = spawnPoint.X;
+    var spawnY = spawnPoint.Y;
     var waveMembers = new List<unit>();
     for (var i = 0; i < AmbushWaveSize; i++)
     {
@@ -682,6 +697,7 @@ public sealed class LongMarchCaravan
 
     _pendingAmbushWaves.Add(waveMembers);
     _ambushWavesSpawned++;
+    _secondsSinceLastAmbush = 0;
     PlayAmbushEscalationDialogue();
   }
 
@@ -727,9 +743,48 @@ public sealed class LongMarchCaravan
   private void RefreshAmbusherOrders(List<unit> livingKodos)
   {
     _ambushers.RemoveAll(ambusher => !ambusher.Unit.Alive);
+    RescueStuckAmbushers(livingKodos);
     foreach (var (ambusherUnit, prefersPlayer) in _ambushers)
     {
       IssueAmbusherOrder(ambusherUnit, prefersPlayer, livingKodos);
+    }
+  }
+
+  private void RescueStuckAmbushers(List<unit> livingKodos)
+  {
+    foreach (var deadAmbusher in _ambusherProgress.Keys.Where(ambusher => !ambusher.Alive).ToList())
+    {
+      _ambusherProgress.Remove(deadAmbusher);
+    }
+
+    if (livingKodos.Count == 0)
+    {
+      return;
+    }
+
+    foreach (var (ambusherUnit, _) in _ambushers)
+    {
+      var nearestKodo = livingKodos
+        .OrderBy(kodo => MathEx.GetDistanceBetweenPoints(kodo.GetPosition(), ambusherUnit.GetPosition()))
+        .First();
+      var distance = MathEx.GetDistanceBetweenPoints(nearestKodo.GetPosition(), ambusherUnit.GetPosition());
+
+      if (distance <= AmbusherEngagedRange
+          || !_ambusherProgress.TryGetValue(ambusherUnit, out var progress)
+          || distance < progress.BestDistance - AmbusherProgressDistance)
+      {
+        _ambusherProgress[ambusherUnit] = (distance, 0);
+        continue;
+      }
+
+      if (progress.StuckPulses + 1 < AmbusherStuckPulseLimit)
+      {
+        _ambusherProgress[ambusherUnit] = (progress.BestDistance, progress.StuckPulses + 1);
+        continue;
+      }
+
+      ambusherUnit.SetPosition(nearestKodo.X, nearestKodo.Y);
+      _ambusherProgress[ambusherUnit] = (0, 0);
     }
   }
 
@@ -746,6 +801,43 @@ public sealed class LongMarchCaravan
 
     ambusher.IssueOrder(ORDER_ATTACK, target.X, target.Y);
   }
+
+  private Point? FindAmbushSpawnPoint(List<unit> living)
+  {
+    var averageX = living.Average(kodo => kodo.X);
+    var averageY = living.Average(kodo => kodo.Y);
+    var forwardAngle = Math.Atan2(_currentTarget.Y - averageY, _currentTarget.X - averageX);
+
+    for (var attempt = 0; attempt < AmbushSpawnAttempts; attempt++)
+    {
+      var origin = living[GetRandomInt(0, living.Count - 1)];
+      var angle = forwardAngle + (GetRandomReal(-90, 90) * Math.PI / 180.0);
+      var spawnX = origin.X + (float)Math.Cos(angle) * AmbushSpawnDistance;
+      var spawnY = origin.Y + (float)Math.Sin(angle) * AmbushSpawnDistance;
+
+      if (IsValidAmbushSpawn(spawnX, spawnY, origin))
+      {
+        return new Point(spawnX, spawnY);
+      }
+    }
+
+    return null;
+  }
+
+  private bool IsValidAmbushSpawn(float x, float y, unit origin)
+  {
+    if (IsInsideRect(x, y, _thunderBluff) || _ambushExcludedRegions.Any(region => IsInsideRect(x, y, region)))
+    {
+      return false;
+    }
+
+    return !IsTerrainPathable(x, y, PATHING_TYPE_WALKABILITY)
+           && GetTerrainCliffLevel(x, y) == GetTerrainCliffLevel(origin.X, origin.Y);
+  }
+
+  private bool AnyAmbusherNear(List<unit> livingKodos) =>
+    _ambushers.Any(ambusher => ambusher.Unit.Alive && livingKodos.Any(kodo =>
+      MathEx.GetDistanceBetweenPoints(kodo.GetPosition(), ambusher.Unit.GetPosition()) <= AmbushHaltRange));
 
   private static bool IsInsideRect(float x, float y, Rectangle rect) =>
     x >= rect.Rect.MinX && x <= rect.Rect.MaxX && y >= rect.Rect.MinY && y <= rect.Rect.MaxY;

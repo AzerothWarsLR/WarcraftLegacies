@@ -36,7 +36,7 @@ public sealed class RootTapSpell : Spell
     var lifeCost = caster.MaxLife * LifeFraction;
     caster.Life -= lifeCost;
     caster.Mana += lifeCost * ManaPerLife;
-    EffectSystem.Add(effect.Create(EffectPath, caster, "origin"));
+    EffectSystem.Add(effect.Create(EffectPath, caster, "origin"), 1);
   }
 
   private bool CanAfford(unit caster) =>

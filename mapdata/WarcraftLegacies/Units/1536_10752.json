@@ -1,6 +1,6 @@
 [
   {
-    "TypeId": 1869902959,
+    "TypeId": 1668772975,
     "Variation": 0,
     "Position": {
       "X": 1632,
@@ -13,7 +13,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1869902959,
+    "SkinId": 1668772975,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,
@@ -72,7 +72,7 @@
     "CreationNumber": 2747
   },
   {
-    "TypeId": 842018927,
+    "TypeId": 846492783,
     "Variation": 0,
     "Position": {
       "X": 1472,
@@ -85,7 +85,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 842018927,
+    "SkinId": 846492783,
     "Flags": 2,
     "OwnerId": 27,
     "Unk1": 0,

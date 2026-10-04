@@ -17,15 +17,38 @@ public static class DynamicUnitNameRegistry
 
       PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, OnUnitCreated, kvp.Key);
       PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnUnitDeath, kvp.Key);
+      PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, OnUnitSummoned, kvp.Key);
 
       AssignNamesToPreplacedUnits(kvp.Key, pool);
     }
   }
 
+  private static void OnUnitSummoned()
+  {
+    var illusion = @event.SummonedUnit;
+    var source = @event.SummoningUnit;
+    if (illusion == null || source == null || !illusion.IsIllusion || source.UnitType != illusion.UnitType)
+    {
+      return;
+    }
+
+    var name = source.Name;
+    var copyNameTimer = timer.Create();
+    copyNameTimer.Start(0, false, () =>
+    {
+      if (illusion.Alive)
+      {
+        illusion.Name = name;
+      }
+
+      copyNameTimer.Dispose();
+    });
+  }
+
   private static void OnUnitCreated()
   {
     var unit = @event.Unit;
-    if (unit != null && _pools.TryGetValue(unit.UnitType, out var pool))
+    if (unit != null && !unit.IsIllusion && _pools.TryGetValue(unit.UnitType, out var pool))
     {
       pool.TryAssign(unit);
     }
@@ -34,7 +57,7 @@ public static class DynamicUnitNameRegistry
   private static void OnUnitDeath()
   {
     var unit = @event.Unit;
-    if (unit != null && _pools.TryGetValue(unit.UnitType, out var pool))
+    if (unit != null && !unit.IsIllusion && _pools.TryGetValue(unit.UnitType, out var pool))
     {
       pool.TryRelease(unit);
     }

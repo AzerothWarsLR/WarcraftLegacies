@@ -84,6 +84,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Reveals an area of the map. |nDetects invisible units. |nLasts 12 seconds."
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "D"
     }
   ]
 }

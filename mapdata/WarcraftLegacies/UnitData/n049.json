@@ -166,7 +166,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Rguv,RT04,R00W"
+      "Value": "Rhme,Rhar,Rguv,RT04,R00W,R0A9"
     },
     {
       "Id": "ua1w",
@@ -205,7 +205,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "otwm"
+      "Value": "otwm,RT20"
     },
     {
       "Id": "uico",
@@ -224,7 +224,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\Tauren_BluffWatcher.mdl"
+      "Value": "war3mapImported\\Tauren_Range.mdl"
     },
     {
       "Id": "uhot",

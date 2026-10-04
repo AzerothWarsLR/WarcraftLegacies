@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
 using MacroTools.Localization;
+using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.Gilneas.Quests;
@@ -81,6 +82,7 @@ public sealed class GilneasFaction : Faction
     FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.ShadowfangUnlock, pickedFaction);
     FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.SouthshoreUnlock, pickedFaction);
     FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Gilneas, pickedFaction);
+    AllPreplacedWidgets.Units.Get(UNIT_N0DS_POWER_GENERATOR).Dispose();
     FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Dalaran, pickedFaction);
   }
 

@@ -2,9 +2,10 @@
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
+using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
+using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 
@@ -20,9 +21,9 @@ public sealed class QuestTheWorldTree : QuestData
     "Nordrassil, the World Tree, towers over the slopes of Mount Hyjal. If the Tauren claim it, the Earth Mother's blessing will flow through Cairne Bloodhoof.",
     @"ReplaceableTextures\CommandButtons\BTNTreeOfEternity.blp")
   {
-    AddObjective(new ObjectiveControlPoint(UNIT_N01P_NORDRASSIL, 0));
+    AddObjective(new ObjectiveControlCapital(AllLegends.Druids.Nordrassil, false));
     AddObjective(new ObjectiveSelfExists());
-    AddObjective(new ObjectiveQuestComplete(previousQuest)
+    AddObjective(new ObjectiveQuestResolved(previousQuest)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,

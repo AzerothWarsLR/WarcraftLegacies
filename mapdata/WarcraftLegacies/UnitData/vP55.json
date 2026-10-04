@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A164,AT02"
+      "Value": "A164,A16F,AT02"
     },
     {
       "Id": "uacq",
@@ -89,7 +89,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R09X"
+      "Value": "R09X,RT20"
     },
     {
       "Id": "ua2s",

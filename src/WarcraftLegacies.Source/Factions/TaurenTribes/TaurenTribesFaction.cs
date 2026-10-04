@@ -8,6 +8,7 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+using WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -37,12 +38,12 @@ public sealed class TaurenTribesFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 130,
+      Income = 205,
       Turns = 10
     };
     CinematicMusic = "SadMystery";
     IntroText = () => Loc.Format(
-      "You are playing as the wandering {faction}.\n\nYou begin as a people without a home. Start the Long March from your Chief's Lodge as soon as you can, and escort Cairne Bloodhoof and your pack kodos north across the plains to Mulgore, where the Tribes will raise their new home at Thunder Bluff. Centaur raiders will hound you every step of the way, and every kodo that survives makes your new home richer.\n\nOnce settled, win over the ogres of Stonemaul and Dunemaul, and stand beside your Orcish allies as the Horde claims its place in Kalimdor. The Night Elves' World Tree and Temple of the Moon lie within reach.\n\nWhen the southern passes open, the Tribes can claim Earthmother's Cradle in Un'Goro Crater.",
+      "You are playing as the wandering {faction}.\n\nDrought and the endless raids of the Centaur have driven the Tauren from their ancestral lands. Train Cairne Bloodhoof to lead the Long March across the Barrens to Thunder Bluff. Guard the kodo caravan every step of the way, for every kodo that reaches the bluffs makes your new home richer.\n\nOnce settled, repay your debt to the Horde. Win over the ogres of Stonemaul and Dunemaul, rally Rokhan and the Darkspear, and march on the Night Elves: break their hold on the Temple of the Moon and claim Nordrassil itself.\n\nWhen the southern passes open, the Tribes can raise a camp in Un'Goro Crater.",
       ("{faction}", $"{PrefixCol}{Loc.Get("Tauren Tribes")}|r"));
     Nicknames = new List<string>
     {
@@ -74,13 +75,13 @@ public sealed class TaurenTribesFaction : Faction
     TaurenTribesSpells.Setup();
     TaurenTribesTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    new GrantResearchOnLegendTrained(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_TAUREN_TRIBES, UPGRADE_RT15_TRAIN_CAIRNE_BLOODHOOF_TAUREN_TRIBES);
   }
 
   /// <inheritdoc />
   public override void OnNotPicked()
   {
     Regions.EarthmothersCradle.CleanupNeutralPassiveUnits();
+    Regions.Highmountain_Unlock.CleanupNeutralPassiveUnits();
     base.OnNotPicked();
   }
 
@@ -132,6 +133,8 @@ public sealed class TaurenTribesFaction : Faction
     var questStonemaulDiplomacy = AddQuest(new QuestStonemaulDiplomacy(Regions.StonemaulKeep,
       AllPreplacedWidgets.Units.Get(UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL), AllLegends.Tauren.Rexxar, _theLongMarch));
     AddQuest(new QuestTheDunemaulOgres(questStonemaulDiplomacy));
+    AddQuest(new QuestHighmountain(AllLegends.Tauren.CairneBloodhoof, Regions.Highmountain_Unlock, _theLongMarch,
+      questStonemaulDiplomacy));
 
     AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
     AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.TempleOfTheMoon, _theLongMarch));
@@ -167,6 +170,6 @@ public sealed class TaurenTribesFaction : Faction
           faction?.ModObjectLimit(UNIT_VP52_OGRE_LORD_TAUREN_TRIBES_ELITE, 6);
         }
       });
-    ResearchManager.Register(new StartTheLongMarch(this, _theLongMarch, _tent, _productionBuildings));
+    new LongMarchDeparture(this, _theLongMarch, _tent, _productionBuildings);
   }
 }

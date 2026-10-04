@@ -8,7 +8,7 @@
     {
       "Id": "gba1",
       "Type": 2,
-      "Value": 25
+      "Value": 75
     },
     {
       "Id": "gba2",
@@ -45,7 +45,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Grunts permanently gain 25 hit points."
+      "Value": "Grunts permanently gain 75 hit points."
     }
   ]
 }
