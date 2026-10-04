@@ -18,6 +18,31 @@ public static class SentinelsSpells
     };
     SpellRegistry.Register(elunesGaze);
 
+    SpellRegistry.Register(new LightOfTheGoddessSpell(ABILITY_A16H_LIGHT_OF_THE_GODDESS_SENTINELS_PRIESTESS_OF_THE_MOON)
+    {
+      Healing = 200,
+      Damage = 100,
+      Effect = "Holy Light Royal.mdx"
+    });
+
+    SpellRegistry.Register(new MassWindWalkSpell(ABILITY_A16I_MASS_WIND_WALK_SENTINELS_PRIESTESS_OF_THE_MOON)
+    {
+      InvisibilityAbilityId = ABILITY_A16J_MASS_WIND_WALK_DUMMY_DUMMY,
+      Radius = 600,
+      Duration = 8,
+      SpeedBonus = 0.1f
+    });
+
+    SpellRegistry.Register(new ElunesProtectionSpell(ABILITY_A16K_ELUNE_S_PROTECTION_SENTINELS_PRIESTESS_OF_THE_MOON)
+    {
+      Radius = 600,
+      Duration = 15,
+      ArmorBonus = 4,
+      ManaRegenerationBonus = 1,
+      BuffApplicatorId = ABILITY_A16L_ELUNE_S_PROTECTION_BUFF_APPLICATOR_BUFF_APPLICATOR,
+      BuffId = BUFF_B0EC_ELUNE_S_PROTECTION
+    });
+
     var lunarSanctuary = new LunarSanctuarySpell(ABILITY_A01D_LUNAR_SANCTUARY_LIGHT_BLUE_TYRANDE)
     {
       Radius = 350,
