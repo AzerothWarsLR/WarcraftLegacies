@@ -25,11 +25,6 @@
       "Value": "orc"
     },
     {
-      "Id": "aart",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellResistance.blp"
-    },
-    {
       "Id": "abpy",
       "Value": 1
     },
@@ -41,19 +36,23 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "Spell Resistance"
+      "Value": "Elune's Grace"
     },
     {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Spell Resistance"
+      "Value": "Elune's Grace"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Reduces the damage taken from Magic attacks and Spells by 30%."
+      "Value": "Reduces the damage taken from Magic attacks and spells by 30%. Her Resistant Skin also makes negative spells on her last only as long as they do on heroes."
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
     }
   ]
 }

@@ -49,5 +49,12 @@ public static class SentinelsTraits
       StrikeDelay = 0.4f,
       FadeDuration = 0.5f
     }, UNIT_H045_WARDEN_SENTINELS_ELITE);
+
+    UnitTypeTraitRegistry.Register(new MoonlitArrowsTrait
+    {
+      BonusDamage = 20,
+      DayMissile = @"Abilities\Weapons\MoonPriestessMissile\MoonPriestessMissile.mdl",
+      NightMissile = "SpiritArrow_ByEpsilon.mdx"
+    }, UNIT_H04L_PRIESTESS_OF_THE_MOON_SENTINELS_ELITE);
   }
 }
