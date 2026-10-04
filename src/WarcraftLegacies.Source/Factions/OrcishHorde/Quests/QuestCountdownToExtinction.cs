@@ -171,7 +171,20 @@ public sealed class QuestCountdownToExtinction : QuestData
       SpawnReinforcements(completingPlayer);
     }
 
+    EnsureThrallSurvives(completingPlayer);
     completingPlayer.RepositionCamera(_retreatDestination);
+  }
+
+  private void EnsureThrallSurvives(player owningPlayer)
+  {
+    var thrallLegend = AllLegends.Orc.Thrall;
+    if (thrallLegend.Unit != null && thrallLegend.Unit.Alive)
+    {
+      return;
+    }
+
+    thrallLegend.ForceCreate(owningPlayer, _retreatDestination, 0);
+    thrallLegend.Unit?.SetLifePercent(DefeatSurvivorLifePercent);
   }
 
   private void EmptyBurrowsInZone(player owningPlayer)
@@ -248,8 +261,6 @@ public sealed class QuestCountdownToExtinction : QuestData
     {
       CreateReinforcement(owningPlayer, UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, spawnIndex++);
     }
-
-    CreateReinforcement(owningPlayer, UNIT_OTHR_WARCHIEF_OF_THE_HORDE_ORCISH_HORDE, spawnIndex);
   }
 
   private void CreateReinforcement(player owningPlayer, int unitTypeId, int spawnIndex)

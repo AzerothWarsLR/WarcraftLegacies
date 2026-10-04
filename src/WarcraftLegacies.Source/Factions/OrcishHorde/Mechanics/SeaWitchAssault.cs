@@ -478,12 +478,27 @@ public sealed class SeaWitchAssault
     _waveDialogTimer?.Dispose();
     _waveDialogTimer = null;
 
-    if (_seaWitchCasting && _seaWitch != null && _seaWitch.Alive)
+    CleanupTeleportTracking();
+    RemoveLeftoverAttackers();
+  }
+
+  private void RemoveLeftoverAttackers()
+  {
+    foreach (var waveUnit in _activeWaveUnits.Where(waveUnit => waveUnit.Alive))
     {
-      PauseUnit(_seaWitch, false);
-      _seaWitch.IsInvulnerable = false;
+      waveUnit.Dispose();
     }
 
-    CleanupTeleportTracking();
+    _activeWaveUnits.Clear();
+    _currentWaveUnits.Clear();
+    _greatHallTargeters.Clear();
+
+    if (_seaWitch != null && _seaWitch.Alive)
+    {
+      _seaWitch.Dispose();
+    }
+
+    _seaWitch = null;
+    _seaWitchCasting = false;
   }
 }
