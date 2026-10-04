@@ -44,6 +44,13 @@ public static class TaurenTribesSpells
       Duration = 10
     });
 
+    SpellRegistry.Register(new Sunstrike(ABILITY_A16U_SUNSTRIKE_TAUREN_TRIBES)
+    {
+      Damage = 75,
+      Healing = 60,
+      HealRadius = 300
+    });
+
     SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
     {
       Duration = 60,
