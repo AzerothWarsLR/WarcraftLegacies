@@ -1,7 +1,6 @@
 ﻿using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.GameTime;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Utils;
@@ -14,7 +13,7 @@ namespace WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 public sealed class QuestWarsongHold : QuestData
 {
   private const int RequiredResearchId = UPGRADE_R06G_NORTHREND_EXPEDITION_WARSONG;
-  private const int RequiredTurn = 20;
+  private const int RequiredTurn = 15;
   private const int AbilityId = ABILITY_A0DZ_WARSONG_OFFENSIVE_WARSONG;
   private const int SummonGruntsAbilityId = ABILITY_A027_SUMMON_GRUNTS_FROSTWOLF;
 
@@ -85,12 +84,6 @@ public sealed class QuestWarsongHold : QuestData
 
   protected override void OnAdd(Faction whichFaction)
   {
-    GameTimeManager.RegisterOnTurn(RequiredTurn, () =>
-    {
-      if (Progress != QuestProgress.Complete && Progress != QuestProgress.Failed)
-      {
-        whichFaction.ModObjectLimit(RequiredResearchId, Faction.Unlimited);
-      }
-    });
+    whichFaction.ModObjectLimit(RequiredResearchId, Faction.Unlimited);
   }
 }

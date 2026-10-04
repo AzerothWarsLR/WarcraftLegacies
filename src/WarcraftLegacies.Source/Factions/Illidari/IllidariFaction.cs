@@ -53,7 +53,6 @@ public sealed class IllidariFaction : Faction
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
     RegisterFactionDependentInitializer<SentinelsFaction, DruidsFaction>(RegisterSentinelsDruidsDialogue);
     RegisterFactionDependentInitializer<FelHordeFaction>(RegisterFelHordeQuests);
-    RegisterFactionDependentInitializer<ScourgeFaction, DruidsFaction>(RegisterScourgeDruidsQuests);
     RegisterFactionDependentInitializer<SentinelsFaction>(RegisterSentinelsQuests);
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
   }
@@ -62,6 +61,7 @@ public sealed class IllidariFaction : Faction
   public override void OnRegistered()
   {
     RegisterQuests();
+    RegisterKiljaedensCommand();
     RegisterDialogue();
     RegisterResearches();
     IllidariSpells.Setup();
@@ -391,12 +391,11 @@ public sealed class IllidariFaction : Faction
     AddQuest(new QuestKillMaiev());
   }
 
-  private void RegisterScourgeDruidsQuests(ScourgeFaction scourge, DruidsFaction druids)
+  private void RegisterKiljaedensCommand()
   {
     GameTimeManager.RegisterOnTurn(20, () =>
     {
-      var kiljaedensCommand = AddQuest(new QuestKiljaedensCommand(scourge, druids,
-        AllLegends.Druids.Nordrassil, AllLegends.Naga.Illidan));
+      var kiljaedensCommand = AddQuest(new QuestKiljaedensCommand(AllLegends.Naga.Illidan));
       this.DisplayDiscovered(kiljaedensCommand, true);
     });
   }

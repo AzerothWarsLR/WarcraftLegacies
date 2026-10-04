@@ -43,7 +43,7 @@
     },
     {
       "Id": "abpx",
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": "ansf",
@@ -53,7 +53,7 @@
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Id": "anam",
@@ -90,6 +90,10 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Summons 3 Kor\u0027kron Vanguard units. Vangaurds have the Blood Brothers ability which increases the armor of nearby hero units you control. Lasts  for 90 seconds."
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
     }
   ]
 }

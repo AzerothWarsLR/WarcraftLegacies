@@ -84,6 +84,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenWorker_raw.blp"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT20"
     }
   ]
 }

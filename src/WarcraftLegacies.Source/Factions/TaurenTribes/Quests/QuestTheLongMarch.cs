@@ -28,13 +28,11 @@ public sealed class QuestTheLongMarch : QuestData
 
   public QuestTheLongMarch(LegendaryHero cairneBloodhoof, Point thousandNeedles, Point mulgore,
     Rectangle thunderBluff) : base("The Long March",
-    "The Tauren tribes must abandon their ancestral camp and march east across the Barrens, escorted by a handful of guards, to build a new home at Thunder Bluff. Centaur raiders infest the plains between here and there.",
+    "The Tauren tribes must abandon their ancestral camp and march east across the Barrens, to their new home at Thunder Bluff. The march sets out as soon as Cairne Bloodhoof takes up the lead, joined by a war party of Tauren and Spirit Walkers. Centaur raiders infest the plains between here and there. Reach Thunder Bluff to begin bolstering your forces.",
     @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
   {
     AddObjective(new ObjectiveSelfExists());
     AddObjective(new ObjectiveControlLegend(cairneBloodhoof, false));
-    AddObjective(new ObjectiveResearch(UPGRADE_RTLM_START_THE_LONG_MARCH_TAUREN_TRIBES,
-      UNIT_OTNT_CHIEF_S_LODGE_TAUREN_TRIBES_T1));
 
     _thousandNeedlesObjective = new ObjectiveCaravanArrives(thousandNeedles, "Thousand Needles");
     AddObjective(_thousandNeedlesObjective);
@@ -46,7 +44,7 @@ public sealed class QuestTheLongMarch : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    "Battered but unbroken, the Tauren tribes complete their long march and raise Thunder Bluff on the plains of Mulgore.";
+    "Battered but unbroken, the Tauren tribes complete their long march and settle at Thunder Bluff on the plains of Mulgore.";
 
   /// <inheritdoc />
   public override string PenaltyFlavour =>
@@ -54,7 +52,11 @@ public sealed class QuestTheLongMarch : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "Control of Thunder Bluff, plus gold and experience scaled by how many pack kodos survive the march";
+    "The defenders of Thunder Bluff join you, and you gain gold and experience scaled by how many pack kodos survive the march";
+
+  /// <inheritdoc />
+  protected override string PenaltyDescription =>
+    "The defenders of Thunder Bluff join you, although injured";
 
   /// <summary>
   /// Adds the objective tracking the caravan's survival. Called once the camp has packed up into kodos.

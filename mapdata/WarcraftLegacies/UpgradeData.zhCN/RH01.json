@@ -1,0 +1,51 @@
+{
+  "OldId": "Rowt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "赎罪的上层精灵专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "赎罪的上层精灵大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究赎罪的上层精灵专家级训练"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究赎罪的上层精灵大师级训练"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高赎罪的上层精灵的法力值上限和法力恢复速度，并使其获得飓风术技能。"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "提高赎罪的上层精灵的法力值上限和法力恢复速度，并使其获得法力护盾技能。"
+    }
+  ],
+  "NewId": "RH01"
+}

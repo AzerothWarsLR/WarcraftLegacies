@@ -73,6 +73,8 @@ public sealed class ControlPointManager
   /// </summary>
   public required int RegenerationAbility { get; init; }
 
+  public HashSet<player> NonCapturingPlayers { get; } = new();
+
   /// <summary>
   /// An ability that grants <see cref="ControlPoint"/>s resistance against Piercing damage.
   /// </summary>
@@ -207,6 +209,12 @@ public sealed class ControlPointManager
     try
     {
       var attacker = @event.DamageSource;
+      if (Instance.NonCapturingPlayers.Contains(attacker.Owner))
+      {
+        @event.Damage = 0;
+        return;
+      }
+
       var hitPoints = controlPoint.Unit.Life - @event.Damage;
       if (hitPoints > 1)
       {

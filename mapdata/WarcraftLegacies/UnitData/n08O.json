@@ -151,12 +151,12 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": "ucut",
       "Type": 3,
-      "Value": "- Purge,- Purgel|n- Rejuvenation|n,- Purgel|n- Rejuvenation|n- Healing Spray"
+      "Value": "- Acid Flask,- Acid Flask|n- Flame Shield,- Acid Flask|n- Flame Shield|n- Innervate"
     },
     {
       "Id": "ucun",
@@ -190,7 +190,16 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "RT21"
+      "Value": "RT21,RT20"
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-shaman.blp"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

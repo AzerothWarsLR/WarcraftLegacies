@@ -70,7 +70,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "RT01,RT02,RTLM"
+      "Value": "RT01,RT02"
     },
     {
       "Id": "ureq",
@@ -129,6 +129,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNTaurenChieftainsGreatHall.blp"
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "o00J,o004"
     }
   ]
 }

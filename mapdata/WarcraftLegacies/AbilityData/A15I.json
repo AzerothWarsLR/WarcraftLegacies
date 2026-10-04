@@ -93,6 +93,12 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Summons a small volcano ward that hurls molten rocks at up to 3 nearby enemies at once, each dealing 12 to 17 damage, improved by attack upgrades. Can be dispelled. Lasts 20 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0E8"
     }
   ]
 }

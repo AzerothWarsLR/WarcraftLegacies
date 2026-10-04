@@ -21,6 +21,7 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
   private Artifact? _scepterOfTheQueen;
   private readonly ObjectiveAnyUnitInRect _anyUnitInRect;
   private static bool _initialized;
+  private const int HighborneLimitBonus = 6;
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
@@ -28,9 +29,9 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription => Loc.Format(
-    "Gain the Scepter of the Queen, the Athenaeum, 4 {highborne}, and the ability to train {highborne} from the {temple}",
+    "Gain the Scepter of the Queen, the Athenaeum, and increase the {highborne} limit by {amount}",
     ("{highborne}", GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)),
-    ("{temple}", GetObjectName(UNIT_E00V_TEMPLE_OF_ELUNE_SENTINELS_MAGIC)));
+    ("{amount}", HighborneLimitBonus.ToString()));
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScepterOfTheQueenSentinels"/> class.
@@ -53,6 +54,7 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
   {
     _anyUnitInRect.CompletingUnit?.AddItemSafe(_scepterOfTheQueen!.Item);
     whichFaction.Player?.RescueGroup(_highBourneAreaUnits);
+    whichFaction.ModObjectLimit(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS, HighborneLimitBonus);
   }
 
   /// <inheritdoc/>

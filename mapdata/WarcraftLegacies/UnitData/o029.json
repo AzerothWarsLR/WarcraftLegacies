@@ -70,7 +70,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "e00N,ewsp"
+      "Value": "ewsp,h045,h04L"
     },
     {
       "Id": "utyp",
@@ -148,6 +148,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "RV02,RV01"
     }
   ]
 }
