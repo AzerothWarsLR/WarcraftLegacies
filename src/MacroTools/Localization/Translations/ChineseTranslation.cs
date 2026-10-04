@@ -1248,7 +1248,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Gain control of the gate of Ahn'Qiraj", "获得安其拉大门的控制权");
     Add("Gain control of {place}, learn to train Falstad Wildhammer from the {altar}, and gain the ability to research {upgrade} at the {building}", "获得{place}的控制权，学会从{altar}中训练弗斯塔德·蛮锤，并获得在{building}研究{upgrade}的能力");
     Add("Gain control off all buildings in Feralas", "获得菲拉斯所有建筑的控制权");
-    Add("Gain the Scepter of the Queen, the Athenaeum, 4 {highborne}, and the ability to train {highborne} from the {temple}", "获得女王权杖、图书馆、4 名{highborne}，并可在{temple}训练{highborne}");
+    Add("Gain the Scepter of the Queen, the Athenaeum, and increase the {highborne} limit by {amount}", "获得女王权杖、图书馆，并使{highborne}的上限增加{amount}");
     Add("Gain the ability to release Yogg-Saron from his near Storm peaks; he can be slain to acquire Val'anyr, Hammer of Ancient Kings", "获得在风暴峭壁附近释放尤格-萨隆的能力；将其击杀可获得瓦兰奈尔，远古王者之锤");
     Add("Gain vision over Lordaeron until you unleash the Plague, the Plague of Undeath research becomes available in the {building}, and {hero} becomes trainable at the {altar}", "在你释放瘟疫之前，获得洛丹伦的视野；{building}中将可研究亡灵瘟疫，且{hero}可在{altar}中训练");
     Add("Galecrash", "风碎");
