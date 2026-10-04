@@ -22,7 +22,6 @@ public static class WarsongObjectInfo
     yield return new(UNIT_NBT2_IMPROVED_BOULDER_TOWER, Unlimited, UnitCategory.Tower);
     yield return new(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD, Unlimited, UnitCategory.Shipyard);
     yield return new(UNIT_O01T_TREASURE_HOARD_WARSONG_SHOP, Unlimited, UnitCategory.Shop);
-    yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, UnitCategory.Farm);
     yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, UnitCategory.Farm);
     //yield return new(UNIT_O006_SPIRE_WARSONG_MAGIC, Unlimited, UnitCategory.Magic);
     yield return new(UNIT_O04L_PEON_WARSONG_WORKER, Unlimited, UnitCategory.Builder);

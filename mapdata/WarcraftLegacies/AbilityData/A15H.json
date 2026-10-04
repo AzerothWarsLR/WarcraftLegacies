@@ -122,15 +122,19 @@
     },
     {
       "Id": "aubx",
-      "Value": 3
+      "Value": 1
     },
     {
       "Id": "auhk",
       "Type": 3,
-      "Value": "R"
+      "Value": "W"
     },
     {
       "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "auby",
       "Value": 2
     }
   ]

@@ -43,7 +43,7 @@
     },
     {
       "Id": "ua1r",
-      "Value": 300
+      "Value": 600
     },
     {
       "Id": "ucol",
@@ -64,7 +64,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 600
+      "Value": 975
     },
     {
       "Id": "ulum",
@@ -97,7 +97,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "otsl"
+      "Value": "otsl,RT20"
     },
     {
       "Id": "unsf",
@@ -143,6 +143,33 @@
       "Id": "upgr",
       "Type": 3,
       "Value": "Rowt,Ropm,Rguv,R00W"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,structure,ward"
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umpm",
+      "Value": 400
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 600
     }
   ]
 }

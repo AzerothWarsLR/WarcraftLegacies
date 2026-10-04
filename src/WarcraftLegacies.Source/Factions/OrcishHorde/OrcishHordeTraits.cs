@@ -1,4 +1,5 @@
 ﻿using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.Factions.OrcishHorde.UnitTraits;
 using WarcraftLegacies.Source.Factions.Warsong.UnitTraits;
 using WarcraftLegacies.Source.Shared.UnitTraits;
 
@@ -18,6 +19,12 @@ public static class OrcishHordeTraits
     {
       DamageMultNonResistant = 3,
       DamageMultResistant = 1.15f
+    }, UNIT_O00G_BLADEMASTER_ORCISH_HORDE);
+
+    UnitTypeTraitRegistry.Register(new LethalStrike
+    {
+      HitsRequired = 4,
+      BonusDamage = 40
     }, UNIT_O00G_BLADEMASTER_ORCISH_HORDE);
 
     UnitTypeTraitRegistry.Register(new ResoluteHeart(ABILITY_A0TY_RESOLUTE_HEART_ICON)

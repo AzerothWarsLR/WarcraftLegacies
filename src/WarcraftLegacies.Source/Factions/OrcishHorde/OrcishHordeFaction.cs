@@ -61,7 +61,7 @@ public sealed class OrcishHordeFaction : Faction
     StartingGold = new StartingGold
     {
       Instant = 200,
-      Income = 130,
+      Income = 200,
       Turns = 10
     };
     CinematicMusic = "SadMystery";
@@ -207,7 +207,7 @@ public sealed class OrcishHordeFaction : Faction
     var questOrgrimmar = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, this, quest));
 
     var questCrossroads = new QuestCrossroads(Regions.Crossroads);
-    questCrossroads.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
+    questCrossroads.AddObjective(new ObjectiveQuestResolved(questOrgrimmar)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,
@@ -216,7 +216,7 @@ public sealed class OrcishHordeFaction : Faction
     AddQuest(questCrossroads);
 
     var questSenjinIsles = new QuestSenjinIsles(AllLegends.Orc.Voljin);
-    questSenjinIsles.AddObjective(new ObjectiveQuestComplete(questOrgrimmar)
+    questSenjinIsles.AddObjective(new ObjectiveQuestResolved(questOrgrimmar)
     {
       Progress = QuestProgress.Undiscovered,
       ShowsInQuestLog = false,
@@ -227,7 +227,7 @@ public sealed class OrcishHordeFaction : Faction
     var questSlayCenarius = AddQuest(new QuestSlayCenarius(questOrgrimmar));
     var questDemolishElfCities = AddQuest(new QuestDemolishElfCities(questSlayCenarius));
     var questThrallMaelstrom = AddQuest(new QuestThrallMaelstrom(AllLegends.Orc.Thrall, questOrgrimmar));
-    var questWarsongHold = AddQuest(new QuestWarsongHold(questThrallMaelstrom));
+    var questWarsongHold = AddQuest(new QuestWarsongHold(questDemolishElfCities));
     AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Orc.Thrall, questWarsongHold, questDemolishElfCities));
 
     RegisterTrollRescue(Regions.Troll_Rescue_1);

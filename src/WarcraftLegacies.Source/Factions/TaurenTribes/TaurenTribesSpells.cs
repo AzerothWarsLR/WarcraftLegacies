@@ -16,6 +16,41 @@ public static class TaurenTribesSpells
     };
     SpellRegistry.Register(devour);
 
+    var voodooHex = new InspireMadness(ABILITY_MD28_VOODOO_HEX_ROKHAN)
+    {
+      Radius = 400,
+      CountBase = 5,
+      CountLevel = 5,
+      Duration = 60,
+      ChancePercentage = 60.0f,
+      EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
+      EffectScaleTarget = 0.5f
+    };
+    SpellRegistry.Register(voodooHex);
+
+    SpellRegistry.Register(new SpeedBurst(ABILITY_A164_WIND_WALK_TAUREN_TRIBES_SPIRIT_EAGLE)
+    {
+      SpeedBonus = 0.25f,
+      Duration = 5
+    });
+
+    SpellRegistry.Register(new PiercingFrenzy(ABILITY_A16F_RAKING_TALONS_TAUREN_TRIBES_SPIRIT_EAGLE)
+    {
+      Duration = 10
+    });
+
+    SpellRegistry.Register(new PiercingFrenzy(ABILITY_A16G_SAVAGE_FRENZY_TAUREN_TRIBES_SPIRIT_WYVERN)
+    {
+      Duration = 10
+    });
+
+    SpellRegistry.Register(new Sunstrike(ABILITY_A16U_SUNSTRIKE_TAUREN_TRIBES)
+    {
+      Damage = 75,
+      Healing = 60,
+      HealRadius = 300
+    });
+
     SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
     {
       Duration = 60,
@@ -95,8 +130,8 @@ public static class TaurenTribesSpells
     {
       Healing = new LeveledAbilityField<float>
       {
-        Base = 25,
-        PerLevel = 25
+        Base = 50,
+        PerLevel = 50
       },
       MaximumBounces = 3,
       HealingReductionPerBounce = 0.15f,

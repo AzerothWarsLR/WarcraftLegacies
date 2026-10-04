@@ -56,7 +56,7 @@ public static class GateSetup
         UNIT_H04T_DIAGONAL_WOODEN_GATE_GATE_DEAD
       });
     UnitTypeTraitRegistry.Register(
-      new Gate(UNIT_H005_VERTICAL_WOODEN_GATE_GATE_OPEN, UNIT_H009_VERTICAL_WOODEN_GATE_GATE_DEAD),
+      new Gate(UNIT_H005_VERTICAL_WOODEN_GATE_GATE_OPEN, UNIT_H009_VERTICAL_WOODEN_GATE_GATE_DEAD, "stand alternate"),
       new[]
       {
         UNIT_H005_VERTICAL_WOODEN_GATE_GATE_OPEN,

@@ -91,7 +91,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R05A"
+      "Value": ""
     },
     {
       "Id": "ua1s",
@@ -109,7 +109,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Renb,R002,Rguv"
+      "Value": "Rhme,Rhar,Renb,R002,Rguv,R05A"
     },
     {
       "Id": "urtm",

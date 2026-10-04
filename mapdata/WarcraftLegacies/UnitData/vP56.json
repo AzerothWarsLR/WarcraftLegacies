@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "AT04,A15G,AT07,Aion,ACrk,A0E6"
+      "Value": "A16U,A15G,AT07,Aion,ACrk,A0E6"
     },
     {
       "Id": "ua1t",
@@ -108,7 +108,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Ropm,Rhme,Rhar,Rguv,RT14,R00W"
+      "Value": "Ropm,Rhme,Rhar,Rguv,RT14,R00W,R0A9"
     },
     {
       "Id": "ucs1",
@@ -141,7 +141,7 @@
     {
       "Id": "ucut",
       "Type": 3,
-      "Value": "- Holy Light|n- Resurrection,- Holy Light|n- Resurrection|n- War Stomp,- Holy Light|n- Resurrection|n- War Stomp|n- Devotion Aura"
+      "Value": "- Holy Light,- Holy Light|n- Aegis of Protection,- Holy Light|n- Aegis of Protection|n- Resurrection"
     },
     {
       "Id": "unsf",
@@ -210,6 +210,11 @@
       "Id": "ua1m",
       "Type": 3,
       "Value": "Abilities\\Weapons\\PriestMissile\\PriestMissile.mdl"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT20"
     }
   ]
 }

@@ -102,7 +102,7 @@ public abstract class Objective
     var fallback = english;
     foreach (var (token, value) in args)
     {
-      fallback = fallback.Replace(token, value);
+      fallback = Loc.ReplaceLiteral(fallback, token, value);
     }
 
     Description = fallback;

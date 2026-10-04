@@ -96,7 +96,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "C"
+      "Value": "Q"
     },
     {
       "Id": "ussc",
@@ -154,7 +154,15 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "RT21"
+      "Value": "RT21,RT20"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

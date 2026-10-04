@@ -111,6 +111,10 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Hurls a bolt of lightning that deals 125 damage to the target, then bounces to up to 12 more enemies. Each jump deals less damage."
+    },
+    {
+      "Id": "achd",
+      "Value": 1
     }
   ]
 }

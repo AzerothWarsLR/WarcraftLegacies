@@ -77,21 +77,21 @@
       "Pointer": 1,
       "Id": "Oww1",
       "Type": 2,
-      "Value": 160
+      "Value": 100
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": "Oww1",
       "Type": 2,
-      "Value": 250
+      "Value": 150
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Oww1",
       "Type": 2,
-      "Value": 330
+      "Value": 200
     },
     {
       "Level": 1,
@@ -154,7 +154,7 @@
       "Pointer": 1,
       "Id": "Oww1",
       "Type": 2,
-      "Value": 405
+      "Value": 250
     },
     {
       "Id": "abpx",
@@ -187,7 +187,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing damage to nearby enemy land units for 1 seconds. |n|n|cffffcc00Level 1|r - 160 damage. |n|cffffcc00Level 2|r - 250 damage. |n|cffffcc00Level 3|r - 330 damage.|n|cffffcc00Level 4|r - 405 damage."
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing damage to nearby enemy land units for 1 seconds. |n|n|cffffcc00Level 1|r - 100 damage. |n|cffffcc00Level 2|r - 150 damage. |n|cffffcc00Level 3|r - 200 damage.|n|cffffcc00Level 4|r - 250 damage."
     },
     {
       "Level": 1,
@@ -217,25 +217,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 160 damage to nearby enemy units.|nLasts 1 seconds."
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 100 damage to nearby enemy units.|nLasts 1 seconds."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 250 damage to nearby enemy units. |nLasts 1 seconds."
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 150 damage to nearby enemy units. |nLasts 1 seconds."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 330 damage to nearby enemy units. |nLasts 1 seconds."
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 200 damage to nearby enemy units. |nLasts 1 seconds."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 405 damage to nearby enemy units. |nLasts 1 seconds."
+      "Value": "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing 250 damage to nearby enemy units. |nLasts 1 seconds."
     }
   ]
 }

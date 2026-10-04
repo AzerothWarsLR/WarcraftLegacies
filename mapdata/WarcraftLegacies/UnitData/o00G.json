@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A08P,TP72,A000,A03T,A0MM,TP73,Aion"
+      "Value": "A08P,TP72,A000,A03T,A16V,TP73,Aion"
     },
     {
       "Id": "ua1t",
@@ -57,7 +57,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 23
+      "Value": 30
     },
     {
       "Id": "ufoo",
@@ -69,7 +69,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1075
+      "Value": 1275
     },
     {
       "Id": "umpi",

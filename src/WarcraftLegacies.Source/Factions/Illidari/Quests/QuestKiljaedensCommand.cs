@@ -18,23 +18,38 @@ namespace WarcraftLegacies.Source.Factions.Illidari.Quests;
 
 public sealed class QuestKiljaedensCommand : QuestData
 {
-  // TODO: Ahn'Qiraj was removed as a quest target. Add a new objective/target here to replace it.
-  private readonly Faction _scourge;
-  private readonly Faction _druids;
-  private readonly Capital _nordrassil;
+  private const string BargainUpheld = " The Deceiver upholds his end of the bargain, and bestows unto the Illidari his gift.";
+
   private readonly LegendaryHero _illidan;
-  private Faction? _questTarget;
+  private readonly List<KiljaedenTarget> _targets;
+  private readonly KiljaedenTarget _frozenThroneTarget;
+  private KiljaedenTarget? _questTarget;
   private unit? _kiljaeden;
 
-  public QuestKiljaedensCommand(Faction scourge, Faction druids,
-    Capital nordrassil, LegendaryHero illidan) : base("Kil'jaeden's Command",
+  public QuestKiljaedensCommand(LegendaryHero illidan) : base("Kil'jaeden's Command",
     "Before retreating to Outland, Illidan was visited by the demon lord Kil'jaeden, who demanded that he destroy the Legion's foes. The Deceiver has now come to claim his due, and this time he will not be denied.",
     @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
   {
-    _scourge = scourge;
-    _druids = druids;
-    _nordrassil = nordrassil;
     _illidan = illidan;
+    _frozenThroneTarget = new KiljaedenTarget(AllLegends.Scourge.TheFrozenThrone, UNIT_N04R_ICECROWN_CITADEL,
+      "With the Frozen Throne now ruptured beyond repair, Kil'jaeden's concerns over the upstart Lich King have been put to rest.")
+    {
+      IsFrozenThrone = true
+    };
+    _targets = new List<KiljaedenTarget>
+    {
+      _frozenThroneTarget,
+      new(AllLegends.Druids.Nordrassil, UNIT_N01P_NORDRASSIL,
+        "In an act of fratricide, Illidan has defeated the Legion's ancient enemies and seized Nordrassil for Kil'jaeden."),
+      new(AllLegends.Tauren.ThunderBluff, UNIT_N03M_THUNDERBLUFF,
+        "Thunder Bluff has fallen to the Illidari, and the Tauren who stood against the Legion at Mount Hyjal have been scattered across the plains of Mulgore."),
+      new(AllLegends.Orc.Orgrimmar, UNIT_N07P_ORGRIMMAR,
+        "Orgrimmar lies in ruins. The orcs who broke free of the Legion's blood curse have paid dearly for their defiance."),
+      new(AllLegends.Dalaran.Dalaran, UNIT_N01B_DALARAN,
+        "The Violet Citadel has fallen to the Illidari, and the Kirin Tor will never again stand in the Legion's way."),
+      new(AllLegends.Quel.Sunwell, UNIT_N01O_SILVERMOON,
+        "Illidan has seized the Sunwell, the font of power that Kil'jaeden covets as his gateway into Azeroth.")
+    };
     AddObjective(new ObjectiveExpire(60, "Kil'jaeden's Command"));
     Knowledge = 10;
   }
@@ -45,23 +60,7 @@ public sealed class QuestKiljaedensCommand : QuestData
   protected override string PenaltyDescription => "Illidan loses 5 Strength, Agility, and Intelligence";
 
   /// <inheritdoc />
-  public override string RewardFlavour
-  {
-    get
-    {
-      if (_questTarget == _scourge)
-      {
-        return "With the Frozen Throne now ruptured beyond repair, Kil'jaeden's concerns over the upstart Lich King have been put to rest. The Deceiver upholds his end of the bargain, and bestows unto the Illidari his gift.";
-      }
-
-      if (_questTarget == _druids)
-      {
-        return "In an act of fratricide, Illidan has defeated the Legion's ancient enemies and seized Nordrassil for Kil'jaeden. The Deceiver upholds his end of the bargain, and bestows unto the Illidari his gift.";
-      }
-
-      return "";
-    }
-  }
+  public override string RewardFlavour => _questTarget == null ? "" : _questTarget.Flavour + BargainUpheld;
 
   /// <inheritdoc />
   public override string PenaltyFlavour =>
@@ -93,53 +92,58 @@ public sealed class QuestKiljaedensCommand : QuestData
     }
   }
 
-  private Faction CalculateQuestTarget(Faction questHolder)
+  private KiljaedenTarget CalculateQuestTarget(Faction questHolder)
   {
     if (questHolder.Player == null)
     {
-      return _scourge;
+      return _frozenThroneTarget;
     }
 
-    var eligibleFactions = new List<Faction>();
-
-    if (TheFrozenThrone.State == FrozenThroneState.Alive)
-    {
-      eligibleFactions.Add(_scourge);
-    }
-
-    if (_nordrassil.Unit != null && _nordrassil.Unit.Alive)
-    {
-      eligibleFactions.Add(_druids);
-    }
-
-    var factionTarget = eligibleFactions
-      .Where(x => x.Player?.GetPlayerData().Team?.Contains(questHolder.Player) == false)
-      .OrderByDescending(f => f.Player?.GetPlayerData().ControlPoints.Count)
+    var target = _targets
+      .Where(x => IsEligible(x, questHolder.Player))
+      .OrderByDescending(x => x.Capital.Unit!.Owner.GetPlayerData().ControlPoints.Count)
       .FirstOrDefault();
 
-    if (factionTarget == null)
-    {
-      return _scourge;
-    }
-
-    return factionTarget;
+    return target ?? _frozenThroneTarget;
   }
 
-  private void SetQuestTarget(Faction faction)
+  private static bool IsEligible(KiljaedenTarget target, player questHolder)
   {
-    _questTarget = faction;
-
-    if (faction == _scourge)
+    var capitalUnit = target.Capital.Unit;
+    if (capitalUnit == null || !capitalUnit.Alive)
     {
-      AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(AllLegends.Scourge.TheFrozenThrone), new ObjectiveFrozenThroneState(FrozenThroneState.Ruptured)));
-      AddObjective(new ObjectiveControlPoint(UNIT_N04R_ICECROWN_CITADEL, 0));
+      return false;
     }
 
-    if (faction == _druids)
+    if (target.IsFrozenThrone && TheFrozenThrone.State != FrozenThroneState.Alive)
     {
-      AddObjective(new ObjectiveControlCapital(_nordrassil, false));
-      AddObjective(new ObjectiveControlPoint(UNIT_N01P_NORDRASSIL, 0));
+      return false;
     }
+
+    var owner = capitalUnit.Owner;
+    if (owner.GetPlayerData().Faction == null)
+    {
+      return false;
+    }
+
+    return owner.GetPlayerData().Team?.Contains(questHolder) == false;
+  }
+
+  private void SetQuestTarget(KiljaedenTarget target)
+  {
+    _questTarget = target;
+
+    if (target.IsFrozenThrone)
+    {
+      AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(target.Capital),
+        new ObjectiveFrozenThroneState(FrozenThroneState.Ruptured)));
+    }
+    else
+    {
+      AddObjective(new ObjectiveControlCapital(target.Capital, false));
+    }
+
+    AddObjective(new ObjectiveControlPoint(target.ControlPointId, 0));
   }
 
   private void SpawnKiljaeden()
@@ -159,5 +163,23 @@ public sealed class QuestKiljaedensCommand : QuestData
       darkPortalEffect.Dispose();
       _kiljaeden.Dispose();
     }
+  }
+
+  private sealed class KiljaedenTarget
+  {
+    public KiljaedenTarget(Capital capital, int controlPointId, string flavour)
+    {
+      Capital = capital;
+      ControlPointId = controlPointId;
+      Flavour = flavour;
+    }
+
+    public Capital Capital { get; }
+
+    public int ControlPointId { get; }
+
+    public string Flavour { get; }
+
+    public bool IsFrozenThrone { get; init; }
   }
 }
