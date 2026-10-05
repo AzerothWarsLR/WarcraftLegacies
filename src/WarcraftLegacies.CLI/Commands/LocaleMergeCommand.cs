@@ -66,12 +66,18 @@ internal static class LocaleMergeCommand
   /// reads its own.
   /// </para>
   /// </param>
+  /// <param name="useStringTable">
+  /// Whether to move the translated text into trigger strings, so the object data and map info are shared by every
+  /// language and only <c>war3map.wts</c> is stored per locale. See <see cref="LocaleStringTable"/>: without it, a
+  /// client of the merged language reads different object data from a host of another language and cannot join
+  /// its lobby.
+  /// </param>
   /// <remarks>
   /// The type of <paramref name="unlocalized"/> is written without a nullable annotation because this project does
   /// not enable nullable reference types; a null argument means the same thing either way.
   /// </remarks>
   public static int Run(string basePath, string localizedPath, string outputPath, string localeName,
-    bool useLocaleFolder = false, IReadOnlyCollection<string> unlocalized = null)
+    bool useLocaleFolder = false, IReadOnlyCollection<string> unlocalized = null, bool useStringTable = false)
   {
     basePath = Path.GetFullPath(basePath);
     localizedPath = Path.GetFullPath(localizedPath);
@@ -116,6 +122,19 @@ internal static class LocaleMergeCommand
     var keptPlain = targets.Where(plain.Contains).ToList();
     targets = targets.Where(name => !plain.Contains(name)).ToList();
 
+    LocaleStringTable.Result stringTable = null;
+    if (useStringTable)
+    {
+      Console.WriteLine("Moving translated text into trigger strings.");
+      stringTable = LocaleStringTable.Build(basePath, localizedPath);
+      targets = targets
+        .Where(name => !stringTable.SharedFiles.ContainsKey(name))
+        .Concat(stringTable.LocalizedFiles.Keys)
+        .Distinct(StringComparer.OrdinalIgnoreCase)
+        .OrderBy(name => name, StringComparer.OrdinalIgnoreCase)
+        .ToList();
+    }
+
     Console.WriteLine($"Merging {string.Join(", ", localeNames)} into the map.");
     Console.WriteLine(folder is null
       ? "  layout: plain names, locale recorded on each entry"
@@ -125,6 +144,12 @@ internal static class LocaleMergeCommand
       Console.WriteLine(
         "  WARNING: Warcraft III does not honour a locale tag on a map's own entries, so this layout produces a " +
         "map whose object data stays in the base language. Pass --locale-folder for a map that reaches players.");
+    }
+    if (stringTable is null)
+    {
+      Console.WriteLine(
+        "  WARNING: without --string-table the merged language reads its own copy of the object data, so its " +
+        "clients fail the map check in a lobby hosted in another language.");
     }
     if (keptPlain.Count != 0)
     {
@@ -158,9 +183,22 @@ internal static class LocaleMergeCommand
           continue;
         }
 
-        var stream = new MemoryStream(ReadEntry(baseArchive, name));
+        var data = stringTable is not null && stringTable.SharedFiles.TryGetValue(name, out var shared)
+          ? shared
+          : ReadEntry(baseArchive, name);
+        var stream = new MemoryStream(data);
         keepAlive.Add(stream);
         builder.AddFile(MpqFile.New(stream, name, MpqLocale.Neutral, false));
+      }
+
+      if (stringTable is not null)
+      {
+        foreach (var (name, data) in stringTable.SharedFiles.Where(kv => !baseArchive.FileExists(kv.Key)))
+        {
+          var stream = new MemoryStream(data);
+          keepAlive.Add(stream);
+          builder.AddFile(MpqFile.New(stream, name, MpqLocale.Neutral, false));
+        }
       }
     }
 
@@ -174,14 +212,19 @@ internal static class LocaleMergeCommand
           continue;
         }
 
-        var stream = new MemoryStream(ReadEntry(localizedArchive, name));
+        var data = stringTable is not null && stringTable.SharedFiles.TryGetValue(name, out var shared)
+          ? shared
+          : ReadEntry(localizedArchive, name);
+        var stream = new MemoryStream(data);
         keepAlive.Add(stream);
         builder.AddFile(MpqFile.New(stream, name, MpqLocale.Neutral, false));
       }
 
       foreach (var name in targets)
       {
-        var data = ReadEntry(localizedArchive, name);
+        var data = stringTable is not null && stringTable.LocalizedFiles.TryGetValue(name, out var translated)
+          ? translated
+          : ReadEntry(localizedArchive, name);
         foreach (var locale in localeNames)
         {
           var stream = new MemoryStream(data);
