@@ -45,9 +45,9 @@ public sealed class UnitTooltipBasicMigration : IMapMigration
         // A localised build ships its tooltips as translated map data, so an entry the map data already states is
         // left as it is: composing one here would put an English name behind a translated verb, or an English verb
         // in front of a translated name.
-        var hasBasic = !string.IsNullOrEmpty(unit.TextTooltipBasic);
-        var hasAwaken = !string.IsNullOrEmpty(unit.TextTooltipAwaken);
-        var hasRevive = !string.IsNullOrEmpty(unit.TextTooltipRevive);
+        var hasBasic = unit.IsTextTooltipBasicModified;
+        var hasAwaken = unit.IsTextTooltipAwakenModified;
+        var hasRevive = unit.IsTextTooltipReviveModified;
 
         if (unit.AbilitiesHero.Any())
         {
