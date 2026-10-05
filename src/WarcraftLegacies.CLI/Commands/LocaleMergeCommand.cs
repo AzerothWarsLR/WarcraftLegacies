@@ -66,12 +66,6 @@ internal static class LocaleMergeCommand
   /// reads its own.
   /// </para>
   /// </param>
-  /// <param name="useStringTable">
-  /// Whether to move the translated text into trigger strings, so the object data and map info are shared by every
-  /// language and only <c>war3map.wts</c> is stored per locale. See <see cref="LocaleStringTable"/>: without it, a
-  /// client of the merged language reads different object data from a host of another language and cannot join
-  /// its lobby.
-  /// </param>
   /// <remarks>
   /// The type of <paramref name="unlocalized"/> is written without a nullable annotation because this project does
   /// not enable nullable reference types; a null argument means the same thing either way.

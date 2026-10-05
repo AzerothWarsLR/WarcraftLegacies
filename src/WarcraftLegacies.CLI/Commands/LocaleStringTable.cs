@@ -13,31 +13,15 @@ using War3Net.Build.Script;
 
 namespace WarcraftLegacies.CLI.Commands;
 
-/// <summary>
-/// Moves the text that differs between a base build and a localized build into trigger strings, so both builds
-/// share one set of object data and map info files and only <c>war3map.wts</c> differs per language.
-/// <para>
-/// Warcraft III checks that every player in a lobby has the same map by hashing files that include the object data.
-/// A map that stores a translated copy of those files gives clients of that language a different hash from the host,
-/// and they are kicked from the lobby or see it broken. Trigger strings are how Blizzard's own maps carry several
-/// languages: the shared files hold <c>TRIGSTR_</c> references, and each client resolves them from its own
-/// language's string file.
-/// </para>
-/// </summary>
 internal static class LocaleStringTable
 {
   private const string TriggerStringsFileName = "war3map.wts";
 
   private const string ScriptFileName = "war3map.lua";
 
-  /// <summary>
-  /// A script line that passes one string literal, such as <c>SetMapName("Warcraft Legacies")</c>.
-  /// </summary>
-  private static readonly Regex _singleLiteralLine = new(@"^(?<prefix>[^""]*)""(?<value>(?:[^""\\]|\\.)*)""(?<suffix>[^""]*)$");
+  private static readonly Regex _translatableScriptLine =
+    new(@"^(?<prefix>\s*(?:SetMapName|SetMapDescription)\("")(?<value>(?:[^""\\]|\\.)*)(?<suffix>""\)\s*)$");
 
-  /// <summary>
-  /// The archive files this step rewrites, keyed by the <see cref="Map"/> property that holds them.
-  /// </summary>
   private static readonly (string Property, string FileName)[] _objectDataFiles =
   [
     (nameof(Map.AbilityObjectData), "war3map.w3a"),
@@ -56,19 +40,10 @@ internal static class LocaleStringTable
     (nameof(Map.UpgradeSkinObjectData), "war3mapSkin.w3q")
   ];
 
-  /// <summary>
-  /// The result of <see cref="Build"/>.
-  /// </summary>
-  /// <param name="SharedFiles">Files every client reads from the map root, including the base language's strings.</param>
-  /// <param name="LocalizedFiles">Files stored once per locale, which is only the translated string file.</param>
   public sealed record Result(
     IReadOnlyDictionary<string, byte[]> SharedFiles,
     IReadOnlyDictionary<string, byte[]> LocalizedFiles);
 
-  /// <summary>
-  /// Builds shared object data and map info for <paramref name="basePath"/> and <paramref name="localizedPath"/>,
-  /// with one string file for each language.
-  /// </summary>
   public static Result Build(string basePath, string localizedPath)
   {
     var baseMap = Open(basePath);
@@ -123,21 +98,11 @@ internal static class LocaleStringTable
     return new Result(sharedFiles, localizedFiles);
   }
 
-  /// <summary>
-  /// Returns the base build's script with every line whose string literal differs in the localized build changed to
-  /// a trigger string reference, or <see langword="null"/> when the scripts are the same.
-  /// </summary>
-  /// <remarks>
-  /// The two builds' scripts differ only in the map name and description that <c>config</c> sets for the lobby.
-  /// Every player reads one script from the map root, so those calls take a reference, as the World Editor writes
-  /// them, and each client resolves it from its own string file. Any other difference stops the merge, since it
-  /// would mean one language's script is being shown to every player.
-  /// </remarks>
   private static byte[] ShareScript(string basePath, string localizedPath, StringPairs table)
   {
     var baseScript = ReadText(basePath, ScriptFileName);
     var localizedScript = ReadText(localizedPath, ScriptFileName);
-    if (baseScript is null || localizedScript is null || baseScript == localizedScript)
+    if (baseScript is null || localizedScript is null)
     {
       return null;
     }
@@ -150,7 +115,8 @@ internal static class LocaleStringTable
         $"The localized build's {ScriptFileName} has a different number of lines from the base build's.");
     }
 
-    var changed = 0;
+    var translated = 0;
+    var keptFromBase = 0;
     for (var i = 0; i < baseLines.Length; i++)
     {
       if (baseLines[i] == localizedLines[i])
@@ -158,24 +124,28 @@ internal static class LocaleStringTable
         continue;
       }
 
-      var baseMatch = _singleLiteralLine.Match(baseLines[i]);
-      var localizedMatch = _singleLiteralLine.Match(localizedLines[i]);
+      var baseMatch = _translatableScriptLine.Match(baseLines[i]);
+      var localizedMatch = _translatableScriptLine.Match(localizedLines[i]);
       if (!baseMatch.Success || !localizedMatch.Success
-          || baseMatch.Groups["prefix"].Value != localizedMatch.Groups["prefix"].Value
-          || baseMatch.Groups["suffix"].Value != localizedMatch.Groups["suffix"].Value)
+          || baseMatch.Groups["prefix"].Value != localizedMatch.Groups["prefix"].Value)
       {
-        throw new InvalidOperationException(
-          $"Line {i + 1} of {ScriptFileName} differs between the builds by more than one string: {baseLines[i].Trim()}");
+        keptFromBase++;
+        continue;
       }
 
       var reference = table.Reference(
         UnescapeLua(baseMatch.Groups["value"].Value),
         UnescapeLua(localizedMatch.Groups["value"].Value));
-      baseLines[i] = $"{baseMatch.Groups["prefix"].Value}\"{reference}\"{baseMatch.Groups["suffix"].Value}";
-      changed++;
+      baseLines[i] = $"{baseMatch.Groups["prefix"].Value}{reference}{baseMatch.Groups["suffix"].Value}";
+      translated++;
     }
 
-    Console.WriteLine($"    {ScriptFileName}: {changed} translated lines moved to trigger strings");
+    Console.WriteLine($"    {ScriptFileName}: {translated} translated lines moved to trigger strings");
+    if (keptFromBase != 0)
+    {
+      Console.WriteLine($"    {ScriptFileName}: {keptFromBase} other differing lines kept from the base build");
+    }
+
     return new UTF8Encoding(false).GetBytes(string.Join('\n', baseLines));
   }
 
@@ -206,15 +176,6 @@ internal static class LocaleStringTable
     return Map.Open(stream);
   }
 
-  /// <summary>
-  /// Replaces every string field of <paramref name="baseData"/> whose value differs in
-  /// <paramref name="localizedData"/> with a trigger string reference, and returns how many were replaced.
-  /// </summary>
-  /// <remarks>
-  /// Only fields both builds state are shared. A field only the localized build states is left out, so a client
-  /// of that language falls back to the game's own text for it, which is already in its language. A field only the
-  /// base build states, or one whose value is not text, keeps the base build's value.
-  /// </remarks>
   private static int ShareObjectData(object baseData, object localizedData, StringPairs table)
   {
     var localized = new Dictionary<string, ObjectDataModification>();
@@ -247,9 +208,6 @@ internal static class LocaleStringTable
     return changed;
   }
 
-  /// <summary>
-  /// Pairs each modification of an object data file with a key that identifies the same field in another build.
-  /// </summary>
   private static IEnumerable<(string Key, ObjectDataModification Modification)> EnumerateModifications(object data)
   {
     foreach (var listProperty in data.GetType().GetProperties()
@@ -283,10 +241,6 @@ internal static class LocaleStringTable
     }
   }
 
-  /// <summary>
-  /// Replaces the lobby and loading screen text of <paramref name="baseInfo"/> that differs in
-  /// <paramref name="localizedInfo"/> with trigger string references, and returns how many were replaced.
-  /// </summary>
   private static int ShareMapInfo(MapInfo baseInfo, MapInfo localizedInfo, StringPairs table)
   {
     var changed = 0;
@@ -391,9 +345,6 @@ internal static class LocaleStringTable
     return stream.ToArray();
   }
 
-  /// <summary>
-  /// Two string files filled in step, so a key resolves to the same field in each language.
-  /// </summary>
   private sealed class StringPairs
   {
     private readonly Dictionary<(string, string), uint> _keys = new();
@@ -410,9 +361,6 @@ internal static class LocaleStringTable
 
     public TriggerStrings Localized { get; }
 
-    /// <summary>
-    /// Returns the reference for a pair of texts, adding it to both files the first time the pair is seen.
-    /// </summary>
     public string Reference(string baseValue, string translatedValue)
     {
       if (!_keys.TryGetValue((baseValue, translatedValue), out var key))
