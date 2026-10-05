@@ -78,6 +78,11 @@
       "Value": "war3mapImported\\TaurenBarracks.mdl"
     },
     {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
       "Id": "unam",
       "Type": 3,
       "Value": "Ogre Mound"
