@@ -117,7 +117,7 @@ public sealed class Forfeit : Command
       {
         player.DisplayTextTo(Loc.Format(
           "{team} has forfeited the game.|cFFFF0000The game will end in 10 seconds.|r",
-          ("{team}", team.Name)));
+          ("{team}", team.LocalizedName)));
       }
       WCSharp.Events.PeriodicEvents.AddPeriodicEvent(() =>
       {

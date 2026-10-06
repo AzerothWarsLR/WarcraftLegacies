@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -43,6 +44,6 @@ public sealed class CheatAddSpell : Command
       unit.AddAbility(fourCc);
     }
 
-    return $"Adding {objectName} to selected units.";
+    return Loc.Format("Adding {name} to selected units.", ("{name}", objectName));
   }
 }

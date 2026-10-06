@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Commands;
+using MacroTools.Localization;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -29,12 +30,12 @@ public sealed class CheatMana : Command
     {
       case "on":
         SetCheatActive(cheater, true);
-        return "Infinite mana activated.";
+        return Loc.Get("Infinite mana activated.");
       case "off":
         SetCheatActive(cheater, false);
-        return "Infinite mana deactivated.";
+        return Loc.Get("Infinite mana deactivated.");
       default:
-        return "You must specify \"on\" or \"off\" as the first parameter.";
+        return Loc.Get("You must specify \"on\" or \"off\" as the first parameter.");
     }
   }
 

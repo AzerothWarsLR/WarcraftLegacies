@@ -45,7 +45,7 @@ public sealed class Capital : Legend
       if (!Unit.IsInvulnerable)
       {
         throw new Exception(
-          $"{Unit.Name}'s last protector died, which should make it vulnerable, but it is already vulnerable.");
+          Loc.Format("{unit}'s last protector died, which should make it vulnerable, but it is already vulnerable.", ("{unit}", Unit.Name)));
       }
 
       if (Unit != null)
@@ -67,7 +67,7 @@ public sealed class Capital : Legend
   {
     if (ProtectorsByUnit.ContainsKey(whichUnit))
     {
-      throw new InvalidOperationException($"{whichUnit.Name} is already registered as a Protector for {Name}.");
+      throw new InvalidOperationException(Loc.Format("{unit} is already registered as a Protector for {capital}.", ("{unit}", whichUnit.Name), ("{capital}", Name)));
     }
 
     var protector = new Protector(whichUnit);

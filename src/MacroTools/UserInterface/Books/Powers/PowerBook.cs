@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.UserInterface.Books.Core;
 using WCSharp.Shared.Data;
 
@@ -25,7 +26,7 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
 
     var book = new PowerBook
     {
-      Title = "Powers",
+      Title = Loc.Get("Powers"),
       LauncherParent = framehandle.Get("UpperButtonBarMenuButton", 0),
       Position = new Point(0.36f, 0.35f),
       TrackedFaction = playerData.Faction

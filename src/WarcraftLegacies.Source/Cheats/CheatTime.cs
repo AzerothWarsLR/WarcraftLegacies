@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -25,6 +26,6 @@ public sealed class CheatTime : Command
     }
 
     fgamestate.TimeOfDay.Value = time;
-    return $"Setting time of day to {time}.";
+    return Loc.Format("Setting time of day to {time}.", ("{time}", time.ToString()));
   }
 }

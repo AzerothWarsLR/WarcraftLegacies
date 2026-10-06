@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 using MacroTools.Shores;
 using MacroTools.Utils;
 
@@ -20,7 +21,7 @@ public sealed class CheatShore : Command
 
   /// <inheritdoc />
   public override string Description =>
-    $"Removes all units on the map, obliterates you, reveals the map, then spawns a large, invulnerable penguin at all registered {nameof(Shore)}s.";
+    "Removes all units on the map, obliterates you, reveals the map, then spawns a large, invulnerable penguin at all registered Shores.";
 
   private bool _executed;
 
@@ -29,7 +30,7 @@ public sealed class CheatShore : Command
   {
     if (_executed)
     {
-      return $"{nameof(CheatShore)} has already been executed and cannot be executed multiple times.";
+      return Loc.Get("CheatShore has already been executed and cannot be executed multiple times.");
     }
 
     _executed = true;
@@ -51,6 +52,6 @@ public sealed class CheatShore : Command
       newUnit.RemoveAbility(FourCC("Awan"));
     }
 
-    return $"Created a penguin at all registered {nameof(Shore)}s.";
+    return Loc.Get("Created a penguin at all registered Shores.");
   }
 }

@@ -71,7 +71,7 @@ public sealed class PagerTests
     var secondPage = Pager.BuildPage("Header", lines, 2);
 
     // Assert
-    Assert.Equal("Header [Page 1/2, add page # for more]\n" + string.Join("\n", lines.Take(13)), firstPage);
+    Assert.Equal("Header [Page 1/2, add a page number for more]\n" + string.Join("\n", lines.Take(13)), firstPage);
     Assert.Equal("Header [Page 2/2]\n" + "L14", secondPage);
   }
 

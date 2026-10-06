@@ -95,7 +95,7 @@ public sealed class QuestSummonLegion : QuestData
   {
     if (whichFaction.UndefeatedResearch == 0)
     {
-      throw new Exception($"{whichFaction.Name} has no presence research. QuestSummonLegion won't work.");
+      throw new Exception(Loc.Format("{faction} has no presence research. QuestSummonLegion won't work.", ("{faction}", whichFaction.Name)));
     }
   }
 

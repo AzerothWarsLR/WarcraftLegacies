@@ -18,7 +18,8 @@ public sealed class GlobalDummyCaster
     var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
     var owningPlayer = caster.Owner;
     _unit.SetOwner(owningPlayer);
-    _unit.SetPosition(originPoint.X, originPoint.Y);
+    _unit.X = originPoint.X;
+    _unit.Y = originPoint.Y;
     _unit.AddAbility(abilId);
     _unit.SetAbilityLevel(abilId, level);
 

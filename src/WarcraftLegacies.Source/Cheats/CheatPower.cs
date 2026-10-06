@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Commands;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -25,7 +26,7 @@ public sealed class CheatPower : CompositeCommand
   {
     if (args.Length < 1)
     {
-      return "Usage: -power list <faction>";
+      return Loc.Get("Usage: -power list <faction>");
     }
 
     if (!CommandTargets.TryResolveFaction(args[0], out var faction, out var error))
@@ -33,7 +34,7 @@ public sealed class CheatPower : CompositeCommand
       return error;
     }
 
-    return $"Powers for {faction.Name}:\n" + string.Join("\n", faction.GetAllPowers()
+    return Loc.Format("Powers for {faction}:", ("{faction}", faction.Name)) + "\n" + string.Join("\n", faction.GetAllPowers()
       .Select((power, i) => $"[{i + 1}] [{CommandTargets.GetPowerKey(power)}] {power.Name}")
       .ToList());
   }
@@ -42,7 +43,7 @@ public sealed class CheatPower : CompositeCommand
   {
     if (args.Length < 2)
     {
-      return "Usage: -power remove <faction> <key>";
+      return Loc.Get("Usage: -power remove <faction> <key>");
     }
 
     if (!CommandTargets.TryResolveFaction(args[0], out var faction, out var error))
@@ -56,6 +57,6 @@ public sealed class CheatPower : CompositeCommand
     }
 
     faction.RemovePower(power);
-    return $"Removed Power {power.Name}.";
+    return Loc.Format("Removed Power {power}.", ("{power}", power.Name));
   }
 }

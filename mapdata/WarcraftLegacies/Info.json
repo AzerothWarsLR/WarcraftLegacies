@@ -5,7 +5,7 @@
   "GameVersion": "2.0.4.23745",
   "MapName": "Warcraft Legacies",
   "MapAuthor": "Technopig, Vampirika, Madsen",
-  "MapDescription": "Check out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/pnWZs69",
+  "MapDescription": "Check out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/ubQM7PgaG",
   "RecommendedPlayers": "14 Players ",
   "CameraBounds": {
     "BottomLeft": {
@@ -37,7 +37,7 @@
   "Tileset": 89,
   "LoadingScreenBackgroundNumber": 99,
   "LoadingScreenPath": "",
-  "LoadingScreenText": "Determine the fate of Azeroth as one of 14 factions from the Warcraft universe.\r\n\r\nFounders: Lordsebas, YakaryBovine\r\nDevelopers: Technopig, Madsen, Vampirika\r\nProgrammers: alrun3\r\nDiscord link: https://discord.gg/4eGZnR5",
+  "LoadingScreenText": "Determine the fate of Azeroth as one of 14 factions from the Warcraft universe.\r\n\r\nFounders: Lordsebas, YakaryBovine\r\nDevelopers: Technopig, Madsen, Vampirika\r\nProgrammers: alrun3\r\nDiscord link: https://discord.gg/ubQM7PgaG",
   "LoadingScreenTitle": "Warcraft Legacies",
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,

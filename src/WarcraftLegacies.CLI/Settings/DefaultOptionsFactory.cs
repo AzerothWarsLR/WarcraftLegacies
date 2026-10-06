@@ -81,13 +81,16 @@ public static class DefaultOptionsFactory
     return options;
   }
 
-  public static MapDataToMapConverterOptions CreateMapDataToMapConverterOptions(SharedPathOptions sharedPathOptions)
+  public static MapDataToMapConverterOptions CreateMapDataToMapConverterOptions(
+    SharedPathOptions sharedPathOptions,
+    string locale = null)
   {
     return new MapDataToMapConverterOptions
     {
       MapDataPaths = new MapDataPathOptions
       {
         RootPath = sharedPathOptions.MapDataPathOptions.RootPath,
+        Locale = locale,
         AbilityDataPath = sharedPathOptions.MapDataPathOptions.AbilityDataPath,
         BuffDataPath = sharedPathOptions.MapDataPathOptions.BuffDataPath,
         DestructableDataPath = sharedPathOptions.MapDataPathOptions.DestructableDataPath,

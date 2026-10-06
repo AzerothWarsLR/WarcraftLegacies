@@ -1,5 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.GameTime;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -26,6 +27,6 @@ public sealed class CheatSkipTurns : Command
     }
 
     GameTimeManager.SkipTurns(turnSkip);
-    return $"Skipping forward {turnSkip} turns.";
+    return Loc.Format("Skipping forward {turns} turns.", ("{turns}", turnSkip.ToString()));
   }
 }

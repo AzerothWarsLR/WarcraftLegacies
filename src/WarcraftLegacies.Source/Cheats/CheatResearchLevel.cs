@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -24,6 +25,7 @@ public sealed class CheatResearchLevel : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     var obj = FourCC(parameters[0]);
-    return "Level of research " + GetObjectName(obj) + ": " + I2S(cheater.GetTechResearched(obj));
+    return Loc.Format("Level of research {research}: {level}",
+      ("{research}", GetObjectName(obj)), ("{level}", I2S(cheater.GetTechResearched(obj))));
   }
 }
