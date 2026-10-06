@@ -1,7 +1,7 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.GameTime;
-using WarcraftLegacies.Source.Factions.Lordaeron;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -21,7 +21,7 @@ public sealed class CheatTestPaths : Command
   public override CommandType Type => CommandType.Cheat;
 
   /// <inheritdoc />
-  public override string Description => "Gives your faction some test paths to try out the Paths menu.";
+  public override string Description => "Gives your faction some test paths to try out the Paths menu, plus its Roleplay paths if Roleplay mode is off.";
 
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
@@ -32,9 +32,9 @@ public sealed class CheatTestPaths : Command
       return "You don't have a faction.";
     }
 
-    if (faction is LordaeronFaction lordaeron)
+    if (!RoleplaySetting.IsActive && faction is IHasRoleplayPaths hasRoleplayPaths)
     {
-      lordaeron.AddRoleplayPaths();
+      hasRoleplayPaths.AddRoleplayPaths();
     }
 
     faction.AddPath(new TestPath(500)

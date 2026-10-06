@@ -14,6 +14,7 @@ using WarcraftLegacies.Source.Factions.Lordaeron.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -22,7 +23,7 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron;
 
-public sealed class LordaeronFaction : Faction
+public sealed class LordaeronFaction : Faction, IHasRoleplayPaths
 {
   private ScarletCrusadeTransformation? _scarletCrusadeTransformation;
 
@@ -104,7 +105,7 @@ public sealed class LordaeronFaction : Faction
       Artifacts.CrownOfStormwind, AllLegends.Lordaeron.Arthas));
   }
 
-  /// <summary>Adds the paths Lordaeron can take in Roleplay mode.</summary>
+  /// <inheritdoc />
   public void AddRoleplayPaths()
   {
     if (_scarletCrusadeTransformation != null)
