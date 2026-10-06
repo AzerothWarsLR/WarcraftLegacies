@@ -17,6 +17,7 @@ public static class CheatSetup
     CommandManager.Register(new CheatFaction());
     CommandManager.Register(new CheatPower());
     CommandManager.Register(new CheatTestPaths());
+    CommandManager.Register(new CheatTestEvents());
     CommandManager.Register(new CheatQuest());
     CommandManager.Register(new CheatFood());
     CommandManager.Register(new CheatGod());
