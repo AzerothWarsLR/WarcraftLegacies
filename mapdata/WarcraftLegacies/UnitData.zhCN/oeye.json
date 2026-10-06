@@ -1,0 +1,23 @@
+{
+  "OldId": "oeye",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼 - 巫医）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练警戒结界"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "警戒结界"
+    }
+  ]
+}

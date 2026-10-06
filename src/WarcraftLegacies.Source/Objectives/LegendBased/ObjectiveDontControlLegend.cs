@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
@@ -17,7 +18,7 @@ public sealed class ObjectiveDontControlLegend : Objective
   public ObjectiveDontControlLegend(LegendaryHero target)
   {
     _target = target;
-    Description = $"You don't control {target.Name}";
+    Description = Loc.Format("You don't control {target}", ("{target}", target.Name));
     if (target.Unit != null)
     {
       TargetWidget = target.Unit;

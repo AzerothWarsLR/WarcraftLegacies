@@ -1,0 +1,24 @@
+{
+  "OldId": "BUau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "海军光环"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "海军光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位的移动速度和生命恢复速度提高。"
+    }
+  ],
+  "NewId": "B036"
+}

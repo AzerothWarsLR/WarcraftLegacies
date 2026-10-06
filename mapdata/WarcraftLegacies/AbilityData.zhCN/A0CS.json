@@ -1,0 +1,14 @@
+{
+  "OldId": "AHmt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "附庸卷轴传送"
+    }
+  ],
+  "NewId": "A0CS"
+}

@@ -1,0 +1,71 @@
+{
+  "OldId": "ANcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌 - 陈 - 召唤）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴、大地与火焰 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴、大地与火焰 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴、大地与火焰 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "风暴、大地与火焰 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤三个强壮的灵魂来协助熊猫酒仙。45 秒冷却时间"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤三个强大的灵魂来协助熊猫酒仙。30 秒冷却时间"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤三个强壮的灵魂来协助熊猫酒仙。15 秒冷却时间"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤三个灵魂来协助熊猫酒仙。 |n|n|cffffcc001级|r - 三个强壮的灵魂，45 秒冷却时间。 |n|cffffcc002级|r - 三个强大的灵魂，30 秒冷却时间。 |n|cffffcc003级|r - 三个无比强大的灵魂，15 秒冷却时间。"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习风暴、大地与火焰 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "风暴、大地与火焰"
+    }
+  ],
+  "NewId": "A0HM"
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "BUav",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "狼人之咬"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "狼人之咬"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到狼人撕咬的影响，对敌方单位造成伤害时会恢复生命值。"
+    }
+  ],
+  "NewId": "MD16"
+}

@@ -8,11 +8,16 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "S003,A00T,Ault,A00A,Asps,Aegr,A08P,Aien"
+      "Value": "A15Y,A00T,Ault,A00A,A15V,A15W,A15X,A08P,Aien"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
     },
     {
       "Id": "ubld",
-      "Value": 15
+      "Value": 30
     },
     {
       "Id": "ucol",
@@ -43,7 +48,7 @@
     },
     {
       "Id": "ugol",
-      "Value": 40
+      "Value": 75
     },
     {
       "Id": "ugor",
@@ -95,7 +100,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R06H"
+      "Value": "n06P,RV02"
     },
     {
       "Id": "ua1s",
@@ -108,7 +113,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Rguv"
+      "Value": "Rhme,Rhar,Rguv,RV03"
     },
     {
       "Id": "ua1w",
@@ -131,7 +136,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Sentinels)"
+      "Value": "(Sentinels-Elite)"
     },
     {
       "Id": "umdl",
@@ -169,12 +174,20 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Sentinel Elite Warrior, specialises in disruption. "
+      "Value": "Elite Sentinel jailer. Blinks into combat, binds enemies in shackles, and calls Spirits of Vengeance."
     },
     {
       "Id": "usnd",
       "Type": 3,
       "Value": "HeroWarden"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

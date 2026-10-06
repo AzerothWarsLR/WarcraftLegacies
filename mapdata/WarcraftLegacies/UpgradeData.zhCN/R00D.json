@@ -1,0 +1,33 @@
+{
+  "OldId": "Rovs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "群体嗜血"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "群体嗜血"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使科多兽获得群体嗜血技能，可提高目标区域内友方单位的攻击速度和移动速度。"
+    }
+  ],
+  "NewId": "R00D"
+}

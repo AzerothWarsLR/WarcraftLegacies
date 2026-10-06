@@ -32,7 +32,7 @@ public sealed class Devour : Spell
   {
     if (target.IsResistant())
     {
-      target.TakeDamage(caster, Damage.Base + Damage.PerLevel * GetAbilityLevel(caster), damageType: damagetype.Magic);
+      target.TakeDamage(caster, Damage.GetValue(GetAbilityLevel(caster)), damageType: damagetype.Magic);
     }
     else
     {

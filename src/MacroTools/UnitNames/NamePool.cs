@@ -30,7 +30,6 @@ public sealed class NamePool
 
     if (available.Count == 0)
     {
-      unit.Name = "";
       return false;
     }
 

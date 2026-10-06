@@ -1,0 +1,23 @@
+{
+  "OldId": "unec",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "修习邪恶死灵魔法的施法者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "通灵师"
+    }
+  ]
+}

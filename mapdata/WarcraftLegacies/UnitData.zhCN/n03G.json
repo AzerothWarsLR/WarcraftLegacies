@@ -1,0 +1,24 @@
+{
+  "OldId": "ndgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "紫罗兰塔"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造紫罗兰塔"
+    }
+  ],
+  "NewId": "n03G"
+}

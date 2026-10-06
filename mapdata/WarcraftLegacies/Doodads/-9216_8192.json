@@ -231,27 +231,6 @@
     "CreationNumber": 5680
   },
   {
-    "TypeId": 1144467524,
-    "Variation": 0,
-    "Position": {
-      "X": -9280,
-      "Y": 8320,
-      "Z": 404.75
-    },
-    "Rotation": 4.712389,
-    "Scale": {
-      "X": 0.99999994,
-      "Y": 0.99999994,
-      "Z": 0.99999994
-    },
-    "SkinId": 1144467524,
-    "State": 2,
-    "Life": 255,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 5677
-  },
-  {
     "TypeId": 1936872009,
     "Variation": 0,
     "Position": {

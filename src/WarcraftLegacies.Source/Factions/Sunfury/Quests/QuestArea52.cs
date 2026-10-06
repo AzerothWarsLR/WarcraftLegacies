@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
@@ -52,5 +53,5 @@ public sealed class QuestArea52 : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Gain {GoldReward} gold and a base in Area 52";
+    Loc.Format("Gain {gold} gold and a base in Area 52", ("{gold}", GoldReward.ToString()));
 }

@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
-using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Draenei.Quests;
 using WarcraftLegacies.Source.Setup;
@@ -19,7 +17,7 @@ public sealed class DraeneiFaction : Faction
   public DraeneiFaction()
     : base("The Exodar", playercolor.Mint, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.NightElves;
     StartingGold = new StartingGold
     {
       Instant = 200,
@@ -56,6 +54,12 @@ public sealed class DraeneiFaction : Faction
   {
     Regions.ExodarBaseUnlock.CleanupNeutralPassiveUnits();
     Regions.Darkshore.CleanupNeutralPassiveUnits();
+    var exodar = AllLegends.Draenei.LegendExodar.Unit;
+    if (exodar != null)
+    {
+      exodar.SetOwner(player.NeutralPassive);
+      exodar.IsInvulnerable = true;
+    }
     base.OnNotPicked();
   }
 
@@ -70,14 +74,15 @@ public sealed class DraeneiFaction : Faction
       AllPreplacedWidgets.Units.GetClosest(UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
       AllLegends.Draenei.Velen
     ));
-    var crystalProtectors = GlobalGroup
-      .EnumUnitsInRect(Regions.ExodarBaseUnlock.Rect)
-      .Where(x => x.UnitType == UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER);
-    var questRepairGenerator = new QuestRepairGenerator(AllLegends.Draenei.LegendExodarGenerator, questRepairHull, crystalProtectors);
-    AddQuest(questRepairGenerator);
+    // TODO: re-add
+    // var crystalProtectors = GlobalGroup
+    //   .EnumUnitsInRect(Regions.ExodarBaseUnlock.Rect)
+    //   .Where(x => x.UnitType == UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER);
+    // var questRepairGenerator = new QuestRepairGenerator(AllLegends.Draenei.LegendExodarGenerator, questRepairHull, crystalProtectors);
+    // AddQuest(questRepairGenerator);
     AddQuest(new QuestTriumvirate(AllLegends.Draenei.Velen));
-    var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, AllLegends.Draenei.LegendExodarGenerator);
-    AddQuest(questDimensionalShip);
+    // var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, AllLegends.Draenei.LegendExodarGenerator);
+    // AddQuest(questDimensionalShip);
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 }

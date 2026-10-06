@@ -1,0 +1,19 @@
+{
+  "OldId": "BNbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "暴风号角"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位听到了暴风城的号角，攻击力和防御提高。"
+    }
+  ],
+  "NewId": "B019"
+}

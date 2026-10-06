@@ -36,7 +36,7 @@
     },
     {
       "Id": "alev",
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": "abpy",
@@ -67,7 +67,44 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Teleports the hero a short distance, allowing her to move in and out of combat.|n12 second cooldown."
+      "Value": "Teleports the hero a short distance, allowing her to move in and out of combat."
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ebl1",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blink"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Teleports the hero a short distance, allowing her to move in and out of combat."
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ebl2",
+      "Type": 2,
+      "Value": 175
     }
   ]
 }

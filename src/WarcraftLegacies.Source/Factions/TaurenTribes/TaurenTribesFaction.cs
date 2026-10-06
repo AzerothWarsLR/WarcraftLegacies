@@ -1,0 +1,194 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using MacroTools.Dialogues;
+using MacroTools.Extensions;
+using MacroTools.Factions;
+using MacroTools.Localization;
+using MacroTools.PreplacedWidgets;
+using MacroTools.Researches;
+using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.OrcishHorde;
+using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+using WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
+using WarcraftLegacies.Source.Factions.TaurenTribes.Powers;
+using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
+using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.Shared.Researches;
+using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Factions.TaurenTribes;
+
+public sealed class TaurenTribesFaction : Faction
+{
+  private const string MassTeleportEffect = @"Abilities\Spells\Human\MassTeleport\MassTeleportCaster.mdl";
+  private const string MassTeleportChannelEffect = @"Abilities\Spells\Human\MassTeleport\MassTeleportTo.mdl";
+
+  private const float CampX = -9033.7f;
+  private const float CampY = -11365.6f;
+
+  private readonly unit _tent;
+  private readonly List<unit> _productionBuildings;
+  private readonly Point _thousandNeedlesTarget;
+  private readonly Point _mulgoreTarget;
+  private QuestTheLongMarch _theLongMarch = null!;
+
+  /// <inheritdoc />
+  public TaurenTribesFaction() : base("Tauren Tribes", playercolor.Orange, @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
+  {
+    TraditionalTeam = TeamSetup.Horde;
+    ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 205,
+      Turns = 10
+    };
+    CinematicMusic = "SadMystery";
+    IntroText = () => Loc.Format(
+      "You are playing as the wandering {faction}.\n\nDrought and the endless raids of the Centaur have driven the Tauren from their ancestral lands. Train Cairne Bloodhoof to lead the Long March across the Barrens to Thunder Bluff. Guard the kodo caravan every step of the way, for every kodo that reaches the bluffs makes your new home richer.\n\nOnce settled, repay your debt to the Horde. Win over the ogres of Stonemaul and Dunemaul, rally Rokhan and the Darkspear, and march on the Night Elves: break their hold on the Temple of the Moon and claim Nordrassil itself.\n\nWhen the southern passes open, the Tribes can raise a camp in Un'Goro Crater.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Tauren Tribes")}|r"));
+    Nicknames = new List<string>
+    {
+      "tauren",
+      "tt"
+    };
+    _tent = AllPreplacedWidgets.Units.GetClosest(UNIT_OTNT_CHIEF_S_LODGE_TAUREN_TRIBES_T1, CampX, CampY);
+    _productionBuildings = new List<unit>
+    {
+      AllPreplacedWidgets.Units.GetClosest(UNIT_OTWC_PROVING_GROUND_TAUREN_TRIBES_BARRACKS, CampX, CampY),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_OTSL_HALL_OF_ELDERS_TAUREN_TRIBES, CampX, CampY),
+      AllPreplacedWidgets.Units.GetClosest(UNIT_OTAL_ALTAR_OF_THE_ANCESTORS_TAUREN_TRIBES_ALTAR, CampX, CampY)
+    };
+    var thousandNeedlesControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N026_THOUSAND_NEEDLES);
+    _thousandNeedlesTarget = new Point(thousandNeedlesControlPoint.X, thousandNeedlesControlPoint.Y);
+    var mulgoreControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N09G_MULGORE);
+    _mulgoreTarget = new Point(mulgoreControlPoint.X, mulgoreControlPoint.Y);
+    ProcessObjectInfo(TaurenTribesObjectInfo.GetAllObjectLimits());
+  }
+
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    RegisterQuests();
+    RegisterDialogue();
+    RegisterFactionDependentInitializer<OrcishHordeFaction>(RegisterOrcishHordeQuests);
+    RegisterFactionDependentInitializer<OrcishHordeFaction>(RegisterOrcishHordeResearches);
+    RegisterResearches();
+    TaurenTribesSpells.Setup();
+    TaurenTribesTraits.Setup();
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
+
+  /// <inheritdoc />
+  public override void OnNotPicked()
+  {
+    Regions.EarthmothersCradle.CleanupNeutralPassiveUnits();
+    Regions.Highmountain_Unlock.CleanupNeutralPassiveUnits();
+    base.OnNotPicked();
+  }
+
+  private void RegisterDialogue()
+  {
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar01",
+            "I have wandered alone for many years, little Misha. Yet sometimes, even I grow weary of this endless solitude.",
+            "Rexxar"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar02",
+            "I have watched the other races. I have seen their squabbling, their ruthlessness. Their wars do nothing but scar the land and drive the wild things to extinction.",
+            "Rexxar"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar03",
+            "No, they cannot be trusted. Only beasts are above deceit.",
+            "Rexxar")),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Tauren.Rexxar, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new Dialogue(
+          @"Sound\Dialogue\OrcExpCamp\OrcQuest04ax\D04ARokhan02",
+          "How you doin', mon?",
+          "Rokhan"),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Tauren.Rokhan, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
+  }
+
+  private void RegisterQuests()
+  {
+    _theLongMarch = new QuestTheLongMarch(AllLegends.Tauren.CairneBloodhoof, _thousandNeedlesTarget, _mulgoreTarget,
+      Regions.ThunderBluff);
+    StartingQuest = AddQuest(_theLongMarch);
+
+    var questStonemaulDiplomacy = AddQuest(new QuestStonemaulDiplomacy(Regions.StonemaulKeep,
+      AllPreplacedWidgets.Units.Get(UNIT_NOGA_STONEMAUL_WARCHIEF_KOR_GALL), AllLegends.Tauren.Rexxar, _theLongMarch));
+    AddQuest(new QuestTheDunemaulOgres(questStonemaulDiplomacy));
+    AddQuest(new QuestHighmountain(AllLegends.Tauren.CairneBloodhoof, Regions.Highmountain_Unlock, _theLongMarch,
+      questStonemaulDiplomacy));
+
+    AddQuest(new QuestTheWorldTree(AllLegends.Tauren.CairneBloodhoof, _theLongMarch));
+    AddQuest(new QuestLinkWithTheMoon(AllLegends.Druids.TempleOfTheMoon, _theLongMarch));
+    AddQuest(new QuestEarthmothersCradle(Regions.EarthmothersCradle));
+
+    var worldTreeLinks = new List<WorldTreeLink>
+    {
+      new(AllLegends.Druids.Nordrassil, ABILITY_A16Q_TRAVEL_TO_NORDRASSIL_TAUREN_TRIBES_ROOTS_OF_THE_WORLD),
+      new(AllLegends.Neutral.Shaladrassil, ABILITY_A16R_TRAVEL_TO_SHALADRASSIL_TAUREN_TRIBES_ROOTS_OF_THE_WORLD),
+      new(AllLegends.Neutral.Seradane, ABILITY_A16S_TRAVEL_TO_THE_GREAT_TREE_OF_SERADANE_TAUREN_TRIBES_ROOTS_OF_THE_WORLD)
+    };
+    var rootsOfTheWorld = new RootsOfTheWorld(ABILITY_A16P_ROOTS_OF_THE_WORLD_TAUREN_TRIBES_ROOTS_OF_THE_WORLD,
+      ABILITY_A16T_CANCEL_TRAVEL_TAUREN_TRIBES_ROOTS_OF_THE_WORLD,
+      worldTreeLinks, 6, 1100, 90, 120, MassTeleportChannelEffect, MassTeleportEffect)
+    {
+      IconName = "Teleportation"
+    };
+    AddQuest(new QuestRootsOfTheWorld(worldTreeLinks.Select(x => x.Tree).ToList(), rootsOfTheWorld));
+  }
+
+  private void RegisterOrcishHordeQuests(OrcishHordeFaction orcishHorde)
+  {
+    AddQuest(new QuestDarkspearChampion(orcishHorde.GetQuestByType<QuestCountdownToExtinction>(), orcishHorde.GetQuestByType<QuestOrgrimmar>(), orcishHorde));
+  }
+
+  private void RegisterOrcishHordeResearches(OrcishHordeFaction orcishHorde)
+  {
+    ResearchManager.Register(new FlightPath(orcishHorde, this, UPGRADE_R09N_FLIGHT_PATH_ORCISH_HORDE_TAUREN_TRIBES, 70));
+  }
+
+  private void RegisterResearches()
+  {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_RT01_TAUREN_CHIEFTAINS_TAUREN_TRIBES, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_VP51_TAUREN_CHIEFTAIN_TAUREN_TRIBES_ELITE, 6);
+        }
+      },
+      new CustomResearch(UPGRADE_RT02_OGRE_LORDS_TAUREN_TRIBES, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_VP52_OGRE_LORD_TAUREN_TRIBES_ELITE, 6);
+        }
+      });
+    new LongMarchDeparture(this, _theLongMarch, _tent, _productionBuildings);
+  }
+}

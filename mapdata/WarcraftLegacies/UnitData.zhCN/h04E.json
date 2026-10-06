@@ -1,0 +1,29 @@
+{
+  "OldId": "hcth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "保护者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练保护者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "吉尔尼斯的坚毅战士，极为坚韧的近战单位。"
+    }
+  ],
+  "NewId": "h04E"
+}

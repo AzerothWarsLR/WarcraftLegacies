@@ -1,0 +1,31 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（部落近战精英）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化皮肤"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化皮肤"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "受到的攻击伤害降低<A16E,DataC1>点。"
+    }
+  ],
+  "NewId": "A16E"
+}

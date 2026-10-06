@@ -1,0 +1,24 @@
+{
+  "OldId": "hwat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（潮汐领主召唤）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练水元素"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "水元素"
+    }
+  ],
+  "NewId": "h01K"
+}

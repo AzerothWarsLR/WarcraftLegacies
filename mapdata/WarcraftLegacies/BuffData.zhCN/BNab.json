@@ -1,0 +1,18 @@
+{
+  "OldId": "BNab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "暗影突袭"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位遭到暗影突袭，护甲降低。"
+    }
+  ]
+}

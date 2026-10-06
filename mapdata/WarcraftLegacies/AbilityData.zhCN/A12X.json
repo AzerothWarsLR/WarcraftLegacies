@@ -1,0 +1,31 @@
+{
+  "OldId": "Ahwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（日怒）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤一个无法移动的结界，每秒为友方单位恢复 3 点魔法值。|n持续 10 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "奥术结界"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥术结界"
+    }
+  ],
+  "NewId": "A12X"
+}

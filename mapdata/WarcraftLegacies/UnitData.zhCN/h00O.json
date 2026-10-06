@@ -1,0 +1,19 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "乌特加德要塞"
+    }
+  ],
+  "NewId": "h00O"
+}

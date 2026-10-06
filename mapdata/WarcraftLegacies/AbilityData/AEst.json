@@ -47,7 +47,7 @@
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "W"
+      "Value": "D"
     },
     {
       "Id": "arhk",
@@ -65,6 +65,10 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Summons an Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts 40 seconds."
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
     }
   ]
 }

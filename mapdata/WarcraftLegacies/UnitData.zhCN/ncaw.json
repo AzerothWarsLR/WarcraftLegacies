@@ -1,0 +1,18 @@
+{
+  "OldId": "ncaw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主攻部队的守护者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "腐化的战争古树"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "Binv",
+  "NewId": "B0EB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASMassWindWalk.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mass Wind Walk"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mass Wind Walk"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is invisible and moves faster. Attacking or casting a spell ends the invisibility."
+    }
+  ]
+}

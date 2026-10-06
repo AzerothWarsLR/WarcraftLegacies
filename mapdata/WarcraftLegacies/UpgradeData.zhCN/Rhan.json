@@ -1,0 +1,25 @@
+{
+  "OldId": "Rhan",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（深绿色/紫色研究）"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "使所有骑乘单位的最大生命值提高 150 点。"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "坐骑作战训练"
+    }
+  ]
+}

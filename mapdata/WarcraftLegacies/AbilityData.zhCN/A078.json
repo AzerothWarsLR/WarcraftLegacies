@@ -1,0 +1,77 @@
+{
+  "OldId": "ACr2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（萨莉）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灵魂指引 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 20 秒内为一个目标友方单位恢复 400 点法力值。冷却时间 30 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 20 秒内为一个目标友方单位恢复 650 点法力值。冷却时间 30 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灵魂指引"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灵魂指引 - [|cffffcc001级|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "在 20 秒内为目标单位恢复法力值。|n|n|cffffcc001级|r - 50 点法力值。|n|cffffcc002级|r - 100 点法力值。|n|cffffcc003级|r - 150 点法力值。|n|cffffcc004级|r - 200 点法力值。"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习灵魂指引 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灵魂指引 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "灵魂指引 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 20 秒内为一个目标友方单位恢复 900 点法力值。冷却时间 30 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在 20 秒内为一个目标友方单位恢复 1150 点法力值。冷却时间 30 秒。"
+    }
+  ],
+  "NewId": "A078"
+}

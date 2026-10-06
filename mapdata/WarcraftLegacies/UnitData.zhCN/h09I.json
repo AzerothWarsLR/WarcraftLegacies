@@ -1,0 +1,29 @@
+{
+  "OldId": "hrif",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "小型私人坦克。|r"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "私人坦克"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练私人坦克"
+    }
+  ],
+  "NewId": "h09I"
+}

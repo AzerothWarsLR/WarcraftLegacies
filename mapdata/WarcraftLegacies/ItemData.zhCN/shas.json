@@ -1,0 +1,13 @@
+{
+  "OldId": "shas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "速度卷轴"
+    }
+  ]
+}

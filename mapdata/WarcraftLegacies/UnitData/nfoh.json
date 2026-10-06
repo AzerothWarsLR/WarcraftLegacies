@@ -36,6 +36,11 @@
       "Value": "mechanical,neutral,sapper"
     },
     {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4Default.tga"
+    },
+    {
       "Id": "uabs",
       "Type": 3,
       "Value": "ACnr"

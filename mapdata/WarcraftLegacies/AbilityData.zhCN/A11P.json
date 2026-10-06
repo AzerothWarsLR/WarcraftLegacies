@@ -1,0 +1,31 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城英雄）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "重型护甲"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "重型护甲"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位受到的所有攻击伤害降低<A11P,DataC1>点。"
+    }
+  ],
+  "NewId": "A11P"
+}

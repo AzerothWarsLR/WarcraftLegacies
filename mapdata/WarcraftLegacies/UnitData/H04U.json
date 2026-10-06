@@ -212,6 +212,11 @@
       "Id": "uma1",
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv,A0GK"
     }
   ]
 }

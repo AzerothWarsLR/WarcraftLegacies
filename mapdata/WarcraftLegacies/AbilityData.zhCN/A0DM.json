@@ -1,0 +1,77 @@
+{
+  "OldId": "AUau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（维伦）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "神圣光环"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣光环 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "提高周围友方单位的生命恢复速度和移动速度。 |n|n|cffffcc001级|r - 移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。|n|cffffcc002级|r - 移动速度提高<A0DM,DataA2,%>%，生命恢复速度提高<A0DM,DataB2,.>。|n|cffffcc003级|r - 移动速度提高<A0DM,DataA3,%>%，生命恢复速度提高<A0DM,DataB3,.>。|n|cffffcc004级|r - 移动速度提高<A0DM,DataA4,%>%，生命恢复速度提高<A0DM,DataB4,.>。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣光环"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣光环"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA1,%>%，生命恢复速度提高<A0DM,DataB1,.>。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA2,%>%，生命恢复速度提高<A0DM,DataB2,.>。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA3,%>%，生命恢复速度提高<A0DM,DataB3,.>。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使周围友方单位的移动速度提高<A0DM,DataA4,%>%，生命恢复速度提高<A0DM,DataB4,.>。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣光环"
+    }
+  ],
+  "NewId": "A0DM"
+}

@@ -1,0 +1,43 @@
+{
+  "OldId": "ACsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（达拉然 - 战斗法师）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "相位之刃"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "相位之刃 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "相位之刃 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击敌人时造成<A057,DataA1>点额外伤害，但每次攻击都会消耗法力值。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击敌人时造成<A057,DataA2>点额外伤害，但每次攻击都会消耗法力值。"
+    }
+  ],
+  "NewId": "A057"
+}

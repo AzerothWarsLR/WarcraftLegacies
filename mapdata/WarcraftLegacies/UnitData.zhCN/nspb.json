@@ -1,0 +1,18 @@
+{
+  "OldId": "nspb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑蜘蛛"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "OldId": "emtg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "巨型近战单位，能够承受惊人的伤害。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "山岭巨人"
+    }
+  ]
+}

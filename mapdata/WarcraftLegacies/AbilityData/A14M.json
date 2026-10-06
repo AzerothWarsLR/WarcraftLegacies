@@ -1,0 +1,47 @@
+{
+  "OldId": "AIsx",
+  "NewId": "A14M",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "Isx1",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 2,
+      "Id": "Isx1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 3,
+      "Id": "Isx1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 4,
+      "Id": "Isx1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Rexxar)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Bestial Wrath (Attack Speed)"
+    }
+  ]
+}

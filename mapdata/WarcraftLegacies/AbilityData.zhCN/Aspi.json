@@ -1,0 +1,18 @@
+{
+  "OldId": "Aspi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落/兽人部落/牛头人部族）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "尖刺屏障"
+    }
+  ]
+}

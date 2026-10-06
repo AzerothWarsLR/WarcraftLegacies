@@ -1,0 +1,48 @@
+{
+  "OldId": "AImr",
+  "NewId": "A169",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Impg",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,friend,self,vulnerable,invulnerable"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Horn of Cenarius"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Horn of Cenarius)"
+    }
+  ]
+}

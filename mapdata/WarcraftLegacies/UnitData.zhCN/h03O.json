@@ -1,0 +1,29 @@
+{
+  "OldId": "hbla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯研究）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "通用研发建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造铁匠铺"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "铁匠铺"
+    }
+  ],
+  "NewId": "h03O"
+}

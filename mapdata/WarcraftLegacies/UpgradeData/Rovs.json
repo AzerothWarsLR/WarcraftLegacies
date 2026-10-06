@@ -12,7 +12,7 @@
       "Level": 1,
       "Id": "greq",
       "Type": 3,
-      "Value": ""
+      "Value": "obea"
     },
     {
       "Id": "glmb",
@@ -22,17 +22,13 @@
       "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Level": 1,
       "Id": "ghk1",
       "Type": 3,
       "Value": "S"
-    },
-    {
-      "Id": "gbpy",
-      "Value": 1
     }
   ]
 }

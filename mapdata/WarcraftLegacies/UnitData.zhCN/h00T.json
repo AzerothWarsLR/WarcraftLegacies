@@ -1,0 +1,24 @@
+{
+  "OldId": "hars",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（血色 / 洛丹伦）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "血色修道院"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "训练牧师、女巫和破法者。"
+    }
+  ],
+  "NewId": "h00T"
+}

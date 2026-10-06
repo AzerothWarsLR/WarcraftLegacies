@@ -1,0 +1,24 @@
+{
+  "OldId": "Aroc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（火炮坦克）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位的攻击能额外向最多<Aroc,DataC1>个附近的敌方空中单位发射一枚投射物。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火箭弹幕"
+    }
+  ]
+}

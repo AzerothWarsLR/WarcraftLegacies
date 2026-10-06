@@ -1,0 +1,47 @@
+{
+  "OldId": "tbar",
+  "NewId": "I022",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A148"
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tiny Stronghold"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStronghold.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Tiny Stronghold"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Purchase Tiny Stronghold"
+    }
+  ]
+}

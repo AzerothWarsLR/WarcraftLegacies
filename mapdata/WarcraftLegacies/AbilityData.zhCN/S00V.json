@@ -1,0 +1,31 @@
+{
+  "OldId": "SCae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（霜狼）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战争韵律"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "战争韵律"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使附近友方单位的攻击速度提高 7.5%。"
+    }
+  ],
+  "NewId": "S00V"
+}

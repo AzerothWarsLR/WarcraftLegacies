@@ -1,0 +1,28 @@
+{
+  "OldId": "nvdl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能-传送门）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空行者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "源自虚空的虚灵恶魔。|"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练虚空行者"
+    }
+  ]
+}

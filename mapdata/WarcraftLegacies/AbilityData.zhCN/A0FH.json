@@ -1,0 +1,19 @@
+{
+  "OldId": "AId1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（附加特效）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "安纳塞隆宝珠"
+    }
+  ],
+  "NewId": "A0FH"
+}

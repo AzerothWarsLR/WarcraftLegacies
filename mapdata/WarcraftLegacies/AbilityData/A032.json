@@ -78,28 +78,28 @@
       "Pointer": 1,
       "Id": "Ncs1",
       "Type": 2,
-      "Value": 175
+      "Value": 150
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": "Ncs1",
       "Type": 2,
-      "Value": 250
+      "Value": 240
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Ncs1",
       "Type": 2,
-      "Value": 325
+      "Value": 330
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": "Ncs1",
       "Type": 2,
-      "Value": 400
+      "Value": 420
     },
     {
       "Level": 1,
@@ -131,55 +131,55 @@
     },
     {
       "Level": 1,
-      "Pointer": 3,
-      "Id": "Ncs3",
-      "Value": 3
-    },
-    {
-      "Level": 2,
-      "Pointer": 3,
-      "Id": "Ncs3",
-      "Value": 4
-    },
-    {
-      "Level": 3,
       "Pointer": 3,
       "Id": "Ncs3",
       "Value": 5
     },
     {
-      "Level": 4,
+      "Level": 2,
       "Pointer": 3,
       "Id": "Ncs3",
       "Value": 6
     },
     {
-      "Level": 1,
-      "Pointer": 4,
-      "Id": "Ncs4",
-      "Type": 2,
-      "Value": 1200
-    },
-    {
-      "Level": 2,
-      "Pointer": 4,
-      "Id": "Ncs4",
-      "Type": 2,
-      "Value": 1600
-    },
-    {
       "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 7
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Ncs3",
+      "Value": 8
+    },
+    {
+      "Level": 1,
       "Pointer": 4,
       "Id": "Ncs4",
       "Type": 2,
       "Value": 2000
     },
     {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 2500
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Ncs4",
+      "Type": 2,
+      "Value": 3000
+    },
+    {
       "Level": 4,
       "Pointer": 4,
       "Id": "Ncs4",
       "Type": 2,
-      "Value": 2400
+      "Value": 3500
     },
     {
       "Level": 1,

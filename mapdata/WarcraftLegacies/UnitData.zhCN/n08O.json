@@ -1,0 +1,29 @@
+{
+  "OldId": "nomg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食人魔法师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "食人魔的强大支援型施法者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔法师"
+    }
+  ],
+  "NewId": "n08O"
+}

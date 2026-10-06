@@ -1,0 +1,77 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿达尔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "眩目星光"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习眩目星光 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "释放一道强光，使 1000 半径内的所有敌方单位失明。 |n|n|cffffcc001级|r - 失明 6 秒。 |n|cffffcc002级|r - 失明 9 秒。 |n|cffffcc003级|r - 失明 12 秒。 |n|cffffcc004级|r - 失明 15 秒。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "眩目星光 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "眩目星光 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "眩目星光 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道强光，使 1000 半径内的所有敌方单位失明 6 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道强光，使 1000 半径内的所有敌方单位失明 9 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道强光，使 1000 半径内的所有敌方单位失明 12 秒。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "眩目星光 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "释放一道强光，使 1000 半径内的所有敌方单位失明 15 秒。"
+    }
+  ],
+  "NewId": "A105"
+}

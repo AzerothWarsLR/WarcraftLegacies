@@ -1,0 +1,29 @@
+{
+  "OldId": "nssn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵 - 精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "影叶"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练影叶"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "由珊蒂斯·羽月训练的优秀弓箭手。"
+    }
+  ],
+  "NewId": "n06E"
+}

@@ -1,0 +1,28 @@
+{
+  "OldId": "nheb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯兵营）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "驻地营房"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造驻地营房"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要作战单位生产建筑。"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "Bblo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "狂乱"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于狂乱状态，攻击速度和移动速度提高。"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "狂乱"
+    }
+  ],
+  "NewId": "TP30"
+}

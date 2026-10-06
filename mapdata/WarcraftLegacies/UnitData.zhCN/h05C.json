@@ -1,0 +1,24 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奎尔丹尼小屋"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奎尔丹尼小屋"
+    }
+  ],
+  "NewId": "h05C"
+}

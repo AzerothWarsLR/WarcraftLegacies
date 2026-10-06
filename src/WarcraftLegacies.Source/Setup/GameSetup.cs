@@ -13,6 +13,7 @@ using WarcraftLegacies.Source.GameLogic.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic.AssistedFollow;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameLogic.Mmd;
+using WarcraftLegacies.Source.GameLogic.SouthKalimdorGuard;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
@@ -73,11 +74,14 @@ public static class GameSetup
     InfoQuests.Setup();
     DestructibleSetup.Setup();
     RockSetup.Setup();
+    SouthKalimdorGuardSystem.Setup();
     TurnResearchSetup.Setup();
     ShipyardBanZonesSetup.Setup();
     BlockerSetup.Setup();
     NeutralVictimAndPassiveSetup.Setup();
     GateSetup.Setup();
+    OrgrimmarSetup.Setup();
+    SulfuronSpireSetup.Setup();
     StartingQuestPopup.Setup(63);
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
@@ -100,7 +104,7 @@ public static class GameSetup
     DynamicUnitNameRegistry.Setup(UniqueEliteNames.GetNames());
     MmdEvents.Setup();
     var mmdWriteTimer = CreateTimer();
-    TimerStart(mmdWriteTimer, 60.0f, false, () =>
+    TimerStart(mmdWriteTimer, 60.0f, true, () =>
     {
       MmdManager.WriteToMmd();
     });

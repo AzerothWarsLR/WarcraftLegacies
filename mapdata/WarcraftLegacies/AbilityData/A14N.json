@@ -1,0 +1,55 @@
+{
+  "OldId": "AIat",
+  "NewId": "A14N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Iatt",
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Iatt",
+      "Value": 20
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Iatt",
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Iatt",
+      "Value": 40
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Rexxar)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Bestial Wrath (Damage Bonus)"
+    }
+  ]
+}

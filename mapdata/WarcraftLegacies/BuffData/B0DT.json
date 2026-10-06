@@ -1,0 +1,29 @@
+{
+  "OldId": "Basl",
+  "NewId": "B0DT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Lunar Sanctuary"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is standing in a Lunar Sanctuary; its movement speed has been reduced."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\slow\\slowtarget.mdl"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
+    }
+  ]
+}

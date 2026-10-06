@@ -1,0 +1,29 @@
+{
+  "OldId": "nnsg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷魔法）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "档案馆"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造档案馆"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施法单位生产建筑。"
+    }
+  ],
+  "NewId": "n0A3"
+}

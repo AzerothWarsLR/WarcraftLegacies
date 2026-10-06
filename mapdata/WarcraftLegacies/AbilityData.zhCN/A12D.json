@@ -1,0 +1,55 @@
+{
+  "OldId": "AOvd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（暴风城 - 假体）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "时光护盾 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "时光护盾 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "时光护盾 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 1 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 2 秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使艾格文周围区域内的所有友方单位变为无敌。|n持续 3 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "传奇战士"
+    }
+  ],
+  "NewId": "A12D"
+}

@@ -1,0 +1,31 @@
+{
+  "OldId": "ACes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪兽人步兵）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使邪兽人步兵在死亡时变为骷髅步兵，从而能继续战斗 40 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪能骷髅"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪能骷髅"
+    }
+  ],
+  "NewId": "A0B9"
+}

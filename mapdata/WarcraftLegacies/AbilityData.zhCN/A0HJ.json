@@ -1,0 +1,31 @@
+{
+  "OldId": "Amgl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 防御塔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "弹射攻击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "弹射攻击"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使猎人塔的弹射攻击能够击中额外的单位。"
+    }
+  ],
+  "NewId": "A0HJ"
+}

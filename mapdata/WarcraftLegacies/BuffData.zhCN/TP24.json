@@ -1,0 +1,29 @@
+{
+  "OldId": "Basl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "荆棘藤蔓"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到荆棘藤蔓的保护，生命恢复速度提高。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "荆棘藤蔓"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": " （再生光环）"
+    }
+  ],
+  "NewId": "TP24"
+}

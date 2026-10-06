@@ -1,0 +1,16 @@
+{
+  "Left": -1728,
+  "Bottom": -9728,
+  "Right": -1216,
+  "Top": -9184,
+  "Name": "Troll Rescue 3",
+  "CreationNumber": 216,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 0,
+    "G": 255,
+    "B": 0,
+    "A": 255
+  }
+}

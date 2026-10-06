@@ -1,4 +1,4 @@
-namespace WarcraftLegacies.Source.GameLogic;
+﻿namespace WarcraftLegacies.Source.GameLogic;
 
 public static class HeroLevelExperience
 {

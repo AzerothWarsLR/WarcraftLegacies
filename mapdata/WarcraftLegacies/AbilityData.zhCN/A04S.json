@@ -1,0 +1,19 @@
+{
+  "OldId": "ACbc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（中立生物 - 拉格纳罗斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之息"
+    }
+  ],
+  "NewId": "A04S"
+}

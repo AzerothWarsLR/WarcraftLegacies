@@ -144,7 +144,6 @@ public static class CustomOptionsSelection
           Name = Loc.Get("Unlocked"), OnChosen = () =>
           {
             ResearchGranting.GrantToAllPlayers(UPGRADE_R04R_NAVIGATION_UNIVERSAL_UPGRADE);
-            ResearchGranting.GrantToAllPlayers(UPGRADE_RDBD_DEEP_BURROW_C_THUN);
           }
         }
       }),

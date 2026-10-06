@@ -1,5 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -30,13 +31,14 @@ public sealed class CheatLimit : Command
     }
 
     var playerData = cheater.GetPlayerData();
-    var message = $"Your limits for {GetObjectName(objectTypeId)} are as follows.";
-    message += $"\nPlayer: {cheater.GetTechMaxAllowed(objectTypeId)}";
-    message += $"\nPlayer Data: {playerData.GetObjectLimit(objectTypeId)}";
+    var message = Loc.Format("Your limits for {unit} are as follows.", ("{unit}", GetObjectName(objectTypeId)));
+    message += Loc.Format("\nPlayer: {value}", ("{value}", cheater.GetTechMaxAllowed(objectTypeId).ToString()));
+    message += Loc.Format("\nPlayer Data: {value}", ("{value}", playerData.GetObjectLimit(objectTypeId).ToString()));
 
     if (playerData.Faction != null)
     {
-      message += $"\nFaction: {playerData.Faction.GetObjectLimit(objectTypeId)}";
+      message += Loc.Format("\nFaction: {value}",
+        ("{value}", playerData.Faction.GetObjectLimit(objectTypeId).ToString()));
     }
 
     return message;

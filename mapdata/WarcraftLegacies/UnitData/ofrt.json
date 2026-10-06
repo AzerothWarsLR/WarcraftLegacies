@@ -64,12 +64,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R05O,R00R"
+      "Value": "RZ02,RZ03"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o00A,opeo"
+      "Value": "n03F,o00G,opeo"
     },
     {
       "Id": "ulum",
@@ -83,7 +83,7 @@
     {
       "Id": "udep",
       "Type": 3,
-      "Value": "o00J,o004"
+      "Value": "o00J,o004,o01B"
     },
     {
       "Id": "ubpx",
@@ -92,7 +92,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf T3)"
+      "Value": "(Orcish Horde T3)"
     },
     {
       "Id": "uhot",

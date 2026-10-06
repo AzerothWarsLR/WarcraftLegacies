@@ -1,0 +1,29 @@
+{
+  "OldId": "tbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "微型兽栏"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买微型兽栏"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "购买微型兽栏"
+    }
+  ],
+  "NewId": "I025"
+}

@@ -1,0 +1,41 @@
+{
+  "OldId": "ANcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（海巫）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "传送"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "传送"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "海巫引导一道传送法术，为自己的撤退做好准备。"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄的攻击会彻底冻结敌方单位，降低其攻击速度与移动速度，并造成持续伤害。|n|n|cffffcc001 级|r - 对单位持续<A00Y,Dur1>秒，对英雄持续 0.4 秒，每秒造成<A00Y,DataA1>点伤害。|n|cffffcc002 级|r - 对单位持续<A00Y,Dur2>秒，对英雄持续 0.8 秒，每秒造成<A00Y,DataA2>点伤害。|n|cffffcc003 级|r - 对单位持续<A00Y,Dur3>秒，对英雄持续 1.2 秒，每秒造成<A00Y,DataA3>点伤害。|n|cffffcc004 级|r - 对单位持续<A00Y,Dur4>秒，对英雄持续 1.6 秒，每秒造成<A00Y,DataA4>点伤害。"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习霜咬 - [|cffffcc00%d 级|r]"
+    }
+  ],
+  "NewId": "A00Y"
+}

@@ -11,5 +11,6 @@ public static class TurnResearchSetup
     TurnResearch.Register(new TurnResearch(UPGRADE_R04J_TURN_18_HAS_PASSED, 18));
     TurnResearch.Register(new TurnResearch(UPGRADE_R04N_TURN_3_HAS_PASSED, 3));
     TurnResearch.Register(new TurnResearch(UPGRADE_R08C_TURN_10_HAS_PASSED, 10));
+    TurnResearch.Register(new TurnResearch(UPGRADE_R08D_TURN_15_HAS_PASSED, 15));
   }
 }

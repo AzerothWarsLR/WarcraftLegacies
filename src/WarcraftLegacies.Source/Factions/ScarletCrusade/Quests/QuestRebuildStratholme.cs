@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -44,5 +45,5 @@ public sealed class QuestRebuildStratholme : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Saiden Dathrohan gains {ExperienceReward} experience";
+    Loc.Format("Saiden Dathrohan gains {xp} experience", ("{xp}", ExperienceReward.ToString()));
 }

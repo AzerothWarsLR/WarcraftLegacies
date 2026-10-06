@@ -1,0 +1,31 @@
+{
+  "OldId": "ANtr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（冰霜攻击图标）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "冰霜攻击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "冰霜攻击"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "该单位的攻击会在命中时减慢敌方单位的速度"
+    }
+  ],
+  "NewId": "A0I3"
+}

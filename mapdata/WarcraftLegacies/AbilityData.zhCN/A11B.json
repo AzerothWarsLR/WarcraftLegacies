@@ -1,0 +1,65 @@
+{
+  "OldId": "ANst",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（托尔托拉、纳兹亚女士、纳迦）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "潮汐风暴"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习潮汐风暴 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤滔天巨浪，命中敌人后炸裂。|n持续<A11B,Dur1>秒。|n|n|cffffcc00等级 1|r - 每秒<A11B,DataA1>道巨浪，每道造成<A11B,DataC1>点伤害。 |n|cffffcc00等级 2|r - 每秒<A11B,DataA2>道巨浪，每道造成<A11B,DataC2>点伤害。 |n|cffffcc00等级 3|r - 每秒<A11B,DataA3>道巨浪，每道造成<A11B,DataC3>点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "潮汐风暴 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "潮汐风暴 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "潮汐风暴 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒召唤<A11B,DataA1>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC1>点伤害。|n持续<A11B,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒召唤<A11B,DataA2>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC2>点伤害。|n持续<A11B,Dur2>秒。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "每秒召唤<A11B,DataA3>道滔天巨浪，命中敌人后炸裂，每道造成<A11B,DataC3>点伤害。|n持续<A11B,Dur3>秒。"
+    }
+  ],
+  "NewId": "A11B"
+}

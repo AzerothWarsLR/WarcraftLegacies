@@ -1,0 +1,29 @@
+{
+  "OldId": "ohun",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（兽人部落-精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "先知"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练先知"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "年迈而睿智的萨满祭司。"
+    }
+  ],
+  "NewId": "o00A"
+}

@@ -1,0 +1,43 @@
+{
+  "OldId": "AHtb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（水晶尖塔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "水晶放电"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "水晶放电 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "水晶放电 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向地图上任意位置的一个目标敌方单位发射一枚水晶，击昏目标<ADCS,Dur1>秒。（对英雄为<ADCS,HeroDur1,.>秒）"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向地图上任意位置的一个目标敌方单位发射一枚水晶，击昏目标<ADCS,Dur2>秒。（对英雄为<ADCS,HeroDur2,.>秒）"
+    }
+  ],
+  "NewId": "ADCS"
+}

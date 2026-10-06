@@ -30,17 +30,29 @@ internal sealed class MapCommand<T> : Command where T : MapCommandContext
       DefaultValueFactory = _ => true
     };
 
+    Option<string> localeOption = new("--locale")
+    {
+      Aliases = { "-l" },
+      Description =
+        "Builds the map from the map data overlay for this locale, e.g. 'zhCN' reads " +
+        "mapdata/<map>/UnitData.zhCN before falling back to mapdata/<map>/UnitData. " +
+        "When omitted, the base map data is used unchanged."
+    };
+
     Add(mapNameArg);
     Add(includeFromMapOption);
     Add(deleteDestinationOption);
+    Add(localeOption);
 
     SetAction(result =>
     {
       var includeFromMap = result.GetValue(includeFromMapOption);
       var deleteDestination = result.GetValue(deleteDestinationOption);
+      var locale = result.GetValue(localeOption);
 
       var ctx = CreateContext(result.GetValue(mapNameArg), includeFromMap, deleteDestination);
       Configure?.Invoke(ctx);
+      ctx.Locale = locale;
       ctx.Execute();
     });
   }

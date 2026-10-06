@@ -1,0 +1,115 @@
+{
+  "OldId": "Awar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（紫色 - 白银之手圣骑士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "奉献打击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献打击 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献打击 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献打击 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献打击 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 5,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献打击 - [|cffffcc005级|r]"
+    },
+    {
+      "Level": 6,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献打击 - [|cffffcc006级|r]"
+    },
+    {
+      "Level": 7,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献打击 - [|cffffcc007级|r]"
+    },
+    {
+      "Level": 8,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献打击 - [|cffffcc008级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时有 20% 的几率对附近单位造成 35 点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时有 20% 的几率对附近单位造成 40 点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时有 20% 的几率对附近单位造成 45 点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时有 20% 的几率对附近单位造成 50 点伤害。"
+    },
+    {
+      "Level": 5,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时有 20% 的几率对附近单位造成 55 点伤害。"
+    },
+    {
+      "Level": 6,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时有 20% 的几率对附近单位造成 60 点伤害。"
+    },
+    {
+      "Level": 7,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时有 20% 的几率对附近单位造成 65 点伤害。"
+    },
+    {
+      "Level": 8,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "攻击时有 20% 的几率对附近单位造成 70 点伤害。"
+    }
+  ],
+  "NewId": "A04W"
+}

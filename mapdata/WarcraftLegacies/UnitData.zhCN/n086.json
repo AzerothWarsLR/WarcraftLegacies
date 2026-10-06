@@ -1,0 +1,29 @@
+{
+  "OldId": "nchr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能-精英-层级）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "邪能死亡骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练邪能死亡骑士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暗影议会的邪能死亡骑士是强大而狡诈的巫师。"
+    }
+  ],
+  "NewId": "n086"
+}

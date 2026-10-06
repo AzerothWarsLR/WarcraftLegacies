@@ -1,0 +1,23 @@
+{
+  "OldId": "nfgu",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恶魔卫士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练恶|cffffcc00魔|r卫士"
+    }
+  ]
+}

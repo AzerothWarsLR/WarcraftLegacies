@@ -1,0 +1,19 @@
+{
+  "OldId": "ncea",
+  "NewId": "otca",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "usle",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes Ambush)"
+    }
+  ]
+}

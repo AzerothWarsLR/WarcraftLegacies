@@ -70,12 +70,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R019"
+      "Value": "RZ02,RZ03"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o04L,n03F,o00A,opeo"
+      "Value": "n03F,o00G,opeo"
     },
     {
       "Id": "ulum",
@@ -84,11 +84,6 @@
     {
       "Id": "uhpm",
       "Value": 7000
-    },
-    {
-      "Id": "umvh",
-      "Type": 2,
-      "Value": 75
     },
     {
       "Id": "utyp",
@@ -138,6 +133,11 @@
       "Id": "uani",
       "Type": 3,
       "Value": "upgrade,third"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.9
     }
   ]
 }

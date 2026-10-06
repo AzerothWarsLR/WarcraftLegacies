@@ -1,0 +1,31 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（牛头人部族 - 灵魂行者、牛头人）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "硬化兽皮"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "硬化兽皮"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "受到的攻击伤害降低<A0E6,DataC1>点。"
+    }
+  ],
+  "NewId": "A0E6"
+}

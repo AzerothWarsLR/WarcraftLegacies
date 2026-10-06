@@ -1,0 +1,31 @@
+{
+  "OldId": "Ahsb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣之箭"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使对重型护甲造成的伤害提高 30 点。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "神圣之箭"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    }
+  ],
+  "NewId": "A0KO"
+}

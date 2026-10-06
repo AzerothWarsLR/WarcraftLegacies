@@ -1,0 +1,23 @@
+{
+  "OldId": "earc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "哨兵的灵巧弓箭手。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "弓箭手"
+    }
+  ]
+}

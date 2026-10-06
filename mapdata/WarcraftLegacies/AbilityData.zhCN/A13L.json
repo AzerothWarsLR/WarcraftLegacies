@@ -1,0 +1,31 @@
+{
+  "OldId": "ANdb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（精锐步兵 - 洛丹伦）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "老兵的洞察"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "老兵的洞察"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有 15% 的几率闪避攻击，并有 15% 的几率造成 1.5 倍正常伤害。"
+    }
+  ],
+  "NewId": "A13L"
+}

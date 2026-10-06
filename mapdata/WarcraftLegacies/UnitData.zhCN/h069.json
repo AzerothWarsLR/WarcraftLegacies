@@ -1,0 +1,29 @@
+{
+  "OldId": "hbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然兵营）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "军事区"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造军事区"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要作战单位生产建筑。"
+    }
+  ],
+  "NewId": "h069"
+}

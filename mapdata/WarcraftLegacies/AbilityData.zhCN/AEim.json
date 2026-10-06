@@ -1,0 +1,88 @@
+{
+  "OldId": "AEim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（维伦）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "神圣风暴"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣风暴 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "释放神圣烈焰，对附近的敌方地面单位造成伤害。|n持续消耗魔法值，直到取消激活。|n|n|cffffcc00等级 1|r - 每秒 35 点伤害。 |n|cffffcc00等级 2|r - 每秒 60 点伤害。 |n|cffffcc00等级 3|r - 每秒 85 点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活神圣风暴 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活神圣风暴 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "激活神圣风暴 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活神圣风暴，使该单位被神圣烈焰吞没，每秒对附近的敌方地面单位造成 35 点伤害。|n持续消耗魔法值，直到取消激活。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活神圣风暴，使该单位被神圣烈焰吞没，每秒对附近的敌方地面单位造成 60 点伤害。|n持续消耗魔法值，直到取消激活。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "激活神圣风暴，使该单位被神圣烈焰吞没，每秒对附近的敌方地面单位造成 85 点伤害。|n持续消耗魔法值，直到取消激活。"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消激活神圣风暴 - [|cffffcc001 级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消激活神圣风暴 - [|cffffcc002 级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "取消激活神圣风暴 - [|cffffcc003 级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "取消激活神圣风暴，停止消耗魔法值。"
+    }
+  ]
+}

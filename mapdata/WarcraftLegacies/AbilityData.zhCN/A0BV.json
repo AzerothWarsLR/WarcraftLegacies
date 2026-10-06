@@ -1,0 +1,31 @@
+{
+  "OldId": "AOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤狼骑兵"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤狼骑兵"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤<A0BV,DataB1>个兽人步兵，持续<A0BV,Dur1>秒。"
+    }
+  ],
+  "NewId": "A0BV"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "ndmg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要部队生产建筑。|r"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团兵营）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空深渊"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造虚空深渊"
+    }
+  ],
+  "NewId": "n04Q"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Ahsb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "撕裂之爪"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（食尸鬼）"
+    }
+  ],
+  "NewId": "A0SU"
+}

@@ -3,6 +3,7 @@ using MacroTools.ControlPoints;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using WCSharp.Shared;
 
 namespace MacroTools.UserInterface;
@@ -14,8 +15,7 @@ namespace MacroTools.UserInterface;
 public sealed class FactionMultiboard
 {
   private const int ColumnCount = 3;
-  private const string Title = "Scoreboard";
-
+  private static readonly string _title = Loc.Get("Scoreboard");
   private const int ColumnFaction = 0;
   private const int ColumnCp = 1;
   private const int ColumnIncome = 2;
@@ -57,7 +57,7 @@ public sealed class FactionMultiboard
     timer timer = timer.Create();
     timer.Start(2, false, () =>
     {
-      Instance = new FactionMultiboard(ColumnCount, 3, Title);
+      Instance = new FactionMultiboard(ColumnCount, 3, _title);
       @event.ExpiredTimer.Dispose();
     });
 
@@ -99,7 +99,10 @@ public sealed class FactionMultiboard
       var income = R2I(playerData.TotalIncome);
       var hasBonus = playerData.BonusIncome > 0;
       var incomePrefix = hasBonus ? "|cffffcc00" : "";
-      var incomeText = income <= 999 ? $"{incomePrefix}{income}" : $"{incomePrefix}BIG";
+      // "BIG" stands in for a figure the column has no room for, so it is a word a player reads and is looked up.
+      var incomeText = income <= 999
+        ? $"{incomePrefix}{income}"
+        : incomePrefix + Loc.Get("BIG");
 
       incomeMbi.SetText(incomeText);
     }
@@ -121,7 +124,8 @@ public sealed class FactionMultiboard
   {
     var row = _rowsByTeam[team];
     var mbi = _multiboard.GetItem(row, ColumnTeam);
-    mbi.SetText($"---{team.Name}{SubString("-----------------------------------------", 0, 19 - StringLength(team.Name))}");
+    var teamName = team.LocalizedName;
+    mbi.SetText($"---{teamName}{SubString("-----------------------------------------", 0, 19 - StringLength(teamName))}");
     mbi.SetWidth(WidthTeam);
     mbi.SetVisibility(true, false);
     _multiboard.GetItem(row, ColumnCp).SetVisibility(false, false);
@@ -153,7 +157,7 @@ public sealed class FactionMultiboard
     _multiboard = multiboard.Create();
     _multiboard.Columns = ColumnCount;
     _multiboard.Rows = 3;
-    _multiboard.Title = Title;
+    _multiboard.Title = _title;
     _multiboard.IsDisplayed = true;
     _multiboard.Rows = 30;
     UpdateHeaderRow();

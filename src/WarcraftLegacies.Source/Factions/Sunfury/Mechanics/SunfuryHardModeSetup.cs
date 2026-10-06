@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;

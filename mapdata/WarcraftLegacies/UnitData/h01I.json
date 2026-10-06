@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A139,A0D1,A0D2,Aihn,A0VE"
+      "Value": "A139,A0D1,A0D2,Aihn,A0VE,A16B"
     },
     {
       "Id": "udaa",
@@ -73,7 +73,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rguv,R03M,R00J,R01I,Rhme,Rhar,Rhpm"
+      "Value": "Rguv,R03M,R01I,Rhme,Rhar,Rhpm"
     },
     {
       "Id": "uwal",

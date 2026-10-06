@@ -1,0 +1,19 @@
+{
+  "OldId": "Atdg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（龙卷风）（1级）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "龙卷风单位伤害"
+    }
+  ],
+  "NewId": "A02S"
+}

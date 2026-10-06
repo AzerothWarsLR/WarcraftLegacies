@@ -1,0 +1,28 @@
+{
+  "OldId": "ners",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能-传送门）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "燃烧远征的神秘法师。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练艾瑞达巫师"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "艾瑞达巫师"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "Left": -9440,
+  "Bottom": 13440,
+  "Right": 9760,
+  "Top": 24448,
+  "Name": "ImmortalityNorthrend",
+  "CreationNumber": 516,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

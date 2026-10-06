@@ -1,0 +1,77 @@
+{
+  "OldId": "AUfn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（阿尔萨斯，阿尔萨斯国王）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "神圣新星"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习神圣新星 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "以一道具有伤害性的圣光波轰击目标敌方单位周围的敌方单位。 |n|n|cffffcc001级|r - 对目标造成<A06S,DataB1>点伤害，<A06S,DataA1>点新星伤害。 |n|cffffcc002级|r - 对目标造成<A06S,DataB2>点伤害，<A06S,DataA2>点新星伤害。 |n|cffffcc003级|r - 对目标造成<A06S,DataB3>点伤害，<A06S,DataA3>点新星伤害。 |n|cffffcc004级|r - 对目标造成<A06S,DataB4>点伤害，<A06S,DataA4>点新星伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣新星 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣新星 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣新星 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "神圣新星 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB1>点伤害，并对周围造成<A06S,DataA1>点新星伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB2>点伤害，并对周围造成<A06S,DataA2>点新星伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB3>点伤害，并对周围造成<A06S,DataA3>点新星伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "以一道圣光波轰击敌方单位，对目标造成<A06S,DataB4>点伤害，并对周围造成<A06S,DataA4>点新星伤害。"
+    }
+  ],
+  "NewId": "A06S"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "nftr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "邪能弩手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练邪能弩手"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "外域兽人中技艺精湛的射手。"
+    }
+  ],
+  "NewId": "n058"
+}

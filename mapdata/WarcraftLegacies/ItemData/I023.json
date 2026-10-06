@@ -1,0 +1,47 @@
+{
+  "OldId": "tbar",
+  "NewId": "I023",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A149"
+    },
+    {
+      "Id": "igol",
+      "Value": 0
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Orcish Horde)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tiny Fortress"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFortress.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Purchase Tiny Fortress"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Purchase Tiny Fortress"
+    }
+  ]
+}

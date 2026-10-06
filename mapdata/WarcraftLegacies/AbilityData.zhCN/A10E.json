@@ -1,0 +1,36 @@
+{
+  "OldId": "AHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "为周围的友方单位提供额外护甲。 |n|n|cffffcc001级|r - 基础护甲提高 1.5。 |n|cffffcc002级|r - 基础护甲提高 3。 |n|cffffcc003级|r - 基础护甲提高 4.5。 |n|cffffcc004级|r - 基础护甲提高 6。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "血脉兄弟"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使你周围的英雄获得 35 点额外护甲。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "血脉兄弟"
+    }
+  ],
+  "NewId": "A10E"
+}

@@ -1,0 +1,38 @@
+{
+  "OldId": "efon",
+  "NewId": "etrt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "Amim"
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "summoned"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Treant"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Renb,R002,R018,Reuv,Rhme,Rhar"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 975
+    }
+  ]
+}

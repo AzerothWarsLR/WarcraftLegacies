@@ -1,0 +1,31 @@
+{
+  "OldId": "ACes",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（死亡誓约者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使该单位对具有抗性护甲的单位造成的伤害提高 60%。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "弑君者"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "弑君者"
+    }
+  ],
+  "NewId": "YBKS"
+}

@@ -1,0 +1,13 @@
+{
+  "OldId": "nshp",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地精船坞"
+    }
+  ]
+}

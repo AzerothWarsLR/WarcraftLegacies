@@ -1,0 +1,24 @@
+{
+  "OldId": "nfoh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "安达希尔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造安达希尔"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊其他）"
+    }
+  ],
+  "NewId": "n04F"
+}

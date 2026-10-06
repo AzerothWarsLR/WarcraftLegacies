@@ -1,0 +1,23 @@
+{
+  "OldId": "nbfl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造鲜血之泉"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "鲜血之泉"
+    }
+  ]
+}

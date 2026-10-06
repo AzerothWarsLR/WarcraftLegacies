@@ -1,0 +1,44 @@
+{
+  "OldId": "Ewar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "露希尔·维克雷斯"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "维克雷斯家族家主"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活露希尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活露希尔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤露希尔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长刺杀与扰乱。"
+    }
+  ],
+  "NewId": "E016"
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "BOwk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00消失|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于消失状态，隐形且攻击力提高。该英雄攻击或施法都不会打破隐形。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "消失"
+    }
+  ],
+  "NewId": "B01O"
+}

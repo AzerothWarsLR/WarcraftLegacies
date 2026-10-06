@@ -1,0 +1,24 @@
+{
+  "OldId": "BNcg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "催生大树"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "催生大树"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（棕色-玛法里奥（刚种下一棵树）"
+    }
+  ],
+  "NewId": "B078"
+}

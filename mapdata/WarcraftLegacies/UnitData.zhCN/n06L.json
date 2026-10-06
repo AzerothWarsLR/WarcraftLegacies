@@ -1,0 +1,29 @@
+{
+  "OldId": "nwwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "装甲狼"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练装甲狼"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "脆弱但迅捷而强大的近战单位。拥有致命一击技能。"
+    }
+  ],
+  "NewId": "n06L"
+}

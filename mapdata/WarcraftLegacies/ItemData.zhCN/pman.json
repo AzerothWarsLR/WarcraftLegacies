@@ -1,0 +1,18 @@
+{
+  "OldId": "pman",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "使用时恢复 175 点魔法值。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "法力药水"
+    }
+  ]
+}

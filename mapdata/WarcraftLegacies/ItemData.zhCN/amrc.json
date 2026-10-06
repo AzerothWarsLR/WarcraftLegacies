@@ -1,0 +1,13 @@
+{
+  "OldId": "amrc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "召回护符"
+    }
+  ]
+}

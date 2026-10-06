@@ -1,0 +1,16 @@
+{
+  "Left": -2944,
+  "Bottom": -8800,
+  "Right": -2496,
+  "Top": -8384,
+  "Name": "Sea Witch Target",
+  "CreationNumber": 217,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 125,
+    "B": 0,
+    "A": 255
+  }
+}

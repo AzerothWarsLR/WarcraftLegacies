@@ -1,0 +1,34 @@
+{
+  "OldId": "Bhwd",
+  "NewId": "B0E8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Volcano Ward"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This ward hurls molten rocks at nearby enemies."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Volcano Ward"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Tauren Tribes - Earthcaller)"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNVolcano.blp"
+    }
+  ]
+}

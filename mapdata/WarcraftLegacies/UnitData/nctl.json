@@ -80,11 +80,6 @@
       "Value": 80
     },
     {
-      "Id": "utra",
-      "Type": 3,
-      "Value": "o000"
-    },
-    {
       "Id": "utyp",
       "Type": 3,
       "Value": "townhall"

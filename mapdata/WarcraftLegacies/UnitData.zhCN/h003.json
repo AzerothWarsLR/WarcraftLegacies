@@ -1,0 +1,19 @@
+{
+  "OldId": "hcas",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "银月城宫殿"
+    }
+  ],
+  "NewId": "h003"
+}

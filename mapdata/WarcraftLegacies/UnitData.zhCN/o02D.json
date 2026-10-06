@@ -1,0 +1,24 @@
+{
+  "OldId": "otto",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暗矛要塞"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "暗矛要塞"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（霜狼 其他）"
+    }
+  ],
+  "NewId": "o02D"
+}

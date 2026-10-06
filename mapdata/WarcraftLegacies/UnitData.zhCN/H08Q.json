@@ -1,0 +1,44 @@
+{
+  "OldId": "Hjai",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物锤）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "高阶女祭司"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "艾苏尔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长治疗盟友并扰乱敌方单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤艾苏尔"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活艾苏尔"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活艾苏尔"
+    }
+  ],
+  "NewId": "H08Q"
+}

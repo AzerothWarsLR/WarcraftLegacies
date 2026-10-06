@@ -1,0 +1,31 @@
+{
+  "OldId": "Aegr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（控制点防御塔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "魔法抗性"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "控制点抗性"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使控制点无论护甲类型如何，都会受到魔法攻击 100% 的伤害。"
+    }
+  ],
+  "NewId": "A13X"
+}

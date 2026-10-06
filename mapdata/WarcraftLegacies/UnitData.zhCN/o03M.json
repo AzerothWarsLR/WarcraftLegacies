@@ -1,0 +1,29 @@
+{
+  "OldId": "ostr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（中立生物 T2）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "据点"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到据点"
+    }
+  ],
+  "NewId": "o03M"
+}

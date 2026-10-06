@@ -1,0 +1,13 @@
+{
+  "OldId": "moon",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "购买月亮石"
+    }
+  ]
+}

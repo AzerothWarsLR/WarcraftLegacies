@@ -1,0 +1,18 @@
+{
+  "OldId": "nmsn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有驱散魔法与减速的中型两栖远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "深海鱼人猎捕者"
+    }
+  ]
+}

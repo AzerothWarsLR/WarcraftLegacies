@@ -1,0 +1,29 @@
+{
+  "OldId": "hgtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "强化猎手塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强化防御建筑。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到强化猎手塔"
+    }
+  ],
+  "NewId": "h03N"
+}

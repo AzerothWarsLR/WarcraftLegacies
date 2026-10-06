@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -49,6 +50,7 @@ public sealed class CheatSpawn : Command
 
     var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater)[0];
     SpawnUnitsOrItems(firstSelectedUnit, objectTypeId, count);
-    return $"Attempted to spawn {count} of object {GetObjectName(objectTypeId)}.";
+    return Loc.Format("Attempted to spawn {count} of object {unit}.",
+      ("{count}", count.ToString()), ("{unit}", GetObjectName(objectTypeId)));
   }
 }

@@ -1,0 +1,44 @@
+{
+  "OldId": "Obla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活萨鲁法尔"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（战歌）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "库卡隆大王"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "瓦罗克·萨鲁法尔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤瓦罗克"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "战斗型英雄，专精于持久作战和强化部队。"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活霸主"
+    }
+  ],
+  "NewId": "VSWS"
+}

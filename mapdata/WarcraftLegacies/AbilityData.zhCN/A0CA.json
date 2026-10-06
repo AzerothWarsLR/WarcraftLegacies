@@ -1,0 +1,31 @@
+{
+  "OldId": "ACua",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（黑色城堡）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "荒芜光环"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "荒芜光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使<A0CA,Area1>范围内的友方单位生命恢复速度提高<A0CA,DataB1>。"
+    }
+  ],
+  "NewId": "A0CA"
+}

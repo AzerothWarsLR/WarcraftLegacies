@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "降服石槌食人魔"
+    }
+  ],
+  "NewId": "R012"
+}

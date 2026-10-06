@@ -1,0 +1,14 @@
+{
+  "OldId": "ZTr0",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "提尔之手阶梯"
+    }
+  ],
+  "NewId": "B002"
+}

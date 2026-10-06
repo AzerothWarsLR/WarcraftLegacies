@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "任务完成：家园腹地"
+    }
+  ],
+  "NewId": "R04Y"
+}

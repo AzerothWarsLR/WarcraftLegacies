@@ -1,0 +1,14 @@
+{
+  "OldId": "BOsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "群鸦突袭"
+    }
+  ],
+  "NewId": "B08S"
+}

@@ -1,226 +1,177 @@
 {
-  "OldId": "AHmt",
+  "OldId": "Afzy",
   "NewId": "A000",
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Level": 2,
-      "Id": "acdn",
-      "Type": 2,
-      "Value": 25
-    },
-    {
-      "Level": 2,
-      "Id": "amcs",
-      "Value": 250
-    },
-    {
-      "Level": 3,
-      "Id": "amcs",
-      "Value": 250
-    },
-    {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": "Hmt1",
-      "Value": 72
-    },
-    {
-      "Level": 3,
-      "Pointer": 1,
-      "Id": "Hmt1",
-      "Value": 84
-    },
-    {
       "Level": 1,
-      "Pointer": 2,
-      "Id": "Hmt2",
-      "Type": 2,
-      "Value": 2
-    },
-    {
-      "Id": "alev",
-      "Value": 3
-    },
-    {
-      "Id": "arlv",
-      "Value": 10
-    },
-    {
-      "Level": 1,
-      "Id": "atar",
+      "Id": "abuf",
       "Type": 3,
-      "Value": "allies,enemies,friend,ground,invulnerable,mechanical,neutral,notself,organic,player,structure,vulnerable"
+      "Value": "TP30"
     },
     {
-      "Level": 2,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "allies,enemies,friend,ground,invulnerable,mechanical,neutral,notself,organic,player,structure,vulnerable"
-    },
-    {
-      "Level": 3,
-      "Id": "atar",
-      "Type": 3,
-      "Value": "allies,enemies,friend,ground,invulnerable,mechanical,neutral,notself,organic,player,structure,vulnerable"
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": "Hmt2",
-      "Type": 2,
-      "Value": 1.5
-    },
-    {
-      "Level": 3,
-      "Pointer": 2,
-      "Id": "Hmt2",
-      "Type": 2,
+      "Id": "achd",
       "Value": 1
     },
     {
-      "Id": "alsk",
-      "Value": 5
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Blo1",
+      "Type": 2,
+      "Value": 0.15
     },
     {
-      "Level": 3,
-      "Id": "acdn",
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Blo2",
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Blo3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "alev",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Blo1",
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Blo2",
+      "Type": 2,
+      "Value": 0.2
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Blo3",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "TP30"
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
       "Type": 2,
       "Value": 20
     },
     {
-      "Level": 1,
-      "Id": "aran",
+      "Level": 2,
+      "Id": "acdn",
       "Type": 2,
-      "Value": 1000
+      "Value": 30
     },
     {
       "Level": 2,
       "Id": "aran",
       "Type": 2,
-      "Value": 1250
-    },
-    {
-      "Level": 3,
-      "Id": "aran",
-      "Type": 2,
-      "Value": 1500
-    },
-    {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": "Hmt1",
-      "Value": 60
-    },
-    {
-      "Level": 1,
-      "Id": "amcs",
-      "Value": 250
+      "Value": 800
     },
     {
       "Level": 2,
-      "Id": "aare",
-      "Type": 2,
-      "Value": 800
+      "Id": "atar",
+      "Type": 3,
+      "Value": "air,ground,self"
     },
     {
-      "Level": 3,
-      "Id": "aare",
-      "Type": 2,
-      "Value": 800
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
     },
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(ouro)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "R"
-    },
-    {
-      "Id": "arhk",
-      "Type": 3,
-      "Value": "R"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Shifting Sands - [|cffffcc00Level %d|r]"
+      "Value": "D"
     },
     {
       "Level": 1,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Shifting Sands - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Shifting Sands - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": "atp1",
-      "Type": 3,
-      "Value": "Shifting Sands - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "After 1.5 seconds, teleports \u003CA000,DataA2\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in \u003CA000,Rng2\u003E range."
+      "Value": "Increases the unit\u0027s attack rate by \u003CA0XM,DataA1,%\u003E% and movement speed by \u003CA0XM,DataB1,%\u003E% for \u003CA0EH,Dur1\u003E seconds."
     },
     {
-      "Level": 3,
-      "Id": "aub1",
+      "Id": "aubx",
+      "Value": 1
+    },
+    {
+      "Id": "auby",
+      "Value": 1
+    },
+    {
+      "Id": "auhk",
       "Type": 3,
-      "Value": "After 1 seconds, teleports \u003CA000,DataA3\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in \u003CA000,Rng3\u003E range."
+      "Value": "D"
     },
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_SandAvenger.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCOrcFrenzy.blp"
     },
     {
-      "Id": "arar",
+      "Id": "auar",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_SandAvenger.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCOrcFrenzy.blp"
     },
     {
-      "Id": "acat",
+      "Level": 2,
+      "Id": "atp1",
       "Type": 3,
-      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
+      "Value": "Frenzy - [|cffffcc00Level 2|r]"
     },
     {
-      "Id": "asat",
+      "Level": 2,
+      "Id": "aub1",
       "Type": 3,
-      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
-    },
-    {
-      "Id": "aaea",
-      "Type": 3,
-      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
-    },
-    {
-      "Id": "anam",
-      "Type": 3,
-      "Value": "Shifting Sands"
+      "Value": "Increases the unit\u0027s attack rate by \u003CA0XM,DataA2,%\u003E% and movement speed by \u003CA0XM,DataB2,%\u003E% for \u003CA0EH,Dur1\u003E seconds."
     },
     {
       "Level": 1,
-      "Id": "aub1",
+      "Id": "atp1",
       "Type": 3,
-      "Value": "After 2 seconds, teleports \u003CA000,DataA1\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in \u003CA000,Rng1\u003E range."
+      "Value": "Frenzy - [|cffffcc00Level 1|r]"
     },
     {
-      "Id": "arut",
+      "Level": 2,
+      "Id": "aut1",
       "Type": 3,
-      "Value": "After a 2 second delay, teleports the player\u0027s nearby units, including the caster, to any friendly building or unit in range. |n|cffffcc00Level 1|r - Teleports \u003CA000,DataA1\u003E units, \u003CA000,Rng1\u003E range, \u003CA000,Cool1\u003E second cooldown.|n|cffffcc00Level 2|r - Teleports \u003CA000,DataA2\u003E units, \u003CA000,Rng2\u003E range, \u003CA000,Cool2\u003E second cooldown.|n|cffffcc00Level 3|r - Teleports \u003CA000,DataA3\u003E units, \u003CA000,Rng3\u003E range, \u003CA000,Cool3\u003E second cooldown."
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "OldId": "nomg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食人魔法师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "暮光之锤氏族的战士施法者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔法师"
+    }
+  ],
+  "NewId": "n07X"
+}

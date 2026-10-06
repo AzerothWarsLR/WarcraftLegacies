@@ -1,0 +1,29 @@
+{
+  "OldId": "edob",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵攻城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "守望者堡垒"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造守望者堡垒"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    }
+  ],
+  "NewId": "e00T"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "BNht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "女神之惧"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位对艾露恩心怀畏惧，在一段时间内造成的伤害降低。"
+    }
+  ],
+  "NewId": "B06P"
+}

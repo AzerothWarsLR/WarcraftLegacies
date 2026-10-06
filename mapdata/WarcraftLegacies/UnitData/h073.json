@@ -52,7 +52,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R03A,R013,Rhac,Rgfo"
+      "Value": "R03A,Rhac,Rgfo"
     },
     {
       "Id": "uico",
@@ -67,7 +67,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\ElvenTowerV1.01.mdl"
+      "Value": "war3mapImported\\ElvenTowerV1_01.mdl"
     },
     {
       "Id": "uhot",

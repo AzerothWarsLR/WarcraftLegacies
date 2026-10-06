@@ -40,17 +40,10 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
       return;
     }
 
-    var choicePicksByButton = new Dictionary<button, TChoice>();
-    foreach (var choice in Choices.Where(x => IsChoiceActive(whichPlayer, x)))
-    {
-      var factionButton = _pickDialog.AddButton(Loc.Get(choice.Name), 0);
-      choicePicksByButton[factionButton] = choice;
-    }
-
     timer timer = timer.Create();
     timer.Start(4, false, () =>
     {
-      StartChoicePick(whichPlayer, choicePicksByButton);
+      StartChoicePick(whichPlayer);
       @event.ExpiredTimer.Dispose();
     });
 
@@ -62,8 +55,17 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     });
   }
 
-  private void StartChoicePick(player whichPlayer, Dictionary<button, TChoice> choicePicksByButton)
+  private void StartChoicePick(player whichPlayer)
   {
+    var choicePicksByButton = new Dictionary<button, TChoice>();
+    foreach (var choice in Choices.Where(x => IsChoiceActive(whichPlayer, x)))
+    {
+      var factionButton = _pickDialog.AddButton(Loc.Get(choice.Name), 0);
+      choicePicksByButton[factionButton] = choice;
+    }
+
+    RegisterPickTriggers(whichPlayer, choicePicksByButton);
+
     if (player.LocalPlayer == whichPlayer)
     {
       SaveManager.RunWhenLocalPlayerSettingsReady(() =>
@@ -72,7 +74,10 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
         _pickDialog?.SetVisibility(player.LocalPlayer, true);
       });
     }
+  }
 
+  private void RegisterPickTriggers(player whichPlayer, Dictionary<button, TChoice> choicePicksByButton)
+  {
     foreach (var (button, choice) in choicePicksByButton)
     {
       var pickTrigger = trigger.Create();

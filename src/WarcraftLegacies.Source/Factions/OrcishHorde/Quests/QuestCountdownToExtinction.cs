@@ -1,0 +1,274 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using MacroTools.Extensions;
+using MacroTools.Factions;
+using MacroTools.Quests;
+using MacroTools.Utils;
+using WarcraftLegacies.Source.Objectives.UnitBased;
+using WarcraftLegacies.Source.Shared;
+using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+
+/// <summary>
+/// The Orcish Horde's starting quest. Thrall's forces must hold the landing island against three waves of
+/// murlocs, headed up by a Sea Witch, while the fleet is repaired.
+/// </summary>
+public sealed class QuestCountdownToExtinction : QuestData
+{
+  private const int GruntCount = 6;
+  private const int ShamanCount = 2;
+  private const int PeonCount = 5;
+  private const float ReinforcementLifePercent = 50f;
+  private const float DefeatSurvivorLifePercent = 50f;
+  private const float ReinforcementSpacing = 90f;
+  private const float DepartureDelay = 6f;
+  private const float ShipSearchRadius = 150f;
+
+  /// <summary>
+  /// Key Orcish Horde buildings that Thrall gets a Tiny item version of when the fleet departs cleanly,
+  /// so the buildings can be rebuilt at the new landing site.
+  /// </summary>
+  private static readonly Dictionary<int, int> _keyBuildingTinyItems = new()
+  {
+    { UNIT_OGRE_GREAT_HALL_ORCISH_HORDE_T1, ITEM_I01Z_TINY_GREAT_HALL },
+    { UNIT_OSTR_STRONGHOLD_ORCISH_HORDE_T2, ITEM_I022_TINY_STRONGHOLD },
+    { UNIT_OFRT_FORTRESS_ORCISH_HORDE_T3, ITEM_I023_TINY_FORTRESS },
+    { UNIT_OBAR_WAR_CAMP_ORCISH_HORDE_BARRACKS, ITEM_I020_TINY_WAR_CAMP },
+    { UNIT_OSLD_SPIRIT_LODGE_ORCISH_HORDE_MAGIC, ITEM_I024_TINY_SPIRIT_LODGE },
+    { UNIT_OFOR_WAR_MILL_ORCISH_HORDE_RESEARCH, ITEM_I029_TINY_WAR_MILL },
+    { UNIT_OALT_ALTAR_OF_STORMS_ORCISH_HORDE_ALTAR, ITEM_I021_TINY_ALTAR_OF_STORMS },
+    { UNIT_OBEA_BEASTIARY_ORCISH_HORDE_SPECIALIST, ITEM_I025_TINY_BEASTIARY }
+  };
+
+  private readonly Rectangle _buildZone;
+  private readonly Point _retreatDestination;
+  private readonly List<unit> _durotarRescueUnits;
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="QuestCountdownToExtinction"/> class.
+  /// </summary>
+  /// <param name="greatHall">The starting Great Hall. Losing it fails the quest.</param>
+  /// <param name="buildZone">The area that Red is allowed to build in on the landing island.</param>
+  /// <param name="retreatRegion">Where survivors are sent, win or lose.</param>
+  /// <param name="durotarUnlock">The Durotar base handed to the Horde, win or lose.</param>
+  public QuestCountdownToExtinction(unit greatHall, Rectangle buildZone, Rectangle retreatRegion, Rectangle durotarUnlock) : base(
+    "Countdown to Extinction",
+    "Thrall's fleet was battered by the crossing and needs time to be made seaworthy again. Until then, the Horde must hold this island against whatever the sea sends at them.",
+    @"ReplaceableTextures\CommandButtons\BTNGhost.blp")
+  {
+    _buildZone = buildZone;
+    _retreatDestination = retreatRegion.Center;
+    _durotarRescueUnits = durotarUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+
+    AddObjective(new ObjectiveUnitAlive(greatHall));
+    SurviveAssault = new ObjectiveSurviveAssault("Survive the murloc assault");
+    AddObjective(SurviveAssault);
+  }
+
+  /// <summary>Marked complete externally once the murloc assault is over.</summary>
+  public ObjectiveSurviveAssault SurviveAssault { get; }
+
+  public IReadOnlyList<Point> ShipPositions { get; init; } = new List<Point>();
+
+  public IReadOnlyList<unit> ShipPeons { get; init; } = new List<unit>();
+
+  /// <inheritdoc />
+  public override string RewardFlavour =>
+    "The last of the murlocs sink beneath the waves. With the coast clear, the fleet sets sail for Kalimdor.";
+
+  /// <inheritdoc />
+  public override string PenaltyFlavour =>
+    "The Great Hall falls, but the survivors scramble aboard what's left of the fleet and limp toward Kalimdor regardless.";
+
+  /// <inheritdoc />
+  protected override string RewardDescription => "The fleet departs for Durotar, taking all surviving forces with it, and the Horde takes control of Durotar";
+
+  /// <inheritdoc />
+  protected override string PenaltyDescription => "Surviving forces retreat to Durotar at reduced health, and the Horde takes control of Durotar";
+
+  /// <inheritdoc />
+  protected override void OnComplete(Faction completingFaction)
+  {
+    timer.Create().Start(DepartureDelay, false, () =>
+    {
+      @event.ExpiredTimer.Dispose();
+      completingFaction.Player.RescueGroup(_durotarRescueUnits);
+      ClearHarbour();
+
+      var completingPlayer = completingFaction.Player;
+      if (completingPlayer == null)
+      {
+        return;
+      }
+
+      var tinyItemTypes = GetTinyBuildingItemTypes(completingPlayer);
+      EmptyBurrowsInZone(completingPlayer);
+      DestroyBuildingsInZone(completingPlayer, showDeathEffects: false, refundCost: true);
+      RelocateSurvivors(completingPlayer, 100f);
+      GrantTinyBuildingItems(completingPlayer, tinyItemTypes);
+      completingPlayer.RepositionCamera(_retreatDestination);
+    });
+  }
+
+  private void ClearHarbour()
+  {
+    foreach (var peon in ShipPeons)
+    {
+      peon.Dispose();
+    }
+
+    foreach (var ship in ShipPositions)
+    {
+      SetDoodadAnimation(ship.X, ship.Y, ShipSearchRadius, FourCC("NWsp"), true, "hide", false);
+    }
+  }
+
+  private List<int> GetTinyBuildingItemTypes(player owningPlayer)
+  {
+    return GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
+      .Where(u => u.Alive && u.IsUnitType(unittype.Structure) && _buildZone.Contains(u.X, u.Y)
+        && _keyBuildingTinyItems.ContainsKey(u.UnitType))
+      .Select(u => _keyBuildingTinyItems[u.UnitType])
+      .Distinct()
+      .ToList();
+  }
+
+  private void GrantTinyBuildingItems(player owningPlayer, List<int> itemTypes)
+  {
+    var thrallLegend = AllLegends.Orc.Thrall;
+    if (thrallLegend.Unit == null || !thrallLegend.Unit.Alive)
+    {
+      thrallLegend.ForceCreate(owningPlayer, _retreatDestination, 0);
+    }
+
+    var thrall = thrallLegend.Unit!;
+
+    foreach (var itemType in itemTypes)
+    {
+      thrall.AddItemSafe(item.Create(itemType, thrall.X, thrall.Y));
+    }
+  }
+
+  /// <inheritdoc />
+  protected override void OnFail(Faction completingFaction)
+  {
+    completingFaction.Player.RescueGroup(_durotarRescueUnits);
+    ClearHarbour();
+
+    var completingPlayer = completingFaction.Player;
+    if (completingPlayer == null)
+    {
+      return;
+    }
+
+    EmptyBurrowsInZone(completingPlayer);
+    DestroyBuildingsInZone(completingPlayer, showDeathEffects: true, refundCost: false);
+    var survivorCount = RelocateSurvivors(completingPlayer, DefeatSurvivorLifePercent);
+
+    if (survivorCount == 0)
+    {
+      SpawnReinforcements(completingPlayer);
+    }
+
+    EnsureThrallSurvives(completingPlayer);
+    completingPlayer.RepositionCamera(_retreatDestination);
+  }
+
+  private void EnsureThrallSurvives(player owningPlayer)
+  {
+    var thrallLegend = AllLegends.Orc.Thrall;
+    if (thrallLegend.Unit != null && thrallLegend.Unit.Alive)
+    {
+      return;
+    }
+
+    thrallLegend.ForceCreate(owningPlayer, _retreatDestination, 0);
+    thrallLegend.Unit?.SetLifePercent(DefeatSurvivorLifePercent);
+  }
+
+  private void EmptyBurrowsInZone(player owningPlayer)
+  {
+    var buildings = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
+      .Where(u => u.Alive && u.IsUnitType(unittype.Structure) && _buildZone.Contains(u.X, u.Y))
+      .ToList();
+
+    foreach (var building in buildings)
+    {
+      building.IssueOrder(ORDER_STAND_DOWN);
+    }
+  }
+
+  private void DestroyBuildingsInZone(player owningPlayer, bool showDeathEffects, bool refundCost)
+  {
+    var buildings = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
+      .Where(u => u.Alive && u.IsUnitType(unittype.Structure) && _buildZone.Contains(u.X, u.Y))
+      .ToList();
+
+    foreach (var building in buildings)
+    {
+      if (refundCost && !_keyBuildingTinyItems.ContainsKey(building.UnitType))
+      {
+        owningPlayer.Gold += unit.GoldCostOf(building.UnitType);
+        owningPlayer.Lumber += unit.WoodCostOf(building.UnitType);
+      }
+
+      if (showDeathEffects)
+      {
+        building.Kill();
+      }
+      else
+      {
+        building.Dispose();
+      }
+    }
+  }
+
+  private int RelocateSurvivors(player owningPlayer, float lifePercent)
+  {
+    var survivors = GlobalGroup.EnumUnitsOfPlayer(owningPlayer)
+      .Where(u => u.Alive && !u.IsUnitType(unittype.Structure))
+      .ToList();
+
+    foreach (var survivor in survivors)
+    {
+      survivor.SetPosition(_retreatDestination.X, _retreatDestination.Y);
+      if (lifePercent < 100f)
+      {
+        survivor.SetLifePercent(lifePercent);
+      }
+    }
+
+    return survivors.Count;
+  }
+
+  private void SpawnReinforcements(player owningPlayer)
+  {
+    var spawnIndex = 0;
+    for (var i = 0; i < GruntCount; i++)
+    {
+      CreateReinforcement(owningPlayer, UNIT_OGRU_GRUNT_ORCISH_HORDE, spawnIndex++);
+    }
+
+    CreateReinforcement(owningPlayer, UNIT_OKOD_KODO_BEAST_TAUREN_TRIBES, spawnIndex++);
+
+    for (var i = 0; i < ShamanCount; i++)
+    {
+      CreateReinforcement(owningPlayer, UNIT_OSHM_SHAMAN_ORCISH_HORDE, spawnIndex++);
+    }
+
+    for (var i = 0; i < PeonCount; i++)
+    {
+      CreateReinforcement(owningPlayer, UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, spawnIndex++);
+    }
+  }
+
+  private void CreateReinforcement(player owningPlayer, int unitTypeId, int spawnIndex)
+  {
+    var offsetX = (spawnIndex % 5) * ReinforcementSpacing;
+    var offsetY = (spawnIndex / 5) * ReinforcementSpacing;
+    var spawned = unit.Create(owningPlayer, unitTypeId, _retreatDestination.X + offsetX,
+      _retreatDestination.Y + offsetY, 0);
+    spawned.SetLifePercent(ReinforcementLifePercent);
+  }
+}

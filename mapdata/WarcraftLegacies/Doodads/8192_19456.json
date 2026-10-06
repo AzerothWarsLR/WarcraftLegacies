@@ -1,45 +1,24 @@
 [
   {
-    "TypeId": 1479946308,
-    "Variation": 0,
+    "TypeId": 2003193946,
+    "Variation": 4,
     "Position": {
-      "X": 8064,
-      "Y": 19520,
-      "Z": 52.125
+      "X": 8001.828,
+      "Y": 19504.695,
+      "Z": 51.918392
     },
-    "Rotation": 4.712389,
+    "Rotation": 5.096361,
     "Scale": {
       "X": 0.99999994,
       "Y": 0.99999994,
       "Z": 0.99999994
     },
-    "SkinId": 1479946308,
+    "SkinId": 2003193946,
     "State": 2,
     "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 10744
-  },
-  {
-    "TypeId": 1935822937,
-    "Variation": 0,
-    "Position": {
-      "X": 8220.055,
-      "Y": 19248.43,
-      "Z": 43.320312
-    },
-    "Rotation": 1.3613569,
-    "Scale": {
-      "X": 0.99999994,
-      "Y": 0.99999994,
-      "Z": 0.99999994
-    },
-    "SkinId": 1935822937,
-    "State": 2,
-    "Life": 255,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 29424
+    "CreationNumber": 24835
   },
   {
     "TypeId": 2003193946,
@@ -63,24 +42,45 @@
     "CreationNumber": 24836
   },
   {
-    "TypeId": 2003193946,
-    "Variation": 4,
+    "TypeId": 1935822937,
+    "Variation": 0,
     "Position": {
-      "X": 8001.828,
-      "Y": 19504.695,
-      "Z": 51.918392
+      "X": 8220.055,
+      "Y": 19248.43,
+      "Z": 43.320312
     },
-    "Rotation": 5.096361,
+    "Rotation": 1.3613569,
     "Scale": {
       "X": 0.99999994,
       "Y": 0.99999994,
       "Z": 0.99999994
     },
-    "SkinId": 2003193946,
+    "SkinId": 1935822937,
     "State": 2,
     "Life": 255,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 24835
+    "CreationNumber": 29424
+  },
+  {
+    "TypeId": 1479946308,
+    "Variation": 0,
+    "Position": {
+      "X": 8064,
+      "Y": 19520,
+      "Z": 52.125
+    },
+    "Rotation": 4.712389,
+    "Scale": {
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
+    },
+    "SkinId": 1479946308,
+    "State": 2,
+    "Life": 255,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10744
   }
 ]

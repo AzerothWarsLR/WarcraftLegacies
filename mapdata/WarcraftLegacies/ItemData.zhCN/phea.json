@@ -1,0 +1,18 @@
+{
+  "OldId": "phea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "使用时恢复 400 点生命值。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "治疗药水"
+    }
+  ]
+}

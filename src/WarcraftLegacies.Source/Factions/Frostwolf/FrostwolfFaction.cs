@@ -3,10 +3,8 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
-using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Frostwolf.Quests;
-using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -19,7 +17,7 @@ public sealed class FrostwolfFaction : Faction
   /// <inheritdoc />
   public FrostwolfFaction() : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
-    TraditionalTeam = TeamSetup.Kalimdor;
+    TraditionalTeam = TeamSetup.Horde;
     UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
     StartingGold = new StartingGold
     {
@@ -46,7 +44,6 @@ public sealed class FrostwolfFaction : Faction
   public override void OnRegistered()
   {
     RegisterObjectLevels();
-    RegisterFlightPath();
     RegisterQuests();
     RegisterDialogue();
     FrostwolfSpells.Setup();
@@ -65,16 +62,15 @@ public sealed class FrostwolfFaction : Faction
 
   private void RegisterQuests()
   {
-    StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
+    // StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff)); // Disabled: overlaps Tauren Tribes' Long March rescue at Thunder Bluff, Frostwolf is being removed
     AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
     AddQuest(new QuestDarkspear());
     AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
-    AddQuest(new QuestRagetotem(AllLegends.Frostwolf.Cairne));
-    AddQuest(new QuestHighmountain(AllLegends.Frostwolf.Cairne, Regions.Highmountain_Unlock));
-    AddQuest(new QuestMammoth(AllLegends.Frostwolf.Rexxar));
-    AddQuest(new QuestDrektharsSpellbook(AllLegends.Skywall.Vortex, AllLegends.Frostwolf.Thrall));
-    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Frostwolf.Thrall));
-    AddQuest(new QuestWorldShaman(AllLegends.Frostwolf.Thrall));
+    AddQuest(new QuestRagetotem(AllLegends.Tauren.CairneBloodhoof));
+    AddQuest(new QuestHighmountain(AllLegends.Tauren.CairneBloodhoof, Regions.Highmountain_Unlock));
+    AddQuest(new QuestMammoth(AllLegends.Tauren.Rexxar));
+    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Orc.Thrall));
+    AddQuest(new QuestWorldShaman(AllLegends.Orc.Thrall));
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 
@@ -105,7 +101,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(AllLegends.Frostwolf.Rexxar, false)
+          new ObjectiveControlLegend(AllLegends.Tauren.Rexxar, false)
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -125,7 +121,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Thrall, AllLegends.Frostwolf.Rexxar)
+          new ObjectiveLegendMeetsLegend(AllLegends.Orc.Thrall, AllLegends.Tauren.Rexxar)
         }));
 
     TriggeredDialogueManager.Add(
@@ -146,7 +142,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveControlLegend(AllLegends.Frostwolf.Thrall, false)
+          new ObjectiveControlLegend(AllLegends.Orc.Thrall, false)
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -166,17 +162,7 @@ public sealed class FrostwolfFaction : Faction
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Frostwolf.Cairne, AllLegends.Frostwolf.Thrall)
+          new ObjectiveLegendMeetsLegend(AllLegends.Tauren.CairneBloodhoof, AllLegends.Orc.Thrall)
         }));
-  }
-
-
-
-  private void RegisterFlightPath()
-  {
-    ResearchManager.Register(new FlightPath(
-      this,
-      UPGRADE_R09N_FLIGHT_PATH_WARSONG,
-      70));
   }
 }

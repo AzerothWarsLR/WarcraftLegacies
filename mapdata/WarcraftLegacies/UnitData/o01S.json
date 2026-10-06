@@ -44,12 +44,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "TP17,Robs"
+      "Value": ""
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o071,o073,o02M,otbk,o00G"
+      "Value": "otau,n049"
     },
     {
       "Id": "ulum",
@@ -70,12 +70,12 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": " (Warsong Barracks)"
+      "Value": "(Warsong)"
     },
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\BarracksOrcHumanV1.02.mdl"
+      "Value": "war3mapImported\\BarracksOrcHumanV1_02.mdl"
     },
     {
       "Id": "uhot",

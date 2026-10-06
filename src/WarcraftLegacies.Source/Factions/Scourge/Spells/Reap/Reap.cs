@@ -48,8 +48,8 @@ public sealed class Reap : Spell
     {
       var casterPosition = caster.GetPosition();
       var abilityLevel = GetAbilityLevel(caster);
-      var radius = Radius.Base + Radius.PerLevel * abilityLevel;
-      var unitsSlain = UnitsSlain.Base + UnitsSlain.PerLevel * abilityLevel;
+      var radius = Radius.GetValue(abilityLevel);
+      var unitsSlain = UnitsSlain.GetValue(abilityLevel);
       var killTargets = GlobalGroup
         .EnumUnitsInRange(casterPosition, radius)
         .Where(x => IsValidTarget(x, caster))
@@ -71,8 +71,8 @@ public sealed class Reap : Spell
       }
 
       var strengthGainPerTarget = UpgradeCondition(caster)
-        ? StrengthPerUnitUpgraded.Base + StrengthPerUnitUpgraded.PerLevel * abilityLevel
-        : StrengthPerUnit.Base + StrengthPerUnit.PerLevel * abilityLevel;
+        ? StrengthPerUnitUpgraded.GetValue(abilityLevel)
+        : StrengthPerUnit.GetValue(abilityLevel);
 
       BuffSystem.Add(new ReapBuff(caster, BuffEffect)
       {

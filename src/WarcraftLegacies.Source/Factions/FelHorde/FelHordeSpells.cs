@@ -1,6 +1,7 @@
 ﻿using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Factions.FelHorde.Spells;
+using WarcraftLegacies.Source.Factions.Legion.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 using WarcraftLegacies.Source.Shared.Spells.HealingWavePlus;
 
@@ -32,6 +33,19 @@ public static class FelHordeSpells
       }
     };
     SpellRegistry.Register(ascendance);
+
+    var gorefiendsTruncheon = new DelayedMultiTargetRecall(ABILITY_A168_DARK_SUMMONING_GOREFIEND_S_TRUNCHEON)
+    {
+      Radius = 400,
+      AmountToTarget = 6,
+      MinDuration = 6,
+      MaxDuration = 6,
+      CrossDimensionalDuration = 15,
+      DistanceDivider = 1000,
+      DeathPenalty = 0,
+      TargetType = SpellTargetType.Point
+    };
+    SpellRegistry.Register(gorefiendsTruncheon);
 
     var healingWavePlusHero = new HealingWavePlus(ABILITY_HWP4_ENERGY_WAVE_TERON)
     {

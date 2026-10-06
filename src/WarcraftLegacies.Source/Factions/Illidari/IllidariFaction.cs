@@ -6,7 +6,6 @@ using MacroTools.GameTime;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.Factions.Ahnqiraj;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.FelHorde.Quests;
@@ -54,7 +53,6 @@ public sealed class IllidariFaction : Faction
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
     RegisterFactionDependentInitializer<SentinelsFaction, DruidsFaction>(RegisterSentinelsDruidsDialogue);
     RegisterFactionDependentInitializer<FelHordeFaction>(RegisterFelHordeQuests);
-    RegisterFactionDependentInitializer<ScourgeFaction, DruidsFaction, AhnqirajFaction>(RegisterScourgeDruidsAhnqirajQuests);
     RegisterFactionDependentInitializer<SentinelsFaction>(RegisterSentinelsQuests);
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
   }
@@ -63,6 +61,7 @@ public sealed class IllidariFaction : Faction
   public override void OnRegistered()
   {
     RegisterQuests();
+    RegisterKiljaedensCommand();
     RegisterDialogue();
     RegisterResearches();
     IllidariSpells.Setup();
@@ -392,12 +391,11 @@ public sealed class IllidariFaction : Faction
     AddQuest(new QuestKillMaiev());
   }
 
-  private void RegisterScourgeDruidsAhnqirajQuests(ScourgeFaction scourge, DruidsFaction druids, AhnqirajFaction ahnqiraj)
+  private void RegisterKiljaedensCommand()
   {
     GameTimeManager.RegisterOnTurn(20, () =>
     {
-      var kiljaedensCommand = AddQuest(new QuestKiljaedensCommand(scourge, druids, ahnqiraj, AllLegends.Ahnqiraj.Cthun,
-        AllLegends.Druids.Nordrassil, AllLegends.Naga.Illidan));
+      var kiljaedensCommand = AddQuest(new QuestKiljaedensCommand(AllLegends.Naga.Illidan));
       this.DisplayDiscovered(kiljaedensCommand, true);
     });
   }

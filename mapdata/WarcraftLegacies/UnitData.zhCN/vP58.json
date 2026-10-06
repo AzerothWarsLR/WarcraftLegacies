@@ -1,0 +1,29 @@
+{
+  "OldId": "nhyc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "食人魔碾压者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练食人魔碾压者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "魁梧的食人魔，可在近距离砸碎敌人。硬化体肤赋予其额外护甲。|n|n|cffffcc00能攻击地面单位。"
+    }
+  ],
+  "NewId": "vP58"
+}

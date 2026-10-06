@@ -1,0 +1,14 @@
+{
+  "OldId": "Blsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "治疗护盾（施法者）"
+    }
+  ],
+  "NewId": "B02Y"
+}

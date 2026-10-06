@@ -1,0 +1,18 @@
+{
+  "OldId": "ndth",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "精通治疗魔法的高阶祭司。投掷火焰弹。可施放睡眠。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗巨魔高阶祭司"
+    }
+  ]
+}

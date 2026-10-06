@@ -75,8 +75,8 @@ public sealed class QuestBookOfMedivh : QuestData
 
   /// <inheritdoc/>
   public override string RewardFlavour => _bypassLevelRequirement
-    ? $"{_objectiveWithCompletingUnit.CompletingUnitName} has retrieved the Book of Medivh from its pedestal. With its power, we can summon the full might of the Burning Legion from the depths of the Twisting Nether."
-    : $"{_objectiveWithCompletingUnit.CompletingUnitName} has retrieved the Book of Medivh from its pedestal, and now prepares to harness its untold power.";
+    ? Loc.Format("{unit} has retrieved the Book of Medivh from its pedestal. With its power, we can summon the full might of the Burning Legion from the depths of the Twisting Nether.", ("{unit}", _objectiveWithCompletingUnit.CompletingUnitName))
+    : Loc.Format("{unit} has retrieved the Book of Medivh from its pedestal, and now prepares to harness its untold power.", ("{unit}", _objectiveWithCompletingUnit.CompletingUnitName));
 
   /// <inheritdoc/>
   public override string PenaltyFlavour =>

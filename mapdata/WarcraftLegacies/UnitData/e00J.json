@@ -104,7 +104,12 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h04L,ewsp"
+      "Value": "h04L,h045,ewsp"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "RV01,RV02"
     },
     {
       "Id": "ides",

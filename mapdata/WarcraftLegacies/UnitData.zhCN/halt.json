@@ -1,0 +1,23 @@
+{
+  "OldId": "halt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛丹伦祭坛）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "列王祭坛"
+    }
+  ]
+}

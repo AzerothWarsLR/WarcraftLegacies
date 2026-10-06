@@ -1,0 +1,29 @@
+{
+  "OldId": "hpea",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然，工人）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "以支援战争换取保护的农民。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "农夫"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练农夫"
+    }
+  ],
+  "NewId": "h022"
+}

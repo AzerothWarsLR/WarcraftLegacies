@@ -1,0 +1,25 @@
+{
+  "OldId": "Afae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（哨兵 - 猎月者）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使目标敌方单位的护甲降低<A0A7,DataA1>点，并获得该单位的视野。|n持续<A0A7,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "精灵之火"
+    }
+  ],
+  "NewId": "A0A7"
+}

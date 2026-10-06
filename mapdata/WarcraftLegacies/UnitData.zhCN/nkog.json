@@ -1,0 +1,18 @@
+{
+  "OldId": "nkog",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "施放减速与驱散魔法的轻型远程单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "狗头人地卜师"
+    }
+  ]
+}

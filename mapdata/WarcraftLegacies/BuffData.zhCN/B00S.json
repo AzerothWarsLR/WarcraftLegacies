@@ -1,0 +1,19 @@
+{
+  "OldId": "BNsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "心灵迷惑"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到心灵混乱的打击，无法攻击。"
+    }
+  ],
+  "NewId": "B00S"
+}

@@ -11,11 +11,6 @@
       "Value": "Stone Armor"
     },
     {
-      "Id": "ftat",
-      "Type": 3,
-      "Value": ""
-    },
-    {
       "Id": "fube",
       "Type": 3,
       "Value": "This unit has Stone Armor; its armor is increased."

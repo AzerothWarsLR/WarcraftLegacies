@@ -1,0 +1,43 @@
+{
+  "OldId": "Assk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落 - 刽子手）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "次级魔钢板甲"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "次级魔钢护板"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "邪钢护板使受到的伤害降低<VP21,DataC1>点。攻击伤害不能降低到<VP21,DataB1>点以下。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "邪钢护板使受到的伤害降低<VP21,DataC2>点。攻击伤害不能降低到<VP21,DataB2>点以下。"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "魔钢护板"
+    }
+  ],
+  "NewId": "VP21"
+}

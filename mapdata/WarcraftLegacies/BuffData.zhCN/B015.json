@@ -1,0 +1,19 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "坚韧之力"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该英雄唤起了内在的力量，攻击和防御提高。"
+    }
+  ],
+  "NewId": "B015"
+}

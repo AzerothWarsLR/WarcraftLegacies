@@ -1,6 +1,7 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -43,21 +44,21 @@ public sealed class Share : Command
 
     if (!FactionManager.TryGetFactionByName(parameters[0], out var targetFaction))
     {
-      return $"There is no faction named {parameters[0]}.";
+      return Loc.Format("There is no faction named {value}.", ("{value}", parameters[0]));
     }
 
     if (targetFaction.Player == null)
     {
-      return $"There is nobody playing the {targetFaction.Name} faction.";
+      return Loc.Format("There is nobody playing the {faction} faction.", ("{faction}", targetFaction.Name));
     }
 
     if (cheaterTeam != targetFaction.Player.GetPlayerData().Team)
     {
-      return $"{targetFaction.Name} isn't on your team, so you can't share control with them.";
+      return Loc.Format("{faction} isn't on your team, so you can't share control with them.", ("{faction}", targetFaction.Name));
     }
 
     SetPlayerAlliance(cheater, targetFaction.Player, ALLIANCE_SHARED_CONTROL, true);
 
-    return $"Shared control with {targetFaction.Name}.";
+    return Loc.Format("Shared control with {faction}.", ("{faction}", targetFaction.Name));
   }
 }

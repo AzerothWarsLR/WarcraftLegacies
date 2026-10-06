@@ -1,0 +1,29 @@
+{
+  "OldId": "owtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物塔）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "龙喉氏族的了望塔。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "领地幼龙"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造领地幼龙"
+    }
+  ],
+  "NewId": "o06B"
+}

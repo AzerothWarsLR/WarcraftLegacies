@@ -1,0 +1,29 @@
+{
+  "OldId": "hfoo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "赞达拉的全能战士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "守望者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练守望者"
+    }
+  ],
+  "NewId": "h021"
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "halt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暮色森林墓地"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "复活阵亡英雄"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城其他）"
+    }
+  ],
+  "NewId": "h01F"
+}

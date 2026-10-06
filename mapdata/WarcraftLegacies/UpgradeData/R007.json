@@ -25,6 +25,11 @@
       "Value": 300
     },
     {
+      "Id": "grac",
+      "Type": 3,
+      "Value": "other"
+    },
+    {
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
@@ -40,7 +45,7 @@
       "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "Quest Completed: Otherwordly Invaders"
+      "Value": "Quest Completed: Raze Orgrimmar"
     }
   ]
 }

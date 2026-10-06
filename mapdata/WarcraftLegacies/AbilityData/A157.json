@@ -1,0 +1,155 @@
+{
+  "OldId": "Aoar",
+  "NewId": "A157",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.015
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.017
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.018
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Oar1",
+      "Type": 2,
+      "Value": 0.02
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Oar2",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Oar2",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Oar2",
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Oar2",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0E3"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0E3"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0E3"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B0E3"
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,organic,vuln,invu,friend"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,organic,vuln,invu,friend"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,organic,vuln,invu,friend"
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,organic,vuln,invu,friend"
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Tree of Renewal Healing"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Druids - Tree of Renewal)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    }
+  ]
+}

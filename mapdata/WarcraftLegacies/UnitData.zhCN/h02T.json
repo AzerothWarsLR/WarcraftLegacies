@@ -1,0 +1,24 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（大门 - 损毁）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "安其拉之门"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造安其拉之门"
+    }
+  ],
+  "NewId": "h02T"
+}

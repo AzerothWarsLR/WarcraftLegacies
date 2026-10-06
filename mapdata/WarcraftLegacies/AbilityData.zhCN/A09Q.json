@@ -1,0 +1,31 @@
+{
+  "OldId": "Aegr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（月之女祭司）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "法术抗性"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "法术抗性"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使受到的魔法攻击和法术伤害降低 30%。"
+    }
+  ],
+  "NewId": "A09Q"
+}

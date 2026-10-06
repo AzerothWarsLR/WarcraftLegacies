@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -30,6 +31,6 @@ public sealed class CheatMp : Command
       unit.Mana = mana;
     }
 
-    return $"Setting mana of selected units to {mana}.";
+    return Loc.Format("Setting mana of selected units to {mana}.", ("{mana}", mana.ToString()));
   }
 }

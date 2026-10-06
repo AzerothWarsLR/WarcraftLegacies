@@ -60,6 +60,9 @@ public static class CommandManager
         }
 
         var message = command.Execute(@event.Player, parameters);
+        // A command states most of its replies as a plain sentence, so the reply is resolved through the table as
+        // well as the command's own name. A reply the table does not carry is returned unchanged.
+        message = Loc.Get(message);
         @event.Player.DisplayTextTo(command.Type == CommandType.Cheat ? $"|{CommandColor}{Loc.Get("CHEAT")}:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");
       }
       catch (Exception ex)
@@ -78,7 +81,7 @@ public static class CommandManager
     commandQuest.IsEnabled = true;
     commandQuest.IsRequired = false;
     var description = _registeredCommands.Where(x => x.Type == CommandType.Normal).Aggregate("",
-      (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
+      (current, command) => $"{current} -{command.CommandText}: {Loc.Get(command.Description)}\n");
 
     commandQuest.SetDescription(description);
   }

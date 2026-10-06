@@ -7,27 +7,39 @@ namespace WarcraftLegacies.CLI.Contexts;
 
 internal sealed class MapBuildContext : MapCommandContext
 {
-  public AdvancedMapBuilderOptions AdvancedMapBuilderOptions { get; }
+  private readonly IncludeFromMap _include;
 
-  public MapDataToMapConverterOptions MapConverterOptions { get; }
+  public AdvancedMapBuilderOptions AdvancedMapBuilderOptions { get; }
 
   public MapOutputKind OutputKind { get; set; }
 
   public MapBuildContext(string mapName, IncludeFromMap include, bool deleteDestination) : base(mapName, include, deleteDestination)
   {
     AdvancedMapBuilderOptions = DefaultOptionsFactory.CreateAdvancedMapBuilderOptions(Paths);
-    AdvancedMapBuilderOptions.MapMigrations = MapMigrationProvider.GetMapMigrations();
     AdvancedMapBuilderOptions.DeleteDestination = deleteDestination;
     AdvancedMapBuilderOptions.ShouldTranspile = include.HasFlag(IncludeFromMap.Script);
 
-    MapConverterOptions = DefaultOptionsFactory.CreateMapDataToMapConverterOptions(Paths);
-    MapConverterOptions.IncludeFromMap = include;
+    _include = include;
   }
 
   public override void Execute()
   {
-    var converter = new MapDataToMapConverter(MapConverterOptions);
+    // Built here rather than in the constructor so that --locale, which the command applies after construction,
+    // is already known.
+    ApplyLocale();
+
+    AdvancedMapBuilderOptions.MapMigrations = MapMigrationProvider.GetMapMigrations();
+
+    var mapConverterOptions = DefaultOptionsFactory.CreateMapDataToMapConverterOptions(Paths, Locale);
+    mapConverterOptions.IncludeFromMap = _include;
+
+    var converter = new MapDataToMapConverter(mapConverterOptions);
     var builder = new AdvancedMapBuilder(AdvancedMapBuilderOptions);
+
+    if (Locale is not null)
+    {
+      Console.WriteLine($"Building from the '{Locale}' map data overlay.");
+    }
 
     switch (OutputKind)
     {

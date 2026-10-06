@@ -1,0 +1,19 @@
+{
+  "OldId": "Sshm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（哨兵 - 大多数单位）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "影遁"
+    }
+  ],
+  "NewId": "S003"
+}

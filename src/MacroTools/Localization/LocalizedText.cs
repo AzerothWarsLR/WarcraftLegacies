@@ -65,7 +65,7 @@ public sealed class LocalizedText
       case 0:
         return Wrap(template);
       case 1:
-        return Wrap(template.Replace(_args[0].Token, _args[0].Value.ToString(language)));
+        return Wrap(Loc.ReplaceLiteral(template, _args[0].Token, _args[0].Value.ToString(language)));
       default:
         // Builds into a separate buffer instead of repeated Replace calls, so a resolved value can't accidentally
         // re-match another arg's token.

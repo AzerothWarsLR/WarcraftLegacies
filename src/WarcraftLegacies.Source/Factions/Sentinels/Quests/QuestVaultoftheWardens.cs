@@ -9,12 +9,13 @@ using WarcraftLegacies.Source.Objectives.LegendBased;
 namespace WarcraftLegacies.Source.Factions.Sentinels.Quests;
 
 /// <summary>
-/// Capture the Vault of the Wardens to learn to train Wardens.
+/// Capture the Vault of the Wardens to empower the Wardens, or Maiev if the faction chose Priestesses of the Moon.
 /// </summary>
 public sealed class QuestVaultoftheWardens : QuestData
 {
   private readonly Capital _vaultOfTheWardens;
-  private const int WardenId = UNIT_H045_WARDEN_SENTINELS;
+  private readonly LegendaryHero _maiev;
+  private const int MaievXpReward = 2000;
 
   /// <inheritdoc />
   public QuestVaultoftheWardens(LegendaryHero maiev, Capital vaultOfTheWardens) : base("Vault of the Wardens",
@@ -22,6 +23,7 @@ public sealed class QuestVaultoftheWardens : QuestData
     @"ReplaceableTextures\CommandButtons\BTNReincarnationWarden.blp")
   {
     _vaultOfTheWardens = vaultOfTheWardens;
+    _maiev = maiev;
     AddObjective(new ObjectiveChannelRect(Regions.VaultoftheWardens, "Vault of the Wardens", maiev,
       120, 90));
     AddObjective(new ObjectiveSelfExists());
@@ -35,21 +37,31 @@ public sealed class QuestVaultoftheWardens : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription => Loc.Format(
-    "4 free {warden}s appear at the Broken Isles, and you learn to train {warden}s from the {vault} and from {bastion}s",
-    ("{warden}", GetObjectName(UNIT_H045_WARDEN_SENTINELS)),
-    ("{vault}", GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)),
-    ("{bastion}", GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)));
+    "Gain the {vault}. Wardens and Maiev gain 100 hit points and 5 attack damage, and their Blink costs no mana and has a 5 second cooldown. If you chose Priestesses of the Moon instead, Maiev gains 2000 experience and 5 Strength, Agility, and Intelligence",
+    ("{vault}", GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)));
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    CreateUnits(completingFaction.Player, WardenId, Regions.VaultoftheWardens.Center.X,
-      Regions.VaultoftheWardens.Center.Y, 270, 4);
-    completingFaction.Player.DisplayUnitTypeAcquired(WardenId, Loc.Format(
-      "You can now train Wardens from the {vault} and from {bastion}s.",
-      ("{vault}", GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)),
-      ("{bastion}", GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE))));
     _vaultOfTheWardens.Unit?.Rescue(completingFaction.Player);
+    if (completingFaction.Player == null)
+    {
+      return;
+    }
+
+    if (completingFaction.Player.GetTechResearched(UPGRADE_RV01_PRIESTESSES_OF_THE_MOON_SENTINELS, false) > 0)
+    {
+      var maiev = _maiev.Unit;
+      if (maiev != null)
+      {
+        maiev.AddHeroAttributes(5, 5, 5);
+        AddHeroXP(maiev, MaievXpReward, true);
+      }
+
+      return;
+    }
+
+    completingFaction.Player.SetTechResearched(UPGRADE_RV03_WARDENS_OF_THE_VAULT_SENTINELS, 1);
   }
 
   /// <inheritdoc />

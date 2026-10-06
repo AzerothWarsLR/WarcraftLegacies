@@ -1,0 +1,19 @@
+{
+  "OldId": "Ruex",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "发掘尸体"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "BHad",
+  "NewId": "B0E4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Tree of Renewal Armor"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is near a Tree of Renewal; it has increased armor."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Tree of Renewal Armor"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNDevotion.blp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "ntrd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有吞噬与尖刺外壳的重型两栖近战单位。可施放粉碎之波。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙龟"
+    }
+  ]
+}

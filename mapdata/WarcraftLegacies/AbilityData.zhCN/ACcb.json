@@ -1,0 +1,30 @@
+{
+  "OldId": "ACcb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（绿色皇家卫队）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强力寒冰箭"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "向一个目标敌方单位投掷一支魔法冰晶，造成 70 点伤害并使目标昏迷 4 秒。（对英雄为 1 秒）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "强力寒冰箭"
+    }
+  ]
+}

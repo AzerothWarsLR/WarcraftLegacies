@@ -51,7 +51,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "TP17,Rguv,Robs,Rhar,Rhme"
+      "Value": "Rguv,Robs,Rhar,Rhme"
     },
     {
       "Id": "ua1d",

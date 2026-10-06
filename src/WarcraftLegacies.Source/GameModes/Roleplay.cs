@@ -1,4 +1,4 @@
-using MacroTools.GameModes;
+﻿using MacroTools.GameModes;
 using MacroTools.Localization;
 using WarcraftLegacies.Source.GameLogic;
 

@@ -1,0 +1,77 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（洛丹伦 - 乌瑟尔）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "奉献"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习奉献 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "英雄圣化地面，对周围的敌方地面单位造成伤害，并使其移动速度和攻击速度降低 50%。 |n|n|cffffcc001级|r - 70 点伤害。  |n|cffffcc002级|r - 120 点伤害。 |n|cffffcc003级|r - 170 点伤害。 |n|cffffcc004级|r - 220 点伤害。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奉献 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "猛击地面，对周围的敌方地面单位造成 70 点伤害，并使其移动速度和攻击速度降低 50%。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "猛击地面，对周围的敌方地面单位造成 120 点伤害，并使其移动速度和攻击速度降低 50%。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "猛击地面，对周围的敌方地面单位造成 170 点伤害，并使其移动速度和攻击速度降低 50%。"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "猛击地面，对周围的敌方地面单位造成 220 点伤害，并使其移动速度和攻击速度降低 50%。"
+    }
+  ],
+  "NewId": "A0WE"
+}

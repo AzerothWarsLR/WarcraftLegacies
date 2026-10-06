@@ -1,0 +1,16 @@
+{
+  "Left": -14912,
+  "Bottom": -14912,
+  "Right": -13184,
+  "Top": -13632,
+  "Name": "EarthmothersCradle",
+  "CreationNumber": 512,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

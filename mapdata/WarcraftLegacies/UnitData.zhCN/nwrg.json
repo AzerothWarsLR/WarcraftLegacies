@@ -1,0 +1,18 @@
+{
+  "OldId": "nwrg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型近战单位。免疫魔法。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战争魔像"
+    }
+  ]
+}

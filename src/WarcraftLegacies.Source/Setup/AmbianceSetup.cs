@@ -113,7 +113,6 @@ public static class AmbianceSetup
     Regions.SilithusAmbient.AddSound(DalaranRuinsDay);
     Regions.UngoroAmbient.AddSound(WetlandsNight);
     Regions.ZulfarrakAmbient.AddSound(WetlandsDay);
-    Regions.KezanAmbient.AddSound(WetlandsDay);
     Regions.BrokenIslesA.AddSound(WetlandsDay);
     Regions.BrokenIslesB.AddSound(WetlandsDay);
     Regions.WinterspringAmbient1.AddSound(IceCrownDay);

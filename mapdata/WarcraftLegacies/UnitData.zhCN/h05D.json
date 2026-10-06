@@ -1,0 +1,29 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "赞达拉的敏捷骑士。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "迅猛龙骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练迅猛龙骑士"
+    }
+  ],
+  "NewId": "h05D"
+}

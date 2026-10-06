@@ -1,0 +1,29 @@
+{
+  "OldId": "hbsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（部落）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "毁灭战舰"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "具有统治力的重型船只。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练毁灭战舰"
+    }
+  ],
+  "NewId": "h0BC"
+}

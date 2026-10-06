@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -24,6 +25,6 @@ public sealed class CheatGold : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     cheater.SetState(playerstate.ResourceGold, S2I(parameters[0]));
-    return "Set to " + parameters[0] + " gold.";
+    return Loc.Format("Set to {amount} gold.", ("{amount}", parameters[0]));
   }
 }

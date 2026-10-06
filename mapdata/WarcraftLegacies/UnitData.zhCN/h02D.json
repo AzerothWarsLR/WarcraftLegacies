@@ -1,0 +1,29 @@
+{
+  "OldId": "hmpr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（达拉然）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地卜师"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练地卜师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "擅长御土之术的法师。"
+    }
+  ],
+  "NewId": "h02D"
+}

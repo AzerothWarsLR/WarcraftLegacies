@@ -1,0 +1,25 @@
+{
+  "OldId": "ACad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（死亡骑士，巫妖）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使一片区域内的 3 个阵亡单位复活，持续 60 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "亡者再临"
+    }
+  ],
+  "NewId": "A0OM"
+}

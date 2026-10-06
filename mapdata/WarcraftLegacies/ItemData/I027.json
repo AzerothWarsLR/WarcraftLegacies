@@ -1,0 +1,78 @@
+{
+  "OldId": "ckng",
+  "NewId": "I027",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A168"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "A168"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGorefiendsTruncheon.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Can be used to summon friendly units from a target area to the Hero."
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gorefiend\u0027s Truncheon"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nCan be used to summon up to 6 friendly non-Hero units from a target area to the Hero. The units arrive after 6 seconds, or 15 seconds if they are in another realm. Units with Resistant Skin cannot be summoned.|n|cffffcc00Lore|r|n|cffffdeadGul\u0027dan carved out the hearts of his necrolytes and forged them into jewels set within dark truncheons. The first was placed in the hand of Teron\u0027gor\u0027s new body, and the first Death Knight rose to serve the Horde."
+    }
+  ]
+}

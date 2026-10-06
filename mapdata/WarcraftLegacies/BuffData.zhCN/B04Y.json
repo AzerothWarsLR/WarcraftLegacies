@@ -1,0 +1,19 @@
+{
+  "OldId": "Broa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "坚韧箴言"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有坚韧真言，护甲提高。"
+    }
+  ],
+  "NewId": "B04Y"
+}

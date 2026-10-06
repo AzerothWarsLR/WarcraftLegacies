@@ -1,0 +1,19 @@
+{
+  "OldId": "ntor",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑洞"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练黑洞"
+    }
+  ],
+  "NewId": "n0CY"
+}

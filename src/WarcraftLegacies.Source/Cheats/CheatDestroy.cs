@@ -1,5 +1,6 @@
 ﻿using MacroTools.Artifacts;
 using MacroTools.Commands;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -18,18 +19,18 @@ public sealed class CheatDestroy : Command
   public override CommandType Type => CommandType.Cheat;
 
   /// <inheritdoc />
-  public override string Description => $"Destroys the specified {nameof(Artifact)}.";
+  public override string Description => "Destroys the specified Artifact.";
 
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
   {
     if (!ArtifactManager.TryGetByName(parameters[0], out var artifact))
     {
-      return $"You must specify the name of a registered {nameof(Artifact)} as the first parameter.";
+      return Loc.Get("You must specify the name of a registered Artifact as the first parameter.");
     }
 
     var artifactName = artifact.Item.Name;
     ArtifactManager.Destroy(artifact);
-    return $"Destroyed {artifactName}";
+    return Loc.Format("Destroyed {artifact}", ("{artifact}", artifactName));
   }
 }

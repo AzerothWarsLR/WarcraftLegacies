@@ -1,0 +1,18 @@
+{
+  "OldId": "nbwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造兽穴"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "兽穴"
+    }
+  ]
+}

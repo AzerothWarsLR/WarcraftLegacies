@@ -1,0 +1,43 @@
+{
+  "OldId": "ACbf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（天灾、被遗忘者、诅咒教派、冰霜巨龙、萨菲隆）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "低温吐息"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "低温吐息"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "低温吐息 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "对敌方单位吐出一股锥形冰霜，造成<A058,DataA1>点初始伤害，并每秒造成<A058,DataE1>点伤害，持续<A058,Dur1>秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "对敌方单位吐出一股锥形冰霜，造成<A058,DataA2>点初始伤害，并每秒造成<A058,DataE2>点伤害，持续<A058,Dur2>秒。"
+    }
+  ],
+  "NewId": "A058"
+}

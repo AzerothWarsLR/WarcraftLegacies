@@ -1,0 +1,19 @@
+{
+  "OldId": "AIrr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（毁灭之锤）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "咆哮"
+    }
+  ],
+  "NewId": "YBRO"
+}

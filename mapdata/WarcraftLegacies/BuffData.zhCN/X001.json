@@ -1,0 +1,14 @@
+{
+  "OldId": "XEsf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "召唤"
+    }
+  ],
+  "NewId": "X001"
+}

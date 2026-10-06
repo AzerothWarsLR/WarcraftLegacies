@@ -1,0 +1,23 @@
+{
+  "OldId": "negt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "太阳塔"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到太阳塔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灌注太阳之井魔法的塔楼。"
+    }
+  ]
+}

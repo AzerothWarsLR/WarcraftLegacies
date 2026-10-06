@@ -65,17 +65,26 @@ public sealed class LegendaryHero : Legend
   {
     get
     {
-      if (!string.IsNullOrEmpty(_name))
+      // The map's own name for the hero is the one the object data gave the unit, so once the hero exists its own
+      // name is read from it and is already localised. The source's name is resolved through the table as a
+      // fallback, for the places that read a hero's name before the unit is created.
+      var fromUnit = Unit?.GetProperName();
+      if (!string.IsNullOrEmpty(fromUnit))
       {
-        return _name;
+        return fromUnit;
       }
 
-      if (Unit == null && UnitType != 0)
+      if (!string.IsNullOrEmpty(_name))
+      {
+        return Loc.Get(_name);
+      }
+
+      if (UnitType != 0)
       {
         return GetObjectName(UnitType);
       }
 
-      return Unit?.GetProperName() ?? "";
+      return "";
     }
   }
 
@@ -314,7 +323,9 @@ public sealed class LegendaryHero : Legend
     Unit.RemoveAbility(_dummyPermadies);
     if (_diesWithout != null)
     {
-      var tooltip = "When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n";
+      // The tooltip is composed around the capitals' own names, which are localized separately, so each stated
+      // part goes through the table on its own rather than the whole sentence.
+      var tooltip = Loc.Get("When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n");
       foreach (var unit in _diesWithout)
       {
         if (unit == null)
@@ -325,7 +336,7 @@ public sealed class LegendaryHero : Legend
         tooltip = tooltip + " - " + unit.Name + "|n";
       }
 
-      tooltip += "\nUsing this ability pings each of these capitals on the minimap.";
+      tooltip += Loc.Get("\nUsing this ability pings each of these capitals on the minimap.");
       Unit.AddAbility(_dummyDieswithout);
       Unit.GetAbility(_dummyDieswithout).SetTooltipNormalExtended_aub1(0, tooltip);
       return;

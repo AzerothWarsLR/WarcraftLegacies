@@ -1,0 +1,19 @@
+{
+  "OldId": "ACct",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（青色 - 恶魔卫士。蓝色 - 恶魔卫士。深绿色 - 神射手）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致命一击"
+    }
+  ],
+  "NewId": "A070"
+}

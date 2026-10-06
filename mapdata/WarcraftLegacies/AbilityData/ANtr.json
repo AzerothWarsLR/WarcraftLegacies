@@ -34,16 +34,20 @@
     {
       "Id": "aart",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNRegenerate.blp"
     },
     {
       "Id": "abpx",
-      "Value": 3
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 1
     },
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Pink - Witch Doctor, Troll Headhunter, Troll Batrider, Darkspear Warlord, Troll Berserker)(Icon)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "anam",

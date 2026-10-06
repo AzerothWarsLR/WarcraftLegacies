@@ -1,0 +1,18 @@
+{
+  "OldId": "Awrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "未使用"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "战争践踏"
+    }
+  ]
+}

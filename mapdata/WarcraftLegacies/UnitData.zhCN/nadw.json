@@ -1,0 +1,18 @@
+{
+  "OldId": "nadw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "微型远程飞行单位，造成冰霜伤害并减缓敌方单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蓝色雏龙"
+    }
+  ]
+}

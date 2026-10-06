@@ -1,0 +1,24 @@
+{
+  "OldId": "nanw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城咒术师）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "蝎子"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位。"
+    }
+  ],
+  "NewId": "n05M"
+}

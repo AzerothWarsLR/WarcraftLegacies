@@ -1,0 +1,29 @@
+{
+  "OldId": "hmtt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "突击坦克"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "装甲厚重的载具，擅长击落空中单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练突击坦克"
+    }
+  ],
+  "NewId": "h08Z"
+}

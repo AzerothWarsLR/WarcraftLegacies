@@ -1,0 +1,19 @@
+{
+  "OldId": "Bbsk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位处于狂暴状态，攻击速度大幅提高。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "怒火手套狂暴"
+    }
+  ],
+  "NewId": "B03G"
+}

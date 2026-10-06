@@ -1,0 +1,29 @@
+{
+  "OldId": "ocat",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（库尔提拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "加农炮"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练加农炮"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cff2fc6ba攻城 单位|r"
+    }
+  ],
+  "NewId": "o01A"
+}

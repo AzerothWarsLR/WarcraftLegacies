@@ -1,0 +1,19 @@
+{
+  "OldId": "hbar",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城 - 勇士大厅）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "建筑工地"
+    }
+  ],
+  "NewId": "h055"
+}

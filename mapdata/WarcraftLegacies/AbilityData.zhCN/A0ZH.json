@@ -1,0 +1,65 @@
+{
+  "OldId": "ANrc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习圣光军团 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "从虚空中召唤多个光铸战争机甲。|n|n|cffffcc001级|r - 召唤 6 个光铸战争机甲。 |n|cffffcc002级|r - 召唤 10 个光铸战争机甲。 |n|cffffcc003级|r - 召唤 14 个光铸战争机甲。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "圣光军团 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "圣光军团 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "圣光军团 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从虚空中召唤 6 个光铸战争机甲。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从虚空中召唤 10 个光铸战争机甲。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "从虚空中召唤 14 个光铸战争机甲。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "圣光军团"
+    }
+  ],
+  "NewId": "A0ZH"
+}

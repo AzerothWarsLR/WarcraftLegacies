@@ -1,0 +1,19 @@
+{
+  "OldId": "ANpi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "反传送门阻挡"
+    }
+  ],
+  "NewId": "A0A2"
+}

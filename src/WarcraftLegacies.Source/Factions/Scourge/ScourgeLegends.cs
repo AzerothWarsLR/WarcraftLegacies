@@ -27,7 +27,11 @@ public sealed class ScourgeLegends
       UnitType = UNIT_U001_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_NECROMANCER,
       PermaDies = true,
       DeathSfx = @"Abilities\Spells\Undead\DeathCoil\DeathCoilSpecialArt.mdl",
-      StartingXp = 2800
+      StartingXp = 2800,
+      StartingArtifacts = new()
+      {
+        new(item.Create(ITEM_I026_SOULSEEKER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+      }
     };
 
     Anubarak = new LegendaryHero("Anub'arak")

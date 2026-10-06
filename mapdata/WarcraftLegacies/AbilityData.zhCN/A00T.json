@@ -1,0 +1,25 @@
+{
+  "OldId": "AEfk",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色结界"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "刀扇"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "刀扇"
+    }
+  ],
+  "NewId": "A00T"
+}

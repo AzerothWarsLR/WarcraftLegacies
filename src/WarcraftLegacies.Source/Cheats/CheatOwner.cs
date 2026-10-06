@@ -1,4 +1,5 @@
 ﻿using MacroTools.Commands;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -31,6 +32,7 @@ public sealed class CheatOwner : Command
       unit.SetOwner(newOwner);
     }
 
-    return $"Setting owner of selected units to {player.Create(playerNumber).Name}.";
+    return Loc.Format("Setting owner of selected units to {player}.",
+      ("{player}", player.Create(playerNumber).Name));
   }
 }

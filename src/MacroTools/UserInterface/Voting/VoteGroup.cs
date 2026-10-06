@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using MacroTools.UserInterface.Frames;
 using MacroTools.Utils;
 using WCSharp.Sync;

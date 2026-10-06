@@ -1,0 +1,28 @@
+{
+  "OldId": "nmsc",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "暗法师"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "次级施法者，擅长削弱敌军与群体治疗。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "深海鱼人暗法师"
+    }
+  ]
+}

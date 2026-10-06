@@ -1,0 +1,19 @@
+{
+  "OldId": "Bdef",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "王冠治疗"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到王冠的影响，护甲暂时提高，生命值和法力值已恢复。"
+    }
+  ],
+  "NewId": "B01H"
+}

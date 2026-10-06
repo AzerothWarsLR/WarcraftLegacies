@@ -1,0 +1,19 @@
+{
+  "OldId": "Abof",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（兽人部落）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "燃油"
+    }
+  ],
+  "NewId": "AZ01"
+}

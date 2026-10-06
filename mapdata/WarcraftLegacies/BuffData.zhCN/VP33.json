@@ -1,0 +1,19 @@
+{
+  "OldId": "BHab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "卡拉赞的秘密"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到卡拉赞之秘光环的影响，法力恢复速度提高。"
+    }
+  ],
+  "NewId": "VP33"
+}

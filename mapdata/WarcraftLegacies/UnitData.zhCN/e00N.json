@@ -1,0 +1,29 @@
+{
+  "OldId": "emtg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊 - 精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "丛林守护者"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练丛林守护者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "强大的德鲁伊施法者。"
+    }
+  ],
+  "NewId": "e00N"
+}

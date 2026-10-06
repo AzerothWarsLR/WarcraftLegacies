@@ -1,0 +1,29 @@
+{
+  "OldId": "hkni",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 精英）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "死亡骑士"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练死亡骑士"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "耐奥祖的忠诚骑士。"
+    }
+  ],
+  "NewId": "h00H"
+}

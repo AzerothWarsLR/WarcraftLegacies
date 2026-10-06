@@ -1,121 +1,126 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.Factions;
-using MacroTools.Legends;
+using MacroTools.Instances;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Setup;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WCSharp.Effects;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Shared.Powers;
 
 public sealed class Immortality : Power
 {
+  private const string ProtectedColor = "|cff00ff00";
+  private const string UnprotectedColor = "|cff808080";
+
   private readonly int _healChancePercentage;
   private readonly int _healAmountPercentage;
-  private readonly List<Objective> _objectives = new();
-  private readonly List<Capital> _worldTrees;
-  private bool _isActive;
-  private readonly List<player> _playersWithPower = new();
+  private readonly List<WorldTreeProtection> _worldTreeProtections;
+  private readonly Dictionary<Objective, WorldTreeProtection> _protectionsByObjective = new();
+  private readonly HashSet<unit> _savedUnits = new();
 
-  private bool IsActive
-  {
-    get => _isActive;
-    set
-    {
-      _isActive = value;
-      var prefix = IsActive ? "" : "|cffc0c0c0";
-      Description = prefix + Loc.Format(
-        "When a unit you control would take lethal damage, it has a {chance}% chance to instead be restored to {amount}% of its maximum hit points. Only active while your team controls a World Tree.",
-        ("{chance}", _healChancePercentage.ToString()),
-        ("{amount}", _healAmountPercentage.ToString()));
-      var researchLevel = _isActive ? 1 : 0;
-      foreach (var player in _playersWithPower)
-      {
-        player.SetTechResearched(ResearchId, researchLevel);
-      }
-    }
-  }
-
-  /// <summary>The effect that appears when a unit is healed.</summary>
   public string Effect { get; init; } = "";
 
-  /// <summary>Active when the <see cref="Power"/> is active, inactive otherwise.</summary>
-  public int ResearchId { get; init; }
-
-  public Immortality(int healChancePercentage, int healAmountPercentage, List<Capital> worldTrees)
+  public Immortality(int healChancePercentage, int healAmountPercentage, List<WorldTreeProtection> worldTreeProtections)
   {
     _healChancePercentage = healChancePercentage;
     _healAmountPercentage = healAmountPercentage;
     Name = Loc.Get("Immortality");
-    _worldTrees = worldTrees;
+    _worldTreeProtections = worldTreeProtections;
+    RefreshDescription();
   }
 
-  /// <inheritdoc />
   public override void OnAdd(player whichPlayer)
   {
     PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, whichPlayer.Id);
-    _playersWithPower.Add(whichPlayer);
   }
 
-  /// <inheritdoc />
   public override void OnAdd(Faction whichFaction)
   {
-    foreach (var worldTree in _worldTrees)
+    foreach (var worldTreeProtection in _worldTreeProtections)
     {
-      AddObjective(new ObjectiveControlCapital(worldTree, false)
+      var objective = new ObjectiveControlCapital(worldTreeProtection.WorldTree, false)
       {
         EligibleFactions = new List<Faction> { whichFaction }
-      }, whichFaction);
+      };
+      _protectionsByObjective.Add(objective, worldTreeProtection);
+      objective.OnAdd(whichFaction);
+      objective.ProgressChanged += OnObjectiveProgressChanged;
     }
 
-    RefreshIsActive();
+    RefreshDescription();
   }
 
-  /// <inheritdoc />
   public override void OnRemove(player whichPlayer)
   {
     PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, whichPlayer.Id);
-    _playersWithPower.Remove(whichPlayer);
-    whichPlayer.SetTechResearched(ResearchId, 0);
   }
 
-  /// <inheritdoc />
   public override void OnRemove(Faction whichFaction)
   {
-    foreach (var objective in _objectives)
+    foreach (var objective in _protectionsByObjective.Keys)
     {
       objective.ProgressChanged -= OnObjectiveProgressChanged;
     }
 
-    _objectives.Clear();
+    _protectionsByObjective.Clear();
   }
 
   private void OnDamage()
   {
     var damagedUnit = @event.Unit;
-    if (!IsActive || !(@event.Damage >= damagedUnit.Life) ||
+    if (!(@event.Damage >= damagedUnit.Life) || _savedUnits.Contains(damagedUnit) ||
         !(GetRandomInt(0, 100) < _healChancePercentage) || damagedUnit.IsUnitType(unittype.Structure) ||
-        damagedUnit.IsUnitType(unittype.Mechanical))
+        damagedUnit.IsUnitType(unittype.Mechanical) || !IsProtected(damagedUnit.GetPosition()))
     {
       return;
     }
 
+    _savedUnits.Add(damagedUnit);
     @event.Damage = 0;
     damagedUnit.Life = (int)(damagedUnit.MaxLife * ((float)_healAmountPercentage / 100));
     EffectSystem.Add(effect.Create(Effect, damagedUnit, "origin"), 1);
   }
 
-  private void AddObjective(Objective objective, Faction faction)
+  private bool IsProtected(Point position)
   {
-    _objectives.Add(objective);
-    objective.OnAdd(faction);
-    objective.ProgressChanged += OnObjectiveProgressChanged;
+    if (InstanceSystem.GetPointInstance(position) != null)
+    {
+      return false;
+    }
+
+    if (ControlsAllWorldTrees())
+    {
+      return true;
+    }
+
+    return _protectionsByObjective.Any(x =>
+      x.Key.Progress == QuestProgress.Complete && x.Value.Regions.Any(region => region.Contains(position.X, position.Y)));
   }
 
-  private void OnObjectiveProgressChanged(Objective _) => RefreshIsActive();
+  private bool ControlsAllWorldTrees() =>
+    _protectionsByObjective.Count > 0 && _protectionsByObjective.Keys.All(x => x.Progress == QuestProgress.Complete);
 
-  private void RefreshIsActive() => IsActive = _objectives.Any(x => x.Progress == QuestProgress.Complete);
+  private bool Controls(WorldTreeProtection worldTreeProtection) =>
+    _protectionsByObjective.Any(x => x.Value == worldTreeProtection && x.Key.Progress == QuestProgress.Complete);
+
+  private void OnObjectiveProgressChanged(Objective _) => RefreshDescription();
+
+  private void RefreshDescription()
+  {
+    var regions = string.Join(", ", _worldTreeProtections.Select(x =>
+      (Controls(x) ? ProtectedColor : UnprotectedColor) + Loc.Get(x.RegionName) + "|r"));
+
+    Description = Loc.Format(
+                    "Each unit has a {chance}% chance to survive death once, restoring {amount}% of its hit points.",
+                    ("{chance}", _healChancePercentage.ToString()),
+                    ("{amount}", _healAmountPercentage.ToString()))
+                  + "|n" + Loc.Get("Works where your team holds the World Tree:")
+                  + "|n" + regions;
+  }
 }

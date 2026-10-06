@@ -1,0 +1,24 @@
+{
+  "OldId": "nchg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "骷髅兽人步兵"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练骷髅兽人步兵"
+    }
+  ],
+  "NewId": "n00O"
+}

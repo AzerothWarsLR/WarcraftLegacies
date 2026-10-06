@@ -1,0 +1,29 @@
+{
+  "OldId": "nfel",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（拉格纳罗斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "熔火恶犬"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自火焰之地的双头嚼石兽。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练熔火恶犬"
+    }
+  ],
+  "NewId": "n0CG"
+}

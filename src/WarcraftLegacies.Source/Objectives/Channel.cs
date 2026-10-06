@@ -71,8 +71,8 @@ public sealed class Channel : IDisposable
       _channelingTimer = timer.Create();
       _channelingTimer.Start(_maxDuration, false, null);
       _channelingDialog = timerdialog.Create(_channelingTimer);
-      _channelingDialog.SetTitle(Loc.Get(timerDialogTitle));
       _channelingDialog.IsDisplayed = true;
+      _channelingDialog.SetTitle(Loc.Get(timerDialogTitle));
     }
 
     _periodictimer = timer.Create();
@@ -91,7 +91,10 @@ public sealed class Channel : IDisposable
     }
 
     _periodictimer.Dispose();
-    _channelingDialog.Dispose();
+    if (_channelingDialog != null)
+    {
+      _channelingDialog.Dispose();
+    }
   }
 
   private void End(bool finishedWithoutInterruption)

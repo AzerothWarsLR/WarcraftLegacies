@@ -1,4 +1,6 @@
-﻿namespace MacroTools.Shared;
+﻿using System;
+
+namespace MacroTools.Shared;
 
 /// <summary>
 /// An arbitrary category that units can be assigned to. Primarily used to know which units need to be swapped out
@@ -16,6 +18,7 @@ public enum UnitCategory
   Farm,
   Altar,
   Specialist,
+  Waygate,
   SiegeWorkshop,
   Barracks,
   Research,
@@ -67,6 +70,8 @@ public static class UnitCategoryExtensions
         return "Altar";
       case UnitCategory.Specialist:
         return "Specialist Production";
+      case UnitCategory.Waygate:
+        return "Way Gate";
       case UnitCategory.SiegeWorkshop:
         return "Siege Production";
       case UnitCategory.Barracks:
@@ -118,7 +123,11 @@ public static class UnitCategoryExtensions
     return category.ToString();
   }
 
-  public static string ToFriendlyString(this List<UnitCategory> categories)
+  /// <param name="translate">
+  /// Optional translator applied to each individual category name, so that a localized build gets localized
+  /// role labels. Left <see langword="null"/> the names come back in English.
+  /// </param>
+  public static string ToFriendlyString(this List<UnitCategory> categories, Func<string, string>? translate = null)
   {
     var parts = new List<string>(categories.Count);
 
@@ -127,7 +136,7 @@ public static class UnitCategoryExtensions
       var categoryName = category.ToFriendlyString();
       if (!string.IsNullOrEmpty(categoryName))
       {
-        parts.Add(categoryName);
+        parts.Add(translate?.Invoke(categoryName) ?? categoryName);
       }
     }
 

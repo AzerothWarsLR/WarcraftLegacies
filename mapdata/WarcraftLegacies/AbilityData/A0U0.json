@@ -89,7 +89,7 @@
     },
     {
       "Id": "aher",
-      "Value": 1
+      "Value": 0
     },
     {
       "Id": "aite",
@@ -105,10 +105,6 @@
       "Value": "nightelf"
     },
     {
-      "Id": "arlv",
-      "Value": 1
-    },
-    {
       "Id": "aart",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNStag.blp"
@@ -119,7 +115,7 @@
     },
     {
       "Id": "abpy",
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": "ansf",
@@ -129,7 +125,7 @@
     {
       "Id": "ahky",
       "Type": 3,
-      "Value": "W"
+      "Value": "D"
     },
     {
       "Id": "anam",
@@ -137,76 +133,52 @@
       "Value": "Master of Nature"
     },
     {
-      "Id": "arar",
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNStag.blp"
-    },
-    {
-      "Id": "arpx",
-      "Value": 1
-    },
-    {
-      "Id": "arhk",
-      "Type": 3,
-      "Value": "W"
-    },
-    {
-      "Id": "aret",
-      "Type": 3,
-      "Value": "Learn Master of Nature - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": "arut",
-      "Type": 3,
-      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|cffffcc00Level 1|r - Unlocks Forest Spiders.|n|cffffcc00Level 2|r - Unlocks Feral Wolves.|n|cffffcc00Level 3|r - Unlocks Furbolg Elder Shamans.|n|cffffcc00Level 4|r - Unlocks Ysondre."
-    },
-    {
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Master of Nature - [|cffffcc00Level 1|r]"
+      "Value": "Master of Nature"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Master of Nature - [|cffffcc00Level 2|r]"
+      "Value": "Master of Nature"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Master of Nature - [|cffffcc00Level 3|r]"
+      "Value": "Master of Nature"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "Master of Nature - [|cffffcc00Level 4|r]"
+      "Value": "Master of Nature"
     },
     {
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders"
+      "Value": "Cenarius summons creatures of the wild to aid him in combat. More creatures answer his call as he grows stronger.|n|n|cffffcc00- Summon Forest Spiders|r|n|nUnlocks Feral Wolves at level 3, Furbolg Elder Shamans at level 5, Ysondre at level 7."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves"
+      "Value": "Cenarius summons creatures of the wild to aid him in combat. More creatures answer his call as he grows stronger.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves|r|n|nUnlocks Furbolg Elder Shamans at level 5, Ysondre at level 7."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves|n- Summon Furbolg Elder Shaman"
+      "Value": "Cenarius summons creatures of the wild to aid him in combat. More creatures answer his call as he grows stronger.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves|n- Summon Furbolg Elder Shamans|r|n|nUnlocks Ysondre at level 7."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Cenarius summons creatures of the wild to aid him in combat.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves|n- Summon Furbolg Elder Shaman|n- Summon Ysonder|r"
+      "Value": "Cenarius summons creatures of the wild to aid him in combat. More creatures answer his call as he grows stronger.|n|n|cffffcc00- Summon Forest Spiders|n- Summon Feral Wolves|n- Summon Furbolg Elder Shamans|n- Summon Ysondre|r"
     }
   ]
 }

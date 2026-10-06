@@ -1,0 +1,36 @@
+{
+  "OldId": "Alsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（霜狼 - 萨满祭司）"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "强化闪电之盾"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在目标单位周围形成一道闪电护盾，每秒对其周围的单位造成 20 点伤害。|n|cffffcc00持续 20 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "在目标单位周围形成一道闪电护盾，每秒对其周围的单位造成 30 点伤害。|n|cffffcc00持续 20 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "闪电之盾"
+    }
+  ]
+}

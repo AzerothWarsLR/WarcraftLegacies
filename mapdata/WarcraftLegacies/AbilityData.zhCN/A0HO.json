@@ -1,0 +1,31 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（浅蓝色 - 奥伯丁召唤）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "奥伯丁海军"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥伯丁海军"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 4 艘桨帆船，持续 2 分钟。|n|n|cffe8e8004 分钟冷却时间。|r"
+    }
+  ],
+  "NewId": "A0HO"
+}

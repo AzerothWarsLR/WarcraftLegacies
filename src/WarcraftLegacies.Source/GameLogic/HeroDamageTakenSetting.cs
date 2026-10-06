@@ -1,4 +1,4 @@
-using MacroTools.Setup;
+﻿using MacroTools.Setup;
 using WCSharp.Events;
 using WCSharp.Shared;
 

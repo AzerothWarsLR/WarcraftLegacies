@@ -1,0 +1,24 @@
+{
+  "OldId": "ntx2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 - 塔）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地狱火毁灭战舰"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "发射死亡弹幕。擅长摧毁一切。对魔法免疫。"
+    }
+  ],
+  "NewId": "n066"
+}

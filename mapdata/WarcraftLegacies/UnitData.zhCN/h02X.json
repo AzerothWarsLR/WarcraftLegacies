@@ -1,0 +1,29 @@
+{
+  "OldId": "halt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（吉尔尼斯祭坛）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "召唤英雄和准英雄。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造国王祭坛"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "列王祭坛"
+    }
+  ],
+  "NewId": "h02X"
+}

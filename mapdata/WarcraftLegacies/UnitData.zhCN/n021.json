@@ -1,0 +1,19 @@
+{
+  "OldId": "ngnb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "霍格"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型近战单位，用于壮大你的部队。"
+    }
+  ],
+  "NewId": "n021"
+}

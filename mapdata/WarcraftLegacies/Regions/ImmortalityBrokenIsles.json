@@ -1,0 +1,16 @@
+{
+  "Left": -5920,
+  "Bottom": -16896,
+  "Right": 5664,
+  "Top": 13568,
+  "Name": "ImmortalityBrokenIsles",
+  "CreationNumber": 515,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 128,
+    "G": 128,
+    "B": 255,
+    "A": 255
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "npig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Dragozer - 8v8 第一赛季冠军"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（赞助者）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "呼唤野猪之灵来拯救你。"
+    }
+  ],
+  "NewId": "n0DY"
+}

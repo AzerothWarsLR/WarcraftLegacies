@@ -1,0 +1,15 @@
+{
+  "OldId": "Roch",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "第 18 回合已过去"
+    }
+  ],
+  "NewId": "R04J"
+}

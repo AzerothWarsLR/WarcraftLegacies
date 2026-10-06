@@ -1,0 +1,25 @@
+{
+  "OldId": "Acht",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（石像鬼）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "发出恐怖的嚎叫，使周围敌方单位的攻击力降低<A022,DataA1,%>%，持续<A022,Dur1>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "恐惧嚎叫"
+    }
+  ],
+  "NewId": "A022"
+}

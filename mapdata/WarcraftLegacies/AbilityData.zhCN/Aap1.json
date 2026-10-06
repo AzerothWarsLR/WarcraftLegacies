@@ -1,0 +1,42 @@
+{
+  "OldId": "Aap1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 憎恶/僵尸）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "疾病之云 - [|cffffcc00级别 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "疾病之云 - [|cffffcc00级别 2|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用疾病之云感染周围的敌方生命单位。疾病之云每秒造成 2 点伤害。|n持续 90 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "用疾病之云感染周围的敌方生命单位。疾病之云每秒造成 2 点伤害。|n持续 120 秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "疾病之云"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "OldId": "ACsa",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色矛兵）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "淬毒长矛"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "淬毒长矛 (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使攻击对敌人额外造成 10 点魔法伤害"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使攻击对敌人额外造成 16 点魔法伤害"
+    }
+  ],
+  "NewId": "A0P0"
+}

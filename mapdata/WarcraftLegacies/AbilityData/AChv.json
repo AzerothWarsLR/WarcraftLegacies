@@ -48,6 +48,14 @@
       "Id": "atat",
       "Type": 3,
       "Value": "war3mapImported\\Effect_HealingWave.mdx"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
     }
   ]
 }

@@ -30,7 +30,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "A01C,Aamk,A07M,A066,A0U4"
+      "Value": "A14P,Aamk,A14L,A066,A14Q"
     },
     {
       "Id": "uhpm",
@@ -38,7 +38,7 @@
     },
     {
       "Id": "upri",
-      "Value": 18
+      "Value": 21
     },
     {
       "Id": "umvs",
@@ -65,14 +65,9 @@
       "Value": 0
     },
     {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "R05R"
-    },
-    {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Frostwolf)"
+      "Value": "(Tauren Tribes)"
     },
     {
       "Id": "uhot",
@@ -90,13 +85,22 @@
       "Value": "Summon Rexxar"
     },
     {
-      "Id": "ubpy",
-      "Value": 1
-    },
-    {
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNrexxarhd.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "RT16"
     }
   ]
 }

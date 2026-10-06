@@ -1,0 +1,23 @@
+{
+  "OldId": "uslh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "高级部队生产建筑。"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 专精）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "屠宰场"
+    }
+  ]
+}

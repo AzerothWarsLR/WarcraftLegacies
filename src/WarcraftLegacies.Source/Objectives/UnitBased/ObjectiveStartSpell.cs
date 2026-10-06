@@ -1,4 +1,5 @@
 ﻿using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Events;
 
@@ -21,7 +22,8 @@ public sealed class ObjectiveStartSpell : Objective
   public ObjectiveStartSpell(int spellId, bool holderOnly, Legend? requiredLegend = null)
   {
     PlayerUnitEvents.Register(SpellEvent.Cast, OnCast, spellId);
-    Description = holderOnly ? $"Start casting {GetObjectName(spellId)}" : $"Anyone starts casting {GetObjectName(spellId)}";
+    Description = Loc.Format(holderOnly ? "Start casting {spell}" : "Anyone starts casting {spell}",
+      ("{spell}", GetObjectName(spellId)));
     _holderOnly = holderOnly;
     _requiredLegend = requiredLegend;
   }

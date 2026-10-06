@@ -1,0 +1,14 @@
+{
+  "OldId": "Bspe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "邪恶增幅"
+    }
+  ],
+  "NewId": "B089"
+}

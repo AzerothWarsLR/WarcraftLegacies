@@ -11,18 +11,6 @@ public static class WarsongSpells
   /// </summary>
   public static void Setup()
   {
-    var voodooHex = new InspireMadness(ABILITY_MD28_VOODOO_HEX_ROKHAN)
-    {
-      Radius = 400,
-      CountBase = 5,
-      CountLevel = 5,
-      Duration = 60,
-      ChancePercentage = 60.0f,
-      EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
-      EffectScaleTarget = 0.5f
-    };
-    SpellRegistry.Register(voodooHex);
-
     var stormEarthandFire = new StormEarthandFire(ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
     {
       UnitType1 = UNIT_NPN4_FIRE_CHEN,

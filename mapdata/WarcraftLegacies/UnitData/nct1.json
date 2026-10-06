@@ -9,6 +9,11 @@
       "Value": 30
     },
     {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\4x4Default.tga"
+    },
+    {
       "Id": "ussc",
       "Type": 1,
       "Value": 1

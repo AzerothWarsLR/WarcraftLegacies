@@ -1,0 +1,18 @@
+{
+  "OldId": "Asta",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（霜狼 - 巫医）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "静滞陷阱"
+    }
+  ]
+}

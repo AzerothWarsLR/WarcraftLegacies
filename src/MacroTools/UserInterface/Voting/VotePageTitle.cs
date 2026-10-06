@@ -1,4 +1,4 @@
-using MacroTools.UserInterface.Frames;
+﻿using MacroTools.UserInterface.Frames;
 
 namespace MacroTools.UserInterface.Voting;
 

@@ -1,0 +1,33 @@
+{
+  "OldId": "Reib",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "附魔弓弦"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究附魔弓弦"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "强化游侠、远行者、弩车和希尔瓦娜斯，使其攻击距离提高 150，攻击速度提高 5%。"
+    }
+  ],
+  "NewId": "R01R"
+}

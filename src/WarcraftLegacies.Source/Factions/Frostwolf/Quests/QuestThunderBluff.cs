@@ -10,7 +10,7 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Factions.Frostwolf.Quests;
 
 /// <summary>
-/// Kill the centaur leader in Mulgore and bring <see cref="FrostwolfLegends.Cairne"/> to <see cref="FrostwolfLegends.ThunderBluff"/> to unlock it
+/// Kill the centaur leader in Mulgore and bring Cairne Bloodhoof to <see cref="FrostwolfLegends.ThunderBluff"/> to unlock it
 /// </summary>
 public sealed class QuestThunderBluff : QuestData
 {

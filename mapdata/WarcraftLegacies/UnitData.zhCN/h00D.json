@@ -1,0 +1,24 @@
+{
+  "OldId": "hhou",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "精灵符文石"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "保护奎尔萨拉斯免受攻击。"
+    }
+  ],
+  "NewId": "h00D"
+}

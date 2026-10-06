@@ -4,6 +4,7 @@ using System.Linq;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
 using MacroTools.GameTime;
+using MacroTools.Localization;
 using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
@@ -77,6 +78,8 @@ public sealed class ControlPointManager
   /// An ability that grants <see cref="ControlPoint"/>s additional hit point regeneration.
   /// </summary>
   public required int RegenerationAbility { get; init; }
+
+  public HashSet<player> NonCapturingPlayers { get; } = new();
 
   /// <summary>
   /// An ability that grants <see cref="ControlPoint"/>s resistance against Piercing damage.
@@ -176,7 +179,7 @@ public sealed class ControlPointManager
       controlPoint.Unit.IsInvulnerable = true;
     }
 
-    controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
+    controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} {Loc.Get("gold/min")})";
     controlPoint.Unit.AddAbility(PiercingResistanceAbility);
 
     RegisterIncome(controlPoint);
@@ -212,6 +215,12 @@ public sealed class ControlPointManager
     try
     {
       var attacker = @event.DamageSource;
+      if (Instance.NonCapturingPlayers.Contains(attacker.Owner))
+      {
+        @event.Damage = 0;
+        return;
+      }
+
       var hitPoints = controlPoint.Unit.Life - @event.Damage;
       if (hitPoints > 1)
       {

@@ -1,0 +1,29 @@
+{
+  "OldId": "hrif",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "技艺高超的神射手，也是火枪的爱好者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "枪手"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练枪手"
+    }
+  ],
+  "NewId": "h08Y"
+}

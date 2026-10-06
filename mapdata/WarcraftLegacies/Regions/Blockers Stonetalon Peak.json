@@ -1,0 +1,16 @@
+{
+  "Left": -19264,
+  "Bottom": -2176,
+  "Right": -17600,
+  "Top": -544,
+  "Name": "Blockers Stonetalon Peak",
+  "CreationNumber": 213,
+  "WeatherType": 0,
+  "AmbientSound": "",
+  "Color": {
+    "R": 255,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  }
+}

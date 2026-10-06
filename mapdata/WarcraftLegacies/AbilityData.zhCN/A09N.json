@@ -1,0 +1,19 @@
+{
+  "OldId": "Apig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（天灾 - 冰冠方尖碑）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "永久献祭"
+    }
+  ],
+  "NewId": "A09N"
+}

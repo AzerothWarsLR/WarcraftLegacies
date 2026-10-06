@@ -1,0 +1,19 @@
+{
+  "OldId": "nwgt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "恶魔传送门"
+    }
+  ],
+  "NewId": "n03C"
+}

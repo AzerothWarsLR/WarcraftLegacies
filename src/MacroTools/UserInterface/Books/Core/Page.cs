@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Localization;
 using MacroTools.UserInterface.Frames;
 
 namespace MacroTools.UserInterface.Books.Core;
@@ -17,7 +18,7 @@ public abstract class Page<TItem, TCard, TCardFactory> : Frame
 
   public int PageNumber
   {
-    set => _pageNumberFrame.Text = $"Page {value}";
+    set => _pageNumberFrame.Text = Loc.Format("Page {0}", ("{0}", value.ToString()));
   }
 
   protected Page(float width, float height, int rows, int columns, float yOffsetTop, float yOffsetBot) :

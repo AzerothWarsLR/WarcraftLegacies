@@ -1,0 +1,31 @@
+{
+  "OldId": "AUcb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（吉尔尼斯之镰）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "德鲁伊从附近召唤 3 只蜘蛛。这些蜘蛛无法被选为目标，也无法被控制，会自动攻击附近的敌人。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤蜘蛛"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤蜘蛛"
+    }
+  ],
+  "NewId": "A08Z"
+}

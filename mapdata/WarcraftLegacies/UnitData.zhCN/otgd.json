@@ -1,0 +1,19 @@
+{
+  "OldId": "otau",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（牛头人部族）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "牛头人卫兵"
+    }
+  ],
+  "NewId": "otgd"
+}

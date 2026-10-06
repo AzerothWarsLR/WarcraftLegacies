@@ -1,0 +1,18 @@
+{
+  "OldId": "nbdo",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙人监工"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "拥有霜冻吐息、虔诚光环与闪避的重型近战单位。"
+    }
+  ]
+}

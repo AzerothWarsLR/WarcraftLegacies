@@ -1,0 +1,19 @@
+{
+  "OldId": "Bpig",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "静电云"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "（风暴之云）"
+    }
+  ],
+  "NewId": "B05X"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "nlv2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪部落-祖鲁希德）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|n|n|cffffcc00可攻击地面与空中单位。|r"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练熔岩爪牙"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "熔岩爪牙"
+    }
+  ],
+  "NewId": "n09L"
+}

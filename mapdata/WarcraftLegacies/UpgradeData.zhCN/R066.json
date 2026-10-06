@@ -1,0 +1,26 @@
+{
+  "OldId": "Robf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（邪部落）"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究燃油"
+    },
+    {
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "燃油"
+    }
+  ],
+  "NewId": "R066"
+}

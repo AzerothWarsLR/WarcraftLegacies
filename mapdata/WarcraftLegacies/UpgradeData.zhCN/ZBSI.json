@@ -1,0 +1,33 @@
+{
+  "OldId": "Rnsb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "（伊利达雷）"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "研究海巫"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "海巫"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "允许在背叛者之池、背叛者尖塔和背叛者堡垒中训练海巫。"
+    }
+  ],
+  "NewId": "ZBSI"
+}

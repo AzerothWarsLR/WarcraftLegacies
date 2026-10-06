@@ -1,0 +1,31 @@
+{
+  "OldId": "SCae",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（巨魔敌对）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "祖尔法拉克光环"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "祖尔法拉克光环"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使<S00J,Area1>范围内单位的移动速度提高<S00J,DataA1,%>%。"
+    }
+  ],
+  "NewId": "S00J"
+}

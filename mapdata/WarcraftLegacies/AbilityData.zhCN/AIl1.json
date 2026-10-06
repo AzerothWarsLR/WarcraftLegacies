@@ -1,0 +1,13 @@
+{
+  "OldId": "AIl1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "物品 - 生命值加成"
+    }
+  ]
+}

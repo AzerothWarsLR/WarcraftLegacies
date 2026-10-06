@@ -133,7 +133,7 @@
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN.MagnaArchmage.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_MagnaArchmage.blp"
     },
     {
       "Id": "ubpx",
@@ -142,7 +142,7 @@
     {
       "Id": "ussi",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN.MagnaArchmage.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_MagnaArchmage.blp"
     },
     {
       "Id": "ua1m",

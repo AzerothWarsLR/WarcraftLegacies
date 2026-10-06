@@ -1,0 +1,65 @@
+{
+  "OldId": "ANhs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（塞纳留斯之魂）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "翡翠治疗"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "学习翡翠治疗 - [|cffffcc00等级 %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "喷出多波治疗迷雾，为目标区域内的友方单位恢复生命值。|n|n|cffffcc001级|r - 3 波，每波恢复 60 点生命值。|n|cffffcc002级|r - 3 波，每波恢复 75 点生命值。|n|cffffcc003级|r - 3 波，每波恢复 90 点生命值。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "翡翠治疗 - [|cffffcc001级|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "翡翠治疗 - [|cffffcc002级|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "翡翠治疗 - [|cffffcc003级|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喷出 3 波治疗迷雾，每波为一定区域内的所有友方单位恢复 60 点生命值。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喷出 3 波治疗迷雾，每波为一定区域内的所有友方单位恢复 75 点生命值。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "喷出 3 波治疗迷雾，每波为一定区域内的所有友方单位恢复 90 点生命值。"
+    }
+  ],
+  "NewId": "A0C6"
+}

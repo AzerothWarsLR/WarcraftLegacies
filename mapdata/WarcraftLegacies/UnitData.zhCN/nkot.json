@@ -1,0 +1,18 @@
+{
+  "OldId": "nkot",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可猛击敌人的轻型近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "狗头人隧道工"
+    }
+  ]
+}

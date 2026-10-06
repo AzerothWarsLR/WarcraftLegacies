@@ -1,0 +1,18 @@
+{
+  "OldId": "ndtb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "狂乱的掷斧者。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "黑暗巨魔狂战士"
+    }
+  ]
+}

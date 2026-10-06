@@ -1,0 +1,28 @@
+{
+  "OldId": "nvdw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空编织者"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "轻型远程单位，具有相位变换和霜冻攻击。可学习虚空之鞭。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练虚空编织者"
+    }
+  ]
+}

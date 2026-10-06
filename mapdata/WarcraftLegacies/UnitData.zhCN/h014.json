@@ -1,0 +1,19 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "贸易站"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（海上）"
+    }
+  ],
+  "NewId": "h014"
+}

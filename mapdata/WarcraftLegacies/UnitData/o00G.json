@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0DS,A0EF,S00G,A08P,A0PE,A0XM,A03T,A0MM,A0QG,Aion"
+      "Value": "A08P,TP72,A000,A03T,A16V,TP73,Aion"
     },
     {
       "Id": "ua1t",
@@ -18,7 +18,7 @@
     {
       "Id": "udaa",
       "Type": 3,
-      "Value": "A0XM"
+      "Value": "A000"
     },
     {
       "Id": "ubld",
@@ -57,7 +57,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 23
+      "Value": 30
     },
     {
       "Id": "ufoo",
@@ -69,7 +69,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1075
+      "Value": 1275
     },
     {
       "Id": "umpi",
@@ -104,7 +104,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R021,TP17,R01U,R01Z,R00X,Rhme,Rhar,Ropm,Rguv"
+      "Value": "R021,R003,R01U,R01Z,R00X,Rhme,Rhar,Ropm,Rguv"
     },
     {
       "Id": "ucs1",
@@ -114,12 +114,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "o02S"
-    },
-    {
-      "Id": "udep",
-      "Type": 3,
-      "Value": "o06R"
+      "Value": "ofrt,RZ02"
     },
     {
       "Id": "uico",
@@ -128,12 +123,12 @@
     },
     {
       "Id": "ubpx",
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(Warsong)"
+      "Value": "(Orcish Horde)"
     },
     {
       "Id": "umdl",

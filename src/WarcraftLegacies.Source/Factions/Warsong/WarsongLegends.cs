@@ -1,36 +1,15 @@
 ﻿using MacroTools.Legends;
-using MacroTools.PreplacedWidgets;
 
 namespace WarcraftLegacies.Source.Factions.Warsong;
 
 public sealed class WarsongLegends
 {
-  public LegendaryHero GromHellscream { get; }
-  public LegendaryHero Rokhan { get; }
   public LegendaryHero Saurfang { get; }
-  public LegendaryHero Garrosh { get; }
   public LegendaryHero Gargok { get; }
   public LegendaryHero Mannoroth { get; }
-  public Capital StonemaulKeep { get; }
-  public Capital Orgrimmar { get; }
 
   public WarsongLegends()
   {
-    GromHellscream = new LegendaryHero("Grom Hellscream")
-    {
-      UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG,
-      StartingArtifacts = new()
-      {
-        new(item.Create(ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
-      }
-    };
-
-    Rokhan = new LegendaryHero("Rokhan")
-    {
-      UnitType = UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG,
-      StartingXp = 1000
-    };
-
     Saurfang = new LegendaryHero("Varok Saurfang")
     {
       UnitType = UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_WARSONG,
@@ -46,41 +25,16 @@ public sealed class WarsongLegends
       StartingXp = 41800
     };
 
-    Garrosh = new LegendaryHero("Garrosh Hellscream")
-    {
-      UnitType = UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
-      StartingXp = 8800
-    };
-
     Gargok = new LegendaryHero("Gargok")
     {
       UnitType = UNIT_O005_WARSONG_BATTLEMASTER_WARSONG
-    };
-
-    StonemaulKeep = new Capital
-    {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_O004_STONEMAUL_KEEP),
-      DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
-      Essential = true
-    };
-
-    Orgrimmar = new Capital
-    {
-      Unit = AllPreplacedWidgets.Units.Get(UNIT_O01B_ORGRIMMAR_WARSONG),
-      DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
-      Essential = true
     };
   }
 
   public void RegisterLegends()
   {
-    LegendaryHeroManager.Register(GromHellscream);
-    LegendaryHeroManager.Register(Rokhan);
     LegendaryHeroManager.Register(Saurfang);
-    LegendaryHeroManager.Register(Garrosh);
     LegendaryHeroManager.Register(Mannoroth);
     LegendaryHeroManager.Register(Gargok);
-    CapitalManager.Register(StonemaulKeep);
-    CapitalManager.Register(Orgrimmar);
   }
 }

@@ -1,0 +1,31 @@
+{
+  "OldId": "Ainf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（邪部落 - 邪能术士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "邪恶护甲"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "邪恶护甲"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使目标友方单位的护甲提高<A0F8,DataB1>点，持续<A0F8,Dur1>秒，但会消耗其当前生命值的 6%。"
+    }
+  ],
+  "NewId": "A0F8"
+}

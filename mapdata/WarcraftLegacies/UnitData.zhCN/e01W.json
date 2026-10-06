@@ -1,0 +1,24 @@
+{
+  "OldId": "etoe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德鲁伊其他）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "莎拉达希尔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "升级为永恒之树，以解锁更多类型的建筑和单位。"
+    }
+  ],
+  "NewId": "e01W"
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": "ACf2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（红色 - 冰雪亡魂狮鹫 死亡骑士）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "霜甲术"
+    }
+  ]
+}

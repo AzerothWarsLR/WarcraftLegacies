@@ -1,0 +1,29 @@
+{
+  "OldId": "nndr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练虚空龙"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "来自虚空的腐化巨龙。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "虚空龙"
+    }
+  ],
+  "NewId": "n051"
+}

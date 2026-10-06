@@ -1,0 +1,29 @@
+{
+  "OldId": "ovln",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼 商店）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "创建一个可购买物品的商店。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "圣物地窟"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造圣物地窟"
+    }
+  ],
+  "NewId": "o057"
+}

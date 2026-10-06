@@ -1,0 +1,14 @@
+{
+  "OldId": "XHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "虚空打击（效果）"
+    }
+  ],
+  "NewId": "X003"
+}

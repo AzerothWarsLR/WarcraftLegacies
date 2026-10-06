@@ -1,0 +1,19 @@
+{
+  "OldId": "BNsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "压制"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位被压制，在短时间内无法攻击。"
+    }
+  ],
+  "NewId": "B0AV"
+}

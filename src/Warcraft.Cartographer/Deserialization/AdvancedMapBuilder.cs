@@ -118,8 +118,21 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
       return;
     }
 
-    map.Info.MapName = $"Warcraft Legacies {version}";
-    map.Info.LoadingScreenTitle = $"Warcraft Legacies {version}";
+    // The titles come from Info.json, which a locale overlay may replace. Appending the version rather than
+    // writing the whole title keeps a localised name intact and leaves an English build, whose Info.json
+    // already ends in the version, untouched.
+    map.Info.MapName = WithVersion(map.Info.MapName, version);
+    map.Info.LoadingScreenTitle = WithVersion(map.Info.LoadingScreenTitle, version);
+  }
+
+  private static string? WithVersion(string? title, string version)
+  {
+    if (string.IsNullOrEmpty(title))
+    {
+      return $"Warcraft Legacies {version}";
+    }
+
+    return title.EndsWith(version, StringComparison.Ordinal) ? title : $"{title} {version}";
   }
 
   /// <summary>

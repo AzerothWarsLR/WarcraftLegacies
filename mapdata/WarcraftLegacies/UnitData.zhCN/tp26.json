@@ -1,0 +1,19 @@
+{
+  "OldId": "hwtw",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（收获女巫）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "荆棘藤蔓"
+    }
+  ],
+  "NewId": "tp26"
+}

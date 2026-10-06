@@ -1,0 +1,18 @@
+{
+  "OldId": "nrwm",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "瓦拉斯塔兹"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "可吞噬敌人并对魔法免疫的重型远程飞行单位。"
+    }
+  ]
+}

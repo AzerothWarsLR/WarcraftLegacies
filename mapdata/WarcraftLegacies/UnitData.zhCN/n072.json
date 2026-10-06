@@ -1,0 +1,19 @@
+{
+  "OldId": "nfsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "邪恶祭司海克斯"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "精通治疗魔法的高阶祭司。投掷火焰弹。可施放驱散魔法与心灵之火。"
+    }
+  ],
+  "NewId": "n072"
+}

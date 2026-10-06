@@ -1,0 +1,19 @@
+{
+  "OldId": "BHab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "祖达克光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到祖达克光环的影响，法力恢复速度提高 0.8 点。"
+    }
+  ],
+  "NewId": "B08W"
+}

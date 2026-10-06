@@ -1,0 +1,29 @@
+{
+  "OldId": "hmtt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "步行机甲"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "远程攻城载具，擅长击落空中单位。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练步行机甲"
+    }
+  ],
+  "NewId": "h09H"
+}

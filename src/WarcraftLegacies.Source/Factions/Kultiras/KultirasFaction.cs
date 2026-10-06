@@ -82,7 +82,7 @@ public sealed class KultirasFaction : Faction
           frostwolf
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Kultiras.LegendAdmiral, AllLegends.Frostwolf.Thrall)
+          new ObjectiveLegendMeetsLegend(AllLegends.Kultiras.LegendAdmiral, AllLegends.Orc.Thrall)
         }));
   }
 }

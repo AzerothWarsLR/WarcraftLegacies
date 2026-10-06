@@ -1,0 +1,19 @@
+{
+  "OldId": "BNab",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "致残打击"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到致残打击的打击，攻击速度和移动速度降低，并正在受到伤害。"
+    }
+  ],
+  "NewId": "B00Z"
+}

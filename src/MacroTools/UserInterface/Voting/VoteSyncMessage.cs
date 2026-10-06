@@ -1,4 +1,4 @@
-namespace MacroTools.UserInterface.Voting;
+﻿namespace MacroTools.UserInterface.Voting;
 
 internal sealed class VoteSyncMessage
 {

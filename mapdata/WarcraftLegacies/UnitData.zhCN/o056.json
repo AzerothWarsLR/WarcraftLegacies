@@ -1,0 +1,29 @@
+{
+  "OldId": "otrb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（德莱尼 农场）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "提供 10 人口，可提高可训练单位的数量上限。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奥术之泉"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造奥术之泉"
+    }
+  ],
+  "NewId": "o056"
+}

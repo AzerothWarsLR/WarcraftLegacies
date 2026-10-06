@@ -1,0 +1,31 @@
+{
+  "OldId": "ANcl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（军团 - 阿克蒙德）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "黑暗契约"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "黑暗契约"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "杀死一个目标单位，将其 100% 的生命值转移给污染者。"
+    }
+  ],
+  "NewId": "A0A0"
+}

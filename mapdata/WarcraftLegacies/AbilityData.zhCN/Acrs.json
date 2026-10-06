@@ -1,0 +1,24 @@
+{
+  "OldId": "Acrs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（炼金术士。红色 - 女妖希尔瓦娜斯，女妖）"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "诅咒一名敌方单位，使其攻击有<Acrs,DataA2,%>%的几率落空。|n持续<Acrs,Dur2>秒。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "诅咒"
+    }
+  ]
+}

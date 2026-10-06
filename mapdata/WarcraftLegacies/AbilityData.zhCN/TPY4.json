@@ -1,0 +1,19 @@
+{
+  "OldId": "AIil",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "幻影步"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（假单位）"
+    }
+  ],
+  "NewId": "TPY4"
+}

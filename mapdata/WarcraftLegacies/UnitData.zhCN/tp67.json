@@ -1,0 +1,24 @@
+{
+  "OldId": "oeye",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练岗哨守卫"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "警戒结界"
+    }
+  ],
+  "NewId": "tp67"
+}

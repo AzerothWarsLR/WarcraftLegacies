@@ -1,0 +1,54 @@
+{
+  "OldId": "ANrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（拉格纳罗斯）"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "召唤 2 波迅猛的火焰，对区域内的单位造成伤害。每波火焰都会造成初始伤害，然后灼烧敌人<vSW2,Dur1>秒。 |n|n|cffffcc001级|r - <vSW2,DataB1>点波次伤害，每秒<vSW2f,DataE1>点伤害。 |n|cffffcc002级|r - <vSW2,DataB2>点波次伤害，每秒<vSW2,DataE2>点伤害。 |n|cffffcc003级|r - <vSW2,DataB3>点波次伤害，每秒<vSW2,DataE3>点伤害。"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "火焰之雨 - [|cffffcc004级|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰，对区域内的单位造成伤害。每波造成<ANrf,DataB4>点初始伤害，并在<ANrf,Dur4>秒内每秒造成<ANrf,DataE4>点伤害。|n持续<ANrf,DataA4>波。"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰，对区域内的单位造成伤害。每波造成<vSW2,DataB1>点初始伤害，并在<vSW2,Dur1>秒内每秒造成<vSW2,DataE1>点伤害。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰，对区域内的单位造成伤害。每波造成<vSW2,DataB2>点初始伤害，并在<vSW2,Dur2>秒内每秒造成<vSW2,DataE2>点伤害。"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤数波火焰，对区域内的单位造成伤害。每波造成<vSW2,DataB3>点初始伤害，并在<vSW2,Dur3>秒内每秒造成<vSW2,DataE3>点伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "火焰之雨"
+    }
+  ],
+  "NewId": "vSW2"
+}

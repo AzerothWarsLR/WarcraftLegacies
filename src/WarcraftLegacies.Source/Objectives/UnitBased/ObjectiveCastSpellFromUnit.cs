@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WCSharp.Events;
 
@@ -20,7 +21,8 @@ public sealed class ObjectiveCastSpellFromUnit : Objective
   /// <param name="caster">The caster that must cast the spell.</param>
   public ObjectiveCastSpellFromUnit(int spellId, unit caster)
   {
-    Description = $"Cast {GetObjectName(spellId)} from {caster.Name}";
+    Description = Loc.Format("Cast {spell} from {caster}",
+      ("{spell}", GetObjectName(spellId)), ("{caster}", caster.Name));
     TargetWidget = caster;
     DisplaysPosition = true;
     _spellId = spellId;

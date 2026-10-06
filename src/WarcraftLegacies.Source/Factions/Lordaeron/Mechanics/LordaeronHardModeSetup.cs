@@ -1,4 +1,4 @@
-using MacroTools.ControlPoints;
+﻿using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;

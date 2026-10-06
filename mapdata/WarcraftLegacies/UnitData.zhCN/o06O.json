@@ -1,0 +1,24 @@
+{
+  "OldId": "ohwd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "集结战旗"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练集结战旗"
+    }
+  ],
+  "NewId": "o06O"
+}

@@ -13,7 +13,9 @@ public static class HintConfig
     Hint.Register(() => Loc.Get("Artifacts are unique items that can grant major advantages. You can find out where Artifacts are using the Artifact Menu at the top-left of your screen."));
     Hint.Register(() => Loc.Get("Some heroes can't be revived, and some can only be revived if you control certain capitals when they die."));
     Hint.Register(() => Loc.Get("If you have low FPS, try turning off your health bars."));
-    Hint.Register(() => Loc.Format("We have a thriving Discord community at {url}", ("{url}", "https://discord.gg//4eGZn")));
+    Hint.Register(() => Loc.Format("We have a thriving Discord community at {url}", ("{url}", "https://discord.gg/ubQM7PgaG")));
+    Hint.Register(() => Loc.Format("Find out more about Warcraft Legacies on our website at {url}", ("{url}", "https://warcraftlegacies.com/")));
+    Hint.Register(() => Loc.Format("You can support Warcraft Legacies on Patreon at {url}", ("{url}", "https://www.patreon.com/cw/WarcraftLegacies")));
     Hint.Register(() => Loc.Get("When a player leaves, their units are refunded, then their gold and hero experience are spread among their remaining allies."));
     Hint.Register(() => Loc.Get("There are water passageways at the edge of the map you can use to instantly move to the other side of the map."));
     Hint.Register(() => Loc.Get("Every faction can build an item shop that contains useful purchasable items."));
@@ -31,5 +33,6 @@ public static class HintConfig
       ("{unit}", GetObjectName(UNIT_H014_TRADING_POST_SEA))));
     Hint.Register(() => Loc.Get("Summoned units grant no experience when slain."));
     Hint.Register(() => Loc.Get("All players get bonus income for the first 10 turns. Use it to train a strong army, complete your starting quests, and secure Control Points."));
+    Hint.Register(() => Loc.Get("Type -smartfollow on to make units that follow a hero keep their formation and move smoothly instead of bunching up. Your choice is saved for future games."));
   }
 }

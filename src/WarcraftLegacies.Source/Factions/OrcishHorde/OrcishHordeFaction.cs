@@ -1,0 +1,331 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using MacroTools.Dialogues;
+using MacroTools.Extensions;
+using MacroTools.Factions;
+using MacroTools.GameTime;
+using MacroTools.Localization;
+using MacroTools.PreplacedWidgets;
+using MacroTools.Quests;
+using MacroTools.Researches;
+using MacroTools.Utils;
+using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
+using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
+using WarcraftLegacies.Source.Factions.TaurenTribes;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.QuestBased;
+using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.Shared.Researches;
+using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Factions.OrcishHorde;
+
+public sealed class OrcishHordeFaction : Faction
+{
+  private static readonly Dialogue _trollDialogue09 = new(
+    @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll09.flac",
+    "This island be sinking quick, we come with you, man!",
+    "Troll");
+
+  private static readonly Dialogue _trollDialogue10 = new(
+    @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll10.flac",
+    "We don't have much time.",
+    "Troll");
+
+  private static readonly Dialogue _trollDialogue11 = new(
+    @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll11.flac",
+    "You got a way off the island?",
+    "Troll");
+
+  private static readonly Dialogue _trollDialogue12 = new(
+    @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll12.flac",
+    "Eh, where the others go? Dey go with you?",
+    "Troll");
+
+  /// <summary>
+  /// One line is drawn at random (without replacement) each time a troll group is rescued, so with only 3
+  /// rescue spots but 4 lines, one goes unused each playthrough for a bit of variety.
+  /// </summary>
+  private readonly List<Dialogue> _unusedTrollDialogue = new()
+  {
+    _trollDialogue09, _trollDialogue10, _trollDialogue11, _trollDialogue12
+  };
+
+  /// <inheritdoc />
+  public OrcishHordeFaction() : base("Orcish Horde", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
+  {
+    TraditionalTeam = TeamSetup.Horde;
+    ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
+    StartingGold = new StartingGold
+    {
+      Instant = 200,
+      Income = 200,
+      Turns = 10
+    };
+    CinematicMusic = "SadMystery";
+    IntroText = () => Loc.Format(
+      "You are playing as the battle-hardened {faction}.\n\nYou begin stranded on an island off the coast of Kalimdor, your fleet battered by the crossing. Protect your Great Hall and hold out against the murlocs of the Sea Witch until the ships are seaworthy again. Save all that you can, for whatever survives will sail with you to the mainland.\n\nOnce you reach Durotar, it falls to you to found Orgrimmar, a new home for the Horde.\n\nThe Night Elves will not welcome you. Stand with your Tauren allies, drive into Ashenvale, and burn the World Tree if you must.",
+      ("{faction}", $"{PrefixCol}{Loc.Get("Orcish Horde")}|r"));
+    Nicknames = new List<string>
+    {
+      "horde",
+      "oh",
+      "orc",
+      "orcs"
+    };
+    ProcessObjectInfo(OrcishHordeObjectInfo.GetAllObjectLimits());
+    RegisterFactionDependentInitializer<TaurenTribesFaction>(RegisterTaurenDialogue);
+  }
+
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    RegisterResearches();
+    OrcishHordeSpells.Setup();
+    OrcishHordeTraits.Setup();
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    RegisterQuests();
+    RegisterDialogue();
+  }
+
+  /// <inheritdoc />
+  public override void OnNotPicked()
+  {
+    Regions.DurotarUnlock.CleanupNeutralPassiveUnits();
+    base.OnNotPicked();
+  }
+
+  private void RegisterDialogue()
+  {
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Grunt01",
+            "Warchief, our ship sustained heavy damage when we passed through the raging maelstrom. It's unsalvageable.",
+            "Grunt"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Thrall02",
+            "I knew it. Can we confirm our location? Is this Kalimdor?",
+            "Thrall"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Grunt03",
+            "We traveled due west, as you instructed. This should be it.",
+            "Grunt")),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Orc.Thrall, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
+
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new Dialogue(@"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
+        "Yes! I feel the power once again! Come, my warriors; drink from the dark waters, and you will be reborn!",
+        "Grom Hellscream"),
+      new[] { this },
+      new List<Objective>
+      {
+        new ObjectiveControlLegend(AllLegends.Orc.GromHellscream, false)
+        {
+          EligibleFactions = new List<Faction> { this }
+        },
+        new ObjectiveControlCapital(AllLegends.Neutral.FountainOfBlood, false)
+        {
+          EligibleFactions = new List<Faction> { this }
+        }
+      }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc08\O08Grom33",
+            "Thrall... I see clearly now.  I'm... sorry.  I am so sorry..",
+            "Grom Hellscream")),
+        new[] { this },
+        new[]
+        {
+          new ObjectiveControlLegend(AllLegends.Orc.GromHellscream, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
+  }
+
+  private void RegisterTaurenDialogue(TaurenTribesFaction tauren)
+  {
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Thrall25",
+            "Who are you, warrior?",
+            "Thrall"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar26",
+            "I am Rexxar, last son of the Mok'Nathal.",
+            "Rexxar")),
+        new Faction[] { this, tauren },
+        new[]
+        {
+          new ObjectiveLegendMeetsLegend(AllLegends.Orc.Thrall, AllLegends.Tauren.Rexxar)
+        }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new DialogueSequence(new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Cairne23",
+            "I am Cairne, chief of the Bloodhoof tauren. You greenskins fight with both savagery and valor. I am intrigued.",
+            "Cairne Bloodhoof"),
+          new Dialogue(
+            @"Sound\Dialogue\OrcCampaign\Orc01\O01Thrall24",
+            "I am Thrall, and these are my brethren, the orcs. We've come seeking the destiny promised to us.",
+            "Thrall")),
+        new Faction[] { this, tauren },
+        new[]
+        {
+          new ObjectiveLegendMeetsLegend(AllLegends.Tauren.CairneBloodhoof, AllLegends.Orc.Thrall)
+        }));
+  }
+
+  private void RegisterQuests()
+  {
+    var greatHall = AllPreplacedWidgets.Units.GetClosest(UNIT_OGRE_GREAT_HALL_ORCISH_HORDE_T1, -2720f, -8544f);
+
+    var shipPositions = new List<Point> { new(-2368f, -9600f), new(-3136f, -9664f) };
+    var shipPeons = shipPositions.Select(SetupShipRepairPeon).ToList();
+
+    var quest = new QuestCountdownToExtinction(greatHall, Regions.Darkspear_Isles, Regions.Horde_Landing_Durotar,
+      Regions.DurotarUnlock)
+    {
+      ShipPositions = shipPositions,
+      ShipPeons = shipPeons
+    };
+    StartingQuest = AddQuest(quest);
+
+    new SeaWitchAssault(this, quest, greatHall, Regions.Darkspear_Isles, Regions.Sea_Witch_Spawn_1,
+      Regions.Sea_Witch_Spawn_2, Regions.Sea_Witch_Spawn_3);
+
+    var questOrgrimmar = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, this, quest));
+
+    var questCrossroads = new QuestCrossroads(Regions.Crossroads);
+    questCrossroads.AddObjective(new ObjectiveQuestResolved(questOrgrimmar)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questCrossroads);
+
+    var questSenjinIsles = new QuestSenjinIsles(AllLegends.Orc.Voljin);
+    questSenjinIsles.AddObjective(new ObjectiveQuestResolved(questOrgrimmar)
+    {
+      Progress = QuestProgress.Undiscovered,
+      ShowsInQuestLog = false,
+      ShowsInPopups = false
+    });
+    AddQuest(questSenjinIsles);
+
+    var questSlayCenarius = AddQuest(new QuestSlayCenarius(questOrgrimmar));
+    var questDemolishElfCities = AddQuest(new QuestDemolishElfCities(questSlayCenarius));
+    var questThrallMaelstrom = AddQuest(new QuestThrallMaelstrom(AllLegends.Orc.Thrall, questOrgrimmar));
+    var questWarsongHold = AddQuest(new QuestWarsongHold(questDemolishElfCities));
+    AddQuest(new QuestFreeNerzhul(AllLegends.Scourge.TheFrozenThrone, AllLegends.Orc.Thrall, questWarsongHold, questDemolishElfCities));
+
+    RegisterTrollRescue(Regions.Troll_Rescue_1);
+    RegisterTrollRescue(Regions.Troll_Rescue_2);
+    RegisterTrollRescue(Regions.Troll_Rescue_3);
+
+    SetupInitialTowerAssault();
+  }
+
+  private const float InitialTowerAssaultMurlocHealth = 200f;
+
+  private static void SetupInitialTowerAssault()
+  {
+    var tower = AllPreplacedWidgets.Units.GetClosest(UNIT_OWTW_WATCH_TOWER_ORCISH_HORDE_TOWER, -2488.3f, -9027.9f);
+    var murlocOne = AllPreplacedWidgets.Units.GetClosest(UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, -2438.3f,
+      -8977.9f);
+    var murlocTwo = AllPreplacedWidgets.Units.GetClosest(UNIT_O07B_MURLOC_TIDERUNNER_ORCISH_HORDE, -2538.3f,
+      -9077.9f);
+
+    GameTimeManager.RegisterOnTurn(1, () =>
+    {
+      murlocOne.Life = InitialTowerAssaultMurlocHealth;
+      murlocTwo.Life = InitialTowerAssaultMurlocHealth;
+      murlocOne.IssueOrder(ORDER_ATTACK, tower);
+      murlocTwo.IssueOrder(ORDER_ATTACK, tower);
+    });
+  }
+
+  private static unit SetupShipRepairPeon(Point ship)
+  {
+    var peon = AllPreplacedWidgets.Units.GetClosest(UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, ship.X, ship.Y);
+    peon.IsInvulnerable = true;
+    GameTimeManager.RegisterOnTurn(1, () => peon.SetAnimation("work"));
+    return peon;
+  }
+
+  private void RegisterTrollRescue(Rectangle rescueRegion)
+  {
+    var sentryWard = AllPreplacedWidgets.Units.GetClosest(UNIT_OEYE_SENTRY_WARD_FROSTWOLF_WITCH_DOCTOR,
+      rescueRegion.Center.X, rescueRegion.Center.Y);
+    sentryWard.IsInvulnerable = true;
+
+    var alreadyRescued = false;
+    var enterTrigger = trigger.Create();
+    enterTrigger.RegisterEnterRegion(rescueRegion.Region);
+    enterTrigger.AddAction(() =>
+    {
+      if (alreadyRescued || @event.Unit.Owner != Player)
+      {
+        return;
+      }
+
+      var rescuedUnits = GlobalGroup.EnumUnitsInRect(rescueRegion)
+        .Where(rescuable => rescuable.Owner == player.NeutralPassive ||
+                             rescuable.UnitType == UNIT_OEYE_SENTRY_WARD_FROSTWOLF_WITCH_DOCTOR)
+        .ToList();
+      if (rescuedUnits.Count == 0)
+      {
+        return;
+      }
+
+      alreadyRescued = true;
+      Player.RescueGroup(rescuedUnits);
+      PlayRandomTrollDialogue();
+    });
+  }
+
+  private void PlayRandomTrollDialogue()
+  {
+    if (_unusedTrollDialogue.Count == 0)
+    {
+      return;
+    }
+
+    var index = GetRandomInt(0, _unusedTrollDialogue.Count - 1);
+    var dialogue = _unusedTrollDialogue[index];
+    _unusedTrollDialogue.RemoveAt(index);
+    Player?.QueueDialogue(dialogue);
+  }
+
+  private void RegisterResearches()
+  {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_RZ02_BLADEMASTERS_ORCISH_HORDE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_O00G_BLADEMASTER_ORCISH_HORDE, 6);
+        }
+      },
+      new CustomResearch(UPGRADE_RZ03_KOR_KRON_ELITES_ORCISH_HORDE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_N03F_KOR_KRON_ELITE_ORCISH_HORDE_ELITE, 6);
+        }
+      });
+  }
+}

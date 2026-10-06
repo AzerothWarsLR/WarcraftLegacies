@@ -1,0 +1,33 @@
+{
+  "OldId": "Ewrd",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（哨兵）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "守望者领袖"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "灵巧型英雄，擅长近身战斗并在战斗中进退自如。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤玛维"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "玛维·影歌"
+    }
+  ]
+}

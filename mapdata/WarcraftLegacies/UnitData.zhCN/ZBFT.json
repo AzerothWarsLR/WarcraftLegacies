@@ -1,0 +1,29 @@
+{
+  "OldId": "unp2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾 - 空置）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "冰封王座"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "冰封与黑暗的堡垒，冰封王座曾将邪恶的巫妖王耐奥祖囚禁在其冰封深处，散发着冰冷的恐惧与通灵之力。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "冰封王座"
+    }
+  ],
+  "NewId": "ZBFT"
+}

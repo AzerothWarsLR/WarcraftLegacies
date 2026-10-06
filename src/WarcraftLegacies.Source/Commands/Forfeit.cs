@@ -16,7 +16,7 @@ public sealed class Forfeit : Command
 {
   private static readonly Dictionary<Team, HashSet<player>> _ffVotesByTeam = new();
 
-  private const int VotesRequired = 6;
+  private const int VotesRequired = 5;
   private const int ForfeitAllowedTurn = 10;
 
   public override string CommandText => "ff";
@@ -117,7 +117,7 @@ public sealed class Forfeit : Command
       {
         player.DisplayTextTo(Loc.Format(
           "{team} has forfeited the game.|cFFFF0000The game will end in 10 seconds.|r",
-          ("{team}", team.Name)));
+          ("{team}", team.LocalizedName)));
       }
       WCSharp.Events.PeriodicEvents.AddPeriodicEvent(() =>
       {

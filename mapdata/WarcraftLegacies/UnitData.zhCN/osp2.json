@@ -1,0 +1,23 @@
+{
+  "OldId": "osp2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（洛坎 - 沃金 - 等级 2）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练毒蛇结界"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "毒蛇结界"
+    }
+  ]
+}

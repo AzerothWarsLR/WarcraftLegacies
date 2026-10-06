@@ -1,0 +1,14 @@
+{
+  "OldId": "BEia",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "巫毒恢复（施法者）"
+    }
+  ],
+  "NewId": "B06G"
+}

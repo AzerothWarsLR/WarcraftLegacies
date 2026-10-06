@@ -1,0 +1,14 @@
+{
+  "OldId": "ngob",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "能量发生器"
+    }
+  ],
+  "NewId": "n0DS"
+}

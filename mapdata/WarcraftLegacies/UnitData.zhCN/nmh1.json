@@ -1,0 +1,13 @@
+{
+  "OldId": "nmh1",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "小屋"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "Nfir",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "首席炎魔领主"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "拉格纳罗斯"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长干扰法术并造成大量火焰伤害。可学习灵魂燃烧、召唤熔岩爪牙、焚身化骨和火山爆发。"
+    }
+  ],
+  "NewId": "N00D"
+}

@@ -1,0 +1,29 @@
+{
+  "OldId": "ndqn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（燃烧军团）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练魅魔"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "虚空中善于操控的恶魔。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "魅魔"
+    }
+  ],
+  "NewId": "n04K"
+}

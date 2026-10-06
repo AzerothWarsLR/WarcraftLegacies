@@ -1,0 +1,24 @@
+{
+  "OldId": "Basl",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "|cff00ff00能量波|r"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "若该单位在能量波效果下死亡，会爆发出治疗能量波。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "能量波"
+    }
+  ],
+  "NewId": "HWP3"
+}

@@ -1,0 +1,31 @@
+{
+  "OldId": "AOcr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（日怒、暴风城）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "当该单位造成伤害时，伤害的 40% 将转化为魔法值。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "奥术吸收"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "奥术吸收"
+    }
+  ],
+  "NewId": "A11N"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "BHfs",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "虚空打击"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位正处于虚空打击之中。"
+    }
+  ],
+  "NewId": "B00V"
+}

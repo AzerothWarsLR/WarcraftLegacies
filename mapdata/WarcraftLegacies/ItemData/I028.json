@@ -1,0 +1,78 @@
+{
+  "OldId": "ckng",
+  "NewId": "I028",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "A16A,AIa5"
+    },
+    {
+      "Id": "icid",
+      "Type": 3,
+      "Value": "A16A"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "idro",
+      "Value": 0
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "iusa",
+      "Value": 1
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBowOfElunesGrace.blp"
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "Increases Agility and can be used to turn the Hero invisible and move faster."
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bow of Elune\u0027s Grace"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Agility by 5. Can be used to turn the Hero invisible and increase their movement speed by 25% for 10 seconds. Attacking or casting a spell ends the invisibility.|n|cffffcc00Lore|r|n|cffffdeadA gift from the Moon Goddess to her High Priestess. Those who draw it are cloaked by Elune\u0027s light, and pass unseen through the darkest night."
+    }
+  ]
+}

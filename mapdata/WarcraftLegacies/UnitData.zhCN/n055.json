@@ -1,0 +1,29 @@
+{
+  "OldId": "nntt",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（伊利达雷 T3）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "主要建筑。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "背叛者堡垒"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "升级到背叛者堡垒"
+    }
+  ],
+  "NewId": "n055"
+}

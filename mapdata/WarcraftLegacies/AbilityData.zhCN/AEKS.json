@@ -1,0 +1,31 @@
+{
+  "OldId": "AHwe",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（德莱尼）"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "召唤 2 只具有硬化体肤的雷象攻击召唤者的敌人。|n|n|cffffcc00能攻击地面单位。"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "召唤雷象"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "召唤雷象"
+    }
+  ],
+  "NewId": "AEKS"
+}

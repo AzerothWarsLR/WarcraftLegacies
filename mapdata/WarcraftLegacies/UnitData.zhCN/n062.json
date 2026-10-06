@@ -1,0 +1,29 @@
+{
+  "OldId": "ngir",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（野外生物）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练伐木机"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "地精伐木机。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "伐木机"
+    }
+  ],
+  "NewId": "n062"
+}

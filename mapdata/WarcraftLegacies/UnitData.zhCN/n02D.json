@@ -1,0 +1,29 @@
+{
+  "OldId": "nwrg",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（铁炉堡）"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "训练战争魔像"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "重型抗魔法近战单位。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "战争魔像"
+    }
+  ],
+  "NewId": "n02D"
+}

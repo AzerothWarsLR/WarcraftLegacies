@@ -1,0 +1,37 @@
+{
+  "OldId": "ACcb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（紫色 - 术士。深绿色 - 特遣牧师）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "惩击"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "惩击"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "朝目标敌方单位发射一道神圣能量箭，造成 55 点伤害，并使目标昏迷 3 秒。"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "朝目标敌方单位发射一道神圣能量箭，造成 75 点伤害，并使目标昏迷 5 秒。"
+    }
+  ],
+  "NewId": "A0DO"
+}

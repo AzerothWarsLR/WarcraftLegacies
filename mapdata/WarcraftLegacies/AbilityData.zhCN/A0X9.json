@@ -1,0 +1,19 @@
+{
+  "OldId": "AIcb",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（熔火恶犬，黄色）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "灼热撕咬"
+    }
+  ],
+  "NewId": "A0X9"
+}

@@ -1,0 +1,44 @@
+{
+  "OldId": "Orkn",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活祖鲁希德"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（邪能 - 祖鲁希德终极形态）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "龙喉氏族的酋长"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "疲惫的祖鲁希德"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活祖鲁希德"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "旧部落的强大萨满，可以施放治疗链、嗜血图腾，并召唤虚空龙。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤疲惫者|cffffcc00祖|r鲁希德"
+    }
+  ],
+  "NewId": "O027"
+}

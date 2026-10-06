@@ -1,0 +1,31 @@
+{
+  "OldId": "ACba",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（卡拉赞光环）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "卡拉赞的秘密"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "卡拉赞的秘密"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使<VP32,Area1>半径内的单位法力恢复速度提高<VP32,DataA1>点。"
+    }
+  ],
+  "NewId": "VP32"
+}

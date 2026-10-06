@@ -1,0 +1,31 @@
+{
+  "OldId": "ACc2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（深绿色咒术师 - 暗礁元素。橙色 - 吉安娜的元素）"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "粉碎波浪(|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "发出一道巨浪，对一条直线上的每个敌方地面单位造成 60 点伤害，最多造成 200 点总伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "粉碎波浪"
+    }
+  ],
+  "NewId": "A00S"
+}

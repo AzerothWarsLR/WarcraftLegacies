@@ -1,0 +1,31 @@
+{
+  "OldId": "ANsi",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（恩佐斯）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "心灵迷惑"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "心灵迷惑"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "使小片目标区域内的所有敌人停止攻击，持续 30(10) 秒。"
+    }
+  ],
+  "NewId": "ANMC"
+}

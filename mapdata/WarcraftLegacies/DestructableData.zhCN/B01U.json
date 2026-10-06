@@ -1,0 +1,14 @@
+{
+  "OldId": "CTtr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "丛林树木墙"
+    }
+  ],
+  "NewId": "B01U"
+}

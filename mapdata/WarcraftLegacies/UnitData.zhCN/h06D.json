@@ -1,0 +1,29 @@
+{
+  "OldId": "hshy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（暴风城船坞）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "皇家港口"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "建造皇家港口"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "船只建造设施。"
+    }
+  ],
+  "NewId": "h06D"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "Afzy",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "（位置 2）"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "狂乱"
+    }
+  ],
+  "NewId": "A0GX"
+}

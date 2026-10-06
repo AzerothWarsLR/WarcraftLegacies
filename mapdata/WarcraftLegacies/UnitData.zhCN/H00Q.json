@@ -1,0 +1,44 @@
+{
+  "OldId": "Hkal",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "复活太阳王"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（奎尔萨拉斯）"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "奎尔萨拉斯国王"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "安纳斯特里亚·逐日者"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "复活太阳王"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "神秘型英雄，擅长吸收伤害并将其返还。"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "召唤安纳斯特里亚"
+    }
+  ],
+  "NewId": "H00Q"
+}

@@ -258,11 +258,6 @@
       "Value": 1
     },
     {
-      "Id": "umdl",
-      "Type": 3,
-      "Value": "war3mapImported\\Cthun.mdl"
-    },
-    {
       "Id": "uver",
       "Value": 0
     },
@@ -274,7 +269,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 4
+      "Value": 2
     },
     {
       "Id": "unam",
@@ -319,6 +314,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": "(Cthun)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\Cthun.mdl"
     }
   ]
 }

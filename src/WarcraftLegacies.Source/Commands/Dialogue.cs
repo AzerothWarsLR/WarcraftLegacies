@@ -1,5 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -37,6 +38,6 @@ public sealed class Dialogue : Command
     }
 
     PlayerData.ByHandle(commandUser).UpdatePlayerSetting("PlayDialogue", parsed.Value);
-    return $"Setting play dialogue option to {parsed.Value}.";
+    return Loc.Format("Setting play dialogue option to {value}.", ("{value}", parsed.Value.ToString()));
   }
 }

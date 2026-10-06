@@ -1,0 +1,14 @@
+{
+  "OldId": "Bliq",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "燃烧之箭"
+    }
+  ],
+  "NewId": "S060"
+}

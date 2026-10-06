@@ -1,0 +1,14 @@
+{
+  "OldId": "LTbx",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "bnam",
+      "Type": 3,
+      "Value": "帐篷"
+    }
+  ],
+  "NewId": "B012"
+}

@@ -1,0 +1,19 @@
+{
+  "OldId": "BEim",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "巫毒恢复"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位拥有巫毒恢复，附近友方地面单位持续得到治疗。"
+    }
+  ],
+  "NewId": "B06H"
+}

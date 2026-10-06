@@ -1,0 +1,14 @@
+{
+  "OldId": "ACnr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "控制点生命恢复"
+    }
+  ],
+  "NewId": "A0UT"
+}

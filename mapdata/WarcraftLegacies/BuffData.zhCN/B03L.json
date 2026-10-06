@@ -1,0 +1,24 @@
+{
+  "OldId": "Brej",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "机械工具包"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该建筑正由修补匠修理，生命值持续恢复。"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "机械工具包"
+    }
+  ],
+  "NewId": "B03L"
+}

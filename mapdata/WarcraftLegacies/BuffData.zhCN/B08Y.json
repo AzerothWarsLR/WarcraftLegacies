@@ -1,0 +1,19 @@
+{
+  "OldId": "BHad",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "祖阿曼光环"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "该单位受到祖阿曼光环的影响，护甲提高 3 点。"
+    }
+  ],
+  "NewId": "B08Y"
+}

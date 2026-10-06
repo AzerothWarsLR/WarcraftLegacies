@@ -1,10 +1,10 @@
+﻿using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Utils;
-using System.Linq;
 using WarcraftLegacies.Source.Factions.Gilneas.Quests;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Shared;

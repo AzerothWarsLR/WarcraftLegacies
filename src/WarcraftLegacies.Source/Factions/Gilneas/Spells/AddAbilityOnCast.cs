@@ -25,7 +25,7 @@ public sealed class AddAbilityOnCast : Spell
 
     var addSpellonCastBuff = new AddAbilitiesBuff(caster, caster, BuffApplicatorId, BuffId)
     {
-      Duration = Duration.Base + Duration.PerLevel * GetAbilityLevel(caster),
+      Duration = Duration.GetValue(GetAbilityLevel(caster)),
       AbilitiesToAdd = AbilitiesToAdd
     };
     BuffSystem.Add(addSpellonCastBuff);

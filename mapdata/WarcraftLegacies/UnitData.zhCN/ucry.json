@@ -1,0 +1,23 @@
+{
+  "OldId": "ucry",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "（天灾）"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "为天灾复生的蛛魔躯壳。"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "地穴恶魔"
+    }
+  ]
+}
