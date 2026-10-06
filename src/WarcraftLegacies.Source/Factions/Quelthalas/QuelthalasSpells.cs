@@ -23,12 +23,13 @@ public static class QuelthalasSpells
     {
       ManaBurned = new LeveledAbilityField<int>
       {
-        Base = 100,
-        PerLevel = 100
+        Base = 50,
+        PerLevel = 75
       },
       MaximumBounces = 7,
       BurnReductionPerBounce = 0.1f,
-      MaximumBounceRadius = 500
+      MaximumBounceRadius = 500,
+      BurnedManaDamageMultiplier = 3f,
     });
 
     SpellRegistry.Register(new SunfireBarrageSpell(ABILITY_A14K_SUNFIRE_BARRAGE_ANASTERIAN)

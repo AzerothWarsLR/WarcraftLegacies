@@ -24,7 +24,7 @@
     },
     {
       "Id": "udef",
-      "Value": 1
+      "Value": 0
     },
     {
       "Id": "ua1b",
@@ -44,7 +44,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1000
+      "Value": 1100
     },
     {
       "Id": "ulum",
@@ -56,7 +56,7 @@
     },
     {
       "Id": "umpm",
-      "Value": 500
+      "Value": 750
     },
     {
       "Id": "upri",
@@ -64,7 +64,7 @@
     },
     {
       "Id": "ua1r",
-      "Value": 550
+      "Value": 600
     },
     {
       "Id": "uhpr",
@@ -116,9 +116,9 @@
       "Value": "R09X"
     },
     {
-      "Id": "uabi",
-      "Type": 3,
-      "Value": "ACrk,Advm,Afak,Aave,Aabs,ACmi"
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.25
     },
     {
       "Id": "ubpx",

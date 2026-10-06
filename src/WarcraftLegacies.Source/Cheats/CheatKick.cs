@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Commands;
 using MacroTools.Factions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -29,11 +30,11 @@ public sealed class CheatKick : Command
     {
       if (!FactionManager.TryGetFactionByName(parameters[0], out var faction))
       {
-        return $"There is no faction named {parameters[0]}.";
+        return Loc.Format("There is no faction named {value}.", ("{value}", parameters[0]));
       }
 
       faction.Defeat();
-      return $"Kicking {nameof(Faction)} {faction.Name}.";
+      return Loc.Format("Kicking {faction}.", ("{faction}", faction.Name));
     }
     catch (Exception ex)
     {

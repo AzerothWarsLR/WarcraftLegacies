@@ -3,6 +3,7 @@ using System.Linq;
 using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -31,7 +32,7 @@ public sealed class CheatFaction : CompositeCommand
 
   private static string List(player whichPlayer)
   {
-    return "Factions:\n" + string.Join("\n", FactionManager.GetAllFactions()
+    return Loc.Get("Factions:\n") + string.Join("\n", FactionManager.GetAllFactions()
       .Select((faction, i) => $"[{i + 1}] [{CommandTargets.GetFactionKey(faction)}] {faction.Name}")
       .ToList());
   }
@@ -40,7 +41,7 @@ public sealed class CheatFaction : CompositeCommand
   {
     if (args.Length < 1)
     {
-      return "Usage: -faction set <faction>";
+      return Loc.Get("Usage: -faction set <faction>");
     }
 
     if (!CommandTargets.TryResolveFaction(args[0], out var faction, out var error))
@@ -49,17 +50,15 @@ public sealed class CheatFaction : CompositeCommand
     }
 
     whichPlayer.GetPlayerData().Faction = faction;
-    return $"Successfully changed faction to {faction.Name}.";
+    return Loc.Format("Successfully changed faction to {faction}.", ("{faction}", faction.Name));
   }
 
   private static string Control(player whichPlayer, string[] args, bool control)
   {
     if (args.Length < 1)
     {
-      return "Usage: -faction control|uncontrol <faction|all>";
+      return Loc.Get("Usage: -faction control|uncontrol <faction|all>");
     }
-
-    var givesOrTakes = control ? "Took" : "Surrendered";
 
     if (args[0] == "all")
     {
@@ -74,7 +73,7 @@ public sealed class CheatFaction : CompositeCommand
         player.SetPlayerAllianceStateFullControl(whichPlayer, control);
       }
 
-      return $"{givesOrTakes} control of all players.";
+      return Loc.Get(control ? "Took control of all players." : "Surrendered control of all players.");
     }
 
     if (!CommandTargets.TryResolveFaction(args[0], out var target, out var error))
@@ -84,19 +83,20 @@ public sealed class CheatFaction : CompositeCommand
 
     if (target.Player == null)
     {
-      return $"Nobody is playing {target.ColoredName}.";
+      return Loc.Format("Nobody is playing {faction}.", ("{faction}", target.ColoredName));
     }
 
     target.Player.SetPlayerAllianceStateFullControl(whichPlayer, control);
     whichPlayer.SetPlayerAllianceStateFullControl(target.Player, control);
-    return $"{givesOrTakes} control of {target.ColoredName}.";
+    return Loc.Format(control ? "Took control of {faction}." : "Surrendered control of {faction}.",
+      ("{faction}", target.ColoredName));
   }
 
   private static string Defeat(player whichPlayer, string[] args)
   {
     if (args.Length < 1)
     {
-      return "Usage: -faction defeat <faction>";
+      return Loc.Get("Usage: -faction defeat <faction>");
     }
 
     if (!CommandTargets.TryResolveFaction(args[0], out var faction, out var error))
@@ -107,7 +107,7 @@ public sealed class CheatFaction : CompositeCommand
     try
     {
       faction.Defeat();
-      return $"Defeating {faction.Name}.";
+      return Loc.Format("Defeating {faction}.", ("{faction}", faction.Name));
     }
     catch (Exception ex)
     {
@@ -119,7 +119,7 @@ public sealed class CheatFaction : CompositeCommand
   {
     if (args.Length < 2)
     {
-      return "Usage: -faction team <faction> <team>";
+      return Loc.Get("Usage: -faction team <faction> <team>");
     }
 
     if (!CommandTargets.TryResolveFaction(args[0], out var faction, out var error))
@@ -130,7 +130,7 @@ public sealed class CheatFaction : CompositeCommand
     var player = faction.Player;
     if (player == null)
     {
-      return "The specified faction is not occupied by a player and therefore cannot have a team.";
+      return Loc.Get("The specified faction is not occupied by a player and therefore cannot have a team.");
     }
 
     if (!CommandTargets.TryResolveTeam(args[1], out var team, out error))
@@ -139,6 +139,6 @@ public sealed class CheatFaction : CompositeCommand
     }
 
     player.GetPlayerData().SetTeam(team);
-    return $"Set {faction.Name}'s team to {team.Name}.";
+    return Loc.Format("Set {faction}'s team to {team}.", ("{faction}", faction.Name), ("{team}", team.LocalizedName));
   }
 }

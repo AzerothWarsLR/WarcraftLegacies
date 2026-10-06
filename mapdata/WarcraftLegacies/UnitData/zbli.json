@@ -48,7 +48,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0OM,ZBIB,A0WP,ZBFN,A07C,Aiun,A08P"
+      "Value": "ZBIB,A0WP,ZBFN,A07C,Aiun,A08P"
     },
     {
       "Id": "uhpm",
@@ -58,10 +58,6 @@
       "Id": "uhpr",
       "Type": 2,
       "Value": 1
-    },
-    {
-      "Id": "udef",
-      "Value": 3
     },
     {
       "Id": "ua1b",
@@ -166,11 +162,11 @@
     },
     {
       "Id": "umpm",
-      "Value": 375
+      "Value": 425
     },
     {
       "Id": "umpi",
-      "Value": 375
+      "Value": 425
     },
     {
       "Id": "umpr",

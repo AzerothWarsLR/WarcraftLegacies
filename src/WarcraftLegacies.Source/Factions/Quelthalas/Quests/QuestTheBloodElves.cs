@@ -45,6 +45,7 @@ public sealed class QuestTheBloodElves : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     completingFaction.Player?.DisplayUnitTypeAcquired(UnittypeId,
-      $"You can now train {GetObjectName(UnittypeId)}s from the {GetObjectName(BuildingId)}.");
+      Loc.Format("You can now train {unit}s from the {building}.",
+        ("{unit}", GetObjectName(UnittypeId)), ("{building}", GetObjectName(BuildingId))));
   }
 }

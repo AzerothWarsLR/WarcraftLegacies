@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -27,6 +28,6 @@ public sealed class CheatRemoveAllAbilities : Command
   {
     var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater)[0];
     firstSelectedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });
-    return $"All abilities removed from {firstSelectedUnit.Name}";
+    return Loc.Format("All abilities removed from {unit}", ("{unit}", firstSelectedUnit.Name));
   }
 }

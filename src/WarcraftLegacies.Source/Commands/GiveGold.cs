@@ -1,6 +1,7 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -29,18 +30,18 @@ public sealed class GiveGold : Command
   {
     if (!FactionManager.TryGetFactionByName(parameters[0], out var targetFaction))
     {
-      return $"There is no faction named {parameters[0]}.";
+      return Loc.Format("There is no faction named {value}.", ("{value}", parameters[0]));
     }
 
     if (targetFaction.Player == null)
     {
-      return $"There is nobody playing the {targetFaction.Name} faction.";
+      return Loc.Format("There is nobody playing the {faction} faction.", ("{faction}", targetFaction.Name));
     }
 
     var cheaterTeam = cheater.GetPlayerData().Team;
     if (cheaterTeam != targetFaction.Player.GetPlayerData().Team)
     {
-      return $"{targetFaction.Name} isn't on your team, so you can't give them gold.";
+      return Loc.Format("{faction} isn't on your team, so you can't give them gold.", ("{faction}", targetFaction.Name));
     }
 
     if (!int.TryParse(parameters[1], out var goldGift))
@@ -55,12 +56,13 @@ public sealed class GiveGold : Command
 
     if (cheater.Gold < goldGift)
     {
-      return $"You don't have {goldGift} gold to send.";
+      return Loc.Format("You don't have {gold} gold to send.", ("{gold}", goldGift.ToString()));
     }
 
     cheater.Gold -= goldGift;
     targetFaction.Player.Gold += goldGift;
 
-    return $"Sent {goldGift} gold to {targetFaction.Name}.";
+    return Loc.Format("Sent {gold} gold to {faction}.",
+      ("{gold}", goldGift.ToString()), ("{faction}", targetFaction.Name));
   }
 }

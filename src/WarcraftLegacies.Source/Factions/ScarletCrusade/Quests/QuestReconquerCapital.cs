@@ -1,5 +1,6 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -67,5 +68,5 @@ public sealed class QuestReconquerCapital : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"All of your heroes gain {ExperienceReward} experience";
+    Loc.Format("All of your heroes gain {xp} experience", ("{xp}", ExperienceReward.ToString()));
 }

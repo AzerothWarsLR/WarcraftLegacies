@@ -5,7 +5,7 @@
   "GameVersion": "2.0.4.23745",
   "MapName": "魔兽争霸：遗产",
   "MapAuthor": "Technopig, Vampirika, Madsen",
-  "MapDescription": "加入艾泽拉斯战争 Discord 服务器，下载地图并与其他玩家交流：https://discord.gg/pnWZs69",
+  "MapDescription": "加入艾泽拉斯战争 Discord 服务器，下载地图并与其他玩家交流：https://discord.gg/ubQM7PgaG",
   "RecommendedPlayers": "14 名玩家",
   "CameraBounds": {
     "BottomLeft": {
@@ -37,7 +37,7 @@
   "Tileset": 89,
   "LoadingScreenBackgroundNumber": 99,
   "LoadingScreenPath": "",
-  "LoadingScreenText": "扮演魔兽宇宙中的 14 个阵营之一，决定艾泽拉斯的命运。\r\n\r\n创始人：Lordsebas、YakaryBovine\r\n开发：Technopig、Madsen、Vampirika\r\n程序：alrun3\r\nDiscord 链接：https://discord.gg/4eGZnR5\r\n",
+  "LoadingScreenText": "扮演魔兽宇宙中的 14 个阵营之一，决定艾泽拉斯的命运。\r\n\r\n创始人：Lordsebas、YakaryBovine\r\n开发：Technopig、Madsen、Vampirika\r\n程序：alrun3\r\nDiscord 链接：https://discord.gg/ubQM7PgaG\r\n",
   "LoadingScreenTitle": "魔兽争霸：遗产",
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,

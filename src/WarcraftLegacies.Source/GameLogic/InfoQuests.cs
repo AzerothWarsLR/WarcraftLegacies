@@ -13,7 +13,7 @@ public static class InfoQuests
     var creditsAndDiscordQuest = quest.Create();
     creditsAndDiscordQuest.SetTitle("Discord & Credits");
     creditsAndDiscordQuest.SetIcon(@"ReplaceableTextures\CommandButtons\BTNManual3.blp");
-    creditsAndDiscordQuest.SetDescription(@"Please visit our Discord at: https://discord.gg/4eGZn
+    creditsAndDiscordQuest.SetDescription(@"Please visit our Discord at: https://discord.gg/ubQM7PgaG
 
 An enormous thank you to...
 

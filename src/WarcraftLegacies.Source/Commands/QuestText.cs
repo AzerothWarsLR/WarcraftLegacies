@@ -1,5 +1,6 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Extensions;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Commands;
 
@@ -37,6 +38,6 @@ public sealed class QuestText : Command
     }
 
     PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowQuestText", parsed.Value);
-    return $"Setting show quest text option to {parsed.Value}.";
+    return Loc.Format("Setting show quest text option to {value}.", ("{value}", parsed.Value.ToString()));
   }
 }

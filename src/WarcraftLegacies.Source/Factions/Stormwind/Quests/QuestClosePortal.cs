@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -41,7 +42,9 @@ public sealed class QuestClosePortal : QuestData
     "Khadgar has sealed the Dark Portal forever, finally correcting the mistake made by his former master decades ago.";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"The Dark Portal closes permanently and Khadgar gains {XpReward} experience";
+  protected override string RewardDescription =>
+    Loc.Format("The Dark Portal closes permanently and Khadgar gains {xp} experience",
+      ("{xp}", XpReward.ToString()));
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)

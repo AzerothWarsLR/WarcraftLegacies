@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Chat;
 using MacroTools.Commands;
+using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Cheats;
 
@@ -26,11 +27,11 @@ public sealed class CheatHelp : Command
   {
     if (!Pager.TryParsePage(parameters, 0, out var page))
     {
-      return "Usage: -help [page]";
+      return Loc.Get("Usage: -help [page]");
     }
 
-    return Pager.BuildPage("Commands:", CommandManager.GetAllCommands()
-      .Select(command => $"-{command.CommandText}: {command.Description}")
+    return Pager.BuildPage(Loc.Get("Commands:"), CommandManager.GetAllCommands()
+      .Select(command => $"-{command.CommandText}: {Loc.Get(command.Description)}")
       .ToList(), page);
   }
 }

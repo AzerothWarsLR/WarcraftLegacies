@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Localization;
 
 namespace MacroTools.Researches;
 
@@ -18,7 +19,7 @@ public static class ResearchManager
   {
     if (_byTypeId.ContainsKey(research.ResearchTypeId))
     {
-      throw new InvalidOperationException($"{GetObjectName(research.ResearchTypeId)} has already been registered.");
+      throw new InvalidOperationException(Loc.Format("{name} has already been registered.", ("{name}", GetObjectName(research.ResearchTypeId))));
     }
 
     _byTypeId.Add(research.ResearchTypeId, research);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.Localization;
 
 namespace MacroTools.Chat;
 
@@ -28,14 +29,17 @@ public static class Pager
 
     if (pageNumber < 1 || pageNumber > pages.Count)
     {
-      return $"Page {pageNumber} out of range. Valid pages: 1-{pages.Count}.";
+      return Loc.Format("Page {page} out of range. Valid pages: 1-{count}.",
+        ("{page}", pageNumber.ToString()), ("{count}", pages.Count.ToString()));
     }
 
     var suffix = pages.Count <= 1
       ? ""
       : pageNumber < pages.Count
-        ? $" [Page {pageNumber}/{pages.Count}, add page # for more]"
-        : $" [Page {pageNumber}/{pages.Count}]";
+        ? Loc.Format(" [Page {page}/{count}, add a page number for more]",
+          ("{page}", pageNumber.ToString()), ("{count}", pages.Count.ToString()))
+        : Loc.Format(" [Page {page}/{count}]",
+          ("{page}", pageNumber.ToString()), ("{count}", pages.Count.ToString()));
     return $"{header}{suffix}\n" + string.Join("\n", pages[pageNumber - 1]);
   }
 
