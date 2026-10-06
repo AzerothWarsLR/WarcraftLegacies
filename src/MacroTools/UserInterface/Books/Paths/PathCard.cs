@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Text;
 using MacroTools.Localization;
 using MacroTools.Paths;
-using MacroTools.Quests;
 using MacroTools.UserInterface.Books.Core;
 using MacroTools.UserInterface.Frames;
 
@@ -200,11 +198,11 @@ public sealed class PathCard : Card<FactionPath>
       case PathState.Locked:
         return $"|cffaaaaaa{Loc.Get("Locked")}|r";
       case PathState.Available when path.OfferDuration > 0:
-        return $"|cff00ff00{Loc.Get("Available")}|r - {Loc.Format("closes in {time}", ("{time}", FormatTime(path.OfferTimeRemaining)))}";
+        return $"|cff00ff00{Loc.Get("Available")}|r - {Loc.Format("closes in {time}", ("{time}", CardText.FormatTime(path.OfferTimeRemaining)))}";
       case PathState.Available:
         return $"|cff00ff00{Loc.Get("Available")}|r";
       case PathState.Committing:
-        return $"|cffffcc00{Loc.Get("Committing")}|r - {Loc.Format("taken in {time}", ("{time}", FormatTime(path.CommitTimeRemaining)))}";
+        return $"|cffffcc00{Loc.Get("Committing")}|r - {Loc.Format("taken in {time}", ("{time}", CardText.FormatTime(path.CommitTimeRemaining)))}";
       case PathState.Taken:
         return $"|cffffcc00{Loc.Get("Taken")}|r";
       case PathState.Declined:
@@ -214,28 +212,6 @@ public sealed class PathCard : Card<FactionPath>
     }
   }
 
-  private static string GetBodyText(FactionPath path)
-  {
-    var text = new StringBuilder(Loc.Get(path.Description));
-    foreach (var requirement in path.Requirements)
-    {
-      var color = requirement.Progress switch
-      {
-        QuestProgress.Complete => "|cff00ff00",
-        QuestProgress.Failed => "|cffff0000",
-        _ => "|cffaaaaaa"
-      };
-      text.Append($"\n{color}- {requirement.Description}|r");
-    }
-
-    return text.ToString();
-  }
-
-  /// <summary>Formats a number of seconds as minutes and seconds, like 1:05.</summary>
-  public static string FormatTime(float seconds)
-  {
-    var wholeSeconds = (int)Math.Ceiling(seconds);
-    var remainder = wholeSeconds % 60;
-    return $"{wholeSeconds / 60}:{(remainder < 10 ? "0" : "")}{remainder}";
-  }
+  private static string GetBodyText(FactionPath path) =>
+    Loc.Get(path.Description) + CardText.FormatRequirements(path.Requirements);
 }

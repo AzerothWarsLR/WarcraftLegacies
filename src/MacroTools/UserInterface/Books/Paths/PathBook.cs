@@ -134,7 +134,7 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
     {
       if (path.State == PathState.Committing)
       {
-        return $"{title} |cffffcc00{PathCard.FormatTime(path.CommitTimeRemaining)}|r";
+        return $"{title} |cffffcc00{CardText.FormatTime(path.CommitTimeRemaining)}|r";
       }
 
       if (path.State == PathState.Available)
