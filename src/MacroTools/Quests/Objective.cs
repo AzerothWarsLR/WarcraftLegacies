@@ -211,7 +211,7 @@ public abstract class Objective
 
   internal void UpdateDisplay()
   {
-    if (!ShowsInQuestLog)
+    if (!ShowsInQuestLog || QuestItem == null)
     {
       return;
     }

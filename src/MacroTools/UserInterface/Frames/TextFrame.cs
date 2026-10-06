@@ -18,6 +18,10 @@ public sealed class TextFrame : Frame
     BlzFrameSetScale(Handle, scale);
   }
 
+  /// <summary>Sets where the text sits inside the frame.</summary>
+  public void SetTextAlignment(textaligntype vertical, textaligntype horizontal) =>
+    Handle.SetTextAlignment(vertical, horizontal);
+
   public TextFrame(string name, Frame parent, int priority) : base(name, parent, priority)
   {
   }

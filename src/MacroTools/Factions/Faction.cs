@@ -6,6 +6,7 @@ using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Legends;
 using MacroTools.Localization;
+using MacroTools.Paths;
 using MacroTools.Quests;
 using MacroTools.Shared;
 using MacroTools.Utils;
@@ -31,6 +32,7 @@ public abstract class Faction
   private readonly Dictionary<int, int> _objectLevels = new();
   private readonly Dictionary<int, int> _objectLimits = new();
   private readonly Dictionary<UnitCategory, List<int>> _objectsByFirstCategory = new();
+  private readonly List<FactionPath> _paths = new();
   private readonly List<Power> _powers = new();
   private readonly Dictionary<string, QuestData> _questsByName = new();
   private readonly int _undefeatedResearch;
@@ -195,6 +197,9 @@ public abstract class Faction
     }
   }
 
+  /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="FactionPath" />.</summary>
+  public event Action<FactionPath>? PathAdded;
+
   /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
   public event Action<FactionPowerEventArgs>? PowerAdded;
 
@@ -272,6 +277,17 @@ public abstract class Faction
   /// </summary>
   public bool TryGetObjectByCategory(UnitCategory category, [NotNullWhen(true)] out List<int>? objects) =>
     _objectsByFirstCategory.TryGetValue(category, out objects);
+
+  /// <summary>Adds a <see cref="FactionPath" /> this <see cref="Faction" /> can choose to take.</summary>
+  public void AddPath(FactionPath path)
+  {
+    _paths.Add(path);
+    path.OnAdd(this);
+    PathAdded?.Invoke(path);
+  }
+
+  /// <summary>Returns all <see cref="FactionPath" />s this <see cref="Faction" /> has, in the order they were added.</summary>
+  public IReadOnlyList<FactionPath> GetAllPaths() => _paths;
 
   /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
   public void AddPower(Power power)
