@@ -103,6 +103,14 @@ internal static class MapCommandFactory
         "an untagged copy shows one language's labels to every client."
     };
 
+    Option<bool> stringTableOption = new("--string-table")
+    {
+      Description =
+        "Move the translated text into trigger strings, so every language shares one set of object data and map " +
+        "info and only war3map.wts is stored per locale. Without it, clients of the merged language fail the map " +
+        "check in a lobby hosted in another language, so a released map needs it."
+    };
+
     var command = new Command("merge-locales",
       "Merges a map built for another locale into the published map, so one .w3x serves every language.")
     {
@@ -111,7 +119,8 @@ internal static class MapCommandFactory
       outputArg,
       localeArg,
       localeFolderOption,
-      untaggedOption
+      untaggedOption,
+      stringTableOption
     };
 
     command.SetAction(parseResult =>
@@ -128,7 +137,8 @@ internal static class MapCommandFactory
         parseResult.GetValue(outputArg),
         parseResult.GetValue(localeArg),
         parseResult.GetValue(localeFolderOption),
-        plain);
+        plain,
+        parseResult.GetValue(stringTableOption));
     });
 
     return command;
