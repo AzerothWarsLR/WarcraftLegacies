@@ -9,6 +9,7 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Legion;
+using WarcraftLegacies.Source.Factions.Lordaeron.Paths;
 using WarcraftLegacies.Source.Factions.Lordaeron.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 using WarcraftLegacies.Source.Factions.Scourge;
@@ -23,6 +24,8 @@ namespace WarcraftLegacies.Source.Factions.Lordaeron;
 
 public sealed class LordaeronFaction : Faction
 {
+  private ScarletCrusadeTransformation? _scarletCrusadeTransformation;
+
   /// <inheritdoc />
   public LordaeronFaction() : base("Lordaeron", playercolor.LightBlue,
     @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
@@ -90,7 +93,8 @@ public sealed class LordaeronFaction : Faction
       }));
     AddQuest(questTyrHand);
     AddQuest(new QuestMograine());
-    AddQuest(new QuestScarletCrusade(Regions.Scarlet_Spawn, AllLegends.Lordaeron.TyrsHand, AllLegends.Scarlet.Saiden, questTyrHand));
+    _scarletCrusadeTransformation = new ScarletCrusadeTransformation(Regions.Scarlet_Spawn, AllLegends.Lordaeron.TyrsHand, AllLegends.Scarlet.Saiden);
+    AddQuest(new QuestScarletCrusade(_scarletCrusadeTransformation, questTyrHand));
     AddQuest(new QuestShoresOfNorthrend(AllLegends.Lordaeron.Arthas, AllLegends.Neutral.Caerdarrow));
     AddQuest(new QuestThunderEagle(AllLegends.Neutral.DraktharonKeep));
     AddQuest(new QuestChampionoftheLight(AllLegends.Lordaeron.Uther));
@@ -98,6 +102,15 @@ public sealed class LordaeronFaction : Faction
       Artifacts.CrownOfLordaeron, AllLegends.Lordaeron.CapitalPalace, AllLegends.Lordaeron.Arthas));
     AddQuest(new QuestKingdomOfManLordaeron(Artifacts.CrownOfLordaeron,
       Artifacts.CrownOfStormwind, AllLegends.Lordaeron.Arthas));
+  }
+
+  /// <summary>Adds the paths Lordaeron can take in Roleplay mode.</summary>
+  public void AddRoleplayPaths()
+  {
+    if (_scarletCrusadeTransformation != null)
+    {
+      AddPath(new PathScarletCrusade(_scarletCrusadeTransformation, AllLegends.Lordaeron.CapitalPalace, AllLegends.Lordaeron.Stratholme));
+    }
   }
 
   private static void RegisterResearches()
