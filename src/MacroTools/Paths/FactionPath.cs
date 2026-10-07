@@ -17,7 +17,11 @@ public abstract class FactionPath
 {
   private const float TickInterval = 0.25f;
 
+  private static int _takenCount;
+
   private readonly List<Objective> _requirements = new();
+  private readonly List<Objective> _mustStayTrueRequirements = new();
+  private readonly List<Objective> _metRequirements = new();
   private PathState _state = PathState.Locked;
   private timer? _ticker;
 
@@ -31,6 +35,15 @@ public abstract class FactionPath
 
   /// <summary>What happens if the path is taken.</summary>
   public string Description { get; init; } = "";
+
+  /// <summary>
+  /// What happens if the player turns the path down. Only paths with a decline outcome can be declined, so nobody locks
+  /// themselves out of a path by mistake.
+  /// </summary>
+  public string? DeclineDescription { get; init; }
+
+  /// <summary>Whether the path can be turned down.</summary>
+  public bool CanDecline => DeclineDescription != null;
 
   /// <summary>How many seconds the path stays available before it closes. Zero means it never closes on its own.</summary>
   public float OfferDuration { get; init; }
@@ -49,6 +62,48 @@ public abstract class FactionPath
 
   /// <summary>Everything that needs to happen before the path becomes available.</summary>
   public IReadOnlyList<Objective> Requirements => _requirements;
+
+  /// <summary>
+  /// Whether the path can send the faction off on a team of its own when the team it would join is full, instead of
+  /// waiting for a slot to open up.
+  /// </summary>
+  public bool CanGoSolo { get; init; }
+
+  /// <summary>Whether taking the path moves the faction to another <see cref="Team"/>.</summary>
+  public virtual bool ChangesTeam => false;
+
+  /// <summary>
+  /// Why the path can't be accepted right now even though its requirements are met, like the team it joins being
+  /// full. Null if nothing is in the way.
+  /// </summary>
+  public string? BlockedReason
+  {
+    get
+    {
+      var owner = Faction?.Player;
+      if (!ChangesTeam || owner == null)
+      {
+        return null;
+      }
+
+      var cooldown = TeamChanges.GetCooldownRemaining(owner);
+      if (cooldown > 0)
+      {
+        return Loc.Format("You changed teams recently and can change again in {time}", ("{time}", FormatTime(cooldown)));
+      }
+
+      var destination = GetDestinationTeam(Faction!);
+      if (destination != null && !TeamChanges.HasRoomFor(destination, owner) && !CanGoSolo)
+      {
+        return Loc.Format("Team full: the {team} has no room for you yet", ("{team}", destination.LocalizedName));
+      }
+
+      return null;
+    }
+  }
+
+  /// <summary>Goes up each time any path is taken, so later paths have a higher number. Zero if not taken.</summary>
+  public int TakenOrder { get; private set; }
 
   /// <summary>The <see cref="Faction"/> this path belongs to.</summary>
   public Faction? Faction { get; private set; }
@@ -77,6 +132,30 @@ public abstract class FactionPath
   /// <summary>Adds something that must be completed before the path becomes available.</summary>
   protected void AddRequirement(Objective requirement) => _requirements.Add(requirement);
 
+  /// <summary>
+  /// Adds something that has to stay true for the path to be available, like controlling a city. If it stops being
+  /// true the path goes back to <see cref="PathState.Locked"/> until it's true again, rather than closing.
+  /// </summary>
+  protected void AddMustStayTrueRequirement(Objective requirement)
+  {
+    _requirements.Add(requirement);
+    _mustStayTrueRequirements.Add(requirement);
+  }
+
+  /// <summary>
+  /// Whether <paramref name="requirement"/> counts as met. Most requirements stay met once they've been met; ones that
+  /// must stay true only count while they're complete.
+  /// </summary>
+  public bool IsRequirementMet(Objective requirement) =>
+    requirement.Progress == QuestProgress.Complete ||
+    (!_mustStayTrueRequirements.Contains(requirement) && _metRequirements.Contains(requirement));
+
+  /// <summary>
+  /// The <see cref="Team"/> the faction moves to when the path is taken, if <see cref="ChangesTeam"/> is true.
+  /// Null sends the faction off on a team of its own.
+  /// </summary>
+  protected virtual Team? GetDestinationTeam(Faction faction) => null;
+
   /// <summary>Runs when the commit countdown finishes and the path is taken.</summary>
   protected abstract void OnTaken(Faction faction);
 
@@ -93,6 +172,14 @@ public abstract class FactionPath
   {
     if (State != PathState.Available || !IsOwnedBy(whichPlayer))
     {
+      return;
+    }
+
+    var blockedReason = BlockedReason;
+    if (blockedReason != null)
+    {
+      whichPlayer.DisplayTextTo($"\n|cffff0000{Loc.Get("PATH ON HOLD")}|r - {Loc.Get(Name)}\n{blockedReason}");
+      Updated?.Invoke(this);
       return;
     }
 
@@ -118,7 +205,7 @@ public abstract class FactionPath
   /// <summary>Turns the path down for good.</summary>
   public void Decline(player whichPlayer)
   {
-    if (State != PathState.Available || !IsOwnedBy(whichPlayer))
+    if (State != PathState.Available || !IsOwnedBy(whichPlayer) || !CanDecline)
     {
       return;
     }
@@ -145,8 +232,14 @@ public abstract class FactionPath
     Faction = faction;
     foreach (var requirement in _requirements)
     {
+      requirement.EligibleFactions.Add(faction);
       requirement.OnAdd(faction);
       requirement.ProgressChanged += OnRequirementProgressChanged;
+    }
+
+    if (ChangesTeam)
+    {
+      TeamChanges.OnAnyTeamChanged(OnTeamsChanged);
     }
 
     RefreshAvailability();
@@ -154,31 +247,66 @@ public abstract class FactionPath
 
   private void OnRequirementProgressChanged(Objective objective)
   {
+    if (State == PathState.Available || State == PathState.Committing)
+    {
+      RelockIfConditionLost();
+    }
+
     RefreshAvailability();
     Updated?.Invoke(this);
   }
 
+  private void OnTeamsChanged()
+  {
+    if (State == PathState.Available || State == PathState.Committing)
+    {
+      StartTicking();
+      Updated?.Invoke(this);
+    }
+  }
+
+  private void RelockIfConditionLost()
+  {
+    if (_mustStayTrueRequirements.All(x => x.Progress == QuestProgress.Complete))
+    {
+      return;
+    }
+
+    StopTicking();
+    CommitTimeRemaining = 0;
+    State = PathState.Locked;
+    AnnounceLocked();
+  }
+
   private void RefreshAvailability()
   {
+    foreach (var requirement in _requirements)
+    {
+      if (requirement.Progress == QuestProgress.Complete && !_metRequirements.Contains(requirement))
+      {
+        _metRequirements.Add(requirement);
+      }
+    }
+
     if (State != PathState.Locked)
     {
       return;
     }
 
-    if (_requirements.Any(x => x.Progress == QuestProgress.Failed))
+    if (_requirements.Any(x => x.Progress == QuestProgress.Failed && !_mustStayTrueRequirements.Contains(x)))
     {
       Close();
       return;
     }
 
-    if (_requirements.Any(x => x.Progress != QuestProgress.Complete))
+    if (_requirements.Any(x => !IsRequirementMet(x)))
     {
       return;
     }
 
     OfferTimeRemaining = OfferDuration;
     State = PathState.Available;
-    if (OfferDuration > 0)
+    if (OfferDuration > 0 || BlockedReason != null)
     {
       StartTicking();
     }
@@ -231,7 +359,7 @@ public abstract class FactionPath
         }
 
         break;
-      case PathState.Available:
+      case PathState.Available when BlockedReason == null:
         StopTicking();
         break;
     }
@@ -241,8 +369,21 @@ public abstract class FactionPath
 
   private void Take()
   {
-    StopTicking();
     var faction = Faction!;
+    var blockedReason = BlockedReason;
+    if (blockedReason != null)
+    {
+      CommitTimeRemaining = 0;
+      State = PathState.Available;
+      faction.Player?.DisplayTextTo($"\n|cffff0000{Loc.Get("PATH ON HOLD")}|r - {Loc.Get(Name)}\n{blockedReason}");
+      return;
+    }
+
+    StopTicking();
+    var owner = faction.Player;
+    var destination = ChangesTeam ? GetDestinationTeam(faction) : null;
+    _takenCount++;
+    TakenOrder = _takenCount;
     State = PathState.Taken;
 
     foreach (var otherPath in faction.GetAllPaths())
@@ -260,6 +401,25 @@ public abstract class FactionPath
 
     SoundLibrary.Completed.Start();
     OnTaken(faction);
+
+    if (ChangesTeam && owner != null)
+    {
+      if (destination == null || !TeamChanges.HasRoomFor(destination, owner))
+      {
+        TeamChanges.MoveSolo(owner);
+      }
+      else
+      {
+        TeamChanges.Move(owner, destination);
+      }
+    }
+  }
+
+  private static string FormatTime(float seconds)
+  {
+    var wholeSeconds = (int)Math.Ceiling(seconds);
+    var remainder = wholeSeconds % 60;
+    return $"{wholeSeconds / 60}:{(remainder < 10 ? "0" : "")}{remainder}";
   }
 
   private void AnnounceAvailable()
@@ -275,6 +435,21 @@ public abstract class FactionPath
     if (player.LocalPlayer == owner)
     {
       SoundLibrary.Discovered.Start();
+    }
+  }
+
+  private void AnnounceLocked()
+  {
+    if (Faction == null || Faction.Player == null)
+    {
+      return;
+    }
+
+    var owner = Faction.Player;
+    owner.DisplayTextTo($"\n|cffff8800{Loc.Get("PATH LOCKED")}|r - {Loc.Get(Name)}\n{Loc.Get("You no longer meet its requirements. It will open again if you do.")}");
+    if (player.LocalPlayer == owner)
+    {
+      SoundLibrary.Failed.Start();
     }
   }
 

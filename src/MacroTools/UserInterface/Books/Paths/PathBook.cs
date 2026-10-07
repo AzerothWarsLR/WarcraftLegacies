@@ -13,11 +13,14 @@ namespace MacroTools.UserInterface.Books.Paths;
 /// </summary>
 public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFactory, PathCardFactory>
 {
+  private const int DisplayGroupCount = 5;
+
   private readonly List<FactionPath> _watchedPaths = new();
+  private readonly List<FactionPath> _seenPaths = new();
   private Faction? _trackedFaction;
   private player _owner = null!;
 
-  private PathBook() : base(0.37f, 0.44f, 0.02f, 0.015f, 4)
+  private PathBook() : base(0.37f, 0.44f, 0.02f, 0.015f, 8)
   {
   }
 
@@ -86,19 +89,14 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
     TrackedFaction = args.Player.GetPlayerData().Faction;
   }
 
-  private void OnFactionAddPath(FactionPath path)
-  {
-    AddPath(path);
-    RefreshNavigationButtonVisiblity();
-    RefreshLauncher();
-  }
+  private void OnFactionAddPath(FactionPath path) => ReRender();
 
   /// <inheritdoc />
   protected override void PopulatePages()
   {
     foreach (var path in _watchedPaths)
     {
-      path.StateChanged -= OnPathChanged;
+      path.StateChanged -= OnPathStateChanged;
       path.Updated -= OnPathChanged;
     }
 
@@ -106,9 +104,17 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
 
     if (_trackedFaction != null)
     {
-      foreach (var path in _trackedFaction.GetAllPaths())
+      var paths = _trackedFaction.GetAllPaths();
+      AddTakenPathsNewestFirst(paths);
+      for (var group = 1; group < DisplayGroupCount; group++)
       {
-        AddPath(path);
+        foreach (var path in paths)
+        {
+          if (GetDisplayGroup(path.State) == group)
+          {
+            AddPath(path);
+          }
+        }
       }
     }
 
@@ -116,13 +122,74 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
     RefreshLauncher();
   }
 
+  private void AddTakenPathsNewestFirst(IReadOnlyList<FactionPath> paths)
+  {
+    var added = new List<FactionPath>();
+    while (true)
+    {
+      FactionPath? newest = null;
+      foreach (var path in paths)
+      {
+        if (path.State == PathState.Taken && !added.Contains(path) && (newest == null || path.TakenOrder > newest.TakenOrder))
+        {
+          newest = path;
+        }
+      }
+
+      if (newest == null)
+      {
+        return;
+      }
+
+      added.Add(newest);
+      AddPath(newest);
+    }
+  }
+
   private void AddPath(FactionPath path)
   {
     GetFirstAvailablePage().AddItem(path);
     _watchedPaths.Add(path);
-    path.StateChanged += OnPathChanged;
+    path.StateChanged += OnPathStateChanged;
     path.Updated += OnPathChanged;
   }
+
+  private void OnPathStateChanged(FactionPath path)
+  {
+    if (path.State == PathState.Locked)
+    {
+      _seenPaths.Remove(path);
+    }
+
+    ReRender();
+  }
+
+  /// <inheritdoc />
+  protected override void OnOpened()
+  {
+    foreach (var path in _watchedPaths)
+    {
+      if (path.State == PathState.Available && !_seenPaths.Contains(path))
+      {
+        _seenPaths.Add(path);
+      }
+    }
+
+    RefreshLauncher();
+  }
+
+  /// <summary>
+  /// Where a path with this state sits in the book: taken paths first, then ones that can still be taken, then ones
+  /// that are gone. A path that is committing stays where it was until it is actually taken.
+  /// </summary>
+  private static int GetDisplayGroup(PathState state) => state switch
+  {
+    PathState.Taken => 0,
+    PathState.Available or PathState.Committing => 1,
+    PathState.Locked => 2,
+    PathState.Declined => 3,
+    _ => 4
+  };
 
   private void OnPathChanged(FactionPath path) => RefreshLauncher();
 
@@ -137,7 +204,7 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
         return $"{title} |cffffcc00{CardText.FormatTime(path.CommitTimeRemaining)}|r";
       }
 
-      if (path.State == PathState.Available)
+      if (path.State == PathState.Available && !_seenPaths.Contains(path))
       {
         anyAvailable = true;
       }

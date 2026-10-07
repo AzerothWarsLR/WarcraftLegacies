@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Localization;
 using MacroTools.Paths;
+using MacroTools.Quests;
 using MacroTools.UserInterface.Books.Core;
 using MacroTools.UserInterface.Frames;
 
@@ -17,6 +18,7 @@ public sealed class PathCard : Card<FactionPath>
   private const float ProgressBarBorder = 0.007f;
 
   private FactionPath? _path;
+  private bool _confirmingDecline;
   private readonly Frame _icon;
   private readonly TextFrame _title;
   private readonly TextFrame _textFrame;
@@ -50,6 +52,7 @@ public sealed class PathCard : Card<FactionPath>
       }
 
       _path = value;
+      _confirmingDecline = false;
 
       if (_path == null)
       {
@@ -156,10 +159,20 @@ public sealed class PathCard : Card<FactionPath>
 
   private void OnDeclineClicked(player whichPlayer)
   {
-    if (_path != null)
+    if (_path == null)
     {
-      _path.Decline(whichPlayer);
+      return;
     }
+
+    if (!_confirmingDecline)
+    {
+      _confirmingDecline = true;
+      Refresh();
+      return;
+    }
+
+    _confirmingDecline = false;
+    _path.Decline(whichPlayer);
   }
 
   private void OnCancelClicked(player whichPlayer)
@@ -180,10 +193,17 @@ public sealed class PathCard : Card<FactionPath>
     }
 
     var state = _path.State;
+    var blocked = state == PathState.Available && _path.BlockedReason != null;
     _textFrame.Text = $"{GetStatusText(_path)}\n{GetBodyText(_path)}";
 
-    _acceptButton.Visible = state == PathState.Available;
-    _declineButton.Visible = state == PathState.Available;
+    _acceptButton.Visible = state == PathState.Available && !blocked;
+    if (state != PathState.Available)
+    {
+      _confirmingDecline = false;
+    }
+
+    _declineButton.Visible = state == PathState.Available && _path.CanDecline;
+    _declineButton.Text = _confirmingDecline ? Loc.Get("Confirm?") : Loc.Get("Decline");
     _cancelButton.Visible = state == PathState.Committing;
     _progressBarBorder.Visible = state == PathState.Committing;
     _progressBarBack.Visible = state == PathState.Committing;
@@ -197,6 +217,10 @@ public sealed class PathCard : Card<FactionPath>
     {
       case PathState.Locked:
         return $"|cffaaaaaa{Loc.Get("Locked")}|r";
+      case PathState.Available when path.BlockedReason != null:
+        return path.OfferDuration > 0
+          ? $"|cffff8800{Loc.Get("On hold")}|r - {Loc.Format("closes in {time}", ("{time}", CardText.FormatTime(path.OfferTimeRemaining)))}\n{path.BlockedReason}"
+          : $"|cffff8800{Loc.Get("On hold")}|r - {path.BlockedReason}";
       case PathState.Available when path.OfferDuration > 0:
         return $"|cff00ff00{Loc.Get("Available")}|r - {Loc.Format("closes in {time}", ("{time}", CardText.FormatTime(path.OfferTimeRemaining)))}";
       case PathState.Available:
@@ -212,6 +236,22 @@ public sealed class PathCard : Card<FactionPath>
     }
   }
 
-  private static string GetBodyText(FactionPath path) =>
-    Loc.Get(path.Description) + CardText.FormatRequirements(path.Requirements);
+  private static string GetBodyText(FactionPath path)
+  {
+    var text = Loc.Get(path.Description);
+    if (path.DeclineDescription != null)
+    {
+      text += $"\n|cffff8800{Loc.Get("If declined:")}|r {Loc.Get(path.DeclineDescription)}";
+    }
+
+    foreach (var requirement in path.Requirements)
+    {
+      var color = path.IsRequirementMet(requirement)
+        ? "|cff00ff00"
+        : requirement.Progress == QuestProgress.Failed ? "|cffff0000" : "|cffaaaaaa";
+      text += $"\n{color}- {requirement.Description}|r";
+    }
+
+    return text;
+  }
 }
