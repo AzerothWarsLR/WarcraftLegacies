@@ -78,6 +78,7 @@ public sealed class FactionMultiboard
     }
 
     TeamChanges.OnAnyTeamChanged(() => Instance?.Render());
+    TeamHandicaps.OnChanged(() => Instance?.Render());
 
     _initialized = true;
   }
@@ -132,7 +133,7 @@ public sealed class FactionMultiboard
     var teamName = team.LocalizedName;
     if (team.Bloc != null)
     {
-      SetHeaderText(row, $"  {SubTeamColor}{teamName}|r");
+      SetHeaderText(row, $"  {SubTeamColor}{teamName}|r{GetHandicapText(team)}");
       return;
     }
 
@@ -143,7 +144,7 @@ public sealed class FactionMultiboard
       return;
     }
 
-    SetHeaderText(row, $"{HeaderColor}{teamName}{sizeText}|r");
+    SetHeaderText(row, $"{HeaderColor}{teamName}{sizeText}|r{GetHandicapText(team)}");
   }
 
   private void UpdateBlocRow(Bloc bloc)
@@ -167,6 +168,14 @@ public sealed class FactionMultiboard
   {
     var capacity = TeamChanges.Capacity(team);
     return capacity == int.MaxValue ? "" : $" {TeamChanges.GetSize(team)}/{capacity}";
+  }
+
+  private static string GetHandicapText(Team team)
+  {
+    var handicap = TeamHandicaps.GetHandicap(team);
+    return handicap > 0
+      ? $" |cff00ff00{Loc.Format("Handicap +{percent}%", ("{percent}", R2I(handicap * 100 + 0.5f).ToString()))}|r"
+      : "";
   }
 
   private void UpdateHeaderRow()

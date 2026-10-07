@@ -145,6 +145,7 @@ public static class TeamChanges
       FactionManager.Register(soloTeam);
     }
 
+    TeamHandicaps.InheritStartingSize(soloTeam, whichPlayer.GetPlayerData().Team);
     Move(whichPlayer, soloTeam);
   }
 

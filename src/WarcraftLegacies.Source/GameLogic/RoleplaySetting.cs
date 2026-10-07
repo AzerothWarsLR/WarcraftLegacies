@@ -45,6 +45,7 @@ public static class RoleplaySetting
     player.Create(FelHordePlayer).GetPlayerData().SetTeam(TeamSetup.Legion);
 
     TeamChanges.Capacity = team => team.Bloc != null ? BlocCap : TeamCap;
+    TeamHandicaps.Enable();
   }
 
   private static void AddRoleplayPaths(Faction faction)
