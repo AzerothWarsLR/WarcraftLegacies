@@ -6,11 +6,14 @@ using MacroTools.Quests;
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
 
 /// <summary>
-/// Completed the first time a <see cref="Capital"/> is destroyed or captured by a player outside your team.
+/// Completed while a <see cref="Capital"/> your team has held is in the hands of a player outside your team, and for good
+/// once it's destroyed. Retaking it makes the objective incomplete again.
 /// </summary>
 public sealed class ObjectiveCapitalLost : Objective
 {
   private readonly Capital _target;
+  private bool _heldByTeam;
+  private bool _destroyed;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="ObjectiveCapitalLost"/> class.
@@ -29,19 +32,30 @@ public sealed class ObjectiveCapitalLost : Objective
   {
     var deathTrigger = trigger.Create();
     deathTrigger.RegisterUnitEvent(_target.Unit, unitevent.Death);
-    deathTrigger.AddAction(() => Progress = QuestProgress.Complete);
+    deathTrigger.AddAction(() =>
+    {
+      _destroyed = true;
+      Progress = QuestProgress.Complete;
+    });
     _target.ChangedOwner += _ => CheckOwner();
     CheckOwner();
   }
 
   private void CheckOwner()
   {
-    if (Progress == QuestProgress.Complete || _target.Unit == null)
+    if (_destroyed || _target.Unit == null)
     {
       return;
     }
 
-    if (!IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
+    if (IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
+    {
+      _heldByTeam = true;
+      Progress = QuestProgress.Incomplete;
+      return;
+    }
+
+    if (_heldByTeam)
     {
       Progress = QuestProgress.Complete;
     }

@@ -19,7 +19,7 @@ public sealed class PathScarletCrusade : FactionPath
     Name = "The Scarlet Crusade";
     IconName = "Divine_Reckoning_Icon";
     Description = "With the palace or Stratholme lost, the survivors turn to vengeance. All your forces are removed and you restart as the Scarlet Crusade in Tyr's Hand.";
-    AddRequirement(new ObjectiveEitherOf(
+    AddMustStayTrueRequirement(new ObjectiveEitherOf(
       new ObjectiveCapitalLost(capitalPalace) { ShowsInQuestLog = false },
       new ObjectiveCapitalLost(stratholme) { ShowsInQuestLog = false }) { ShowsInQuestLog = false });
   }
