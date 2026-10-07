@@ -140,7 +140,8 @@ public sealed class QuestKiljaedensCommand : QuestData
     }
     else
     {
-      AddObjective(new ObjectiveControlCapital(target.Capital, false));
+      AddObjective(new ObjectiveEitherOf(new ObjectiveControlCapital(target.Capital, false),
+        new ObjectiveCapitalDead(target.Capital)));
     }
 
     AddObjective(new ObjectiveControlPoint(target.ControlPointId, 0));
