@@ -1,6 +1,13 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.WorldEvents;
+using WarcraftLegacies.Source.Factions.Legion;
+using WarcraftLegacies.Source.Factions.Legion.Paths;
+using WarcraftLegacies.Source.Factions.Legion.Quests;
+using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.Factions.Scourge.Events;
+using WarcraftLegacies.Source.Factions.Scourge.Paths;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.GameLogic;
@@ -28,6 +35,7 @@ public static class RoleplaySetting
 
     IsActive = true;
     SetupStartingTeams();
+    SetupScourgeSplit();
     foreach (var faction in FactionManager.GetAllFactions())
     {
       AddRoleplayPaths(faction);
@@ -46,6 +54,31 @@ public static class RoleplaySetting
 
     TeamChanges.Capacity = team => team.Bloc != null ? BlocCap : TeamCap;
     TeamHandicaps.Enable();
+  }
+
+  private static void SetupScourgeSplit()
+  {
+    if (!FactionManager.TryGetFactionByType<ScourgeFaction>(out var scourge))
+    {
+      return;
+    }
+
+    if (!FactionManager.TryGetFactionByType<LegionFaction>(out var legion))
+    {
+      return;
+    }
+
+    var split = new ScourgeSplitEvent(scourge, legion, legion.GetQuestByType<QuestSummonLegion>());
+
+    var lichKingBreaksFree = new PathLichKingBreaksFree(split);
+    scourge.AddPath(lichKingBreaksFree);
+    split.AddSplitPath(lichKingBreaksFree);
+
+    var purgeTheUnworthy = new PathPurgeTheUnworthy(split);
+    legion.AddPath(purgeTheUnworthy);
+    split.AddSplitPath(purgeTheUnworthy);
+
+    WorldEventManager.Register(split);
   }
 
   private static void AddRoleplayPaths(Faction faction)
