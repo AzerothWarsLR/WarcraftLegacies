@@ -5,6 +5,7 @@ using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Gilneas;
 using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Sunfury;
+using WarcraftLegacies.Source.GameLogic;
 // using WarcraftLegacies.Source.Factions.Warsong;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -34,7 +35,8 @@ public static class FactionChoiceDialogSetup
     {
       Faction = new SunfuryFaction(),
       Difficulty = FactionLearningDifficulty.Advanced,
-      StartingArea = Regions.SunfuryStartingPosition
+      StartingArea = Regions.SunfuryStartingPosition,
+      Disabled = RoleplaySetting.IsActive
     };
     new FactionChoiceDialogPresenter(illidari, sunfury).Run(player.Create(15), OnChoiceResolved);
 
@@ -49,7 +51,8 @@ public static class FactionChoiceDialogSetup
       Faction = new GilneasFaction(),
       Difficulty = FactionLearningDifficulty.Advanced,
       StartingArea = Regions.DalaStartPos,
-      RequiresCheats = false
+      RequiresCheats = false,
+      Disabled = RoleplaySetting.IsActive
     };
     new FactionChoiceDialogPresenter(dalaran, gilneas).Run(player.Create(7), OnChoiceResolved);
 

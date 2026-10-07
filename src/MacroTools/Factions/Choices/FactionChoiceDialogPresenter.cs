@@ -103,5 +103,5 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
 
   /// <inheritdoc />
   protected override bool IsChoiceActive(player whichPlayer, FactionChoice choice) =>
-    !choice.RequiresCheats || TestMode.CheatCondition(whichPlayer);
+    !choice.Disabled && (!choice.RequiresCheats || TestMode.CheatCondition(whichPlayer));
 }
