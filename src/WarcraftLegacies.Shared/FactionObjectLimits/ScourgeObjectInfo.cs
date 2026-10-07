@@ -7,6 +7,9 @@ public static class ScourgeObjectInfo
 {
   private const int Unlimited = 200;
 
+  /// <summary>Shown on units whose limit goes up while the Scourge stands alone after the Scourge Split.</summary>
+  public const string StandingAloneHint = "the Scourge Split";
+
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_UNPL_NECROPOLIS_SCOURGE_T1, Unlimited, TownHall);
@@ -30,26 +33,26 @@ public static class ScourgeObjectInfo
     yield return new(UNIT_UACO_ACOLYTE_SCOURGE_WORKER, Unlimited, Builder);
     yield return new(UNIT_UGHO_GHOUL_SCOURGE, Unlimited, new List<UnitCategory> { Fighter, Builder });
     yield return new(UNIT_UABO_ABOMINATION_SCOURGE, Unlimited, Tank);
-    yield return new(UNIT_UMTW_MEAT_WAGON_SCOURGE, 8, Siege);
+    yield return new(UNIT_UMTW_MEAT_WAGON_SCOURGE, 8, Siege, StandingAloneHint);
     yield return new(UNIT_UCRY_CRYPT_FIEND_SCOURGE, Unlimited, Marksman);
-    yield return new(UNIT_UGAR_GARGOYLE_SCOURGE, 12, new List<UnitCategory> { Flyer, AntiAir });
+    yield return new(UNIT_UGAR_GARGOYLE_SCOURGE, 12, new List<UnitCategory> { Flyer, AntiAir }, StandingAloneHint);
     yield return new(UNIT_H02G_VRYKUL_WARRIOR_SCOURGE, Unlimited, Fighter);
-    yield return new(UNIT_H061_VRYKUL_BERSERK_SCOURGE, 12, Fighter);
-    yield return new(UNIT_H00P_MAMMOTH_RIDER_SCOURGE, 4, Fighter);
+    yield return new(UNIT_H061_VRYKUL_BERSERK_SCOURGE, 12, Fighter, StandingAloneHint);
+    yield return new(UNIT_H00P_MAMMOTH_RIDER_SCOURGE, 4, Fighter, StandingAloneHint);
     yield return new(UNIT_UBAN_BANSHEE_SCOURGE, Unlimited, Support);
     yield return new(UNIT_UNEC_NECROMANCER_SCOURGE, Unlimited, new List<UnitCategory> { Support, Summoner });
-    yield return new(UNIT_UOBS_OBSIDIAN_STATUE_SCOURGE, 4, Support);
-    yield return new(UNIT_UFRO_FROST_WYRM_SCOURGE, 4, new List<UnitCategory> { Flyer, Destroyer });
-    yield return new(UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE, 0, new List<UnitCategory> { Elite, Tank, Summoner })
+    yield return new(UNIT_UOBS_OBSIDIAN_STATUE_SCOURGE, 4, Support, StandingAloneHint);
+    yield return new(UNIT_UFRO_FROST_WYRM_SCOURGE, 4, new List<UnitCategory> { Flyer, Destroyer }, StandingAloneHint);
+    yield return new(UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE, 0, new List<UnitCategory> { Elite, Tank, Summoner }, StandingAloneHint)
     {
       LimitTooltipOverride = 6
     };
-    yield return new(UNIT_ZBLI_LICH_SCOURGE_ELITE, 0, new List<UnitCategory> { Elite, Destroyer, Support, Summoner })
+    yield return new(UNIT_ZBLI_LICH_SCOURGE_ELITE, 0, new List<UnitCategory> { Elite, Destroyer, Support, Summoner }, StandingAloneHint)
     {
       LimitTooltipOverride = 6
     };
-    yield return new(UNIT_UBSP_OBSIDIAN_DESTROYER_SCOURGE, 6, new List<UnitCategory> { Flyer, Destroyer, AntiMage });
-    yield return new(UNIT_NFGL_PLAGUE_TITAN_SCOURGE, 2, new List<UnitCategory> { Tank, Summoner });
+    yield return new(UNIT_UBSP_OBSIDIAN_DESTROYER_SCOURGE, 6, new List<UnitCategory> { Flyer, Destroyer, AntiMage }, StandingAloneHint);
+    yield return new(UNIT_NFGL_PLAGUE_TITAN_SCOURGE, 2, new List<UnitCategory> { Tank, Summoner }, StandingAloneHint);
 
     //Ship
     yield return new(UNIT_UBOT_HAUNTED_TRANSPORT_SHIP_SCOURGE_LEGION, Unlimited);
@@ -59,7 +62,7 @@ public static class ScourgeObjectInfo
     yield return new(UNIT_H0AZ_GALLEY_EVIL, Unlimited);
     yield return new(UNIT_H0AQ_BOARDING_VESSEL_EVIL, Unlimited);
     yield return new(UNIT_H0BB_JUGGERNAUT_EVIL, Unlimited);
-    yield return new(UNIT_H0B9_BOMBARD_EVIL, 6);
+    yield return new(UNIT_H0B9_BOMBARD_EVIL, 6, StandingAloneHint);
 
     //Demi-Heroes
     yield return new(UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI, 1, new List<UnitCategory> { Flyer, Destroyer });

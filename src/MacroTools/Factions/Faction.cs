@@ -267,9 +267,6 @@ public abstract class Faction
   ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
   /// </summary>
   /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-  /// <summary>Returns every object this faction has a limit for.</summary>
-  public List<int> GetLimitedObjects() => new(_objectLimits.Keys);
-
   public int GetObjectLimit(int whichObject)
   {
     return _objectLimits.GetValueOrDefault(whichObject);

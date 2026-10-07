@@ -7,8 +7,8 @@ using WCSharp.Events;
 namespace WarcraftLegacies.Source.Shared.Powers;
 
 /// <summary>
-/// Makes some of a player's units deal more damage and survive longer. Extra health is applied as reduced damage
-/// taken, so it works on units that already exist as well as new ones.
+/// Makes some of a player's units deal more damage and take less damage. The damage reduction is worked out so it is
+/// worth the same as the bonus in extra health, without touching the units' actual health.
 /// </summary>
 public sealed class EmpoweredUnits : Power
 {
@@ -16,17 +16,22 @@ public sealed class EmpoweredUnits : Power
   private readonly float _bonus;
 
   /// <param name="affectsUnit">Which of the player's units get the bonus.</param>
-  /// <param name="bonus">The damage and health bonus, as a fraction, like 0.15 for 15%.</param>
+  /// <param name="bonus">The damage bonus, and the health bonus the damage reduction is worth, as a fraction.</param>
   public EmpoweredUnits(Func<unit, bool> affectsUnit, float bonus)
   {
     _affectsUnit = affectsUnit;
     _bonus = bonus;
   }
 
-  /// <summary>The power's description; {bonus} is replaced with the bonus percentage.</summary>
+  /// <summary>
+  /// The power's description; {bonus} is replaced with the damage bonus and {reduction} with the damage reduction,
+  /// both as percentages.
+  /// </summary>
   public required string DescriptionTemplate
   {
-    init => Description = Loc.Format(value, ("{bonus}", ((int)(_bonus * 100 + 0.5f)).ToString()));
+    init => Description = Loc.Format(value,
+      ("{bonus}", ((int)(_bonus * 100 + 0.5f)).ToString()),
+      ("{reduction}", ((int)((1 - 1 / (1 + _bonus)) * 100 + 0.5f)).ToString()));
   }
 
   /// <inheritdoc />

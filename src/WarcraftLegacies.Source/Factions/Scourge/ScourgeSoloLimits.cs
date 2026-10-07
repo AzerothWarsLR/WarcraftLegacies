@@ -3,12 +3,14 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Localization;
+using MacroTools.UserInterface;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 
 namespace WarcraftLegacies.Source.Factions.Scourge;
 
 /// <summary>
-/// While the Scourge stands alone after breaking from the Legion, it can field more of its limited units. The bonus is
-/// removed as soon as anyone joins its team.
+/// While the Scourge stands alone after breaking from the Legion, it can field more of its limited units, the ones marked
+/// with <see cref="ScourgeObjectInfo.StandingAloneHint"/>. The bonus is removed as soon as anyone joins its team.
 /// </summary>
 public sealed class ScourgeSoloLimits
 {
@@ -41,12 +43,15 @@ public sealed class ScourgeSoloLimits
     }
 
     var hadBonus = _boostedObjects.Count > 0;
-    foreach (var objectId in _scourge.GetLimitedObjects())
+    foreach (var objectInfo in ScourgeObjectInfo.GetAllObjectLimits())
     {
-      if (!_boostedObjects.Contains(objectId) && CanBoost(objectId))
+      var objectId = objectInfo.ObjectTypeId;
+      if (objectInfo.LimitIncreaseHint == ScourgeObjectInfo.StandingAloneHint && !_boostedObjects.Contains(objectId) &&
+          _scourge.GetObjectLimit(objectId) > 0)
       {
         _scourge.ModObjectLimit(objectId, Bonus);
         _boostedObjects.Add(objectId);
+        ShiftShownLimit(objectId, Bonus);
       }
     }
 
@@ -54,6 +59,14 @@ public sealed class ScourgeSoloLimits
     {
       _scourge.Player?.DisplayTextTo(Loc.Format("Standing alone, the Scourge can field {bonus} more of each of its limited units until another faction joins it.",
         ("{bonus}", Bonus.ToString())));
+    }
+  }
+
+  private void ShiftShownLimit(int objectId, int change)
+  {
+    if (_scourge.Player != null)
+    {
+      LimitTooltips.ShiftShownLimit(_scourge.Player, objectId, change);
     }
   }
 
@@ -67,17 +80,10 @@ public sealed class ScourgeSoloLimits
     foreach (var objectId in _boostedObjects)
     {
       _scourge.ModObjectLimit(objectId, -Bonus);
+      ShiftShownLimit(objectId, -Bonus);
     }
 
     _boostedObjects.Clear();
     _scourge.Player?.DisplayTextTo(Loc.Get("The Scourge no longer stands alone and loses its extra unit limits."));
-  }
-
-  private bool CanBoost(int objectId)
-  {
-    var limit = _scourge.GetObjectLimit(objectId);
-    return limit > 1 && limit < Faction.Unlimited &&
-           !IsUnitIdType(objectId, unittype.Hero) && !IsUnitIdType(objectId, unittype.Structure) &&
-           (IsUnitIdType(objectId, unittype.Ground) || IsUnitIdType(objectId, unittype.Flying));
   }
 }
