@@ -1,0 +1,45 @@
+﻿using MacroTools.Extensions;
+using MacroTools.Factions;
+using MacroTools.Legends;
+using MacroTools.Paths;
+using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+
+namespace WarcraftLegacies.Source.Factions.Lordaeron.Paths;
+
+/// <summary>
+/// Once Stratholme is ash and Arthas has fallen for good, he rises as a death knight and leads Lordaeron's dead to join
+/// the Scourge.
+/// </summary>
+public sealed class PathFallenPrince : FactionPath
+{
+  private readonly FallenPrinceTransformation _transformation;
+
+  public PathFallenPrince(FallenPrinceTransformation transformation, Capital stratholme, LegendaryHero arthas)
+  {
+    _transformation = transformation;
+    Name = "The Fallen Prince";
+    IconName = "HeroDeathKnight";
+    Description = "With Stratholme in ashes and the prince slain, Arthas rises as a death knight. All your forces are removed and you restart as the Fallen Prince at Stratholme and in Northrend, joining the Scourge.";
+    AddRequirement(new ObjectiveCapitalDead(stratholme) { ShowsInQuestLog = false });
+    AddRequirement(new ObjectiveLegendDead(arthas) { ShowsInQuestLog = false });
+  }
+
+  /// <inheritdoc />
+  public override bool ChangesTeam => true;
+
+  /// <inheritdoc />
+  protected override Team? GetDestinationTeam(Faction faction)
+  {
+    if (!FactionManager.TryGetFactionByType<ScourgeFaction>(out var scourge))
+    {
+      return null;
+    }
+
+    var scourgePlayer = scourge.Player;
+    return scourgePlayer == null ? null : scourgePlayer.GetPlayerData().Team;
+  }
+
+  /// <inheritdoc />
+  protected override void OnTaken(Faction faction) => _transformation.Execute(faction);
+}

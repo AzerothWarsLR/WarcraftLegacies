@@ -113,6 +113,11 @@ public sealed class LordaeronFaction : Faction, IHasRoleplayPaths
     {
       AddPath(new PathScarletCrusade(_scarletCrusadeTransformation, AllLegends.Lordaeron.CapitalPalace, AllLegends.Lordaeron.Stratholme));
     }
+
+    if (!GetAllPaths().Any(x => x is PathFallenPrince))
+    {
+      AddPath(new PathFallenPrince(new FallenPrinceTransformation(), AllLegends.Lordaeron.Stratholme, AllLegends.Lordaeron.Arthas));
+    }
   }
 
   private static void RegisterResearches()
