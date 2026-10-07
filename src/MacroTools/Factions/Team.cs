@@ -20,6 +20,11 @@ public sealed class Team
 
   public string Name { get; }
 
+  /// <summary>The <see cref="Bloc"/> this team is allied to, if any.</summary>
+  public Bloc? Bloc { get; internal set; }
+
+  internal IEnumerable<player> Members => _members;
+
   /// <summary>
   /// The name of this <see cref="Team" /> as a player reads it.
   /// <para>
@@ -105,6 +110,10 @@ public sealed class Team
     }
     _members.Remove(whichPlayer);
     UnallyPlayer(whichPlayer);
+    foreach (var blocTeam in GetOtherBlocTeams())
+    {
+      blocTeam.UnallyPlayer(whichPlayer);
+    }
   }
 
   internal void AddPlayer(player whichPlayer)
@@ -116,7 +125,14 @@ public sealed class Team
 
     _members.Add(whichPlayer);
     AllyPlayer(whichPlayer);
+    foreach (var blocTeam in GetOtherBlocTeams())
+    {
+      blocTeam.AllyPlayer(whichPlayer);
+    }
   }
+
+  private IEnumerable<Team> GetOtherBlocTeams() =>
+    Bloc == null ? Array.Empty<Team>() : Bloc.Teams.Where(x => x != this);
 
   /// <summary>
   ///   Causes every <see cref="player" /> in the <see cref="Team" /> to ally the given player, and vise-versa.
