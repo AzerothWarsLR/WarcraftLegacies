@@ -72,6 +72,17 @@ public abstract class WorldEvent
   /// <summary>Runs when the event happens.</summary>
   protected abstract void OnHappened();
 
+  /// <summary>Makes the event happen straight away, skipping any warning, as long as it hasn't happened yet.</summary>
+  public void HappenNow()
+  {
+    if (State != WorldEventState.Upcoming && State != WorldEventState.Imminent)
+    {
+      return;
+    }
+
+    Happen();
+  }
+
   /// <summary>Stops the event from ever happening.</summary>
   public void Cancel()
   {
