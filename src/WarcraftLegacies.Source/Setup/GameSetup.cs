@@ -67,6 +67,7 @@ public static class GameSetup
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
+    AhnQirajSetup.Setup();
     var gameModeManager = new GameModeManager(new IGameMode[]
     {
       new ClosedAlliance(),
