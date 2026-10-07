@@ -133,7 +133,7 @@ public sealed class FactionMultiboard
     var teamName = team.LocalizedName;
     if (team.Bloc != null)
     {
-      SetHeaderText(row, $"  {SubTeamColor}{teamName}|r{GetHandicapText(team)}");
+      SetHeaderText(row, $"  {SubTeamColor}{teamName}|r");
       return;
     }
 
@@ -144,7 +144,7 @@ public sealed class FactionMultiboard
       return;
     }
 
-    SetHeaderText(row, $"{HeaderColor}{teamName}{sizeText}|r{GetHandicapText(team)}");
+    SetHeaderText(row, $"{HeaderColor}{teamName}{sizeText}|r");
   }
 
   private void UpdateBlocRow(Bloc bloc)
@@ -174,7 +174,7 @@ public sealed class FactionMultiboard
   {
     var handicap = TeamHandicaps.GetHandicap(team);
     return handicap > 0
-      ? $" |cff00ff00{Loc.Format("Handicap +{percent}%", ("{percent}", R2I(handicap * 100 + 0.5f).ToString()))}|r"
+      ? $"  |cff00ff00{Loc.Format("Handicap +{percent}%", ("{percent}", R2I(handicap * 100 + 0.5f).ToString()))}|r"
       : "";
   }
 
@@ -206,7 +206,7 @@ public sealed class FactionMultiboard
     _multiboard.Rows = 3;
     _multiboard.Title = _title;
     _multiboard.IsDisplayed = true;
-    _multiboard.Rows = 30;
+    _multiboard.Rows = 40;
     UpdateHeaderRow();
     row += 1;
     foreach (var team in FactionManager.GetAllTeams())
@@ -243,6 +243,14 @@ public sealed class FactionMultiboard
     _rowsByTeam[team] = row;
     UpdateTeamRow(team);
     row += 1;
+
+    var handicapText = GetHandicapText(team);
+    if (handicapText != "")
+    {
+      SetHeaderText(row, handicapText);
+      row += 1;
+    }
+
     foreach (var faction in team.GetAllFactions())
     {
       if (faction.Player != null && faction.ScoreStatus != ScoreStatus.Defeated)
