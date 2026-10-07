@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
@@ -20,6 +21,8 @@ public sealed class FactionMultiboard
   private const int ColumnCp = 1;
   private const int ColumnIncome = 2;
   private const int ColumnTeam = 0;
+  private const string HeaderColor = "|cffffcc00";
+  private const string SubTeamColor = "|cffbbbbbb";
 
   private const float WidthFaction = 0.09f;
   private const float WidthCp = 0.02f;
@@ -30,6 +33,7 @@ public sealed class FactionMultiboard
 
   private readonly Dictionary<Faction, int> _rowsByFaction = new();
   private readonly Dictionary<Team, int> _rowsByTeam = new();
+  private readonly Dictionary<Bloc, int> _rowsByBloc = new();
   private multiboard _multiboard;
 
   private FactionMultiboard(int columnCount, int rowCount, string title)
@@ -72,6 +76,8 @@ public sealed class FactionMultiboard
       playerData.PlayerJoinedTeam += _ => Instance?.Render();
       playerData.PlayerLeftTeam += _ => Instance?.Render();
     }
+
+    TeamChanges.OnAnyTeamChanged(() => Instance?.Render());
 
     _initialized = true;
   }
@@ -123,13 +129,44 @@ public sealed class FactionMultiboard
   private void UpdateTeamRow(Team team)
   {
     var row = _rowsByTeam[team];
-    var mbi = _multiboard.GetItem(row, ColumnTeam);
     var teamName = team.LocalizedName;
-    mbi.SetText($"---{teamName}{SubString("-----------------------------------------", 0, 19 - StringLength(teamName))}");
+    if (team.Bloc != null)
+    {
+      SetHeaderText(row, $"  {SubTeamColor}{teamName}|r");
+      return;
+    }
+
+    var sizeText = GetSizeText(team);
+    if (sizeText == "")
+    {
+      SetHeaderText(row, $"---{teamName}{SubString("-----------------------------------------", 0, 19 - StringLength(teamName))}");
+      return;
+    }
+
+    SetHeaderText(row, $"{HeaderColor}{teamName}{sizeText}|r");
+  }
+
+  private void UpdateBlocRow(Bloc bloc)
+  {
+    var row = _rowsByBloc[bloc];
+    var sizeText = bloc.Teams.Count > 0 ? GetSizeText(bloc.Teams[0]) : "";
+    SetHeaderText(row, $"{HeaderColor}{bloc.LocalizedName}{sizeText}|r");
+  }
+
+  private void SetHeaderText(int row, string text)
+  {
+    var mbi = _multiboard.GetItem(row, ColumnTeam);
+    mbi.SetText(text);
     mbi.SetWidth(WidthTeam);
     mbi.SetVisibility(true, false);
     _multiboard.GetItem(row, ColumnCp).SetVisibility(false, false);
     _multiboard.GetItem(row, ColumnIncome).SetVisibility(false, false);
+  }
+
+  private static string GetSizeText(Team team)
+  {
+    var capacity = TeamChanges.Capacity(team);
+    return capacity == int.MaxValue ? "" : $" {TeamChanges.GetSize(team)}/{capacity}";
   }
 
   private void UpdateHeaderRow()
@@ -152,6 +189,7 @@ public sealed class FactionMultiboard
   {
     _rowsByFaction.Clear();
     _rowsByTeam.Clear();
+    _rowsByBloc.Clear();
     var row = 0;
     _multiboard.Dispose();
     _multiboard = multiboard.Create();
@@ -164,25 +202,49 @@ public sealed class FactionMultiboard
     row += 1;
     foreach (var team in FactionManager.GetAllTeams())
     {
-      if (team.UndefeatedPlayerCount <= 0)
+      if (team.Bloc == null)
+      {
+        row = RenderTeam(team, row);
+        continue;
+      }
+
+      if (_rowsByBloc.ContainsKey(team.Bloc) || team.Bloc.Teams.All(x => x.UndefeatedPlayerCount <= 0))
       {
         continue;
       }
 
-      _rowsByTeam[team] = row;
-      UpdateTeamRow(team);
+      _rowsByBloc[team.Bloc] = row;
+      UpdateBlocRow(team.Bloc);
       row += 1;
-      foreach (var faction in team.GetAllFactions())
+      foreach (var blocTeam in team.Bloc.Teams)
       {
-        if (faction.Player != null && faction.ScoreStatus != ScoreStatus.Defeated)
-        {
-          _rowsByFaction[faction] = row;
-          UpdateFactionRow(faction);
-          row += 1;
-        }
+        row = RenderTeam(blocTeam, row);
       }
     }
     _multiboard.Rows = row;
+  }
+
+  private int RenderTeam(Team team, int row)
+  {
+    if (team.UndefeatedPlayerCount <= 0)
+    {
+      return row;
+    }
+
+    _rowsByTeam[team] = row;
+    UpdateTeamRow(team);
+    row += 1;
+    foreach (var faction in team.GetAllFactions())
+    {
+      if (faction.Player != null && faction.ScoreStatus != ScoreStatus.Defeated)
+      {
+        _rowsByFaction[faction] = row;
+        UpdateFactionRow(faction);
+        row += 1;
+      }
+    }
+
+    return row;
   }
 
   private static void RegisterFaction(Faction faction)
