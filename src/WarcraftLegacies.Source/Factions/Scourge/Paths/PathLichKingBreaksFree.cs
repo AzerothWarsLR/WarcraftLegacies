@@ -24,5 +24,5 @@ public sealed class PathLichKingBreaksFree : FactionPath
   }
 
   /// <inheritdoc />
-  protected override void OnTaken(Faction faction) => _split.HappenNow();
+  protected override void OnTaken(Faction faction) => _split.HappenNow(faction.ColoredName);
 }

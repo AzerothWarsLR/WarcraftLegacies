@@ -99,7 +99,9 @@ public sealed class EventCard : Card<WorldEvent>
       case WorldEventState.Imminent:
         return $"|cffff8800{Loc.Get("Imminent")}|r - {Loc.Format("happens in {time}", ("{time}", CardText.FormatTime(worldEvent.WarningTimeRemaining)))}";
       case WorldEventState.Happened:
-        return $"|cffffcc00{Loc.Get("Happened")}|r - {Loc.Format("turn {turn}", ("{turn}", worldEvent.HappenedOnTurn.ToString()))}";
+        return worldEvent.Instigator == null
+          ? $"|cffffcc00{Loc.Get("Happened")}|r - {Loc.Format("turn {turn}", ("{turn}", worldEvent.HappenedOnTurn.ToString()))}"
+          : $"|cffffcc00{Loc.Get("Happened")}|r - {Loc.Format("turn {turn}, started by {who}", ("{turn}", worldEvent.HappenedOnTurn.ToString()), ("{who}", worldEvent.Instigator))}";
       default:
         return $"|cffff0000{Loc.Get("Cancelled")}|r";
     }

@@ -72,12 +72,21 @@ public abstract class WorldEvent
   /// <summary>Runs when the event happens.</summary>
   protected abstract void OnHappened();
 
+  /// <summary>Who or what set the event off, like a faction's name, if known.</summary>
+  public string? Instigator { get; protected set; }
+
   /// <summary>Makes the event happen straight away, skipping any warning, as long as it hasn't happened yet.</summary>
-  public void HappenNow()
+  /// <param name="instigator">Who set the event off, shown in the Events menu.</param>
+  public void HappenNow(string? instigator = null)
   {
     if (State != WorldEventState.Upcoming && State != WorldEventState.Imminent)
     {
       return;
+    }
+
+    if (instigator != null)
+    {
+      Instigator = instigator;
     }
 
     Happen();
@@ -189,13 +198,16 @@ public abstract class WorldEvent
 
     foreach (var whichPlayer in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      whichPlayer.DisplayTextTo($"\n|cffffcc00{Loc.Get("EVENT")}|r - {Loc.Get(Name)}\n{Loc.Get(Description)}");
+      whichPlayer.DisplayTextTo($"\n|cffffcc00{Loc.Get("EVENT")}|r - {Loc.Get(Name)}{GetInstigatorText()}\n{Loc.Get(Description)}");
     }
 
     EventBanner.Show(IconPath, Loc.Get(Name), Loc.Get(Description));
     SoundLibrary.Warning.Start();
     OnHappened();
   }
+
+  private string GetInstigatorText() =>
+    Instigator == null ? "" : $" ({Loc.Format("started by {who}", ("{who}", Instigator))})";
 
   private void AnnounceImminent()
   {

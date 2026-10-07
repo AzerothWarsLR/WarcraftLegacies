@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Localization;
 using MacroTools.Paths;
 using MacroTools.Quests;
 using MacroTools.WorldEvents;
@@ -36,6 +37,11 @@ public sealed class ScourgeSplitEvent : WorldEvent
     {
       if (args.Quest == summonArchimonde && args.Quest.Progress == QuestProgress.Complete)
       {
+        if (Instigator == null)
+        {
+          Instigator = Loc.Format("{faction} summoning Archimonde", ("{faction}", legion.ColoredName));
+        }
+
         archimondeSummoned.Trigger();
       }
     };
@@ -63,14 +69,14 @@ public sealed class ScourgeSplitEvent : WorldEvent
     {
       Name = "Unbound Scourge",
       IconName = "FrostWyrm",
-      DescriptionTemplate = "Free of the Legion's chains, your undead units deal {bonus}% more damage and have {bonus}% more health."
+      DescriptionTemplate = "Free of the Legion's chains, your undead units deal {bonus}% more damage and take {reduction}% less damage."
     });
 
     _legion.AddPower(new EmpoweredUnits(x => !x.IsUnitType(unittype.Structure), PowerBonus)
     {
       Name = "Wrath of the Legion",
       IconName = "DoomGuard",
-      DescriptionTemplate = "Enraged by the Scourge's betrayal, your demons deal {bonus}% more damage and have {bonus}% more health."
+      DescriptionTemplate = "Enraged by the Scourge's betrayal, your demons deal {bonus}% more damage and take {reduction}% less damage."
     });
 
     new ScourgeSoloLimits(_scourge).Start();
