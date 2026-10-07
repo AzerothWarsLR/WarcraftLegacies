@@ -32,13 +32,13 @@ public sealed class ObjectiveEitherOf : Objective
 
   public override void OnAdd(Faction whichFaction)
   {
-    ObjectiveA.OnAdd(whichFaction);
-    ObjectiveB.OnAdd(whichFaction);
     foreach (var eligibleFaction in EligibleFactions)
     {
       ObjectiveA.EligibleFactions.Add(eligibleFaction);
       ObjectiveB.EligibleFactions.Add(eligibleFaction);
     }
+    ObjectiveA.OnAdd(whichFaction);
+    ObjectiveB.OnAdd(whichFaction);
     Update();
   }
 

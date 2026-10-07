@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -108,7 +109,7 @@ public sealed class LordaeronFaction : Faction, IHasRoleplayPaths
   /// <inheritdoc />
   public void AddRoleplayPaths()
   {
-    if (_scarletCrusadeTransformation != null)
+    if (_scarletCrusadeTransformation != null && !GetAllPaths().Any(x => x is PathScarletCrusade))
     {
       AddPath(new PathScarletCrusade(_scarletCrusadeTransformation, AllLegends.Lordaeron.CapitalPalace, AllLegends.Lordaeron.Stratholme));
     }
