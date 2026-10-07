@@ -215,6 +215,24 @@ public abstract class FactionPath
     OnDeclined(Faction!);
   }
 
+  /// <summary>Makes a locked path available straight away, ignoring its requirements. Meant for testing.</summary>
+  public void ForceAvailable()
+  {
+    if (State != PathState.Locked)
+    {
+      return;
+    }
+
+    OfferTimeRemaining = OfferDuration;
+    State = PathState.Available;
+    if (OfferDuration > 0 || BlockedReason != null)
+    {
+      StartTicking();
+    }
+
+    AnnounceAvailable();
+  }
+
   /// <summary>Closes the path so it can no longer be taken.</summary>
   public void Close()
   {
