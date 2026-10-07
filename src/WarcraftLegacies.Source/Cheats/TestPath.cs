@@ -20,6 +20,13 @@ public sealed class TestPath : FactionPath
     }
   }
 
+  /// <summary>Adds a requirement that has to stay true for the path to stay available.</summary>
+  public TestPath RequireToStayTrue(Objective requirement)
+  {
+    AddMustStayTrueRequirement(requirement);
+    return this;
+  }
+
   /// <inheritdoc />
   protected override void OnTaken(Faction faction)
   {
