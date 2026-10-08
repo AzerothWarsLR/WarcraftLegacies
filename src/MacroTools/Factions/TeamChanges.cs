@@ -7,10 +7,7 @@ using WCSharp.Shared;
 
 namespace MacroTools.Factions;
 
-/// <summary>
-/// Moves players between <see cref="Team"/>s mid-game, with a ceasefire between the old allies, a cap on how big a
-/// team can get, and a cooldown before the same player can change teams again.
-/// </summary>
+/// <summary>Moves players between <see cref="Team"/>s mid-game, with ceasefires, team caps and a cooldown.</summary>
 public static class TeamChanges
 {
   private static readonly Dictionary<player, float> LastChangeTimes = new();
@@ -19,6 +16,9 @@ public static class TeamChanges
   private static readonly List<Action> AnyTeamChangedHandlers = new();
   private static float _cooldown = 600;
   private static Func<Team, int> _capacity = _ => int.MaxValue;
+  private static List<Ceasefire>? _ceasefireBatch;
+  private static timerdialog? _ceasefireDialog;
+  private static float _ceasefireBatchStart = -1;
 
   /// <summary>How many seconds a player and their former allies can't attack each other after a team change.</summary>
   public static float CeasefireDuration { get; set; } = 60;
@@ -49,10 +49,7 @@ public static class TeamChanges
   /// <summary>Whether a team size cap has been set for this game, as in Roleplay mode.</summary>
   public static bool HasCapacityRules { get; private set; }
 
-  /// <summary>
-  /// Runs <paramref name="handler"/> whenever any player joins or leaves a <see cref="Team"/>, or the team size cap or
-  /// cooldown changes.
-  /// </summary>
+  /// <summary>Runs <paramref name="handler"/> whenever anyone changes team or the team rules change.</summary>
   public static void OnAnyTeamChanged(Action handler)
   {
     WatchTeams();
@@ -79,10 +76,7 @@ public static class TeamChanges
   /// <summary>Whether <paramref name="team"/> has no room left for another player.</summary>
   public static bool IsFull(Team team) => GetSize(team) >= Capacity(team);
 
-  /// <summary>
-  /// Whether <paramref name="whichPlayer"/> can move to <paramref name="team"/> without going over its cap. Moving
-  /// within the same <see cref="Bloc"/> never changes its size, so it always has room.
-  /// </summary>
+  /// <summary>Whether <paramref name="whichPlayer"/> can join <paramref name="team"/> without going over its cap.</summary>
   public static bool HasRoomFor(Team team, player whichPlayer)
   {
     var currentTeam = whichPlayer.GetPlayerData().Team;
@@ -106,10 +100,7 @@ public static class TeamChanges
   public static float GetCooldownRemaining(player whichPlayer) =>
     LastChangeTimes.TryGetValue(whichPlayer, out var lastChange) ? Math.Max(0, lastChange + Cooldown - Now) : 0;
 
-  /// <summary>
-  /// Moves <paramref name="whichPlayer"/> to <paramref name="destination"/>, starting a ceasefire with everyone they
-  /// leave behind.
-  /// </summary>
+  /// <summary>Moves <paramref name="whichPlayer"/> to <paramref name="destination"/>, with a ceasefire.</summary>
   public static void Move(player whichPlayer, Team destination)
   {
     var playerData = whichPlayer.GetPlayerData();
@@ -129,10 +120,7 @@ public static class TeamChanges
     StartCeasefire(whichPlayer, formerAllies, factionName);
   }
 
-  /// <summary>
-  /// Moves <paramref name="whichPlayer"/> onto a <see cref="Team"/> of their own, starting a ceasefire with everyone
-  /// they leave behind.
-  /// </summary>
+  /// <summary>Moves <paramref name="whichPlayer"/> onto a team of their own, with a ceasefire.</summary>
   public static void MoveSolo(player whichPlayer)
   {
     var faction = whichPlayer.GetPlayerData().Faction;
@@ -171,28 +159,65 @@ public static class TeamChanges
     whichPlayer.DisplayTextTo(Loc.Format("You have left your team. There is a ceasefire for {seconds} seconds before your former allies become your enemies.",
       ("{seconds}", ((int)CeasefireDuration).ToString())));
 
-    var ceasefireTimer = timer.Create();
-    var dialog = timerdialog.Create(ceasefireTimer);
-    dialog.SetTitle(Loc.Get("Ceasefire ends in:"));
-    if (player.LocalPlayer == whichPlayer || formerAllies.Contains(player.LocalPlayer))
+    var batch = _ceasefireBatch;
+    var batchDialog = _ceasefireDialog;
+    if (batch == null || batchDialog == null || _ceasefireBatchStart != Now)
     {
-      dialog.IsDisplayed = true;
+      var newBatch = new List<Ceasefire>();
+      var batchTimer = timer.Create();
+      var newDialog = timerdialog.Create(batchTimer);
+      newDialog.SetTitle(Loc.Get("Ceasefire ends in:"));
+      batchTimer.Start(CeasefireDuration, false, () => EndCeasefires(newBatch, batchTimer, newDialog));
+      _ceasefireBatchStart = Now;
+      _ceasefireBatch = newBatch;
+      _ceasefireDialog = newDialog;
+      batch = newBatch;
+      batchDialog = newDialog;
     }
 
-    ceasefireTimer.Start(CeasefireDuration, false, () =>
+    batch.Add(new Ceasefire(whichPlayer, formerAllies));
+    if (player.LocalPlayer == whichPlayer || formerAllies.Contains(player.LocalPlayer))
     {
-      foreach (var formerAlly in formerAllies)
+      batchDialog.IsDisplayed = true;
+    }
+  }
+
+  private static void EndCeasefires(List<Ceasefire> batch, timer batchTimer, timerdialog batchDialog)
+  {
+    foreach (var ceasefire in batch)
+    {
+      foreach (var formerAlly in ceasefire.FormerAllies)
       {
-        if (!AreTeammates(whichPlayer, formerAlly))
+        if (!AreTeammates(ceasefire.Player, formerAlly))
         {
-          whichPlayer.SetAllianceState(formerAlly, AllianceState.Unallied);
-          formerAlly.SetAllianceState(whichPlayer, AllianceState.Unallied);
+          ceasefire.Player.SetAllianceState(formerAlly, AllianceState.Unallied);
+          formerAlly.SetAllianceState(ceasefire.Player, AllianceState.Unallied);
         }
       }
+    }
 
-      dialog.Dispose();
-      ceasefireTimer.Dispose();
-    });
+    if (_ceasefireBatch == batch)
+    {
+      _ceasefireBatch = null;
+      _ceasefireDialog = null;
+    }
+
+    batchDialog.Dispose();
+    batchTimer.Dispose();
+  }
+
+  /// <summary>A player who left their team, and the former allies they have a ceasefire with.</summary>
+  private sealed class Ceasefire
+  {
+    public Ceasefire(player whichPlayer, List<player> formerAllies)
+    {
+      Player = whichPlayer;
+      FormerAllies = formerAllies;
+    }
+
+    public player Player { get; }
+
+    public List<player> FormerAllies { get; }
   }
 
   internal static void NotifyTeamChanged()
