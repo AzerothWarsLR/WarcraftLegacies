@@ -5,10 +5,7 @@ using MacroTools.Paths;
 
 namespace WarcraftLegacies.Source.GameLogic.HyjalPact;
 
-/// <summary>
-/// A faction's vote on the Pact of Hyjal. Accepting votes for it, declining votes against it, and letting it run out
-/// counts as voting against it.
-/// </summary>
+/// <summary>A faction's vote on the Pact of Hyjal.</summary>
 public sealed class PactVotePath : FactionPath
 {
   private readonly Action<Faction, bool> _onVote;

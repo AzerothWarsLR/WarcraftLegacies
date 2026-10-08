@@ -9,15 +9,11 @@ using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Theramore;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic.HyjalPact;
 
-/// <summary>
-/// The Horde, the Night Elves and Theramore set aside their wars to stand against the Burning Legion at Mount Hyjal.
-/// <para>Once Theramore exists and Archimonde has been summoned, any of them can propose the pact, which starts a vote.
-/// If a majority agrees, everyone who voted for it moves onto a new Pact of Hyjal team. A failed vote can be proposed
-/// again after a cooldown.</para>
-/// </summary>
+/// <summary>The Horde, the Night Elves and Theramore vote to stand together against the Legion until Archimonde falls.</summary>
 public sealed class PactOfHyjal : WorldEvent
 {
   private const float VoteDuration = 180;
@@ -34,10 +30,14 @@ public sealed class PactOfHyjal : WorldEvent
   private readonly Dictionary<player, Team> _originalTeams = new();
   private bool _voting;
   private bool _onCooldown;
+  private bool _ended;
   private timer? _timer;
 
   /// <summary>Whether a vote on the pact is running.</summary>
   public bool IsVoting => _voting;
+
+  /// <summary>Whether the pact has formed and not yet ended.</summary>
+  public bool IsActive => PactTeam != null && !_ended;
 
   /// <summary>The team the pact's members are on once it has formed.</summary>
   public Team? PactTeam { get; private set; }
@@ -97,7 +97,8 @@ public sealed class PactOfHyjal : WorldEvent
     RoleplayFronts.AddTeamRivalry((teamA, teamB) =>
       (teamA == pactTeam && ContainsLegion(teamB)) || (teamB == pactTeam && ContainsLegion(teamA)));
     var capacity = TeamChanges.Capacity;
-    TeamChanges.Capacity = team => team == pactTeam ? int.MaxValue : capacity(team);
+    var couldHaveJoined = _voters.Count;
+    TeamChanges.Capacity = team => team == pactTeam ? couldHaveJoined : capacity(team);
 
     var memberNames = new List<string>();
     foreach (var member in _votedFor)
@@ -115,6 +116,77 @@ public sealed class PactOfHyjal : WorldEvent
     }
 
     Outcome = Loc.Format("{members} joined the Pact of Hyjal.", ("{members}", string.Join(", ", memberNames)));
+    AllLegends.Legion.Archimonde.Died += args =>
+    {
+      if (args.Permanent)
+      {
+        End();
+      }
+    };
+  }
+
+  /// <summary>Ends the pact, sending its members back to their old teams.</summary>
+  public void End()
+  {
+    if (!IsActive)
+    {
+      return;
+    }
+
+    _ended = true;
+    player? theramorePlayer = null;
+    var returned = new List<string>();
+    foreach (var member in _originalTeams)
+    {
+      var memberPlayer = member.Key;
+      var memberFaction = memberPlayer.GetPlayerData().Faction;
+      if (memberFaction == null || memberFaction.ScoreStatus == ScoreStatus.Defeated)
+      {
+        continue;
+      }
+
+      if (memberFaction is TheramoreFaction)
+      {
+        theramorePlayer = memberPlayer;
+        continue;
+      }
+
+      TeamChanges.Move(memberPlayer, member.Value);
+      returned.Add(Loc.Format("{faction} returned to the {team}", ("{faction}", memberFaction.ColoredName), ("{team}", member.Value.LocalizedName)));
+    }
+
+    if (theramorePlayer != null)
+    {
+      var destination = TeamSetup.NightElves.UndefeatedPlayerCount < TeamSetup.Horde.UndefeatedPlayerCount
+        ? TeamSetup.NightElves
+        : TeamSetup.Horde;
+      if (TeamChanges.HasRoomFor(destination, theramorePlayer))
+      {
+        TeamChanges.Move(theramorePlayer, destination);
+      }
+      else
+      {
+        TeamChanges.MoveSolo(theramorePlayer);
+      }
+
+      var theramoreTeam = theramorePlayer.GetPlayerData().Team;
+      var theramoreFaction = theramorePlayer.GetPlayerData().Faction;
+      if (theramoreTeam != null && theramoreFaction != null)
+      {
+        returned.Add(Loc.Format("{faction} joined the {team}", ("{faction}", theramoreFaction.ColoredName), ("{team}", theramoreTeam.LocalizedName)));
+      }
+    }
+
+    var outcome = string.Join(". ", returned) + ".";
+    foreach (var whichPlayer in WCSharp.Shared.Util.EnumeratePlayers())
+    {
+      whichPlayer.DisplayTextTo($"\n|cffffcc00{Loc.Get("EVENT")}|r - {Loc.Get("The Pact of Hyjal Ends")}\n{outcome}");
+    }
+
+    SoundLibrary.Warning.Start();
+    var endedEvent = new PactEndedEvent(outcome);
+    endedEvent.RecordAsHappened();
+    WorldEventManager.Register(endedEvent);
   }
 
   private static bool ContainsLegion(Team team)

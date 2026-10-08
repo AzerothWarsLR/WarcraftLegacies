@@ -3,10 +3,7 @@ using WarcraftLegacies.Source.GameLogic;
 
 namespace WarcraftLegacies.Source.Cheats;
 
-/// <summary>
-/// Helps test the Pact of Hyjal alone: lets it be proposed straight away, and once a vote is running, makes everyone who
-/// hasn't voted vote for it.
-/// </summary>
+/// <summary>Helps test the Pact of Hyjal alone.</summary>
 public sealed class CheatTestPact : Command
 {
   /// <inheritdoc />
@@ -19,7 +16,7 @@ public sealed class CheatTestPact : Command
   public override CommandType Type => CommandType.Cheat;
 
   /// <inheritdoc />
-  public override string Description => "Lets the Pact of Hyjal be proposed now, or makes everyone vote for it while a vote is running.";
+  public override string Description => "Lets the Pact of Hyjal be proposed now, makes everyone vote for it while a vote is running, or ends it once formed.";
 
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
@@ -28,6 +25,12 @@ public sealed class CheatTestPact : Command
     if (pact == null)
     {
       return "The Pact of Hyjal only exists in Roleplay mode.";
+    }
+
+    if (pact.IsActive)
+    {
+      pact.End();
+      return "The Pact of Hyjal has ended.";
     }
 
     if (pact.IsVoting)
