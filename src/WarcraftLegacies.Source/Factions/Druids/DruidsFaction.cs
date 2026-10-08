@@ -28,6 +28,7 @@ public sealed class DruidsFaction : Faction
     base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
     TraditionalTeam = TeamSetup.NightElves;
+    NameTakesArticle = true;
     UndefeatedResearch = UPGRADE_R06E_DRUIDS_EXISTS;
     StartingGold = new StartingGold
     {

@@ -3,6 +3,8 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Paths;
 using MacroTools.WorldEvents;
+using WarcraftLegacies.Source.Factions.Druids;
+using WarcraftLegacies.Source.Factions.Druids.Paths;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.FelHorde.Paths;
 using WarcraftLegacies.Source.Factions.Illidari;
@@ -48,6 +50,7 @@ public static class RoleplaySetting
     SetupStartingTeams();
     SetupScourgeSplit();
     SetupHyjalPact();
+    SetupNordrassilsSacrifice();
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
     foreach (var faction in FactionManager.GetAllFactions())
@@ -80,6 +83,21 @@ public static class RoleplaySetting
 
     HyjalPact = new PactOfHyjal(legion, legion.GetQuestByType<QuestSummonLegion>());
     WorldEventManager.Register(HyjalPact);
+  }
+
+  private static void SetupNordrassilsSacrifice()
+  {
+    if (!FactionManager.TryGetFactionByType<LegionFaction>(out var legion))
+    {
+      return;
+    }
+
+    if (!FactionManager.TryGetFactionByType<DruidsFaction>(out var druids))
+    {
+      return;
+    }
+
+    druids.AddPath(new PathNordrassilsSacrifice(legion.GetQuestByType<QuestConsumeTree>()));
   }
 
   private static void SetupScourgeSplit()

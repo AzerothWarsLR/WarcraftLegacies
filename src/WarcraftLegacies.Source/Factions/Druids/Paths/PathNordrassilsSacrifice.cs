@@ -1,0 +1,87 @@
+﻿using MacroTools.Factions;
+using MacroTools.Paths;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Factions.Legion.Quests;
+using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.Shared.Powers;
+
+namespace WarcraftLegacies.Source.Factions.Druids.Paths;
+
+/// <summary>Lets the Druids sacrifice Nordrassil to stop Archimonde, becoming the weaker Cenarion Circle.</summary>
+public sealed class PathNordrassilsSacrifice : FactionPath
+{
+  private const int ChannelSeconds = 60;
+  private const float ArchimondeLifeLeft = 0.1f;
+
+  private readonly QuestConsumeTree _consumeTree;
+
+  public PathNordrassilsSacrifice(QuestConsumeTree consumeTree)
+  {
+    _consumeTree = consumeTree;
+    Name = "Nordrassil's Sacrifice";
+    IconName = "Tranquility";
+    Description = "Archimonde is draining the Well of Eternity beneath Nordrassil. Unleash the World Tree's power to tear him apart, at the cost of the tree itself. Your druids carry on as the Cenarion Circle, diminished without it.";
+    AddMustStayTrueRequirement(new ObjectiveChannelTime(consumeTree.WorldTreeChannel, ChannelSeconds,
+      "Archimonde has been draining the World Tree for 60 seconds") { ShowsInQuestLog = false });
+  }
+
+  /// <inheritdoc />
+  protected override void OnTaken(Faction faction)
+  {
+    _consumeTree.WorldTreeChannel.InterruptChannel();
+    _consumeTree.Progress = QuestProgress.Failed;
+    WoundArchimonde();
+    DestroyNordrassil();
+    faction.Name = "Cenarion Circle";
+    RemoveImmortality(faction);
+    WeakenCenarius();
+  }
+
+  private static void WoundArchimonde()
+  {
+    var archimonde = AllLegends.Legion.Archimonde.Unit;
+    if (archimonde == null || !archimonde.Alive)
+    {
+      return;
+    }
+
+    var maximumLife = archimonde.MaxLife;
+    if (archimonde.Life > maximumLife * ArchimondeLifeLeft)
+    {
+      archimonde.Life = maximumLife * ArchimondeLifeLeft;
+    }
+
+    effect.Create(@"Abilities\Spells\NightElf\Tranquility\TranquilityTarget.mdl", archimonde.X, archimonde.Y).Dispose();
+  }
+
+  private static void DestroyNordrassil()
+  {
+    var nordrassil = AllLegends.Druids.Nordrassil.Unit;
+    if (nordrassil != null && nordrassil.Alive)
+    {
+      nordrassil.Kill();
+    }
+  }
+
+  private static void RemoveImmortality(Faction faction)
+  {
+    var immortality = faction.GetPowerByType<Immortality>();
+    if (immortality != null)
+    {
+      faction.RemovePower(immortality);
+    }
+  }
+
+  private static void WeakenCenarius()
+  {
+    var cenarius = AllLegends.Druids.Cenarius.Unit;
+    if (cenarius == null || !cenarius.Alive || cenarius.UnitType != UNIT_ECEN_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS)
+    {
+      return;
+    }
+
+    cenarius.RemoveAbility(ABILITY_ACM2_SPELL_IMMUNITY_SPELL_IMMUNITY_DIVINE_ARMOR);
+    cenarius.RemoveAbility(ABILITY_A0U0_MASTER_OF_NATURE_BROWN_CENARIUS);
+  }
+}
