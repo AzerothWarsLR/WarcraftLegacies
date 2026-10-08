@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Sounds;
+using MacroTools.WorldEvents;
 
 namespace MacroTools.Paths;
 
@@ -418,6 +420,8 @@ public abstract class FactionPath
     }
 
     SoundLibrary.Completed.Start();
+    var factionName = faction.ColoredName;
+    var formerTeam = owner?.GetPlayerData().Team;
     OnTaken(faction);
 
     if (ChangesTeam && owner != null)
@@ -431,6 +435,10 @@ public abstract class FactionPath
         TeamChanges.Move(owner, destination);
       }
     }
+
+    var takenEvent = new PathTakenEvent(this, factionName, owner, owner != null && owner.GetPlayerData().Team != formerTeam);
+    takenEvent.RecordAsHappened();
+    WorldEventManager.Register(takenEvent);
   }
 
   private static string FormatTime(float seconds)

@@ -87,7 +87,10 @@ public sealed class EventCard : Card<WorldEvent>
       return;
     }
 
-    _textFrame.Text = $"{GetStatusText(_worldEvent)}\n{Loc.Get(_worldEvent.Description)}{CardText.FormatRequirements(_worldEvent.Requirements)}";
+    var details = _worldEvent.State == WorldEventState.Happened
+      ? _worldEvent.Outcome == null ? "" : $"\n{_worldEvent.Outcome}"
+      : CardText.FormatRequirements(_worldEvent.Requirements);
+    _textFrame.Text = $"{GetStatusText(_worldEvent)}\n{Loc.Get(_worldEvent.Description)}{details}";
   }
 
   private static string GetStatusText(WorldEvent worldEvent)

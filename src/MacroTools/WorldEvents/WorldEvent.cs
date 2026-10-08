@@ -72,6 +72,9 @@ public abstract class WorldEvent
   /// <summary>Runs when the event happens.</summary>
   protected abstract void OnHappened();
 
+  /// <summary>What the event led to, like who changed team. Shown on its card once it has happened.</summary>
+  public string? Outcome { get; protected set; }
+
   /// <summary>Who or what set the event off, like a faction's name, if known.</summary>
   public string? Instigator { get; protected set; }
 
@@ -90,6 +93,16 @@ public abstract class WorldEvent
     }
 
     Happen();
+  }
+
+  /// <summary>
+  /// Marks the event as having happened this turn without announcing it or running <see cref="OnHappened"/>, for
+  /// entries that only record history. Call it before registering the event.
+  /// </summary>
+  public void RecordAsHappened()
+  {
+    HappenedOnTurn = GameTimeManager.Turn;
+    State = WorldEventState.Happened;
   }
 
   /// <summary>Stops the event from ever happening.</summary>
