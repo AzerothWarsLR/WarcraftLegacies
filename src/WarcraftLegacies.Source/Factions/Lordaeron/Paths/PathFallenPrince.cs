@@ -20,7 +20,7 @@ public sealed class PathFallenPrince : FactionPath
     _transformation = transformation;
     Name = "The Fallen Prince";
     IconName = "HeroDeathKnight";
-    Description = "With Stratholme in ashes and the prince slain, Arthas rises as a death knight. All your forces are removed and you restart as the Fallen Prince at Stratholme and in Northrend, joining the Scourge.";
+    Description = "With Stratholme in ashes and the prince slain, Arthas rises again as a death knight. His kingdom lost, he raises the dead of Stratholme and Northrend and marches with the Scourge.";
     AddRequirement(new ObjectiveCapitalDead(stratholme) { ShowsInQuestLog = false });
     AddRequirement(new ObjectiveLegendDead(arthas) { ShowsInQuestLog = false });
   }
