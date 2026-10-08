@@ -26,7 +26,8 @@ public sealed class PathBetrayersRedemption : FactionPath
     var losingLands = new ObjectiveTeamLostCapitals(TeamSetup.NightElves, CapitalsLost,
       AllLegends.Druids.Nordrassil, AllLegends.Druids.TempleOfTheMoon, AllLegends.Sentinels.Auberdine,
       AllLegends.Sentinels.Feathermoon, AllLegends.Sentinels.VaultOfTheWardens);
-    AddMustStayTrueRequirement(new ObjectiveEitherOf(outnumbered, losingLands) { ShowsInQuestLog = false });
+    AddMustStayTrueRequirement(new ObjectiveEitherOf(outnumbered, losingLands,
+      "The Night Elves are outnumbered or have lost 2 of their capitals") { ShowsInQuestLog = false });
   }
 
   /// <inheritdoc />

@@ -19,7 +19,7 @@ public sealed class PathLichKingBreaksFree : FactionPath
     _split = split;
     Name = "The Lich King Breaks Free";
     IconName = "HeroLich";
-    Description = "Break the Lich King's chains. The Scourge leaves the Burning Legion's team after a ceasefire, and both sides gain a Power from the betrayal.";
+    Description = "The Lich King has grown strong enough to defy his masters. Break free of the Burning Legion and fight on your own terms. Both sides grow stronger in their hatred of each other.";
     AddRequirement(new ObjectiveTurn(EarliestTurn) { ShowsInQuestLog = false });
   }
 

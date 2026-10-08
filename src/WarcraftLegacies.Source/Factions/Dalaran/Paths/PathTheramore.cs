@@ -23,7 +23,8 @@ public sealed class PathTheramore : FactionPath
     IconName = "Jaina";
     Description = "The north is lost. Jaina gathers what survivors she can and sails west across the sea, to build a new home for them on the shores of Kalimdor.";
     _northBroken = new ObjectiveTriggered("The North Alliance is broken: the Fallen Prince or the Banshee's Host has risen");
-    AddRequirement(new ObjectiveEitherOf(_northBroken, new ObjectiveCapitalDead(violetCitadel)) { ShowsInQuestLog = false });
+    AddRequirement(new ObjectiveEitherOf(_northBroken, new ObjectiveCapitalDead(violetCitadel),
+      "The Fallen Prince or the Banshee's Host has risen, or the Violet Citadel has fallen") { ShowsInQuestLog = false });
 
     foreach (var faction in FactionManager.GetAllFactions())
     {
