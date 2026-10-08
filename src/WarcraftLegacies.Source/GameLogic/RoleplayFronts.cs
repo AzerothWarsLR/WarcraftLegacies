@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using WarcraftLegacies.Source.Factions.BansheesHost;
 using WarcraftLegacies.Source.Factions.Dalaran;
@@ -19,19 +20,11 @@ using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.TaurenTribes;
 using WarcraftLegacies.Source.Factions.Theramore;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.GameLogic;
 
-/// <summary>
-/// Who fights whom in Roleplay mode. Each front has attackers and defenders, and a faction is a rival of the factions on
-/// the other side of any front it fights on:
-/// <list type="bullet">
-/// <item>North: the Scourge and the Legion against the North Alliance.</item>
-/// <item>South: the Fel Horde and the Legion against the South Alliance.</item>
-/// <item>Kalimdor: the Horde against the Night Elves.</item>
-/// </list>
-/// The Illidari are a wildcard and fight on no front. Factions made by paths fight where their story puts them.
-/// </summary>
+/// <summary>Who fights whom in Roleplay mode, across the North, South and Kalimdor fronts.</summary>
 public static class RoleplayFronts
 {
   private static readonly List<Func<Team, Team, bool>> ExtraRivalries = new();
@@ -39,10 +32,7 @@ public static class RoleplayFronts
   /// <summary>Makes teams that pass <paramref name="rivalry"/> rivals too, like a pact formed against the Legion.</summary>
   public static void AddTeamRivalry(Func<Team, Team, bool> rivalry) => ExtraRivalries.Add(rivalry);
 
-  /// <summary>
-  /// Whether any faction on <paramref name="teamA"/> fights any faction on <paramref name="teamB"/>, or the two teams have
-  /// been made rivals with <see cref="AddTeamRivalry"/>.
-  /// </summary>
+  /// <summary>Whether <paramref name="teamA"/> and <paramref name="teamB"/> fight each other.</summary>
   public static bool AreRivals(Team teamA, Team teamB)
   {
     foreach (var rivalry in ExtraRivalries)
@@ -81,14 +71,27 @@ public static class RoleplayFronts
 
   private static bool DefendsNorth(Faction faction) =>
     faction is LordaeronFaction || faction is DalaranFaction || faction is QuelthalasFaction ||
-    faction is ScarletCrusadeFaction || faction is GilneasFaction || faction is TheramoreFaction;
+    faction is ScarletCrusadeFaction || faction is GilneasFaction ||
+    (faction is TheramoreFaction && !IsOnKalimdorTeam(faction));
 
   private static bool AttacksSouth(Faction faction) => faction is FelHordeFaction || faction is LegionFaction;
 
   private static bool DefendsSouth(Faction faction) =>
     faction is StormwindFaction || faction is IronforgeFaction || faction is KultirasFaction;
 
-  private static bool AttacksKalimdor(Faction faction) => faction is OrcishHordeFaction || faction is TaurenTribesFaction;
+  private static bool AttacksKalimdor(Faction faction) =>
+    faction is OrcishHordeFaction || faction is TaurenTribesFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.Horde));
 
-  private static bool DefendsKalimdor(Faction faction) => faction is SentinelsFaction || faction is DruidsFaction;
+  private static bool DefendsKalimdor(Faction faction) =>
+    faction is SentinelsFaction || faction is DruidsFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.NightElves));
+
+  /// <summary>Whether Theramore has joined the Horde or the Night Elves.</summary>
+  private static bool IsOnKalimdorTeam(Faction faction) =>
+    IsOnTeam(faction, TeamSetup.Horde) || IsOnTeam(faction, TeamSetup.NightElves);
+
+  private static bool IsOnTeam(Faction faction, Team team)
+  {
+    var factionPlayer = faction.Player;
+    return factionPlayer != null && factionPlayer.GetPlayerData().Team == team;
+  }
 }
