@@ -7,9 +7,7 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Illidari.Paths;
 
-/// <summary>
-/// With the Night Elves outnumbered or losing their lands, Illidan returns to his people to fight beside them.
-/// </summary>
+/// <summary>Lets the Illidari join the Night Elves once the Night Elves are losing.</summary>
 public sealed class PathBetrayersRedemption : FactionPath
 {
   private const int HordeThreshold = 2;

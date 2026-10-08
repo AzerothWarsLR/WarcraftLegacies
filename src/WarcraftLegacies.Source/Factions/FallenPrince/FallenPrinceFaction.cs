@@ -5,10 +5,7 @@ using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions.FallenPrince;
 
-/// <summary>
-/// Arthas risen as a death knight, leading what is left of Lordaeron's army as undead. Only reached through the
-/// Fallen Prince path in Roleplay mode.
-/// </summary>
+/// <summary>Arthas and the dead of Lordaeron, reached through the Fallen Prince path.</summary>
 public sealed class FallenPrinceFaction : Faction
 {
   /// <inheritdoc />

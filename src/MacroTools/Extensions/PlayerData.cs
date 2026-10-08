@@ -146,10 +146,7 @@ public sealed class PlayerData
   /// <summary>Gold per minute this player hands to <see cref="TitheRecipient"/>.</summary>
   public int TitheOut => TitheRecipient == null ? 0 : (int)((BaseIncome + BonusIncome) * TitheShare);
 
-  /// <summary>
-  /// From now on <paramref name="share"/> of this player's income goes to <paramref name="recipient"/> instead, paid out
-  /// over each turn alongside the rest of their income.
-  /// </summary>
+  /// <summary>Hands <paramref name="share"/> of this player's income to <paramref name="recipient"/> from now on.</summary>
   public void PayTithe(PlayerData recipient, float share)
   {
     StopTithe();
@@ -390,22 +387,7 @@ public sealed class PlayerData
   public void ModObjectLimit(int id, int limit) =>
     SetObjectLimit(id, GetObjectLimit(id) + limit);
 
-  /// <summary>
-  /// Adds a fractional amount of gold to the player.
-  ///
-  /// <para>
-  /// Takes the integer part to add to the player's gold and accumulates the remainder.
-  /// </para>
-  ///
-  /// <para>
-  /// Use for float income sources (e.g., tick-based or shared income).
-  /// For integer amounts, modify <c>player.Gold</c> directly.
-  /// </para>
-  /// </summary>
-  /// <param name="amount">The fractional amount of gold to add.</param>
-  /// <summary>
-  /// Pays this player <paramref name="amount"/> gold of income, handing any tithe they owe to its recipient.
-  /// </summary>
+  /// <summary>Pays this player income, handing any tithe they owe to its recipient.</summary>
   internal void AddIncome(float amount)
   {
     var recipient = TitheRecipient;
@@ -441,6 +423,19 @@ public sealed class PlayerData
     }
   }
 
+  /// <summary>
+  /// Adds a fractional amount of gold to the player.
+  ///
+  /// <para>
+  /// Takes the integer part to add to the player's gold and accumulates the remainder.
+  /// </para>
+  ///
+  /// <para>
+  /// Use for float income sources (e.g., tick-based or shared income).
+  /// For integer amounts, modify <c>player.Gold</c> directly.
+  /// </para>
+  /// </summary>
+  /// <param name="amount">The fractional amount of gold to add.</param>
   internal void AddFractionalGold(float amount)
   {
     _partialGold += amount;

@@ -5,10 +5,7 @@ using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions.BansheesHost;
 
-/// <summary>
-/// Sylvanas risen as a banshee, leading the fallen of Quel'thalas for the Scourge. Only reached through the Banshee's
-/// Host path in Roleplay mode.
-/// </summary>
+/// <summary>Sylvanas and the fallen of Quel'thalas, reached through the Banshee's Host path.</summary>
 public sealed class BansheesHostFaction : Faction
 {
   /// <inheritdoc />

@@ -38,22 +38,13 @@ public abstract class FactionPath
   /// <summary>What happens if the path is taken.</summary>
   public string Description { get; init; } = "";
 
-  /// <summary>
-  /// What happens if the player turns the path down. Only paths with a decline outcome can be declined, so nobody locks
-  /// themselves out of a path by mistake.
-  /// </summary>
+  /// <summary>What happens if the path is declined. Only paths with one can be declined.</summary>
   public string? DeclineDescription { get; init; }
 
-  /// <summary>
-  /// What taking the path did beyond the faction's own new name or team, such as what happened to another faction. Set
-  /// while the path is taken and shown on its card in the Events menu.
-  /// </summary>
+  /// <summary>What taking the path did to others, shown on its Events card.</summary>
   public string? TakenOutcome { get; protected set; }
 
-  /// <summary>
-  /// Whether the path is a vote or proposal rather than a story branch. Taking one doesn't close the faction's other
-  /// paths, isn't announced to everyone and isn't recorded in the Events menu.
-  /// </summary>
+  /// <summary>Whether the path is a vote, which doesn't close other paths or get announced when taken.</summary>
   public bool IsVote { get; init; }
 
   /// <summary>Whether the path can be turned down.</summary>

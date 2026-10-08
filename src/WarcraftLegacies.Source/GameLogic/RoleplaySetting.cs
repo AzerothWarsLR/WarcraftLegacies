@@ -22,10 +22,7 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic;
 
-/// <summary>
-/// Tracks whether Roleplay mode is active, sets up the Roleplay starting teams, and gives every
-/// <see cref="IHasRoleplayPaths"/> faction its paths when it is.
-/// </summary>
+/// <summary>Sets up Roleplay mode: its teams, events and paths.</summary>
 public static class RoleplaySetting
 {
   private const int TeamCap = 5;
@@ -110,10 +107,7 @@ public static class RoleplaySetting
     WorldEventManager.Register(split);
   }
 
-  /// <summary>
-  /// Sets up the paths that involve the Illidari once they exist, alongside the Fel Horde and Sentinels. The Illidari are
-  /// picked from a choice, so they may only register after Roleplay starts.
-  /// </summary>
+  /// <summary>Sets up the paths involving the Illidari once they have been picked.</summary>
   private static void SetupIllidariPaths()
   {
     if (_illidariPathsSetUp)

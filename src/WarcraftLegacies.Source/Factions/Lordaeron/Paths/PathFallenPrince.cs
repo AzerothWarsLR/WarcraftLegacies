@@ -7,10 +7,7 @@ using WarcraftLegacies.Source.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron.Paths;
 
-/// <summary>
-/// Once Stratholme is ash and Arthas has fallen for good, he rises as a death knight and leads Lordaeron's dead to join
-/// the Scourge.
-/// </summary>
+/// <summary>Lets Lordaeron become the Fallen Prince once Stratholme and Arthas have fallen.</summary>
 public sealed class PathFallenPrince : FactionPath
 {
   private readonly FallenPrinceTransformation _transformation;

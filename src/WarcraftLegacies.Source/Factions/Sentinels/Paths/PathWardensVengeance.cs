@@ -5,11 +5,7 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Sentinels.Paths;
 
-/// <summary>
-/// Maiev will not fight beside the Betrayer. Once Illidan joins the Night Elves, the Sentinels can leave them, either to
-/// join the Alliance or to hunt Illidan alone. Declining keeps them with the Night Elves, but Maiev leaves for good.
-/// <para>Each way of leaving is its own path; declining either one declines both.</para>
-/// </summary>
+/// <summary>Lets the Sentinels leave the Night Elves once Illidan joins them. Declining loses Maiev.</summary>
 public abstract class PathWardensVengeance : FactionPath
 {
   protected PathWardensVengeance(ObjectiveTriggered illidanReturned)

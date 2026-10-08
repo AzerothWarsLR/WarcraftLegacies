@@ -8,10 +8,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron;
 
-/// <summary>
-/// Removes everything Lordaeron owns and restarts the player as the Fallen Prince, with a small base at Stratholme and an
-/// outpost in Northrend. Arthas the death knight leaves the Scourge to lead them.
-/// </summary>
+/// <summary>Turns Lordaeron into the Fallen Prince, with bases at Stratholme and in Northrend.</summary>
 public sealed class FallenPrinceTransformation
 {
   private const float Facing = 270;

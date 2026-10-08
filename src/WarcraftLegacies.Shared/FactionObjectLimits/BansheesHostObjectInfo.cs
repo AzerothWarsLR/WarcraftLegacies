@@ -2,10 +2,7 @@
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
-/// <summary>
-/// The Banshee's Host fields the Scourge's roster with smaller limits, without the Scourge's elites and unique
-/// demi-heroes. A placeholder until it gets a roster of its own.
-/// </summary>
+/// <summary>A placeholder roster for the Banshee's Host: the Scourge's, with smaller limits.</summary>
 public static class BansheesHostObjectInfo
 {
   private const int Unlimited = 200;

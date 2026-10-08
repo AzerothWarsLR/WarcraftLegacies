@@ -5,10 +5,7 @@ using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.MetaBased;
 
-/// <summary>
-/// Complete while <c>condition</c> holds, and incomplete again when it stops holding. It is checked whenever anyone
-/// changes team and at the start of every turn, so it suits conditions about team sizes.
-/// </summary>
+/// <summary>Completed while a condition about teams holds.</summary>
 public sealed class ObjectiveTeamCondition : Objective
 {
   private readonly Func<bool> _condition;

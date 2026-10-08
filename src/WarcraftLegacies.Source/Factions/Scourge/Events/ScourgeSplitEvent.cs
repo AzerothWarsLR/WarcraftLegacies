@@ -13,11 +13,7 @@ using WarcraftLegacies.Source.Shared.Powers;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Events;
 
-/// <summary>
-/// The Lich King breaks free of the Burning Legion. Forced once Archimonde is summoned or once the Fallen Prince and the
-/// Banshee's Host have both joined the Scourge, or brought on early by either side taking its split path. Undead
-/// factions on the Scourge's team leave with it.
-/// </summary>
+/// <summary>The Lich King breaks free of the Burning Legion, taking the Scourge's undead allies with it.</summary>
 public sealed class ScourgeSplitEvent : WorldEvent
 {
   private const float PowerBonus = 0.15f;

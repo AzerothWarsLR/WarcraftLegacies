@@ -7,10 +7,7 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 
 namespace WarcraftLegacies.Source.Factions.Scourge;
 
-/// <summary>
-/// While the Scourge stands alone after breaking from the Legion, it can field more of its limited units, the ones marked
-/// in <see cref="ScourgeObjectInfo.StandingAloneUnits"/>. The bonus is removed as soon as anyone joins its team.
-/// </summary>
+/// <summary>Raises the Scourge's unit limits while it has no allies.</summary>
 public sealed class ScourgeSoloLimits
 {
   private readonly Faction _scourge;

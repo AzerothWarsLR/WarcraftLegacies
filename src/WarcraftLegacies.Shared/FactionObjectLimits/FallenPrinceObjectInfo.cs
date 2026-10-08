@@ -2,10 +2,7 @@
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
-/// <summary>
-/// The Fallen Prince fields the Scourge's roster with smaller limits, without Liches, and without the Scourge's unique
-/// demi-heroes apart from Arthas himself.
-/// </summary>
+/// <summary>A placeholder roster for the Fallen Prince: the Scourge's, with smaller limits.</summary>
 public static class FallenPrinceObjectInfo
 {
   private const int Unlimited = 200;

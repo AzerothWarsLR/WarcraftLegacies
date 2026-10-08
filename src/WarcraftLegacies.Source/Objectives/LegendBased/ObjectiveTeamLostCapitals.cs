@@ -7,11 +7,7 @@ using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
 
-/// <summary>
-/// Completed while <c>team</c> has lost at least <c>count</c> of the given capitals. A capital counts as lost for good once
-/// it's destroyed, and while a player outside the team holds it after the team has held it. Retaking capitals can make the
-/// objective incomplete again.
-/// </summary>
+/// <summary>Completed while a team has lost enough of the given capitals.</summary>
 public sealed class ObjectiveTeamLostCapitals : Objective
 {
   private readonly Team _team;

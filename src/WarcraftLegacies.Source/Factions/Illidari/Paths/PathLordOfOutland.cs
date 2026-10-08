@@ -9,10 +9,7 @@ using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Factions.Illidari.Paths;
 
-/// <summary>
-/// Illidan breaks Magtheridon and takes his throne. The Fel Horde has no say: it loses Magtheridon, joins the Illidari's
-/// team and pays them tribute from then on.
-/// </summary>
+/// <summary>Lets the Illidari take Magtheridon's throne once they kill him, bringing the Fel Horde to heel.</summary>
 public sealed class PathLordOfOutland : FactionPath
 {
   private const int EarliestTurn = 5;

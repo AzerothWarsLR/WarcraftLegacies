@@ -6,10 +6,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas;
 
-/// <summary>
-/// Removes everything Quel'thalas owns and restarts the player as the Banshee's Host, with a base in Northrend led by
-/// Sylvanas.
-/// </summary>
+/// <summary>Turns Quel'thalas into the Banshee's Host, with a base in Northrend.</summary>
 public sealed class BansheesHostTransformation
 {
   /// <summary>Where the Northrend base goes. A placeholder until a spot is picked.</summary>

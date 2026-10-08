@@ -4,16 +4,13 @@ using MacroTools.WorldEvents;
 
 namespace MacroTools.Paths;
 
-/// <summary>
-/// A record in the Events menu of a faction taking a <see cref="FactionPath"/>, so everyone can look back on how the
-/// world changed.
-/// </summary>
+/// <summary>Records a faction taking a <see cref="FactionPath"/> in the Events menu.</summary>
 public sealed class PathTakenEvent : WorldEvent
 {
   /// <param name="path">The path that was taken.</param>
-  /// <param name="factionName">The coloured name of the faction that took it, as it was before taking it.</param>
-  /// <param name="owner">The player who took it, used to describe what they became and which team they are on now.</param>
-  /// <param name="changedTeam">Whether taking the path moved them to another team.</param>
+  /// <param name="factionName">The coloured name of the faction before it took the path.</param>
+  /// <param name="owner">The player who took it.</param>
+  /// <param name="changedTeam">Whether taking it moved them to another team.</param>
   public PathTakenEvent(FactionPath path, string factionName, player? owner, bool changedTeam)
   {
     Name = path.Name;

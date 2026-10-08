@@ -95,10 +95,7 @@ public abstract class WorldEvent
     Happen();
   }
 
-  /// <summary>
-  /// Marks the event as having happened this turn without announcing it or running <see cref="OnHappened"/>, for
-  /// entries that only record history. Call it before registering the event.
-  /// </summary>
+  /// <summary>Marks the event as happened without announcing it, for history records.</summary>
   public void RecordAsHappened()
   {
     HappenedOnTurn = GameTimeManager.Turn;

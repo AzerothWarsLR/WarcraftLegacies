@@ -8,10 +8,7 @@ using WarcraftLegacies.Source.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas.Paths;
 
-/// <summary>
-/// Slain by the Scourge with her home in ruins, Sylvanas rises as a banshee and leads Quel'thalas's dead to join the
-/// Scourge.
-/// </summary>
+/// <summary>Lets Quel'thalas become the Banshee's Host once the Scourge kills Sylvanas and Windrunner Spire falls.</summary>
 public sealed class PathBansheesHost : FactionPath
 {
   private readonly BansheesHostTransformation _transformation;

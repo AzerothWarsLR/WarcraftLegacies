@@ -8,10 +8,7 @@ using WarcraftLegacies.Source.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Factions.FelHorde.Paths;
 
-/// <summary>
-/// With Magtheridon slain by someone other than the Illidari, the Fel Horde is free of its demon master. It can throw off
-/// the demons' blood and join the Horde, or stay with the Legion under a new warlord.
-/// </summary>
+/// <summary>Lets the Fel Horde join the Horde once an enemy other than the Illidari kills Magtheridon.</summary>
 public sealed class PathMaghar : FactionPath
 {
   public PathMaghar(LegendaryHero magtheridon)

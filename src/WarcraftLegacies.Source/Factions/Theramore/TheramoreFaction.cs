@@ -5,10 +5,7 @@ using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions.Theramore;
 
-/// <summary>
-/// The survivors of the north, led across the sea by Jaina to found a new home in Kalimdor. Only reached through the
-/// Theramore path in Roleplay mode.
-/// </summary>
+/// <summary>Jaina and the survivors of the north, reached through the Theramore path.</summary>
 public sealed class TheramoreFaction : Faction
 {
   /// <inheritdoc />

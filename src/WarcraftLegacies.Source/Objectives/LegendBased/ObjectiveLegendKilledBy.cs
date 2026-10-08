@@ -5,10 +5,7 @@ using MacroTools.Quests;
 
 namespace WarcraftLegacies.Source.Objectives.LegendBased;
 
-/// <summary>
-/// Completed when a specific <see cref="LegendaryHero"/> is killed by a player that passes <c>isKiller</c>. Any death
-/// counts, not just a permanent one.
-/// </summary>
+/// <summary>Completed when a specific <see cref="LegendaryHero"/> is killed by a certain player.</summary>
 public sealed class ObjectiveLegendKilledBy : Objective
 {
   private readonly Func<player, bool> _isKiller;

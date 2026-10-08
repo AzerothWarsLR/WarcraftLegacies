@@ -4,9 +4,7 @@ using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.Factions.Illidari;
 
-/// <summary>
-/// The Fel Horde hands part of its income to the Illidari, its new masters, until either of them is defeated.
-/// </summary>
+/// <summary>The Fel Horde pays part of its income to the Illidari.</summary>
 public sealed class OutlandTithe
 {
   /// <summary>The share of the Fel Horde's income that goes to the Illidari, as a percentage.</summary>

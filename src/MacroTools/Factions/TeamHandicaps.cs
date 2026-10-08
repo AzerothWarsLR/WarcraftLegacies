@@ -7,14 +7,7 @@ using WCSharp.Shared;
 
 namespace MacroTools.Factions;
 
-/// <summary>
-/// Gives teams that have fallen behind their rivals a bonus to damage dealt and a reduction to damage taken, so a team
-/// left short-handed by betrayals, or facing a rival that gained allies, isn't simply overrun.
-/// <para>Teams are compared by how much they have grown or shrunk since the game started, never by their raw sizes,
-/// since factions are balanced around their starting matchups. Without <see cref="AreRivals"/>, or with no rival left,
-/// a team only gets a handicap for shrinking. Teams in a <see cref="Bloc"/> are still judged on their own, so one half
-/// of an alliance losing a player doesn't strengthen the other half.</para>
-/// </summary>
+/// <summary>Gives teams that have fallen behind their rivals more damage dealt and less damage taken.</summary>
 public static class TeamHandicaps
 {
   private static readonly Dictionary<Team, int> StartingSizes = new();
@@ -61,10 +54,7 @@ public static class TeamHandicaps
     Recalculate();
   }
 
-  /// <summary>
-  /// Gives a newly founded team the same starting size as the team its founder left, so leaving a big team alone
-  /// counts as being short-handed.
-  /// </summary>
+  /// <summary>Gives a new team the starting size of the team its founder left.</summary>
   internal static void InheritStartingSize(Team newTeam, Team? formerTeam)
   {
     if (!IsEnabled || formerTeam == null || StartingSizes.ContainsKey(newTeam))
@@ -75,10 +65,7 @@ public static class TeamHandicaps
     StartingSizes[newTeam] = GetStartingSize(formerTeam);
   }
 
-  /// <summary>
-  /// Sets the size <paramref name="team"/> counts as having started at, like 0 for a team formed mid-game whose every
-  /// member is a new enemy for its rivals.
-  /// </summary>
+  /// <summary>Sets the size <paramref name="team"/> counts as having started at.</summary>
   public static void SetStartingSize(Team team, int size)
   {
     StartingSizes[team] = size;
@@ -118,10 +105,7 @@ public static class TeamHandicaps
     }
   }
 
-  /// <summary>
-  /// How many players <paramref name="team"/> has fallen behind the rival that has gained the most since the start, or
-  /// how many it has lost if it has no rivals left.
-  /// </summary>
+  /// <summary>How many players <paramref name="team"/> has fallen behind its rivals.</summary>
   private static int GetPlayersBehind(Team team)
   {
     var growth = GetGrowth(team);

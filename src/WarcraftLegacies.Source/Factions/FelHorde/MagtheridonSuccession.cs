@@ -6,15 +6,11 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.FelHorde;
 
-/// <summary>
-/// Takes Magtheridon away from the Fel Horde for good and gives it a new, weaker hero in his place.
-/// </summary>
+/// <summary>Replaces Magtheridon with a weaker hero.</summary>
 public static class MagtheridonSuccession
 {
-  /// <summary>
-  /// Removes Magtheridon, alive or dead, stops him being trained or revived, and gives <paramref name="felHorde"/> a
+  /// <summary>Removes Magtheridon for good and gives <paramref name="felHorde"/> <paramref name="successor"/> instead.</summary>
   /// <paramref name="successor"/> hero where he was.
-  /// </summary>
   public static void Replace(Faction felHorde, LegendaryHero successor)
   {
     var owner = felHorde.Player;

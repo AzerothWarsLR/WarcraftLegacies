@@ -2,10 +2,7 @@
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits;
 
-/// <summary>
-/// Theramore fields Dalaran's roster with smaller limits, led by Jaina alone. A placeholder until it gets a roster of
-/// its own.
-/// </summary>
+/// <summary>A placeholder roster for Theramore: Dalaran's, with smaller limits and Jaina as the only hero.</summary>
 public static class TheramoreObjectInfo
 {
   private const int Unlimited = 200;

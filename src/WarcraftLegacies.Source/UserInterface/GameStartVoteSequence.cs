@@ -16,10 +16,7 @@ public static class GameStartVoteSequence
 {
   private static List<unit> _pausedUnits = new();
 
-  /// <param name="offlineTestMode">
-  /// If set, an offline game with a single human player skips the mode vote and plays this mode, so testing a mode
-  /// doesn't depend on remembering to vote for it.
-  /// </param>
+  /// <param name="offlineTestMode">The mode an offline game with one human plays, skipping the mode vote.</param>
   public static void Setup(IEnumerable<IGameMode> gameModes, float timeToDisplay, float modeVoteLength,
     float difficultyVoteLength, float customOptionsVoteLength, IGameMode? offlineTestMode = null)
   {
@@ -59,10 +56,7 @@ public static class GameStartVoteSequence
     });
   }
 
-  /// <summary>
-  /// Whether this is an offline test: a single human, playing without a Battle.net name, which offline games give as
-  /// "Local Player".
-  /// </summary>
+  /// <summary>Whether this is an offline game with a single human.</summary>
   private static bool IsOfflineSoloTest()
   {
     var humans = 0;
