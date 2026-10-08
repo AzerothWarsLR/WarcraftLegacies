@@ -1,7 +1,12 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Paths;
 using MacroTools.WorldEvents;
+using WarcraftLegacies.Source.Factions.FelHorde;
+using WarcraftLegacies.Source.Factions.FelHorde.Paths;
+using WarcraftLegacies.Source.Factions.Illidari;
+using WarcraftLegacies.Source.Factions.Illidari.Paths;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Legion.Paths;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
@@ -9,6 +14,7 @@ using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Scourge.Events;
 using WarcraftLegacies.Source.Factions.Scourge.Paths;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic;
 
@@ -23,6 +29,7 @@ public static class RoleplaySetting
   private const int FelHordePlayer = 6;
 
   private static readonly HashSet<Faction> _factionsWithPaths = new();
+  private static bool _outlandSetUp;
 
   public static bool IsActive { get; private set; }
 
@@ -36,6 +43,8 @@ public static class RoleplaySetting
     IsActive = true;
     SetupStartingTeams();
     SetupScourgeSplit();
+    SetupOutland();
+    FactionManager.FactionRegistered += _ => SetupOutland();
     foreach (var faction in FactionManager.GetAllFactions())
     {
       AddRoleplayPaths(faction);
@@ -79,6 +88,49 @@ public static class RoleplaySetting
     split.AddSplitPath(purgeTheUnworthy);
 
     WorldEventManager.Register(split);
+  }
+
+  /// <summary>
+  /// Sets up the Outland paths once both the Fel Horde and the Illidari exist. The Illidari are picked from a choice, so
+  /// they may only register after Roleplay starts.
+  /// </summary>
+  private static void SetupOutland()
+  {
+    if (_outlandSetUp)
+    {
+      return;
+    }
+
+    if (!FactionManager.TryGetFactionByType<FelHordeFaction>(out var felHorde))
+    {
+      return;
+    }
+
+    if (!FactionManager.TryGetFactionByType<IllidariFaction>(out var illidari))
+    {
+      return;
+    }
+
+    _outlandSetUp = true;
+    var magtheridon = AllLegends.FelHorde.Magtheridon;
+    var lordOfOutland = new PathLordOfOutland(felHorde, magtheridon);
+    var maghar = new PathMaghar(magtheridon);
+    illidari.AddPath(lordOfOutland);
+    felHorde.AddPath(maghar);
+    CloseWhenResolved(lordOfOutland, maghar);
+    CloseWhenResolved(maghar, lordOfOutland);
+  }
+
+  /// <summary>Closes <paramref name="rival"/> once <paramref name="path"/> has been taken or declined.</summary>
+  private static void CloseWhenResolved(FactionPath path, FactionPath rival)
+  {
+    path.StateChanged += changed =>
+    {
+      if (changed.State == PathState.Taken || changed.State == PathState.Declined)
+      {
+        rival.Close();
+      }
+    };
   }
 
   private static void AddRoleplayPaths(Faction faction)
