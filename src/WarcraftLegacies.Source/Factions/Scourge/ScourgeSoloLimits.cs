@@ -3,19 +3,16 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
 using MacroTools.Localization;
-using MacroTools.UserInterface;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 
 namespace WarcraftLegacies.Source.Factions.Scourge;
 
 /// <summary>
 /// While the Scourge stands alone after breaking from the Legion, it can field more of its limited units, the ones marked
-/// with <see cref="ScourgeObjectInfo.StandingAloneHint"/>. The bonus is removed as soon as anyone joins its team.
+/// in <see cref="ScourgeObjectInfo.StandingAloneUnits"/>. The bonus is removed as soon as anyone joins its team.
 /// </summary>
 public sealed class ScourgeSoloLimits
 {
-  private const int Bonus = 2;
-
   private readonly Faction _scourge;
   private readonly List<int> _boostedObjects = new();
 
@@ -43,30 +40,20 @@ public sealed class ScourgeSoloLimits
     }
 
     var hadBonus = _boostedObjects.Count > 0;
-    foreach (var objectInfo in ScourgeObjectInfo.GetAllObjectLimits())
+    foreach (var objectId in ScourgeObjectInfo.StandingAloneUnits)
     {
-      var objectId = objectInfo.ObjectTypeId;
-      if (objectInfo.LimitIncreaseHint == ScourgeObjectInfo.StandingAloneHint && !_boostedObjects.Contains(objectId) &&
+      if (!_boostedObjects.Contains(objectId) &&
           _scourge.GetObjectLimit(objectId) > 0)
       {
-        _scourge.ModObjectLimit(objectId, Bonus);
+        _scourge.ModObjectLimit(objectId, ScourgeObjectInfo.StandingAloneBonus);
         _boostedObjects.Add(objectId);
-        ShiftShownLimit(objectId, Bonus);
       }
     }
 
     if (!hadBonus && _boostedObjects.Count > 0)
     {
       _scourge.Player?.DisplayTextTo(Loc.Format("Standing alone, the Scourge can field {bonus} more of each of its limited units until another faction joins it.",
-        ("{bonus}", Bonus.ToString())));
-    }
-  }
-
-  private void ShiftShownLimit(int objectId, int change)
-  {
-    if (_scourge.Player != null)
-    {
-      LimitTooltips.ShiftShownLimit(_scourge.Player, objectId, change);
+        ("{bonus}", ScourgeObjectInfo.StandingAloneBonus.ToString())));
     }
   }
 
@@ -79,8 +66,7 @@ public sealed class ScourgeSoloLimits
 
     foreach (var objectId in _boostedObjects)
     {
-      _scourge.ModObjectLimit(objectId, -Bonus);
-      ShiftShownLimit(objectId, -Bonus);
+      _scourge.ModObjectLimit(objectId, -ScourgeObjectInfo.StandingAloneBonus);
     }
 
     _boostedObjects.Clear();
