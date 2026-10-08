@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools.Factions;
 using WarcraftLegacies.Source.Factions.BansheesHost;
 using WarcraftLegacies.Source.Factions.Dalaran;
@@ -33,9 +34,25 @@ namespace WarcraftLegacies.Source.GameLogic;
 /// </summary>
 public static class RoleplayFronts
 {
-  /// <summary>Whether any faction on <paramref name="teamA"/> fights any faction on <paramref name="teamB"/>.</summary>
+  private static readonly List<Func<Team, Team, bool>> ExtraRivalries = new();
+
+  /// <summary>Makes teams that pass <paramref name="rivalry"/> rivals too, like a pact formed against the Legion.</summary>
+  public static void AddTeamRivalry(Func<Team, Team, bool> rivalry) => ExtraRivalries.Add(rivalry);
+
+  /// <summary>
+  /// Whether any faction on <paramref name="teamA"/> fights any faction on <paramref name="teamB"/>, or the two teams have
+  /// been made rivals with <see cref="AddTeamRivalry"/>.
+  /// </summary>
   public static bool AreRivals(Team teamA, Team teamB)
   {
+    foreach (var rivalry in ExtraRivalries)
+    {
+      if (rivalry(teamA, teamB))
+      {
+        return true;
+      }
+    }
+
     foreach (var factionA in teamA.GetAllFactions())
     {
       foreach (var factionB in teamB.GetAllFactions())

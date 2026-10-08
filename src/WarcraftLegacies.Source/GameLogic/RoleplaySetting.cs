@@ -15,6 +15,7 @@ using WarcraftLegacies.Source.Factions.Scourge.Events;
 using WarcraftLegacies.Source.Factions.Scourge.Paths;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Sentinels.Paths;
+using WarcraftLegacies.Source.GameLogic.HyjalPact;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -36,6 +37,9 @@ public static class RoleplaySetting
 
   public static bool IsActive { get; private set; }
 
+  /// <summary>The Pact of Hyjal, once Roleplay mode has set it up.</summary>
+  public static PactOfHyjal? HyjalPact { get; private set; }
+
   public static void Apply()
   {
     if (IsActive)
@@ -46,6 +50,7 @@ public static class RoleplaySetting
     IsActive = true;
     SetupStartingTeams();
     SetupScourgeSplit();
+    SetupHyjalPact();
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
     foreach (var faction in FactionManager.GetAllFactions())
@@ -67,6 +72,17 @@ public static class RoleplaySetting
     TeamChanges.Capacity = team => team.Bloc != null ? BlocCap : TeamCap;
     TeamHandicaps.AreRivals = RoleplayFronts.AreRivals;
     TeamHandicaps.Enable();
+  }
+
+  private static void SetupHyjalPact()
+  {
+    if (!FactionManager.TryGetFactionByType<LegionFaction>(out var legion))
+    {
+      return;
+    }
+
+    HyjalPact = new PactOfHyjal(legion, legion.GetQuestByType<QuestSummonLegion>());
+    WorldEventManager.Register(HyjalPact);
   }
 
   private static void SetupScourgeSplit()

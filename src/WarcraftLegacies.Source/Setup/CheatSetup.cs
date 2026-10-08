@@ -20,6 +20,7 @@ public static class CheatSetup
     CommandManager.Register(new CheatTestEvents());
     CommandManager.Register(new CheatTeamRules());
     CommandManager.Register(new CheatUnlockPath());
+    CommandManager.Register(new CheatTestPact());
     CommandManager.Register(new CheatQuest());
     CommandManager.Register(new CheatFood());
     CommandManager.Register(new CheatGod());
