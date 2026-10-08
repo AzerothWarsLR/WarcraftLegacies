@@ -24,7 +24,7 @@ public sealed class FactionMultiboard
   private const string HeaderColor = "|cffffcc00";
   private const string SubTeamColor = "|cffbbbbbb";
 
-  private const float WidthFaction = 0.09f;
+  private const float WidthFaction = 0.1f;
   private const float WidthCp = 0.02f;
   private const float WidthIncome = 0.022f;
   private const float WidthTeam = WidthFaction + WidthCp + WidthIncome;
