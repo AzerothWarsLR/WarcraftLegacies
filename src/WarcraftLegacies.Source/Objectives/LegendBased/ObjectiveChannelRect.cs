@@ -23,6 +23,7 @@ public sealed class ObjectiveChannelRect : Objective
 
   private readonly rect _targetRect;
   private Channel? _channel;
+  private bool _closed;
 
   /// <summary>Fired when the hero starts channeling.</summary>
   public event Action? ChannelStarted;
@@ -30,9 +31,10 @@ public sealed class ObjectiveChannelRect : Objective
   /// <summary>Fired when the channel ends, finished or not.</summary>
   public event Action? ChannelEnded;
 
-  /// <summary>Stops the current channel, if there is one.</summary>
-  public void InterruptChannel()
+  /// <summary>Stops the current channel and prevents any new one from starting.</summary>
+  public void Close()
   {
+    _closed = true;
     if (_channel != null)
     {
       _channel.Interrupt();
@@ -75,7 +77,7 @@ public sealed class ObjectiveChannelRect : Objective
   private void OnRegionEnter()
   {
     var whichUnit = @event.EnteringUnit;
-    if (!EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive ||
+    if (_closed || !EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive ||
         LegendaryHeroManager.GetFromUnit(@event.Unit) != _targetLegend || _channel != null ||
         Progress != QuestProgress.Incomplete)
     {

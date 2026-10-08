@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Sounds;
@@ -69,6 +70,7 @@ public sealed class PactOfHyjal : WorldEvent
       }
     };
     TeamChanges.OnAnyTeamChanged(RefreshProposals);
+    AllLegends.Legion.Archimonde.Died += OnArchimondeDied;
   }
 
   /// <summary>Meets the requirements for proposing the pact straight away. Meant for testing.</summary>
@@ -116,13 +118,41 @@ public sealed class PactOfHyjal : WorldEvent
     }
 
     Outcome = Loc.Format("{members} joined the Pact of Hyjal.", ("{members}", string.Join(", ", memberNames)));
-    AllLegends.Legion.Archimonde.Died += args =>
+  }
+
+  private void OnArchimondeDied(LegendDiedEventArgs args)
+  {
+    if (!args.Permanent)
     {
-      if (args.Permanent)
-      {
-        End();
-      }
-    };
+      return;
+    }
+
+    if (IsActive)
+    {
+      End();
+      return;
+    }
+
+    if (State != WorldEventState.Upcoming)
+    {
+      return;
+    }
+
+    _voting = false;
+    if (_timer != null)
+    {
+      _timer.Dispose();
+      _timer = null;
+    }
+
+    foreach (var ballot in _ballots)
+    {
+      ballot.Key.RemovePath(ballot.Value);
+    }
+
+    _ballots.Clear();
+    Cancel();
+    RefreshProposals();
   }
 
   /// <summary>Ends the pact, sending its members back to their old teams.</summary>

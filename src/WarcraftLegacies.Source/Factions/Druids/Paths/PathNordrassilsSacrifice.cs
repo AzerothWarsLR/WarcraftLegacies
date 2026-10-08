@@ -16,7 +16,7 @@ public sealed class PathNordrassilsSacrifice : FactionPath
 
   private readonly QuestConsumeTree _consumeTree;
 
-  public PathNordrassilsSacrifice(QuestConsumeTree consumeTree)
+  public PathNordrassilsSacrifice(Faction legion, QuestConsumeTree consumeTree)
   {
     _consumeTree = consumeTree;
     Name = "Nordrassil's Sacrifice";
@@ -24,12 +24,19 @@ public sealed class PathNordrassilsSacrifice : FactionPath
     Description = "Archimonde is draining the Well of Eternity beneath Nordrassil. Unleash the World Tree's power to tear him apart, at the cost of the tree itself. Your druids carry on as the Cenarion Circle, diminished without it.";
     AddMustStayTrueRequirement(new ObjectiveChannelTime(consumeTree.WorldTreeChannel, ChannelSeconds,
       "Archimonde has been draining the World Tree for 60 seconds") { ShowsInQuestLog = false });
+    legion.QuestProgressChanged += args =>
+    {
+      if (args.Quest == consumeTree && consumeTree.Progress == QuestProgress.Complete)
+      {
+        Close();
+      }
+    };
   }
 
   /// <inheritdoc />
   protected override void OnTaken(Faction faction)
   {
-    _consumeTree.WorldTreeChannel.InterruptChannel();
+    _consumeTree.WorldTreeChannel.Close();
     _consumeTree.Progress = QuestProgress.Failed;
     WoundArchimonde();
     DestroyNordrassil();

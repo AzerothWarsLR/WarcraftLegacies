@@ -97,7 +97,7 @@ public static class RoleplaySetting
       return;
     }
 
-    druids.AddPath(new PathNordrassilsSacrifice(legion.GetQuestByType<QuestConsumeTree>()));
+    druids.AddPath(new PathNordrassilsSacrifice(legion, legion.GetQuestByType<QuestConsumeTree>()));
   }
 
   private static void SetupScourgeSplit()
