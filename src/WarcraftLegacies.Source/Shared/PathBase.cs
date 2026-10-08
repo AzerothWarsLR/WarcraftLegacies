@@ -76,9 +76,9 @@ public static class PathBase
   }
 
   /// <summary>
-  /// Gives <paramref name="hero"/> to <paramref name="owner"/> at <paramref name="position"/>. A dead hero is replaced
-  /// with a living one that keeps its experience, since a hero that died before the path was taken cannot always be
-  /// revived.
+  /// Gives <paramref name="hero"/> to <paramref name="owner"/> at <paramref name="position"/>. A dead hero's body is
+  /// removed and a living one that keeps its experience is created, since the old body may already belong to someone
+  /// else and cannot be revived by the new owner.
   /// </summary>
   public static void SummonLegend(LegendaryHero hero, player owner, Point position)
   {
@@ -87,13 +87,13 @@ public static class PathBase
     if (existing != null && !existing.Alive)
     {
       experience = existing.Experience;
-      existing.SafelyRemove();
+      hero.Unit = null;
     }
 
     hero.ForceCreate(owner, position, Facing);
     if (hero.Unit != null && experience > hero.Unit.Experience)
     {
-      hero.Unit.Experience = experience;
+      hero.Unit.SetExperience(experience, false);
     }
   }
 
