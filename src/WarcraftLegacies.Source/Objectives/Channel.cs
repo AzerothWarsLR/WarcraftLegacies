@@ -97,6 +97,9 @@ public sealed class Channel : IDisposable
     }
   }
 
+  /// <summary>Stops the channel early, as if the caster had been interrupted.</summary>
+  public void Interrupt() => End(false);
+
   private void End(bool finishedWithoutInterruption)
   {
     _caster.SetPausedEx(false);

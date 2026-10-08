@@ -1,4 +1,5 @@
-﻿using MacroTools.Legends;
+﻿using System;
+using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Wrappers;
@@ -22,6 +23,21 @@ public sealed class ObjectiveChannelRect : Objective
 
   private readonly rect _targetRect;
   private Channel? _channel;
+
+  /// <summary>Fired when the hero starts channeling.</summary>
+  public event Action? ChannelStarted;
+
+  /// <summary>Fired when the channel ends, finished or not.</summary>
+  public event Action? ChannelEnded;
+
+  /// <summary>Stops the current channel, if there is one.</summary>
+  public void InterruptChannel()
+  {
+    if (_channel != null)
+    {
+      _channel.Interrupt();
+    }
+  }
 
   /// <summary>
   /// Initializes a new instance of the <see cref="ObjectiveChannelRect"/> class.
@@ -68,6 +84,7 @@ public sealed class ObjectiveChannelRect : Objective
 
     _channel = new Channel(whichUnit, _duration, _facing, Position, _timerDialogTitle);
     _channel.Finished += OnChannelEnd;
+    ChannelStarted?.Invoke();
   }
 
   private void OnChannelEnd(Channel channel)
@@ -80,5 +97,6 @@ public sealed class ObjectiveChannelRect : Objective
     channel.Finished -= OnChannelEnd;
     channel.Dispose();
     _channel = null;
+    ChannelEnded?.Invoke();
   }
 }
