@@ -32,7 +32,7 @@ public sealed class ControlPointManager
           var playerData = player.GetPlayerData();
           if (playerData.Faction != null)
           {
-            playerData.AddFractionalGold((playerData.BaseIncome * IncomeMultiplier + playerData.BonusIncome) * Period / 60);
+            playerData.AddIncome((playerData.BaseIncome * IncomeMultiplier + playerData.BonusIncome) * Period / 60);
           }
         }
       });
