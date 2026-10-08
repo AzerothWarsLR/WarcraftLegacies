@@ -15,17 +15,24 @@ public sealed class GlobalDummyCaster
   /// </summary>
   public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
   {
-    var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
+    if originType == DummyCastOriginType.Caster 
+    {
+      _unit.X = caster.X;
+      _unit.Y = caster.Y;
+    }
+    else
+    {
+      _unit.X = target.X;
+      _unit.Y = target.Y;
+    }
     var owningPlayer = caster.Owner;
     _unit.SetOwner(owningPlayer);
-    _unit.X = originPoint.X;
-    _unit.Y = originPoint.Y;
     _unit.AddAbility(abilId);
     _unit.SetAbilityLevel(abilId, level);
 
     if (originType == DummyCastOriginType.Caster)
     {
-      _unit.FacePosition(target.GetPosition());
+      _unit.FacePosition(target.X, target.Y);
     }
 
     _unit.IssueOrder(orderId, target);
@@ -39,7 +46,8 @@ public sealed class GlobalDummyCaster
   {
     var owningPlayer = caster.Owner;
     _unit.SetOwner(owningPlayer);
-    _unit.SetPosition(caster.X, caster.Y);
+    _unit.X = caster.X;
+    _unit.Y = caster.Y;
     _unit.AddAbility(abilId);
     _unit.SetAbilityLevel(abilId, level);
 
@@ -62,7 +70,8 @@ public sealed class GlobalDummyCaster
   public void CastPoint(player whichPlayer, int abilId, int orderId, int level, Point target)
   {
     _unit.SetOwner(whichPlayer);
-    _unit.SetPosition(target.X, target.Y);
+    _unit.X = target.X;
+    _unit.Y = target.Y;
     _unit.AddAbility(abilId);
     _unit.SetAbilityLevel(abilId, level);
     _unit.IssueOrder(orderId, target.X, target.Y);
@@ -73,11 +82,12 @@ public sealed class GlobalDummyCaster
     var whichPlayer = caster.Owner;
 
     _unit.SetOwner(whichPlayer);
-    _unit.SetPosition(caster.X, caster.Y);
+    _unit.X = caster.X;
+    _unit.Y = caster.Y;
     _unit.AddAbility(abilId);
     _unit.SetAbilityLevel(abilId, level);
 
-    _unit.FacePosition(new Point(x, y));
+    _unit.FacePosition(x, y);
     _unit.IssueOrder(orderId, x, y);
 
     _unit.RemoveAbility(abilId);
