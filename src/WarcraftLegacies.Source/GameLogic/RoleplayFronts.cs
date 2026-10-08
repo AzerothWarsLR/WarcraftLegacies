@@ -17,6 +17,7 @@ using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.TaurenTribes;
+using WarcraftLegacies.Source.Factions.Theramore;
 
 namespace WarcraftLegacies.Source.GameLogic;
 
@@ -63,7 +64,7 @@ public static class RoleplayFronts
 
   private static bool DefendsNorth(Faction faction) =>
     faction is LordaeronFaction || faction is DalaranFaction || faction is QuelthalasFaction ||
-    faction is ScarletCrusadeFaction || faction is GilneasFaction;
+    faction is ScarletCrusadeFaction || faction is GilneasFaction || faction is TheramoreFaction;
 
   private static bool AttacksSouth(Faction faction) => faction is FelHordeFaction || faction is LegionFaction;
 

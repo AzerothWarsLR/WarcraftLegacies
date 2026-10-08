@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -10,6 +11,7 @@ using MacroTools.Quests;
 using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Dalaran.Mechanics;
+using WarcraftLegacies.Source.Factions.Dalaran.Paths;
 using WarcraftLegacies.Source.Factions.Dalaran.Quests;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Scourge;
@@ -21,7 +23,7 @@ using WarcraftLegacies.Source.Shared.Quests;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran;
 
-public sealed class DalaranFaction : Faction
+public sealed class DalaranFaction : Faction, IHasRoleplayPaths
 {
   private readonly List<unit> _dalaranProtectors;
 
@@ -57,6 +59,15 @@ public sealed class DalaranFaction : Faction
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
     RegisterFactionDependentInitializer<LegionFaction>(RegisterBookOfMedivhQuest);
     ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
+  }
+
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    if (!GetAllPaths().Any(x => x is PathTheramore))
+    {
+      AddPath(new PathTheramore(new TheramoreTransformation(), AllLegends.Dalaran.Dalaran));
+    }
   }
 
   /// <inheritdoc />
