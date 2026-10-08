@@ -44,6 +44,12 @@ public abstract class FactionPath
   /// </summary>
   public string? DeclineDescription { get; init; }
 
+  /// <summary>
+  /// What taking the path did beyond the faction's own new name or team, such as what happened to another faction. Set
+  /// while the path is taken and shown on its card in the Events menu.
+  /// </summary>
+  public string? TakenOutcome { get; protected set; }
+
   /// <summary>Whether the path can be turned down.</summary>
   public bool CanDecline => DeclineDescription != null;
 

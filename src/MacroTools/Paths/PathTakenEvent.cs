@@ -19,7 +19,8 @@ public sealed class PathTakenEvent : WorldEvent
     Name = path.Name;
     IconName = path.IconName;
     Description = Loc.Format("{faction} took this path.", ("{faction}", factionName));
-    Outcome = GetOutcome(factionName, owner, changedTeam);
+    var outcome = GetOutcome(factionName, owner, changedTeam);
+    Outcome = outcome == null ? path.TakenOutcome : path.TakenOutcome == null ? outcome : $"{outcome} {path.TakenOutcome}";
   }
 
   /// <inheritdoc />
