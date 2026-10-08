@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Factions;
 using MacroTools.Legends;
@@ -6,17 +7,19 @@ using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Quelthalas.Paths;
 using WarcraftLegacies.Source.Factions.Quelthalas.Powers;
 using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
 using WarcraftLegacies.Source.Factions.Quelthalas.Researches;
 using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas;
 
-public sealed class QuelthalasFaction : Faction
+public sealed class QuelthalasFaction : Faction, IHasRoleplayPaths
 {
   /// <inheritdoc />
   public QuelthalasFaction() : base("Quel'thalas",
@@ -57,6 +60,15 @@ public sealed class QuelthalasFaction : Faction
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     RegisterPowers();
   }
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    if (!GetAllPaths().Any(x => x is PathBansheesHost))
+    {
+      AddPath(new PathBansheesHost(new BansheesHostTransformation(), AllLegends.Quel.Sylvanas, AllLegends.Quel.Spire));
+    }
+  }
+
   private void RegisterPowers()
   {
     var fontsOfPower = new List<Capital>
