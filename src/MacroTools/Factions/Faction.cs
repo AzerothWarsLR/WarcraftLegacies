@@ -203,6 +203,9 @@ public abstract class Faction
   /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="FactionPath" />.</summary>
   public event Action<FactionPath>? PathAdded;
 
+  /// <summary>Fired when a <see cref="FactionPath" /> is taken away from this <see cref="Faction" />.</summary>
+  public event Action<FactionPath>? PathRemoved;
+
   /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
   public event Action<FactionPowerEventArgs>? PowerAdded;
 
@@ -287,6 +290,18 @@ public abstract class Faction
     _paths.Add(path);
     path.OnAdd(this);
     PathAdded?.Invoke(path);
+  }
+
+  /// <summary>Takes a <see cref="FactionPath" /> away from this <see cref="Faction" />, closing it first.</summary>
+  public void RemovePath(FactionPath path)
+  {
+    if (!_paths.Remove(path))
+    {
+      return;
+    }
+
+    path.Close();
+    PathRemoved?.Invoke(path);
   }
 
   /// <summary>Returns all <see cref="FactionPath" />s this <see cref="Faction" /> has, in the order they were added.</summary>

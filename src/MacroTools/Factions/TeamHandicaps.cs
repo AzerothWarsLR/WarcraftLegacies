@@ -75,6 +75,19 @@ public static class TeamHandicaps
     StartingSizes[newTeam] = GetStartingSize(formerTeam);
   }
 
+  /// <summary>
+  /// Sets the size <paramref name="team"/> counts as having started at, like 0 for a team formed mid-game whose every
+  /// member is a new enemy for its rivals.
+  /// </summary>
+  public static void SetStartingSize(Team team, int size)
+  {
+    StartingSizes[team] = size;
+    if (IsEnabled)
+    {
+      Recalculate();
+    }
+  }
+
   /// <summary>Runs <paramref name="handler"/> whenever handicaps are recalculated.</summary>
   public static void OnChanged(Action handler) => ChangedHandlers.Add(handler);
 

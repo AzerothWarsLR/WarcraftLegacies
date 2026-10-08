@@ -71,6 +71,7 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
       if (_trackedFaction != null)
       {
         _trackedFaction.PathAdded -= OnFactionAddPath;
+        _trackedFaction.PathRemoved -= OnFactionAddPath;
       }
 
       _trackedFaction = value;
@@ -78,6 +79,7 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
       if (_trackedFaction != null)
       {
         _trackedFaction.PathAdded += OnFactionAddPath;
+        _trackedFaction.PathRemoved += OnFactionAddPath;
       }
 
       ReRender();

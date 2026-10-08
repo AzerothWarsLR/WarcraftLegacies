@@ -50,6 +50,12 @@ public abstract class FactionPath
   /// </summary>
   public string? TakenOutcome { get; protected set; }
 
+  /// <summary>
+  /// Whether the path is a vote or proposal rather than a story branch. Taking one doesn't close the faction's other
+  /// paths, isn't announced to everyone and isn't recorded in the Events menu.
+  /// </summary>
+  public bool IsVote { get; init; }
+
   /// <summary>Whether the path can be turned down.</summary>
   public bool CanDecline => DeclineDescription != null;
 
@@ -411,6 +417,12 @@ public abstract class FactionPath
     _takenCount++;
     TakenOrder = _takenCount;
     State = PathState.Taken;
+
+    if (IsVote)
+    {
+      OnTaken(faction);
+      return;
+    }
 
     foreach (var otherPath in faction.GetAllPaths())
     {
