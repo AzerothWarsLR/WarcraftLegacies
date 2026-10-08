@@ -16,6 +16,7 @@ public sealed class BansheesHostFaction : Faction
     @"ReplaceableTextures\CommandButtons\BTNBanshee.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
+    NameTakesArticle = true;
     ControlPointDefenderUnitTypeId = UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE;
     StartingGold = new StartingGold
     {

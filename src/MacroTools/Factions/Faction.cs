@@ -90,6 +90,9 @@ public abstract class Faction
   /// </summary>
   public Team? TraditionalTeam { get; protected init; }
 
+  /// <summary>Whether the faction's name reads with "the" in front of it in a sentence, like "the Fel Horde".</summary>
+  public bool NameTakesArticle { get; protected init; }
+
   /// <summary>
   ///   The <see cref="Faction" />'s food limit.
   ///   A <see cref="player" /> with this Faction can never exceed this amount of food.

@@ -16,6 +16,7 @@ public sealed class FallenPrinceFaction : Faction
     @"ReplaceableTextures\CommandButtons\BTNHeroDeathKnight.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
+    NameTakesArticle = true;
     ControlPointDefenderUnitTypeId = UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE;
     StartingGold = new StartingGold
     {

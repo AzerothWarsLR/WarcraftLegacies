@@ -18,6 +18,7 @@ public sealed class FelHordeFaction : Faction
     : base("Fel Horde", playercolor.Green, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
+    NameTakesArticle = true;
     UndefeatedResearch = UPGRADE_R05L_FEL_HORDE_EXISTS;
     StartingGold = new StartingGold
     {

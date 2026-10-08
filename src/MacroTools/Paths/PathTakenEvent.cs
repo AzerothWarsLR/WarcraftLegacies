@@ -36,19 +36,24 @@ public sealed class PathTakenEvent : WorldEvent
     }
 
     var playerData = owner.GetPlayerData();
-    var newName = playerData.Faction?.ColoredName ?? factionName;
+    var newFaction = playerData.Faction;
+    var newName = newFaction?.ColoredName ?? factionName;
     var becameNewFaction = newName != factionName;
+    if (newFaction != null && newFaction.NameTakesArticle)
+    {
+      newName = $"{Loc.Get("the")} {newName}";
+    }
     var team = changedTeam ? playerData.Team : null;
 
     if (becameNewFaction && team != null)
     {
-      return Loc.Format("{faction} became the {newFaction} and joined the {team}.",
+      return Loc.Format("{faction} became {newFaction} and joined the {team}.",
         ("{faction}", factionName), ("{newFaction}", newName), ("{team}", team.LocalizedName));
     }
 
     if (becameNewFaction)
     {
-      return Loc.Format("{faction} became the {newFaction}.", ("{faction}", factionName), ("{newFaction}", newName));
+      return Loc.Format("{faction} became {newFaction}.", ("{faction}", factionName), ("{newFaction}", newName));
     }
 
     return team == null
