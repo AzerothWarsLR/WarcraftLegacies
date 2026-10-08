@@ -33,12 +33,14 @@ public static class GameSetup
   {
     // Runs before everything else so the turn timer and starting resources (further down) can wait on it -
     // see GameStartVoteSequence for why that matters.
+    var roleplay = new Roleplay();
     GameStartVoteSequence.Setup(new IGameMode[]
     {
       new Standard(),
       new GreatWar(),
-      new Roleplay()
-    }, timeToDisplay: 0, modeVoteLength: 15, difficultyVoteLength: 10, customOptionsVoteLength: 30);
+      roleplay
+    }, timeToDisplay: 0, modeVoteLength: 15, difficultyVoteLength: 10, customOptionsVoteLength: 30,
+      offlineTestMode: roleplay);
 
     W3Mmd.ForceInit();
     MmdVariables.Init();

@@ -16,33 +16,64 @@ public static class GameStartVoteSequence
 {
   private static List<unit> _pausedUnits = new();
 
+  /// <param name="offlineTestMode">
+  /// If set, an offline game with a single human player skips the mode vote and plays this mode, so testing a mode
+  /// doesn't depend on remembering to vote for it.
+  /// </param>
   public static void Setup(IEnumerable<IGameMode> gameModes, float timeToDisplay, float modeVoteLength,
-    float difficultyVoteLength, float customOptionsVoteLength)
+    float difficultyVoteLength, float customOptionsVoteLength, IGameMode? offlineTestMode = null)
   {
     timer.Create().Start(timeToDisplay, false, () =>
     {
       PauseAllUnits();
 
-      GameModeSelection.Setup(gameModes, modeVoteLength, winningMode =>
+      if (offlineTestMode != null && IsOfflineSoloTest())
       {
-        DifficultySelection.Setup(difficultyVoteLength, winningMode.ForcesOpenDiplomacy, difficulty =>
-        {
-          if (difficulty == Difficulty.Hard)
-          {
-            HardModeSetting.Apply();
-          }
+        offlineTestMode.OnChoose();
+        OnModeChosen(offlineTestMode, difficultyVoteLength, customOptionsVoteLength);
+        return;
+      }
 
-          if (difficulty == Difficulty.Custom)
-          {
-            CustomOptionsSelection.Setup(customOptionsVoteLength, ShowFactionChoicesThenFinish);
-          }
-          else
-          {
-            ShowFactionChoicesThenFinish();
-          }
-        });
-      });
+      GameModeSelection.Setup(gameModes, modeVoteLength,
+        winningMode => OnModeChosen(winningMode, difficultyVoteLength, customOptionsVoteLength));
     });
+  }
+
+  private static void OnModeChosen(IGameMode winningMode, float difficultyVoteLength, float customOptionsVoteLength)
+  {
+    DifficultySelection.Setup(difficultyVoteLength, winningMode.ForcesOpenDiplomacy, difficulty =>
+    {
+      if (difficulty == Difficulty.Hard)
+      {
+        HardModeSetting.Apply();
+      }
+
+      if (difficulty == Difficulty.Custom)
+      {
+        CustomOptionsSelection.Setup(customOptionsVoteLength, ShowFactionChoicesThenFinish);
+      }
+      else
+      {
+        ShowFactionChoicesThenFinish();
+      }
+    });
+  }
+
+  /// <summary>
+  /// Whether this is an offline test: a single human, playing without a Battle.net name, which offline games give as
+  /// "Local Player".
+  /// </summary>
+  private static bool IsOfflineSoloTest()
+  {
+    var humans = 0;
+    var isLocalPlayerName = false;
+    foreach (var whichPlayer in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
+    {
+      humans++;
+      isLocalPlayerName = whichPlayer.Name == "Local Player";
+    }
+
+    return humans == 1 && isLocalPlayerName;
   }
 
   private static void ShowFactionChoicesThenFinish()
