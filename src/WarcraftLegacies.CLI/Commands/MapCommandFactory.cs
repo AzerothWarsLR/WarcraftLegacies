@@ -42,14 +42,34 @@ internal static class MapCommandFactory
   {
     return new MapBuildCommand("publish", "Publishes a release-ready w3x file.")
     {
-      Configure = ctx =>
-      {
-        ctx.OutputKind = MapOutputKind.File;
-        ctx.AdvancedMapBuilderOptions.ShouldMigrate = true;
-        ctx.AdvancedMapBuilderOptions.ShouldSetVersion = true;
-        ctx.AdvancedMapBuilderOptions.ShouldTranspile = true;
-      }
+      Configure = ConfigurePublish
     };
+  }
+
+  public static void ConfigurePublish(MapBuildContext ctx)
+  {
+    ctx.OutputKind = MapOutputKind.File;
+    ctx.AdvancedMapBuilderOptions.ShouldMigrate = true;
+    ctx.AdvancedMapBuilderOptions.ShouldSetVersion = true;
+    ctx.AdvancedMapBuilderOptions.ShouldTranspile = true;
+  }
+
+  public static Command Release()
+  {
+    Argument<string> mapNameArg = new("map-name")
+    {
+      Description = "The directory containing the map."
+    };
+
+    var command = new Command("release",
+      "Publishes the English and Chinese builds and merges them into one release-ready w3x file.")
+    {
+      mapNameArg
+    };
+
+    command.SetAction(parseResult => ReleaseCommand.Run(parseResult.GetValue(mapNameArg)));
+
+    return command;
   }
 
   public static Command Serialize()

@@ -18,7 +18,8 @@ internal static class Program
       {
         MapCommandFactory.Build(),
         MapCommandFactory.Test(),
-        MapCommandFactory.Publish()
+        MapCommandFactory.Publish(),
+        MapCommandFactory.Release()
       },
 
       new Command("w3x-to-json")
