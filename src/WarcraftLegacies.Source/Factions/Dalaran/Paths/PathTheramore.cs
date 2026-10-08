@@ -22,7 +22,6 @@ public sealed class PathTheramore : FactionPath
     Name = "Theramore";
     IconName = "Jaina";
     Description = "The north is lost. Jaina gathers what survivors she can and sails west across the sea, to build a new home for them on the shores of Kalimdor.";
-    DeclineDescription = "Dalaran stays to defend what is left of the north.";
     _northBroken = new ObjectiveTriggered("The North Alliance is broken: the Fallen Prince or the Banshee's Host has risen");
     AddRequirement(new ObjectiveEitherOf(_northBroken, new ObjectiveCapitalDead(violetCitadel)) { ShowsInQuestLog = false });
 

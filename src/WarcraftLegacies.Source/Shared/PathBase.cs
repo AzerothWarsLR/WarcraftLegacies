@@ -17,10 +17,29 @@ public static class PathBase
   private const float Facing = 270;
   private const int MaxNudges = 4;
 
-  /// <summary>
-  /// Removes or rescues the hostile creeps in <paramref name="area"/>, and gives <paramref name="newOwner"/> any neutral
-  /// control points there.
-  /// </summary>
+  /// <summary>Removes everything <paramref name="whichPlayer"/> owns outside <paramref name="keep"/>.</summary>
+  public static void RemoveAllUnitsOutside(player whichPlayer, Rectangle keep)
+  {
+    var kept = GlobalGroup.EnumUnitsInRect(keep);
+    foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
+    {
+      if (kept.Contains(unit))
+      {
+        continue;
+      }
+
+      if (unit.IsRemovable())
+      {
+        unit.SafelyRemove();
+      }
+      else
+      {
+        unit.SetOwner(player.NeutralAggressive);
+      }
+    }
+  }
+
+  /// <summary>Clears hostile creeps from <paramref name="area"/> and gives <paramref name="newOwner"/> its neutral control points.</summary>
   public static void ClaimArea(Rectangle area, player newOwner)
   {
     foreach (var unit in GlobalGroup.EnumUnitsInRect(area))
@@ -51,10 +70,7 @@ public static class PathBase
     }
   }
 
-  /// <summary>
-  /// Creates a structure, clearing other structures out of its way. It is moved aside rather than placed on top of a
-  /// control point, so control points are never destroyed.
-  /// </summary>
+  /// <summary>Creates a structure, moving it aside rather than destroying a control point.</summary>
   public static void CreateStructure(player whichPlayer, int unitTypeId, float x, float y)
   {
     for (var i = 0; i < MaxNudges; i++)
@@ -75,11 +91,7 @@ public static class PathBase
     GeneralHelpers.CreateStructureForced(whichPlayer, unitTypeId, x, y, Facing, StructureSize);
   }
 
-  /// <summary>
-  /// Gives <paramref name="hero"/> to <paramref name="owner"/> at <paramref name="position"/>. A dead hero's body is
-  /// removed and a living one that keeps its experience is created, since the old body may already belong to someone
-  /// else and cannot be revived by the new owner.
-  /// </summary>
+  /// <summary>Gives <paramref name="hero"/> to <paramref name="owner"/>, replacing a dead hero with a living one.</summary>
   public static void SummonLegend(LegendaryHero hero, player owner, Point position)
   {
     var existing = hero.Unit;
