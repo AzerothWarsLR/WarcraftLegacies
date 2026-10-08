@@ -13,6 +13,9 @@ using WarcraftLegacies.Source.Factions.Legion.Quests;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Scourge.Events;
 using WarcraftLegacies.Source.Factions.Scourge.Paths;
+using WarcraftLegacies.Source.Factions.Sentinels;
+using WarcraftLegacies.Source.Factions.Sentinels.Paths;
+using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 
@@ -29,7 +32,7 @@ public static class RoleplaySetting
   private const int FelHordePlayer = 6;
 
   private static readonly HashSet<Faction> _factionsWithPaths = new();
-  private static bool _outlandSetUp;
+  private static bool _illidariPathsSetUp;
 
   public static bool IsActive { get; private set; }
 
@@ -43,8 +46,8 @@ public static class RoleplaySetting
     IsActive = true;
     SetupStartingTeams();
     SetupScourgeSplit();
-    SetupOutland();
-    FactionManager.FactionRegistered += _ => SetupOutland();
+    SetupIllidariPaths();
+    FactionManager.FactionRegistered += _ => SetupIllidariPaths();
     foreach (var faction in FactionManager.GetAllFactions())
     {
       AddRoleplayPaths(faction);
@@ -62,6 +65,7 @@ public static class RoleplaySetting
     player.Create(FelHordePlayer).GetPlayerData().SetTeam(TeamSetup.Legion);
 
     TeamChanges.Capacity = team => team.Bloc != null ? BlocCap : TeamCap;
+    TeamHandicaps.AreRivals = RoleplayFronts.AreRivals;
     TeamHandicaps.Enable();
   }
 
@@ -91,12 +95,12 @@ public static class RoleplaySetting
   }
 
   /// <summary>
-  /// Sets up the Outland paths once both the Fel Horde and the Illidari exist. The Illidari are picked from a choice, so
-  /// they may only register after Roleplay starts.
+  /// Sets up the paths that involve the Illidari once they exist, alongside the Fel Horde and Sentinels. The Illidari are
+  /// picked from a choice, so they may only register after Roleplay starts.
   /// </summary>
-  private static void SetupOutland()
+  private static void SetupIllidariPaths()
   {
-    if (_outlandSetUp)
+    if (_illidariPathsSetUp)
     {
       return;
     }
@@ -111,7 +115,12 @@ public static class RoleplaySetting
       return;
     }
 
-    _outlandSetUp = true;
+    if (!FactionManager.TryGetFactionByType<SentinelsFaction>(out var sentinels))
+    {
+      return;
+    }
+
+    _illidariPathsSetUp = true;
     var magtheridon = AllLegends.FelHorde.Magtheridon;
     var lordOfOutland = new PathLordOfOutland(felHorde, magtheridon);
     var maghar = new PathMaghar(magtheridon);
@@ -119,6 +128,25 @@ public static class RoleplaySetting
     felHorde.AddPath(maghar);
     CloseWhenResolved(lordOfOutland, maghar);
     CloseWhenResolved(maghar, lordOfOutland);
+
+    var betrayersRedemption = new PathBetrayersRedemption();
+    illidari.AddPath(betrayersRedemption);
+    var illidanReturnedToAlliance = new ObjectiveTriggered("Illidan has returned to the Night Elves") { ShowsInQuestLog = false };
+    var illidanReturnedToHunt = new ObjectiveTriggered("Illidan has returned to the Night Elves") { ShowsInQuestLog = false };
+    var wardensAlliance = new PathWardensVengeanceAlliance(illidanReturnedToAlliance);
+    var wardensAlone = new PathWardensVengeanceAlone(illidanReturnedToHunt);
+    sentinels.AddPath(wardensAlliance);
+    sentinels.AddPath(wardensAlone);
+    CloseWhenResolved(wardensAlliance, wardensAlone);
+    CloseWhenResolved(wardensAlone, wardensAlliance);
+    betrayersRedemption.StateChanged += path =>
+    {
+      if (path.State == PathState.Taken)
+      {
+        illidanReturnedToAlliance.Trigger();
+        illidanReturnedToHunt.Trigger();
+      }
+    };
   }
 
   /// <summary>Closes <paramref name="rival"/> once <paramref name="path"/> has been taken or declined.</summary>
