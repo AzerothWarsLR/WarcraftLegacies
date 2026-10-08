@@ -41,9 +41,13 @@ public static class TeamChanges
     set
     {
       _capacity = value;
+      HasCapacityRules = true;
       NotifyTeamChanged();
     }
   }
+
+  /// <summary>Whether a team size cap has been set for this game, as in Roleplay mode.</summary>
+  public static bool HasCapacityRules { get; private set; }
 
   /// <summary>
   /// Runs <paramref name="handler"/> whenever any player joins or leaves a <see cref="Team"/>, or the team size cap or

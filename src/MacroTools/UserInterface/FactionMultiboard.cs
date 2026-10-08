@@ -138,7 +138,7 @@ public sealed class FactionMultiboard
     }
 
     var sizeText = GetSizeText(team);
-    if (sizeText == "")
+    if (!TeamChanges.HasCapacityRules)
     {
       SetHeaderText(row, $"---{teamName}{SubString("-----------------------------------------", 0, 19 - StringLength(teamName))}");
       return;
@@ -167,7 +167,12 @@ public sealed class FactionMultiboard
   private static string GetSizeText(Team team)
   {
     var capacity = TeamChanges.Capacity(team);
-    return capacity == int.MaxValue ? "" : $" {TeamChanges.GetSize(team)}/{capacity}";
+    if (!TeamChanges.HasCapacityRules)
+    {
+      return "";
+    }
+
+    return capacity == int.MaxValue ? $" {TeamChanges.GetSize(team)}" : $" {TeamChanges.GetSize(team)}/{capacity}";
   }
 
   private static string GetHandicapText(Team team)
