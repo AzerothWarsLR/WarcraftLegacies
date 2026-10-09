@@ -19,6 +19,7 @@ using WarcraftLegacies.Source.Factions.ScarletCrusade;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Stormwind;
+using WarcraftLegacies.Source.Factions.Sunfury;
 using WarcraftLegacies.Source.Factions.TaurenTribes;
 using WarcraftLegacies.Source.Factions.Theramore;
 using WarcraftLegacies.Source.Setup;
@@ -74,7 +75,7 @@ public static class RoleplayFronts
     (faction is ForsakenFaction && !IsOnTeam(faction, TeamSetup.Horde));
 
   private static bool DefendsNorth(Faction faction) =>
-    faction is LordaeronFaction || faction is DalaranFaction || faction is QuelthalasFaction ||
+    faction is LordaeronFaction || faction is DalaranFaction || faction is QuelthalasFaction || faction is SunfuryFaction ||
     faction is ScarletCrusadeFaction || faction is GilneasFaction ||
     (faction is TheramoreFaction && !IsOnKalimdorTeam(faction));
 

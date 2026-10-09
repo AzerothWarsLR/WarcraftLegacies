@@ -1,12 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Dialogues;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Localization;
+using MacroTools.Paths;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Illidari;
+using WarcraftLegacies.Source.Factions.Illidari.Paths;
 using WarcraftLegacies.Source.Factions.Quelthalas.Paths;
 using WarcraftLegacies.Source.Factions.Quelthalas.Powers;
 using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
@@ -67,6 +71,28 @@ public sealed class QuelthalasFaction : Faction, IHasRoleplayPaths
     {
       AddPath(new PathBansheesHost(new BansheesHostTransformation(), AllLegends.Quel.Sylvanas, AllLegends.Quel.Spire));
     }
+
+    if (!GetAllPaths().Any(x => x is PathKaelsExodus))
+    {
+      AddPath(new PathKaelsExodus(new KaelsExodusTransformation(), GetExodusDestination));
+    }
+  }
+
+  /// <summary>The Illidari's team if they have taken Lord of Outland, otherwise the Horde.</summary>
+  private static Team? GetExodusDestination()
+  {
+    if (!FactionManager.TryGetFactionByType<IllidariFaction>(out var illidari))
+    {
+      return TeamSetup.Horde;
+    }
+
+    var illidariPlayer = illidari.Player;
+    if (illidariPlayer == null || !illidari.GetAllPaths().Any(x => x is PathLordOfOutland && x.State == PathState.Taken))
+    {
+      return TeamSetup.Horde;
+    }
+
+    return illidariPlayer.GetPlayerData().Team;
   }
 
   private void RegisterPowers()
