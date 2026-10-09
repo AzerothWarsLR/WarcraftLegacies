@@ -9,6 +9,8 @@ using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.FelHorde.Paths;
 using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Illidari.Paths;
+using WarcraftLegacies.Source.Factions.Kultiras;
+using WarcraftLegacies.Source.Factions.Kultiras.Events;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Legion.Paths;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
@@ -39,6 +41,9 @@ public static class RoleplaySetting
   /// <summary>The Pact of Hyjal, once Roleplay mode has set it up.</summary>
   public static PactOfHyjal? HyjalPact { get; private set; }
 
+  /// <summary>Daelin's Vengeance, once Roleplay mode has set it up.</summary>
+  public static DaelinsVengeanceEvent? DaelinsVengeance { get; private set; }
+
   public static void Apply()
   {
     if (IsActive)
@@ -50,6 +55,7 @@ public static class RoleplaySetting
     SetupStartingTeams();
     SetupScourgeSplit();
     SetupHyjalPact();
+    SetupDaelinsVengeance();
     SetupNordrassilsSacrifice();
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
@@ -83,6 +89,17 @@ public static class RoleplaySetting
 
     HyjalPact = new PactOfHyjal(legion, legion.GetQuestByType<QuestSummonLegion>());
     WorldEventManager.Register(HyjalPact);
+  }
+
+  private static void SetupDaelinsVengeance()
+  {
+    if (!FactionManager.TryGetFactionByType<KultirasFaction>(out var kultiras))
+    {
+      return;
+    }
+
+    DaelinsVengeance = new DaelinsVengeanceEvent(kultiras);
+    WorldEventManager.Register(DaelinsVengeance);
   }
 
   private static void SetupNordrassilsSacrifice()
