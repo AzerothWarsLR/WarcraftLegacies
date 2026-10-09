@@ -83,6 +83,7 @@ public static class GameSetup
     NeutralVictimAndPassiveSetup.Setup();
     GateSetup.Setup();
     OrgrimmarSetup.Setup();
+    NordrassilSetup.Setup();
     SulfuronSpireSetup.Setup();
     StartingQuestPopup.Setup(63);
     RefundZeroLimitUnits.Setup();
