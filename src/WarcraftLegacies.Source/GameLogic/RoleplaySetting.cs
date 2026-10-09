@@ -11,6 +11,7 @@ using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Illidari.Paths;
 using WarcraftLegacies.Source.Factions.Kultiras;
 using WarcraftLegacies.Source.Factions.Kultiras.Events;
+using WarcraftLegacies.Source.Factions.Kultiras.Paths;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Legion.Paths;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
@@ -110,6 +111,7 @@ public static class RoleplaySetting
 
     DaelinsVengeance = new DaelinsVengeanceEvent(kultiras);
     WorldEventManager.Register(DaelinsVengeance);
+    kultiras.AddPath(new PathTheAdmiralsFall());
   }
 
   private static void SetupDaughtersOfTheAlliance()
