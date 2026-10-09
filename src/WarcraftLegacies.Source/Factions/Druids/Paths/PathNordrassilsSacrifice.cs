@@ -38,17 +38,32 @@ public sealed class PathNordrassilsSacrifice : FactionPath
   {
     _consumeTree.WorldTreeChannel.Close();
     _consumeTree.Progress = QuestProgress.Failed;
-    WoundArchimonde();
-    DestroyNordrassil();
+    StrikeArchimonde();
     faction.Name = "Cenarion Circle";
     RemoveImmortality(faction);
     WeakenCenarius();
+    AllLegends.Druids.Cenarius.UnitChanged += _ => WeakenCenarius();
   }
 
-  private static void WoundArchimonde()
+  private static void StrikeArchimonde()
   {
     var archimonde = AllLegends.Legion.Archimonde.Unit;
     if (archimonde == null || !archimonde.Alive)
+    {
+      DestroyNordrassil();
+      return;
+    }
+
+    WispSwarm.Start(archimonde, () =>
+    {
+      WoundArchimonde(archimonde);
+      DestroyNordrassil();
+    });
+  }
+
+  private static void WoundArchimonde(unit archimonde)
+  {
+    if (!archimonde.Alive)
     {
       return;
     }
@@ -58,8 +73,6 @@ public sealed class PathNordrassilsSacrifice : FactionPath
     {
       archimonde.Life = maximumLife * ArchimondeLifeLeft;
     }
-
-    effect.Create(@"Abilities\Spells\NightElf\Tranquility\TranquilityTarget.mdl", archimonde.X, archimonde.Y).Dispose();
   }
 
   private static void DestroyNordrassil()
