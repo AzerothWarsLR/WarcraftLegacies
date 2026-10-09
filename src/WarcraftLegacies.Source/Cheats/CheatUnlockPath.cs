@@ -19,7 +19,7 @@ public sealed class CheatUnlockPath : Command
   public override CommandType Type => CommandType.Cheat;
 
   /// <inheritdoc />
-  public override string Description => "Unlocks the first of your paths whose name contains the given word.";
+  public override string Description => "Unlocks all of your paths whose names contain the given word.";
 
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
@@ -31,13 +31,19 @@ public sealed class CheatUnlockPath : Command
     }
 
     var search = parameters[0].ToLower();
+    var unlocked = 0;
     foreach (var path in faction.GetAllPaths())
     {
       if (path.Name.ToLower().Contains(search))
       {
         path.ForceAvailable();
-        return $"Unlocked {path.Name}.";
+        unlocked++;
       }
+    }
+
+    if (unlocked > 0)
+    {
+      return $"Unlocked {unlocked} path(s) matching {parameters[0]}.";
     }
 
     return $"{faction.Name} has no path matching {parameters[0]}.";

@@ -1,12 +1,14 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using WarcraftLegacies.Source.Factions.BansheesHost.Paths;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions.BansheesHost;
 
 /// <summary>Sylvanas and the fallen of Quel'thalas, reached through the Banshee's Host path.</summary>
-public sealed class BansheesHostFaction : Faction
+public sealed class BansheesHostFaction : Faction, IHasRoleplayPaths
 {
   /// <inheritdoc />
   public BansheesHostFaction() : base("Banshee's Host", playercolor.Cyan,
@@ -32,4 +34,11 @@ public sealed class BansheesHostFaction : Faction
 
   /// <inheritdoc />
   public override void OnRegistered() => SharedFactionConfigSetup.AddSharedFactionConfig(this);
+
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    AddPath(new PathRiseOfTheForsakenHorde());
+    AddPath(new PathRiseOfTheForsakenScourge());
+  }
 }

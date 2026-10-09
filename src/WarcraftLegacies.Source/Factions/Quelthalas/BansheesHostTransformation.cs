@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Factions.Quelthalas;
 public sealed class BansheesHostTransformation
 {
   /// <summary>Where the Northrend base goes. A placeholder until a spot is picked.</summary>
-  private static Rectangle NorthrendBase => Regions.EnKilahUnlock;
+  public static Rectangle NorthrendBase => Regions.EnKilahUnlock;
 
   /// <summary>Turns <paramref name="quelthalas"/>'s player into the Banshee's Host.</summary>
   public void Execute(Faction quelthalas)

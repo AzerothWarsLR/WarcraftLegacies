@@ -7,6 +7,7 @@ using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FallenPrince;
 using WarcraftLegacies.Source.Factions.FelHorde;
+using WarcraftLegacies.Source.Factions.Forsaken;
 using WarcraftLegacies.Source.Factions.Gilneas;
 using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Kultiras;
@@ -61,18 +62,25 @@ public static class RoleplayFronts
   public static bool AreFactionRivals(Faction factionA, Faction factionB) =>
     OpposeOn(factionA, factionB, AttacksNorth, DefendsNorth) ||
     OpposeOn(factionA, factionB, AttacksSouth, DefendsSouth) ||
-    OpposeOn(factionA, factionB, AttacksKalimdor, DefendsKalimdor);
+    OpposeOn(factionA, factionB, AttacksKalimdor, DefendsKalimdor) ||
+    OpposeOn(factionA, factionB, IsForsaken, ServesTheLichKing);
 
   private static bool OpposeOn(Faction factionA, Faction factionB, Func<Faction, bool> attacks, Func<Faction, bool> defends) =>
     (attacks(factionA) && defends(factionB)) || (defends(factionA) && attacks(factionB));
 
   private static bool AttacksNorth(Faction faction) =>
-    faction is ScourgeFaction || faction is LegionFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction;
+    faction is ScourgeFaction || faction is LegionFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction ||
+    (faction is ForsakenFaction && !IsOnTeam(faction, TeamSetup.Horde));
 
   private static bool DefendsNorth(Faction faction) =>
     faction is LordaeronFaction || faction is DalaranFaction || faction is QuelthalasFaction ||
     faction is ScarletCrusadeFaction || faction is GilneasFaction ||
     (faction is TheramoreFaction && !IsOnKalimdorTeam(faction));
+
+  private static bool IsForsaken(Faction faction) => faction is ForsakenFaction && IsOnTeam(faction, TeamSetup.Horde);
+
+  private static bool ServesTheLichKing(Faction faction) =>
+    faction is ScourgeFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction;
 
   private static bool AttacksSouth(Faction faction) => faction is FelHordeFaction || faction is LegionFaction;
 
