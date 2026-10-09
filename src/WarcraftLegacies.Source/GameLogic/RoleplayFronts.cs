@@ -63,7 +63,8 @@ public static class RoleplayFronts
     OpposeOn(factionA, factionB, AttacksNorth, DefendsNorth) ||
     OpposeOn(factionA, factionB, AttacksSouth, DefendsSouth) ||
     OpposeOn(factionA, factionB, AttacksKalimdor, DefendsKalimdor) ||
-    OpposeOn(factionA, factionB, IsForsaken, ServesTheLichKing);
+    OpposeOn(factionA, factionB, IsForsaken, ServesTheLichKing) ||
+    OpposeOn(factionA, factionB, IsChaosOrcs, IsTauren);
 
   private static bool OpposeOn(Faction factionA, Faction factionB, Func<Faction, bool> attacks, Func<Faction, bool> defends) =>
     (attacks(factionA) && defends(factionB)) || (defends(factionA) && attacks(factionB));
@@ -78,6 +79,14 @@ public static class RoleplayFronts
     (faction is TheramoreFaction && !IsOnKalimdorTeam(faction));
 
   private static bool IsForsaken(Faction faction) => faction is ForsakenFaction && IsOnTeam(faction, TeamSetup.Horde);
+
+  private static bool IsChaosOrcs(Faction faction)
+  {
+    var chaosOrcs = RoleplaySetting.OrcCorruption;
+    return faction is OrcishHordeFaction && chaosOrcs != null && chaosOrcs.IsCorrupted;
+  }
+
+  private static bool IsTauren(Faction faction) => faction is TaurenTribesFaction;
 
   private static bool ServesTheLichKing(Faction faction) =>
     faction is ScourgeFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction;

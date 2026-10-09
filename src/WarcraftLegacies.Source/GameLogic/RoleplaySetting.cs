@@ -14,11 +14,16 @@ using WarcraftLegacies.Source.Factions.Kultiras.Events;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Legion.Paths;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
+using WarcraftLegacies.Source.Factions.OrcishHorde;
+using WarcraftLegacies.Source.Factions.OrcishHorde.Paths;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Scourge.Events;
 using WarcraftLegacies.Source.Factions.Scourge.Paths;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Sentinels.Paths;
+using WarcraftLegacies.Source.Factions.TaurenTribes;
+using WarcraftLegacies.Source.Factions.TaurenTribes.Paths;
+using WarcraftLegacies.Source.Factions.Theramore;
 using WarcraftLegacies.Source.GameLogic.HyjalPact;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Setup;
@@ -41,6 +46,9 @@ public static class RoleplaySetting
   /// <summary>The Pact of Hyjal, once Roleplay mode has set it up.</summary>
   public static PactOfHyjal? HyjalPact { get; private set; }
 
+  /// <summary>The Orcish Horde's fall to chaos, once Roleplay mode has set it up.</summary>
+  public static ChaosOrcs? OrcCorruption { get; private set; }
+
   /// <summary>Daelin's Vengeance, once Roleplay mode has set it up.</summary>
   public static DaelinsVengeanceEvent? DaelinsVengeance { get; private set; }
 
@@ -57,6 +65,7 @@ public static class RoleplaySetting
     SetupHyjalPact();
     SetupDaelinsVengeance();
     SetupDaughtersOfTheAlliance();
+    SetupBloodOfMannoroth();
     SetupNordrassilsSacrifice();
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
@@ -127,6 +136,62 @@ public static class RoleplaySetting
         }
       };
     }
+  }
+
+  private static void SetupBloodOfMannoroth()
+  {
+    if (!FactionManager.TryGetFactionByType<OrcishHordeFaction>(out var orcs))
+    {
+      return;
+    }
+
+    var fountain = AllLegends.Neutral.FountainOfBlood.Unit;
+    if (fountain.Owner == player.NeutralPassive)
+    {
+      fountain.SetOwner(player.NeutralAggressive);
+    }
+
+    var chaosOrcs = new ChaosOrcs(orcs);
+    OrcCorruption = chaosOrcs;
+    var bloodFades = new PathTheBloodFades(chaosOrcs);
+    chaosOrcs.MannorothSlain += bloodFades.Open;
+    orcs.AddPath(new PathBloodOfMannoroth(chaosOrcs, drinker =>
+    {
+      drinker.AddPath(bloodFades);
+      OfferTaurenNewAllies();
+    }));
+  }
+
+  private static void OfferTaurenNewAllies()
+  {
+    if (!FactionManager.TryGetFactionByType<TaurenTribesFaction>(out var tauren))
+    {
+      return;
+    }
+
+    var taurenPlayer = tauren.Player;
+    if (taurenPlayer == null || tauren.ScoreStatus == ScoreStatus.Defeated || IsAlliedWithTheramore(taurenPlayer))
+    {
+      return;
+    }
+
+    var nightElves = new PathFindNewAlliesNightElves();
+    var alone = new PathFindNewAlliesAlone();
+    tauren.AddPath(nightElves);
+    tauren.AddPath(alone);
+    nightElves.Open();
+    alone.Open();
+  }
+
+  private static bool IsAlliedWithTheramore(player whichPlayer)
+  {
+    if (!FactionManager.TryGetFactionByType<TheramoreFaction>(out var theramore))
+    {
+      return false;
+    }
+
+    var theramorePlayer = theramore.Player;
+    return theramorePlayer != null && TeamChanges.AreTeammates(whichPlayer, theramorePlayer);
   }
 
   private static void SetupNordrassilsSacrifice()
