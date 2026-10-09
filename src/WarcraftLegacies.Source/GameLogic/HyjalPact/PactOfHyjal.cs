@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
@@ -42,6 +43,9 @@ public sealed class PactOfHyjal : WorldEvent
 
   /// <summary>The team the pact's members are on once it has formed.</summary>
   public Team? PactTeam { get; private set; }
+
+  /// <summary>Fired once the pact has ended and its members have gone back to their teams.</summary>
+  public event Action? Ended;
 
   public PactOfHyjal(LegionFaction legion, QuestData summonArchimonde)
   {
@@ -217,6 +221,7 @@ public sealed class PactOfHyjal : WorldEvent
     var endedEvent = new PactEndedEvent(outcome);
     endedEvent.RecordAsHappened();
     WorldEventManager.Register(endedEvent);
+    Ended?.Invoke();
   }
 
   private static bool ContainsLegion(Team team)

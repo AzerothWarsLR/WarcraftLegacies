@@ -56,6 +56,7 @@ public static class RoleplaySetting
     SetupScourgeSplit();
     SetupHyjalPact();
     SetupDaelinsVengeance();
+    SetupDaughtersOfTheAlliance();
     SetupNordrassilsSacrifice();
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
@@ -100,6 +101,32 @@ public static class RoleplaySetting
 
     DaelinsVengeance = new DaelinsVengeanceEvent(kultiras);
     WorldEventManager.Register(DaelinsVengeance);
+  }
+
+  private static void SetupDaughtersOfTheAlliance()
+  {
+    if (!FactionManager.TryGetFactionByType<SentinelsFaction>(out var sentinels))
+    {
+      return;
+    }
+
+    var daughters = new PathDaughtersOfTheAlliance();
+    sentinels.AddPath(daughters);
+    if (HyjalPact != null)
+    {
+      HyjalPact.Ended += daughters.Open;
+    }
+
+    if (FactionManager.TryGetFactionByType<DruidsFaction>(out var druids))
+    {
+      druids.ScoreStatusChanged += faction =>
+      {
+        if (faction.ScoreStatus == ScoreStatus.Defeated)
+        {
+          daughters.Open();
+        }
+      };
+    }
   }
 
   private static void SetupNordrassilsSacrifice()
