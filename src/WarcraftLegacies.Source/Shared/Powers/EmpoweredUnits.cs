@@ -14,13 +14,22 @@ public sealed class EmpoweredUnits : Power
 {
   private readonly Func<unit, bool> _affectsUnit;
   private readonly float _bonus;
+  private readonly float _reduction;
 
   /// <param name="affectsUnit">Which of the player's units get the bonus.</param>
   /// <param name="bonus">The damage bonus, and the health bonus the damage reduction is worth, as a fraction.</param>
-  public EmpoweredUnits(Func<unit, bool> affectsUnit, float bonus)
+  public EmpoweredUnits(Func<unit, bool> affectsUnit, float bonus) : this(affectsUnit, bonus, 1 - 1 / (1 + bonus))
+  {
+  }
+
+  /// <param name="affectsUnit">Which of the player's units get the bonus.</param>
+  /// <param name="bonus">The damage bonus as a fraction.</param>
+  /// <param name="reduction">How much less damage the units take, as a fraction.</param>
+  public EmpoweredUnits(Func<unit, bool> affectsUnit, float bonus, float reduction)
   {
     _affectsUnit = affectsUnit;
     _bonus = bonus;
+    _reduction = reduction;
   }
 
   /// <summary>
@@ -31,7 +40,7 @@ public sealed class EmpoweredUnits : Power
   {
     init => Description = Loc.Format(value,
       ("{bonus}", ((int)(_bonus * 100 + 0.5f)).ToString()),
-      ("{reduction}", ((int)((1 - 1 / (1 + _bonus)) * 100 + 0.5f)).ToString()));
+      ("{reduction}", ((int)(_reduction * 100 + 0.5f)).ToString()));
   }
 
   /// <inheritdoc />
@@ -61,7 +70,7 @@ public sealed class EmpoweredUnits : Power
   {
     if (_affectsUnit(@event.Unit))
     {
-      @event.Damage /= 1 + _bonus;
+      @event.Damage *= 1 - _reduction;
     }
   }
 }
