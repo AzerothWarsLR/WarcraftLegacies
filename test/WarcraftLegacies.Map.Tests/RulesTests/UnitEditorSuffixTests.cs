@@ -17,6 +17,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Draenei",
     "Druids",
     "Fel",
+    "Forsaken",
     "Frostwolf",
     "Orcish",
     "Gilneas",
