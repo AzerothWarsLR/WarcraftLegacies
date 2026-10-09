@@ -70,12 +70,15 @@ public static class PathBase
     }
   }
 
-  /// <summary>Creates a structure, moving it aside rather than destroying a control point.</summary>
+  /// <summary>
+  /// Creates a structure, refunding anything it replaces, but moving it aside rather than destroying a control point,
+  /// capital or other key building.
+  /// </summary>
   public static void CreateStructure(player whichPlayer, int unitTypeId, float x, float y)
   {
     for (var i = 0; i < MaxNudges; i++)
     {
-      var blocker = GetBlockingControlPoint(x, y);
+      var blocker = GetBlockingKeyUnit(x, y);
       if (blocker == null)
       {
         break;
@@ -88,7 +91,11 @@ public static class PathBase
       y = blocker.Y + dy / distance * StructureSize * 1.5f;
     }
 
-    GeneralHelpers.CreateStructureForced(whichPlayer, unitTypeId, x, y, Facing, StructureSize);
+    var structure = GeneralHelpers.CreateStructureForced(whichPlayer, unitTypeId, x, y, Facing, StructureSize);
+    if (structure == null || !structure.Alive)
+    {
+      Logger.LogWarning($"Could not create {GetObjectName(unitTypeId)} at {(int)x}, {(int)y}.");
+    }
   }
 
   /// <summary>Gives <paramref name="hero"/> to <paramref name="owner"/>, replacing a dead hero with a living one.</summary>
@@ -118,9 +125,13 @@ public static class PathBase
     }
   }
 
-  private static unit? GetBlockingControlPoint(float x, float y)
+  private static unit? GetBlockingKeyUnit(float x, float y)
   {
     var area = new Rectangle(x - StructureSize, y - StructureSize, x + StructureSize, y + StructureSize);
-    return GlobalGroup.EnumUnitsInRect(area).FirstOrDefault(unit => unit.IsControlPoint());
+    return GlobalGroup.EnumUnitsInRect(area).FirstOrDefault(IsKeyUnit);
   }
+
+  private static bool IsKeyUnit(unit whichUnit) =>
+    whichUnit.IsUnitType(unittype.Structure) &&
+    (!whichUnit.IsRemovable() || whichUnit.UnitType == UNIT_N06Z_FLIGHT_PATH_ORCISH_HORDE);
 }
