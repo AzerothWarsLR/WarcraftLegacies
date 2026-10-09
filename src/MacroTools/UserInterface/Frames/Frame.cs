@@ -77,6 +77,9 @@ public class Frame
     Handle.ClearPoints();
   }
 
+  /// <summary>Makes the <see cref="Frame"/> cover exactly the same area as <paramref name="relativeTo"/>.</summary>
+  public void SetAllPoints(Frame relativeTo) => BlzFrameSetAllPoints(Handle, relativeTo.Handle);
+
   public Frame(string name, framehandle parent, int priority)
   {
     Handle = framehandle.Create(name, parent, priority, 0);

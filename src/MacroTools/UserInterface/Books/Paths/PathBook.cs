@@ -4,6 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.Paths;
 using MacroTools.UserInterface.Books.Core;
+using MacroTools.UserInterface.Frames;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.UserInterface.Books.Paths;
@@ -14,11 +15,13 @@ namespace MacroTools.UserInterface.Books.Paths;
 public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFactory, PathCardFactory>
 {
   private const int DisplayGroupCount = 5;
+  private const string GlowModel = @"UI\Feedback\QuestButton\UI-QuestButtonOn.mdx";
 
   private readonly List<FactionPath> _watchedPaths = new();
   private readonly List<FactionPath> _seenPaths = new();
   private Faction? _trackedFaction;
   private player _owner = null!;
+  private Sprite? _glow;
 
   private PathBook() : base(0.37f, 0.44f, 0.02f, 0.015f, 8)
   {
@@ -53,10 +56,36 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
     }
 
     LauncherButton.Text = GetLauncherText();
-    if (_owner == player.LocalPlayer && !Visible)
+    if (_glow == null)
+    {
+      _glow = new Sprite("PathBookLauncherGlow", LauncherButton) { Model = GlowModel, Visible = false };
+      _glow.SetAllPoints(LauncherButton);
+    }
+
+    if (_owner != player.LocalPlayer)
+    {
+      return;
+    }
+
+    if (!Visible)
     {
       LauncherButton.Visible = _watchedPaths.Count > 0;
     }
+
+    _glow.Visible = HasUnseenPath();
+  }
+
+  private bool HasUnseenPath()
+  {
+    foreach (var path in _watchedPaths)
+    {
+      if (path.State == PathState.Available && !_seenPaths.Contains(path))
+      {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   private Faction? TrackedFaction
@@ -198,7 +227,7 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
   private string GetLauncherText()
   {
     var title = Loc.Get("Paths");
-    var anyAvailable = false;
+    var expiringIn = float.MaxValue;
     foreach (var path in _watchedPaths)
     {
       if (path.State == PathState.Committing)
@@ -206,12 +235,17 @@ public sealed class PathBook : Book<FactionPath, PathPage, PathCard, PathPageFac
         return $"{title} |cffffcc00{CardText.FormatTime(path.CommitTimeRemaining)}|r";
       }
 
-      if (path.State == PathState.Available && !_seenPaths.Contains(path))
+      if (path.State == PathState.Available && path.OfferDuration > 0 && path.OfferTimeRemaining < expiringIn)
       {
-        anyAvailable = true;
+        expiringIn = path.OfferTimeRemaining;
       }
     }
 
-    return anyAvailable ? $"{title} |cff00ff00(!)|r" : title;
+    if (expiringIn < float.MaxValue)
+    {
+      return $"{title} |cffff3030{CardText.FormatTime(expiringIn)}|r";
+    }
+
+    return HasUnseenPath() ? $"{title} |cff00ff00(!)|r" : title;
   }
 }
