@@ -123,7 +123,7 @@ public sealed class DaelinsVengeanceEvent : WorldEvent
       Name = "Daelin's Vengeance",
       IconName = "Proudmoore",
       Income = WarIncome,
-      DescriptionTemplate = "Daelin's hatred of the orcs drives his sailors on. While Boralus stands, your forces deal {bonus}% more damage to the Horde, and the war chest brings in {income} extra gold each turn."
+      DescriptionTemplate = "Daelin's hatred of the orcs drives his sailors on. While Boralus stands, your forces deal {bonus}% more damage to the Horde, and you gain {income} extra income."
     });
 
     Outcome = Loc.Format("{kultiras}'s fleet made landfall at the Shimmering Flats.", ("{kultiras}", _kultiras.ColoredName));
