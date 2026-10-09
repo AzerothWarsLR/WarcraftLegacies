@@ -77,6 +77,12 @@ public abstract class FactionPath
   /// <summary>Whether taking the path moves the faction to another <see cref="Team"/>.</summary>
   public virtual bool ChangesTeam => false;
 
+  /// <summary>Whether the path can move the faction even while its team-change cooldown is running.</summary>
+  public virtual bool IgnoresTeamChangeCooldown => false;
+
+  /// <summary>Whether taking the path closes the faction's other paths.</summary>
+  public virtual bool ClosesOtherPaths => true;
+
   /// <summary>
   /// Why the path can't be accepted right now even though its requirements are met, like the team it joins being
   /// full. Null if nothing is in the way.
@@ -91,7 +97,7 @@ public abstract class FactionPath
         return null;
       }
 
-      var cooldown = TeamChanges.GetCooldownRemaining(owner);
+      var cooldown = IgnoresTeamChangeCooldown ? 0 : TeamChanges.GetCooldownRemaining(owner);
       if (cooldown > 0)
       {
         return Loc.Format("You changed teams recently and can change again in {time}", ("{time}", FormatTime(cooldown)));
@@ -166,6 +172,11 @@ public abstract class FactionPath
 
   /// <summary>Runs when the player declines the path.</summary>
   protected virtual void OnDeclined(Faction faction)
+  {
+  }
+
+  /// <summary>Runs when the offer runs out without the path being accepted or declined.</summary>
+  protected virtual void OnExpired(Faction faction)
   {
   }
 
@@ -378,6 +389,7 @@ public abstract class FactionPath
         {
           Close();
           AnnounceExpired();
+          OnExpired(Faction!);
           return;
         }
 
@@ -417,7 +429,7 @@ public abstract class FactionPath
 
     foreach (var otherPath in faction.GetAllPaths())
     {
-      if (otherPath != this)
+      if (otherPath != this && ClosesOtherPaths)
       {
         otherPath.Close();
       }
