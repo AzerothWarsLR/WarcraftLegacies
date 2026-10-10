@@ -66,7 +66,7 @@ public abstract class Faction
   /// All of the <see cref="Faction"/>'s <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s
   /// will be represented by this unit type.
   /// </summary>
-  public int? ControlPointDefenderUnitTypeId { get; protected init; }
+  public int? ControlPointDefenderUnitTypeId { get; set; }
 
   /// <summary>
   /// Check to see if <see cref="Faction"/> has any living essential legends
