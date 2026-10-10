@@ -30,6 +30,9 @@ public sealed class PathTheBloodFades : FactionPath
   public override bool ChangesTeam => true;
 
   /// <inheritdoc />
+  public override bool IgnoresTeamChangeCooldown => true;
+
+  /// <inheritdoc />
   protected override Team? GetDestinationTeam(Faction faction) => TeamSetup.Horde;
 
   /// <inheritdoc />
