@@ -24,6 +24,7 @@ public static class CheatSetup
     CommandManager.Register(new CheatTestWorldTree());
     CommandManager.Register(new CheatKillTree());
     CommandManager.Register(new CheatTestDaelin());
+    CommandManager.Register(new CheatTestChaos());
     CommandManager.Register(new CheatQuest());
     CommandManager.Register(new CheatFood());
     CommandManager.Register(new CheatGod());
