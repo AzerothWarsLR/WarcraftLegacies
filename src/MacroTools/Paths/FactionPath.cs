@@ -6,6 +6,7 @@ using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Sounds;
+using MacroTools.Utils;
 using MacroTools.WorldEvents;
 
 namespace MacroTools.Paths;
@@ -443,7 +444,14 @@ public abstract class FactionPath
     SoundLibrary.Completed.Start();
     var factionName = faction.ColoredName;
     var formerTeam = owner?.GetPlayerData().Team;
-    OnTaken(faction);
+    try
+    {
+      OnTaken(faction);
+    }
+    catch (Exception ex)
+    {
+      Logger.LogError($"Taking the path {Name} failed: {ex.Message}");
+    }
 
     if (ChangesTeam && owner != null)
     {
