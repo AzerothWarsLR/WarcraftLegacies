@@ -11,4 +11,7 @@ public sealed class ObjectiveTriggered : Objective
 
   /// <summary>Completes the objective.</summary>
   public void Trigger() => Progress = QuestProgress.Complete;
+
+  /// <summary>Fails the objective.</summary>
+  public void Fail() => Progress = QuestProgress.Failed;
 }

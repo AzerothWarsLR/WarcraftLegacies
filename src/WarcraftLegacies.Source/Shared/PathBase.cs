@@ -74,7 +74,7 @@ public static class PathBase
   /// Creates a structure, refunding anything it replaces, but moving it aside rather than destroying a control point,
   /// capital or other key building.
   /// </summary>
-  public static void CreateStructure(player whichPlayer, int unitTypeId, float x, float y)
+  public static unit? CreateStructure(player whichPlayer, int unitTypeId, float x, float y)
   {
     for (var i = 0; i < MaxNudges; i++)
     {
@@ -96,6 +96,8 @@ public static class PathBase
     {
       Logger.LogWarning($"Could not create {GetObjectName(unitTypeId)} at {(int)x}, {(int)y}.");
     }
+
+    return structure;
   }
 
   /// <summary>Gives <paramref name="hero"/> to <paramref name="owner"/>, replacing a dead hero with a living one.</summary>

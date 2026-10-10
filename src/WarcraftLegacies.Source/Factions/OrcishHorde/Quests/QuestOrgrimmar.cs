@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.FactionBased;
+using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -14,6 +15,8 @@ namespace WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 public sealed class QuestOrgrimmar : QuestData
 {
   private readonly List<unit> _rescueUnits;
+  private readonly ObjectiveTriggered _stillTheirs;
+  private player? _handedOverTo;
 
   public QuestOrgrimmar(Rectangle rescueRect, Faction faction, QuestData countdownToExtinction) : base("To Tame a Land",
     "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
@@ -30,8 +33,22 @@ public sealed class QuestOrgrimmar : QuestData
       ShowsInQuestLog = false,
       Progress = QuestProgress.Undiscovered
     });
+    _stillTheirs = new ObjectiveTriggered("Orgrimmar is still theirs to build")
+    {
+      ShowsInPopups = false,
+      ShowsInQuestLog = false,
+      Progress = QuestProgress.Complete
+    };
+    AddObjective(_stillTheirs);
     ResearchId = UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+  }
+
+  /// <summary>Fails the quest and gives everything waiting in Orgrimmar to <paramref name="newOwner"/> instead.</summary>
+  public void HandOver(player newOwner)
+  {
+    _handedOverTo = newOwner;
+    _stillTheirs.Fail();
   }
 
   /// <inheritdoc/>
@@ -64,9 +81,9 @@ public sealed class QuestOrgrimmar : QuestData
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
   {
-    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+    var rescuer = _handedOverTo ?? (completingFaction.ScoreStatus == ScoreStatus.Defeated
       ? player.NeutralAggressive
-      : completingFaction.Player;
+      : completingFaction.Player);
 
     rescuer.RescueGroup(_rescueUnits);
     OrgrimmarSetup.RevealUnits();
