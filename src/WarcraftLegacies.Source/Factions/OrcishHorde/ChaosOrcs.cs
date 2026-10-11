@@ -66,6 +66,7 @@ public sealed class ChaosOrcs
     }
 
     _corrupted = true;
+    TeamHandicaps.Refresh();
     _orcPlayer = orcPlayer;
     _orcs.Name = Loc.Get("Chaos Orcs");
     _orcs.ModObjectLimit(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
@@ -97,6 +98,7 @@ public sealed class ChaosOrcs
     }
 
     _corrupted = false;
+    TeamHandicaps.Refresh();
     _orcs.Name = _orcName;
     foreach (var chaosAbility in _chaosAbilities)
     {

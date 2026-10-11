@@ -86,6 +86,11 @@ public static class GameStartVoteSequence
   private static void FinishGameStart()
   {
     FactionStartingResources.GrantPending();
+    if (RoleplaySetting.IsActive)
+    {
+      TeamHandicaps.Enable();
+    }
+
     GameTimeManager.Start();
     GameTimeDialog.Setup();
     GameTimeManager.RegisterOnTurn(1, UnpauseAllUnits);

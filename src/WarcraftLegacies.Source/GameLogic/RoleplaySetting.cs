@@ -87,8 +87,7 @@ public static class RoleplaySetting
     player.Create(FelHordePlayer).GetPlayerData().SetTeam(TeamSetup.Legion);
 
     TeamChanges.Capacity = team => team.Bloc != null ? BlocCap : TeamCap;
-    TeamHandicaps.AreRivals = RoleplayFronts.AreRivals;
-    TeamHandicaps.Enable();
+    RoleplayFronts.Register();
   }
 
   private static void SetupHyjalPact()

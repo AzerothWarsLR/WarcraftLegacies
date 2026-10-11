@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using WarcraftLegacies.Source.Factions.BansheesHost;
@@ -29,46 +28,16 @@ namespace WarcraftLegacies.Source.GameLogic;
 /// <summary>Who fights whom in Roleplay mode, across the North, South and Kalimdor fronts.</summary>
 public static class RoleplayFronts
 {
-  private static readonly List<Func<Team, Team, bool>> ExtraRivalries = new();
-
-  /// <summary>Makes teams that pass <paramref name="rivalry"/> rivals too, like a pact formed against the Legion.</summary>
-  public static void AddTeamRivalry(Func<Team, Team, bool> rivalry) => ExtraRivalries.Add(rivalry);
-
-  /// <summary>Whether <paramref name="teamA"/> and <paramref name="teamB"/> fight each other.</summary>
-  public static bool AreRivals(Team teamA, Team teamB)
+  /// <summary>Registers every front with <see cref="TeamHandicaps"/>.</summary>
+  public static void Register()
   {
-    foreach (var rivalry in ExtraRivalries)
-    {
-      if (rivalry(teamA, teamB))
-      {
-        return true;
-      }
-    }
-
-    foreach (var factionA in teamA.GetAllFactions())
-    {
-      foreach (var factionB in teamB.GetAllFactions())
-      {
-        if (AreFactionRivals(factionA, factionB))
-        {
-          return true;
-        }
-      }
-    }
-
-    return false;
+    TeamHandicaps.AddFront(new Front(AttacksNorth, DefendsNorth));
+    TeamHandicaps.AddFront(new Front(AttacksSouth, DefendsSouth));
+    TeamHandicaps.AddFront(new Front(AttacksKalimdor, DefendsKalimdor));
+    TeamHandicaps.AddFront(new Front(IsForsaken, ServesTheLichKing));
+    TeamHandicaps.AddFront(new Front(IsChaosOrcs, IsTauren));
+    TeamHandicaps.AddFront(new Front(x => x is LegionFaction, IsInHyjalPact));
   }
-
-  /// <summary>Whether <paramref name="factionA"/> and <paramref name="factionB"/> are on opposite sides of a front.</summary>
-  public static bool AreFactionRivals(Faction factionA, Faction factionB) =>
-    OpposeOn(factionA, factionB, AttacksNorth, DefendsNorth) ||
-    OpposeOn(factionA, factionB, AttacksSouth, DefendsSouth) ||
-    OpposeOn(factionA, factionB, AttacksKalimdor, DefendsKalimdor) ||
-    OpposeOn(factionA, factionB, IsForsaken, ServesTheLichKing) ||
-    OpposeOn(factionA, factionB, IsChaosOrcs, IsTauren);
-
-  private static bool OpposeOn(Faction factionA, Faction factionB, Func<Faction, bool> attacks, Func<Faction, bool> defends) =>
-    (attacks(factionA) && defends(factionB)) || (defends(factionA) && attacks(factionB));
 
   private static bool AttacksNorth(Faction faction) =>
     faction is ScourgeFaction || faction is LegionFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction ||
@@ -88,6 +57,12 @@ public static class RoleplayFronts
   }
 
   private static bool IsTauren(Faction faction) => faction is TaurenTribesFaction;
+
+  private static bool IsInHyjalPact(Faction faction)
+  {
+    var pact = RoleplaySetting.HyjalPact;
+    return pact != null && pact.PactTeam != null && IsOnTeam(faction, pact.PactTeam);
+  }
 
   private static bool ServesTheLichKing(Faction faction) =>
     faction is ScourgeFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction;

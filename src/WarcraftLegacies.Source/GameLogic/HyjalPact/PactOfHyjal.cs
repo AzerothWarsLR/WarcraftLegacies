@@ -99,9 +99,6 @@ public sealed class PactOfHyjal : WorldEvent
     var pactTeam = new Team("Pact of Hyjal");
     FactionManager.Register(pactTeam);
     PactTeam = pactTeam;
-    TeamHandicaps.SetStartingSize(pactTeam, 0);
-    RoleplayFronts.AddTeamRivalry((teamA, teamB) =>
-      (teamA == pactTeam && ContainsLegion(teamB)) || (teamB == pactTeam && ContainsLegion(teamA)));
     var capacity = TeamChanges.Capacity;
     var couldHaveJoined = _voters.Count;
     TeamChanges.Capacity = team => team == pactTeam ? couldHaveJoined : capacity(team);
@@ -222,19 +219,6 @@ public sealed class PactOfHyjal : WorldEvent
     endedEvent.RecordAsHappened();
     WorldEventManager.Register(endedEvent);
     Ended?.Invoke();
-  }
-
-  private static bool ContainsLegion(Team team)
-  {
-    foreach (var faction in team.GetAllFactions())
-    {
-      if (faction is LegionFaction)
-      {
-        return true;
-      }
-    }
-
-    return false;
   }
 
   private void OnFactionRegistered(Faction faction)
