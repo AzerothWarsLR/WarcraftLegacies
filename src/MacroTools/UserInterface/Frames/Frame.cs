@@ -110,6 +110,11 @@ public class Frame
     Handle = framehandle.CreateSimple(name, parent.Handle, 0);
   }
 
+  public Frame(string typeName, string name, framehandle parent, string inherits = "")
+  {
+    Handle = framehandle.Create(typeName, name, parent, inherits, 0);
+  }
+
   public Frame(string typeName, string name, Frame parent, string inherits = "")
   {
     Handle = framehandle.Create(typeName, name, parent.Handle, inherits, 0);

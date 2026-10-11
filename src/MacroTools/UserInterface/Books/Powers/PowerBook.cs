@@ -12,6 +12,9 @@ namespace MacroTools.UserInterface.Books.Powers;
 public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFactory, PowerCardFactory>
 {
   private Faction? _trackedFaction;
+  private player _owner = null!;
+  private LauncherGlow? _glow;
+  private bool _hasUnseenPower;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="PowerBook"/> class.
@@ -31,6 +34,7 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
       Position = new Point(0.36f, 0.35f),
       TrackedFaction = playerData.Faction
     };
+    book._owner = whichPlayer;
 
     playerData.ChangedFaction += book.OnPlayerChangedFaction;
 
@@ -70,6 +74,36 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
   private void OnFactionAddPower(FactionPowerEventArgs factionPowerEventArgs)
   {
     AddPower(factionPowerEventArgs.Power);
+    _hasUnseenPower = true;
+    RefreshGlow();
+  }
+
+  /// <inheritdoc />
+  protected override void OnOpened()
+  {
+    _hasUnseenPower = false;
+    if (_glow != null)
+    {
+      _glow.Visible = false;
+    }
+  }
+
+  private void RefreshGlow()
+  {
+    if (LauncherButton == null)
+    {
+      return;
+    }
+
+    if (_glow == null)
+    {
+      _glow = new LauncherGlow("PowerBookLauncherGlow", LauncherButton);
+    }
+
+    if (_owner == player.LocalPlayer)
+    {
+      _glow.Visible = _hasUnseenPower && LauncherButton.Visible;
+    }
   }
 
   private void OnPlayerChangedFaction(PlayerFactionChangeEventArgs args)

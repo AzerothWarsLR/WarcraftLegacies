@@ -3,7 +3,7 @@
 /// <summary>A user interface element that plays a model, like a glow.</summary>
 public sealed class Sprite : Frame
 {
-  public Sprite(string name, Frame parent) : base("SPRITE", name, parent)
+  public Sprite(string name, framehandle parent) : base("SPRITE", name, parent)
   {
   }
 
