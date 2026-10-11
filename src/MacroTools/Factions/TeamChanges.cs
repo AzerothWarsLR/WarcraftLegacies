@@ -14,6 +14,7 @@ public static class TeamChanges
   private static timer? _clock;
   private static bool _watching;
   private static readonly List<Action> AnyTeamChangedHandlers = new();
+  private static readonly HashSet<Team> SoloTeams = new();
   private static float _cooldown = 600;
   private static Func<Team, int> _capacity = _ => int.MaxValue;
   private static List<Ceasefire>? _ceasefireBatch;
@@ -37,7 +38,7 @@ public static class TeamChanges
   /// <summary>How many players a <see cref="Team"/> can hold before nobody else can join it.</summary>
   public static Func<Team, int> Capacity
   {
-    get => _capacity;
+    get => team => SoloTeams.Contains(team) ? 1 : _capacity(team);
     set
     {
       _capacity = value;
@@ -137,7 +138,7 @@ public static class TeamChanges
       FactionManager.Register(soloTeam);
     }
 
-    TeamHandicaps.InheritStartingSize(soloTeam, whichPlayer.GetPlayerData().Team);
+    SoloTeams.Add(soloTeam);
     Move(whichPlayer, soloTeam);
   }
 
