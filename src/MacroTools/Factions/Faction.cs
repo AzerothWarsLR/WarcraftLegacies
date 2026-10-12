@@ -278,6 +278,9 @@ public abstract class Faction
     return _objectLimits.GetValueOrDefault(whichObject);
   }
 
+  /// <summary>Returns every object limit the Faction currently has, keyed by object ID.</summary>
+  public IReadOnlyDictionary<int, int> GetAllObjectLimits() => _objectLimits;
+
   /// <summary>
   /// Provides the unit types belonging to the provided <see cref="UnitCategory"/> for this faction, if any.
   /// </summary>
