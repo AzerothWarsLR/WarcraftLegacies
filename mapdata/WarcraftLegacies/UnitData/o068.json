@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": "ubld",
-      "Value": 30
+      "Value": 20
     },
     {
       "Id": "ucol",
@@ -34,12 +34,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "R09X,R04R,Rhme,Rhar,R00N,R00C,R006,Rhac"
     },
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aspi"
+      "Value": "A0VH,A0T3"
     },
     {
       "Id": "uico",
@@ -85,6 +85,29 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.95
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R03A,Rhac,Rgfo"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

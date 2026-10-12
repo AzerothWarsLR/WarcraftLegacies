@@ -13,6 +13,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Cthun",
     "Nzoth",
     "Dalaran",
+    "DarkIron",
     "Nexus",
     "Draenei",
     "Druids",
