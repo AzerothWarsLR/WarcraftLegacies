@@ -41,7 +41,7 @@ public sealed class CheatTestChaos : Command
   public override CommandType Type => CommandType.Cheat;
 
   /// <inheritdoc />
-  public override string Description => "Takes The Blood of Mannoroth, kills Mannoroth, redeems the orcs, and writes a report to CustomMapData.";
+  public override string Description => "Takes The Blood of Mannoroth, kills Mannoroth, takes The Blood Fades, and writes a report to CustomMapData.";
 
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
@@ -53,23 +53,23 @@ public sealed class CheatTestChaos : Command
     }
 
     _report.Clear();
-    Step(cheater, "start", () => Snapshot(cheater, faction));
+    Step(cheater, "start", () => Snapshot(cheater, cheater.GetPlayerData().Faction!));
     Step(cheater, "accept blood of mannoroth", () => AcceptPath(cheater, faction, "Blood of Mannoroth"));
     After(35, () =>
     {
-      Step(cheater, "after blood of mannoroth", () => Snapshot(cheater, faction));
+      Step(cheater, "after blood of mannoroth", () => Snapshot(cheater, cheater.GetPlayerData().Faction!));
       Step(cheater, "kill mannoroth", () => AllLegends.Warsong.Mannoroth.PermanentlyKill());
-      Step(cheater, "after killing mannoroth", () => Snapshot(cheater, faction));
-      Step(cheater, "redeem", () => RoleplaySetting.OrcCorruption!.Redeem());
-      After(2, () =>
+      Step(cheater, "after killing mannoroth", () => Snapshot(cheater, cheater.GetPlayerData().Faction!));
+      Step(cheater, "accept the blood fades", () => AcceptPath(cheater, cheater.GetPlayerData().Faction!, "Blood Fades"));
+      After(35, () =>
       {
-        Step(cheater, "after redeem", () => Snapshot(cheater, faction));
+        Step(cheater, "after redeem", () => Snapshot(cheater, cheater.GetPlayerData().Faction!));
         WriteReport(cheater);
         cheater.DisplayTextTo($"Chaos test finished. Report in CustomMapData/{ReportPath}");
       });
     });
 
-    return "Chaos test started, it takes about 40 seconds.";
+    return "Chaos test started, it takes about 75 seconds.";
   }
 
   private static void AcceptPath(player cheater, Faction faction, string name)
@@ -127,7 +127,10 @@ public sealed class CheatTestChaos : Command
     Log($"  grom: {DescribeHero(AllLegends.Orc.GromHellscream)}");
     Log($"  mannoroth: {DescribeHero(AllLegends.Warsong.Mannoroth)}");
     Log($"  saurfang: {DescribeHero(AllLegends.Warsong.Saurfang)}");
-    Log($"  orgrimmar: owned by {AllLegends.Orc.Orgrimmar.Unit.Owner.Name}, quest {faction.GetQuestByType<QuestOrgrimmar>().Progress}");
+    var orgrimmarQuest = FactionManager.TryGetFactionByType<OrcishHordeFaction>(out var orcs)
+      ? orcs.GetQuestByType<QuestOrgrimmar>().Progress.ToString()
+      : "none";
+    Log($"  orgrimmar: owned by {AllLegends.Orc.Orgrimmar.Unit.Owner.Name}, quest {orgrimmarQuest}");
   }
 
   private static string DescribeHero(MacroTools.Legends.LegendaryHero hero)
