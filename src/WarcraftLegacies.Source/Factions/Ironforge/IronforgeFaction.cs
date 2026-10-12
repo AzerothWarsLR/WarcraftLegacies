@@ -1,19 +1,22 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Ironforge.Paths;
 using WarcraftLegacies.Source.Factions.Ironforge.Quests;
 using WarcraftLegacies.Source.Factions.Ironforge.Researches;
 using WarcraftLegacies.Source.Factions.Stormwind;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
 namespace WarcraftLegacies.Source.Factions.Ironforge;
 
-public sealed class IronforgeFaction : Faction
+public sealed class IronforgeFaction : Faction, IHasRoleplayPaths
 {
   /// <inheritdoc />
   public IronforgeFaction()
@@ -42,6 +45,36 @@ public sealed class IronforgeFaction : Faction
     };
     RegisterFactionDependentInitializer<StormwindFaction>(RegisterStormwindResearches);
     ProcessObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());
+  }
+
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    if (GetAllPaths().Any(x => x is PathDarkIron))
+    {
+      return;
+    }
+
+    var transformation = new DarkIronTransformation();
+    AddPath(new PathDarkIronLegion(transformation));
+    AddPath(new PathDarkIronAlone(transformation));
+    LinkMagniToTheGreatForge();
+  }
+
+  /// <summary>Magni dies with the Great Forge, and can no longer be trained.</summary>
+  private void LinkMagniToTheGreatForge()
+  {
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(AllLegends.Ironforge.GreatForge.Unit, unitevent.Death);
+    deathTrigger.AddAction(() =>
+    {
+      var magni = AllLegends.Ironforge.Magni;
+      ModObjectLimit(magni.UnitType, -GetObjectLimit(magni.UnitType));
+      if (magni.Unit != null)
+      {
+        magni.PermanentlyKill();
+      }
+    });
   }
 
   /// <inheritdoc />

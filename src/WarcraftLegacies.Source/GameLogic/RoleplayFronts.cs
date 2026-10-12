@@ -66,7 +66,8 @@ public static class RoleplayFronts
     faction is ScourgeFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction;
 
   private static bool AttacksSouth(Faction faction) =>
-    faction is FelHordeFaction || faction is LegionFaction || (faction is SunfuryFaction && IsOnTeam(faction, TeamSetup.Legion));
+    faction is FelHordeFaction || faction is LegionFaction || (faction is SunfuryFaction && IsOnTeam(faction, TeamSetup.Legion)) ||
+    (faction is DarkIronFaction && IsOnTeam(faction, TeamSetup.Legion));
 
   private static bool DefendsSouth(Faction faction) =>
     faction is StormwindFaction || faction is IronforgeFaction || faction is KultirasFaction;

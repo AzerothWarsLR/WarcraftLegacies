@@ -9,6 +9,8 @@ public sealed class IronforgeLegends
   public LegendaryHero Falstad { get; }
   public LegendaryHero Magni { get; }
   public LegendaryHero Muradin { get; }
+  public LegendaryHero Moira { get; }
+  public LegendaryHero Angerforge { get; }
   public Capital GreatForge { get; }
   public Capital Thelsamar { get; }
   public Capital MenethilHarbor { get; }
@@ -40,6 +42,16 @@ public sealed class IronforgeLegends
       StartingXp = 2800
     };
 
+    Moira = new LegendaryHero("Moira Thaurissan")
+    {
+      UnitType = UNIT_H0CU_QUEEN_OF_THE_DARK_IRON_DARKIRON
+    };
+
+    Angerforge = new LegendaryHero("General Angerforge")
+    {
+      UnitType = UNIT_H0CV_GENERAL_OF_THE_DARK_IRON_DARKIRON
+    };
+
     GreatForge = new Capital
     {
       Unit = AllPreplacedWidgets.Units.Get(UNIT_H001_THE_GREAT_FORGE_IRONFORGE_OTHER),
@@ -66,6 +78,8 @@ public sealed class IronforgeLegends
     LegendaryHeroManager.Register(Falstad);
     LegendaryHeroManager.Register(Magni);
     LegendaryHeroManager.Register(Muradin);
+    LegendaryHeroManager.Register(Moira);
+    LegendaryHeroManager.Register(Angerforge);
     CapitalManager.Register(GreatForge);
     CapitalManager.Register(Thelsamar);
     CapitalManager.Register(MenethilHarbor);

@@ -216,11 +216,11 @@ public static class PathBase
   }
 
   /// <summary>
-  /// Gives <paramref name="heir"/> every structure <paramref name="whichPlayer"/> owns outside <paramref name="keep"/>,
+  /// Gives <paramref name="heir"/> every structure <paramref name="whichPlayer"/> owns outside the <paramref name="keep"/> areas,
   /// swapping them for their <paramref name="equivalents"/> where there are any. Capitals and control points only change hands.
   /// </summary>
   public static void HandOverStructures(player whichPlayer, player heir, IReadOnlyDictionary<int, int>? equivalents,
-    Rectangle? keep = null)
+    params Rectangle[] keep)
   {
     foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
     {
@@ -229,7 +229,7 @@ public static class PathBase
         continue;
       }
 
-      if (keep != null && keep.Contains(whichUnit.X, whichUnit.Y))
+      if (IsInAny(keep, whichUnit.X, whichUnit.Y))
       {
         continue;
       }
@@ -270,6 +270,19 @@ public static class PathBase
         ReplaceUnit(whichUnit, whichPlayer, newType, whichUnit.X, whichUnit.Y);
       }
     }
+  }
+
+  private static bool IsInAny(Rectangle[] areas, float x, float y)
+  {
+    foreach (var area in areas)
+    {
+      if (area.Contains(x, y))
+      {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   private static unit? GetBlockingKeyUnit(float x, float y)
