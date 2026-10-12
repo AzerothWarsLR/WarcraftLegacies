@@ -28,6 +28,7 @@ public static class CheatSetup
     CommandManager.Register(new CheatTestAdmiral());
     CommandManager.Register(new CheatTestSunwell());
     CommandManager.Register(new CheatTestGilneas());
+    CommandManager.Register(new CheatTestDarkIron());
     CommandManager.Register(new CheatQuest());
     CommandManager.Register(new CheatFood());
     CommandManager.Register(new CheatGod());
