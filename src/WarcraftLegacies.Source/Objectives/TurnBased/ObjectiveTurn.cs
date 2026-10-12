@@ -11,7 +11,7 @@ public sealed class ObjectiveTurn : Objective
   public ObjectiveTurn(int targetTurn, Func<bool>? condition = null)
   {
     SetDescription("Turn {turn} has started", ("{turn}", targetTurn.ToString()));
-    GameTimeManager.RegisterOnTurn(targetTurn, OnComplete, condition);
+    GameTimeManager.RegisterOnTurn(Math.Max(targetTurn, GameTimeManager.Turn + 1), OnComplete, condition);
   }
 
   private void OnComplete()
