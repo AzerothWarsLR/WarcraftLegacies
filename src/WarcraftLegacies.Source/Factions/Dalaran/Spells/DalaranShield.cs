@@ -60,13 +60,28 @@ public sealed class DalaranShield : Spell
     PeriodicEvents.AddPeriodicEvent(OnPeriodic);
   }
 
-  public override void OnCast(unit caster, unit target, Point targetPoint)
+  private unit? GetRequiredHero(unit caster)
   {
     var hero = RequiredHero.Unit;
-    if (hero == null || !hero.Alive ||
-        MathEx.GetDistanceBetweenPoints(caster.GetPosition(), hero.GetPosition()) > RequiredHeroRange)
+    return hero != null && hero.Alive &&
+           MathEx.GetDistanceBetweenPoints(caster.GetPosition(), hero.GetPosition()) <= RequiredHeroRange
+      ? hero
+      : null;
+  }
+
+  private unit? GetAnyOwnedHero(unit caster) =>
+    GlobalGroup.EnumUnitsInRange(caster.GetPosition(), RequiredHeroRange)
+      .FirstOrDefault(x => x.Owner == caster.Owner && x.Alive && x.IsUnitType(unittype.Hero) && !IsUnitIllusion(x));
+
+  public override void OnCast(unit caster, unit target, Point targetPoint)
+  {
+    var ownedByDalaran = caster.Owner.GetPlayerData().Faction is DalaranFaction;
+    var hero = ownedByDalaran ? GetRequiredHero(caster) : GetAnyOwnedHero(caster);
+    if (hero == null)
     {
-      caster.Owner.DisplayTextTo("|cffffcc00Antonidas must be next to the Power Generator to use this ability.|r");
+      caster.Owner.DisplayTextTo(ownedByDalaran
+        ? "|cffffcc00Antonidas must be next to the Power Generator to use this ability.|r"
+        : "|cffffcc00One of your heroes must be next to the Power Generator to use this ability.|r");
 
       var cooldownResetTimer = CreateTimer();
       TimerStart(cooldownResetTimer, 0, false, () =>
