@@ -64,7 +64,6 @@ public sealed class ChaosOrcs
     _chaosFaction = chaosFaction;
     FactionTransition.AssignNewFaction(_orcs, chaosFaction);
     chaosFaction.SetObjectLevel(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
-    ControlPointDefenderManager.RefreshDefenders(orcPlayer);
     TeamHandicaps.Refresh();
     SendThrallAndVoljinAway();
     GiveUpOrgrimmar(orcPlayer);

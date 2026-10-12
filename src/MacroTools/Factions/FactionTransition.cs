@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ControlPoints;
+using MacroTools.Extensions;
 
 namespace MacroTools.Factions;
 
@@ -9,17 +10,23 @@ public static class FactionTransition
 {
   /// <summary>
   /// Swaps a player from <paramref name="oldFaction"/> to <paramref name="newFaction"/>, carrying over
-  /// object levels and registering the new Faction. Doesn't touch units, teams, or alliances.
+  /// object levels, registering the new Faction and giving its Control Points the new Faction's defenders.
+  /// Doesn't touch other units, teams, or alliances.
   /// </summary>
   public static void AssignNewFaction(Faction oldFaction, Faction newFaction)
   {
     newFaction.CopyObjectLevelsFrom(oldFaction);
 
-    if (oldFaction.Player != null)
+    var whichPlayer = oldFaction.Player;
+    if (whichPlayer != null)
     {
-      oldFaction.Player.GetPlayerData().Faction = newFaction;
+      whichPlayer.GetPlayerData().Faction = newFaction;
     }
 
     FactionManager.Register(newFaction);
+    if (whichPlayer != null && newFaction.ControlPointDefenderUnitTypeId != null)
+    {
+      ControlPointDefenderManager.RefreshDefenders(whichPlayer);
+    }
   }
 }
