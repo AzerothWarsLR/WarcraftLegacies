@@ -398,6 +398,23 @@ public abstract class Faction
     return questData;
   }
 
+  /// <summary>Removes a quest from the Faction, hiding it and ignoring its progress from then on.</summary>
+  public void RemoveQuest(QuestData questData)
+  {
+    if (!_questsByName.Remove(questData.Title.ToLower()))
+    {
+      return;
+    }
+
+    questData.ProgressChanged -= OnQuestProgressChanged;
+    if (player.LocalPlayer == Player)
+    {
+      questData.HideLocal();
+    }
+
+    questData.HideSync();
+  }
+
   public int GetObjectLevel(int obj) => _objectLevels.GetValueOrDefault(obj);
 
   /// <summary>Sets the current level of a particular research for the <see cref="Faction"/>.</summary>
