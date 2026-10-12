@@ -44,7 +44,8 @@ public static class RoleplayFronts
     (faction is ForsakenFaction && !IsOnTeam(faction, TeamSetup.Horde));
 
   private static bool DefendsNorth(Faction faction) =>
-    faction is LordaeronFaction || faction is DalaranFaction || faction is QuelthalasFaction || faction is SunfuryFaction ||
+    faction is LordaeronFaction || faction is DalaranFaction || faction is QuelthalasFaction ||
+    (faction is SunfuryFaction && !IsOnTeam(faction, TeamSetup.Legion)) ||
     faction is ScarletCrusadeFaction || faction is GilneasFaction ||
     (faction is TheramoreFaction && !IsOnKalimdorTeam(faction));
 
@@ -67,7 +68,8 @@ public static class RoleplayFronts
   private static bool ServesTheLichKing(Faction faction) =>
     faction is ScourgeFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction;
 
-  private static bool AttacksSouth(Faction faction) => faction is FelHordeFaction || faction is LegionFaction;
+  private static bool AttacksSouth(Faction faction) =>
+    faction is FelHordeFaction || faction is LegionFaction || (faction is SunfuryFaction && IsOnTeam(faction, TeamSetup.Legion));
 
   private static bool DefendsSouth(Faction faction) =>
     faction is StormwindFaction || faction is IronforgeFaction || faction is KultirasFaction;

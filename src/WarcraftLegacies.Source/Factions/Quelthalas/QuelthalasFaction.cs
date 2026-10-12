@@ -76,6 +76,11 @@ public sealed class QuelthalasFaction : Faction, IHasRoleplayPaths
     {
       AddPath(new PathKaelsExodus(new KaelsExodusTransformation(), GetExodusDestination));
     }
+
+    if (!GetAllPaths().Any(x => x is PathSunfuryPact))
+    {
+      AddPath(new PathSunfuryPact(new SunfuryPactTransformation()));
+    }
   }
 
   /// <summary>The Illidari's team if they have taken Lord of Outland, otherwise the Horde.</summary>
