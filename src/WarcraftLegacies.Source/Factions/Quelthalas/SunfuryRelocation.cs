@@ -54,18 +54,6 @@ public static class SunfuryRelocation
     { UNIT_U00J_ARCANE_WAGON_QUELTHALAS, UNIT_U02W_ENERGY_WAGON_SUNFURY }
   };
 
-  private static readonly HashSet<int> _ships = new()
-  {
-    UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE,
-    UNIT_H0AR_SCOUT_SHIP_ALLIANCE,
-    UNIT_H0AX_FRIGATE_ALLIANCE,
-    UNIT_H0B3_FIRESHIP_ALLIANCE,
-    UNIT_H0B0_GALLEY_ALLIANCE,
-    UNIT_H0B6_BOARDING_VESSEL_ALLIANCE,
-    UNIT_H0AN_JUGGERNAUT_ALLIANCE,
-    UNIT_H0B7_BOMBARD_ALLIANCE
-  };
-
   /// <summary>Replaces <paramref name="whichPlayer"/>'s Quel'thalas buildings and workers with their Sunfury equivalents.</summary>
   public static void ConvertToSunfury(player whichPlayer)
   {
@@ -74,80 +62,14 @@ public static class SunfuryRelocation
       if (whichUnit.Alive && whichUnit.IsRemovable() &&
           _sunfuryEquivalents.TryGetValue(whichUnit.UnitType, out var sunfuryType))
       {
-        Replace(whichUnit, whichPlayer, sunfuryType, whichUnit.X, whichUnit.Y);
+        PathBase.ReplaceUnit(whichUnit, whichPlayer, sunfuryType, whichUnit.X, whichUnit.Y);
       }
     }
   }
 
-  /// <summary>Brings <paramref name="whichPlayer"/>'s army to the new base, swapping Quel'thalas units for their Sunfury equivalents. Ships stay where they are, and swaps beyond the Sunfury's limits are removed.</summary>
-  public static void RelocateArmy(player whichPlayer)
-  {
-    var sunfury = whichPlayer.GetPlayerData().Faction;
-    var swappedCounts = new Dictionary<int, int>();
-    var index = 0;
-    foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
-    {
-      if (!whichUnit.Alive || whichUnit.IsUnitType(unittype.Structure) || !whichUnit.IsRemovable() ||
-          !whichUnit.IsSelectable() || _ships.Contains(whichUnit.UnitType))
-      {
-        continue;
-      }
-
-      var hasEquivalent = _armyEquivalents.TryGetValue(whichUnit.UnitType, out var sunfuryType);
-      if (hasEquivalent && sunfury != null)
-      {
-        var swappedCount = swappedCounts.GetValueOrDefault(sunfuryType);
-        if (swappedCount >= sunfury.GetObjectLimit(sunfuryType))
-        {
-          whichUnit.DropAllItems();
-          whichUnit.Dispose();
-          continue;
-        }
-
-        swappedCounts[sunfuryType] = swappedCount + 1;
-      }
-
-      var x = BaseX - 600 + index % 8 * 150;
-      var y = BaseY + 800 + index / 8 * 150;
-      index++;
-
-      if (hasEquivalent)
-      {
-        Replace(whichUnit, whichPlayer, sunfuryType, x, y);
-      }
-      else
-      {
-        whichUnit.SetPosition(x, y);
-      }
-    }
-  }
-
-  /// <summary>Replaces <paramref name="whichUnit"/> with a unit of another type, keeping its health percentage.</summary>
-  public static void Replace(unit whichUnit, player owner, int unitTypeId, float x, float y)
-  {
-    var facing = whichUnit.Facing;
-    var lifePercent = whichUnit.Life / whichUnit.MaxLife;
-    whichUnit.Dispose();
-    var replacement = unit.Create(owner, unitTypeId, x, y, facing);
-    if (replacement != null)
-    {
-      replacement.Life = replacement.MaxLife * lifePercent;
-    }
-  }
-
-  /// <summary>Removes <paramref name="hero"/> from the game, dropping its items.</summary>
-  public static void RemoveHero(LegendaryHero hero)
-  {
-    var heroUnit = hero.Unit;
-    if (heroUnit == null)
-    {
-      return;
-    }
-
-    heroUnit.DropAllItems();
-    hero.Unit = null;
-    heroUnit.Dispose();
-  }
+  /// <summary>Brings <paramref name="whichPlayer"/>'s army to the new base as Sunfury units.</summary>
+  public static void RelocateArmy(player whichPlayer) =>
+    PathBase.RelocateArmy(whichPlayer, _armyEquivalents, BaseX, BaseY + 800);
 
   /// <summary>Creates the new base beside Tempest Keep.</summary>
   public static void BuildBase(player whichPlayer)

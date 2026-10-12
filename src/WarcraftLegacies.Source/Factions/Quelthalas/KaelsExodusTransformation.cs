@@ -25,9 +25,9 @@ public sealed class KaelsExodusTransformation
     bloodElves.ModObjectLimit(UNIT_H098_SUNFURY_MASTERMIND_QUELTHALAS, -1);
     bloodElves.ModObjectLimit(UNIT_H02E_REGENT_OF_QUEL_THALAS_QUELTHALAS_VASSAL, 1);
 
-    RemoveHero(AllLegends.Quel.Anasterian);
-    RemoveHero(AllLegends.Quel.Rommath);
-    RemoveHero(AllLegends.Quel.Sylvanas);
+    PathBase.RemoveHero(AllLegends.Quel.Anasterian);
+    PathBase.RemoveHero(AllLegends.Quel.Rommath);
+    PathBase.RemoveHero(AllLegends.Quel.Sylvanas);
 
     ConvertToSunfury(whichPlayer);
     BuildBase(whichPlayer);

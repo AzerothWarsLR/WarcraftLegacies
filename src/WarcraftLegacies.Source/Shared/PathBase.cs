@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Extensions;
@@ -16,6 +17,20 @@ public static class PathBase
   private const float StructureSize = 256;
   private const float Facing = 270;
   private const int MaxNudges = 4;
+  private const float ArmySpacing = 150;
+  private const int ArmyColumns = 8;
+
+  private static readonly HashSet<int> _ships = new()
+  {
+    UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE,
+    UNIT_H0AR_SCOUT_SHIP_ALLIANCE,
+    UNIT_H0AX_FRIGATE_ALLIANCE,
+    UNIT_H0B3_FIRESHIP_ALLIANCE,
+    UNIT_H0B0_GALLEY_ALLIANCE,
+    UNIT_H0B6_BOARDING_VESSEL_ALLIANCE,
+    UNIT_H0AN_JUGGERNAUT_ALLIANCE,
+    UNIT_H0B7_BOMBARD_ALLIANCE
+  };
 
   /// <summary>Removes everything <paramref name="whichPlayer"/> owns outside <paramref name="keep"/>.</summary>
   public static void RemoveAllUnitsOutside(player whichPlayer, Rectangle keep)
@@ -124,6 +139,136 @@ public static class PathBase
     for (var i = 0; i < count; i++)
     {
       unit.Create(whichPlayer, unitTypeId, x, y, Facing);
+    }
+  }
+
+  /// <summary>Removes <paramref name="hero"/> from the game, dropping its items.</summary>
+  public static void RemoveHero(LegendaryHero hero)
+  {
+    var heroUnit = hero.Unit;
+    if (heroUnit == null)
+    {
+      return;
+    }
+
+    heroUnit.DropAllItems();
+    hero.Unit = null;
+    heroUnit.Dispose();
+  }
+
+  /// <summary>Replaces <paramref name="whichUnit"/> with a unit of another type, keeping its health percentage.</summary>
+  public static void ReplaceUnit(unit whichUnit, player owner, int unitTypeId, float x, float y)
+  {
+    var facing = whichUnit.Facing;
+    var lifePercent = whichUnit.Life / whichUnit.MaxLife;
+    whichUnit.Dispose();
+    var replacement = unit.Create(owner, unitTypeId, x, y, facing);
+    if (replacement != null)
+    {
+      replacement.Life = replacement.MaxLife * lifePercent;
+    }
+  }
+
+  /// <summary>
+  /// Brings <paramref name="whichPlayer"/>'s army to <paramref name="x"/>, <paramref name="y"/>, swapping units for
+  /// their <paramref name="equivalents"/>. Ships stay where they are, and swaps beyond the player's limits are removed.
+  /// </summary>
+  public static void RelocateArmy(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, float x, float y)
+  {
+    var faction = whichPlayer.GetPlayerData().Faction;
+    var swappedCounts = new Dictionary<int, int>();
+    var index = 0;
+    foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
+    {
+      if (!whichUnit.Alive || whichUnit.IsUnitType(unittype.Structure) || !whichUnit.IsRemovable() ||
+          !whichUnit.IsSelectable() || _ships.Contains(whichUnit.UnitType))
+      {
+        continue;
+      }
+
+      var hasEquivalent = equivalents.TryGetValue(whichUnit.UnitType, out var newType);
+      if (hasEquivalent && faction != null)
+      {
+        var swappedCount = swappedCounts.GetValueOrDefault(newType);
+        if (swappedCount >= faction.GetObjectLimit(newType))
+        {
+          whichUnit.DropAllItems();
+          whichUnit.Dispose();
+          continue;
+        }
+
+        swappedCounts[newType] = swappedCount + 1;
+      }
+
+      var unitX = x - ArmySpacing * ArmyColumns / 2 + index % ArmyColumns * ArmySpacing;
+      var unitY = y + index / ArmyColumns * ArmySpacing;
+      index++;
+
+      if (hasEquivalent)
+      {
+        ReplaceUnit(whichUnit, whichPlayer, newType, unitX, unitY);
+      }
+      else
+      {
+        whichUnit.SetPosition(unitX, unitY);
+      }
+    }
+  }
+
+  /// <summary>
+  /// Gives <paramref name="heir"/> every structure <paramref name="whichPlayer"/> owns outside <paramref name="keep"/>,
+  /// swapping them for their <paramref name="equivalents"/> where there are any. Capitals and control points only change hands.
+  /// </summary>
+  public static void HandOverStructures(player whichPlayer, player heir, IReadOnlyDictionary<int, int>? equivalents,
+    Rectangle? keep = null)
+  {
+    foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
+    {
+      if (!whichUnit.Alive || !whichUnit.IsUnitType(unittype.Structure))
+      {
+        continue;
+      }
+
+      if (keep != null && keep.Contains(whichUnit.X, whichUnit.Y))
+      {
+        continue;
+      }
+
+      var heirType = 0;
+      if (equivalents != null && whichUnit.IsRemovable())
+      {
+        if (equivalents.TryGetValue(whichUnit.UnitType, out var equivalent))
+        {
+          heirType = equivalent;
+        }
+      }
+
+      if (heirType != 0)
+      {
+        ReplaceUnit(whichUnit, heir, heirType, whichUnit.X, whichUnit.Y);
+      }
+      else
+      {
+        whichUnit.SetOwner(heir);
+      }
+    }
+  }
+
+  /// <summary>Swaps the structures <paramref name="whichPlayer"/> owns inside <paramref name="area"/> for their <paramref name="equivalents"/>.</summary>
+  public static void ConvertStructures(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, Rectangle area)
+  {
+    foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
+    {
+      if (!whichUnit.Alive || !whichUnit.IsUnitType(unittype.Structure) || !whichUnit.IsRemovable() ||
+          !area.Contains(whichUnit.X, whichUnit.Y))
+      {
+        continue;
+      }
+
+      if (equivalents.TryGetValue(whichUnit.UnitType, out var newType))
+      {
+        ReplaceUnit(whichUnit, whichPlayer, newType, whichUnit.X, whichUnit.Y);
+      }
     }
   }
 

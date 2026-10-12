@@ -72,10 +72,10 @@ public sealed class SunfuryPactTransformation
     sunfury.ModObjectLimit(UNIT_H0CR_MAGISTER_SUNFURY, 1);
     sunfury.ModObjectLimit(UNIT_H0CS_BETRAYER_OF_SILVERMOON_SUNFURY, 1);
 
-    RemoveHero(AllLegends.Quel.Anasterian);
-    RemoveHero(AllLegends.Quel.Rommath);
-    RemoveHero(AllLegends.Quel.Sylvanas);
-    RemoveHero(AllLegends.Quel.Lorthemar);
+    PathBase.RemoveHero(AllLegends.Quel.Anasterian);
+    PathBase.RemoveHero(AllLegends.Quel.Rommath);
+    PathBase.RemoveHero(AllLegends.Quel.Sylvanas);
+    PathBase.RemoveHero(AllLegends.Quel.Lorthemar);
 
     LeaveStructures(whichPlayer);
     RelocateArmy(whichPlayer);
@@ -108,27 +108,6 @@ public sealed class SunfuryPactTransformation
   private static void LeaveStructures(player whichPlayer)
   {
     var heir = GetHomelandHeir(out var equivalents);
-    foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
-    {
-      if (!whichUnit.Alive || !whichUnit.IsUnitType(unittype.Structure))
-      {
-        continue;
-      }
-
-      var heirType = 0;
-      if (equivalents != null && whichUnit.IsRemovable())
-      {
-        heirType = equivalents.GetValueOrDefault(whichUnit.UnitType);
-      }
-
-      if (heirType != 0)
-      {
-        Replace(whichUnit, heir, heirType, whichUnit.X, whichUnit.Y);
-      }
-      else
-      {
-        whichUnit.SetOwner(heir);
-      }
-    }
+    PathBase.HandOverStructures(whichPlayer, heir, equivalents);
   }
 }
