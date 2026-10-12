@@ -7,7 +7,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran;
 
-/// <summary>Turns Dalaran into Theramore, keeping only what it holds in Theramore.</summary>
+/// <summary>Turns Dalaran into Theramore, keeping only what it holds in Theramore and leaving its other buildings to its allies.</summary>
 public sealed class TheramoreTransformation
 {
   /// <summary>Turns <paramref name="dalaran"/>'s player into Theramore.</summary>
@@ -20,6 +20,10 @@ public sealed class TheramoreTransformation
     }
 
     var theramoreQuest = dalaran.GetQuestByType<QuestTheramore>();
+    DalaranHomeland.ClaimHeldLands(dalaran);
+    var heir = DalaranHomeland.GetHeir(out var heirEquivalents);
+    PathBase.HandOverStructures(whichPlayer, heir, heirEquivalents, Regions.Theramore);
+    DalaranHomeland.MakeBookKeeper(heir);
     PathBase.RemoveAllUnitsOutside(whichPlayer, Regions.Theramore);
     FactionTransition.AssignNewFaction(dalaran, new TheramoreFaction());
 

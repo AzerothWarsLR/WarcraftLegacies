@@ -68,6 +68,13 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths
     {
       AddPath(new PathTheramore(new TheramoreTransformation(), AllLegends.Dalaran.Dalaran));
     }
+
+    if (!GetAllPaths().Any(x => x is PathGilneas))
+    {
+      var gilneasTransformation = new GilneasTransformation();
+      AddPath(new PathGilneasNightElves(gilneasTransformation));
+      AddPath(new PathGilneasGreymaneWall(gilneasTransformation));
+    }
   }
 
   /// <inheritdoc />

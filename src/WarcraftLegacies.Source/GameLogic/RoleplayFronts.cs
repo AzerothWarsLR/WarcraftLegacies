@@ -46,7 +46,8 @@ public static class RoleplayFronts
   private static bool DefendsNorth(Faction faction) =>
     faction is LordaeronFaction || faction is DalaranFaction || faction is QuelthalasFaction ||
     (faction is SunfuryFaction && !IsOnTeam(faction, TeamSetup.Legion)) ||
-    faction is ScarletCrusadeFaction || faction is GilneasFaction ||
+    faction is ScarletCrusadeFaction ||
+    (faction is GilneasFaction && IsOnTeam(faction, TeamSetup.NorthAlliance)) ||
     (faction is TheramoreFaction && !IsOnKalimdorTeam(faction));
 
   private static bool IsForsaken(Faction faction) => faction is ForsakenFaction && IsOnTeam(faction, TeamSetup.Horde);
@@ -74,7 +75,8 @@ public static class RoleplayFronts
     faction is OrcishHordeFaction || faction is TaurenTribesFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.Horde));
 
   private static bool DefendsKalimdor(Faction faction) =>
-    faction is SentinelsFaction || faction is DruidsFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.NightElves));
+    faction is SentinelsFaction || faction is DruidsFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.NightElves)) ||
+    (faction is GilneasFaction && IsOnTeam(faction, TeamSetup.NightElves));
 
   /// <summary>Whether Theramore has joined the Horde or the Night Elves.</summary>
   private static bool IsOnKalimdorTeam(Faction faction) =>
