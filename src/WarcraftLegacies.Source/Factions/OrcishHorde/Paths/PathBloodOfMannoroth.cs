@@ -34,6 +34,6 @@ public sealed class PathBloodOfMannoroth : FactionPath
   protected override void OnTaken(Faction faction)
   {
     _chaosOrcs.Corrupt();
-    _onDrunk(faction);
+    _onDrunk(_chaosOrcs.ChaosFaction ?? faction);
   }
 }

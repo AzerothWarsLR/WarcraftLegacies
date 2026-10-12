@@ -51,11 +51,7 @@ public static class RoleplayFronts
 
   private static bool IsForsaken(Faction faction) => faction is ForsakenFaction && IsOnTeam(faction, TeamSetup.Horde);
 
-  private static bool IsChaosOrcs(Faction faction)
-  {
-    var chaosOrcs = RoleplaySetting.OrcCorruption;
-    return faction is OrcishHordeFaction && chaosOrcs != null && chaosOrcs.IsCorrupted;
-  }
+  private static bool IsChaosOrcs(Faction faction) => faction is ChaosOrcsFaction;
 
   private static bool IsTauren(Faction faction) => faction is TaurenTribesFaction;
 

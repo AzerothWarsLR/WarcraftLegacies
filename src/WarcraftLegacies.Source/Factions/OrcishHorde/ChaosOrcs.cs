@@ -14,21 +14,14 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Factions.OrcishHorde;
 
 /// <summary>
-/// Turns the Orcish Horde into the Chaos Orcs after they drink the blood of Mannoroth, and back again. The unit
-/// changes themselves are Chaos abilities in the object data, switched on by the blood pact researches.
+/// Turns the Orcish Horde's player into the <see cref="ChaosOrcsFaction"/> after they drink the blood of Mannoroth,
+/// and back again. Live units change through Chaos abilities in the object data, switched on by the blood pact
+/// researches. The Orcish Horde's quests and powers wait until the orcs return.
 /// </summary>
 public sealed class ChaosOrcs
 {
   private const float LumberCampX = -10432;
   private const float LumberCampY = 1920;
-
-  private static readonly (int Orc, int Chaos)[] _trainedEquivalents =
-  {
-    (UNIT_OPEO_PEON_ORCISH_HORDE_WORKER, UNIT_O00E_CHAOS_PEON_WARSONG_BLOODPACT),
-    (UNIT_OGRU_GRUNT_ORCISH_HORDE, UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG),
-    (UNIT_ORAI_RAIDER_ORCISH_HORDE, UNIT_O00S_CHAOS_RAIDER_WARSONG),
-    (UNIT_OSHM_SHAMAN_ORCISH_HORDE, UNIT_O100_FEL_WARLOCK_WARSONG_BLOODPACT)
-  };
 
   private static readonly int[] _chaosAbilities =
   {
@@ -37,8 +30,7 @@ public sealed class ChaosOrcs
   };
 
   private readonly Faction _orcs;
-  private readonly string _orcName;
-  private readonly int? _orcDefender;
+  private ChaosOrcsFaction? _chaosFaction;
   private player? _orcPlayer;
   private player? _orgrimmarHolder;
   private bool _corrupted;
@@ -46,12 +38,13 @@ public sealed class ChaosOrcs
   public ChaosOrcs(Faction orcs)
   {
     _orcs = orcs;
-    _orcName = orcs.Name;
-    _orcDefender = orcs.ControlPointDefenderUnitTypeId;
   }
 
   /// <summary>Whether the orcs are currently the Chaos Orcs.</summary>
   public bool IsCorrupted => _corrupted;
+
+  /// <summary>The faction the orcs become while corrupted, once they have drunk.</summary>
+  public ChaosOrcsFaction? ChaosFaction => _chaosFaction;
 
   /// <summary>Fired when Mannoroth dies for good while the orcs are corrupted.</summary>
   public event System.Action? MannorothSlain;
@@ -66,24 +59,18 @@ public sealed class ChaosOrcs
     }
 
     _corrupted = true;
-    TeamHandicaps.Refresh();
     _orcPlayer = orcPlayer;
-    _orcs.Name = Loc.Get("Chaos Orcs");
-    _orcs.ModObjectLimit(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
-    _orcs.SetObjectLevel(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
-    foreach (var (orc, chaos) in _trainedEquivalents)
-    {
-      MoveLimit(orc, chaos);
-    }
-
-    SetDefender(orcPlayer, UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL);
+    var chaosFaction = new ChaosOrcsFaction(_orcs);
+    _chaosFaction = chaosFaction;
+    FactionTransition.AssignNewFaction(_orcs, chaosFaction);
+    chaosFaction.SetObjectLevel(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
+    ControlPointDefenderManager.RefreshDefenders(orcPlayer);
+    TeamHandicaps.Refresh();
     SendThrallAndVoljinAway();
     GiveUpOrgrimmar(orcPlayer);
     BuildLumberCamp(orcPlayer);
 
     var fountain = AllLegends.Neutral.FountainOfBlood.Unit;
-    _orcs.ModObjectLimit(UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_WARSONG, 1);
-    _orcs.ModObjectLimit(UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT, 1);
     PathBase.SummonLegend(AllLegends.Warsong.Mannoroth, orcPlayer, new Point(fountain.X, fountain.Y - 300));
     AllLegends.Warsong.Mannoroth.Died += OnMannorothDied;
   }
@@ -92,14 +79,15 @@ public sealed class ChaosOrcs
   public void Redeem()
   {
     var orcPlayer = _orcPlayer;
-    if (!_corrupted || orcPlayer == null)
+    var chaosFaction = _chaosFaction;
+    if (!_corrupted || orcPlayer == null || chaosFaction == null)
     {
       return;
     }
 
     _corrupted = false;
-    TeamHandicaps.Refresh();
-    _orcs.Name = _orcName;
+    chaosFaction.HandBackUnlocks(_orcs);
+    _orcs.CopyObjectLevelsFrom(chaosFaction);
     foreach (var chaosAbility in _chaosAbilities)
     {
       _orcs.ModAbilityAvailability(chaosAbility, -1);
@@ -107,34 +95,13 @@ public sealed class ChaosOrcs
 
     _orcs.ModObjectLimit(UPGRADE_R09P_REVERT_BLOODPACT, 1);
     _orcs.SetObjectLevel(UPGRADE_R09P_REVERT_BLOODPACT, 1);
-    foreach (var (orc, chaos) in _trainedEquivalents)
-    {
-      MoveLimit(chaos, orc);
-    }
-
-    if (_orcDefender != null)
-    {
-      SetDefender(orcPlayer, _orcDefender.Value);
-    }
-
-    _orcs.ModObjectLimit(UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_WARSONG, -1);
+    orcPlayer.GetPlayerData().Faction = _orcs;
+    ControlPointDefenderManager.RefreshDefenders(orcPlayer);
+    TeamHandicaps.Refresh();
     RemoveHero(AllLegends.Warsong.Saurfang);
     LoseGrom();
     ReclaimOrgrimmar(orcPlayer);
     BringHeroesHome(orcPlayer);
-  }
-
-  private void MoveLimit(int from, int to)
-  {
-    var limit = _orcs.GetObjectLimit(from);
-    _orcs.ModObjectLimit(from, -limit);
-    _orcs.ModObjectLimit(to, limit);
-  }
-
-  private void SetDefender(player orcPlayer, int defenderType)
-  {
-    _orcs.ControlPointDefenderUnitTypeId = defenderType;
-    ControlPointDefenderManager.RefreshDefenders(orcPlayer);
   }
 
   private void OnMannorothDied(LegendDiedEventArgs args)
@@ -217,10 +184,7 @@ public sealed class ChaosOrcs
   private void SendThrallAndVoljinAway()
   {
     var thrall = AllLegends.Orc.Thrall;
-    var voljin = AllLegends.Orc.Voljin;
-    _orcs.ModObjectLimit(thrall.UnitType, -1);
-    _orcs.ModObjectLimit(voljin.UnitType, -1);
-    RemoveHero(voljin);
+    RemoveHero(AllLegends.Orc.Voljin);
 
     if (!FactionManager.TryGetFactionByType<TaurenTribesFaction>(out var tauren))
     {
@@ -280,10 +244,7 @@ public sealed class ChaosOrcs
 
     var orgrimmar = AllLegends.Orc.Orgrimmar.Unit;
     var home = orgrimmar.Owner == orcPlayer ? new Point(orgrimmar.X, orgrimmar.Y - 400) : new Point(LumberCampX + 256, LumberCampY);
-    _orcs.ModObjectLimit(thrall.UnitType, 1);
     PathBase.SummonLegend(thrall, orcPlayer, home);
-    var voljin = AllLegends.Orc.Voljin;
-    _orcs.ModObjectLimit(voljin.UnitType, 1);
-    PathBase.SummonLegend(voljin, orcPlayer, home);
+    PathBase.SummonLegend(AllLegends.Orc.Voljin, orcPlayer, home);
   }
 }
