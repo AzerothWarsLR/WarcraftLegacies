@@ -210,6 +210,7 @@ public static class Buffs
   public const int BUFF_B0EA_SAVAGE_FRENZY_SPIRIT_WYVERN = 1110459713;
   public const int BUFF_B0EB_MASS_WIND_WALK = 1110459714;
   public const int BUFF_B0EC_ELUNE_S_PROTECTION = 1110459715;
+  public const int BUFF_B0ED_STRENGTH_IN_UNITY = 1110459716;
   public const int BUFF_B100_DEATH_AURA = 1110519856;
   public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
   public const int BUFF_BEAH_THORNS_AURA = 1111843176;
