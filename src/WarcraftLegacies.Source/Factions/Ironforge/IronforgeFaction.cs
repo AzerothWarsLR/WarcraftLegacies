@@ -58,6 +58,7 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths
     var transformation = new DarkIronTransformation();
     AddPath(new PathDarkIronLegion(transformation));
     AddPath(new PathDarkIronAlone(transformation));
+    AddPath(new PathWildhammer(new WildhammerTransformation()));
     LinkMagniToTheGreatForge();
   }
 

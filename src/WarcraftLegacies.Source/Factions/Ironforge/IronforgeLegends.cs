@@ -11,6 +11,8 @@ public sealed class IronforgeLegends
   public LegendaryHero Muradin { get; }
   public LegendaryHero Moira { get; }
   public LegendaryHero Angerforge { get; }
+  public LegendaryHero Kurdran { get; }
+  public LegendaryHero Talonaxe { get; }
   public Capital GreatForge { get; }
   public Capital Thelsamar { get; }
   public Capital MenethilHarbor { get; }
@@ -52,6 +54,16 @@ public sealed class IronforgeLegends
       UnitType = UNIT_H0CV_GENERAL_OF_THE_DARK_IRON_DARKIRON
     };
 
+    Kurdran = new LegendaryHero("Kurdran Wildhammer")
+    {
+      UnitType = UNIT_H0CW_SKY_THANE_OF_THE_WILDHAMMER_WILDHAMMER
+    };
+
+    Talonaxe = new LegendaryHero("Gryphon Master Talonaxe")
+    {
+      UnitType = UNIT_H0CX_GRYPHON_MASTER_OF_AERIE_PEAK_WILDHAMMER
+    };
+
     GreatForge = new Capital
     {
       Unit = AllPreplacedWidgets.Units.Get(UNIT_H001_THE_GREAT_FORGE_IRONFORGE_OTHER),
@@ -80,6 +92,8 @@ public sealed class IronforgeLegends
     LegendaryHeroManager.Register(Muradin);
     LegendaryHeroManager.Register(Moira);
     LegendaryHeroManager.Register(Angerforge);
+    LegendaryHeroManager.Register(Kurdran);
+    LegendaryHeroManager.Register(Talonaxe);
     CapitalManager.Register(GreatForge);
     CapitalManager.Register(Thelsamar);
     CapitalManager.Register(MenethilHarbor);
