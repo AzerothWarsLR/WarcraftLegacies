@@ -35,6 +35,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Skywall",
     "Stormwind",
     "Sunfury",
+    "Wildhammer",
     "Tauren",
     "Warsong",
     "Creep",
