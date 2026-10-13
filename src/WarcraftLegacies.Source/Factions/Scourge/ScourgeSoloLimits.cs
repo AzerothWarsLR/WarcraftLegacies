@@ -49,7 +49,7 @@ public sealed class ScourgeSoloLimits
 
     if (!hadBonus && _boostedObjects.Count > 0)
     {
-      _scourge.Player?.DisplayTextTo(Loc.Format("Standing alone, the Scourge can field {bonus} more of each of its limited units until another faction joins it.",
+      _scourge.Player?.DisplayTextTo(Loc.Format("With no allies to share his attention, the Lich King bends his full will upon the Scourge. It can field {bonus} more of each of its limited units until another faction joins it.",
         ("{bonus}", ScourgeObjectInfo.StandingAloneBonus.ToString())));
     }
   }
@@ -67,6 +67,6 @@ public sealed class ScourgeSoloLimits
     }
 
     _boostedObjects.Clear();
-    _scourge.Player?.DisplayTextTo(Loc.Get("The Scourge no longer stands alone and loses its extra unit limits."));
+    _scourge.Player?.DisplayTextTo(Loc.Get("The Scourge no longer stands alone, and the Lich King's attention is divided once more. Its extra unit limits are lost."));
   }
 }

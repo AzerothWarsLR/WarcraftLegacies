@@ -6,7 +6,7 @@ public sealed class PathGilneasGreymaneWall : PathGilneas
   public PathGilneasGreymaneWall(GilneasTransformation transformation) : base(transformation)
   {
     Name = "Gilneas: The Greymane Wall";
-    Description = "With Gilneas City in hand, Dalaran gives way to the kingdom of Gilneas. Genn Greymane leaves the rest of Dalaran's land to Lordaeron, seals the Greymane Wall and trusts no one but his own people.";
+    Description = "Gilneas City is free, and Genn Greymane has bled enough for the Alliance's wars. He leaves the rest of Dalaran's lands to Lordaeron, seals the Greymane Wall behind his people and trusts no one beyond it.";
     CanGoSolo = true;
   }
 }

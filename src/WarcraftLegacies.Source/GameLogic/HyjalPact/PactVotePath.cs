@@ -15,9 +15,9 @@ public sealed class PactVotePath : FactionPath
     _onVote = onVote;
     Name = "Vote: The Pact of Hyjal";
     IconName = "TreeOfEternity";
-    Description = Loc.Format("{proposer} calls on the Horde, the Night Elves and Theramore to set aside their wars and stand together against the Burning Legion. Accept to join the pact, which forms if a majority agrees. Not voting counts as voting against it.",
+    Description = Loc.Format("{proposer} calls on the Horde, the night elves and Theramore to set aside their wars and make a stand against the Burning Legion at Mount Hyjal. The pact forms if most agree, and silence counts as refusal.",
       ("{proposer}", proposerName));
-    DeclineDescription = "Stay out of the pact. Your team and your wars stay as they are.";
+    DeclineDescription = "Let others make their peace. You will face the Legion your own way, beside your own allies.";
     OfferDuration = duration;
     CommitDuration = 0;
     IsVote = true;

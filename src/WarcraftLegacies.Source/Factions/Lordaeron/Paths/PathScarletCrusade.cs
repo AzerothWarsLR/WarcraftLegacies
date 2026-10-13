@@ -18,7 +18,7 @@ public sealed class PathScarletCrusade : FactionPath
     _transformation = transformation;
     Name = "The Scarlet Crusade";
     IconName = "Divine_Reckoning_Icon";
-    Description = "With the palace or Stratholme lost, the survivors turn to vengeance. They abandon what is left of the kingdom and rally at Tyr's Hand as the Scarlet Crusade, sworn to purge the undead.";
+    Description = "The palace has fallen or Stratholme burns, and the survivors want vengeance more than a kingdom. They abandon what remains of Lordaeron and rally at Tyr's Hand as the Scarlet Crusade, sworn to purge the undead from the land.";
     AddMustStayTrueRequirement(new ObjectiveEitherOf(
       new ObjectiveCapitalLost(capitalPalace) { ShowsInQuestLog = false },
       new ObjectiveCapitalLost(stratholme) { ShowsInQuestLog = false }) { ShowsInQuestLog = false });

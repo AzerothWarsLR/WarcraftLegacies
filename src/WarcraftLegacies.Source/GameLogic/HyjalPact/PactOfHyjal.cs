@@ -51,7 +51,7 @@ public sealed class PactOfHyjal : WorldEvent
   {
     Name = "The Pact of Hyjal";
     IconName = "TreeOfEternity";
-    Description = "The Horde, the Night Elves and Theramore set aside their wars and stand together against the Burning Legion. Those who agree join the Pact of Hyjal's team until Archimonde falls.";
+    Description = "On the slopes of Mount Hyjal, old enemies make an unlikely peace. The Horde, the night elves and Theramore set aside their wars to stand together against the Burning Legion, bound to one another until Archimonde falls.";
 
     _theramoreFounded = new ObjectiveTriggered("Theramore has been founded");
     _archimondeSummoned = new ObjectiveTriggered("The Legion has summoned Archimonde");

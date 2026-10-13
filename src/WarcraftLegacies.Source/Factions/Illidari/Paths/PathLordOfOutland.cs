@@ -21,7 +21,7 @@ public sealed class PathLordOfOutland : FactionPath
     _felHorde = felHorde;
     Name = "Lord of Outland";
     IconName = "PitLord";
-    Description = "With Magtheridon broken by your hand, Illidan claims his throne. The Fel Horde bows to its new master, marching at your side under a lesser warlord and paying you tribute every turn.";
+    Description = "Magtheridon lies broken at your feet, and Outland has a new master. The Fel Horde bows to Illidan, marching at his side under a lesser warlord and sending a share of its spoils to the Black Temple every turn.";
     AddRequirement(new ObjectiveTurn(EarliestTurn) { ShowsInQuestLog = false });
     AddRequirement(new ObjectiveLegendKilledBy(magtheridon, "the Illidari", IsIllidari) { ShowsInQuestLog = false });
   }

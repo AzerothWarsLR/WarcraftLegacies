@@ -35,7 +35,7 @@ public sealed class OutlandTithe
     _felHorde.ScoreStatusChanged += _ => felHordeData.StopTithe();
     _illidari.ScoreStatusChanged += _ => felHordeData.StopTithe();
 
-    var message = Loc.Format("{felHorde} now pays {percent}% of its income to {illidari}.",
+    var message = Loc.Format("{felHorde} bends the knee, and {percent}% of its income now flows to {illidari}.",
       ("{felHorde}", _felHorde.ColoredName), ("{percent}", Percent.ToString()), ("{illidari}", _illidari.ColoredName));
     felHordePlayer.DisplayTextTo(message);
     illidariPlayer.DisplayTextTo(message);

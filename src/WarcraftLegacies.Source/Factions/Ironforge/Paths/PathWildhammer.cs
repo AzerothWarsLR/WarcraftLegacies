@@ -21,7 +21,7 @@ public sealed class PathWildhammer : FactionPath
     _transformation = transformation;
     Name = "The Wildhammer";
     IconName = "HeroGriffonWarrior";
-    Description = "Ironforge can no longer hold Khaz Modan. The dwarves rally to Falstad at Aerie Peak and fight on as the Wildhammer, taking to the skies over the Hinterlands beside the kingdoms of the north. Ironforge and the rest of Khaz Modan are left to the Alliance.";
+    Description = "The halls of Ironforge can no longer be held. Its dwarves take wing for Aerie Peak, where Falstad Wildhammer rallies them to fight on from the skies over the Hinterlands, beside the kingdoms of the north. Ironforge itself is left in the care of its allies.";
     _southBroken = new ObjectiveTriggered("The South Alliance is broken: Stormwind or Kul Tiras has left it or been defeated");
     AddRequirement(new ObjectiveEitherOf(_southBroken, new ObjectiveCapitalDead(AllLegends.Ironforge.GreatForge),
       "The Great Forge has fallen, or Stormwind or Kul Tiras has left the South Alliance or been defeated")

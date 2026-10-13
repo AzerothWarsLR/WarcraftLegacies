@@ -16,7 +16,7 @@ public sealed class PactProposalPath : FactionPath
     _onProposed = onProposed;
     Name = "Propose the Pact of Hyjal";
     IconName = "TreeOfEternity";
-    Description = "Call on the Horde, the Night Elves and Theramore to set aside their wars and stand together against the Burning Legion at Mount Hyjal. Starts a 3 minute vote, and the pact forms if a majority agrees. You vote for it by proposing it.";
+    Description = "Archimonde has come, and no single people can stand against him. Call on the Horde, the night elves and Theramore to set aside their wars and make a stand at Mount Hyjal. They have 3 minutes to answer, and the pact forms if most agree, your own voice among them.";
     CommitDuration = 0;
     IsVote = true;
   }

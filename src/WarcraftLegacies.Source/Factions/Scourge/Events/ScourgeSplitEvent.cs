@@ -29,7 +29,7 @@ public sealed class ScourgeSplitEvent : WorldEvent
     _legion = legion;
     Name = "The Scourge Split";
     IconName = "HeroLich";
-    Description = "The Lich King breaks free of the Burning Legion. The Scourge leaves the Legion's team, and both sides are empowered by the betrayal.";
+    Description = "Ner'zhul has bided his time within the Frozen Throne, and now he strikes. The Lich King breaks free of the Burning Legion and takes the Scourge with him, and the hatred between old masters and servants makes both sides stronger.";
     WarningDuration = 60;
 
     _forced = new ObjectiveTriggered("The Legion summons Archimonde, the Fallen Prince and the Banshee's Host both join the Scourge, or the Scourge or the Legion takes its split path");

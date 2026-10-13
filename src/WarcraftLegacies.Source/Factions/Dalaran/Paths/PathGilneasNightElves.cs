@@ -9,7 +9,7 @@ public sealed class PathGilneasNightElves : PathGilneas
   public PathGilneasNightElves(GilneasTransformation transformation) : base(transformation)
   {
     Name = "Gilneas: The Night Elves";
-    Description = "With Gilneas City in hand, Dalaran gives way to the kingdom of Gilneas. Genn Greymane leaves the rest of Dalaran's land to Lordaeron and turns from the Alliance to seek the Night Elves, whose druids may yet hold the answer to the curse stirring in his people.";
+    Description = "Gilneas City is free, but a curse stirs among its people that no human priest can mend. Genn Greymane leaves the rest of Dalaran's lands to Lordaeron and turns from the Alliance to the night elves, whose druids may yet know a cure.";
   }
 
   /// <inheritdoc />

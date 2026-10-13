@@ -21,7 +21,7 @@ public sealed class PathStromgarde : FactionPath
     _transformation = transformation;
     Name = "Stromgarde";
     IconName = "TheCaptain";
-    Description = "Stormwind can no longer hold its kingdom. Its survivors march north to Stromgarde, the oldest kingdom of men, and fight on under the Trollbanes beside the kingdoms of the north. Stormwind and the rest of its land are left to the Alliance.";
+    Description = "Stormwind can no longer hold its kingdom. Its survivors march north to Stromgarde, where the Trollbanes still keep the oldest crown of men, and fight on beside the kingdoms of the north. Stormwind itself is left in the care of its allies.";
     _southBroken = new ObjectiveTriggered("The South Alliance is broken: Ironforge or Kul Tiras has left it or been defeated");
     AddRequirement(new ObjectiveEitherOf(_southBroken, new ObjectiveCapitalDead(AllLegends.Stormwind.StormwindKeep),
       "Stormwind Keep has fallen, or Ironforge or Kul Tiras has left the South Alliance or been defeated")

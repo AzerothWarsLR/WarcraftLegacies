@@ -19,7 +19,7 @@ public sealed class PathPurgeTheUnworthy : FactionPath
     _split = split;
     Name = "Purge the Unworthy";
     IconName = "Archimonde";
-    Description = "The Lich King has outlived his usefulness. Cast the Scourge out of the Burning Legion before it can turn on you. Both sides grow stronger in their hatred of each other.";
+    Description = "The Lich King was only ever a tool, and a tool that thinks for itself is a danger to its masters. Cast the Scourge out of the Burning Legion before it can turn on you. Hatred will make both sides stronger.";
     AddRequirement(new ObjectiveTurn(EarliestTurn) { ShowsInQuestLog = false });
   }
 
