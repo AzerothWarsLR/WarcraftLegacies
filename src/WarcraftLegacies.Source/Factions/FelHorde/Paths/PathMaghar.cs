@@ -8,16 +8,16 @@ using WarcraftLegacies.Source.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Factions.FelHorde.Paths;
 
-/// <summary>Lets the Fel Horde join the Horde once an enemy other than the Illidari kills Magtheridon.</summary>
+/// <summary>Lets the Fel Horde join the Horde once an enemy other than the Illidari kills Magtheridon for good.</summary>
 public sealed class PathMaghar : FactionPath
 {
   public PathMaghar(LegendaryHero magtheridon)
   {
     Name = "The Mag'har";
     IconName = "Thrall";
-    Description = "Magtheridon is dead and his hold on the clans is broken. Cast off the demons' blood, follow a new warlord and join your brothers in the Horde as the Mag'har.";
-    DeclineDescription = "Kargath keeps the clans loyal to the Legion, and a new warlord takes Magtheridon's place.";
-    AddRequirement(new ObjectiveLegendKilledBy(magtheridon, "an enemy other than the Illidari", IsNotIllidari) { ShowsInQuestLog = false });
+    Description = "Hellfire Citadel has fallen and Magtheridon with it. His hold on the clans is broken. Cast off the demons' blood, follow a new warlord and join your brothers in the Horde as the Mag'har.";
+    DeclineDescription = "Kargath keeps the clans loyal to the Legion, and a Fel Warlord takes Magtheridon's place.";
+    AddRequirement(new ObjectiveLegendKilledBy(magtheridon, "an enemy other than the Illidari", IsEnemyOtherThanIllidari, true) { ShowsInQuestLog = false });
   }
 
   /// <inheritdoc />
@@ -47,25 +47,10 @@ public sealed class PathMaghar : FactionPath
 
   /// <inheritdoc />
   protected override void OnDeclined(Faction faction) =>
-    MagtheridonSuccession.Replace(faction, new LegendaryHero("Mag'har Warlord")
+    MagtheridonSuccession.Replace(faction, new LegendaryHero("Fel Warlord")
     {
-      UnitType = UNIT_N0Z2_MAG_HAR_CHIEFTAIN_FEL
+      UnitType = UNIT_N0Z1_SERVANT_OF_THE_LEGION_FEL
     });
 
-  private bool IsNotIllidari(player whichPlayer)
-  {
-    var felHordePlayer = Faction?.Player;
-    if (felHordePlayer != null && (whichPlayer == felHordePlayer || TeamChanges.AreTeammates(whichPlayer, felHordePlayer)))
-    {
-      return false;
-    }
-
-    if (!FactionManager.TryGetFactionByType<IllidariFaction>(out var illidari))
-    {
-      return true;
-    }
-
-    var illidariPlayer = illidari.Player;
-    return illidariPlayer == null || (whichPlayer != illidariPlayer && !TeamChanges.AreTeammates(whichPlayer, illidariPlayer));
-  }
+  private bool IsEnemyOtherThanIllidari(player killer) => OutlandSubmission.IsEnemyOtherThanIllidari(Faction, killer);
 }

@@ -31,6 +31,7 @@ using WarcraftLegacies.Source.GameLogic.HyjalPact;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.GameLogic;
 
@@ -55,6 +56,9 @@ public static class RoleplaySetting
   /// <summary>The Grand Alliance, once Roleplay mode has set it up.</summary>
   public static GrandAllianceEvent? GrandAlliance { get; private set; }
 
+  /// <summary>Magtheridon's chains outside Hellfire Citadel, once Roleplay mode has set them up.</summary>
+  public static ChainedMagtheridon? ChainedMagtheridon { get; private set; }
+
   /// <summary>Daelin's Vengeance, once Roleplay mode has set it up.</summary>
   public static DaelinsVengeanceEvent? DaelinsVengeance { get; private set; }
 
@@ -74,7 +78,7 @@ public static class RoleplaySetting
     SetupDaughtersOfTheAlliance();
     SetupBloodOfMannoroth();
     SetupNordrassilsSacrifice();
-    SetupDarkHorde();
+    SetupFelHorde();
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
     foreach (var faction in FactionManager.GetAllFactions())
@@ -223,7 +227,7 @@ public static class RoleplaySetting
     druids.AddPath(new PathNordrassilsSacrifice(legion, legion.GetQuestByType<QuestConsumeTree>()));
   }
 
-  private static void SetupDarkHorde()
+  private static void SetupFelHorde()
   {
     if (!FactionManager.TryGetFactionByType<FelHordeFaction>(out var felHorde))
     {
@@ -234,6 +238,14 @@ public static class RoleplaySetting
     var rend = AllLegends.FelHorde.Rend;
     rend.AddUnitDependency(blackrockSpire.Unit);
     felHorde.AddQuest(new QuestDarkHorde(AllLegends.Stormwind.StormwindKeep, blackrockSpire, rend));
+
+    var hellfireCitadel = AllLegends.FelHorde.HellfireCitadel.Unit;
+    var magtheridon = AllLegends.FelHorde.Magtheridon;
+    if (hellfireCitadel != null)
+    {
+      magtheridon.AddUnitDependency(hellfireCitadel);
+      ChainedMagtheridon = new ChainedMagtheridon(felHorde, magtheridon, new Point(hellfireCitadel.X, hellfireCitadel.Y));
+    }
   }
 
   private static void SetupScourgeSplit()
@@ -284,14 +296,26 @@ public static class RoleplaySetting
       return;
     }
 
+    var chainedMagtheridon = ChainedMagtheridon;
+    if (chainedMagtheridon == null)
+    {
+      return;
+    }
+
     _illidariPathsSetUp = true;
     var magtheridon = AllLegends.FelHorde.Magtheridon;
-    var lordOfOutland = new PathLordOfOutland(felHorde, magtheridon);
+    var lordOfOutland = new PathLordOfOutland(felHorde, magtheridon, chainedMagtheridon);
     var maghar = new PathMaghar(magtheridon);
+    var pitLordsBargain = new PathPitLordsBargain(illidari, magtheridon, chainedMagtheridon);
     illidari.AddPath(lordOfOutland);
     felHorde.AddPath(maghar);
+    felHorde.AddPath(pitLordsBargain);
     CloseWhenResolved(lordOfOutland, maghar);
+    CloseWhenResolved(lordOfOutland, pitLordsBargain);
     CloseWhenResolved(maghar, lordOfOutland);
+    CloseWhenResolved(maghar, pitLordsBargain);
+    CloseWhenResolved(pitLordsBargain, lordOfOutland);
+    CloseWhenResolved(pitLordsBargain, maghar);
 
     var betrayersRedemption = new PathBetrayersRedemption();
     illidari.AddPath(betrayersRedemption);
