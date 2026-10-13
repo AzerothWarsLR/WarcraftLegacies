@@ -81,6 +81,11 @@ public static class DalaranHomeland
   /// <summary>Ends Dalaran's unfinished land quests so the units they hold come to Dalaran's player instead of going hostile.</summary>
   public static void ClaimHeldLands(Faction dalaran)
   {
+    foreach (var quest in dalaran.GetAllQuests())
+    {
+      quest.SuppressFailureDisplay = true;
+    }
+
     EndQuest(dalaran.GetQuestByType<QuestShadowfang>());
     EndQuest(dalaran.GetQuestByType<QuestSouthshore>());
     EndQuest(dalaran.GetQuestByType<QuestDalaran>());

@@ -52,6 +52,9 @@ public abstract class QuestData
 
   public bool SuppressCompletionDisplay { get; set; }
 
+  /// <summary>If true, failing this quest shows no message.</summary>
+  public bool SuppressFailureDisplay { get; set; }
+
   /// <summary>
   ///   Describes to the player what will happen when the quest is completed.
   ///   Describes mechanics, not flavour.
@@ -197,7 +200,11 @@ public abstract class QuestData
 
   private void FailForFaction(Faction whichFaction)
   {
-    whichFaction.DisplayFailed(this);
+    if (!SuppressFailureDisplay)
+    {
+      whichFaction.DisplayFailed(this);
+    }
+
     foreach (var objective in Objectives)
     {
       objective.ProgressLocked = true;
