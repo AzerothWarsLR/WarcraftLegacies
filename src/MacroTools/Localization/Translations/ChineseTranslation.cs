@@ -665,7 +665,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("When activated, your units deal 100x damage and take 0x damage.", "激活后，你的单位造成 100 倍伤害且不会受到伤害。");
     Add("When activated, your units reset all cooldowns after they cast a spell.", "激活后，你的单位施放法术后会重置所有冷却时间。");
     Add("When an undamaged Control Point you control takes damage and you control {hero}, consume {mana} mana from {hero} to summon {count} {unit}s to defend the Control Point for {duration} seconds.", "当你控制的、未受损的控制点受到伤害，且你控制着{hero}时，消耗{hero}的 {mana} 点法力，召唤 {count} 个{unit}守卫该控制点，持续 {duration} 秒。");
-    Add("When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n", "该单位死亡后将无法复活，除非你控制着以下任一首都：\n");
+    Add("When this unit dies, it will be unrevivable unless any of the following capitals are under your or your allies' control:\n", "该单位死亡后将无法复活，除非你或你的盟友控制着以下任一首都：\n");
     Add("Wildhammer Alliance", "蛮锤同盟");
     Add("Windrunner Spire", "风行者之塔");
     Add("Winterspring", "冬泉谷");

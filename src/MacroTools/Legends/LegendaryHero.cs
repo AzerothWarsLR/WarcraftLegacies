@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
+using MacroTools.Factions;
 using MacroTools.Localization;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -178,7 +179,7 @@ public sealed class LegendaryHero : Legend
 
   /// <summary>
   ///   Add an additional unit dependency to this Legend.
-  ///   If all of a Legend's unit dependencies are dead or owned by hostile forces,
+  ///   If all of a Legend's unit dependencies are dead or owned by non-allies,
   ///   the Legend permanently dies upon death.
   /// </summary>
   public void AddUnitDependency(unit whichUnit)
@@ -225,7 +226,7 @@ public sealed class LegendaryHero : Legend
 
     var owner = Unit.Owner;
 
-    return !_diesWithout.Any(x => x.Owner == owner && x.Alive);
+    return !_diesWithout.Any(x => x.Alive && (x.Owner == owner || TeamChanges.AreTeammates(x.Owner, owner)));
   }
 
   /// <inheritdoc />
@@ -334,7 +335,7 @@ public sealed class LegendaryHero : Legend
     {
       // The tooltip is composed around the capitals' own names, which are localized separately, so each stated
       // part goes through the table on its own rather than the whole sentence.
-      var tooltip = Loc.Get("When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n");
+      var tooltip = Loc.Get("When this unit dies, it will be unrevivable unless any of the following capitals are under your or your allies' control:\n");
       foreach (var unit in _diesWithout)
       {
         if (unit == null)
