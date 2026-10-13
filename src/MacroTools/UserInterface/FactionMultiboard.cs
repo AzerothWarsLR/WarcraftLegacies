@@ -230,12 +230,41 @@ public sealed class FactionMultiboard
       _rowsByBloc[team.Bloc] = row;
       UpdateBlocRow(team.Bloc);
       row += 1;
-      foreach (var blocTeam in team.Bloc.Teams)
-      {
-        row = RenderTeam(blocTeam, row);
-      }
+      row = team.Bloc.ShowsTeams ? RenderBlocTeams(team.Bloc, row) : RenderBlocAsOne(team.Bloc, row);
     }
     _multiboard.Rows = row;
+  }
+
+  private int RenderBlocTeams(Bloc bloc, int row)
+  {
+    foreach (var blocTeam in bloc.Teams)
+    {
+      row = RenderTeam(blocTeam, row);
+    }
+
+    return row;
+  }
+
+  /// <summary>Lists every faction in the bloc under its header, with one shared handicap row.</summary>
+  private int RenderBlocAsOne(Bloc bloc, int row)
+  {
+    foreach (var blocTeam in bloc.Teams)
+    {
+      if (blocTeam.UndefeatedPlayerCount <= 0)
+      {
+        continue;
+      }
+
+      row = RenderHandicap(blocTeam, row);
+      break;
+    }
+
+    foreach (var blocTeam in bloc.Teams)
+    {
+      row = RenderFactions(blocTeam, row);
+    }
+
+    return row;
   }
 
   private int RenderTeam(Team team, int row)
@@ -248,7 +277,12 @@ public sealed class FactionMultiboard
     _rowsByTeam[team] = row;
     UpdateTeamRow(team);
     row += 1;
+    row = RenderHandicap(team, row);
+    return RenderFactions(team, row);
+  }
 
+  private int RenderHandicap(Team team, int row)
+  {
     var handicapText = GetHandicapText(team);
     if (handicapText != "")
     {
@@ -256,6 +290,11 @@ public sealed class FactionMultiboard
       row += 1;
     }
 
+    return row;
+  }
+
+  private int RenderFactions(Team team, int row)
+  {
     foreach (var faction in team.GetAllFactions())
     {
       if (faction.Player != null && faction.ScoreStatus != ScoreStatus.Defeated)

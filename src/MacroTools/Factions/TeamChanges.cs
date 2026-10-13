@@ -117,7 +117,9 @@ public static class TeamChanges
     LastChangeTimes[whichPlayer] = Now;
 
     var factionName = playerData.Faction?.ColoredName ?? whichPlayer.Name;
-    destination.DisplayText(Loc.Format("{faction} has joined the {team}.", ("{faction}", factionName), ("{team}", destination.LocalizedName)));
+    var destinationBloc = destination.Bloc;
+    var destinationName = destinationBloc != null && !destinationBloc.ShowsTeams ? destinationBloc.LocalizedName : destination.LocalizedName;
+    destination.DisplayText(Loc.Format("{faction} has joined the {team}.", ("{faction}", factionName), ("{team}", destinationName)));
     StartCeasefire(whichPlayer, formerAllies, factionName);
   }
 

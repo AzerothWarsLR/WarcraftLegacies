@@ -15,14 +15,31 @@ public sealed class Bloc
 
   public Bloc(string name) => Name = name;
 
-  public string Name { get; }
+  public string Name { get; private set; }
 
   public string LocalizedName => Loc.Get(Name);
 
   public IReadOnlyList<Team> Teams => _teams;
 
+  /// <summary>Whether the scoreboard lists the bloc's teams separately, or as one group.</summary>
+  public bool ShowsTeams { get; private set; } = true;
+
   /// <summary>The number of players across every <see cref="Team"/> in the bloc.</summary>
   public int Size => _teams.Sum(x => x.Size);
+
+  /// <summary>Gives the bloc a new name.</summary>
+  public void Rename(string name)
+  {
+    Name = name;
+    TeamChanges.NotifyTeamChanged();
+  }
+
+  /// <summary>Lists the bloc's teams as one group on the scoreboard from now on.</summary>
+  public void HideTeams()
+  {
+    ShowsTeams = false;
+    TeamChanges.NotifyTeamChanged();
+  }
 
   /// <summary>Adds <paramref name="team"/> to the bloc and allies its players to everyone already in it.</summary>
   public void Add(Team team)

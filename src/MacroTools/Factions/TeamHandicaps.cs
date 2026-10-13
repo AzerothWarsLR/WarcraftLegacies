@@ -12,6 +12,7 @@ public static class TeamHandicaps
 {
   private static readonly List<Front> Fronts = new();
   private static readonly Dictionary<Team, float> Handicaps = new();
+  private static readonly HashSet<Bloc> PooledBlocs = new();
   private static readonly List<Action> ChangedHandlers = new();
 
   /// <summary>How much each player a side has fallen behind by is worth, as a fraction.</summary>
@@ -76,6 +77,13 @@ public static class TeamHandicaps
   }
 
   /// <summary>Runs <paramref name="handler"/> whenever handicaps are recalculated.</summary>
+  /// <summary>Judges every team in <paramref name="bloc"/> together, so they share one handicap.</summary>
+  public static void Pool(Bloc bloc)
+  {
+    PooledBlocs.Add(bloc);
+    Refresh();
+  }
+
   public static void OnChanged(Action handler) => ChangedHandlers.Add(handler);
 
   /// <summary>The handicap <paramref name="team"/> currently has, as a fraction, like 0.1 for 10%.</summary>
@@ -109,12 +117,12 @@ public static class TeamHandicaps
       var behindBy = 0;
       for (var i = 0; i < Fronts.Count; i++)
       {
-        if (IsOnSide(team, Fronts[i].Attacks))
+        if (IsGroupOnSide(team, Fronts[i].Attacks))
         {
           behindBy = Math.Max(behindBy, defenderGrowths[i] - attackerGrowths[i]);
         }
 
-        if (IsOnSide(team, Fronts[i].Defends))
+        if (IsGroupOnSide(team, Fronts[i].Defends))
         {
           behindBy = Math.Max(behindBy, attackerGrowths[i] - defenderGrowths[i]);
         }
@@ -149,6 +157,26 @@ public static class TeamHandicaps
     }
 
     return count;
+  }
+
+  /// <summary>Whether <paramref name="team"/>, or any team pooled with it, is on <paramref name="side"/>.</summary>
+  private static bool IsGroupOnSide(Team team, Func<Faction, bool> side)
+  {
+    var bloc = team.Bloc;
+    if (bloc == null || !PooledBlocs.Contains(bloc))
+    {
+      return IsOnSide(team, side);
+    }
+
+    foreach (var blocTeam in bloc.Teams)
+    {
+      if (IsOnSide(blocTeam, side))
+      {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   private static bool IsOnSide(Team team, Func<Faction, bool> side)
