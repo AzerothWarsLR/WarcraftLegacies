@@ -7,6 +7,7 @@ using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.Druids.Paths;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.FelHorde.Paths;
+using WarcraftLegacies.Source.Factions.FelHorde.Quests;
 using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Illidari.Paths;
 using WarcraftLegacies.Source.Factions.Kultiras;
@@ -73,6 +74,7 @@ public static class RoleplaySetting
     SetupDaughtersOfTheAlliance();
     SetupBloodOfMannoroth();
     SetupNordrassilsSacrifice();
+    SetupDarkHorde();
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
     foreach (var faction in FactionManager.GetAllFactions())
@@ -219,6 +221,19 @@ public static class RoleplaySetting
     }
 
     druids.AddPath(new PathNordrassilsSacrifice(legion, legion.GetQuestByType<QuestConsumeTree>()));
+  }
+
+  private static void SetupDarkHorde()
+  {
+    if (!FactionManager.TryGetFactionByType<FelHordeFaction>(out var felHorde))
+    {
+      return;
+    }
+
+    var blackrockSpire = AllLegends.FelHorde.BlackrockSpire;
+    var rend = AllLegends.FelHorde.Rend;
+    rend.AddUnitDependency(blackrockSpire.Unit);
+    felHorde.AddQuest(new QuestDarkHorde(AllLegends.Stormwind.StormwindKeep, blackrockSpire, rend));
   }
 
   private static void SetupScourgeSplit()
