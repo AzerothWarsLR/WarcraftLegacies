@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.Extensions;
-using MacroTools.Factions;
+﻿using MacroTools.Factions;
 using MacroTools.Paths;
 using WarcraftLegacies.Source.Factions.Kultiras;
 using WarcraftLegacies.Source.Factions.Stormwind;
@@ -16,7 +14,7 @@ public sealed class PathWildhammer : FactionPath
 {
   private readonly WildhammerTransformation _transformation;
   private readonly ObjectiveTriggered _southBroken;
-  private readonly HashSet<player> _southPlayers = new();
+  private readonly TeamBreakWatch _southWatch;
 
   public PathWildhammer(WildhammerTransformation transformation)
   {
@@ -29,7 +27,7 @@ public sealed class PathWildhammer : FactionPath
       "The Great Forge has fallen, or Stormwind or Kul Tiras has left the South Alliance or been defeated")
     { ShowsInQuestLog = false });
 
-    WatchSouthAlliance();
+    _southWatch = new TeamBreakWatch(TeamSetup.SouthAlliance, x => x is StormwindFaction || x is KultirasFaction, _southBroken.Trigger);
   }
 
   /// <inheritdoc />
@@ -40,50 +38,4 @@ public sealed class PathWildhammer : FactionPath
 
   /// <inheritdoc />
   protected override void OnTaken(Faction faction) => _transformation.Execute(faction);
-
-  private void WatchSouthAlliance()
-  {
-    foreach (var faction in FactionManager.GetAllFactions())
-    {
-      if ((faction is StormwindFaction || faction is KultirasFaction) && faction.Player != null &&
-          faction.Player.GetPlayerData().Team == TeamSetup.SouthAlliance)
-      {
-        _southPlayers.Add(faction.Player);
-        faction.ScoreStatusChanged += _ => CheckSouthBroken();
-      }
-    }
-
-    PlayerData.FactionChange += OnFactionChange;
-    TeamChanges.OnAnyTeamChanged(CheckSouthBroken);
-  }
-
-  private void OnFactionChange(PlayerFactionChangeEventArgs args)
-  {
-    if (!_southPlayers.Contains(args.Player))
-    {
-      return;
-    }
-
-    var newFaction = args.Player.GetPlayerData().Faction;
-    if (newFaction != null)
-    {
-      newFaction.ScoreStatusChanged += _ => CheckSouthBroken();
-    }
-
-    CheckSouthBroken();
-  }
-
-  private void CheckSouthBroken()
-  {
-    foreach (var southPlayer in _southPlayers)
-    {
-      var playerData = southPlayer.GetPlayerData();
-      if (playerData.Faction == null || playerData.Faction.ScoreStatus == ScoreStatus.Defeated ||
-          playerData.Team != TeamSetup.SouthAlliance)
-      {
-        _southBroken.Trigger();
-        return;
-      }
-    }
-  }
 }
