@@ -70,7 +70,8 @@ public static class RoleplayFronts
     (faction is DarkIronFaction && IsOnTeam(faction, TeamSetup.Legion));
 
   private static bool DefendsSouth(Faction faction) =>
-    faction is StormwindFaction || faction is IronforgeFaction || faction is KultirasFaction || faction is WildhammerFaction;
+    faction is StormwindFaction || faction is IronforgeFaction || faction is KultirasFaction || faction is WildhammerFaction ||
+    faction is StromgardeFaction;
 
   private static bool AttacksKalimdor(Faction faction) =>
     faction is OrcishHordeFaction || faction is TaurenTribesFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.Horde));

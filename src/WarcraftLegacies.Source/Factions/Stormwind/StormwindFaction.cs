@@ -1,17 +1,20 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Stormwind.Paths;
 using WarcraftLegacies.Source.Factions.Stormwind.Quests;
 using WarcraftLegacies.Source.Factions.Stormwind.Researches;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
 
 namespace WarcraftLegacies.Source.Factions.Stormwind;
 
-public sealed class StormwindFaction : Faction
+public sealed class StormwindFaction : Faction, IHasRoleplayPaths
 {
   /// <inheritdoc />
   public StormwindFaction() : base("Stormwind", playercolor.Blue,
@@ -36,6 +39,17 @@ public sealed class StormwindFaction : Faction
       "storm"
     };
     ProcessObjectInfo(StormwindObjectInfo.GetAllObjectLimits());
+  }
+
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    if (GetAllPaths().Any(x => x is PathStromgarde))
+    {
+      return;
+    }
+
+    AddPath(new PathStromgarde(new StromgardeTransformation()));
   }
 
   /// <inheritdoc />
