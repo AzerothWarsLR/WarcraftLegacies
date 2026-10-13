@@ -25,6 +25,7 @@ using WarcraftLegacies.Source.Factions.Sentinels.Paths;
 using WarcraftLegacies.Source.Factions.TaurenTribes;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Paths;
 using WarcraftLegacies.Source.Factions.Theramore;
+using WarcraftLegacies.Source.GameLogic.GrandAlliance;
 using WarcraftLegacies.Source.GameLogic.HyjalPact;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Setup;
@@ -50,6 +51,9 @@ public static class RoleplaySetting
   /// <summary>The Orcish Horde's fall to chaos, once Roleplay mode has set it up.</summary>
   public static ChaosOrcs? OrcCorruption { get; private set; }
 
+  /// <summary>The Grand Alliance, once Roleplay mode has set it up.</summary>
+  public static GrandAllianceEvent? GrandAlliance { get; private set; }
+
   /// <summary>Daelin's Vengeance, once Roleplay mode has set it up.</summary>
   public static DaelinsVengeanceEvent? DaelinsVengeance { get; private set; }
 
@@ -65,6 +69,7 @@ public static class RoleplaySetting
     SetupScourgeSplit();
     SetupHyjalPact();
     SetupDaelinsVengeance();
+    SetupGrandAlliance();
     SetupDaughtersOfTheAlliance();
     SetupBloodOfMannoroth();
     SetupNordrassilsSacrifice();
@@ -88,6 +93,12 @@ public static class RoleplaySetting
 
     TeamChanges.Capacity = team => team.Bloc != null ? BlocCap : TeamCap;
     RoleplayFronts.Register();
+  }
+
+  private static void SetupGrandAlliance()
+  {
+    GrandAlliance = new GrandAllianceEvent();
+    WorldEventManager.Register(GrandAlliance);
   }
 
   private static void SetupHyjalPact()
