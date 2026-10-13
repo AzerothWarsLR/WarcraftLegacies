@@ -24,7 +24,7 @@ public sealed class GrandAllianceEvent : WorldEvent
   private readonly StrengthInUnity _power = new(Radius, LifePerSecond, ManaPerSecond)
   {
     Name = "Strength in Unity",
-    IconName = "HumanCaptureFlag"
+    IconName = "GrandAlliance"
   };
 
   private readonly HashSet<Faction> _members = new();
@@ -32,7 +32,7 @@ public sealed class GrandAllianceEvent : WorldEvent
   public GrandAllianceEvent()
   {
     Name = "The Grand Alliance";
-    IconName = "HumanCaptureFlag";
+    IconName = "GrandAlliance";
     Description = "The Alliance has been broken once, and it will not be broken again. The kingdoms of the north and south set aside their old quarrels and stand as one Grand Alliance, and wherever its banners still fly, its soldiers find shelter and strength.";
     WarningDuration = 60;
 
