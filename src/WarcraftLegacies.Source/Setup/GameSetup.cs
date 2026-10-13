@@ -2,6 +2,7 @@
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameModes;
+using MacroTools.Legends;
 using MacroTools.Save;
 using MacroTools.Sounds;
 using MacroTools.UnitNames;
@@ -55,6 +56,8 @@ public static class GameSetup
     SetupControlPointDefenderManager();
     SoundLibrary.Setup();
     Artifacts.Setup();
+    LegendaryHero.DiesWithoutAbilityId = ABILITY_LEGN_LEGEND_DUMMY;
+    LegendaryHero.PermaDiesAbilityId = ABILITY_LEGO_LEGEND_DUMMY_PASSIVE;
     AllLegends.Setup();
     ShoreSetup.Setup();
     ControlPointSetup.Setup();

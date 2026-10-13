@@ -14,9 +14,13 @@ namespace MacroTools.Legends;
 /// </summary>
 public sealed class LegendaryHero : Legend
 {
+  /// <summary>The ability that shows which capitals a hero needs in order to be revived.</summary>
+  public static int DiesWithoutAbilityId { get; set; }
+
+  /// <summary>The ability that shows a hero can't be revived.</summary>
+  public static int PermaDiesAbilityId { get; set; }
+
   private readonly playercolor? _playerColor;
-  private readonly int _dummyDieswithout = FourCC("LEgn");
-  private readonly int _dummyPermadies = FourCC("LEgo");
   private List<unit>? _diesWithout;
   private trigger? _castTrig;
   private trigger? _becomesRevivableTrig;
@@ -314,13 +318,18 @@ public sealed class LegendaryHero : Legend
 
   private void RefreshDummy()
   {
-    if (_permaDies)
+    if (Unit == null)
     {
-      Unit.AddAbility(_dummyPermadies);
       return;
     }
 
-    Unit.RemoveAbility(_dummyPermadies);
+    if (_permaDies)
+    {
+      Unit.AddAbility(PermaDiesAbilityId);
+      return;
+    }
+
+    Unit.RemoveAbility(PermaDiesAbilityId);
     if (_diesWithout != null)
     {
       // The tooltip is composed around the capitals' own names, which are localized separately, so each stated
@@ -337,17 +346,17 @@ public sealed class LegendaryHero : Legend
       }
 
       tooltip += Loc.Get("\nUsing this ability pings each of these capitals on the minimap.");
-      Unit.AddAbility(_dummyDieswithout);
-      Unit.GetAbility(_dummyDieswithout).SetTooltipNormalExtended_aub1(0, tooltip);
+      Unit.AddAbility(DiesWithoutAbilityId);
+      Unit.GetAbility(DiesWithoutAbilityId).SetTooltipNormalExtended_aub1(0, tooltip);
       return;
     }
 
-    Unit.RemoveAbility(_dummyDieswithout);
+    Unit.RemoveAbility(DiesWithoutAbilityId);
   }
 
   private void OnCast()
   {
-    if (@event.SpellAbilityId != _dummyDieswithout)
+    if (@event.SpellAbilityId != DiesWithoutAbilityId)
     {
       return;
     }
