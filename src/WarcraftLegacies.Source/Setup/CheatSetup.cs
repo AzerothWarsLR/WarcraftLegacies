@@ -32,6 +32,7 @@ public static class CheatSetup
     CommandManager.Register(new CheatTestWildhammer());
     CommandManager.Register(new CheatTestStromgarde());
     CommandManager.Register(new CheatTestDarkHorde());
+    CommandManager.Register(new CheatTestChainedMag());
     CommandManager.Register(new CheatTestGrandAlliance());
     CommandManager.Register(new CheatQuest());
     CommandManager.Register(new CheatFood());
