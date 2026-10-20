@@ -1,4 +1,6 @@
 ﻿using MacroTools.Factions;
+using WarcraftLegacies.Source.Factions.Illidari;
+using WarcraftLegacies.Source.Factions.Sentinels.Powers;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 
 namespace WarcraftLegacies.Source.Factions.Sentinels.Paths;
@@ -8,6 +10,9 @@ namespace WarcraftLegacies.Source.Factions.Sentinels.Paths;
 /// </summary>
 public sealed class PathWardensVengeanceAlone : PathWardensVengeance
 {
+  private const float PowerBonus = 0.1f;
+  private const float QuarryBonus = 0.2f;
+
   public PathWardensVengeanceAlone(ObjectiveTriggered illidanReturned) : base(illidanReturned)
   {
     Name = "Wardens' Vengeance: Alone";
@@ -18,5 +23,9 @@ public sealed class PathWardensVengeanceAlone : PathWardensVengeance
   /// <inheritdoc />
   protected override void OnTaken(Faction faction)
   {
+    if (FactionManager.TryGetFactionByType<IllidariFaction>(out var illidari))
+    {
+      faction.AddPower(new HuntForIllidan(illidari, PowerBonus, QuarryBonus));
+    }
   }
 }
