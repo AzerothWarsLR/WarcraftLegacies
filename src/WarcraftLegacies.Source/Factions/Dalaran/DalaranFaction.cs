@@ -61,6 +61,9 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths
     ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
   }
 
+  /// <summary>The quest that moves Dalaran to Theramore. In Roleplay mode it is replaced by a path and never added.</summary>
+  public QuestTheramore? TheramoreQuest { get; private set; }
+
   /// <inheritdoc />
   public void AddRoleplayPaths()
   {
@@ -122,7 +125,11 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths
     AddQuest(new QuestJainaSoulGem(AllLegends.Dalaran.Jaina, AllLegends.Neutral.Caerdarrow));
     AddQuest(new QuestBlueDragons(AllLegends.Neutral.TheNexus));
     AddQuest(new QuestKarazhan(AllLegends.Neutral.Karazhan));
-    AddQuest(new QuestTheramore(AllLegends.Dalaran.Jaina, AllLegends.Dalaran.Dalaran, Regions.Theramore));
+    TheramoreQuest = new QuestTheramore(AllLegends.Dalaran.Jaina, AllLegends.Dalaran.Dalaran, Regions.Theramore);
+    if (!RoleplaySetting.IsActive)
+    {
+      AddQuest(TheramoreQuest);
+    }
 
     AddQuest(crystalGolem);
     AddQuest(fallenGuardian);

@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Paths;
+using MacroTools.Quests;
 using MacroTools.WorldEvents;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.Druids.Paths;
@@ -16,6 +17,8 @@ using WarcraftLegacies.Source.Factions.Kultiras.Paths;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Legion.Paths;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
+using WarcraftLegacies.Source.Factions.Lordaeron;
+using WarcraftLegacies.Source.Factions.Lordaeron.Quests;
 using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Paths;
 using WarcraftLegacies.Source.Factions.Scourge;
@@ -87,6 +90,23 @@ public static class RoleplaySetting
     }
 
     FactionManager.FactionRegistered += AddRoleplayPaths;
+    RemoveReplacedQuests();
+  }
+
+  /// <summary>Removes the quests that Roleplay paths replace.</summary>
+  private static void RemoveReplacedQuests()
+  {
+    if (FactionManager.TryGetFactionByType<LordaeronFaction>(out var lordaeron))
+    {
+      RemoveQuest(lordaeron, lordaeron.GetQuestByType<QuestScarletCrusade>(), UPGRADE_R0XZ_THE_SCARLET_CRUSADE_LORDAERON_SCARLET);
+    }
+  }
+
+  /// <summary>Hides a quest and stops it progressing, and removes the research that starts it.</summary>
+  private static void RemoveQuest(Faction faction, QuestData quest, int researchId)
+  {
+    faction.RemoveQuest(quest);
+    faction.SetObjectLimit(researchId, 0);
   }
 
   private static void SetupStartingTeams()
