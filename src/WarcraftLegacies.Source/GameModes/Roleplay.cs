@@ -16,7 +16,7 @@ public sealed class Roleplay : IGameMode
   public void OnChoose()
   {
     RoleplaySetting.Apply();
-    this.SetupControlPointVictory();
+    this.SetupLastTeamStandingVictory();
   }
 
   /// <inheritdoc />

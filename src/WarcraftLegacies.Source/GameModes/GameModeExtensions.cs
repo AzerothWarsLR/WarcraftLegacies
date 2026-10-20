@@ -41,4 +41,11 @@ public static class GameModeExtensions
     Hint.Register(new Hint(() => Loc.Format("Win the game by capturing {cps} Control Points.", ("{cps}", ControlPointVictory.CpsVictory.ToString()))));
     return gameMode;
   }
+
+  public static IGameMode SetupLastTeamStandingVictory(this IGameMode gameMode)
+  {
+    LastTeamStandingVictory.Setup();
+    Hint.Register(new Hint(() => Loc.Get("Win the game by being the last team standing. Allied teams win together.")));
+    return gameMode;
+  }
 }
