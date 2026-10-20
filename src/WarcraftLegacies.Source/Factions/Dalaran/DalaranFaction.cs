@@ -23,7 +23,7 @@ using WarcraftLegacies.Source.Shared.Quests;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran;
 
-public sealed class DalaranFaction : Faction, IHasRoleplayPaths
+public sealed class DalaranFaction : Faction, IHasRoleplayPaths, IHasRoleplayIntro
 {
   private readonly List<unit> _dalaranProtectors;
 
@@ -79,6 +79,11 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths
       AddPath(new PathGilneasGreymaneWall(gilneasTransformation));
     }
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the wise {faction}.\n\nThe magi of the Violet Citadel have long watched over the north, and of late their divinations have grown dark. A plague stirs in Lordaeron, and something far older stirs behind it.\n\nThe Plague of Undeath and the invasion of the Burning Legion are coming. Stand with Lordaeron and Quel'Thalas, your allies of the North Alliance, and guard the Book of Medivh, for the Legion will come for it. In time, Stormwind, Ironforge and Kul Tiras of the South Alliance may march north to aid you.\n\nShould the north be lost, Jaina may lead your people west across the sea, and Gilneas waits behind its great wall.\n\nYour mages are the finest in Azeroth. Be sure to utilize them alongside your heroes to turn the tide of battle.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Council of Dalaran")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

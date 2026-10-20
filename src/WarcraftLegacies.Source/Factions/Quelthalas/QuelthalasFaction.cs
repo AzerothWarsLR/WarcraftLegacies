@@ -23,7 +23,7 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas;
 
-public sealed class QuelthalasFaction : Faction, IHasRoleplayPaths
+public sealed class QuelthalasFaction : Faction, IHasRoleplayPaths, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public QuelthalasFaction() : base("Quel'thalas",
@@ -52,6 +52,11 @@ public sealed class QuelthalasFaction : Faction, IHasRoleplayPaths
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
     ProcessObjectInfo(QuelthalasObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the proud {faction}.\n\nFor seven thousand years the high elves have guarded the Sunwell behind the runestones of Quel'Thalas. The trolls of Zul'Aman still lurk in the forests, hungry for revenge, but a far greater darkness is gathering to the south.\n\nThe Plague of Undeath is imminent. Stand with Lordaeron and Dalaran, your allies of the North Alliance, and be ready to march south when the Scourge comes.\n\nGuard the Sunwell above all else. Should it fall, your people will face a hard choice about where their future lies.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Quel'Thalas")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

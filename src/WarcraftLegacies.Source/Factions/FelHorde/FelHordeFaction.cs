@@ -5,13 +5,14 @@ using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.FelHorde.Mechanics;
 using WarcraftLegacies.Source.Factions.FelHorde.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
 
 namespace WarcraftLegacies.Source.Factions.FelHorde;
 
-public sealed class FelHordeFaction : Faction
+public sealed class FelHordeFaction : Faction, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public FelHordeFaction()
@@ -40,6 +41,11 @@ public sealed class FelHordeFaction : Faction
     };
     ProcessObjectInfo(FelHordeObjectInfo.GetAllObjectInfos());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the bloodthirsty {faction}.\n\nThe orcs of Outland have drunk deep of demon blood, and they thirst for the war they lost on Azeroth. Magtheridon rules them from Hellfire Citadel, and his clans are eager for slaughter.\n\nThe Dark Portal will open soon. Gather your hordes and pour into Azeroth, where Stormwind, Ironforge and Kul Tiras of the South Alliance are waiting to stop you, so prepare for a very hard breakout.\n\nIllidan and his followers covet Outland. Should Magtheridon fall to them, the clans may be forced to bow to a new master.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Fel Horde")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

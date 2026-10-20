@@ -16,7 +16,7 @@ using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
 namespace WarcraftLegacies.Source.Factions.Ironforge;
 
-public sealed class IronforgeFaction : Faction, IHasRoleplayPaths
+public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public IronforgeFaction()
@@ -77,6 +77,11 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths
       }
     });
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the long-enduring {faction}.\n\nDeep within Khaz Modan, the forges of Ironforge burn brighter than ever, and the Bronzebeards are as stubborn as the mountain itself.\n\nThe Fel Horde is gathering beyond the Dark Portal. Muster your forces and aid Stormwind and Kul Tiras, your allies of the South Alliance, or risk losing them.\n\nYet the dwarves are a fractured people. The Dark Iron stir beneath Blackrock Mountain, and the Wildhammer keep their own counsel at Aerie Peak. Should the Great Forge ever go cold, one of them may claim what is left of the dwarves.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Ironforge")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

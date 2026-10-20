@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
+using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.Save;
 using WCSharp.Shared;
@@ -42,7 +43,7 @@ public static class DisplayIntroText
         {
           foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
           {
-            player.DisplayTextTo(player.GetPlayerData().Faction?.IntroText?.Invoke() ?? "");
+            player.DisplayTextTo(GetIntroText(player.GetPlayerData().Faction));
           }
         });
 
@@ -53,5 +54,20 @@ public static class DisplayIntroText
         Console.WriteLine($"Error displaying intro text {ex}");
       }
     });
+  }
+
+  private static string GetIntroText(Faction? faction)
+  {
+    if (faction == null)
+    {
+      return "";
+    }
+
+    if (RoleplaySetting.IsActive && faction is IHasRoleplayIntro roleplayIntro)
+    {
+      return roleplayIntro.RoleplayIntroText;
+    }
+
+    return faction.IntroText?.Invoke() ?? "";
   }
 }

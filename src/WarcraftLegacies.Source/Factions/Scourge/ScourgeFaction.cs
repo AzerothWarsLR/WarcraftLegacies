@@ -15,6 +15,7 @@ using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics.Blight;
 using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -25,7 +26,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Scourge;
 
-public sealed class ScourgeFaction : Faction
+public sealed class ScourgeFaction : Faction, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public ScourgeFaction()
@@ -60,6 +61,11 @@ public sealed class ScourgeFaction : Faction
 
     ProcessObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the horrific {faction}.\n\nDeep within Icecrown, the Lich King has bound the dead of Northrend into an army that knows neither fear nor fatigue. The living lands to the south are ripe for the harvest.\n\nCoordinate with the Burning Legion and the Fel Horde, your allies, and unleash the Plague of Undeath to sweep Lordaeron away. When the Plague strikes, you will have a choice of where to instantly transport all your military units.\n\nThe Lich King serves the Legion for now, but Ner'zhul has never forgotten what his masters did to him.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Undead Scourge")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

@@ -24,7 +24,7 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron;
 
-public sealed class LordaeronFaction : Faction, IHasRoleplayPaths
+public sealed class LordaeronFaction : Faction, IHasRoleplayPaths, IHasRoleplayIntro
 {
   private ScarletCrusadeTransformation? _scarletCrusadeTransformation;
 
@@ -55,6 +55,11 @@ public sealed class LordaeronFaction : Faction, IHasRoleplayPaths
     RegisterFactionDependentInitializer<ScourgeFaction, LegionFaction>(RegisterScourgeLegionDialogue);
     ProcessObjectInfo(LordaeronObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the great {faction}.\n\nThe greatest of the human kingdoms stands at the height of its power, yet a sickness is spreading through the northern villages, and the dead no longer stay buried.\n\nThe Plague of Undeath is imminent. Fortify your cities and stand with Dalaran and Quel'Thalas, your allies of the North Alliance, for the Scourge will strike at all three of you.\n\nIf you survive the Plague, sail to the frozen wasteland of Northrend and take the fight to the Lich King. Should the kingdom fall, its survivors may yet choose a darker road.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Lordaeron")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()
