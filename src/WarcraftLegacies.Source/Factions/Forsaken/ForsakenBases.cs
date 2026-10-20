@@ -3,7 +3,9 @@ using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
+using MacroTools.Shared;
 using MacroTools.Utils;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Shared;
@@ -16,26 +18,15 @@ public sealed class ForsakenBases
 {
   private const float NorthrendBaseRadius = 1200;
 
-  private static readonly Dictionary<int, int> ForsakenEquivalents = new()
-  {
-    { UNIT_UNPL_NECROPOLIS_SCOURGE_T1, UNIT_H089_DARK_MANSION_FORSAKEN },
-    { UNIT_UNP1_HALLS_OF_THE_DEAD_SCOURGE_T2, UNIT_H08A_GRIM_ESTATE_FORSAKEN },
-    { UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, UNIT_H08B_HAUNTED_CASTLE_FORSAKEN },
-    { UNIT_UZIG_ZIGGURAT_SCOURGE_FARM, UNIT_H08C_GRAVE_FORSAKEN },
-    { UNIT_UZG1_SPIRIT_TOWER_SCOURGE_TOWER, UNIT_H08E_PLAGUE_TOWER_FORSAKEN },
-    { UNIT_UZG2_NERUBIAN_TOWER_SCOURGE_TOWER, UNIT_H08E_PLAGUE_TOWER_FORSAKEN },
-    { UNIT_U002_IMPROVED_SPIRIT_TOWER_SCOURGE_TOWER, UNIT_H08F_IMPROVED_PLAGUE_TOWER_FORSAKEN },
-    { UNIT_U003_IMPROVED_NERUBIAN_TOWER_SCOURGE_TOWER, UNIT_H08F_IMPROVED_PLAGUE_TOWER_FORSAKEN },
-    { UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR, UNIT_U010_ALTAR_OF_THE_QUEEN_FORSAKEN },
-    { UNIT_USEP_CRYPT_SCOURGE_BARRACKS, UNIT_U011_PLAGUETORIUM_FORSAKEN },
-    { UNIT_UGRV_GRAVEYARD_SCOURGE_RESEARCH, UNIT_U01J_GRAVEYARD_FORSAKEN },
-    { UNIT_USLH_SLAUGHTERHOUSE_SCOURGE_SPECIALIST, UNIT_U014_LABORATORY_FORSAKEN },
-    { UNIT_UTOD_TEMPLE_OF_THE_DAMNED_SCOURGE_MAGIC, UNIT_U016_FORBIDDEN_ARCHIVE_FORSAKEN },
-    { UNIT_UBON_BONEYARD_SCOURGE_SIEGE, UNIT_U01W_ROYAL_SEPULCRUM_FORSAKEN },
-    { UNIT_UTOM_TOMB_OF_RELICS_SCOURGE_SHOP, UNIT_U017_FORSAKEN_DEN_FORSAKEN },
-    { UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD, UNIT_U01A_HAUNTED_HARBOR_FORSAKEN },
-    { UNIT_UACO_ACOLYTE_SCOURGE_WORKER, UNIT_U01K_ACOLYTE_FORSAKEN_CULT_WORKER }
-  };
+  private static Dictionary<int, int> ForsakenEquivalents => UnitEquivalents.Pair(
+    ScourgeObjectInfo.GetAllObjectLimits(), ForsakenObjectInfo.GetAllObjectLimits(), new Dictionary<int, int>
+    {
+      { UNIT_UZG1_SPIRIT_TOWER_SCOURGE_TOWER, UNIT_H08E_PLAGUE_TOWER_FORSAKEN },
+      { UNIT_UZG2_NERUBIAN_TOWER_SCOURGE_TOWER, UNIT_H08E_PLAGUE_TOWER_FORSAKEN },
+      { UNIT_U002_IMPROVED_SPIRIT_TOWER_SCOURGE_TOWER, UNIT_H08F_IMPROVED_PLAGUE_TOWER_FORSAKEN },
+      { UNIT_U003_IMPROVED_NERUBIAN_TOWER_SCOURGE_TOWER, UNIT_H08F_IMPROVED_PLAGUE_TOWER_FORSAKEN },
+      { UNIT_UBON_BONEYARD_SCOURGE_SIEGE, UNIT_U01W_ROYAL_SEPULCRUM_FORSAKEN }
+    });
 
   private readonly player _forsaken;
   private readonly string _palaceName = AllLegends.Lordaeron.CapitalPalace.Unit.Name;
@@ -49,14 +40,15 @@ public sealed class ForsakenBases
   /// <summary>Swaps the Forsaken's Scourge buildings and acolytes for their own.</summary>
   public void ConvertScourgeBuildings()
   {
+    var forsakenEquivalents = ForsakenEquivalents;
     foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(_forsaken))
     {
-      if (!whichUnit.Alive || !whichUnit.IsRemovable())
+      if (!whichUnit.Alive || !whichUnit.IsRemovable() || !IsBuildingOrWorker(whichUnit))
       {
         continue;
       }
 
-      if (!ForsakenEquivalents.TryGetValue(whichUnit.UnitType, out var forsakenType))
+      if (!forsakenEquivalents.TryGetValue(whichUnit.UnitType, out var forsakenType))
       {
         continue;
       }
@@ -126,6 +118,9 @@ public sealed class ForsakenBases
       }
     }
   }
+
+  private static bool IsBuildingOrWorker(unit whichUnit) =>
+    whichUnit.IsUnitType(unittype.Structure) || whichUnit.IsUnitType(unittype.Peon);
 
   private static player GetScourgePlayer() =>
     FactionManager.TryGetFactionByType<ScourgeFaction>(out var scourge) && scourge.Player != null

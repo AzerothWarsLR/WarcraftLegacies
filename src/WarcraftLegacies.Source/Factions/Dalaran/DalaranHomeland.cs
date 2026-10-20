@@ -3,6 +3,8 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
+using MacroTools.Shared;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Dalaran.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron;
 using WarcraftLegacies.Source.Factions.Quelthalas;
@@ -15,45 +17,20 @@ namespace WarcraftLegacies.Source.Factions.Dalaran;
 /// <summary>What happens to Dalaran's lands when Dalaran leaves them behind for a new faction.</summary>
 public static class DalaranHomeland
 {
-  private static readonly Dictionary<int, int> _lordaeronEquivalents = new()
+  private static readonly Dictionary<int, int> _landmarks = new()
   {
-    { UNIT_H065_REFUGE_DALARAN_T1, UNIT_HTOW_TOWN_HALL_LORDAERON_T1 },
-    { UNIT_H066_CONCLAVE_DALARAN_T2, UNIT_HKEE_KEEP_LORDAERON_T2 },
-    { UNIT_H068_OBSERVATORY_DALARAN_T3, UNIT_HCAS_CASTLE_LORDAERON_T3 },
-    { UNIT_H063_ARCANE_WELL_DALARAN_FARM, UNIT_HHOU_FARM_LORDAERON_FARM },
-    { UNIT_H044_ALTAR_OF_KNOWLEDGE_DALARAN_ALTAR, UNIT_HALT_ALTAR_OF_KINGS_LORDAERON_ALTAR },
-    { UNIT_H069_MILITARY_QUARTER_DALARAN_BARRACKS, UNIT_HBAR_BARRACKS_LORDAERON_BARRACKS },
-    { UNIT_H02N_LUMBER_MILL_DALARAN_RESEARCH, UNIT_HBLA_BLACKSMITH_LORDAERON_RESEARCH },
-    { UNIT_H036_ARCANE_SANCTUARY_DALARAN_MAGIC, UNIT_H035_ARCANE_STUDY_LORDAERON_MAGIC },
-    { UNIT_HVLT_ARCANE_VAULT_DALARAN_SHOP, UNIT_NMRK_MARKETPLACE_LORDAERON_SHOP },
-    { UNIT_H076_SHIPYARD_DALARAN_SHIPYARD, UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD },
-    { UNIT_H067_MANAFORGE_DALARAN_SPECIALIST, UNIT_H094_SIEGE_WORKSHOP_LORDAERON_SIEGE },
-    { UNIT_H078_SCOUT_TOWER_DALARAN_TOWER, UNIT_HWTW_SCOUT_TOWER_LORDAERON_TOWER },
-    { UNIT_H079_ARCANE_TOWER_DALARAN_TOWER, UNIT_HGTW_GUARD_TOWER_LORDAERON_TOWER },
-    { UNIT_H07A_IMPROVED_ARCANE_TOWER_DALARAN_TOWER, UNIT_H006_IMPROVED_GUARD_TOWER_LORDAERON_TOWER },
-    { UNIT_NDGT_KIRIN_TOR_TOWER_DALARAN_TOWER, UNIT_HCTW_CANNON_TOWER_LORDAERON_TOWER },
-    { UNIT_N004_IMPROVED_KIRIN_TOR_TOWER_DALARAN_TOWER, UNIT_H007_IMPROVED_CANNON_TOWER_LORDAERON_TOWER }
+    { UNIT_H00I_WINDMILL_LORDAERON_OTHER, UnitEquivalents.Keep },
+    { UNIT_H05P_DALARAN_BUILDING_DALARAN_OTHER_1, UnitEquivalents.Keep },
+    { UNIT_H05Q_DALARAN_BUILDING_DALARAN_OTHER_2, UnitEquivalents.Keep },
+    { UNIT_H05O_DALARAN_BUILDING_DALARAN_OTHER_3, UnitEquivalents.Keep },
+    { UNIT_N03G_VIOLET_TOWER_DALARAN, UnitEquivalents.Keep }
   };
 
-  private static readonly Dictionary<int, int> _quelthalasEquivalents = new()
-  {
-    { UNIT_H065_REFUGE_DALARAN_T1, UNIT_H033_STEADING_QUELTHALAS_T1 },
-    { UNIT_H066_CONCLAVE_DALARAN_T2, UNIT_H03S_MANSION_QUELTHALAS_T2 },
-    { UNIT_H068_OBSERVATORY_DALARAN_T3, UNIT_H03T_PALACE_QUELTHALAS_T3 },
-    { UNIT_H063_ARCANE_WELL_DALARAN_FARM, UNIT_NEFM_RESIDENCE_QUELTHALAS },
-    { UNIT_H044_ALTAR_OF_KNOWLEDGE_DALARAN_ALTAR, UNIT_H01H_ALTAR_OF_PROWESS_QUELTHALAS_ALTAR },
-    { UNIT_H069_MILITARY_QUARTER_DALARAN_BARRACKS, UNIT_NHEB_CANTONMENT_QUELTHALAS_BARRACKS },
-    { UNIT_H02N_LUMBER_MILL_DALARAN_RESEARCH, UNIT_H02Y_ARTISAN_S_HALL_QUELTHALAS_RESEARCH },
-    { UNIT_H036_ARCANE_SANCTUARY_DALARAN_MAGIC, UNIT_H034_ARCANE_SANCTUM_QUELTHALAS_MAGIC },
-    { UNIT_HVLT_ARCANE_VAULT_DALARAN_SHOP, UNIT_H04V_ARCANE_VAULT_QUELTHALAS_SHOP },
-    { UNIT_H076_SHIPYARD_DALARAN_SHIPYARD, UNIT_H077_SHIPYARD_QUELTHALAS_SHIPYARD },
-    { UNIT_H067_MANAFORGE_DALARAN_SPECIALIST, UNIT_H03J_ACADEMY_QUELTHALAS_SPECIALIST },
-    { UNIT_H078_SCOUT_TOWER_DALARAN_TOWER, UNIT_H073_SCOUT_TOWER_QUELTHALAS_TOWER },
-    { UNIT_H079_ARCANE_TOWER_DALARAN_TOWER, UNIT_H074_ARCANE_TOWER_QUELTHALAS_TOWER },
-    { UNIT_H07A_IMPROVED_ARCANE_TOWER_DALARAN_TOWER, UNIT_H075_IMPROVED_ARCANE_TOWER_QUELTHALAS_TOWER },
-    { UNIT_NDGT_KIRIN_TOR_TOWER_DALARAN_TOWER, UNIT_NEGT_SUN_TOWER },
-    { UNIT_N004_IMPROVED_KIRIN_TOR_TOWER_DALARAN_TOWER, UNIT_N003_IMPROVED_SUN_TOWER_QUELTHALAS_TOWER }
-  };
+  private static Dictionary<int, int> LordaeronEquivalents => UnitEquivalents.Pair(
+    DalaranObjectInfo.GetAllObjectLimits(), LordaeronObjectInfo.GetAllObjectLimits(), _landmarks);
+
+  private static Dictionary<int, int> QuelthalasEquivalents => UnitEquivalents.Pair(
+    DalaranObjectInfo.GetAllObjectLimits(), QuelthalasObjectInfo.GetAllObjectLimits(), _landmarks);
 
   /// <summary>
   /// Makes <paramref name="heir"/> the new keeper of the Book of Medivh, able to take it from its pedestal without
@@ -104,13 +81,13 @@ public static class DalaranHomeland
   {
     if (FactionManager.TryGetFactionByType<LordaeronFaction>(out var lordaeron) && IsStillInGame(lordaeron))
     {
-      equivalents = _lordaeronEquivalents;
+      equivalents = LordaeronEquivalents;
       return lordaeron.Player!;
     }
 
     if (FactionManager.TryGetFactionByType<QuelthalasFaction>(out var quelthalas) && IsStillInGame(quelthalas))
     {
-      equivalents = _quelthalasEquivalents;
+      equivalents = QuelthalasEquivalents;
       return quelthalas.Player!;
     }
 
