@@ -6,7 +6,7 @@ using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Factions.Sentinels.Powers;
 
-/// <summary>Strengthens all of a player's units, and makes them deal even more damage to Illidan's team.</summary>
+/// <summary>Strengthens the Wardens, most of all against Illidan's team.</summary>
 public sealed class HuntForIllidan : Power
 {
   private readonly Faction _quarry;
@@ -14,9 +14,6 @@ public sealed class HuntForIllidan : Power
   private readonly float _reduction;
   private readonly float _quarryBonus;
 
-  /// <param name="quarry">The faction whose team takes the extra damage.</param>
-  /// <param name="bonus">The damage bonus for all units, and the health bonus the damage reduction is worth, as a fraction.</param>
-  /// <param name="quarryBonus">The extra damage bonus against the quarry's team, as a fraction.</param>
   public HuntForIllidan(Faction quarry, float bonus, float quarryBonus)
   {
     _quarry = quarry;

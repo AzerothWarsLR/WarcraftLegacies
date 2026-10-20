@@ -61,7 +61,7 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths
     ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
   }
 
-  /// <summary>The quest that moves Dalaran to Theramore. In Roleplay mode it is replaced by a path and never added.</summary>
+  /// <summary>The quest that moves Dalaran to Theramore, which Roleplay mode replaces with a path.</summary>
   public QuestTheramore? TheramoreQuest { get; private set; }
 
   /// <inheritdoc />

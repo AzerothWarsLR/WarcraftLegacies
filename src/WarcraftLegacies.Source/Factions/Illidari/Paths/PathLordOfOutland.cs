@@ -29,7 +29,7 @@ public sealed class PathLordOfOutland : FactionPath
   }
 
   /// <summary>Completes once this path is taken.</summary>
-  public ObjectiveTriggered Taken { get; } = new("Become the Lord of Outland");
+  public ObjectiveTriggered Taken { get; } = new("Claim Magtheridon's throne as Lord of Outland");
 
   /// <inheritdoc />
   protected override void OnTaken(Faction faction)

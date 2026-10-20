@@ -4,9 +4,7 @@ using MacroTools.GameTime;
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd;
 
-/// <summary>
-/// The last side with undefeated factions wins. Teams in the same <see cref="Bloc"/> count as one side.
-/// </summary>
+/// <summary>The last side with undefeated factions wins, with teams in the same <see cref="Bloc"/> counting as one side.</summary>
 public static class LastTeamStandingVictory
 {
   private static readonly HashSet<Faction> _watchedFactions = new();

@@ -43,7 +43,7 @@ public sealed class QuestBlackTemple : QuestData
     AddObjective(new ObjectiveSelfExists());
   }
 
-  /// <summary>Initializes a new instance of the <see cref="QuestBlackTemple"/> class, completed by taking the Lord of Outland path in Roleplay mode.</summary>
+  /// <summary>Initializes a new instance of the <see cref="QuestBlackTemple"/> class, completed by the Lord of Outland path.</summary>
   public QuestBlackTemple(ObjectiveTriggered lordOfOutlandTaken) : this()
   {
     AddObjective(lordOfOutlandTaken);
