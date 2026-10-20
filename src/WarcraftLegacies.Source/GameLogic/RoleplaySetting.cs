@@ -238,6 +238,7 @@ public static class RoleplaySetting
     var rend = AllLegends.FelHorde.Rend;
     rend.AddUnitDependency(blackrockSpire.Unit);
     felHorde.AddQuest(new QuestDarkHorde(AllLegends.Stormwind.StormwindKeep, blackrockSpire, rend));
+    new FelBloodedFury(felHorde);
 
     var hellfireCitadel = AllLegends.FelHorde.HellfireCitadel.Unit;
     var magtheridon = AllLegends.FelHorde.Magtheridon;
