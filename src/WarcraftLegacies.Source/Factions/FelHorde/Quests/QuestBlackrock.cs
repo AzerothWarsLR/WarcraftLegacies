@@ -40,6 +40,18 @@ public sealed class QuestBlackrock : QuestData
     _rescueUnits2 = rescueRect2.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
   }
 
+  /// <summary>Whether the outpost near the Dark Portal is held back until the Dark Portal opens.</summary>
+  public bool OutpostWaitsForDarkPortal { get; set; }
+
+  /// <summary>Gives the held back outpost near the Dark Portal to <paramref name="whichPlayer"/>.</summary>
+  public void GiveDarkPortalOutpostTo(player whichPlayer)
+  {
+    if (OutpostWaitsForDarkPortal && Progress == QuestProgress.Complete)
+    {
+      whichPlayer.RescueGroup(_rescueUnits2);
+    }
+  }
+
   /// <inheritdoc />
   protected override string RewardDescription =>
     "Control of all units in Blackrock Citadel, a small outpost near the Dark Portal and enable Dal'rend Blackhand to be trained at the altar";
@@ -70,7 +82,10 @@ public sealed class QuestBlackrock : QuestData
     }
 
     completingFaction.Player.RescueGroup(_rescueUnits1);
-    completingFaction.Player.RescueGroup(_rescueUnits2);
+    if (!OutpostWaitsForDarkPortal)
+    {
+      completingFaction.Player.RescueGroup(_rescueUnits2);
+    }
 
     completingFaction.Player.PingMinimapSimple(12400.0f, -11800.0f, 3.0f);
   }

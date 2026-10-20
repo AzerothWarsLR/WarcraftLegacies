@@ -33,6 +33,9 @@ public abstract class WorldEvent
   /// <summary>What happens when the event fires.</summary>
   public string Description { get; init; } = "";
 
+  /// <summary>The earliest turn the event can happen on, or 0 if it doesn't depend on the turn.</summary>
+  public int EarliestTurn { get; init; }
+
   /// <summary>How many seconds of warning everyone gets between the requirements being met and the event happening.</summary>
   public float WarningDuration { get; init; }
 

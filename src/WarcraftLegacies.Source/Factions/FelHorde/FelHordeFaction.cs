@@ -61,7 +61,8 @@ public sealed class FelHordeFaction : Faction
   {
     var questHellfireCitadel = AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock));
     AddQuest(new QuestRuinsofShadowmoon(Regions.ShadowmoonBaseUnlock));
-    AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, Regions.DarkPortalUnlock, new[] { questHellfireCitadel }));
+    var questBlackrock = new QuestBlackrock(Regions.BlackrockUnlock, Regions.DarkPortalUnlock, new[] { questHellfireCitadel });
+    AddQuest(questBlackrock);
     AddQuest(new QuestFelHordeKillIronforge(AllLegends.Ironforge.GreatForge));
     AddQuest(new QuestFelHordeKillStormwind(AllLegends.Stormwind.StormwindKeep));
     AddQuest(new QuestGuldansLegacy());
@@ -71,7 +72,10 @@ public sealed class FelHordeFaction : Faction
       AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center),
       AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
       AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
-      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
+      AllPreplacedWidgets.Units.GetClosest(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center))
+    {
+      HandsOverOutpostOf = questBlackrock
+    });
     AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
   }
 }

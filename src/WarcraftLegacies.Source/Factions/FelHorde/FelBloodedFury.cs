@@ -5,7 +5,7 @@ using WarcraftLegacies.Source.Shared.Powers;
 
 namespace WarcraftLegacies.Source.Factions.FelHorde;
 
-/// <summary>Strengthens the Fel Horde while it fights for the Legion in Roleplay mode, cut off from the Illidari.</summary>
+/// <summary>Strengthens the Fel Horde while it fights for the Burning Legion.</summary>
 public sealed class FelBloodedFury
 {
   private const float Bonus = 0.1f;
@@ -15,7 +15,7 @@ public sealed class FelBloodedFury
   {
     Name = "Fel-blooded Fury",
     IconName = "BloodLust",
-    DescriptionTemplate = "Demon blood burns in the veins of the Fel Horde while it serves the Legion. Your units deal {bonus}% more damage and take {reduction}% less damage. Lost if the Fel Horde leaves the Burning Legion."
+    DescriptionTemplate = "Demon blood burns in the veins of the Fel Horde while it serves the Legion. Your units deal {bonus}% more damage and take {reduction}% less damage. The fury fades should the Fel Horde ever turn from the Legion."
   };
 
   private bool _hasPower;

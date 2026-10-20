@@ -24,6 +24,7 @@ using WarcraftLegacies.Source.Factions.OrcishHorde.Paths;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Scourge.Events;
 using WarcraftLegacies.Source.Factions.Scourge.Paths;
+using WarcraftLegacies.Source.Factions.Scourge.Quests;
 using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Sentinels.Paths;
 using WarcraftLegacies.Source.Factions.TaurenTribes;
@@ -44,6 +45,9 @@ public static class RoleplaySetting
   private const int TeamCap = 5;
   private const int BlocCap = 6;
   private const int FelHordePlayer = 6;
+  private const int DarkPortalEarliestTurn = 5;
+  private const int DarkPortalForcedTurn = 7;
+  private const int PlagueEarliestTurn = 3;
 
   private static readonly HashSet<Faction> _factionsWithPaths = new();
   private static bool _illidariPathsSetUp;
@@ -82,6 +86,7 @@ public static class RoleplaySetting
     SetupBloodOfMannoroth();
     SetupNordrassilsSacrifice();
     SetupFelHorde();
+    SetupPlagueEvent();
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
     foreach (var faction in FactionManager.GetAllFactions())
@@ -93,7 +98,6 @@ public static class RoleplaySetting
     RemoveReplacedQuests();
   }
 
-  /// <summary>Removes the quests that Roleplay paths replace.</summary>
   private static void RemoveReplacedQuests()
   {
     if (FactionManager.TryGetFactionByType<LordaeronFaction>(out var lordaeron))
@@ -102,7 +106,6 @@ public static class RoleplaySetting
     }
   }
 
-  /// <summary>Hides a quest and stops it progressing, and removes the research that starts it.</summary>
   private static void RemoveQuest(Faction faction, QuestData quest, int researchId)
   {
     faction.RemoveQuest(quest);
@@ -259,6 +262,8 @@ public static class RoleplaySetting
     rend.AddUnitDependency(blackrockSpire.Unit);
     felHorde.AddQuest(new QuestDarkHorde(AllLegends.Stormwind.StormwindKeep, blackrockSpire, rend));
     new FelBloodedFury(felHorde);
+    felHorde.GetQuestByType<QuestBlackrock>().OutpostWaitsForDarkPortal = true;
+    SetupDarkPortal(felHorde);
 
     var hellfireCitadel = AllLegends.FelHorde.HellfireCitadel.Unit;
     var magtheridon = AllLegends.FelHorde.Magtheridon;
@@ -266,6 +271,45 @@ public static class RoleplaySetting
     {
       magtheridon.AddUnitDependency(hellfireCitadel);
       ChainedMagtheridon = new ChainedMagtheridon(felHorde, magtheridon, new Point(hellfireCitadel.X, hellfireCitadel.Y));
+    }
+  }
+
+  private static void SetupDarkPortal(FelHordeFaction felHorde)
+  {
+    var normalDarkPortal = felHorde.GetQuestByType<QuestDarkPortal>();
+    felHorde.RemoveQuest(normalDarkPortal);
+    var darkPortal = normalDarkPortal.WithTurns(DarkPortalEarliestTurn, DarkPortalForcedTurn);
+    darkPortal.Global = false;
+    felHorde.AddQuest(darkPortal);
+    WorldEventManager.Register(new QuestCompletedEvent(felHorde, darkPortal, "The Fel Horde tears open the Dark Portal")
+    {
+      Name = "The Dark Portal Opens",
+      EarliestTurn = DarkPortalEarliestTurn,
+      IconName = "DarkPortal",
+      Description = "The Dark Portal has been torn open once more. The Fel Horde pours out of Outland into the Blasted Lands."
+    });
+  }
+
+  private static void SetupPlagueEvent()
+  {
+    if (!FactionManager.TryGetFactionByType<ScourgeFaction>(out var scourge))
+    {
+      return;
+    }
+
+    foreach (var quest in scourge.GetAllQuests())
+    {
+      if (quest is QuestPlague plague)
+      {
+        plague.Global = false;
+        WorldEventManager.Register(new QuestCompletedEvent(scourge, plague, "The Cult of the Damned unleashes its plague upon Lordaeron")
+        {
+          Name = "The Plague of Undeath",
+          EarliestTurn = PlagueEarliestTurn,
+          IconName = "PlagueBarrel",
+          Description = "The Cult of the Damned has unleashed its plague across Lordaeron. The dead rise in the streets and the Scourge marches south."
+        });
+      }
     }
   }
 

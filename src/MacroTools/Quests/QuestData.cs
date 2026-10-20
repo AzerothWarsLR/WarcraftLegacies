@@ -48,7 +48,7 @@ public abstract class QuestData
   /// <summary>
   ///   If true, completing this quest will broadcast a message to every player.
   /// </summary>
-  protected bool Global { get; init; }
+  public bool Global { get; set; }
 
   public bool SuppressCompletionDisplay { get; set; }
 
