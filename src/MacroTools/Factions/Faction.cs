@@ -35,6 +35,7 @@ public abstract class Faction
   private readonly List<FactionPath> _paths = new();
   private readonly List<Power> _powers = new();
   private readonly Dictionary<string, QuestData> _questsByName = new();
+  private readonly HashSet<QuestData> _hiddenQuests = new();
   private readonly int _undefeatedResearch;
 
   private int _foodMaximum;
@@ -396,6 +397,18 @@ public abstract class Faction
 
     questData.ShowSync();
     return questData;
+  }
+
+  /// <summary>Hides a quest from the quest log while the Faction keeps it.</summary>
+  public void HideQuest(QuestData questData)
+  {
+    _hiddenQuests.Add(questData);
+    if (player.LocalPlayer == Player)
+    {
+      questData.HideLocal();
+    }
+
+    questData.HideSync();
   }
 
   /// <summary>Removes a quest from the Faction, hiding it and ignoring its progress from then on.</summary>
@@ -787,6 +800,11 @@ public abstract class Faction
   {
     foreach (var quest in _questsByName.Values)
     {
+      if (_hiddenQuests.Contains(quest))
+      {
+        continue;
+      }
+
       if (player.LocalPlayer == Player)
       {
         quest.ShowLocal();
