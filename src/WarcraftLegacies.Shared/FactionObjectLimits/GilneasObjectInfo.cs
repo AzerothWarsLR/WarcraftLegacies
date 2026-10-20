@@ -29,8 +29,8 @@ public static class GilneasObjectInfo
 
     yield return new(UNIT_H039_SCOUT_TOWER_GILNEAS_TOWER, Unlimited, Tower);
     yield return new(UNIT_H03A_GUARD_TOWER_GILNEAS_TOWER, Unlimited, Tower);
-    yield return new(UNIT_H03B_CANNON_TOWER_GILNEAS_TOWER, Unlimited, Tower);
     yield return new(UNIT_H052_IMPROVED_GUARD_TOWER_GILNEAS_TOWER, Unlimited, Tower);
+    yield return new(UNIT_H03B_CANNON_TOWER_GILNEAS_TOWER, Unlimited, Tower);
     yield return new(UNIT_H04N_IMPROVED_CANNON_TOWER_GILNEAS_TOWER, Unlimited, Tower);
     yield return new(UNIT_N03G_VIOLET_TOWER_DALARAN, Unlimited, Tower);
 
