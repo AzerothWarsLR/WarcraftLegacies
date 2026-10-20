@@ -89,6 +89,7 @@ public static class GameStartVoteSequence
     if (RoleplaySetting.IsActive)
     {
       TeamHandicaps.Enable();
+      RoleplayStartingBases.Unlock();
     }
 
     GameTimeManager.Start();
