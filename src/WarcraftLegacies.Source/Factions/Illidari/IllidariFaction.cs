@@ -9,9 +9,11 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.FelHorde.Quests;
+using WarcraftLegacies.Source.Factions.Illidari.Paths;
 using WarcraftLegacies.Source.Factions.Illidari.Quests;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
@@ -80,13 +82,29 @@ public sealed class IllidariFaction : Faction
 
     base.OnNotPicked();
   }
+  private PathLordOfOutland? GetLordOfOutlandPath()
+  {
+    foreach (var path in GetAllPaths())
+    {
+      if (path is PathLordOfOutland lordOfOutland)
+      {
+        return lordOfOutland;
+      }
+    }
+
+    return null;
+  }
+
   private void RegisterQuests()
   {
     var flameAndSorrow = new QuestBrokenIsles(AllLegends.Naga.Illidan);
     StartingQuest = flameAndSorrow;
     AddQuest(flameAndSorrow);
 
-    var questBlackTemple = new QuestBlackTemple(flameAndSorrow);
+    var lordOfOutland = RoleplaySetting.IsActive ? GetLordOfOutlandPath() : null;
+    var questBlackTemple = lordOfOutland != null
+      ? new QuestBlackTemple(lordOfOutland.Taken)
+      : new QuestBlackTemple(flameAndSorrow);
     AddQuest(questBlackTemple);
 
 

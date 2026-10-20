@@ -4,6 +4,7 @@ using MacroTools.Localization;
 using MacroTools.Paths;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 
 namespace WarcraftLegacies.Source.Factions.Illidari.Paths;
@@ -27,10 +28,14 @@ public sealed class PathLordOfOutland : FactionPath
     AddRequirement(new ObjectiveLegendKilledBy(magtheridon, "the Illidari", IsIllidari) { ShowsInQuestLog = false });
   }
 
+  /// <summary>Completes once this path is taken.</summary>
+  public ObjectiveTriggered Taken { get; } = new("Become the Lord of Outland");
+
   /// <inheritdoc />
   protected override void OnTaken(Faction faction)
   {
     _chainedMagtheridon.Chain();
+    Taken.Trigger();
     var joinedTeam = OutlandSubmission.Submit(_felHorde, faction);
     TakenOutcome = joinedTeam
       ? Loc.Format("{felHorde} saw Magtheridon chained, joined {illidari}'s team and pays it {percent}% of its income.",
