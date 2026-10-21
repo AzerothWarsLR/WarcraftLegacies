@@ -28,6 +28,7 @@ public sealed class PathCard : Card<FactionPath>
   private readonly Frame _progressBarBorder;
   private readonly Frame _progressBarBack;
   private readonly Frame _progressBarFill;
+  private readonly Frame _progressBarGlass;
 
   /// <inheritdoc />
   public override bool Occupied => Item != null;
@@ -134,7 +135,7 @@ public sealed class PathCard : Card<FactionPath>
     {
       Width = ProgressBarWidth,
       Height = ProgressBarHeight,
-      Texture = @"ReplaceableTextures\TeamColor\TeamColor20.blp"
+      Texture = @"UI\Glues\Loading\LoadBar\Loading-BarBackground.blp"
     };
     _progressBarBack.SetPoint(framepointtype.Center, _progressBarBorder, framepointtype.Center, 0, 0);
     AddFrame(_progressBarBack);
@@ -143,10 +144,17 @@ public sealed class PathCard : Card<FactionPath>
     {
       Width = 0.001f,
       Height = ProgressBarHeight,
-      Texture = @"ReplaceableTextures\TeamColor\TeamColor06.blp"
+      Texture = @"UI\Glues\Loading\LoadBar\Loading-BarFill.blp"
     };
     _progressBarFill.SetPoint(framepointtype.BottomLeft, _progressBarBack, framepointtype.BottomLeft, 0, 0);
     AddFrame(_progressBarFill);
+
+    _progressBarGlass = new Frame("BACKDROP", "PathProgressBarGlass", this)
+    {
+      Texture = @"UI\Glues\Loading\LoadBar\Loading-BarGlass.blp"
+    };
+    _progressBarGlass.SetAllPoints(_progressBarBack);
+    AddFrame(_progressBarGlass);
   }
 
   private void OnAcceptClicked(player whichPlayer)
@@ -208,6 +216,7 @@ public sealed class PathCard : Card<FactionPath>
     _progressBarBorder.Visible = state == PathState.Committing;
     _progressBarBack.Visible = state == PathState.Committing;
     _progressBarFill.Visible = state == PathState.Committing;
+    _progressBarGlass.Visible = state == PathState.Committing;
     _progressBarFill.Width = Math.Max(0.001f, ProgressBarWidth * _path.CommitProgress);
   }
 
