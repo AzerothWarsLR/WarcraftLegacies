@@ -13,6 +13,7 @@ using WarcraftLegacies.Source.Factions.TaurenTribes.Mechanics;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Powers;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes.Researches;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -21,7 +22,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.TaurenTribes;
 
-public sealed class TaurenTribesFaction : Faction
+public sealed class TaurenTribesFaction : Faction, IHasRoleplayIntro
 {
   private const string MassTeleportEffect = @"Abilities\Spells\Human\MassTeleport\MassTeleportCaster.mdl";
   private const string MassTeleportChannelEffect = @"Abilities\Spells\Human\MassTeleport\MassTeleportTo.mdl";
@@ -68,6 +69,11 @@ public sealed class TaurenTribesFaction : Faction
     _mulgoreTarget = new Point(mulgoreControlPoint.X, mulgoreControlPoint.Y);
     ProcessObjectInfo(TaurenTribesObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the wandering {faction}.\n\nDrought and the endless raids of the Centaur have driven the Tauren from their ancestral lands. Train Cairne Bloodhoof to lead the Long March across the Barrens to Thunder Bluff. Guard the kodo caravan every step of the way, for every kodo that reaches the bluffs makes your new home richer.\n\nOnce settled, repay your debt to the orcs, your allies of the Horde. Win over the ogres of Stonemaul and Dunemaul, rally Rokhan and the Darkspear, and march on the Night Elves: break their hold on the Temple of the Moon and claim Nordrassil itself.\n\nShould the orcs ever drink the blood of a demon, the Tribes may need to find new allies.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Tauren Tribes")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

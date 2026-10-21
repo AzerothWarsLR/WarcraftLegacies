@@ -1,0 +1,148 @@
+{
+  "OldId": "Hlgr",
+  "NewId": "H0CZ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A11P,ACds,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 14
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A08M,A085,Aamk,AHhb,A03C"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "uint",
+      "Value": 20
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "upri",
+      "Value": 20
+    },
+    {
+      "Id": "utco",
+      "Value": 10
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroMorgraineBlue.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Militia Commander"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Stromgarde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Knight of Stormwind.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Commander of the Stromgarde Militia"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Danath Trollbane"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Militia Commander"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, exceptional at augmenting nearby troops."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Uther"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Danath Trollbane"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ]
+}

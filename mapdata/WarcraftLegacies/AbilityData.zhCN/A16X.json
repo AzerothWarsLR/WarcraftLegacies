@@ -1,0 +1,20 @@
+{
+  "OldId": "ACct",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "有<A16X,DataA1>% 的几率在一次攻击中造成<A16X,DataB1>倍的总伤害。"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "致命一击"
+    }
+  ],
+  "NewId": "A16X"
+}

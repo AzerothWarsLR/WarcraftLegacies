@@ -15,18 +15,18 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_H01S_TAVERN_IRONFORGE_FARM, Unlimited, Farm);
     yield return new(UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR, Unlimited, Altar);
     yield return new(UNIT_H07C_MUSTERING_HALL_IRONFORGE_BARRACKS, Unlimited, Barracks);
-    yield return new(1751938413, Unlimited, Research); // Lumber Mill
     yield return new(UNIT_H048_FORGEWORKS_IRONFORGE_RESEARCH, Unlimited, Research);
+    yield return new(1751938413, Unlimited, Research); // Lumber Mill
     yield return new(UNIT_H042_PINNACLE_IRONFORGE_MAGIC, Unlimited, Magic);
     yield return new(UNIT_HARM_WORKSHOP_IRONFORGE_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_AIR, Unlimited, FlyingBuilding);
     yield return new(UNIT_H07H_SCOUT_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
-    yield return new(UNIT_H07J_CANNON_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
-    yield return new(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
-    yield return new(UNIT_H07D_SHIPYARD_IRONFORGE_SHIPYARD, Unlimited, Shipyard);
-    yield return new(UNIT_N07U_EXPLORER_S_VAULT_IRONFORGE_SHOP, Unlimited, Shop);
     yield return new(UNIT_H07I_GUARD_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
     yield return new(UNIT_H07L_IMPROVED_GUARD_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
+    yield return new(UNIT_H07D_SHIPYARD_IRONFORGE_SHIPYARD, Unlimited, Shipyard);
+    yield return new(UNIT_N07U_EXPLORER_S_VAULT_IRONFORGE_SHOP, Unlimited, Shop);
+    yield return new(UNIT_H07J_CANNON_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
+    yield return new(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, Unlimited, Tower);
 
     yield return new(UNIT_H019_MASON_IRONFORGE_WORKER, Unlimited, Builder);
     yield return new(UNIT_HRIF_RIFLEMAN_IRONFORGE, Unlimited, Marksman);

@@ -13,6 +13,7 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Mechanics;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 using WarcraftLegacies.Source.Factions.TaurenTribes;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Setup;
@@ -22,7 +23,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.OrcishHorde;
 
-public sealed class OrcishHordeFaction : Faction
+public sealed class OrcishHordeFaction : Faction, IHasRoleplayIntro
 {
   private static readonly Dialogue _trollDialogue09 = new(
     @"Sound\Dialogue\TutorialCampaign\Demo05\D05Troll09.flac",
@@ -78,6 +79,11 @@ public sealed class OrcishHordeFaction : Faction
     ProcessObjectInfo(OrcishHordeObjectInfo.GetAllObjectLimits());
     RegisterFactionDependentInitializer<TaurenTribesFaction>(RegisterTaurenDialogue);
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the battle-hardened {faction}.\n\nYou begin stranded on an island off the coast of Kalimdor, your fleet battered by the crossing. Protect your Great Hall and hold out against the murlocs of the Sea Witch until the ships are seaworthy again. Save all that you can, for whatever survives will sail with you to the mainland.\n\nOnce you reach Durotar, it falls to you to found Orgrimmar, a new home for the Horde.\n\nThe Night Elves will not welcome you. Stand with the Tauren, your allies of the Horde, and drive into Ashenvale. Beware the Fountain of Blood, for Mannoroth's power still calls to your people.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Orcish Horde")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": "ubld",
-      "Value": 30
+      "Value": 20
     },
     {
       "Id": "ucol",
@@ -47,17 +47,17 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": ""
+      "Value": "h07F"
     },
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "R00V,TP42"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": ""
+      "Value": "tp05,n00C,h0AB"
     },
     {
       "Id": "ulum",
@@ -66,7 +66,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aspi"
+      "Value": ""
     },
     {
       "Id": "utco",
@@ -115,6 +115,11 @@
       "Id": "usca",
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "S"
     }
   ]
 }

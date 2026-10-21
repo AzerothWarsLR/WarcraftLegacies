@@ -107,6 +107,8 @@ public sealed class PlayerData
   /// </summary>
   public event Action<PlayerFactionChangeEventArgs>? ChangedFaction;
 
+  private readonly List<PlayerData> _tithePayers = new();
+
   /// <summary>
   /// Fired when the player's income changes.
   /// </summary>
@@ -131,9 +133,44 @@ public sealed class PlayerData
   public int EliminationTurns { get; set; }
 
   /// <summary>
-  ///   Gold per second gained from all sources.
+  ///   Gold per minute gained from all sources, after tithes paid to or received from other players.
   /// </summary>
-  public int TotalIncome => BaseIncome + BonusIncome;
+  public int TotalIncome => BaseIncome + BonusIncome - TitheOut + GetTitheIn();
+
+  /// <summary>The player this player hands part of its income to, if any.</summary>
+  public PlayerData? TitheRecipient { get; private set; }
+
+  /// <summary>The share of this player's income that goes to <see cref="TitheRecipient"/>, from 0 to 1.</summary>
+  public float TitheShare { get; private set; }
+
+  /// <summary>Gold per minute this player hands to <see cref="TitheRecipient"/>.</summary>
+  public int TitheOut => TitheRecipient == null ? 0 : (int)((BaseIncome + BonusIncome) * TitheShare);
+
+  /// <summary>Hands <paramref name="share"/> of this player's income to <paramref name="recipient"/> from now on.</summary>
+  public void PayTithe(PlayerData recipient, float share)
+  {
+    StopTithe();
+    TitheRecipient = recipient;
+    TitheShare = share;
+    recipient._tithePayers.Add(this);
+    NotifyIncomeChanged();
+  }
+
+  /// <summary>Stops this player paying a tithe, if they pay one.</summary>
+  public void StopTithe()
+  {
+    var recipient = TitheRecipient;
+    if (recipient == null)
+    {
+      return;
+    }
+
+    recipient._tithePayers.Remove(this);
+    TitheRecipient = null;
+    TitheShare = 0;
+    IncomeChanged?.Invoke(this);
+    recipient.IncomeChanged?.Invoke(recipient);
+  }
 
   /// <summary>
   ///   Gold per second gained from secondary sources like Forsaken's plagued buildings.
@@ -144,7 +181,7 @@ public sealed class PlayerData
     set
     {
       _bonusGoldPerMinute = value;
-      IncomeChanged?.Invoke(this);
+      NotifyIncomeChanged();
     }
   }
 
@@ -163,7 +200,7 @@ public sealed class PlayerData
       }
 
       _goldPerMinute = value;
-      IncomeChanged?.Invoke(this);
+      NotifyIncomeChanged();
     }
   }
 
@@ -349,6 +386,42 @@ public sealed class PlayerData
 
   public void ModObjectLimit(int id, int limit) =>
     SetObjectLimit(id, GetObjectLimit(id) + limit);
+
+  /// <summary>Pays this player income, handing any tithe they owe to its recipient.</summary>
+  internal void AddIncome(float amount)
+  {
+    var recipient = TitheRecipient;
+    if (recipient == null)
+    {
+      AddFractionalGold(amount);
+      return;
+    }
+
+    var tithe = amount * TitheShare;
+    AddFractionalGold(amount - tithe);
+    recipient.AddFractionalGold(tithe);
+  }
+
+  private int GetTitheIn()
+  {
+    var titheIn = 0;
+    foreach (var payer in _tithePayers)
+    {
+      titheIn += payer.TitheOut;
+    }
+
+    return titheIn;
+  }
+
+  private void NotifyIncomeChanged()
+  {
+    IncomeChanged?.Invoke(this);
+    var recipient = TitheRecipient;
+    if (recipient != null)
+    {
+      recipient.IncomeChanged?.Invoke(recipient);
+    }
+  }
 
   /// <summary>
   /// Adds a fractional amount of gold to the player.

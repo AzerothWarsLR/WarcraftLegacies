@@ -14,6 +14,7 @@ public sealed class ScarletCrusadeFaction : Faction
     "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
+    NameTakesArticle = true;
     ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_SCARLET;
     StartingGold = new StartingGold
     {

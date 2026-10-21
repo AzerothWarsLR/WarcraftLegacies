@@ -17,7 +17,7 @@ public static class SunfuryObjectInfo
     yield return new(UNIT_H0C9_TRAINING_QUARTER_SUNFURY_BARRACKS, Unlimited, Barracks);
     yield return new(UNIT_H0CB_LYCEUM_ARCANUM_SUNFURY_MAGIC, Unlimited, Magic);
     yield return new(UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST, Unlimited, Specialist);
-    yield return new(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE, Unlimited, Specialist);
+    yield return new(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE, Unlimited, SiegeWorkshop);
     yield return new(UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR, Unlimited, Altar);
     yield return new(UNIT_H0CC_SHAPER_S_HALL_SUNFURY_SHOP, Unlimited, Shop);
     yield return new(UNIT_H0CD_SCOUT_TOWER_SUNFURY_TOWER, Unlimited, Tower);

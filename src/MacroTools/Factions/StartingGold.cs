@@ -18,5 +18,5 @@ public sealed class StartingGold
   /// <summary>
   /// Turn at which free gold <see cref="Income"/> ends.
   /// </summary>
-  public required int Turns { get; init; }
+  public required int Turns { get; set; }
 }

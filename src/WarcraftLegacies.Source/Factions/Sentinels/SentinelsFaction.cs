@@ -12,6 +12,7 @@ using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Sentinels.Powers;
 using WarcraftLegacies.Source.Factions.Sentinels.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -22,7 +23,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Sentinels;
 
-public sealed class SentinelsFaction : Faction
+public sealed class SentinelsFaction : Faction, IHasRoleplayIntro
 {
   private const float NaishaDoubtsDelay = 180;
 
@@ -57,6 +58,11 @@ public sealed class SentinelsFaction : Faction
     RegisterFactionDependentInitializer<LegionFaction>(RegisterLegionDialogue);
     ProcessObjectInfo(SentinelsObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the ever-watchful {faction}.\n\nFor ten thousand years the Sentinels have kept watch over Kalimdor while the druids slept. Across Darkshore, wild creatures gone mad still threaten your borders.\n\nThe orcs of the Horde will soon land on Kalimdor's shores, and the Tauren are already migrating north to join them. The Druids, your allies of the Night Elves, are still waking from their slumber, so until they are ready, the defense of Kalimdor falls to you.\n\nShould the Druids fall, the daughters of Elune may look to the Alliance for help. And should Illidan the Betrayer ever return, Maiev will be waiting.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Sentinels")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

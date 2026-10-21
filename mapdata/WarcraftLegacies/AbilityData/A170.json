@@ -1,0 +1,55 @@
+{
+  "OldId": "Acrs",
+  "NewId": "A170",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(FallenPrince - Fallen Priest)"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R106"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "aubx",
+      "Value": 1
+    },
+    {
+      "Id": "auby",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    }
+  ]
+}

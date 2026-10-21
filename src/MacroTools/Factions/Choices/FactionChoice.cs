@@ -36,4 +36,7 @@ public sealed class FactionChoice : IChoice
 
   /// <summary>If true, can only be chosen if the player has cheats enabled.</summary>
   public bool RequiresCheats { get; init; }
+
+  /// <summary>If true, can't be chosen at all, like an alternative faction that a game mode turns into a path instead.</summary>
+  public bool Disabled { get; init; }
 }

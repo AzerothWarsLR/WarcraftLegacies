@@ -19,9 +19,13 @@ public sealed class QuestConsumeTree : QuestData
   {
     _archimonde = archimonde;
     _druids = druids;
-    AddObjective(new ObjectiveChannelRect(Regions.ArchimondeChannel, "The World Tree", _archimonde, 420, 90, Title));
+    WorldTreeChannel = new ObjectiveChannelRect(Regions.ArchimondeChannel, "The World Tree", _archimonde, 420, 90, Title);
+    AddObjective(WorldTreeChannel);
     Global = true;
   }
+
+  /// <summary>Archimonde's channel at the World Tree.</summary>
+  public ObjectiveChannelRect WorldTreeChannel { get; }
 
   /// <inheritdoc/>
   public override string RewardFlavour =>

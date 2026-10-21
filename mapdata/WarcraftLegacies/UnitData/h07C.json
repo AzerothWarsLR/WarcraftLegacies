@@ -116,6 +116,11 @@
       "Id": "utip",
       "Type": 3,
       "Value": "Build Mustering Hall"
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "o067"
     }
   ]
 }

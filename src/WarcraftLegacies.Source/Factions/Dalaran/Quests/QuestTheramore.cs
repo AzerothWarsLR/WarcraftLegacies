@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.Factions.Dalaran.Quests;
 public sealed class QuestTheramore : QuestData
 {
   private readonly List<unit> _rescueUnits;
+  private bool _theramoreGivenAway;
   private const int RequiredResearchId = UPGRADE_R0A7_ESCAPE_TO_THERAMORE_DALARAN;
 
   /// <summary>
@@ -53,9 +54,27 @@ public sealed class QuestTheramore : QuestData
   protected override string PenaltyDescription =>
     "Gain control of all units at Theramore";
 
+  /// <summary>Gives the hidden city of Theramore to <paramref name="whichPlayer"/> straight away.</summary>
+  public void GiveTheramoreTo(player whichPlayer)
+  {
+    if (_theramoreGivenAway)
+    {
+      return;
+    }
+
+    _theramoreGivenAway = true;
+    whichPlayer.RescueGroup(_rescueUnits);
+  }
+
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
+    if (_theramoreGivenAway)
+    {
+      return;
+    }
+
+    _theramoreGivenAway = true;
     if (completingFaction.Player != null)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
@@ -86,7 +105,13 @@ public sealed class QuestTheramore : QuestData
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
   {
-    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+    if (_theramoreGivenAway)
+    {
+      return;
+    }
+
+    _theramoreGivenAway = true;
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated || completingFaction.Player == null
       ? player.NeutralAggressive
       : completingFaction.Player;
 

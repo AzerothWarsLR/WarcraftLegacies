@@ -40,7 +40,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "H05Y,H00Z,H00R,H017"
+      "Value": "H05Y,H00Z,H00R,H017,H0CY,H0CZ"
     },
     {
       "Id": "ulum",

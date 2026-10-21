@@ -1,0 +1,139 @@
+{
+  "OldId": "AUcb",
+  "NewId": "A0RX",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 40
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 60
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Ucb5",
+      "Value": 12
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ucb5",
+      "Value": 24
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Rai3",
+      "Type": 3,
+      "Value": "n08G"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R051"
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Alchemist)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n|cffffcc00Level 1|r - Spawns a level 1 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 2|r - Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 3|r - Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 4|r - Spawns a level 3 Dire Carrion Beetle. Max 12 Beetles."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Carrion Beetles - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Raises 1 Plagueling from a corpse for 45 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -7 and Burrow."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|nSpawns a level 3 Dire Carrion Beetle. Max 12 Beetles. |n|nGot Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Raise Plaguelings"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Raise Plaguelings"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDalaranMutant.blp"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDalaranMutant.blp"
+    }
+  ]
+}

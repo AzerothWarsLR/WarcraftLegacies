@@ -35,6 +35,12 @@ public static class PlayerAllianceExtensions
         sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
         sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
         break;
+      case AllianceState.Neutral:
+        sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
+        sourcePlayer.SetAlliance(otherPlayer, alliancetype.Passive, true);
+        sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, false);
+        sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
+        break;
       default:
         throw new ArgumentOutOfRangeException(nameof(allianceState), allianceState, null);
     }

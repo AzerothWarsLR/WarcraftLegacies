@@ -22,9 +22,6 @@ public static class ControlPointVictory
   /// </summary>
   public const int CpsWarning = 80;
 
-  private const string VictoryColor = "|cff911499";
-  private static bool _gameWon;
-
   /// <summary>
   /// Sets up <see cref="ControlPointVictory"/>.
   /// </summary>
@@ -51,13 +48,13 @@ public static class ControlPointVictory
         ("{captured}", controlPoints.ToString()),
         ("{total}", CpsVictory.ToString()));
 
-      player.DisplayTextTo($"\n{VictoryColor}{Loc.Get("TEAM VICTORY IMMINENT")}|r\n{warningMessage}");
+      player.DisplayTextTo($"\n{GameVictory.VictoryColor}{Loc.Get("TEAM VICTORY IMMINENT")}|r\n{warningMessage}");
     }
   }
 
   private static void ControlPointOwnerChanges(ControlPoint controlPoint)
   {
-    if (_gameWon)
+    if (GameVictory.IsWon)
     {
       return;
     }
@@ -75,29 +72,6 @@ public static class ControlPointVictory
     }
   }
 
-  private static void TeamVictory(Team whichTeam)
-  {
-    ClearTextMessages();
-    foreach (var player in Util.EnumeratePlayers())
-    {
-      var victoryMessage = Loc.Format(
-        "The {team} has won the game! You may choose to continue playing.",
-        ("{team}", whichTeam.Name));
-
-      player.DisplayTextTo($"{VictoryColor}\n{Loc.Get("TEAM VICTORY!")}|r\n{victoryMessage}");
-    }
-
-    PlayThematicMusic(whichTeam.VictoryMusic);
-
-    foreach (var faction in whichTeam.GetAllFactions())
-    {
-      if (faction.Player != null && faction.ScoreStatus != ScoreStatus.Defeated)
-      {
-        Mmd.MmdManager.SetResult(faction.Player, "win");
-      }
-    }
-
-    Mmd.MmdManager.WriteToMmd();
-    _gameWon = true;
-  }
+  private static void TeamVictory(Team whichTeam) =>
+    GameVictory.Declare(whichTeam.Name, whichTeam.VictoryMusic, whichTeam.GetAllFactions());
 }

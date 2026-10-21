@@ -5,5 +5,6 @@ public enum AllianceState
   Unallied,
   Allied,
   AlliedVision,
-  UnalliedVision
+  UnalliedVision,
+  Neutral
 }

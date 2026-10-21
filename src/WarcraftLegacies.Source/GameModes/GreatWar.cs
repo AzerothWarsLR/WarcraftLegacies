@@ -11,13 +11,24 @@ public sealed class GreatWar : IGameMode
   public string Name => Loc.Get("Great War (7v7)");
 
   /// <inheritdoc />
+  public string Description => Loc.Get("Two teams of 7 clash in large-scale battles for control of Azeroth.");
+
+  /// <inheritdoc />
   public void OnChoose()
   {
     CommandManager.Register(new Forfeit());
-    this.SetupGreatWarTeams()
-      .SetupAllianceCommands();
+    this.SetupGreatWarTeams();
   }
 
   /// <inheritdoc />
   public int VoteOffset => -4;
+
+  /// <inheritdoc />
+  public string IconPath => @"ReplaceableTextures\CommandButtons\BTNAttack.blp";
+
+  /// <inheritdoc />
+  public bool SkipsEarlyGame => false;
+
+  /// <inheritdoc />
+  public DiplomacyRule Diplomacy => DiplomacyRule.Open;
 }

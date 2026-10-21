@@ -14,6 +14,7 @@ using WarcraftLegacies.Source.Factions.Illidari;
 using WarcraftLegacies.Source.Factions.Legion.Powers;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
 using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Setup;
@@ -23,7 +24,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Legion;
 
-public sealed class LegionFaction : Faction
+public sealed class LegionFaction : Faction, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public LegionFaction() : base("Legion",
@@ -58,6 +59,11 @@ public sealed class LegionFaction : Faction
     RegisterFactionDependentInitializer<DruidsFaction>(RegisterDruidsRelatedQuestsAndDialogue);
     ProcessObjectInfo(LegionObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the mighty {faction}.\n\nYou begin isolated on Argus. Once the planet is under your control, you will unlock two teleporters to Northrend and Alterac.\n\nThe Scourge and the Fel Horde fight beside you. Help the Scourge destroy Lordaeron, Dalaran and Quel'Thalas of the North Alliance.\n\nYour primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the Book of Medivh is kept, and use it to open the Demon-gate to Argus. But watch the Lich King closely: a tool that thinks for itself is a danger to its masters.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Burning Legion")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

@@ -40,6 +40,22 @@ public static class ControlPointDefenderManager
     };
   }
 
+  /// <summary>Replaces the Defenders on every Control Point <paramref name="owner"/> holds, for when their faction's Defender changes.</summary>
+  public static void RefreshDefenders(player owner)
+  {
+    foreach (var controlPoint in ControlPointManager.Instance.GetAllControlPoints())
+    {
+      if (controlPoint.Owner != owner || controlPoint.Defender == null)
+      {
+        continue;
+      }
+
+      controlPoint.Defender.Dispose();
+      controlPoint.Defender = null;
+      CreateOrUpdateDefender(controlPoint);
+    }
+  }
+
   private static void OnControlPointLevelChanged(ControlPoint controlPoint)
   {
     if (controlPoint.ControlLevel > 0)

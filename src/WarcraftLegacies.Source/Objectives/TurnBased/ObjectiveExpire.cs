@@ -15,6 +15,7 @@ public sealed class ObjectiveExpire : Objective
 
   private readonly string _questName;
   private readonly List<Faction> _assignedFactions = new();
+  private readonly bool _expiredBeforeAdded;
 
   /// <param name="expirationTurn">The turn on which this objective will fail</param>
   /// <param name="questName">The name of the quest this objective belongs to</param>
@@ -24,18 +25,24 @@ public sealed class ObjectiveExpire : Objective
     _questName = questName;
     ShowsInPopups = false;
 
-    GameTimeManager.RegisterOnTurn(expirationTurn, OnExpire);
-
-    if (expirationTurn > WarningTurnsBeforeExpiry)
+    var currentTurn = GameTimeManager.Turn;
+    _expiredBeforeAdded = expirationTurn <= currentTurn;
+    if (!_expiredBeforeAdded)
     {
-      GameTimeManager.RegisterOnTurn(expirationTurn - WarningTurnsBeforeExpiry, OnWarning);
+      GameTimeManager.RegisterOnTurn(expirationTurn, OnExpire);
+    }
+
+    var warningTurn = expirationTurn - WarningTurnsBeforeExpiry;
+    if (warningTurn > 0 && warningTurn > currentTurn)
+    {
+      GameTimeManager.RegisterOnTurn(warningTurn, OnWarning);
     }
   }
 
   public override void OnAdd(Faction whichFaction)
   {
     _assignedFactions.Add(whichFaction);
-    Progress = QuestProgress.Complete;
+    Progress = _expiredBeforeAdded ? QuestProgress.Failed : QuestProgress.Complete;
   }
 
   private void OnExpire()

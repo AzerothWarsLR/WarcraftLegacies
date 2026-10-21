@@ -1,0 +1,34 @@
+{
+  "OldId": "BNba",
+  "NewId": "B101",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Plagued"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is plagued; if it dies, it will rise as a Ghoul."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Units\\Undead\\PlagueCloud\\PlagueCloudTarget.mdl"
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(FallenPrince - Plague Arrows)"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtonsDisabled\\DISATCPoisonArrows.blp"
+    }
+  ]
+}

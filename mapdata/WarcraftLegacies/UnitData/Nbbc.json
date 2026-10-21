@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0MM,A0GK,A0KV,AInv"
+      "Value": "A16X,A0GK,A0KV,AInv"
     },
     {
       "Id": "uagi",
@@ -78,7 +78,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R011"
+      "Value": "R011,R0AD"
     },
     {
       "Id": "ugol",

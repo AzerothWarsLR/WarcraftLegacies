@@ -28,7 +28,7 @@
     {
       "Id": "umki",
       "Type": 3,
-      "Value": "sreg,phea,pman,stwp,hslv,olig,ciri,spsh"
+      "Value": "sreg,phea,pman,hslv,olig,ciri,spsh"
     },
     {
       "Id": "upat",
@@ -51,7 +51,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Aall,Apit"
+      "Value": "Aall,Apit,Aneu,Asid"
     },
     {
       "Id": "ubpx",

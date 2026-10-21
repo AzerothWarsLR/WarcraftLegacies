@@ -1,0 +1,40 @@
+{
+  "OldId": "ACct",
+  "NewId": "A16X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ocr1",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Rend Blackhand)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Gives a \u003CA16X,DataA1\u003E% chance to do \u003CA16X,DataB1\u003E times total damage on an attack."
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    }
+  ]
+}

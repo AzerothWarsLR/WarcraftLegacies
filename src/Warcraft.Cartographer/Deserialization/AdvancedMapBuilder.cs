@@ -43,6 +43,10 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
 
     mapBuilder.Build(options.PublishedMapPath, archiveCreateOptions);
     Console.WriteLine($"Published map archive to {Path.GetFullPath(options.PublishedMapPath)}.");
+    if (options.ShouldLaunch)
+    {
+      LaunchGame(options.Warcraft3ExecutablePath, options.PublishedMapPath);
+    }
   }
 
   /// <summary>
@@ -239,7 +243,7 @@ public sealed class AdvancedMapBuilder(AdvancedMapBuilderOptions options)
       var commandLineArgs = new StringBuilder();
       var fileVersion = FileVersionInfo.GetVersionInfo(warcraft3ExecutablePath).FileVersion;
       var isReforged = fileVersion != null && Version.Parse(fileVersion) >= new Version(1, 32);
-      commandLineArgs.Append(isReforged ? " -launch" : $" -graphicsapi {GraphicsApi}");
+      commandLineArgs.Append(isReforged ? " -launch -editor" : $" -graphicsapi {GraphicsApi}");
 
       commandLineArgs.Append(" -nowfpause");
 

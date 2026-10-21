@@ -48,7 +48,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "Rugf,Ruwb,R01D"
+      "Value": "Rugf,Ruwb,R01D,R102,R103"
     },
     {
       "Id": "ulum",
@@ -90,6 +90,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": " (Scourge Barracks)"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "ugho,ucry,ugar,u101,u102,u103"
     }
   ]
 }

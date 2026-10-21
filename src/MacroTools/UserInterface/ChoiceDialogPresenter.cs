@@ -15,6 +15,8 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
 
   private readonly List<trigger> _triggers = new();
   private readonly string _dialogText;
+  private Action? _onResolved;
+  private bool _resolved;
 
   /// <summary>Initializes a new instance of the <see cref="ChoiceDialogPresenter{T}"/> class.</summary>
   protected ChoiceDialogPresenter(TChoice[] choices, string dialogText)
@@ -27,26 +29,28 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
   protected abstract TChoice GetDefaultChoice(player whichPlayer);
   protected abstract bool IsChoiceActive(player whichPlayer, TChoice choice);
 
-  /// <summary>Displays the faction choice to a player.</summary>
-  public void Run(player whichPlayer)
+  public void Run(player whichPlayer, Action? onResolved = null)
   {
+    _onResolved = onResolved;
     var activeChoices = Choices.Where(x => IsChoiceActive(whichPlayer, x));
 
-    if (activeChoices.Count() == 1)
+    var isHuman = GetPlayerSlotState(whichPlayer) == playerslotstate.Playing &&
+                  GetPlayerController(whichPlayer) == mapcontrol.User;
+    if (!isHuman || activeChoices.Count() == 1)
     {
-      OnChoicePicked(whichPlayer, GetDefaultChoice(whichPlayer));
+      Resolve(whichPlayer, GetDefaultChoice(whichPlayer));
       return;
     }
 
     timer timer = timer.Create();
-    timer.Start(4, false, () =>
+    timer.Start(1, false, () =>
     {
       StartChoicePick(whichPlayer);
       @event.ExpiredTimer.Dispose();
     });
 
     var concludeTimer = timer.Create();
-    concludeTimer.Start(24, false, () =>
+    concludeTimer.Start(20, false, () =>
     {
       ChoiceExpired(whichPlayer);
       @event.ExpiredTimer.Dispose();
@@ -84,7 +88,7 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
       {
         try
         {
-          OnChoicePicked(whichPlayer, choice);
+          Resolve(whichPlayer, choice);
         }
         catch (Exception ex)
         {
@@ -103,10 +107,7 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
       _pickDialog.SetVisibility(player.LocalPlayer, false);
     }
 
-    if (!HasChoiceBeenPicked)
-    {
-      OnChoicePicked(whichPlayer, GetDefaultChoice(whichPlayer));
-    }
+    Resolve(whichPlayer, GetDefaultChoice(whichPlayer));
 
     _pickDialog.Clear();
     _pickDialog.Dispose();
@@ -115,5 +116,17 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     {
       trigger.Dispose();
     }
+  }
+
+  private void Resolve(player whichPlayer, TChoice choice)
+  {
+    if (_resolved)
+    {
+      return;
+    }
+
+    _resolved = true;
+    OnChoicePicked(whichPlayer, choice);
+    _onResolved?.Invoke();
   }
 }

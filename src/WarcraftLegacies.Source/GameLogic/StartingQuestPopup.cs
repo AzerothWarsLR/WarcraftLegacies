@@ -24,7 +24,7 @@ public static class StartingQuestPopup
       foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {
         var playerFaction = player.GetPlayerData().Faction;
-        if (playerFaction?.StartingQuest != null)
+        if (playerFaction?.StartingQuest != null && playerFaction.StartingQuest.Progress != QuestProgress.Complete)
         {
           playerFaction.DisplayDiscovered(playerFaction.StartingQuest, true);
         }

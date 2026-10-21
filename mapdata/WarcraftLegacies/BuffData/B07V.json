@@ -1,0 +1,34 @@
+{
+  "OldId": "Brej",
+  "NewId": "B07V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "frac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_FlashHeal.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Dark Regeneration"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has Regeneration; it is healing hit points over time."
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\HowlOfTerror\\HowlTarget.mdl"
+    }
+  ]
+}

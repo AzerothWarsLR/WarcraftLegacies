@@ -40,7 +40,7 @@ public sealed class ObjectiveLegendInRect : Objective
 
   private void OnRegionExit()
   {
-    if (_legendaryHero.Unit.Alive && _target.Contains(_legendaryHero.Unit))
+    if (_legendaryHero.Unit != null && _legendaryHero.Unit.Alive && _target.Contains(_legendaryHero.Unit))
     {
       Progress = QuestProgress.Complete;
     }
@@ -52,7 +52,7 @@ public sealed class ObjectiveLegendInRect : Objective
 
   private void OnRegionEnter()
   {
-    if (_legendaryHero.Unit.Alive && @event.Unit == _legendaryHero.Unit)
+    if (_legendaryHero.Unit != null && _legendaryHero.Unit.Alive && @event.Unit == _legendaryHero.Unit)
     {
       Progress = QuestProgress.Complete;
     }

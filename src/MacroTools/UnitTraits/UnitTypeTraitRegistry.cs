@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.Setup;
 using MacroTools.Utils;
 using WCSharp.Events;
 
@@ -137,7 +138,7 @@ public static class UnitTypeTraitRegistry
     }
     if (unitTrait is IEffectOnSpellEffect effectOnSpellEffect)
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, effectOnSpellEffect.OnSpellEffect, unitTypeId);
+      PlayerUnitEvents.Register(CustomPlayerUnitEvents.UnitTypeSpellEffect, effectOnSpellEffect.OnSpellEffect, unitTypeId);
     }
     if (unitTrait is IEffectOnSpellFinish effectOnSpellFinish)
     {

@@ -7,6 +7,8 @@ public sealed class StormwindLegends
 {
   public LegendaryHero Varian { get; }
   public LegendaryHero Khadgar { get; }
+  public LegendaryHero Thoras { get; }
+  public LegendaryHero Danath { get; }
   public LegendaryHero Galen { get; }
   public LegendaryHero Bolvar { get; }
   public Capital StormwindKeep { get; }
@@ -48,6 +50,16 @@ public sealed class StormwindLegends
       StartingXp = 7000
     };
 
+    Thoras = new LegendaryHero("Thoras Trollbane")
+    {
+      UnitType = UNIT_H0CY_KING_OF_STROMGARDE_STROMGARDE
+    };
+
+    Danath = new LegendaryHero("Danath Trollbane")
+    {
+      UnitType = UNIT_H0CZ_COMMANDER_OF_THE_STROMGARDE_MILITIA_STROMGARDE
+    };
+
     StormwindKeep = new Capital
     {
       Unit = AllPreplacedWidgets.Units.Get(UNIT_H00X_STORMWIND_KEEP_STORMWIND_OTHER),
@@ -79,6 +91,8 @@ public sealed class StormwindLegends
   {
     LegendaryHeroManager.Register(Varian);
     LegendaryHeroManager.Register(Khadgar);
+    LegendaryHeroManager.Register(Thoras);
+    LegendaryHeroManager.Register(Danath);
     LegendaryHeroManager.Register(Galen);
     LegendaryHeroManager.Register(Bolvar);
     CapitalManager.Register(StormwindKeep);

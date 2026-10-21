@@ -20,7 +20,7 @@ public sealed class QuestBookOfMedivh : QuestData
   private static unit? _bookOfMedivhPedestal;
 
   private readonly IHasCompletingUnit _objectiveWithCompletingUnit;
-  private readonly bool _bypassLevelRequirement;
+  private readonly bool _forLegion;
   private readonly Artifact _bookOfMedivh;
 
   /// <summary>
@@ -31,14 +31,16 @@ public sealed class QuestBookOfMedivh : QuestData
   /// <param name="bookOfMedivh">Reward for completing the quest.</param>
   /// <param name="bypassLevelRequirement">If set to true, any hero of any level can complete the objective.</param>
   /// <param name="bypassDestructionRequirement">If true, <paramref name="protectingCapital"/> does not need to be destroyed to complete the quest.</param>
+  /// <param name="forLegion">If true, the quest is worded for the Burning Legion, who will use the Book to summon Archimonde.</param>
   public QuestBookOfMedivh(Capital protectingCapital, NamedRectangle bookLocation, Artifact bookOfMedivh,
-    bool bypassLevelRequirement, bool bypassDestructionRequirement) : base("Book of Medivh",
+    bool bypassLevelRequirement, bool bypassDestructionRequirement, bool forLegion = false) : base("Book of Medivh",
     Loc.Format(
       "The last remaining spellbook written by Medivh, the Last Guardian, is held securely within {location}. The spells within its pages could bring us great power.",
       ("{location}", Loc.Get(bookLocation.Name))),
     @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
   {
-    _bypassLevelRequirement = bypassLevelRequirement;
+    _forLegion = forLegion;
+    IsForKeeper = bypassDestructionRequirement;
     var bookLocationFullName = Loc.Format(
       "the Book of Medivh's pedestal at {location}",
       ("{location}", Loc.Get(bookLocation.Name)));
@@ -65,16 +67,19 @@ public sealed class QuestBookOfMedivh : QuestData
       _bookOfMedivhPedestal.AddItemSafe(bookOfMedivh.Item);
     }
 
-    IsFactionQuest = bypassLevelRequirement;
+    IsFactionQuest = forLegion;
   }
 
+  /// <summary>True for the version held by whoever controls the Book's city, who doesn't need to destroy it.</summary>
+  public bool IsForKeeper { get; }
+
   /// <inheritdoc/>
-  protected override string RewardDescription => _bypassLevelRequirement
+  protected override string RewardDescription => _forLegion
     ? "The Book of Medivh, which can be used to summon the full might of the Burning Legion"
     : "The Book of Medivh";
 
   /// <inheritdoc/>
-  public override string RewardFlavour => _bypassLevelRequirement
+  public override string RewardFlavour => _forLegion
     ? Loc.Format("{unit} has retrieved the Book of Medivh from its pedestal. With its power, we can summon the full might of the Burning Legion from the depths of the Twisting Nether.", ("{unit}", _objectiveWithCompletingUnit.CompletingUnitName))
     : Loc.Format("{unit} has retrieved the Book of Medivh from its pedestal, and now prepares to harness its untold power.", ("{unit}", _objectiveWithCompletingUnit.CompletingUnitName));
 

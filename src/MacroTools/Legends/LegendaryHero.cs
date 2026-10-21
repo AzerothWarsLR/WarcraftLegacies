@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Artifacts;
 using MacroTools.Extensions;
+using MacroTools.Factions;
 using MacroTools.Localization;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
@@ -14,15 +15,20 @@ namespace MacroTools.Legends;
 /// </summary>
 public sealed class LegendaryHero : Legend
 {
+  /// <summary>The ability that shows which capitals a hero needs in order to be revived.</summary>
+  public static int DiesWithoutAbilityId { get; set; }
+
+  /// <summary>The ability that shows a hero can't be revived.</summary>
+  public static int PermaDiesAbilityId { get; set; }
+
   private readonly playercolor? _playerColor;
-  private readonly int _dummyDieswithout = FourCC("LEgn");
-  private readonly int _dummyPermadies = FourCC("LEgo");
   private List<unit>? _diesWithout;
   private trigger? _castTrig;
   private trigger? _becomesRevivableTrig;
   private trigger? _ownerTrig;
   private readonly string? _name;
   private bool _permaDies;
+  private bool _showsDeathIcon = true;
 
   /// <summary>
   /// If true, the <see cref="Legend"/> has a custom <see cref="playercolor"/> rather than having its color based
@@ -53,6 +59,18 @@ public sealed class LegendaryHero : Legend
     set
     {
       _permaDies = value;
+      RefreshDummy();
+    }
+  }
+
+  /// <summary>
+  ///   If false, the Legend shows no icon explaining whether it can be revived, freeing up its command card slot.
+  /// </summary>
+  public bool ShowsDeathIcon
+  {
+    set
+    {
+      _showsDeathIcon = value;
       RefreshDummy();
     }
   }
@@ -174,7 +192,7 @@ public sealed class LegendaryHero : Legend
 
   /// <summary>
   ///   Add an additional unit dependency to this Legend.
-  ///   If all of a Legend's unit dependencies are dead or owned by hostile forces,
+  ///   If all of a Legend's unit dependencies are dead or owned by non-allies,
   ///   the Legend permanently dies upon death.
   /// </summary>
   public void AddUnitDependency(unit whichUnit)
@@ -221,7 +239,7 @@ public sealed class LegendaryHero : Legend
 
     var owner = Unit.Owner;
 
-    return !_diesWithout.Any(x => x.Owner == owner && x.Alive);
+    return !_diesWithout.Any(x => x.Alive && (x.Owner == owner || TeamChanges.AreTeammates(x.Owner, owner)));
   }
 
   /// <inheritdoc />
@@ -314,18 +332,30 @@ public sealed class LegendaryHero : Legend
 
   private void RefreshDummy()
   {
-    if (_permaDies)
+    if (Unit == null)
     {
-      Unit.AddAbility(_dummyPermadies);
       return;
     }
 
-    Unit.RemoveAbility(_dummyPermadies);
+    if (!_showsDeathIcon)
+    {
+      Unit.RemoveAbility(PermaDiesAbilityId);
+      Unit.RemoveAbility(DiesWithoutAbilityId);
+      return;
+    }
+
+    if (_permaDies)
+    {
+      Unit.AddAbility(PermaDiesAbilityId);
+      return;
+    }
+
+    Unit.RemoveAbility(PermaDiesAbilityId);
     if (_diesWithout != null)
     {
       // The tooltip is composed around the capitals' own names, which are localized separately, so each stated
       // part goes through the table on its own rather than the whole sentence.
-      var tooltip = Loc.Get("When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n");
+      var tooltip = Loc.Get("When this unit dies, it will be unrevivable unless any of the following capitals are under your or your allies' control:\n");
       foreach (var unit in _diesWithout)
       {
         if (unit == null)
@@ -337,17 +367,17 @@ public sealed class LegendaryHero : Legend
       }
 
       tooltip += Loc.Get("\nUsing this ability pings each of these capitals on the minimap.");
-      Unit.AddAbility(_dummyDieswithout);
-      Unit.GetAbility(_dummyDieswithout).SetTooltipNormalExtended_aub1(0, tooltip);
+      Unit.AddAbility(DiesWithoutAbilityId);
+      Unit.GetAbility(DiesWithoutAbilityId).SetTooltipNormalExtended_aub1(0, tooltip);
       return;
     }
 
-    Unit.RemoveAbility(_dummyDieswithout);
+    Unit.RemoveAbility(DiesWithoutAbilityId);
   }
 
   private void OnCast()
   {
-    if (@event.SpellAbilityId != _dummyDieswithout)
+    if (@event.SpellAbilityId != DiesWithoutAbilityId)
     {
       return;
     }

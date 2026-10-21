@@ -11,7 +11,7 @@ public static class LordaeronObjectInfo
   {
     yield return new(UNIT_HTOW_TOWN_HALL_LORDAERON_T1, Unlimited, TownHall);
     yield return new(UNIT_HKEE_KEEP_LORDAERON_T2, Unlimited, Keep);
-    yield return new(UNIT_HCAS_CASTLE_LORDAERON_T3, Unlimited, TownHall);
+    yield return new(UNIT_HCAS_CASTLE_LORDAERON_T3, Unlimited, Castle);
     yield return new(UNIT_HHOU_FARM_LORDAERON_FARM, Unlimited, Farm);
     yield return new(UNIT_HALT_ALTAR_OF_KINGS_LORDAERON_ALTAR, Unlimited, Altar);
     yield return new(UNIT_HBAR_BARRACKS_LORDAERON_BARRACKS, Unlimited, Barracks);

@@ -1,17 +1,20 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Stormwind.Paths;
 using WarcraftLegacies.Source.Factions.Stormwind.Quests;
 using WarcraftLegacies.Source.Factions.Stormwind.Researches;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
 
 namespace WarcraftLegacies.Source.Factions.Stormwind;
 
-public sealed class StormwindFaction : Faction
+public sealed class StormwindFaction : Faction, IHasRoleplayPaths, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public StormwindFaction() : base("Stormwind", playercolor.Blue,
@@ -37,6 +40,22 @@ public sealed class StormwindFaction : Faction
     };
     ProcessObjectInfo(StormwindObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    if (GetAllPaths().Any(x => x is PathStromgarde))
+    {
+      return;
+    }
+
+    AddPath(new PathStromgarde(new StromgardeTransformation()));
+  }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the steadfast {faction}.\n\nStormwind has risen from the ashes of the First War, its walls rebuilt and its people united behind King Varian. But in the Blasted Lands, the Dark Portal stirs once more.\n\nThe Fel Horde will soon pour through the Dark Portal. Hold the line beside Ironforge and Kul Tiras, your allies of the South Alliance, for together you are the bulwark of the south.\n\nOnce the Dark Portal is secured, the North Alliance will need your help against the Plague. Should Stormwind ever fall, the Trollbanes of Stromgarde will carry on the fight.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Stormwind")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

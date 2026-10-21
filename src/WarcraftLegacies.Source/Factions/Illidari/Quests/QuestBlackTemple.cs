@@ -8,6 +8,7 @@ using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
 using WarcraftLegacies.Source.Shared;
@@ -20,15 +21,15 @@ namespace WarcraftLegacies.Source.Factions.Illidari.Quests;
 public sealed class QuestBlackTemple : QuestData
 {
   private readonly List<unit> _rescueUnits;
+  private readonly bool _abandonsBrokenIsles;
   private List<UnitPlacement>? _originalBrokenIslesUnitPlacements;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestBlackTemple"/> class.
   /// </summary>
-  public QuestBlackTemple(QuestData prerequisite) : base("Return to Outland",
-    "Illidan's servants in Outland have been left to their own devices for too long; he must return swiftly if he is to prepare them for the coming war.",
-    @"ReplaceableTextures\CommandButtons\BTNWarpPortal.blp")
+  public QuestBlackTemple(QuestData prerequisite) : this()
   {
+    _abandonsBrokenIsles = true;
     var questCompleteObjective = new ObjectiveQuestComplete(prerequisite)
     {
       Progress = QuestProgress.Undiscovered,
@@ -40,6 +41,19 @@ public sealed class QuestBlackTemple : QuestData
     AddObjective(new ObjectiveLegendInRect(AllLegends.Naga.Illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
     AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
+  }
+
+  /// <summary>Initializes a new instance of the <see cref="QuestBlackTemple"/> class, completed by the Lord of Outland path.</summary>
+  public QuestBlackTemple(ObjectiveTriggered lordOfOutlandTaken) : this()
+  {
+    AddObjective(lordOfOutlandTaken);
+    AddObjective(new ObjectiveSelfExists());
+  }
+
+  private QuestBlackTemple() : base("Return to Outland",
+    "Illidan's servants in Outland have been left to their own devices for too long; he must return swiftly if he is to prepare them for the coming war.",
+    @"ReplaceableTextures\CommandButtons\BTNWarpPortal.blp")
+  {
     ResearchId = UPGRADE_R09Y_QUEST_COMPLETED_RETURN_TO_OUTLAND;
     _rescueUnits = Regions.IllidanBlackTempleUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     Knowledge = 10;
@@ -49,7 +63,9 @@ public sealed class QuestBlackTemple : QuestData
   public override string RewardFlavour => "Illidan returns triumphant to Black Temple, the seat of his power. The orcs and demons of Outland hail his coming.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => "Gain control of the Black Temple, learn to train Lady Vashj from the Altar of the Betrayer, abandon your base in the Broken Isles";
+  protected override string RewardDescription => _abandonsBrokenIsles
+    ? "Gain control of the Black Temple, learn to train Lady Vashj from the Altar of the Betrayer, abandon your base in the Broken Isles"
+    : "Gain control of the Black Temple and learn to train Lady Vashj from the Altar of the Betrayer";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
@@ -62,6 +78,11 @@ public sealed class QuestBlackTemple : QuestData
     }
 
     completingFaction.Player.PlayMusicThematic("IllidansTheme");
+    if (!_abandonsBrokenIsles)
+    {
+      return;
+    }
+
     AbandonBrokenIsles(completingFaction.Player);
     var illidan = AllLegends.Naga.Illidan.Unit;
     if (illidan != null)
@@ -90,7 +111,10 @@ public sealed class QuestBlackTemple : QuestData
   /// <inheritdoc />
   protected override void OnAdd(Faction whichFaction)
   {
-    SaveBrokenIslesCreeps();
+    if (_abandonsBrokenIsles)
+    {
+      SaveBrokenIslesCreeps();
+    }
   }
 
   private void SaveBrokenIslesCreeps()

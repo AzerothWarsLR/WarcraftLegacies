@@ -1,0 +1,110 @@
+{
+  "OldId": "uban",
+  "NewId": "u107",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Fallen Priest"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(FallenPrince)"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A172,A170,A173,Aiun"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "umpm",
+      "Value": 200
+    },
+    {
+      "Id": "umpi",
+      "Value": 100
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rupm,Rguv,Rhme,Rhar,R106"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\PowerLich.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPowerLich.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "FallenPriest"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Fallen Priest"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A priest of the Light who died in the plague, now preaching only to the dead."
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.55
+    }
+  ]
+}

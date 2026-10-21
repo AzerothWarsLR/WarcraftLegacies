@@ -22,7 +22,7 @@ public static class QuelthalasObjectInfo
     yield return new(UNIT_N003_IMPROVED_SUN_TOWER_QUELTHALAS_TOWER, Unlimited, Tower);
     yield return new(UNIT_H04V_ARCANE_VAULT_QUELTHALAS_SHOP, Unlimited, Shop);
     yield return new(UNIT_NHEB_CANTONMENT_QUELTHALAS_BARRACKS, Unlimited, Barracks);
-    yield return new(UNIT_N0A2_CONSORTIUM_QUELTHALAS_SIEGE, Unlimited, Specialist);
+    yield return new(UNIT_N0A2_CONSORTIUM_QUELTHALAS_SIEGE, Unlimited, SiegeWorkshop);
     yield return new(UNIT_H03J_ACADEMY_QUELTHALAS_SPECIALIST, Unlimited, Specialist);
     yield return new(UNIT_H077_SHIPYARD_QUELTHALAS_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_NEFM_RESIDENCE_QUELTHALAS, Unlimited, Farm);

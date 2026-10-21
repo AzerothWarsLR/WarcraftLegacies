@@ -7,6 +7,25 @@ public static class ScourgeObjectInfo
 {
   private const int Unlimited = 200;
 
+  /// <summary>How much the limits of <see cref="StandingAloneUnits"/> go up while the Scourge stands alone.</summary>
+  public const int StandingAloneBonus = 2;
+
+  /// <summary>Units whose limit goes up while the Scourge stands alone after the Scourge Split.</summary>
+  public static readonly int[] StandingAloneUnits =
+  {
+    UNIT_UMTW_MEAT_WAGON_SCOURGE,
+    UNIT_UGAR_GARGOYLE_SCOURGE,
+    UNIT_H061_VRYKUL_BERSERK_SCOURGE,
+    UNIT_H00P_MAMMOTH_RIDER_SCOURGE,
+    UNIT_UOBS_OBSIDIAN_STATUE_SCOURGE,
+    UNIT_UFRO_FROST_WYRM_SCOURGE,
+    UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE,
+    UNIT_ZBLI_LICH_SCOURGE_ELITE,
+    UNIT_UBSP_OBSIDIAN_DESTROYER_SCOURGE,
+    UNIT_NFGL_PLAGUE_TITAN_SCOURGE,
+    UNIT_H0B9_BOMBARD_EVIL
+  };
+
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
     yield return new(UNIT_UNPL_NECROPOLIS_SCOURGE_T1, Unlimited, TownHall);

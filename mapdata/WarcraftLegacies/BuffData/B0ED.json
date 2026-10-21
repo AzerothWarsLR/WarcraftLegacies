@@ -1,0 +1,34 @@
+{
+  "OldId": "BHab",
+  "NewId": "B0ED",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASGrandAlliance.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Strength in Unity"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Strength in Unity"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is near a Grand Alliance capital, and is regenerating health and mana."
+    }
+  ]
+}

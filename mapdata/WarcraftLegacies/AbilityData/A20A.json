@@ -1,0 +1,35 @@
+{
+  "OldId": "Sca2",
+  "NewId": "A20A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R09O"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "o00S"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Chaos Orcs - Raider)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

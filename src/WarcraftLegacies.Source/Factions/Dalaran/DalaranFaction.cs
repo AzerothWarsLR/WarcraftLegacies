@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Factions.Choices;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
-using MacroTools.Quests;
-using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Dalaran.Mechanics;
+using WarcraftLegacies.Source.Factions.Dalaran.Paths;
 using WarcraftLegacies.Source.Factions.Dalaran.Quests;
 using WarcraftLegacies.Source.Factions.Legion;
-using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
@@ -21,7 +20,7 @@ using WarcraftLegacies.Source.Shared.Quests;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran;
 
-public sealed class DalaranFaction : Faction
+public sealed class DalaranFaction : Faction, IHasRoleplayPaths, IHasRoleplayIntro
 {
   private readonly List<unit> _dalaranProtectors;
 
@@ -54,14 +53,38 @@ public sealed class DalaranFaction : Faction
       "dala"
     };
 
-    RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
     RegisterFactionDependentInitializer<LegionFaction>(RegisterBookOfMedivhQuest);
     ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
   }
 
+  /// <summary>The quest that moves Dalaran to Theramore, which Roleplay mode replaces with a path.</summary>
+  public QuestTheramore? TheramoreQuest { get; private set; }
+
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    if (!GetAllPaths().Any(x => x is PathTheramore))
+    {
+      AddPath(new PathTheramore(new TheramoreTransformation(), AllLegends.Dalaran.Dalaran));
+    }
+
+    if (!GetAllPaths().Any(x => x is PathGilneas))
+    {
+      var gilneasTransformation = new GilneasTransformation();
+      AddPath(new PathGilneasNightElves(gilneasTransformation));
+      AddPath(new PathGilneasGreymaneWall(gilneasTransformation));
+    }
+  }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the wise {faction}.\n\nThe magi of the Violet Citadel have long watched over the north, and of late their divinations have grown dark. A plague stirs in Lordaeron, and something far older stirs behind it.\n\nThe Plague of Undeath and the invasion of the Burning Legion are coming. Stand with Lordaeron and Quel'Thalas, your allies of the North Alliance, and guard the Book of Medivh, for the Legion will come for it. In time, Stormwind, Ironforge and Kul Tiras of the South Alliance may march north to aid you.\n\nShould the north be lost, Jaina may lead your people west across the sea, and Gilneas waits behind its great wall.\n\nYour mages are the finest in Azeroth. Be sure to utilize them alongside your heroes to turn the tide of battle.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Council of Dalaran")}|r"));
+
   /// <inheritdoc />
   public override void OnRegistered()
   {
+    AllLegends.Dalaran.Dalaran.ChangedOwner += _ => OnVioletCitadelChangedOwner();
     RegisterObjectLevels();
     ReplaceWithFactionUnits(this);
     RegisterQuests();
@@ -104,7 +127,11 @@ public sealed class DalaranFaction : Faction
     AddQuest(new QuestJainaSoulGem(AllLegends.Dalaran.Jaina, AllLegends.Neutral.Caerdarrow));
     AddQuest(new QuestBlueDragons(AllLegends.Neutral.TheNexus));
     AddQuest(new QuestKarazhan(AllLegends.Neutral.Karazhan));
-    AddQuest(new QuestTheramore(AllLegends.Dalaran.Jaina, AllLegends.Dalaran.Dalaran, Regions.Theramore));
+    TheramoreQuest = new QuestTheramore(AllLegends.Dalaran.Jaina, AllLegends.Dalaran.Dalaran, Regions.Theramore);
+    if (!RoleplaySetting.IsActive)
+    {
+      AddQuest(TheramoreQuest);
+    }
 
     AddQuest(crystalGolem);
     AddQuest(fallenGuardian);
@@ -112,11 +139,23 @@ public sealed class DalaranFaction : Faction
     AddQuest(newGuardian);
   }
 
+  /// <summary>Whoever takes over the Violet Citadel becomes the keeper of the Book of Medivh.</summary>
+  private void OnVioletCitadelChangedOwner()
+  {
+    var citadel = AllLegends.Dalaran.Dalaran.Unit;
+    if (citadel == null || !citadel.Alive || citadel.Owner.GetPlayerData().Faction == this)
+    {
+      return;
+    }
+
+    DalaranHomeland.MakeBookKeeper(citadel.Owner);
+  }
+
   private void RegisterBookOfMedivhQuest(LegionFaction legion)
   {
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Dalaran.Dalaran,
       new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), Artifacts.BookOfMedivh,
-      faction == legion, faction == this));
+      faction != this, faction == this, faction == legion));
   }
 
   private void RegisterDialogue()
@@ -152,31 +191,6 @@ public sealed class DalaranFaction : Faction
       {
         new ObjectiveLegendInRect(AllLegends.Dalaran.Jaina, Regions.Hearthglen, "Hearthglen")
       }));
-  }
-
-  private void RegisterScourgeDialogue(ScourgeFaction scourge)
-  {
-    TriggeredDialogueManager.Add(new TriggeredDialogue(
-      new DialogueSequence(
-        new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas13.flac",
-          "It pains me to even look at you, Arthas.",
-          "Arthas Menethil"),
-        new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas14.flac",
-          "I'll be happy to end your torment, old man. I told you that your magics could not stop me.",
-          "Antonidas")
-      ), new Faction[]
-      {
-        scourge,
-        this
-      }, new List<Objective>
-      {
-        new ObjectiveLegendDead(AllLegends.Dalaran.Antonidas)
-        {
-          DeathFilter = dyingLegend => MathEx.GetDistanceBetweenPoints(AllLegends.Scourge.Arthas.Unit.GetPosition(),
-            dyingLegend.Unit.GetPosition()) < 500
-        }
-      }
-    ));
   }
 
   private void RegisterProtectors()

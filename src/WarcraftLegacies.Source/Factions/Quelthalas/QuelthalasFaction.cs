@@ -1,22 +1,29 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Dialogues;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Localization;
+using MacroTools.Paths;
 using MacroTools.PreplacedWidgets;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Illidari;
+using WarcraftLegacies.Source.Factions.Illidari.Paths;
+using WarcraftLegacies.Source.Factions.Quelthalas.Paths;
 using WarcraftLegacies.Source.Factions.Quelthalas.Powers;
 using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
 using WarcraftLegacies.Source.Factions.Quelthalas.Researches;
 using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas;
 
-public sealed class QuelthalasFaction : Faction
+public sealed class QuelthalasFaction : Faction, IHasRoleplayPaths, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public QuelthalasFaction() : base("Quel'thalas",
@@ -47,6 +54,11 @@ public sealed class QuelthalasFaction : Faction
   }
 
   /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the proud {faction}.\n\nFor seven thousand years the high elves have guarded the Sunwell behind the runestones of Quel'Thalas. The trolls of Zul'Aman still lurk in the forests, hungry for revenge, but a far greater darkness is gathering to the south.\n\nThe Plague of Undeath is imminent. Stand with Lordaeron and Dalaran, your allies of the North Alliance, and be ready to march south when the Scourge comes.\n\nGuard the Sunwell above all else. Should it fall, your people will face a hard choice about where their future lies.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Quel'Thalas")}|r"));
+
+  /// <inheritdoc />
   public override void OnRegistered()
   {
     RegisterObjectLevels();
@@ -57,6 +69,42 @@ public sealed class QuelthalasFaction : Faction
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     RegisterPowers();
   }
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    if (!GetAllPaths().Any(x => x is PathBansheesHost))
+    {
+      AddPath(new PathBansheesHost(new BansheesHostTransformation(), AllLegends.Quel.Sylvanas, AllLegends.Quel.Spire));
+    }
+
+    if (!GetAllPaths().Any(x => x is PathKaelsExodus))
+    {
+      AddPath(new PathKaelsExodus(new KaelsExodusTransformation(), GetExodusDestination));
+    }
+
+    if (!GetAllPaths().Any(x => x is PathSunfuryPact))
+    {
+      AddPath(new PathSunfuryPact(new SunfuryPactTransformation()));
+    }
+  }
+
+  /// <summary>The Illidari's team if they have taken Lord of Outland, otherwise the Horde.</summary>
+  private static Team? GetExodusDestination()
+  {
+    if (!FactionManager.TryGetFactionByType<IllidariFaction>(out var illidari))
+    {
+      return TeamSetup.Horde;
+    }
+
+    var illidariPlayer = illidari.Player;
+    if (illidariPlayer == null || !illidari.GetAllPaths().Any(x => x is PathLordOfOutland && x.State == PathState.Taken))
+    {
+      return TeamSetup.Horde;
+    }
+
+    return illidariPlayer.GetPlayerData().Team;
+  }
+
   private void RegisterPowers()
   {
     var fontsOfPower = new List<Capital>

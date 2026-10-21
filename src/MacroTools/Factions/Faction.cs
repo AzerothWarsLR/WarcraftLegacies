@@ -6,6 +6,7 @@ using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Legends;
 using MacroTools.Localization;
+using MacroTools.Paths;
 using MacroTools.Quests;
 using MacroTools.Shared;
 using MacroTools.Utils;
@@ -31,8 +32,10 @@ public abstract class Faction
   private readonly Dictionary<int, int> _objectLevels = new();
   private readonly Dictionary<int, int> _objectLimits = new();
   private readonly Dictionary<UnitCategory, List<int>> _objectsByFirstCategory = new();
+  private readonly List<FactionPath> _paths = new();
   private readonly List<Power> _powers = new();
   private readonly Dictionary<string, QuestData> _questsByName = new();
+  private readonly HashSet<QuestData> _hiddenQuests = new();
   private readonly int _undefeatedResearch;
 
   private int _foodMaximum;
@@ -64,7 +67,7 @@ public abstract class Faction
   /// All of the <see cref="Faction"/>'s <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s
   /// will be represented by this unit type.
   /// </summary>
-  public int? ControlPointDefenderUnitTypeId { get; protected init; }
+  public int? ControlPointDefenderUnitTypeId { get; set; }
 
   /// <summary>
   /// Check to see if <see cref="Faction"/> has any living essential legends
@@ -87,6 +90,9 @@ public abstract class Faction
   /// <para>May or may not be used depending on actual game mode selections.</para>
   /// </summary>
   public Team? TraditionalTeam { get; protected init; }
+
+  /// <summary>Whether the faction's name reads with "the" in front of it in a sentence, like "the Fel Horde".</summary>
+  public bool NameTakesArticle { get; protected init; }
 
   /// <summary>
   ///   The <see cref="Faction" />'s food limit.
@@ -195,6 +201,12 @@ public abstract class Faction
     }
   }
 
+  /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="FactionPath" />.</summary>
+  public event Action<FactionPath>? PathAdded;
+
+  /// <summary>Fired when a <see cref="FactionPath" /> is taken away from this <see cref="Faction" />.</summary>
+  public event Action<FactionPath>? PathRemoved;
+
   /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
   public event Action<FactionPowerEventArgs>? PowerAdded;
 
@@ -267,11 +279,37 @@ public abstract class Faction
     return _objectLimits.GetValueOrDefault(whichObject);
   }
 
+  /// <summary>Returns every object limit the Faction currently has, keyed by object ID.</summary>
+  public IReadOnlyDictionary<int, int> GetAllObjectLimits() => _objectLimits;
+
   /// <summary>
   /// Provides the unit types belonging to the provided <see cref="UnitCategory"/> for this faction, if any.
   /// </summary>
   public bool TryGetObjectByCategory(UnitCategory category, [NotNullWhen(true)] out List<int>? objects) =>
     _objectsByFirstCategory.TryGetValue(category, out objects);
+
+  /// <summary>Adds a <see cref="FactionPath" /> this <see cref="Faction" /> can choose to take.</summary>
+  public void AddPath(FactionPath path)
+  {
+    _paths.Add(path);
+    path.OnAdd(this);
+    PathAdded?.Invoke(path);
+  }
+
+  /// <summary>Takes a <see cref="FactionPath" /> away from this <see cref="Faction" />, closing it first.</summary>
+  public void RemovePath(FactionPath path)
+  {
+    if (!_paths.Remove(path))
+    {
+      return;
+    }
+
+    path.Close();
+    PathRemoved?.Invoke(path);
+  }
+
+  /// <summary>Returns all <see cref="FactionPath" />s this <see cref="Faction" /> has, in the order they were added.</summary>
+  public IReadOnlyList<FactionPath> GetAllPaths() => _paths;
 
   /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
   public void AddPower(Power power)
@@ -349,6 +387,7 @@ public abstract class Faction
       throw new InvalidOperationException($"Tried to add a quest named {loweredQuestTitle} to {Name} but they already have one with that name.");
     }
 
+    questData.ProgressChanged += OnQuestProgressChanged;
     questData.Add(this);
     _questsByName.Add(questData.Title.ToLower(), questData);
     if (player.LocalPlayer == Player)
@@ -357,8 +396,36 @@ public abstract class Faction
     }
 
     questData.ShowSync();
-    questData.ProgressChanged += OnQuestProgressChanged;
     return questData;
+  }
+
+  /// <summary>Hides a quest from the quest log while the Faction keeps it.</summary>
+  public void HideQuest(QuestData questData)
+  {
+    _hiddenQuests.Add(questData);
+    if (player.LocalPlayer == Player)
+    {
+      questData.HideLocal();
+    }
+
+    questData.HideSync();
+  }
+
+  /// <summary>Removes a quest from the Faction, hiding it and ignoring its progress from then on.</summary>
+  public void RemoveQuest(QuestData questData)
+  {
+    if (!_questsByName.Remove(questData.Title.ToLower()))
+    {
+      return;
+    }
+
+    questData.ProgressChanged -= OnQuestProgressChanged;
+    if (player.LocalPlayer == Player)
+    {
+      questData.HideLocal();
+    }
+
+    questData.HideSync();
   }
 
   public int GetObjectLevel(int obj) => _objectLevels.GetValueOrDefault(obj);
@@ -733,6 +800,11 @@ public abstract class Faction
   {
     foreach (var quest in _questsByName.Values)
     {
+      if (_hiddenQuests.Contains(quest))
+      {
+        continue;
+      }
+
       if (player.LocalPlayer == Player)
       {
         quest.ShowLocal();

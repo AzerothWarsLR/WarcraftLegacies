@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Arep"
+      "Value": "Arep,A207"
     },
     {
       "Id": "ubld",
@@ -17,7 +17,7 @@
     {
       "Id": "ubui",
       "Type": 3,
-      "Value": "o02F,o009,ovln,otto,o01M,o01T,oshy,ogre,otrb,npgf,obar,ofor,oalt,obea,osld,owtw"
+      "Value": "o05G,obea,ovln,oshy,ogre,otrb,npgf,obar,ofor,oalt,obea,osld,owtw"
     },
     {
       "Id": "ucam",
