@@ -1,4 +1,5 @@
-﻿using MacroTools.Legends;
+﻿using MacroTools.Factions;
+using MacroTools.Legends;
 using MacroTools.Quests;
 using WCSharp.Events;
 
@@ -18,9 +19,12 @@ public sealed class ObjectiveLegendLevel : Objective
     PlayerUnitEvents.Register(HeroTypeEvent.Levels, OnLevel);
   }
 
+  /// <inheritdoc />
+  public override void OnAdd(Faction whichFaction) => OnLevel();
+
   private void OnLevel()
   {
-    if (_target.Unit.HeroLevel >= _level)
+    if (_target.Unit != null && _target.Unit.HeroLevel >= _level)
     {
       Progress = QuestProgress.Complete;
     }

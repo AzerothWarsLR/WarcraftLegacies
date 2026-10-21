@@ -37,10 +37,20 @@ public sealed class QuestSummonLegion : QuestData
     _legionTeleporter2 = AllPreplacedWidgets.Units.GetClosest(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, 23536, -29975);
   }
 
+  /// <summary>The unit that completed the summoning ritual, if it has been completed.</summary>
+  public unit? Summoner => _objectiveCastSpell.Caster;
+
   /// <inheritdoc />
-  public override string RewardFlavour =>
-    Loc.Format("A great portal to the depths of the Twisting Nether has been opened by {hero}. The Burning Legion steps forth, heralding the beginning of the end.",
-      ("{hero}", _objectiveCastSpell.Caster?.GetProperName() ?? Loc.Get("an unknown hero")));
+  public override string RewardFlavour
+  {
+    get
+    {
+      var caster = _objectiveCastSpell.Caster;
+      var heroName = caster != null ? caster.GetProperName() : Loc.Get("an unknown hero");
+      return Loc.Format("A great portal to the depths of the Twisting Nether has been opened by {hero}. The Burning Legion steps forth, heralding the beginning of the end.",
+        ("{hero}", heroName));
+    }
+  }
 
   /// <inheritdoc />
   protected override string RewardDescription =>

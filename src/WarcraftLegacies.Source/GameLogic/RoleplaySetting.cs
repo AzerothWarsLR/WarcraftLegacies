@@ -47,7 +47,8 @@ public static class RoleplaySetting
   private const int FelHordePlayer = 6;
   private const int DarkPortalEarliestTurn = 5;
   private const int DarkPortalForcedTurn = 7;
-  private const int PlagueEarliestTurn = 3;
+  private const int PlagueEarliestTurn = 5;
+  private const int PlagueForcedTurn = 8;
 
   private static readonly HashSet<Faction> _factionsWithPaths = new();
   private static bool _illidariPathsSetUp;
@@ -302,6 +303,7 @@ public static class RoleplaySetting
       if (quest is QuestPlague plague)
       {
         plague.Global = false;
+        plague.SetTurns(PlagueEarliestTurn, PlagueForcedTurn);
         WorldEventManager.Register(new QuestCompletedEvent(scourge, plague, "The Cult of the Damned unleashes its plague upon Lordaeron")
         {
           Name = "The Plague of Undeath",
@@ -325,7 +327,11 @@ public static class RoleplaySetting
       return;
     }
 
-    var split = new ScourgeSplitEvent(scourge, legion, legion.GetQuestByType<QuestSummonLegion>());
+    var summonLegion = legion.GetQuestByType<QuestSummonLegion>();
+    legion.AddQuest(new QuestHeraldOfArchimonde(summonLegion, legion));
+    scourge.AddQuest(new QuestHeraldOfArchimonde(summonLegion, legion));
+
+    var split = new ScourgeSplitEvent(scourge, legion, summonLegion);
 
     var lichKingBreaksFree = new PathLichKingBreaksFree(split);
     scourge.AddPath(lichKingBreaksFree);
