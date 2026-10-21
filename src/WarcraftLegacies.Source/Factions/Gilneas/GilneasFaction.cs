@@ -114,7 +114,7 @@ public sealed class GilneasFaction : Faction
 
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Gilneas.GilneasCastle,
       new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), Artifacts.BookOfMedivh,
-      faction == legion, faction == this));
+      faction != this, faction == this, faction == legion));
   }
 
   private void RegisterDruidsQuests(DruidsFaction druids)

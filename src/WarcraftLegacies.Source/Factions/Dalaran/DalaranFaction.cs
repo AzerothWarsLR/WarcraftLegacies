@@ -146,7 +146,7 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths, IHasRoleplayInt
   {
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Dalaran.Dalaran,
       new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), Artifacts.BookOfMedivh,
-      faction == legion, faction == this));
+      faction != this, faction == this, faction == legion));
   }
 
   private void RegisterDialogue()
