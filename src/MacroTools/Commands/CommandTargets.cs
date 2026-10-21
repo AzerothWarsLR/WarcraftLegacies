@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Factions;
 using MacroTools.Localization;
+using MacroTools.Paths;
 using MacroTools.Quests;
 
 namespace MacroTools.Commands;
@@ -15,6 +16,7 @@ public static class CommandTargets
 {
   private const string FactionSuffix = "Faction";
   private const string QuestPrefix = "Quest";
+  private const string PathPrefix = "Path";
 
   /// <summary>
   /// Resolves a <see cref="Faction"/> either by its 1-based position in <see cref="FactionManager.GetAllFactions"/>
@@ -90,6 +92,33 @@ public static class CommandTargets
   /// Returns the key used to target a <see cref="Power"/> in chat commands.
   /// </summary>
   public static string GetPowerKey(Power power) => power.GetType().Name;
+
+  /// <summary>
+  /// Resolves a <see cref="FactionPath"/> belonging to the given <see cref="Faction"/> either by its 1-based
+  /// position in <see cref="Faction.GetAllPaths"/> or by its C# class name.
+  /// </summary>
+  public static bool TryResolvePath(Faction faction, string key, [NotNullWhen(true)] out FactionPath? path, out string error)
+  {
+    if (TryResolveByIndexOrKey(key, faction.GetAllPaths(), GetPathKey, out path))
+    {
+      error = "";
+      return true;
+    }
+
+    error = Loc.Format("{faction} has no path with key '{key}'. Try -path list {faction} to list valid keys.", ("{faction}", faction.Name), ("{key}", key));
+    return false;
+  }
+
+  /// <summary>
+  /// Returns the key used to target a <see cref="FactionPath"/> in chat commands.
+  /// </summary>
+  public static string GetPathKey(FactionPath path)
+  {
+    var typeName = path.GetType().Name;
+    return typeName.StartsWith(PathPrefix, StringComparison.Ordinal)
+      ? typeName.Substring(PathPrefix.Length)
+      : typeName;
+  }
 
   /// <summary>
   /// Resolves a <see cref="Team"/> by name.

@@ -16,25 +16,21 @@ public static class CheatSetup
     CommandManager.Register(new CheatHelp());
     CommandManager.Register(new CheatFaction());
     CommandManager.Register(new CheatPower());
-    CommandManager.Register(new CheatTestPaths());
-    CommandManager.Register(new CheatTestEvents());
     CommandManager.Register(new CheatTeamRules());
-    CommandManager.Register(new CheatUnlockPath());
-    CommandManager.Register(new CheatTestPact());
-    CommandManager.Register(new CheatTestWorldTree());
-    CommandManager.Register(new CheatKillTree());
-    CommandManager.Register(new CheatTestDaelin());
-    CommandManager.Register(new CheatTestChaos());
-    CommandManager.Register(new CheatTestFallenPrince());
-    CommandManager.Register(new CheatTestAdmiral());
-    CommandManager.Register(new CheatTestSunwell());
-    CommandManager.Register(new CheatTestGilneas());
-    CommandManager.Register(new CheatTestDarkIron());
-    CommandManager.Register(new CheatTestWildhammer());
-    CommandManager.Register(new CheatTestStromgarde());
-    CommandManager.Register(new CheatTestDarkHorde());
-    CommandManager.Register(new CheatTestChainedMag());
-    CommandManager.Register(new CheatTestGrandAlliance());
+    CommandManager.Register(new CheatPath());
+    CommandManager.Register(new CheatScenario(
+      new CheatTestAdmiral(),
+      new CheatTestChainedMag(),
+      new CheatTestDaelin(),
+      new CheatTestDarkHorde(),
+      new CheatTestDarkIron(),
+      new CheatTestGilneas(),
+      new CheatTestGrandAlliance(),
+      new CheatTestPact(),
+      new CheatTestStromgarde(),
+      new CheatTestSunwell(),
+      new CheatTestWildhammer(),
+      new CheatTestWorldTree()));
     CommandManager.Register(new CheatQuest());
     CommandManager.Register(new CheatFood());
     CommandManager.Register(new CheatGod());
