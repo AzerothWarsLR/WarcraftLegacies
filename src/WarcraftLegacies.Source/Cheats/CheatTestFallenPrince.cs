@@ -63,7 +63,8 @@ public sealed class CheatTestFallenPrince : Command
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
   {
-    if (!RoleplaySetting.IsActive || cheater.GetPlayerData().Faction is not LordaeronFaction lordaeron)
+    var lordaeron = cheater.GetPlayerData().Faction as LordaeronFaction;
+    if (!RoleplaySetting.IsActive || lordaeron == null)
     {
       return "Play Lordaeron in Roleplay mode to run this.";
     }
@@ -153,7 +154,8 @@ public sealed class CheatTestFallenPrince : Command
   {
     var faction = cheater.GetPlayerData().Faction;
     Check(faction is FallenPrinceFaction, "you are now the Fallen Prince");
-    if (faction is not FallenPrinceFaction fallenPrince)
+    var fallenPrince = faction as FallenPrinceFaction;
+    if (fallenPrince == null)
     {
       return;
     }
@@ -197,7 +199,8 @@ public sealed class CheatTestFallenPrince : Command
 
   private static void CompleteQuests(player cheater)
   {
-    if (cheater.GetPlayerData().Faction is not FallenPrinceFaction fallenPrince)
+    var fallenPrince = cheater.GetPlayerData().Faction as FallenPrinceFaction;
+    if (fallenPrince == null)
     {
       return;
     }
@@ -217,7 +220,8 @@ public sealed class CheatTestFallenPrince : Command
 
   private static void RunAbilityTests(player cheater)
   {
-    if (cheater.GetPlayerData().Faction is not FallenPrinceFaction fallenPrince)
+    var fallenPrince = cheater.GetPlayerData().Faction as FallenPrinceFaction;
+    if (fallenPrince == null)
     {
       Finish(cheater);
       return;
