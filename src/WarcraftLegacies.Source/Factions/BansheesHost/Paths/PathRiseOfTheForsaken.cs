@@ -1,7 +1,9 @@
-﻿using MacroTools.Factions;
+﻿using MacroTools.Extensions;
+using MacroTools.Factions;
 using MacroTools.Paths;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Source.Factions.Forsaken;
+using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Shared;
 
@@ -16,7 +18,8 @@ public abstract class PathRiseOfTheForsaken : FactionPath
   {
     IconName = "BansheeRanger";
     AddRequirement(new ObjectiveUnitsDestroyed(ObelisksDestroyed, "Two of the Icecrown Obelisks have been destroyed",
-      AllPreplacedWidgets.Units.GetAll(UNIT_N094_ICECROWN_OBELISK_SCOURGE)) { ShowsInQuestLog = false });
+      AllPreplacedWidgets.Units.GetAll(UNIT_N094_ICECROWN_OBELISK_SCOURGE))
+    { ShowsInQuestLog = false });
   }
 
   /// <inheritdoc />
@@ -30,11 +33,14 @@ public abstract class PathRiseOfTheForsaken : FactionPath
       sylvanas.UnitType = UNIT_USYL_DARK_RANGER_FORSAKEN;
     }
 
+    ArthasDialogue.SetupForsakenBetrayal();
+
     if (forsakenPlayer != null)
     {
       var bases = new ForsakenBases(forsakenPlayer);
       OnBecameForsaken(bases);
       bases.ConvertScourgeBuildings();
+      forsakenPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\Undercity.ogg");
     }
   }
 

@@ -36,7 +36,7 @@ public sealed class ObjectiveLegendReachRect : Objective
 
   private void OnRegionEnter()
   {
-    if (@event.Region == _target && _legend.Unit.Alive && @event.Unit == _legend.Unit)
+    if (@event.Region == _target && _legend.Unit != null && _legend.Unit.Alive && @event.Unit == _legend.Unit)
     {
       Progress = QuestProgress.Complete;
     }
