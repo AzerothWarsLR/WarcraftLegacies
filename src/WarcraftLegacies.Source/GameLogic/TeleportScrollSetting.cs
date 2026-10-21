@@ -56,6 +56,19 @@ public static class TeleportScrollSetting
       UNIT_NGME_GOBLIN_MERCHANT);
   }
 
+  /// <summary>Stocks a faction shop that was created rather than built, so never finished construction.</summary>
+  public static void StockShop(unit shop)
+  {
+    foreach (var unitTypeId in _factionShopUnitTypes)
+    {
+      if (shop.UnitType == unitTypeId)
+      {
+        SeedShop(shop, _globalScrollsEnabled ? ITEM_I005_SCROLL_OF_TELEPORTATION : ITEM_STWP_TOWN_PORTAL_SCROLL);
+        return;
+      }
+    }
+  }
+
   public static void SeedNormalScrolls()
   {
     SeedShopsOfTypes(_factionShopUnitTypes, ITEM_STWP_TOWN_PORTAL_SCROLL);

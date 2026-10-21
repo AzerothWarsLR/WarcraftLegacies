@@ -5,6 +5,7 @@ using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Legends;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.GameLogic;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Shared;
@@ -110,6 +111,10 @@ public static class PathBase
     if (structure == null || !structure.Alive)
     {
       Logger.LogWarning($"Could not create {GetObjectName(unitTypeId)} at {(int)x}, {(int)y}.");
+    }
+    else
+    {
+      TeleportScrollSetting.StockShop(structure);
     }
 
     return structure;
