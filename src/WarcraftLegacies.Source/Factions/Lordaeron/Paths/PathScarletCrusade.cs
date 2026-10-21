@@ -21,7 +21,8 @@ public sealed class PathScarletCrusade : FactionPath
     Description = "The palace has fallen or Stratholme burns, and the survivors want vengeance more than a kingdom. They abandon what remains of Lordaeron and rally at Tyr's Hand as the Scarlet Crusade, sworn to purge the undead from the land.";
     AddMustStayTrueRequirement(new ObjectiveEitherOf(
       new ObjectiveCapitalLost(capitalPalace) { ShowsInQuestLog = false },
-      new ObjectiveCapitalLost(stratholme) { ShowsInQuestLog = false }) { ShowsInQuestLog = false });
+      new ObjectiveCapitalLost(stratholme) { ShowsInQuestLog = false })
+    { ShowsInQuestLog = false });
   }
 
   /// <inheritdoc />

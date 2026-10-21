@@ -29,7 +29,7 @@ public sealed class DaelinsVengeanceEvent : WorldEvent
   private const string RowboatModel = @"doodads\northrend\water\rowboat\rowboat.mdl";
   private const float WaterSurfaceZ = 38;
 
-  private static readonly Rectangle OutpostArea = new(-10000, -12100, -8200, -10650);
+  private static readonly Rectangle _outpostArea = new(-10000, -12100, -8200, -10650);
 
   private readonly KultirasFaction _kultiras;
   private readonly ObjectiveTriggered _theramoreJoinedHorde;
@@ -162,7 +162,7 @@ public sealed class DaelinsVengeanceEvent : WorldEvent
 
   private static void ClearOldStructures(player kultirasPlayer)
   {
-    foreach (var structure in GlobalGroup.EnumUnitsInRect(OutpostArea))
+    foreach (var structure in GlobalGroup.EnumUnitsInRect(_outpostArea))
     {
       if (structure.Owner != kultirasPlayer && structure.IsUnitType(unittype.Structure) && structure.IsRemovable())
       {

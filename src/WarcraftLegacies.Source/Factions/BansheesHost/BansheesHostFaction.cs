@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.BansheesHost.Paths;
 using WarcraftLegacies.Source.GameLogic;
-using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions.BansheesHost;

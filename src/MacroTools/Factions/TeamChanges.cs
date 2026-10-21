@@ -10,11 +10,11 @@ namespace MacroTools.Factions;
 /// <summary>Moves players between <see cref="Team"/>s mid-game, with ceasefires, team caps and a cooldown.</summary>
 public static class TeamChanges
 {
-  private static readonly Dictionary<player, float> LastChangeTimes = new();
+  private static readonly Dictionary<player, float> _lastChangeTimes = new();
   private static timer? _clock;
   private static bool _watching;
-  private static readonly List<Action> AnyTeamChangedHandlers = new();
-  private static readonly HashSet<Team> SoloTeams = new();
+  private static readonly List<Action> _anyTeamChangedHandlers = new();
+  private static readonly HashSet<Team> _soloTeams = new();
   private static float _cooldown = 600;
   private static Func<Team, int> _capacity = _ => int.MaxValue;
   private static List<Ceasefire>? _ceasefireBatch;
@@ -38,7 +38,7 @@ public static class TeamChanges
   /// <summary>How many players a <see cref="Team"/> can hold before nobody else can join it.</summary>
   public static Func<Team, int> Capacity
   {
-    get => team => SoloTeams.Contains(team) ? 1 : _capacity(team);
+    get => team => _soloTeams.Contains(team) ? 1 : _capacity(team);
     set
     {
       _capacity = value;
@@ -54,7 +54,7 @@ public static class TeamChanges
   public static void OnAnyTeamChanged(Action handler)
   {
     WatchTeams();
-    AnyTeamChangedHandlers.Add(handler);
+    _anyTeamChangedHandlers.Add(handler);
   }
 
   private static float Now
@@ -99,7 +99,7 @@ public static class TeamChanges
 
   /// <summary>Seconds left before <paramref name="whichPlayer"/> can change teams again.</summary>
   public static float GetCooldownRemaining(player whichPlayer) =>
-    LastChangeTimes.TryGetValue(whichPlayer, out var lastChange) ? Math.Max(0, lastChange + Cooldown - Now) : 0;
+    _lastChangeTimes.TryGetValue(whichPlayer, out var lastChange) ? Math.Max(0, lastChange + Cooldown - Now) : 0;
 
   /// <summary>Moves <paramref name="whichPlayer"/> to <paramref name="destination"/>, with a ceasefire.</summary>
   public static void Move(player whichPlayer, Team destination)
@@ -114,7 +114,7 @@ public static class TeamChanges
     var formerAllies = GetAllies(formerTeam).Where(x => x != whichPlayer).ToList();
     playerData.SetTeam(destination);
     formerAllies.RemoveAll(x => AreTeammates(x, whichPlayer));
-    LastChangeTimes[whichPlayer] = Now;
+    _lastChangeTimes[whichPlayer] = Now;
 
     var factionName = playerData.Faction?.ColoredName ?? whichPlayer.Name;
     var destinationBloc = destination.Bloc;
@@ -140,7 +140,7 @@ public static class TeamChanges
       FactionManager.Register(soloTeam);
     }
 
-    SoloTeams.Add(soloTeam);
+    _soloTeams.Add(soloTeam);
     Move(whichPlayer, soloTeam);
   }
 
@@ -225,7 +225,7 @@ public static class TeamChanges
 
   internal static void NotifyTeamChanged()
   {
-    foreach (var handler in AnyTeamChangedHandlers)
+    foreach (var handler in _anyTeamChangedHandlers)
     {
       handler();
     }

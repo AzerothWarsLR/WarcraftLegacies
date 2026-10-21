@@ -10,10 +10,10 @@ namespace MacroTools.Factions;
 /// <summary>Gives teams whose side of a <see cref="Front"/> has fallen behind more damage dealt and less damage taken.</summary>
 public static class TeamHandicaps
 {
-  private static readonly List<Front> Fronts = new();
-  private static readonly Dictionary<Team, float> Handicaps = new();
-  private static readonly HashSet<Bloc> PooledBlocs = new();
-  private static readonly List<Action> ChangedHandlers = new();
+  private static readonly List<Front> _fronts = new();
+  private static readonly Dictionary<Team, float> _handicaps = new();
+  private static readonly HashSet<Bloc> _pooledBlocs = new();
+  private static readonly List<Action> _changedHandlers = new();
 
   /// <summary>How much each player a side has fallen behind by is worth, as a fraction.</summary>
   public static float PerMissingPlayer { get; set; } = 0.05f;
@@ -26,7 +26,7 @@ public static class TeamHandicaps
   /// <summary>Adds a front whose sides are compared from now on.</summary>
   public static void AddFront(Front front)
   {
-    Fronts.Add(front);
+    _fronts.Add(front);
     if (IsEnabled)
     {
       RememberStartingSides(front);
@@ -43,7 +43,7 @@ public static class TeamHandicaps
     }
 
     IsEnabled = true;
-    foreach (var front in Fronts)
+    foreach (var front in _fronts)
     {
       RememberStartingSides(front);
     }
@@ -80,15 +80,15 @@ public static class TeamHandicaps
   /// <summary>Judges every team in <paramref name="bloc"/> together, so they share one handicap.</summary>
   public static void Pool(Bloc bloc)
   {
-    PooledBlocs.Add(bloc);
+    _pooledBlocs.Add(bloc);
     Refresh();
   }
 
-  public static void OnChanged(Action handler) => ChangedHandlers.Add(handler);
+  public static void OnChanged(Action handler) => _changedHandlers.Add(handler);
 
   /// <summary>The handicap <paramref name="team"/> currently has, as a fraction, like 0.1 for 10%.</summary>
   public static float GetHandicap(Team? team) =>
-    team != null && Handicaps.TryGetValue(team, out var handicap) ? handicap : 0;
+    team != null && _handicaps.TryGetValue(team, out var handicap) ? handicap : 0;
 
   private static void RememberStartingSides(Front front)
   {
@@ -98,10 +98,10 @@ public static class TeamHandicaps
 
   private static void Recalculate()
   {
-    Handicaps.Clear();
+    _handicaps.Clear();
     var attackerGrowths = new List<int>();
     var defenderGrowths = new List<int>();
-    foreach (var front in Fronts)
+    foreach (var front in _fronts)
     {
       attackerGrowths.Add(CountSide(front.Attacks) - front.StartingAttackers);
       defenderGrowths.Add(CountSide(front.Defends) - front.StartingDefenders);
@@ -115,14 +115,14 @@ public static class TeamHandicaps
       }
 
       var behindBy = 0;
-      for (var i = 0; i < Fronts.Count; i++)
+      for (var i = 0; i < _fronts.Count; i++)
       {
-        if (IsGroupOnSide(team, Fronts[i].Attacks))
+        if (IsGroupOnSide(team, _fronts[i].Attacks))
         {
           behindBy = Math.Max(behindBy, defenderGrowths[i] - attackerGrowths[i]);
         }
 
-        if (IsGroupOnSide(team, Fronts[i].Defends))
+        if (IsGroupOnSide(team, _fronts[i].Defends))
         {
           behindBy = Math.Max(behindBy, attackerGrowths[i] - defenderGrowths[i]);
         }
@@ -130,11 +130,11 @@ public static class TeamHandicaps
 
       if (behindBy > 0)
       {
-        Handicaps[team] = Math.Min(Maximum, behindBy * PerMissingPlayer);
+        _handicaps[team] = Math.Min(Maximum, behindBy * PerMissingPlayer);
       }
     }
 
-    foreach (var handler in ChangedHandlers)
+    foreach (var handler in _changedHandlers)
     {
       handler();
     }
@@ -163,7 +163,7 @@ public static class TeamHandicaps
   private static bool IsGroupOnSide(Team team, Func<Faction, bool> side)
   {
     var bloc = team.Bloc;
-    if (bloc == null || !PooledBlocs.Contains(bloc))
+    if (bloc == null || !_pooledBlocs.Contains(bloc))
     {
       return IsOnSide(team, side);
     }
@@ -194,7 +194,7 @@ public static class TeamHandicaps
 
   private static bool IsOnAnyFront(Faction faction)
   {
-    foreach (var front in Fronts)
+    foreach (var front in _fronts)
     {
       if (front.Attacks(faction) || front.Defends(faction))
       {
@@ -210,7 +210,7 @@ public static class TeamHandicaps
   private static void OnPlayerTakingDamage()
   {
     var source = @event.DamageSource;
-    if (source == null || Handicaps.Count == 0)
+    if (source == null || _handicaps.Count == 0)
     {
       return;
     }

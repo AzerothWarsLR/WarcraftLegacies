@@ -24,7 +24,7 @@ public static class NordrassilSetup
   private const float SmokeDistance = 220;
   private const float RemovalDelay = 1;
 
-  private static readonly int ScorchedGround = FourCC("Ndrt");
+  private static readonly int _scorchedGround = FourCC("Ndrt");
 
   private static effect? _lights;
 
@@ -57,7 +57,7 @@ public static class NordrassilSetup
     remains.SetYaw(nordrassil.Facing * MathF.PI / 180);
     remains.SetColor(CharredRed, CharredGreen, CharredBlue);
 
-    SetTerrainType(x, y, ScorchedGround, -1, ScorchedRadius, 0);
+    SetTerrainType(x, y, _scorchedGround, -1, ScorchedRadius, 0);
     for (var i = 0; i < 3; i++)
     {
       var angle = i * 2 * MathF.PI / 3;

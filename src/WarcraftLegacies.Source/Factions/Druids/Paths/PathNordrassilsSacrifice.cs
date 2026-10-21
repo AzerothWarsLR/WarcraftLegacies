@@ -23,7 +23,8 @@ public sealed class PathNordrassilsSacrifice : FactionPath
     IconName = "Tranquility";
     Description = "Archimonde drinks deep from the Well of Eternity beneath Nordrassil. Unleash the spirits of the World Tree to tear him apart, and let the tree burn with him. What remains of the druids carries on as the Cenarion Circle, diminished but unbroken.";
     AddMustStayTrueRequirement(new ObjectiveChannelTime(consumeTree.WorldTreeChannel, ChannelSeconds,
-      "Archimonde has been draining the World Tree for 60 seconds") { ShowsInQuestLog = false });
+      "Archimonde has been draining the World Tree for 60 seconds")
+    { ShowsInQuestLog = false });
     legion.QuestProgressChanged += args =>
     {
       if (args.Quest == consumeTree && consumeTree.Progress == QuestProgress.Complete)
