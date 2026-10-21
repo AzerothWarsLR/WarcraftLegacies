@@ -32,7 +32,7 @@ public sealed class QuestPlague : QuestData
   private readonly List<CoastStructure> _coastStructures = new();
   private bool _coastRescued;
   private readonly List<unit> _scholomanceUnits;
-  private readonly ObjectiveTurn _earliestTurn = new(3);
+  private readonly ObjectiveTurn _earliestTurn = new(8);
   private readonly ObjectiveTurn _forcedTurn = new(11);
   private readonly ObjectiveEitherOf _researchOrForcedTurn;
 

@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPoints;
+﻿using System.Linq;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
@@ -16,6 +17,9 @@ namespace WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 
 public static class ScourgeHardModeSetup
 {
+  private const int PlagueEarliestTurn = 3;
+  private const int PlagueForcedTurn = 11;
+
   private static readonly int[] _unclaimedNorthrendControlPoints =
   {
     UNIT_N02S_STORM_PEAKS,
@@ -38,6 +42,9 @@ public static class ScourgeHardModeSetup
     {
       scourge.StartingGold.Turns = 5;
     }
+
+    var plague = scourge.GetAllQuests().OfType<QuestPlague>().FirstOrDefault();
+    plague?.SetTurns(PlagueEarliestTurn, PlagueForcedTurn);
 
     CompleteCultOfTheDamned(scourge, owner);
     CompleteDrakUnlock(scourge, owner);
