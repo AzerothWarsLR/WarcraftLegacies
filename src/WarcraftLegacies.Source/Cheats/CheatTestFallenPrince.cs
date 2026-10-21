@@ -6,9 +6,12 @@ using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
+using MacroTools.Spells;
+using MacroTools.UnitTraits;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.FallenPrince;
 using WarcraftLegacies.Source.Factions.FallenPrince.Quests;
+using WarcraftLegacies.Source.Factions.FallenPrince.Spells;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron;
@@ -18,6 +21,7 @@ using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Shared;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -182,12 +186,12 @@ public sealed class CheatTestFallenPrince : Command
       Check(count == expected, $"coast base has {count} {GetObjectName(structureType)} (expected {expected})");
     }
 
-    var others = GlobalGroup.EnumUnitsInRect(Regions.StratholmeScourgeBase)
-      .Where(x => x.Alive && x.IsUnitType(unittype.Structure) && x.Owner != cheater && x.Owner != player.NeutralPassive && x.Owner != player.NeutralAggressive &&
-                  !x.IsControlPoint())
-      .Select(x => $"{GetObjectName(x.UnitType)} of {x.Owner.Name}")
-      .ToList();
-    Check(others.Count == 0, $"no other structures left on the coast ({string.Join(", ", others)})");
+    var scourgePlayer = scourge?.Player;
+    if (scourgePlayer != null)
+    {
+      var leftovers = GetCoastStructures(scourgePlayer).Select(x => GetObjectName(x.UnitType)).ToList();
+      Check(leftovers.Count == 0, $"the Scourge has no second base left on the coast ({string.Join(", ", leftovers)})");
+    }
 
     Check(HasQuest<QuestThroneOfLordaeron>(fallenPrince), "has The Throne of Lordaeron");
     Check(HasQuest<QuestStratholmeRisen>(fallenPrince), "has The Culled Rise");
@@ -352,7 +356,7 @@ public sealed class CheatTestFallenPrince : Command
     falric.Life = falric.MaxLife * 0.5f;
     var lifeBefore = falric.Life;
     falric.Mana = falric.MaxMana;
-    falric.IssueOrder(OrderId("darkconversion"), ghoul);
+    falric.IssueOrder(OrderId("darkconversion"));
     After(2, () => Step(cheater, "Death Pact", () =>
     {
       Check(!ghoul.Alive, "the ghoul was sacrificed");
@@ -370,10 +374,17 @@ public sealed class CheatTestFallenPrince : Command
       bystanders.Add(CreateEnemy(marwyn.X + 400 * Cos(angle), marwyn.Y + 400 * Sin(angle), 3000));
     }
 
+    var spellEffects = 0;
+    PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, () => spellEffects++, UNIT_U03A_DEATHBRINGER_FALLENPRINCE);
+    var validTargets = GlobalGroup.EnumUnitsInRange(marwyn.X, marwyn.Y, 600)
+      .Count(x => CastFilters.IsTargetEnemyAndAliveUnits(marwyn, x));
+    Log($"  Soul Echo level {marwyn.GetAbilityLevel(ABILITY_A17G_SOUL_ECHO_FALLENPRINCE_MARWYN)}, trait registered " +
+        $"{UnitTypeTraitRegistry.UnitHasTrait(marwyn, typeof(SoulEcho))}, valid enemies in range {validTargets}");
     marwyn.Mana = marwyn.MaxMana;
     marwyn.IssueOrder(OrderId("curse"), target);
     After(2, () => Step(cheater, "Shared Suffering and Soul Echo", () =>
     {
+      Log($"  spell effect events seen for Marwyn's unit type: {spellEffects}");
       Check(target.GetAbilityLevel(BUFF_B107_SHARED_SUFFERING) > 0, "the target is cursed by Shared Suffering");
       Check(target.Life < target.MaxLife, "the curse is dealing damage");
       var struck = bystanders.Count(x => x.Life < x.MaxLife);
@@ -443,6 +454,7 @@ public sealed class CheatTestFallenPrince : Command
     var priest = CreateTestUnit(cheater, UNIT_U107_FALLEN_PRIEST_FALLENPRINCE, arena.X, arena.Y);
     var cursed = CreateEnemy(arena.X + 300, arena.Y, 3000);
     var bolted = CreateEnemy(arena.X - 300, arena.Y, 3000);
+    SetPlayerTechResearched(cheater, UPGRADE_R106_FALLEN_PRIEST_ADEPT_TRAINING_FALLENPRINCE, 2);
     priest.Mana = priest.MaxMana;
     priest.IssueOrder(OrderId("firebolt"), bolted);
     After(1.5f, () =>
