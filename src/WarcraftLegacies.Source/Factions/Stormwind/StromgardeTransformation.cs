@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using MacroTools.Shared;
@@ -59,6 +60,7 @@ public sealed class StromgardeTransformation
 
     PathBase.RelocateArmy(whichPlayer, _noEquivalents, _stromgardeKeep.X, _stromgardeKeep.Y - 600);
     PathBase.SummonLegend(AllLegends.Stormwind.Thoras, whichPlayer, new Point(_stromgardeKeep.X, _stromgardeKeep.Y - 400));
+    whichPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\AllianceBattleMarch.ogg");
   }
 
   /// <summary>

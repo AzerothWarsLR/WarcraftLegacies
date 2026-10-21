@@ -47,6 +47,7 @@ public sealed class ScarletCrusadeTransformation
     GrantTyrsHand(whichPlayer);
     whichPlayer.RescueGroup(_rescueUnits);
     _saiden.ForceCreate(whichPlayer, Regions.Scarlet_Spawn.Center, 270);
+    whichPlayer.PlayMusicThematic(@"war3mapImported\ScarletTheme.mp3");
   }
 
   private static void AssignScarletCrusadeFaction(Faction completingFaction)

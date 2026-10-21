@@ -28,6 +28,7 @@ public sealed class BansheesHostTransformation
     PathBase.ClaimArea(NorthrendBase, whichPlayer);
     CreateBase(whichPlayer, center);
     PathBase.SummonLegend(AllLegends.Quel.Sylvanas, whichPlayer, new Point(center.X, center.Y + 300));
+    whichPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\TragicConfrontation.mp3");
   }
 
   private static void CreateBase(player whichPlayer, Point center)

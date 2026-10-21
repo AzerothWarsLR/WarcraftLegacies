@@ -48,6 +48,7 @@ public sealed class DarkIronTransformation
     var shadowforgeCity = new Point(11648, -9232);
     PathBase.RelocateArmy(whichPlayer, DarkIronFaction.UnitEquivalents, shadowforgeCity.X + 600, shadowforgeCity.Y - 600);
     PathBase.SummonLegend(AllLegends.Ironforge.Dagran, whichPlayer, new Point(shadowforgeCity.X + 400, shadowforgeCity.Y - 400));
+    whichPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\Tension.mp3");
   }
 
   /// <summary>Takes Grim Batol and the buildings around it from whichever creeps hold them, unless a faction already does.</summary>

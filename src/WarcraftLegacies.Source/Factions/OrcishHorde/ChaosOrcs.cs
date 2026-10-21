@@ -72,6 +72,7 @@ public sealed class ChaosOrcs
     var fountain = AllLegends.Neutral.FountainOfBlood.Unit;
     PathBase.SummonLegend(AllLegends.Warsong.Mannoroth, orcPlayer, new Point(fountain.X, fountain.Y - 300));
     AllLegends.Warsong.Mannoroth.Died += OnMannorothDied;
+    orcPlayer.PlayMusicThematic("Doom");
   }
 
   /// <summary>The blood's hold breaks: Grom dies breaking the curse, Thrall and Vol'jin return, and the orcs are themselves again.</summary>

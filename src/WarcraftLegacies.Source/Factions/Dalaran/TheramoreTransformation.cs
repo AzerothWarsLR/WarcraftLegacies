@@ -35,5 +35,6 @@ public sealed class TheramoreTransformation
     PathBase.CreateUnits(whichPlayer, UNIT_H032_BATTLEMAGE_DALARAN, 4, center.X - 250, center.Y + 300);
     PathBase.CreateUnits(whichPlayer, UNIT_N0AK_INITIATE_MAGE_DALARAN, 4, center.X + 250, center.Y + 300);
     PathBase.SummonLegend(AllLegends.Dalaran.Jaina, whichPlayer, new Point(center.X, center.Y));
+    whichPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\HumanX1.mp3");
   }
 }

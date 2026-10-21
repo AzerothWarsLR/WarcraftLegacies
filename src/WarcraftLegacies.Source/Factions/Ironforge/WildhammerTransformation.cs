@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Factions;
 using WarcraftLegacies.Source.Factions.Ironforge.Quests;
 using WarcraftLegacies.Source.Shared;
@@ -32,5 +33,6 @@ public sealed class WildhammerTransformation
 
     PathBase.RelocateArmy(whichPlayer, _noEquivalents, _aeriePeak.X, _aeriePeak.Y - 600);
     PathBase.SummonLegend(AllLegends.Ironforge.Kurdran, whichPlayer, new Point(_aeriePeak.X, _aeriePeak.Y - 400));
+    whichPlayer.PlayMusicThematic(@"war3mapImported\DwarfTheme.mp3");
   }
 }
