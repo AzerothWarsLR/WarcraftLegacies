@@ -16,20 +16,12 @@ public static class GameStartVoteSequence
 {
   private static List<unit> _pausedUnits = new();
 
-  /// <param name="offlineTestMode">The mode an offline game with one human plays, skipping the mode vote.</param>
   public static void Setup(IEnumerable<IGameMode> gameModes, float timeToDisplay, float modeVoteLength,
-    float difficultyVoteLength, float customOptionsVoteLength, IGameMode? offlineTestMode = null)
+    float difficultyVoteLength, float customOptionsVoteLength)
   {
     timer.Create().Start(timeToDisplay, false, () =>
     {
       PauseAllUnits();
-
-      if (offlineTestMode != null && IsOfflineSoloTest())
-      {
-        offlineTestMode.OnChoose();
-        OnModeChosen(offlineTestMode, difficultyVoteLength, customOptionsVoteLength);
-        return;
-      }
 
       GameModeSelection.Setup(gameModes, modeVoteLength,
         winningMode => OnModeChosen(winningMode, difficultyVoteLength, customOptionsVoteLength));
@@ -38,7 +30,7 @@ public static class GameStartVoteSequence
 
   private static void OnModeChosen(IGameMode winningMode, float difficultyVoteLength, float customOptionsVoteLength)
   {
-    DifficultySelection.Setup(difficultyVoteLength, winningMode.ForcesOpenDiplomacy, difficulty =>
+    DifficultySelection.Setup(difficultyVoteLength, winningMode.Diplomacy, difficulty =>
     {
       if (difficulty == Difficulty.Hard)
       {
@@ -54,20 +46,6 @@ public static class GameStartVoteSequence
         ShowFactionChoicesThenFinish();
       }
     });
-  }
-
-  /// <summary>Whether this is an offline game with a single human.</summary>
-  private static bool IsOfflineSoloTest()
-  {
-    var humans = 0;
-    var isLocalPlayerName = false;
-    foreach (var whichPlayer in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
-    {
-      humans++;
-      isLocalPlayerName = whichPlayer.Name == "Local Player";
-    }
-
-    return humans == 1 && isLocalPlayerName;
   }
 
   private static void ShowFactionChoicesThenFinish()
