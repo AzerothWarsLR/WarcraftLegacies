@@ -1,0 +1,83 @@
+{
+  "OldId": "uzig",
+  "NewId": "u109",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Plague Cauldron"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(FallenPrince Culled)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Doodads\\LordaeronSummer\\Props\\CauldronWithHeads\\CauldronWithHeads.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPlagueBarrel.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A cauldron of the plague, bubbling over with the risen dead of Stratholme."
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uupt",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ufma",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ubld",
+      "Value": 1
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.6
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

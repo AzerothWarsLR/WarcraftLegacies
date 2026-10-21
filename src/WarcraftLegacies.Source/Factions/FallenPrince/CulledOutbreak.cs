@@ -1,4 +1,6 @@
-﻿using MacroTools.ControlPoints;
+﻿using System.Collections.Generic;
+using System.Linq;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
@@ -21,6 +23,11 @@ public static class CulledOutbreak
   private const float HuntInterval = 8;
   private const float HuntRadius = 3000;
   private const float ControlPointSearchRadius = 8000;
+  private const int CauldronCount = 4;
+  private const float CauldronSpawnInterval = 60;
+  private const int ZombieLimit = 70;
+  private const float CauldronClearance = 450;
+  private const float CauldronSize = 192;
   private const string RiseEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl";
 
   /// <summary>Raises the zombies, allied to everyone on <paramref name="fallenPrince"/>'s team.</summary>
@@ -74,6 +81,60 @@ public static class CulledOutbreak
     }
 
     timer.Create().Start(HuntInterval, true, () => SendIdleZombiesHunting(culled));
+    var cauldrons = RaiseCauldrons(culled);
+    timer.Create().Start(CauldronSpawnInterval, true, () => SpawnFromCauldrons(culled, cauldrons));
+  }
+
+  /// <summary>Places the plague cauldrons on open ground around Stratholme, clear of any buildings.</summary>
+  private static List<unit> RaiseCauldrons(player culled)
+  {
+    var cauldrons = new List<unit>();
+    foreach (var radius in new[] { 700f, 1000f, 1300f })
+    {
+      for (var i = 0; i < 8 && cauldrons.Count < CauldronCount; i++)
+      {
+        var angle = MathEx.Pi / 8 + i * MathEx.Pi / 4;
+        var x = CenterX + radius * Cos(angle);
+        var y = CenterY + radius * Sin(angle);
+        if (pathingtype.Walkability.GetPathable(x, y) || IsNearStructureOrCauldron(x, y, cauldrons))
+        {
+          continue;
+        }
+
+        cauldrons.Add(GeneralHelpers.CreateStructureForced(culled, UNIT_U109_PLAGUE_CAULDRON_FALLENPRINCE_CULLED, x, y,
+          270, CauldronSize));
+      }
+    }
+
+    return cauldrons;
+  }
+
+  private static bool IsNearStructureOrCauldron(float x, float y, List<unit> cauldrons) =>
+    GlobalGroup.EnumUnitsInRange(x, y, CauldronClearance).Any(other => other.Alive && other.IsUnitType(unittype.Structure)) ||
+    cauldrons.Any(cauldron => MathEx.GetDistanceBetweenPoints(cauldron.GetPosition(), new WCSharp.Shared.Data.Point(x, y)) < CauldronClearance * 2);
+
+  /// <summary>Each standing cauldron raises a zombie, unless the culled are already at their limit.</summary>
+  private static void SpawnFromCauldrons(player culled, List<unit> cauldrons)
+  {
+    var zombies = GlobalGroup.EnumUnitsOfPlayer(culled)
+      .Count(x => x.Alive && x.UnitType == UNIT_U106_CULLED_ZOMBIE_FALLENPRINCE_CULLED);
+    foreach (var cauldron in cauldrons)
+    {
+      if (zombies >= ZombieLimit)
+      {
+        return;
+      }
+
+      if (!cauldron.Alive)
+      {
+        continue;
+      }
+
+      effect.Create(RiseEffect, cauldron.X, cauldron.Y - 200).Dispose();
+      var zombie = unit.Create(culled, UNIT_U106_CULLED_ZOMBIE_FALLENPRINCE_CULLED, cauldron.X, cauldron.Y - 200, 270);
+      PrepareZombie(zombie);
+      zombies++;
+    }
   }
 
   /// <summary>Zombies that have nothing to do shamble towards the nearest enemy, or failing that the nearest enemy-held control point.</summary>

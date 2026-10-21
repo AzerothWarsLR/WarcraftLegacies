@@ -31,7 +31,7 @@ public sealed class QuestStratholmeRisen : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "Gain a blighted base inside Stratholme, the culled dead rise as zombies around the city, and learn to train Captain Marwyn from the Altar of Darkness";
+    "Gain a blighted base inside Stratholme, the culled dead rise as zombies around the city while four plague cauldrons raise more over time, and learn to train Captain Marwyn from the Altar of Darkness";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
@@ -43,7 +43,6 @@ public sealed class QuestStratholmeRisen : QuestData
     }
 
     SetBlight(owner, 14600, 13000, BlightRadius, true);
-    CulledOutbreak.Unleash(owner);
     CreateStructureForced(owner, UNIT_USEP_CRYPT_SCOURGE_BARRACKS, 15584, 13536, Facing, StructureSize);
     CreateStructureForced(owner, UNIT_UTOD_TEMPLE_OF_THE_DAMNED_SCOURGE_MAGIC, 14624, 13408, Facing, StructureSize);
     CreateStructureForced(owner, UNIT_USLH_SLAUGHTERHOUSE_SCOURGE_SPECIALIST, 13536, 12384, Facing, StructureSize);
@@ -64,5 +63,6 @@ public sealed class QuestStratholmeRisen : QuestData
     unit.Create(owner, UNIT_U101_RISEN_FOOTMAN_FALLENPRINCE, 14691, 12979, Facing);
     unit.Create(owner, UNIT_U101_RISEN_FOOTMAN_FALLENPRINCE, 14903, 11437, Facing);
     unit.Create(owner, UNIT_U101_RISEN_FOOTMAN_FALLENPRINCE, 14939, 12761, Facing);
+    CulledOutbreak.Unleash(owner);
   }
 }
