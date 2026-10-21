@@ -30,7 +30,7 @@ public sealed class CheatTestFallenPrince : Command
 {
   private const string ReportPath = @"WarcraftLegacies-fallenprince-report.pld";
   private const int ReportChunkLength = 200;
-  private const float ArenaClearRadius = 1600;
+  private const float ArenaClearRadius = 1200;
   private const float ArenaSpacing = 3000;
   private const int TestArthasExperience = 5000;
 
@@ -183,8 +183,11 @@ public sealed class CheatTestFallenPrince : Command
     }
 
     var others = GlobalGroup.EnumUnitsInRect(Regions.StratholmeScourgeBase)
-      .Count(x => x.Alive && x.IsUnitType(unittype.Structure) && x.Owner != cheater && !x.IsControlPoint());
-    Check(others == 0, $"no other structures left on the coast ({others})");
+      .Where(x => x.Alive && x.IsUnitType(unittype.Structure) && x.Owner != cheater && x.Owner != player.NeutralPassive &&
+                  !x.IsControlPoint())
+      .Select(x => $"{GetObjectName(x.UnitType)} of {x.Owner.Name}")
+      .ToList();
+    Check(others.Count == 0, $"no other structures left on the coast ({string.Join(", ", others)})");
 
     Check(HasQuest<QuestThroneOfLordaeron>(fallenPrince), "has The Throne of Lordaeron");
     Check(HasQuest<QuestStratholmeRisen>(fallenPrince), "has The Culled Rise");
@@ -272,6 +275,7 @@ public sealed class CheatTestFallenPrince : Command
     After(19, () => TestWardOfCorruption(cheater, marwyn));
     After(22, () => TestSoulRend(cheater, marwyn));
     After(26, () => TestFallenPriest(cheater, arenas[2]));
+    After(28, () => TestSummoningChannel(cheater, marwyn));
     After(36, () => TestKeyOfTheThreeMoons(cheater, fallenPrince));
     After(39, () => TestAscension(cheater));
     After(46, () => Finish(cheater));
@@ -409,12 +413,28 @@ public sealed class CheatTestFallenPrince : Command
 
     var survivor = CreateEnemy(centerX + 450, centerY - 150, 3000);
     marwyn.Mana = marwyn.MaxMana;
-    marwyn.IssueOrder(OrderId("deathanddecay"), centerX, centerY);
+    marwyn.IssueOrder(OrderId("volcano"), centerX, centerY);
     After(2.5f, () => Step(cheater, "Soul Rend", () =>
     {
       var dead = victims.Count(x => !x.Alive);
       Check(dead == 3, $"Soul Rend killed the weakened enemies in the area ({dead} of 3)");
       Check(survivor.Life < survivor.MaxLife, $"a released soul struck the enemy outside the area ({(int)(survivor.MaxLife - survivor.Life)} damage)");
+    }));
+  }
+
+  private static void TestSummoningChannel(player cheater, unit marwyn)
+  {
+    const int ritualId = ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
+    var ritualOrder = OrderId("deathanddecay");
+    marwyn.AddAbility(ritualId);
+    marwyn.Mana = marwyn.MaxMana;
+    marwyn.IssueOrder(ritualOrder, marwyn.X + 200, marwyn.Y);
+    After(3, () => Step(cheater, "Summoning ritual next to Soul Rend", () =>
+    {
+      Check(marwyn.CurrentOrder == ritualOrder,
+        $"Marwyn is still channelling the summoning after 3 seconds (order {OrderId2String(marwyn.CurrentOrder)})");
+      marwyn.IssueOrder(ORDER_STOP);
+      marwyn.RemoveAbility(ritualId);
     }));
   }
 
@@ -576,7 +596,8 @@ public sealed class CheatTestFallenPrince : Command
       }
     }
 
-    return GlobalGroup.EnumUnitsInRange(x, y, ArenaClearRadius).Count == 0;
+    return !GlobalGroup.EnumUnitsInRange(x, y, ArenaClearRadius)
+      .Any(other => other.Alive && other.Owner != player.NeutralPassive && other.IsSelectable());
   }
 
   private static List<unit> GetCoastStructures(player owner) =>
