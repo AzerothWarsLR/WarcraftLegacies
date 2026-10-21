@@ -21,7 +21,6 @@ using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Shared;
-using WCSharp.Events;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Cheats;
@@ -374,8 +373,6 @@ public sealed class CheatTestFallenPrince : Command
       bystanders.Add(CreateEnemy(marwyn.X + 400 * Cos(angle), marwyn.Y + 400 * Sin(angle), 3000));
     }
 
-    var spellEffects = 0;
-    PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, () => spellEffects++, UNIT_U03A_DEATHBRINGER_FALLENPRINCE);
     var validTargets = GlobalGroup.EnumUnitsInRange(marwyn.X, marwyn.Y, 600)
       .Count(x => CastFilters.IsTargetEnemyAndAliveUnits(marwyn, x));
     Log($"  Soul Echo level {marwyn.GetAbilityLevel(ABILITY_A17G_SOUL_ECHO_FALLENPRINCE_MARWYN)}, trait registered " +
@@ -384,7 +381,6 @@ public sealed class CheatTestFallenPrince : Command
     marwyn.IssueOrder(OrderId("curse"), target);
     After(2, () => Step(cheater, "Shared Suffering and Soul Echo", () =>
     {
-      Log($"  spell effect events seen for Marwyn's unit type: {spellEffects}");
       Check(target.GetAbilityLevel(BUFF_B107_SHARED_SUFFERING) > 0, "the target is cursed by Shared Suffering");
       Check(target.Life < target.MaxLife, "the curse is dealing damage");
       var struck = bystanders.Count(x => x.Life < x.MaxLife);
