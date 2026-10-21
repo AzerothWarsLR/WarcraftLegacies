@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.GameModes;
 using MacroTools.Hints;
 using MacroTools.Localization;
 using MacroTools.UserInterface.Frames;
@@ -23,7 +24,7 @@ public static class DifficultySelection
   private const float Margin = 0.03f;
   private const float LabelHeight = 0.025f;
 
-  public static void Setup(float voteLength, bool forceOpenDiplomacy, Action<Difficulty> onConcluded)
+  public static void Setup(float voteLength, DiplomacyRule diplomacy, Action<Difficulty> onConcluded)
   {
     var root = new Frame("ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0);
     root.SetAbsPoint(framepointtype.Center, 0.4f, 0.35f);
@@ -35,18 +36,21 @@ public static class DifficultySelection
       {
         Name = Loc.Get("Normal"),
         Description = Loc.Get("The standard experience - build your faction from the ground up."),
+        IconPath = @"ReplaceableTextures\CommandButtons\BTNPeasant.blp",
         OnChosen = () => difficulty = Difficulty.Normal
       },
       new VoteOption
       {
         Name = Loc.Get("Hard"),
         Description = Loc.Get("Skip the early game - Capitals and most heroes are unlocked from the start, with some early quests already completed."),
+        IconPath = @"ReplaceableTextures\CommandButtons\BTNCastle.blp",
         OnChosen = () => difficulty = Difficulty.Hard
       },
       new VoteOption
       {
         Name = Loc.Get("Custom"),
         Description = Loc.Get("Choose your own settings to customise the game."),
+        IconPath = @"ReplaceableTextures\CommandButtons\BTNEngineeringUpgrade.blp",
         OnChosen = () => difficulty = Difficulty.Custom
       }
     };
@@ -60,20 +64,24 @@ public static class DifficultySelection
     float diplomacySectionHeight;
     float diplomacySectionWidth;
 
-    if (forceOpenDiplomacy)
+    if (diplomacy != DiplomacyRule.Vote)
     {
+      var labelHeight = diplomacy == DiplomacyRule.Locked ? LabelHeight * 2 : LabelHeight;
       var label = new TextFrame("ArtifactMenuTitle", root, 0)
       {
         Width = difficultyGroup.Width,
-        Height = LabelHeight,
-        Text = Loc.Format("{category}: {value}", ("{category}", Loc.Get("Diplomacy")), ("{value}", Loc.Get("Open")))
+        Height = labelHeight,
+        Text = diplomacy == DiplomacyRule.Locked
+          ? Loc.Format("{category}: {value}", ("{category}", Loc.Get("Diplomacy")), ("{value}", Loc.Get("Locked"))) +
+            "\n|cffaaaaaa" + Loc.Get("Alliances only change through paths and events.") + "|r"
+          : Loc.Format("{category}: {value}", ("{category}", Loc.Get("Diplomacy")), ("{value}", Loc.Get("Open")))
       };
       label.SetPoint(framepointtype.Center, root, framepointtype.TopLeft,
-        Margin + difficultyGroup.Width / 2, diplomacyY - LabelHeight / 2);
+        Margin + difficultyGroup.Width / 2, diplomacyY - labelHeight / 2);
       label.CenterText();
       root.AddFrame(label);
 
-      diplomacySectionHeight = LabelHeight;
+      diplomacySectionHeight = labelHeight;
       diplomacySectionWidth = difficultyGroup.Width;
     }
     else
@@ -99,18 +107,23 @@ public static class DifficultySelection
 
     VotePageTitle.Add(root, Loc.Get("Difficulty & Diplomacy"), root.Width, Margin);
 
-    var groups = forceOpenDiplomacy
+    var groups = diplomacy != DiplomacyRule.Vote
       ? new[] { difficultyGroup }
       : new[] { difficultyGroup, diplomacyGroup! };
 
-    VotePageTimer.Start(voteLength, groups, () =>
+    VotePageTimer.Start(root, voteLength, groups, () =>
     {
       difficultyGroup.Conclude();
 
       var diplomacyResultName = Loc.Get("Open");
-      if (forceOpenDiplomacy)
+      if (diplomacy == DiplomacyRule.Open)
       {
         SetupOpenDiplomacy();
+      }
+      else if (diplomacy == DiplomacyRule.Locked)
+      {
+        diplomacyResultName = Loc.Get("Locked");
+        SetupLockedDiplomacy();
       }
       else
       {
@@ -137,6 +150,9 @@ public static class DifficultySelection
     UnallyCommand.Setup();
     UninviteCommand.Setup();
   }
+
+  private static void SetupLockedDiplomacy() =>
+    Hint.Register(new Hint(() => Loc.Get("Alliances are locked in this mode. They only change when a faction takes a path or an event happens.")));
 
   private static void SetupClosedDiplomacy()
   {

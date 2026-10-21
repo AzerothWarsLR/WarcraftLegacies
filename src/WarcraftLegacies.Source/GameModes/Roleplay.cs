@@ -23,5 +23,8 @@ public sealed class Roleplay : IGameMode
   public int VoteOffset => 0;
 
   /// <inheritdoc />
-  public bool ForcesOpenDiplomacy => false;
+  public string IconPath => @"ReplaceableTextures\CommandButtons\BTNSpellBookBLS.blp";
+
+  /// <inheritdoc />
+  public DiplomacyRule Diplomacy => DiplomacyRule.Locked;
 }

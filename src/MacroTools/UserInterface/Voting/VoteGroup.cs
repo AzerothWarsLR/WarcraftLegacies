@@ -12,6 +12,7 @@ public sealed class VoteGroup
   private readonly VoteOption[] _options;
   private readonly int[] _votesByPlayerSlot;
   private readonly TextFrame[] _countTexts;
+  private readonly Button[] _buttons;
   private Action<VoteSyncMessage>? _voteReceivedHandler;
   private bool _concluded;
 
@@ -46,6 +47,7 @@ public sealed class VoteGroup
     }
 
     _countTexts = new TextFrame[options.Length];
+    _buttons = new Button[options.Length];
 
     const float titleHeight = 0.025f;
     const float titleGap = 0.008f;
@@ -55,6 +57,8 @@ public sealed class VoteGroup
     const float descriptionGap = 0.008f;
     const float descriptionHeight = 0.09f;
     const float descriptionScale = 0.7f;
+    const float iconSize = 0.036f;
+    const float iconGap = 0.006f;
 
     var groupWidth = options.Length * buttonWidth + (options.Length - 1) * buttonSpacing;
 
@@ -78,13 +82,39 @@ public sealed class VoteGroup
       }
     }
 
-    var descriptionCenterY = y - titleHeight - titleGap - descriptionHeight / 2;
-    var buttonCenterY = y - titleHeight - titleGap - (hasAnyDescription ? descriptionHeight + descriptionGap : 0) - buttonHeight / 2;
+    var hasAnyIcon = false;
+    foreach (var option in options)
+    {
+      if (!string.IsNullOrEmpty(option.IconPath))
+      {
+        hasAnyIcon = true;
+        break;
+      }
+    }
+
+    var iconBlockHeight = hasAnyIcon ? iconSize + iconGap : 0;
+    var iconCenterY = y - titleHeight - titleGap - iconSize / 2;
+    var descriptionCenterY = y - titleHeight - titleGap - iconBlockHeight - descriptionHeight / 2;
+    var buttonCenterY = y - titleHeight - titleGap - iconBlockHeight -
+                        (hasAnyDescription ? descriptionHeight + descriptionGap : 0) - buttonHeight / 2;
     var countCenterY = buttonCenterY - buttonHeight / 2 - countGap - countHeight / 2;
     for (var i = 0; i < options.Length; i++)
     {
       var optionIndex = i;
       var optionCenterX = x + optionIndex * (buttonWidth + buttonSpacing) + buttonWidth / 2;
+
+      var iconPath = options[optionIndex].IconPath;
+      if (!string.IsNullOrEmpty(iconPath))
+      {
+        var iconFrame = new Frame("BACKDROP", "VoteOptionIcon", parent)
+        {
+          Width = iconSize,
+          Height = iconSize,
+          Texture = iconPath!
+        };
+        iconFrame.SetPoint(framepointtype.Center, parent, framepointtype.TopLeft, optionCenterX, iconCenterY);
+        parent.AddFrame(iconFrame);
+      }
 
       if (hasAnyDescription)
       {
@@ -110,6 +140,7 @@ public sealed class VoteGroup
       };
       button.SetPoint(framepointtype.Center, parent, framepointtype.TopLeft, optionCenterX, buttonCenterY);
       parent.AddFrame(button);
+      _buttons[optionIndex] = button;
 
       var countFrame = new Frame("ScriptDialogButton", parent, 0)
       {
@@ -131,7 +162,7 @@ public sealed class VoteGroup
       _countTexts[optionIndex] = countText;
     }
 
-    Height = titleHeight + titleGap + (hasAnyDescription ? descriptionHeight + descriptionGap : 0) +
+    Height = titleHeight + titleGap + iconBlockHeight + (hasAnyDescription ? descriptionHeight + descriptionGap : 0) +
              buttonHeight + countGap + countHeight;
     Width = groupWidth;
 
@@ -145,12 +176,23 @@ public sealed class VoteGroup
       return;
     }
 
+    HighlightLocalChoice(optionIndex);
+
     SyncSystem.Send(new VoteSyncMessage
     {
       GroupId = _groupId,
       PlayerId = GetPlayerId(triggerPlayer),
       OptionIndex = optionIndex
     });
+  }
+
+  /// <summary>Shows the local player which option they voted for. Only changes text on their own screen.</summary>
+  private void HighlightLocalChoice(int chosenIndex)
+  {
+    for (var i = 0; i < _buttons.Length; i++)
+    {
+      _buttons[i].Text = i == chosenIndex ? $"|cffffcc00{_options[i].Name}|r" : _options[i].Name;
+    }
   }
 
   private void RegisterSyncListener()

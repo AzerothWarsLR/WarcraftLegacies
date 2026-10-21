@@ -19,6 +19,9 @@ public interface IGameMode
   /// </summary>
   public int VoteOffset { get; }
 
-  /// <summary>Whether this gamemode forces Open diplomacy instead of letting players vote on it.</summary>
-  public bool ForcesOpenDiplomacy { get; }
+  /// <summary>An icon shown above this gamemode's vote button.</summary>
+  public string IconPath { get; }
+
+  /// <summary>Whether players vote on diplomacy, or this gamemode decides it.</summary>
+  public DiplomacyRule Diplomacy { get; }
 }

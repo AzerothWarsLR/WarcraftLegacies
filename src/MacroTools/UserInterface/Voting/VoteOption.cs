@@ -8,6 +8,8 @@ public sealed class VoteOption
 
   public string? Description { get; init; }
 
+  public string? IconPath { get; init; }
+
   public int VoteOffset { get; init; }
 
   public required Action OnChosen { get; init; }

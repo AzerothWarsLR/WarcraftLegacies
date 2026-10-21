@@ -21,5 +21,8 @@ public sealed class Standard : IGameMode
   public int VoteOffset => 0;
 
   /// <inheritdoc />
-  public bool ForcesOpenDiplomacy => false;
+  public string IconPath => @"ReplaceableTextures\CommandButtons\BTNHumanCaptureFlag.blp";
+
+  /// <inheritdoc />
+  public DiplomacyRule Diplomacy => DiplomacyRule.Vote;
 }

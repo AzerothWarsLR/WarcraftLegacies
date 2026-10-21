@@ -11,7 +11,7 @@ public sealed class GreatWar : IGameMode
   public string Name => Loc.Get("Great War (7v7)");
 
   /// <inheritdoc />
-  public string Description => Loc.Get("Two teams of 8 clash in large-scale battles for control of Azeroth.");
+  public string Description => Loc.Get("Two teams of 7 clash in large-scale battles for control of Azeroth.");
 
   /// <inheritdoc />
   public void OnChoose()
@@ -24,5 +24,8 @@ public sealed class GreatWar : IGameMode
   public int VoteOffset => -4;
 
   /// <inheritdoc />
-  public bool ForcesOpenDiplomacy => true;
+  public string IconPath => @"ReplaceableTextures\CommandButtons\BTNAttack.blp";
+
+  /// <inheritdoc />
+  public DiplomacyRule Diplomacy => DiplomacyRule.Open;
 }

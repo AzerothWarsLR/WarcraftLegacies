@@ -83,7 +83,7 @@ public static class CustomOptionsSelection
 
     VotePageTitle.Add(root, Loc.Get("Custom Options"), root.Width, Margin);
 
-    VotePageTimer.Start(voteLength, groups, () =>
+    VotePageTimer.Start(root, voteLength, groups, () =>
     {
       for (var i = 0; i < groups.Length; i++)
       {

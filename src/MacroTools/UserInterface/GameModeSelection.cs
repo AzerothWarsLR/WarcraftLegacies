@@ -22,6 +22,7 @@ public static class GameModeSelection
     {
       Name = gameMode.Name,
       Description = gameMode.Description,
+      IconPath = gameMode.IconPath,
       VoteOffset = gameMode.VoteOffset,
       OnChosen = gameMode.OnChoose
     }).ToArray();
@@ -35,7 +36,7 @@ public static class GameModeSelection
     root.Width = voteGroup.Width + Margin * 2;
     root.Height = voteGroup.Height + Margin * 2;
 
-    VotePageTimer.Start(voteLength, new[] { voteGroup }, () =>
+    VotePageTimer.Start(root, voteLength, new[] { voteGroup }, () =>
     {
       voteGroup.Conclude();
 
