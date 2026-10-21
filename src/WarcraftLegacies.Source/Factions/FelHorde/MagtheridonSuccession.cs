@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Factions;
+﻿using MacroTools.Factions;
 using MacroTools.Legends;
 using WarcraftLegacies.Source.Shared;
 using WCSharp.Shared.Data;

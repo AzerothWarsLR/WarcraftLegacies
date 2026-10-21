@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using WarcraftLegacies.Source.Factions.BansheesHost;
 using WarcraftLegacies.Source.Factions.Dalaran;
