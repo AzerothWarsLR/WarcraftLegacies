@@ -61,6 +61,7 @@ public sealed class ScourgeFaction : Faction, IHasRoleplayIntro
     RegisterFactionDependentInitializer<LegionFaction>(RegisterLegionDialogue);
 
     ProcessObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
+    ModObjectLimit(UPGRADE_R107_QUEST_COMPLETED_THE_KEY_OF_THE_THREE_MOONS_FALLENPRINCE, 1);
     SetObjectLevel(UPGRADE_R107_QUEST_COMPLETED_THE_KEY_OF_THE_THREE_MOONS_FALLENPRINCE, 1);
   }
 
