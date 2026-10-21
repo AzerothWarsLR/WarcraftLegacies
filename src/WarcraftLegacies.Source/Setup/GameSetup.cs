@@ -87,7 +87,6 @@ public static class GameSetup
     OrgrimmarSetup.Setup();
     NordrassilSetup.Setup();
     SulfuronSpireSetup.Setup();
-    StartingQuestPopup.Setup(63);
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
     CleanupUnoccupiedPlayerSlots.Setup();

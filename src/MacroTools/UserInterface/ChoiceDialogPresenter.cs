@@ -34,14 +34,16 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     _onResolved = onResolved;
     var activeChoices = Choices.Where(x => IsChoiceActive(whichPlayer, x));
 
-    if (activeChoices.Count() == 1)
+    var isHuman = GetPlayerSlotState(whichPlayer) == playerslotstate.Playing &&
+                  GetPlayerController(whichPlayer) == mapcontrol.User;
+    if (!isHuman || activeChoices.Count() == 1)
     {
       Resolve(whichPlayer, GetDefaultChoice(whichPlayer));
       return;
     }
 
     timer timer = timer.Create();
-    timer.Start(4, false, () =>
+    timer.Start(1, false, () =>
     {
       StartChoicePick(whichPlayer);
       @event.ExpiredTimer.Dispose();

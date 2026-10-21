@@ -75,6 +75,7 @@ public static class GameStartVoteSequence
     GameTimeManager.RegisterOnTurn(1, UnpauseAllUnits);
     DisplayIntroText.SetupWelcomeMessage(24);
     DisplayIntroText.SetupFactionIntroText(3);
+    StartingQuestPopup.Setup(20);
   }
 
   public static void PauseUnit(unit whichUnit)
