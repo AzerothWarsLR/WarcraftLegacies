@@ -207,7 +207,7 @@ public static class ArthasDialogue
       OwnersOf(arthas, antonidas),
       new[]
       {
-        new ObjectiveLegendKilledBy(antonidas, "Arthas", killer => ControlsArthas(arthas, killer))
+        new ObjectiveLegendKilledByLegend(antonidas, arthas)
       }));
   }
 
@@ -224,7 +224,7 @@ public static class ArthasDialogue
       OwnersOf(arthas, sylvanas),
       new[]
       {
-        new ObjectiveLegendKilledBy(sylvanas, "Arthas", killer => ControlsArthas(arthas, killer))
+        new ObjectiveLegendKilledByLegend(sylvanas, arthas)
       }));
   }
 
@@ -322,7 +322,7 @@ public static class ArthasDialogue
       OwnersOf(arthas, illidan),
       new[]
       {
-        new ObjectiveLegendKilledBy(illidan, "Arthas", killer => ControlsArthas(arthas, killer))
+        new ObjectiveLegendKilledByLegend(illidan, arthas)
       }));
   }
 
@@ -341,7 +341,4 @@ public static class ArthasDialogue
         new ObjectiveLegendReachRect(arthas, Regions.Ice_Crown, "Icecrown")
       }));
   }
-
-  private static bool ControlsArthas(LegendaryHero arthas, player whichPlayer) =>
-    arthas.Unit != null && arthas.Unit.Owner == whichPlayer;
 }

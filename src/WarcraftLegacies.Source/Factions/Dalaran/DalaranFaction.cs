@@ -56,7 +56,6 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths, IHasRoleplayInt
       "dala"
     };
 
-    RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeDialogue);
     RegisterFactionDependentInitializer<LegionFaction>(RegisterBookOfMedivhQuest);
     ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
   }
@@ -88,6 +87,7 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths, IHasRoleplayInt
   /// <inheritdoc />
   public override void OnRegistered()
   {
+    AllLegends.Dalaran.Dalaran.ChangedOwner += _ => OnVioletCitadelChangedOwner();
     RegisterObjectLevels();
     ReplaceWithFactionUnits(this);
     RegisterQuests();
@@ -142,6 +142,18 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths, IHasRoleplayInt
     AddQuest(newGuardian);
   }
 
+  /// <summary>Whoever takes over the Violet Citadel becomes the keeper of the Book of Medivh.</summary>
+  private void OnVioletCitadelChangedOwner()
+  {
+    var citadel = AllLegends.Dalaran.Dalaran.Unit;
+    if (citadel == null || !citadel.Alive || citadel.Owner.GetPlayerData().Faction == this)
+    {
+      return;
+    }
+
+    DalaranHomeland.MakeBookKeeper(citadel.Owner);
+  }
+
   private void RegisterBookOfMedivhQuest(LegionFaction legion)
   {
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Dalaran.Dalaran,
@@ -182,31 +194,6 @@ public sealed class DalaranFaction : Faction, IHasRoleplayPaths, IHasRoleplayInt
       {
         new ObjectiveLegendInRect(AllLegends.Dalaran.Jaina, Regions.Hearthglen, "Hearthglen")
       }));
-  }
-
-  private void RegisterScourgeDialogue(ScourgeFaction scourge)
-  {
-    TriggeredDialogueManager.Add(new TriggeredDialogue(
-      new DialogueSequence(
-        new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas13.flac",
-          "It pains me to even look at you, Arthas.",
-          "Arthas Menethil"),
-        new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas14.flac",
-          "I'll be happy to end your torment, old man. I told you that your magics could not stop me.",
-          "Antonidas")
-      ), new Faction[]
-      {
-        scourge,
-        this
-      }, new List<Objective>
-      {
-        new ObjectiveLegendDead(AllLegends.Dalaran.Antonidas)
-        {
-          DeathFilter = dyingLegend => MathEx.GetDistanceBetweenPoints(AllLegends.Scourge.Arthas.Unit.GetPosition(),
-            dyingLegend.Unit.GetPosition()) < 500
-        }
-      }
-    ));
   }
 
   private void RegisterProtectors()
