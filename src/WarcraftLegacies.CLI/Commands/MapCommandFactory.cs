@@ -24,15 +24,15 @@ internal static class MapCommandFactory
 
   public static Command Test()
   {
-    return new MapBuildCommand("test", "Compiles a .w3x folder into the artifacts folder, then launches it for testing purposes.")
+    return new MapBuildCommand("test", "Compiles a packed .w3x file into the artifacts folder, then launches it for testing purposes.")
     {
       Configure = ctx =>
       {
-        ctx.OutputKind = MapOutputKind.Directory;
+        ctx.OutputKind = MapOutputKind.File;
         ctx.AdvancedMapBuilderOptions.ShouldLaunch = true;
         ctx.AdvancedMapBuilderOptions.ShouldTranspile = true;
         ctx.AdvancedMapBuilderOptions.ShouldMigrate = true;
-        ctx.AdvancedMapBuilderOptions.W3XFolderPath = Path.Combine(ctx.Paths.ScriptArtifactPath, $"{ctx.MapName}.w3x");
+        ctx.AdvancedMapBuilderOptions.PublishedMapPath = Path.Combine(ctx.Paths.ScriptArtifactPath, $"{ctx.MapName}Test.w3x");
         ctx.AdvancedMapBuilderOptions.TestingPlayerSlot = AppSettings.Current.CompilerSettings.TestingPlayerSlot;
       }
     };
