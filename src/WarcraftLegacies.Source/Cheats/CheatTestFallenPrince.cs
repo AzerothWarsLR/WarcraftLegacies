@@ -30,8 +30,8 @@ public sealed class CheatTestFallenPrince : Command
 {
   private const string ReportPath = @"WarcraftLegacies-fallenprince-report.pld";
   private const int ReportChunkLength = 200;
-  private const float ArenaClearRadius = 1200;
-  private const float ArenaSpacing = 3000;
+  private const float ArenaClearRadius = 800;
+  private const float ArenaSpacing = 2200;
   private const int TestArthasExperience = 5000;
 
   private static readonly List<string> _report = new();
@@ -183,7 +183,7 @@ public sealed class CheatTestFallenPrince : Command
     }
 
     var others = GlobalGroup.EnumUnitsInRect(Regions.StratholmeScourgeBase)
-      .Where(x => x.Alive && x.IsUnitType(unittype.Structure) && x.Owner != cheater && x.Owner != player.NeutralPassive &&
+      .Where(x => x.Alive && x.IsUnitType(unittype.Structure) && x.Owner != cheater && x.Owner != player.NeutralPassive && x.Owner != player.NeutralAggressive &&
                   !x.IsControlPoint())
       .Select(x => $"{GetObjectName(x.UnitType)} of {x.Owner.Name}")
       .ToList();
@@ -569,9 +569,9 @@ public sealed class CheatTestFallenPrince : Command
     var maxX = GetRectMaxX(bounds) - 2000;
     var minY = GetRectMinY(bounds) + 2000;
     var maxY = GetRectMaxY(bounds) - 2000;
-    for (var x = minX; x < maxX && found.Count < count; x += 1500)
+    for (var x = minX; x < maxX && found.Count < count; x += 1000)
     {
-      for (var y = minY; y < maxY && found.Count < count; y += 1500)
+      for (var y = minY; y < maxY && found.Count < count; y += 1000)
       {
         if (IsArena(x, y) && found.All(other => MathEx.GetDistanceBetweenPoints(other, new Point(x, y)) > ArenaSpacing))
         {
@@ -585,9 +585,9 @@ public sealed class CheatTestFallenPrince : Command
 
   private static bool IsArena(float x, float y)
   {
-    for (var dx = -800; dx <= 800; dx += 400)
+    for (var dx = -600; dx <= 600; dx += 300)
     {
-      for (var dy = -800; dy <= 800; dy += 400)
+      for (var dy = -600; dy <= 600; dy += 300)
       {
         if (IsTerrainPathable(x + dx, y + dy, PATHING_TYPE_WALKABILITY))
         {
