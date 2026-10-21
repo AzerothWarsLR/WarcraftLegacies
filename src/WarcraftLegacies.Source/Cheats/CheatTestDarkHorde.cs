@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using MacroTools.Commands;
-using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.FelHorde;

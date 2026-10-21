@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameModes;
 using MacroTools.GameTime;
@@ -7,7 +6,6 @@ using MacroTools.UserInterface;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.UserInterface;

@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.Illidari.Quests;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Shared;

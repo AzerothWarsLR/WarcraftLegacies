@@ -1,6 +1,5 @@
 ﻿using MacroTools.Commands;
 using MacroTools.Factions;
-using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Legion;
 using WarcraftLegacies.Source.Factions.Legion.Quests;
 using WarcraftLegacies.Source.Shared;

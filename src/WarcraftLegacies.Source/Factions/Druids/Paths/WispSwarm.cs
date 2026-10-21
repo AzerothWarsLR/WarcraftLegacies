@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using Environment = MacroTools.Utils.Environment;
 

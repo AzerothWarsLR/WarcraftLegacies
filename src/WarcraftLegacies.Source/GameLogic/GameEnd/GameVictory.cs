@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using WCSharp.Shared;

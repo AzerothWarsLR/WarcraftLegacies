@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Shared;
-using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Lordaeron;
