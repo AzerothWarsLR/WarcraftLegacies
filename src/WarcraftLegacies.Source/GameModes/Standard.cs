@@ -24,5 +24,8 @@ public sealed class Standard : IGameMode
   public string IconPath => @"ReplaceableTextures\CommandButtons\BTNHumanCaptureFlag.blp";
 
   /// <inheritdoc />
+  public bool SkipsEarlyGame => false;
+
+  /// <inheritdoc />
   public DiplomacyRule Diplomacy => DiplomacyRule.Vote;
 }

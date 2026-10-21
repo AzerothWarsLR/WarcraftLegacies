@@ -22,6 +22,12 @@ public interface IGameMode
   /// <summary>An icon shown above this gamemode's vote button.</summary>
   public string IconPath { get; }
 
+  /// <summary>
+  /// If true, every faction already starts with its capitals unlocked in this gamemode, so Hard difficulty and the
+  /// early game option aren't offered.
+  /// </summary>
+  public bool SkipsEarlyGame { get; }
+
   /// <summary>Whether players vote on diplomacy, or this gamemode decides it.</summary>
   public DiplomacyRule Diplomacy { get; }
 }

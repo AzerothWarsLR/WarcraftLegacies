@@ -30,7 +30,7 @@ public static class GameStartVoteSequence
 
   private static void OnModeChosen(IGameMode winningMode, float difficultyVoteLength, float customOptionsVoteLength)
   {
-    DifficultySelection.Setup(difficultyVoteLength, winningMode.Diplomacy, difficulty =>
+    DifficultySelection.Setup(difficultyVoteLength, winningMode.Diplomacy, winningMode.SkipsEarlyGame, difficulty =>
     {
       if (difficulty == Difficulty.Hard)
       {
@@ -39,7 +39,7 @@ public static class GameStartVoteSequence
 
       if (difficulty == Difficulty.Custom)
       {
-        CustomOptionsSelection.Setup(customOptionsVoteLength, ShowFactionChoicesThenFinish);
+        CustomOptionsSelection.Setup(customOptionsVoteLength, winningMode.SkipsEarlyGame, ShowFactionChoicesThenFinish);
       }
       else
       {

@@ -26,5 +26,8 @@ public sealed class Roleplay : IGameMode
   public string IconPath => @"ReplaceableTextures\CommandButtons\BTNSpellBookBLS.blp";
 
   /// <inheritdoc />
+  public bool SkipsEarlyGame => true;
+
+  /// <inheritdoc />
   public DiplomacyRule Diplomacy => DiplomacyRule.Locked;
 }

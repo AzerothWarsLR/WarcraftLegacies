@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
@@ -22,9 +23,9 @@ public static class CustomOptionsSelection
 
   private const float MinColumnWidth = 0.3f;
 
-  public static void Setup(float voteLength, Action onConcluded)
+  public static void Setup(float voteLength, bool skipsEarlyGame, Action onConcluded)
   {
-    var builtCategories = BuildCategories();
+    var builtCategories = BuildCategories(skipsEarlyGame);
     var categories = builtCategories.Where(category => category.Options.Length >= 3)
       .Concat(builtCategories.Where(category => category.Options.Length < 3))
       .ToArray();
@@ -104,9 +105,9 @@ public static class CustomOptionsSelection
     });
   }
 
-  private static (string Title, VoteOption[] Options)[] BuildCategories()
+  private static (string Title, VoteOption[] Options)[] BuildCategories(bool skipsEarlyGame)
   {
-    return new (string, VoteOption[])[]
+    var categories = new List<(string, VoteOption[])>
     {
       ("Control Point Gold Rate", new[]
       {
@@ -160,12 +161,18 @@ public static class CustomOptionsSelection
           }
         }
       }),
-      ("Early Game (PvE)", new[]
+    };
+
+    if (!skipsEarlyGame)
+    {
+      categories.Add(("Early Game (PvE)", new[]
       {
         new VoteOption { Name = Loc.Get("Normal"), OnChosen = () => { } },
         new VoteOption { Name = Loc.Get("Skipped"), OnChosen = HardModeSetting.ApplyWithoutTechUnlocks }
-      })
-    };
+      }));
+    }
+
+    return categories.ToArray();
   }
 
   private static void SetAllPlayersReviveHandicap(float handicap)

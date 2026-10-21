@@ -27,5 +27,8 @@ public sealed class GreatWar : IGameMode
   public string IconPath => @"ReplaceableTextures\CommandButtons\BTNAttack.blp";
 
   /// <inheritdoc />
+  public bool SkipsEarlyGame => false;
+
+  /// <inheritdoc />
   public DiplomacyRule Diplomacy => DiplomacyRule.Open;
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools.GameModes;
 using MacroTools.Hints;
 using MacroTools.Localization;
@@ -24,39 +25,46 @@ public static class DifficultySelection
   private const float Margin = 0.03f;
   private const float LabelHeight = 0.025f;
 
-  public static void Setup(float voteLength, DiplomacyRule diplomacy, Action<Difficulty> onConcluded)
+  public static void Setup(float voteLength, DiplomacyRule diplomacy, bool skipsEarlyGame, Action<Difficulty> onConcluded)
   {
     var root = new Frame("ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0);
     root.SetAbsPoint(framepointtype.Center, 0.4f, 0.35f);
 
     var difficulty = Difficulty.Normal;
-    var difficultyOptions = new[]
+    var difficultyOptions = new List<VoteOption>
     {
-      new VoteOption
+      new()
       {
         Name = Loc.Get("Normal"),
-        Description = Loc.Get("The standard experience - build your faction from the ground up."),
+        Description = skipsEarlyGame
+          ? Loc.Get("Every faction starts with its capitals and starting bases unlocked.")
+          : Loc.Get("The standard experience - build your faction from the ground up."),
         IconPath = @"ReplaceableTextures\CommandButtons\BTNPeasant.blp",
         OnChosen = () => difficulty = Difficulty.Normal
-      },
-      new VoteOption
+      }
+    };
+
+    if (!skipsEarlyGame)
+    {
+      difficultyOptions.Add(new VoteOption
       {
         Name = Loc.Get("Hard"),
         Description = Loc.Get("Skip the early game - Capitals and most heroes are unlocked from the start, with some early quests already completed."),
         IconPath = @"ReplaceableTextures\CommandButtons\BTNCastle.blp",
         OnChosen = () => difficulty = Difficulty.Hard
-      },
-      new VoteOption
-      {
-        Name = Loc.Get("Custom"),
-        Description = Loc.Get("Choose your own settings to customise the game."),
-        IconPath = @"ReplaceableTextures\CommandButtons\BTNEngineeringUpgrade.blp",
-        OnChosen = () => difficulty = Difficulty.Custom
-      }
-    };
+      });
+    }
+
+    difficultyOptions.Add(new VoteOption
+    {
+      Name = Loc.Get("Custom"),
+      Description = Loc.Get("Choose your own settings to customise the game."),
+      IconPath = @"ReplaceableTextures\CommandButtons\BTNEngineeringUpgrade.blp",
+      OnChosen = () => difficulty = Difficulty.Custom
+    });
 
     var contentY = -Margin - VotePageTitle.Height - VotePageTitle.Gap;
-    var difficultyGroup = new VoteGroup(root, groupId: 0, Loc.Get("Difficulty"), difficultyOptions, Margin,
+    var difficultyGroup = new VoteGroup(root, groupId: 0, Loc.Get("Difficulty"), difficultyOptions.ToArray(), Margin,
       contentY, ButtonWidth, ButtonHeight, ButtonSpacing);
 
     var diplomacyY = contentY - difficultyGroup.Height - GroupSpacing;
