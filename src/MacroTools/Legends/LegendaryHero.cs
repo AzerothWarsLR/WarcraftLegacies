@@ -28,6 +28,7 @@ public sealed class LegendaryHero : Legend
   private trigger? _ownerTrig;
   private readonly string? _name;
   private bool _permaDies;
+  private bool _showsDeathIcon = true;
 
   /// <summary>
   /// If true, the <see cref="Legend"/> has a custom <see cref="playercolor"/> rather than having its color based
@@ -58,6 +59,18 @@ public sealed class LegendaryHero : Legend
     set
     {
       _permaDies = value;
+      RefreshDummy();
+    }
+  }
+
+  /// <summary>
+  ///   If false, the Legend shows no icon explaining whether it can be revived, freeing up its command card slot.
+  /// </summary>
+  public bool ShowsDeathIcon
+  {
+    set
+    {
+      _showsDeathIcon = value;
       RefreshDummy();
     }
   }
@@ -321,6 +334,13 @@ public sealed class LegendaryHero : Legend
   {
     if (Unit == null)
     {
+      return;
+    }
+
+    if (!_showsDeathIcon)
+    {
+      Unit.RemoveAbility(PermaDiesAbilityId);
+      Unit.RemoveAbility(DiesWithoutAbilityId);
       return;
     }
 

@@ -66,6 +66,7 @@ public sealed class QuestLichKingArthas : QuestData
       CloseFallenPrincePaths();
     }
 
+    _arthas.ShowsDeathIcon = false;
     _arthas.UnitType = UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE;
     _arthas.PermaDies = true;
     _arthas.DeathMessage = "The day he was born, the very forests of Lordaeron whispered the name Arthas - but no King rules forever.";
