@@ -40,6 +40,7 @@ public sealed class QuestBookOfMedivh : QuestData
     @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
   {
     _forLegion = forLegion;
+    IsForKeeper = bypassDestructionRequirement;
     var bookLocationFullName = Loc.Format(
       "the Book of Medivh's pedestal at {location}",
       ("{location}", Loc.Get(bookLocation.Name)));
@@ -68,6 +69,9 @@ public sealed class QuestBookOfMedivh : QuestData
 
     IsFactionQuest = forLegion;
   }
+
+  /// <summary>True for the version held by whoever controls the Book's city, who doesn't need to destroy it.</summary>
+  public bool IsForKeeper { get; }
 
   /// <inheritdoc/>
   protected override string RewardDescription => _forLegion

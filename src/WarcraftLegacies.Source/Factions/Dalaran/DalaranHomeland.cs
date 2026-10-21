@@ -45,7 +45,8 @@ public static class DalaranHomeland
     }
 
     var sharedQuest = heirFaction.GetAllQuests().OfType<QuestBookOfMedivh>().FirstOrDefault();
-    if (sharedQuest == null || sharedQuest.Progress == QuestProgress.Complete || sharedQuest.Progress == QuestProgress.Failed)
+    if (sharedQuest == null || sharedQuest.IsForKeeper || sharedQuest.Progress == QuestProgress.Complete ||
+        sharedQuest.Progress == QuestProgress.Failed)
     {
       return;
     }
