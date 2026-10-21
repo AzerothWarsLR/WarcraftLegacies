@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0LR,A10C,A08V,AInv"
+      "Value": "A17I,AInv,A0GK"
     },
     {
       "Id": "uagi",
@@ -44,7 +44,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "ZB06,ZB02,A0SC,A10N,Aamk"
+      "Value": "A175,A176,A178,A17A,Aamk"
     },
     {
       "Id": "uhpm",
@@ -62,11 +62,6 @@
       "Id": "uhrt",
       "Type": 3,
       "Value": "always"
-    },
-    {
-      "Id": "ureq",
-      "Type": 3,
-      "Value": "R01K"
     },
     {
       "Id": "umvs",
@@ -99,7 +94,7 @@
     },
     {
       "Id": "ubpy",
-      "Value": 2
+      "Value": 0
     },
     {
       "Id": "unsf",
@@ -124,17 +119,17 @@
     {
       "Id": "upro",
       "Type": 3,
-      "Value": "Falric"
+      "Value": "Captain Falric"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Summon Falric"
+      "Value": "Summon Captain Falric"
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Warrior Hero, adept at supporting armies and inflicting magical damage."
+      "Value": "Warrior Hero, adept at shielding allies and breaking enemy lines."
     },
     {
       "Id": "uico",
@@ -145,6 +140,20 @@
       "Id": "umdl",
       "Type": 3,
       "Value": "war3mapImported\\GeneralFalric.mdl"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R104"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroForsakenPaladin"
     }
   ]
 }

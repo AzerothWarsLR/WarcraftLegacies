@@ -1,0 +1,34 @@
+{
+  "OldId": "Bcri",
+  "NewId": "B103",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Shadow Word: Death"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Shadow Word: Death"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is taking shadow damage over time. If it survives, the caster is struck instead."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASShadowWordDeath.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "OldId": "BNdm",
+  "NewId": "B102",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Ghoul"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This Ghoul was raised by Plague Arrows; it will crumble when its time runs out."
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(FallenPrince - Plague Arrows Ghoul)"
+    }
+  ]
+}

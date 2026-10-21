@@ -1,0 +1,39 @@
+{
+  "OldId": "Binf",
+  "NewId": "B105",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNShade.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Defiling Horror"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Defiling Horror"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is fleeing in terror."
+    }
+  ]
+}

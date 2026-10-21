@@ -14,6 +14,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Nzoth",
     "Dalaran",
     "DarkIron",
+    "FallenPrince",
     "Nexus",
     "Draenei",
     "Druids",

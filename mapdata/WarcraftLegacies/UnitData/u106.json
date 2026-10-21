@@ -1,0 +1,79 @@
+{
+  "OldId": "nzom",
+  "NewId": "u106",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Culled Zombie"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(FallenPrince Culled)"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 950
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "udef",
+      "Value": 1
+    },
+    {
+      "Id": "ulev",
+      "Value": 0
+    },
+    {
+      "Id": "ubba",
+      "Value": 0
+    },
+    {
+      "Id": "ubdi",
+      "Value": 0
+    },
+    {
+      "Id": "ubsi",
+      "Value": 0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A citizen of Stratholme, culled by the prince and raised by the plague."
+    },
+    {
+      "Id": "umvs",
+      "Value": 180
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 1500
+    },
+    {
+      "Id": "usid",
+      "Value": 1500
+    },
+    {
+      "Id": "usin",
+      "Value": 1500
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A174,Aap1"
+    }
+  ]
+}

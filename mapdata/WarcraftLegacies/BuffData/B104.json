@@ -1,0 +1,29 @@
+{
+  "OldId": "BHad",
+  "NewId": "B104",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASDarkVoidAura.blp"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Deathguard\u0027s Bulwark"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Deathguard\u0027s Bulwark"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is protected by Falric\u0027s Deathguard\u0027s Bulwark; it takes less damage from spells."
+    }
+  ]
+}

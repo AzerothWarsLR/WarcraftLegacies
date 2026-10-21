@@ -316,6 +316,54 @@
   ],
   "UpgradeData": [
     {
+      "Players": 16777215,
+      "Id": 909128018,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16777215,
+      "Id": 876036698,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16777215,
+      "Id": 875709018,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16777215,
+      "Id": 875573586,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16777215,
+      "Id": 892350802,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16777215,
+      "Id": 925905234,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16777215,
+      "Id": 842019154,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
+      "Players": 16777215,
+      "Id": 858796370,
+      "Level": 0,
+      "Availability": 0
+    },
+    {
       "Players": 1966079,
       "Id": 1937207122,
       "Level": 0,
@@ -3809,6 +3857,26 @@
     }
   ],
   "TechData": [
+    {
+      "Players": 16777215,
+      "Id": 925905269
+    },
+    {
+      "Players": 16777215,
+      "Id": 825241973
+    },
+    {
+      "Players": 16777215,
+      "Id": 842019189
+    },
+    {
+      "Players": 16777215,
+      "Id": 858796405
+    },
+    {
+      "Players": 16777215,
+      "Id": 1093873749
+    },
     {
       "Players": 4095,
       "Id": 1161900097

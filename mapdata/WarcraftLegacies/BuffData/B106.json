@@ -1,0 +1,39 @@
+{
+  "OldId": "Bcri",
+  "NewId": "B106",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNShade.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Defiled"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Defiled"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit takes more damage."
+    }
+  ]
+}
