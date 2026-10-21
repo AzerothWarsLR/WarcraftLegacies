@@ -37,7 +37,6 @@ public static class SentinelsSpells
     {
       Radius = 600,
       Duration = 15,
-      ArmorBonus = 4,
       ManaRegenerationBonus = 1,
       BuffApplicatorId = ABILITY_A16L_ELUNE_S_PROTECTION_BUFF_APPLICATOR_BUFF_APPLICATOR,
       BuffId = BUFF_B0EC_ELUNE_S_PROTECTION

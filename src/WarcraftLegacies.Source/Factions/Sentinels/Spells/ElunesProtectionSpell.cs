@@ -11,8 +11,6 @@ public sealed class ElunesProtectionSpell : Spell
 
   public required float Duration { get; init; }
 
-  public required int ArmorBonus { get; init; }
-
   public required float ManaRegenerationBonus { get; init; }
 
   public required int BuffApplicatorId { get; init; }
@@ -32,8 +30,7 @@ public sealed class ElunesProtectionSpell : Spell
         continue;
       }
 
-      BuffSystem.Add(new ElunesProtectionBuff(caster, unit, BuffApplicatorId, BuffId, ArmorBonus,
-        ManaRegenerationBonus)
+      BuffSystem.Add(new ElunesProtectionBuff(caster, unit, BuffApplicatorId, BuffId, ManaRegenerationBonus)
       {
         Duration = Duration
       }, StackBehaviour.Stack);
@@ -43,14 +40,12 @@ public sealed class ElunesProtectionSpell : Spell
 
 public sealed class ElunesProtectionBuff : BoundBuff
 {
-  private readonly int _armorBonus;
   private readonly float _manaRegenerationBonus;
   private bool _applied;
 
-  public ElunesProtectionBuff(unit caster, unit target, int buffApplicatorId, int buffId, int armorBonus,
+  public ElunesProtectionBuff(unit caster, unit target, int buffApplicatorId, int buffId,
     float manaRegenerationBonus) : base(caster, target)
   {
-    _armorBonus = armorBonus;
     _manaRegenerationBonus = manaRegenerationBonus;
     BindAura(buffApplicatorId, buffId);
   }
@@ -58,7 +53,6 @@ public sealed class ElunesProtectionBuff : BoundBuff
   public override void OnApply()
   {
     _applied = true;
-    BlzSetUnitArmor(Target, BlzGetUnitArmor(Target) + _armorBonus);
     BlzSetUnitRealField(Target, UNIT_RF_MANA_REGENERATION,
       BlzGetUnitRealField(Target, UNIT_RF_MANA_REGENERATION) + _manaRegenerationBonus);
   }
@@ -73,7 +67,6 @@ public sealed class ElunesProtectionBuff : BoundBuff
   {
     if (_applied)
     {
-      BlzSetUnitArmor(Target, BlzGetUnitArmor(Target) - _armorBonus);
       BlzSetUnitRealField(Target, UNIT_RF_MANA_REGENERATION,
         BlzGetUnitRealField(Target, UNIT_RF_MANA_REGENERATION) - _manaRegenerationBonus);
     }

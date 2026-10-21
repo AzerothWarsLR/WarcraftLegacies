@@ -76,6 +76,7 @@ public static class GameSetup
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
+    AhnQirajSetup.Setup();
     RockSetup.Setup();
     SouthKalimdorGuardSystem.Setup();
     TurnResearchSetup.Setup();
