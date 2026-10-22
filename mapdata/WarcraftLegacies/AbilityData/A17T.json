@@ -1,0 +1,310 @@
+{
+  "OldId": "ANcl",
+  "NewId": "A17T",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,enemy,neutral"
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,enemy,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,enemy,neutral"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "acidbomb"
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "acidbomb"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "acidbomb"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFarArrow.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Forsaken - Sylvanas)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Wailing Arrow"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFarArrow.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Wailing Arrow - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Fires a wailing arrow at a target enemy unit. On impact it wails, damaging and silencing nearby enemy units for 3 seconds (2 seconds on heroes), then wails again a moment later for the same damage.|n|n|cffffcc00Level 1|r - 200 damage to the target, 100 damage per wail.|n|cffffcc00Level 2|r - 300 damage to the target, 150 damage per wail.|n|cffffcc00Level 3|r - 400 damage to the target, 200 damage per wail."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Wailing Arrow - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Wailing Arrow - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Wailing Arrow - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Fires a wailing arrow at a target enemy unit, dealing 200 damage. On impact it wails, dealing 100 damage to nearby enemy units and silencing them for 3 seconds (2 seconds on heroes), then wails again a moment later for another 100 damage."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Fires a wailing arrow at a target enemy unit, dealing 300 damage. On impact it wails, dealing 150 damage to nearby enemy units and silencing them for 3 seconds (2 seconds on heroes), then wails again a moment later for another 150 damage."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Fires a wailing arrow at a target enemy unit, dealing 400 damage. On impact it wails, dealing 200 damage to nearby enemy units and silencing them for 3 seconds (2 seconds on heroes), then wails again a moment later for another 200 damage."
+    }
+  ]
+}

@@ -15,6 +15,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Dalaran",
     "DarkIron",
     "FallenPrince",
+    "BansheesHost",
     "Nexus",
     "Draenei",
     "Druids",

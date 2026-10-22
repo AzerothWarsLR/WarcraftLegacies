@@ -1,0 +1,34 @@
+{
+  "OldId": "Bcri",
+  "NewId": "B108",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Anguish"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Anguish"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is cursed with sorrow; it takes damage over time, which heals the caster."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDeadCoil.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}
