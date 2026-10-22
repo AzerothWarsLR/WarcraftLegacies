@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0ES,A0SX,A070,A020,Aihn"
+      "Value": "A020,A070,A17V,Aihn"
     },
     {
       "Id": "ubld",
@@ -25,11 +25,11 @@
     },
     {
       "Id": "udef",
-      "Value": 1
+      "Value": 3
     },
     {
       "Id": "ua1b",
-      "Value": 15
+      "Value": 16
     },
     {
       "Id": "ufoo",
@@ -45,7 +45,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 675
+      "Value": 725
     },
     {
       "Id": "urtm",
@@ -87,12 +87,12 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1
+      "Value": 0.85
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Rank-and-file of the Forsaken Army.|n|cfff5962dAbilities:|R Charge, Critical Strike, Bleeding Blade, Pillage|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Rank-and-file of the Forsaken army.|n|cfff5962dAbilities:|R Charge, Critical Strike|n|cfff5962dCan learn:|R Cannibalize|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": "unam",

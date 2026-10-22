@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "Atru,A03H,A02H,Aihn"
+      "Value": "A17Z,A02H,Aihn"
     },
     {
       "Id": "udaa",
@@ -39,7 +39,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 20
+      "Value": 15
     },
     {
       "Id": "ufoo",
@@ -55,7 +55,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 600
+      "Value": 550
     },
     {
       "Id": "ulev",
@@ -101,7 +101,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rguv,Rhme,Rhar"
+      "Value": "Rguv,Rhme,Rhar,R10B"
     },
     {
       "Id": "urac",
@@ -111,7 +111,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "u01J"
+      "Value": ""
     },
     {
       "Id": "utyp",
@@ -150,7 +150,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Undead Archers of the Forsaken.|n|cfff5962dAbilities:|r Cold Arrows, True Sight|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Undead archer of the Forsaken.|n|cfff5962dAbilities:|R Plague Arrows, Precision Shots|n|cfff5962dCan learn:|R Keen Sight|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": "umdl",

@@ -53,7 +53,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R100,Rhme,Rhar"
+      "Value": "Rhme,Rhar,R09X,R04R,R006,R00C"
     },
     {
       "Id": "ubpx",
@@ -77,7 +77,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Weapon Upgdrades, Armor Upgrades, Chaos Infusion"
+      "Value": "General research building.|n|cfff5962dAbilities:|R Spawn Corpses|n|cfff5962dResearches:|R Attack and armour upgrades, Flight, Navigation, Fortified Hulls, Improved Cannons"
     },
     {
       "Id": "unsf",

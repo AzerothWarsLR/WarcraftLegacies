@@ -25,7 +25,7 @@ public sealed class QuestThroneOfLordaeron : QuestData
   {
     _capitalPalace = capitalPalace;
     _falric = falric;
-    AddObjective(new ObjectiveControlCapital(capitalPalace, false));
+    AddObjective(new ObjectiveControlCapital(capitalPalace, false, true));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R104_QUEST_COMPLETED_THE_THRONE_OF_LORDAERON_FALLENPRINCE;
   }
@@ -55,6 +55,7 @@ public sealed class QuestThroneOfLordaeron : QuestData
       SetBlight(owner, palace.X, palace.Y + 500, BlightRadius, true);
     }
 
+    CapitalPalaceRuins.Claim(owner, UNIT_UZIG_ZIGGURAT_SCOURGE_FARM);
     CreateStructureForced(owner, UNIT_USEP_CRYPT_SCOURGE_BARRACKS, 8288, 8800, Facing, StructureSize);
     CreateStructureForced(owner, UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR, 9888, 8672, Facing, StructureSize);
     CreateStructureForced(owner, UNIT_UTOD_TEMPLE_OF_THE_DAMNED_SCOURGE_MAGIC, 9888, 8352, Facing, StructureSize);
@@ -73,6 +74,7 @@ public sealed class QuestThroneOfLordaeron : QuestData
 
   private void CreateProtector(player owner, int towerType, float x, float y)
   {
+    CapitalPalaceRuins.ClearTowerSpot(x, y);
     var tower = CreateStructureForced(owner, towerType, x, y, Facing, StructureSize);
     if (tower != null)
     {

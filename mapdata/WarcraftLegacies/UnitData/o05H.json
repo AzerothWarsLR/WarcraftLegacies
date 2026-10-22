@@ -16,7 +16,7 @@
     {
       "Id": "ua1c",
       "Type": 2,
-      "Value": 1.9
+      "Value": 1.5
     },
     {
       "Id": "ua1d",
@@ -24,7 +24,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 12
+      "Value": 30
     },
     {
       "Id": "ufoo",
@@ -36,7 +36,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 915
+      "Value": 950
     },
     {
       "Id": "ulev",
@@ -72,11 +72,11 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0UW"
+      "Value": "A0UW,A186"
     },
     {
       "Id": "udef",
-      "Value": 2
+      "Value": 3
     },
     {
       "Id": "ua1t",
@@ -118,7 +118,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R101"
+      "Value": "R09X"
     },
     {
       "Id": "unsf",
@@ -128,17 +128,17 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.9
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Aerial scientist of the Forsaken. Has a small aoe attack.|n|cfff5962dAbilities:|R Disease Cloud|n |n|cff99b4d1Can only train 8.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Bat-mounted bomber of the Royal Apothecary Society.|n|cfff5962dAbilities:|R Disease Cloud|n|cfff5962dCan learn:|R True Sight|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Plague Flyer"
+      "Value": "Apothecary Bat Rider"
     },
     {
       "Id": "utip",
@@ -148,11 +148,11 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Id": "ubpx",
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": "uico",
@@ -162,7 +162,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\MadScientist.mdl"
+      "Value": "war3mapImported\\ApothecaryBatMount.mdl"
     },
     {
       "Id": "uani",
@@ -178,6 +178,14 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "GoblinZeppelin"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
     }
   ]
 }

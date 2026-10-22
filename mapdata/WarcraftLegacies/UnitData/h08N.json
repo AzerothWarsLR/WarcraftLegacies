@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0Z0,A020,A0YE,Aihn"
+      "Value": "A0Z0,A020,A0YE,Aihn,A17W"
     },
     {
       "Id": "ubld",
@@ -101,7 +101,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R04X"
+      "Value": ""
     },
     {
       "Id": "utyp",
@@ -131,7 +131,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Elite Commander of the Forsaken.|n|cfff5962dAbilities: |RCharge, Unholy Plating, Elite Combat Experience |n|n|cffffcc00Attacks land units.|r"
+      "Value": "Heavily armoured warrior of the Forsaken.|n|cfff5962dAbilities:|R Charge, Unholy Plating, Elite Combat Experience|n|cfff5962dCan learn:|R Taunt|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": "usnd",
@@ -141,7 +141,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\DeathGuardV1_04.mdl"
+      "Value": "war3mapImported\\ForsakenDreadguard.mdl"
     },
     {
       "Id": "uico",
@@ -151,6 +151,11 @@
     {
       "Id": "ubpx",
       "Value": 2
+    },
+    {
+      "Id": "usca",
+      "Type": 2,
+      "Value": 0.9
     }
   ]
 }

@@ -8,7 +8,7 @@ using WarcraftLegacies.Source.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas.Paths;
 
-/// <summary>Lets Quel'thalas become the Banshee's Host once the Scourge kills Sylvanas and Windrunner Spire falls.</summary>
+/// <summary>Lets Quel'thalas become the Banshee's Host once the Scourge kills Sylvanas and Windrunner Spire is lost.</summary>
 public sealed class PathBansheesHost : FactionPath
 {
   private readonly BansheesHostTransformation _transformation;
@@ -18,9 +18,9 @@ public sealed class PathBansheesHost : FactionPath
     _transformation = transformation;
     Name = "The Banshee's Host";
     IconName = "Banshee";
-    Description = "Slain by the Scourge with Windrunner Spire in ruins, Sylvanas rises again as a banshee. Her kingdom lost, she gathers the restless spirits of her people in Northrend and leads them to the Scourge's side.";
+    Description = "Slain by the Scourge and driven from Windrunner Spire, Sylvanas rises again as a banshee. Her kingdom lost, she gathers the restless spirits of her people at Deathknell and En'kilah, and leads them to the Scourge's side.";
     AddRequirement(new ObjectiveLegendKilledBy(sylvanas, "the Scourge", IsScourge) { ShowsInQuestLog = false });
-    AddRequirement(new ObjectiveCapitalDead(windrunnerSpire) { ShowsInQuestLog = false });
+    AddMustStayTrueRequirement(new ObjectiveCapitalNotControlled(windrunnerSpire) { ShowsInQuestLog = false });
   }
 
   /// <inheritdoc />

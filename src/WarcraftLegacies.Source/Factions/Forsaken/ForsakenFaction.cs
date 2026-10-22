@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Forsaken.Researches;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions.Forsaken;
@@ -8,6 +10,8 @@ namespace WarcraftLegacies.Source.Factions.Forsaken;
 /// <summary>Sylvanas and the undead who broke free of the Lich King, reached through the Rise of the Forsaken path.</summary>
 public sealed class ForsakenFaction : Faction
 {
+  private const int DarkRangersCost = 200;
+
   /// <inheritdoc />
   public ForsakenFaction() : base("Forsaken", playercolor.Cyan,
     @"ReplaceableTextures\CommandButtons\BTNBansheeRanger.blp")
@@ -30,5 +34,10 @@ public sealed class ForsakenFaction : Faction
   }
 
   /// <inheritdoc />
-  public override void OnRegistered() => SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  public override void OnRegistered()
+  {
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    ForsakenSpells.Setup();
+    ResearchManager.Register(new DarkRangers(UPGRADE_R108_DARK_RANGERS_FORSAKEN, DarkRangersCost));
+  }
 }

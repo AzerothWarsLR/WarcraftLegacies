@@ -49,6 +49,11 @@ public sealed class MassAnySpell : Spell
   public LeveledAbilityField<float>? Damage { get; init; }
 
   /// <summary>
+  /// The most damage the spell can deal in total, shared out between the units it hits.
+  /// </summary>
+  public float? MaxDamage { get; init; }
+
+  /// <summary>
   /// The special effect to create at the spell radius origin.
   /// </summary>
   public string? SpecialEffect { get; init; }
@@ -71,13 +76,18 @@ public sealed class MassAnySpell : Spell
       EffectSystem.Add(effect.Create(SpecialEffect, center.X, center.Y));
     }
 
-    var units = GlobalGroup.EnumUnitsInRange(center.X, center.Y, Radius).Where(u => CastFilter(caster, u));
+    var units = GlobalGroup.EnumUnitsInRange(center.X, center.Y, Radius).Where(u => CastFilter(caster, u)).ToList();
 
     var casterAbilityLevel = GetAbilityLevel(caster);
     var damage = 0f;
     if (Damage != null)
     {
       damage = Damage.GetValue(casterAbilityLevel);
+    }
+
+    if (MaxDamage != null && units.Count > 0 && damage * units.Count > MaxDamage.Value)
+    {
+      damage = MaxDamage.Value / units.Count;
     }
 
     var dummyCaster = DummyCasterManager.GetGlobalDummyCaster();

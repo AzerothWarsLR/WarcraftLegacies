@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0V4,A0V3,A07C,ACsk,Aihn,A0KJ"
+      "Value": "A182,A0KJ,A183,A184,A07C,A08P,Aihn"
     },
     {
       "Id": "ua1t",
@@ -50,7 +50,7 @@
     },
     {
       "Id": "udef",
-      "Value": 3
+      "Value": 2
     },
     {
       "Id": "ua2d",
@@ -87,7 +87,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1225
+      "Value": 775
     },
     {
       "Id": "ulev",
@@ -119,7 +119,7 @@
     },
     {
       "Id": "ua1r",
-      "Value": 700
+      "Value": 600
     },
     {
       "Id": "ua2r",
@@ -194,7 +194,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R04X,R101"
+      "Value": ""
     },
     {
       "Id": "urac",
@@ -268,7 +268,11 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Agile, deadly and skilled Rangers of the Forsaken.|n|cfff5962dAbilities:|R Knife Throw, Blink, Dark Arrow|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Elite ranger of the Forsaken.|n|cfff5962dAbilities:|R Life Drain, Blink, Charm, Black Arrow, Spell Resistance, Resistant Skin|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

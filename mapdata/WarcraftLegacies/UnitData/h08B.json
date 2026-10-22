@@ -205,12 +205,12 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "u010"
+      "Value": ""
     },
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R101,R050"
+      "Value": "R108"
     },
     {
       "Id": "urb1",
@@ -257,7 +257,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "n0BY,u01K"
+      "Value": "u01K,u10A,n0BY"
     },
     {
       "Id": "upgr",
@@ -330,7 +330,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Fortified stronghold of the Forsaken.|n|cfff5962dTrains:|R Acolytes, Dread Knights"
+      "Value": "Primary structure.|n|cfff5962dTrains:|R Acolytes, Wailing Sorrows|n|cfff5962dResearches:|R Dark Rangers"
     },
     {
       "Id": "unsf",

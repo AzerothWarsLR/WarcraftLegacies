@@ -20,6 +20,8 @@ public sealed class ObjectiveChannelRect : Objective
   private readonly float _facing;
   private readonly string? _timerDialogTitle;
   private readonly Legend _targetLegend;
+  private readonly string _animation;
+  private readonly float _animationLoop;
 
   private readonly rect _targetRect;
   private Channel? _channel;
@@ -52,8 +54,10 @@ public sealed class ObjectiveChannelRect : Objective
   /// <param name="timerDialogTitle">If set, any <see cref="Channel"/> created by the <see cref="ObjectiveChannelRect"/>
   /// displays a countdown timer to all players with this title. If null, no timer is displayed.</param>
   public ObjectiveChannelRect(Rectangle targetRect, string rectName, LegendaryHero legendaryHero, int duration,
-    float facing, string? timerDialogTitle = null)
+    float facing, string? timerDialogTitle = null, string animation = "channel", float animationLoop = 0)
   {
+    _animation = animation;
+    _animationLoop = animationLoop;
     _targetRect = targetRect.Rect;
     var target = RectToRegion(_targetRect);
     _targetLegend = legendaryHero;
@@ -79,12 +83,12 @@ public sealed class ObjectiveChannelRect : Objective
     var whichUnit = @event.EnteringUnit;
     if (_closed || !EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive ||
         LegendaryHeroManager.GetFromUnit(@event.Unit) != _targetLegend || _channel != null ||
-        Progress != QuestProgress.Incomplete)
+        Progress != QuestProgress.Incomplete || ProgressLocked)
     {
       return;
     }
 
-    _channel = new Channel(whichUnit, _duration, _facing, Position, _timerDialogTitle);
+    _channel = new Channel(whichUnit, _duration, _facing, Position, _timerDialogTitle, _animation, _animationLoop);
     _channel.Finished += OnChannelEnd;
     ChannelStarted?.Invoke();
   }

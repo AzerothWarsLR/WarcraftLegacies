@@ -1,9 +1,14 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Legends;
 using MacroTools.Paths;
 using MacroTools.PreplacedWidgets;
+using MacroTools.Quests;
+using WarcraftLegacies.Source.Factions.BansheesHost.Quests;
 using WarcraftLegacies.Source.Factions.Forsaken;
 using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.Objectives.MetaBased;
+using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Shared;
 
@@ -14,11 +19,18 @@ public abstract class PathRiseOfTheForsaken : FactionPath
 {
   private const int ObelisksDestroyed = 2;
 
-  protected PathRiseOfTheForsaken()
+  private readonly QuestData _bansheesVengeance;
+  private readonly QuestData _rangerLord;
+
+  protected PathRiseOfTheForsaken(QuestData bansheesVengeance, QuestData rangerLord)
   {
+    _bansheesVengeance = bansheesVengeance;
+    _rangerLord = rangerLord;
     IconName = "BansheeRanger";
-    AddRequirement(new ObjectiveUnitsDestroyed(ObelisksDestroyed, "Two of the Icecrown Obelisks have been destroyed",
-      AllPreplacedWidgets.Units.GetAll(UNIT_N094_ICECROWN_OBELISK_SCOURGE))
+    AddRequirement(new ObjectiveEitherOf(
+      new ObjectiveUnitsDestroyed(ObelisksDestroyed, "Two of the Icecrown Obelisks have been destroyed",
+        AllPreplacedWidgets.Units.GetAll(UNIT_N094_ICECROWN_OBELISK_SCOURGE)),
+      new ObjectiveQuestComplete(bansheesVengeance))
     { ShowsInQuestLog = false });
   }
 
@@ -26,13 +38,8 @@ public abstract class PathRiseOfTheForsaken : FactionPath
   protected override void OnTaken(Faction faction)
   {
     var forsakenPlayer = faction.Player;
-    FactionTransition.AssignNewFaction(faction, new ForsakenFaction());
-    var sylvanas = AllLegends.Quel.Sylvanas;
-    if (sylvanas.Unit == null || sylvanas.Unit.Alive)
-    {
-      sylvanas.UnitType = UNIT_USYL_DARK_RANGER_FORSAKEN;
-    }
-
+    var forsaken = new ForsakenFaction();
+    FactionTransition.AssignNewFaction(faction, forsaken);
     ArthasDialogue.SetupForsakenBetrayal();
 
     if (forsakenPlayer != null)
@@ -40,8 +47,40 @@ public abstract class PathRiseOfTheForsaken : FactionPath
       var bases = new ForsakenBases(forsakenPlayer);
       OnBecameForsaken(bases);
       bases.ConvertScourgeBuildings();
+      bases.TrackPalaceName();
+      var undercity = forsaken.AddQuest(new QuestUndercity(AllLegends.Lordaeron.CapitalPalace, bases));
+      forsaken.DisplayDiscovered(undercity, false);
+      CarryOverQuests(forsaken, AllLegends.Quel.Sylvanas);
+      var spoilsOfDalaran = forsaken.AddQuest(new QuestSpoilsOfDalaran(AllLegends.Dalaran.Dalaran));
+      forsaken.DisplayDiscovered(spoilsOfDalaran, false);
       forsakenPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\Undercity.ogg");
     }
+  }
+
+  /// <summary>Gives the Forsaken the Banshee's Host quests they haven't finished yet, or what those quests already earned.</summary>
+  private void CarryOverQuests(ForsakenFaction forsaken, LegendaryHero sylvanas)
+  {
+    if (_rangerLord.Progress == QuestProgress.Complete)
+    {
+      forsaken.ModObjectLimit(UNIT_H049_RANGER_LORD_FORSAKEN, 1);
+    }
+    else
+    {
+      CarryOver(forsaken, _rangerLord, new QuestRangerLord(sylvanas));
+    }
+
+    if (_bansheesVengeance.Progress != QuestProgress.Complete)
+    {
+      CarryOver(forsaken, _bansheesVengeance, new QuestBansheesVengeance(AllLegends.Quel.Spire, sylvanas));
+    }
+  }
+
+  private static void CarryOver(ForsakenFaction forsaken, QuestData oldQuest, QuestData newQuest)
+  {
+    oldQuest.SuppressFailureDisplay = true;
+    oldQuest.Progress = QuestProgress.Failed;
+    var carried = forsaken.AddQuest(newQuest);
+    forsaken.DisplayDiscovered(carried, false);
   }
 
   /// <summary>Sets up the Forsaken's bases once they have broken free.</summary>
