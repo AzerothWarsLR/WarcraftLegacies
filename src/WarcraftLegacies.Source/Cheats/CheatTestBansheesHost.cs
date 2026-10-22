@@ -6,7 +6,9 @@ using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Paths;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
+using MacroTools.Researches;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.BansheesHost;
 using WarcraftLegacies.Source.Factions.BansheesHost.Paths;
@@ -36,6 +38,9 @@ public sealed class CheatTestBansheesHost : Command
   private const float ArenaSpacing = 2200;
   private static readonly int _silenceBuffId = FourCC("BNsi");
   private static readonly int _thunderClapBuffId = FourCC("BCtc");
+  private static readonly int _dazeBuffId = FourCC("BHtc");
+  private static readonly int _diseaseCloudId = FourCC("Aap1");
+  private static readonly int _phantomStepBuffId = FourCC("TP60");
 
   private static readonly List<string> _report = new();
   private static readonly List<unit> _testUnits = new();
@@ -148,9 +153,22 @@ public sealed class CheatTestBansheesHost : Command
       Check(count == expected, $"Deathknell has {count} {GetObjectName(typeId)} (expected {expected})");
     }
 
-    var enKilah = GetStructures(BansheesHostTransformation.NorthrendBase, cheater);
+    var enKilahCenter = BansheesHostTransformation.NorthrendBase.Center;
+    var enKilah = GetStructures(new Rectangle(enKilahCenter.X - 1200, enKilahCenter.Y - 1200, enKilahCenter.X + 1200,
+      enKilahCenter.Y + 1200), cheater);
     Check(enKilah.Count(x => x.UnitType == UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3) == 1, "En'kilah has a Black Citadel");
+    var enKilahControlPoint = AllPreplacedWidgets.Units.Get(UNIT_N09H_EN_KILAH);
+    Check(enKilahControlPoint.Owner == cheater, $"you hold the En'kilah control point ({enKilahControlPoint.Owner.Name})");
     Check(enKilah.All(x => x.UnitType != UNIT_UNPL_NECROPOLIS_SCOURGE_T1), "En'kilah has no Necropolis left");
+    foreach (var typeId in new[]
+             {
+               UNIT_USEP_CRYPT_SCOURGE_BARRACKS, UNIT_UGRV_GRAVEYARD_SCOURGE_RESEARCH, UNIT_UZIG_ZIGGURAT_SCOURGE_FARM,
+               UNIT_UZG1_SPIRIT_TOWER_SCOURGE_TOWER
+             })
+    {
+      var count = enKilah.Count(x => x.UnitType == typeId);
+      Check(count >= 1, $"En'kilah has {count} {GetObjectName(typeId)}");
+    }
 
     var scourgePlayer = GetScourge()?.Player;
     if (scourgePlayer != null)
@@ -610,14 +628,311 @@ public sealed class CheatTestBansheesHost : Command
           return;
         }
 
+        var putress = CreateTestUnit(cheater, UNIT_U01O_GRAND_APOTHECARY_FORSAKEN, palace.X, palace.Y - 600);
+        putress.SetLevel(5, false);
         palace.SetOwner(cheater);
         Check(forsaken.GetQuestByType<QuestUndercity>().Progress == QuestProgress.Complete, "taking Capital City completes The Undercity");
-        var undercity = GlobalGroup.EnumUnitsInRange(8384, 9216, 300)
-          .Count(x => x.UnitType == UNIT_H08S_UNDERCITY_FORSAKEN && x.Owner == cheater);
-        Check(undercity == 1, $"the Undercity was built ({undercity})");
+        After(0.5f, () => Step(cheater, "Putress replaced", () =>
+        {
+          var putresses = GlobalGroup.EnumUnitsOfPlayer(cheater)
+            .Count(x => x.UnitType == UNIT_U01O_GRAND_APOTHECARY_FORSAKEN && x.Alive);
+          Check(putresses == 0, $"Putress is gone ({putresses} left)");
+        }));
+        var varimathras = GlobalGroup.EnumUnitsOfPlayer(cheater)
+          .FirstOrDefault(x => x.UnitType == UNIT_UVAR_ARCH_DREADLORD_FORSAKEN && x.Alive);
+        Check(varimathras != null && varimathras.HeroLevel == 5, "Varimathras took Putress's place at level 5");
+        if (varimathras != null)
+        {
+          _testUnits.Add(varimathras);
+        }
+        var warQuarter = GlobalGroup.EnumUnitsInRange(8288, 8800, 300)
+          .Count(x => x.UnitType == UNIT_U011_WAR_QUARTER_FORSAKEN && x.Owner == cheater);
+        Check(warQuarter == 1, $"a War Quarter was built inside the palace ({warQuarter})");
+        Check(palace.Name == "Undercity", $"the palace is named Undercity ({palace.Name})");
+        var towers = GlobalGroup.EnumUnitsInRange(9088, 9000, 900)
+          .Where(x => x.UnitType == UNIT_H08F_IMPROVED_DREAD_TOWER_FORSAKEN && x.Owner == cheater && x.Alive).ToList();
+        Check(towers.Count == 4, $"4 towers guard the palace ({towers.Count}: {string.Join(" / ", towers.Select(x => $"{(int)x.X},{(int)x.Y}"))})");
+        var cityBuildings = GlobalGroup.EnumUnitsInRange(9088, 8400, 1400)
+          .Count(x => x.Alive && x.IsUnitType(unittype.Structure) && x.Owner != cheater && GetObjectName(x.UnitType) == "City Building");
+        Check(cityBuildings == 0, $"no city buildings are left for anyone else ({cityBuildings})");
+        Check(GetPlayerTechMaxAllowed(cheater, UNIT_UVAR_ARCH_DREADLORD_FORSAKEN) == 1, "Varimathras replaces Putress");
+        Check(HasQuest<QuestSpoilsOfDalaran>(forsaken), "has Spoils of Dalaran");
       });
-      Finish(cheater);
+      TestForsaken(cheater);
     });
+  }
+
+  private static void TestForsaken(player cheater)
+  {
+    var arenas = FindArenas(2);
+    if (arenas.Count < 2)
+    {
+      Check(false, "found two empty spots to test the Forsaken in");
+      Finish(cheater);
+      return;
+    }
+
+    var arena = arenas[0];
+    Step(cheater, "Forsaken roster", () => CheckForsakenRoster(cheater));
+    Step(cheater, "Dark Rangers research", () => TestDarkRangersResearch(cheater, arena));
+    After(3, () => TestPlagueConstruct(cheater, arena));
+    After(10, () => TestDarkRangerElite(cheater, arena));
+    After(14, () => Step(cheater, "researches", () => TestForsakenResearches(cheater, arena)));
+    After(16, () => TestSpoilsOfDalaran(cheater));
+    After(19, () => TestVarimathras(cheater, arenas[1]));
+  }
+
+  private static void CheckForsakenRoster(player cheater)
+  {
+    CheckLimit(cheater, UNIT_U10A_WAILING_SORROW_BANSHEESHOST_ELITE, 4);
+    CheckLimit(cheater, UNIT_N0BY_DARK_RANGER_FORSAKEN, 0);
+    CheckLimit(cheater, UNIT_U01V_VAL_KYR_FORSAKEN, 4);
+    CheckLimit(cheater, UNIT_U01P_PLAGUE_CATAPULT_FORSAKEN, 6);
+    CheckLimit(cheater, UNIT_N07W_PLAGUE_CONSTRUCT_FORSAKEN, 6);
+    CheckLimit(cheater, UNIT_U02G_ELITE_ABOMINATION_SCOURGE_FORSAKEN_CULT, 6);
+    CheckLimit(cheater, UNIT_O05H_APOTHECARY_BAT_RIDER_FORSAKEN, 12);
+    CheckLimit(cheater, UNIT_H049_RANGER_LORD_FORSAKEN, 1);
+    CheckLimit(cheater, UNIT_U01O_GRAND_APOTHECARY_FORSAKEN, 0);
+    CheckLimit(cheater, UNIT_UVAR_ARCH_DREADLORD_FORSAKEN, 1);
+    CheckLimit(cheater, UNIT_U01R_APOTHECARY_FORSAKEN_CULT, 0);
+    CheckLimit(cheater, UNIT_USYL_DARK_RANGER_FORSAKEN, 0);
+    foreach (var unlimited in new[]
+             {
+               UNIT_H08O_ROTGUARD_FORSAKEN, UNIT_H08N_DREADGUARD_FORSAKEN_CULT, UNIT_N07S_DEADEYE_FORSAKEN_CULT,
+               UNIT_H08P_ARCHIVIST_FORSAKEN_CULT, UNIT_UBAN_BANSHEE_SCOURGE, UNIT_U01W_ROYAL_SEPULCRUM_FORSAKEN,
+               UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD
+             })
+    {
+      Check(GetPlayerTechMaxAllowed(cheater, unlimited) != 0, $"can train {GetObjectName(unlimited)}");
+    }
+
+    Check(GetPlayerTechCount(cheater, UPGRADE_R10C_QUEST_COMPLETED_THE_BANSHEE_S_VENGEANCE_BANSHEESHOST, true) == 1,
+      "The Banshee's Vengeance counts for the Dark Rangers research after the switch");
+    Check(GetPlayerTechCount(cheater, UPGRADE_R10E_QUEST_COMPLETED_SPOILS_OF_DALARAN_FORSAKEN, true) == 0,
+      "Val'kyr are still locked behind Spoils of Dalaran");
+  }
+
+  private static void TestDarkRangersResearch(player cheater, Point arena)
+  {
+    var sorrow = CreateTestUnit(cheater, UNIT_U10A_WAILING_SORROW_BANSHEESHOST_ELITE, arena.X - 400, arena.Y + 400);
+    var research = ResearchManager.GetFromTypeId(UPGRADE_R108_DARK_RANGERS_FORSAKEN);
+    Check(research != null, "the Dark Rangers research is registered");
+    if (research != null)
+    {
+      research.OnResearch(cheater);
+    }
+
+    SetPlayerTechResearched(cheater, UPGRADE_R108_DARK_RANGERS_FORSAKEN, 1);
+    CheckLimit(cheater, UNIT_U10A_WAILING_SORROW_BANSHEESHOST_ELITE, 0);
+    CheckLimit(cheater, UNIT_N0BY_DARK_RANGER_FORSAKEN, 4);
+    After(1, () => Step(cheater, "Wailing Sorrow raised as a Dark Ranger", () =>
+    {
+      Check(sorrow.UnitType == UNIT_N0BY_DARK_RANGER_FORSAKEN, $"the Wailing Sorrow is now a {GetObjectName(sorrow.UnitType)}");
+      sorrow.Kill();
+    }));
+  }
+
+  private static void TestPlagueConstruct(player cheater, Point arena)
+  {
+    var construct = CreateTestUnit(cheater, UNIT_N07W_PLAGUE_CONSTRUCT_FORSAKEN, arena.X, arena.Y);
+    var enemies = new List<unit>();
+    for (var i = 0; i < 8; i++)
+    {
+      var angle = i * 2 * Math.PI / 8;
+      enemies.Add(CreateEnemy(arena.X + 150 * (float)Math.Cos(angle), arena.Y + 150 * (float)Math.Sin(angle), 3000));
+    }
+
+    construct.IssueOrder(OrderId("waterelemental"));
+    After(1, () => Step(cheater, "Slam", () =>
+    {
+      var total = enemies.Sum(x => x.MaxLife - x.Life);
+      Check(total > 0 && total <= 160, $"8 enemies took {(int)total} in total (expected the 150 cap)");
+      Check(enemies.Count(x => x.GetAbilityLevel(_dazeBuffId) > 0) >= 6, "the enemies are dazed");
+      foreach (var enemy in enemies)
+      {
+        enemy.Life = enemy.MaxLife;
+      }
+
+      construct.Kill();
+    }));
+    After(5, () => Step(cheater, "Death Throes", () =>
+    {
+      var damaged = enemies.Where(x => x.MaxLife - x.Life >= 100).ToList();
+      Log($"  damage: {string.Join(", ", enemies.Select(x => (int)(x.MaxLife - x.Life)))} (75 burst + 10 per second)");
+      Check(damaged.Count >= 6, "the burst and the Noxious Cloud damaged the enemies around it");
+      foreach (var enemy in enemies)
+      {
+        enemy.Kill();
+      }
+    }));
+  }
+
+  private static void TestDarkRangerElite(player cheater, Point arena)
+  {
+    var darkRanger = CreateTestUnit(cheater, UNIT_N0BY_DARK_RANGER_FORSAKEN, arena.X, arena.Y);
+    darkRanger.Mana = darkRanger.MaxMana;
+    var footman = CreateEnemy(arena.X + 300, arena.Y, 600);
+    footman.IsPaused = false;
+    darkRanger.IssueOrder(OrderId("charm"), footman);
+    var victims = new List<unit>();
+    for (var i = 0; i < 20; i++)
+    {
+      victims.Add(CreateEnemy(arena.X - 300 + 30 * i, arena.Y - 400, 50));
+    }
+
+    After(1.5f, () => Step(cheater, "Dark Ranger", () =>
+    {
+      Check(footman.Owner == cheater, "Charm took the footman");
+      footman.Kill();
+      foreach (var victim in victims)
+      {
+        darkRanger.DealDamage(victim, 500, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
+      }
+    }));
+    After(2.5f, () => Step(cheater, "Black Arrow", () =>
+    {
+      var minions = GlobalGroup.EnumUnitsInRange(arena.X, arena.Y - 400, 800)
+        .Where(x => x.UnitType == FourCC("ndr1") && x.Owner == cheater && x.Alive).ToList();
+      Check(minions.Count >= 1 && minions.Count <= 12, $"{minions.Count} of 20 kills rose as Dark Minions (expected about 4)");
+      foreach (var minion in minions)
+      {
+        minion.Kill();
+      }
+
+      darkRanger.Kill();
+    }));
+  }
+
+  private static void TestForsakenResearches(player cheater, Point arena)
+  {
+    var deadeye = CreateTestUnit(cheater, UNIT_N07S_DEADEYE_FORSAKEN_CULT, arena.X - 300, arena.Y);
+    var abomination = CreateTestUnit(cheater, UNIT_U02G_ELITE_ABOMINATION_SCOURGE_FORSAKEN_CULT, arena.X + 300, arena.Y);
+    SetPlayerTechResearched(cheater, UPGRADE_R10B_KEEN_SIGHT_FORSAKEN, 1);
+    SetPlayerTechResearched(cheater, UPGRADE_R10D_EPIDEMIC_FORSAKEN, 1);
+    SetPlayerTechResearched(cheater, UPGRADE_R10F_ECHOLOCATION_FORSAKEN, 1);
+    Check(deadeye.GetAbilityLevel(ABILITY_A17Z_PLAGUE_ARROWS_FORSAKEN_DEADEYE) == 2, "Keen Sight upgrades Plague Arrows");
+    Check(abomination.GetAbilityLevel(_diseaseCloudId) == 2, "Epidemic upgrades the Elite Abomination's Disease Cloud");
+    Log("  HAND CHECK Deadeye attack range is 600, and Apothecary Bat Riders reveal invisible units");
+    deadeye.Kill();
+    abomination.Kill();
+  }
+
+  private static void TestSpoilsOfDalaran(player cheater)
+  {
+    var forsaken = cheater.GetPlayerData().Faction as ForsakenFaction;
+    var citadel = AllLegends.Dalaran.Dalaran.Unit;
+    if (forsaken == null || citadel == null || !citadel.Alive)
+    {
+      Log("[Spoils of Dalaran]\n  SKIP the Violet Citadel is already gone");
+      return;
+    }
+
+    citadel.Kill();
+    After(1, () => Step(cheater, "Spoils of Dalaran", () =>
+    {
+      Check(forsaken.GetQuestByType<QuestSpoilsOfDalaran>().Progress == QuestProgress.Complete, "destroying the Violet Citadel completes the quest");
+      Check(GetPlayerTechCount(cheater, UPGRADE_R10E_QUEST_COMPLETED_SPOILS_OF_DALARAN_FORSAKEN, true) == 1, "Val'kyr can be trained");
+    }));
+  }
+
+  private static void TestVarimathras(player cheater, Point arena)
+  {
+    var varimathras = GetTestUnit(UNIT_UVAR_ARCH_DREADLORD_FORSAKEN);
+    if (varimathras == null)
+    {
+      Log("[Varimathras]\n  SKIP Varimathras wasn't raised");
+      Finish(cheater);
+      return;
+    }
+
+    varimathras.SetPosition(arena.X, arena.Y);
+    PrepareHero(varimathras, ABILITY_A18A_HELLFIRE_RAIN_FORSAKEN_VARIMATHRAS, ABILITY_A188_MASS_SLEEP_FORSAKEN_VARIMATHRAS,
+      FourCC("AHab"), ABILITY_A18B_UNRAVELLING_DOOM_FORSAKEN_VARIMATHRAS);
+    Check(varimathras.GetAbilityLevel(ABILITY_A187_PHANTOM_STEP_FORSAKEN_VARIMATHRAS) == 1, "Varimathras has Phantom Step innately");
+    Check(varimathras.GetAbilityLevel(FourCC("Apiv")) == 0, "Varimathras isn't permanently invisible");
+
+    var sleepers = new List<unit>();
+    for (var i = 0; i < 3; i++)
+    {
+      var sleeper = CreateEnemy(arena.X + 500, arena.Y - 120 + 120 * i, 3000);
+      sleeper.IsPaused = false;
+      sleeper.IssueOrder(ORDER_HOLD_POSITION);
+      sleepers.Add(sleeper);
+    }
+
+    var manaBefore = varimathras.Mana;
+    var sleepOrdered = varimathras.IssueOrder(OrderId("sleep"), arena.X + 500, arena.Y);
+    Log($"  Mass Sleep level {varimathras.GetAbilityLevel(ABILITY_A188_MASS_SLEEP_FORSAKEN_VARIMATHRAS)}, order accepted {sleepOrdered}, current order {OrderId2String(varimathras.CurrentOrder)}");
+    After(1.5f, () => Step(cheater, "Mass Sleep", () =>
+    {
+      var asleep = sleepers.Count(x => x.GetAbilityLevel(BUFF_B10A_MASS_SLEEP) > 0);
+      if (!sleepOrdered)
+      {
+        Log("  SKIP the game refuses a scripted cast of Mass Sleep; cast it by hand to check");
+      }
+      else
+      {
+        Check(asleep == 3, $"{asleep} of 3 enemies are asleep");
+      }
+      foreach (var sleeper in sleepers)
+      {
+        sleeper.Kill();
+      }
+
+      varimathras.Mana = varimathras.MaxMana;
+      varimathras.IssueOrder(OrderId("windwalk"));
+    }));
+    After(2.5f, () => Step(cheater, "Phantom Step", () =>
+    {
+      Check(varimathras.GetAbilityLevel(_phantomStepBuffId) > 0, "Varimathras is phantom stepping");
+      varimathras.IssueOrder(ORDER_STOP);
+    }));
+
+    var doomed = CreateEnemy(arena.X + 300, arena.Y, 8000);
+    var damageEarly = 0f;
+    After(4, () =>
+    {
+      varimathras.Mana = varimathras.MaxMana;
+      varimathras.IssueOrder(OrderId("doom"), doomed);
+      Log($"  Unravelling Doom level {varimathras.GetAbilityLevel(ABILITY_A18B_UNRAVELLING_DOOM_FORSAKEN_VARIMATHRAS)}, Hellfire Rain level {varimathras.GetAbilityLevel(ABILITY_A18A_HELLFIRE_RAIN_FORSAKEN_VARIMATHRAS)}");
+    });
+    After(6.5f, () => damageEarly = doomed.MaxLife - doomed.Life);
+    After(9.5f, () => Step(cheater, "Unravelling Doom", () =>
+    {
+      var total = doomed.MaxLife - doomed.Life;
+      var rateEarly = damageEarly / 2.5f;
+      var rateLate = (total - damageEarly) / 3;
+      Check(doomed.GetAbilityLevel(FourCC("BNdo")) > 0, "the enemy is doomed");
+      Check(rateEarly > 0 && rateLate > rateEarly, $"Doom deals more the longer it lasts ({(int)rateEarly} a second at first, {(int)rateLate} a second later)");
+      varimathras.DealDamage(doomed, 99999, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
+    }));
+    After(11.5f, () => Step(cheater, "Unravelling Doom guard", () =>
+    {
+      var doomGuard = GlobalGroup.EnumUnitsInRange(arena.X + 300, arena.Y, 400)
+        .FirstOrDefault(x => x.UnitType == FourCC("nbal") && x.Owner == cheater && x.Alive);
+      Check(doomGuard != null, "a Doom Guard rose from the corpse");
+      if (doomGuard != null)
+      {
+        var reference = unit.Create(cheater, FourCC("nbal"), arena.X - 2000, arena.Y, 0);
+        Check(doomGuard.MaxLife > reference.MaxLife, $"it is stronger than a normal one ({doomGuard.MaxLife} against {reference.MaxLife})");
+        reference.Dispose();
+        doomGuard.Kill();
+      }
+    }));
+
+    var rained = CreateEnemy(arena.X + 400, arena.Y + 400, 5000);
+    After(13, () =>
+    {
+      varimathras.SetAbilityLevel(ABILITY_A18A_HELLFIRE_RAIN_FORSAKEN_VARIMATHRAS, 1);
+      varimathras.Mana = varimathras.MaxMana;
+      varimathras.IssueOrder(OrderId("rainoffire"), rained.X, rained.Y);
+    });
+    After(23, () => Step(cheater, "Hellfire Rain", () =>
+    {
+      var damage = rained.MaxLife - rained.Life;
+      Check(damage >= 230, $"the enemy took {(int)damage} (expected about 300: 5 waves of 35, the Infernal's 75 and fel fire; under 200 means no Infernal)");
+      Finish(cheater);
+    }));
   }
 
   private static void PrepareHero(unit hero, int first, int second, int third, int ultimate)
