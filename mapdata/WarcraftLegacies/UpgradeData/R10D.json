@@ -1,0 +1,103 @@
+{
+  "OldId": "Rupc",
+  "NewId": "R10D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Id": "gba4",
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Aap1"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "Apts"
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gef3",
+      "Type": 3,
+      "Value": "rmvx"
+    },
+    {
+      "Id": "gglb",
+      "Value": 150
+    },
+    {
+      "Id": "ginh",
+      "Value": 0
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Forsaken)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "A"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Epidemic"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Epidemic"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Improves Elite Abominations and Plague Catapults by increasing their movement speed by 35 and the duration of their Disease Cloud by 30 seconds."
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    }
+  ]
+}

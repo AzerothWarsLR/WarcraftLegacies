@@ -65,7 +65,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R101"
+      "Value": ""
     },
     {
       "Id": "ua1s",
@@ -99,7 +99,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Improved Plague Tower"
+      "Value": "Improved Dread Tower"
     },
     {
       "Id": "utip",
@@ -114,7 +114,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Primary defensive structure. |n|cfff5962dCan learn:|R Magic Sentry |n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Improved defensive structure.|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": "unsf",

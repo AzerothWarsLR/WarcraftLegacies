@@ -1,0 +1,37 @@
+{
+  "OldId": "Acan",
+  "NewId": "A17V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R109"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Cannibalize"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Forsaken - Rotguard)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    }
+  ]
+}

@@ -58,12 +58,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R051,R05C,R07V"
+      "Value": "R05C,Ruba"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h08P,u01R"
+      "Value": "h08P,uban,u01V"
     },
     {
       "Id": "ulum",
@@ -86,7 +86,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Dark arts training structure.|n|cfff5962dTrains:|R Arcane Mages, Banshee, Elder Banshee|n|cfff5962dResearches:|R Arcane Mage Training, Banshee Training"
+      "Value": "Arcane training structure.|n|cfff5962dTrains:|R Archivists, Banshees, Val\u0027kyr|n|cfff5962dResearches:|R Archivist Training, Banshee Training"
     },
     {
       "Id": "unsf",

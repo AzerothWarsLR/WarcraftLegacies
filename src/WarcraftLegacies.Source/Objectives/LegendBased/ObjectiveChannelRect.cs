@@ -83,7 +83,7 @@ public sealed class ObjectiveChannelRect : Objective
     var whichUnit = @event.EnteringUnit;
     if (_closed || !EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive ||
         LegendaryHeroManager.GetFromUnit(@event.Unit) != _targetLegend || _channel != null ||
-        Progress != QuestProgress.Incomplete)
+        Progress != QuestProgress.Incomplete || ProgressLocked)
     {
       return;
     }

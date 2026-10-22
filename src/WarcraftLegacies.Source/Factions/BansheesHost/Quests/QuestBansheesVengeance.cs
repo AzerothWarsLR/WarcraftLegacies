@@ -37,6 +37,7 @@ public sealed class QuestBansheesVengeance : QuestData
       new Point(spawn.X + 250, spawn.Y - 250), 135);
     darKhan.FoeRisen += Empower;
     AddObjective(darKhan);
+    ResearchId = UPGRADE_R10C_QUEST_COMPLETED_THE_BANSHEE_S_VENGEANCE_BANSHEESHOST;
   }
 
   private static void Empower(unit darKhan)
@@ -54,7 +55,7 @@ public sealed class QuestBansheesVengeance : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "Sylvanas becomes a Dark Ranger, and the Banshee's Host can break free of the Lich King through the Rise of the Forsaken";
+    "Sylvanas becomes a Dark Ranger. The Banshee's Host can break free of the Lich King through the Rise of the Forsaken, and the Forsaken can research Dark Rangers";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

@@ -63,7 +63,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o05H,u01P,n07W"
+      "Value": "u01P,n07W"
     },
     {
       "Id": "ulum",
@@ -96,7 +96,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Mad Laboratory for Plague experimentation.|n|cfff5962dTrains:|R Apothecary, Plague Catapult, Plague Construct|n|cfff5962dResearches:|R Apothecary Training"
+      "Value": "Siege production building.|n|cfff5962dTrains:|R Plague Catapults, Plague Constructs"
     },
     {
       "Id": "unsf",
@@ -116,7 +116,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Laboratory"
+      "Value": "Siege Foundry"
     },
     {
       "Id": "utip",

@@ -7,7 +7,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "AInv,Apiv"
+      "Value": "AInv,A187"
     },
     {
       "Id": "uagp",
@@ -26,7 +26,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "A04A,Aamk,ANrf,AUsl,AUav"
+      "Value": "A18B,Aamk,A18A,A188,AHab"
     },
     {
       "Id": "uhpm",
@@ -76,7 +76,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Id": "usca",
@@ -107,6 +107,14 @@
       "Id": "upor",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

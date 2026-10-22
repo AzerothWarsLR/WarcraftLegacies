@@ -43,11 +43,15 @@ public sealed class LingeringGriefHazard : Hazard
   public required string SpiritEffectPath { get; init; }
   public required string TickEffectPath { get; init; }
 
-  public LingeringGriefHazard(unit source) : base(source, source.X, source.Y)
+  public LingeringGriefHazard(unit source) : this(source, source.X, source.Y)
+  {
+  }
+
+  public LingeringGriefHazard(unit source, float x, float y) : base(source, x, y)
   {
     _owner = source.Owner;
-    _x = source.X;
-    _y = source.Y;
+    _x = x;
+    _y = y;
   }
 
   public override void OnCreate()

@@ -1,0 +1,69 @@
+{
+  "OldId": "ANch",
+  "NewId": "A183",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Forsaken - Dark Ranger)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Charm"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 90.0
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 600.0
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Charm"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Takes control of a target enemy unit. Can\u0027t be used on heroes or on units with Resistant Skin, such as elites."
+    }
+  ]
+}

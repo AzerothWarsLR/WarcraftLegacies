@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0BM,A0NF,ACrk"
+      "Value": "A180,A0OM,A17Y,A08P"
     },
     {
       "Id": "uacq",
@@ -18,7 +18,7 @@
     {
       "Id": "ua1t",
       "Type": 3,
-      "Value": "hero"
+      "Value": "magic"
     },
     {
       "Id": "ua2t",
@@ -40,11 +40,11 @@
     {
       "Id": "udty",
       "Type": 3,
-      "Value": "hero"
+      "Value": "large"
     },
     {
       "Id": "ua1b",
-      "Value": 98
+      "Value": 37
     },
     {
       "Id": "ua1f",
@@ -64,7 +64,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1225
+      "Value": 1035
     },
     {
       "Id": "ulev",
@@ -94,7 +94,7 @@
     },
     {
       "Id": "ua1s",
-      "Value": 12
+      "Value": 3
     },
     {
       "Id": "ua2s",
@@ -159,7 +159,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
     },
     {
       "Id": "usca",
@@ -178,7 +178,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Powerful Flying caster Unit.|n|cfff5962dAbilities:|R Resurrection, Mass Animate Dead, Resistant Skin|n|n|cff99b4d1Can only train 2 (4) (9).|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Powerful flying caster.|n|cfff5962dAbilities:|R Energy Wave, Animate Dead, Mana Drain, Resistant Skin|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": "unam",
@@ -227,12 +227,26 @@
     },
     {
       "Id": "ubpx",
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": "upor",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R10E"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.75
     }
   ]
 }

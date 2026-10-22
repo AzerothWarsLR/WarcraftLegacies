@@ -1,0 +1,24 @@
+{
+  "OldId": "Atru",
+  "NewId": "A186",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R10F"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "True Sight"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Forsaken - Apothecary Bat Rider)"
+    }
+  ]
+}

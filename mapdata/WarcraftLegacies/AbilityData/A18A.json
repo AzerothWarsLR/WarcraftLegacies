@@ -1,0 +1,219 @@
+{
+  "OldId": "ANrf",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 130
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 145
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 7
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 11
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 12
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": "Hbz5",
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Level": 3,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Level": 4,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 1100
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 55
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellfireRain.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Forsaken - Varimathras)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHellfireRain.blp"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Calls down waves of fire on the target area. If Varimathras channels to the end, an Infernal crashes down at the centre, stunning nearby enemies and leaving fel fire that burns them.|n|n|cffffcc00Level 1|r - 5 waves of 35 damage, 75 Infernal damage, 15 fel fire damage per second.|n|cffffcc00Level 2|r - 7 waves of 45 damage, 115 Infernal damage, 20 fel fire damage per second.|n|cffffcc00Level 3|r - 9 waves of 55 damage, 155 Infernal damage, 25 fel fire damage per second.|n|cffffcc00Level 4|r - 11 waves of 65 damage, 195 Infernal damage, 30 fel fire damage per second."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Hellfire Rain - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 11 waves of fire on the target area, each dealing 65 damage to units in it. If Varimathras channels to the end, an Infernal crashes down at the centre, dealing 195 damage to nearby enemy units, stunning them for 1 second and leaving fel fire that burns them for 30 damage per second for 5 seconds."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Hellfire Rain"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Hellfire Rain - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 5 waves of fire on the target area, each dealing 35 damage to units in it. If Varimathras channels to the end, an Infernal crashes down at the centre, dealing 75 damage to nearby enemy units, stunning them for 1 second and leaving fel fire that burns them for 15 damage per second for 5 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Hellfire Rain - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 7 waves of fire on the target area, each dealing 45 damage to units in it. If Varimathras channels to the end, an Infernal crashes down at the centre, dealing 115 damage to nearby enemy units, stunning them for 1 second and leaving fel fire that burns them for 20 damage per second for 5 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Hellfire Rain - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 9 waves of fire on the target area, each dealing 55 damage to units in it. If Varimathras channels to the end, an Infernal crashes down at the centre, dealing 155 damage to nearby enemy units, stunning them for 1 second and leaving fel fire that burns them for 25 damage per second for 5 seconds."
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Hellfire Rain - [|cffffcc00Level %d|r]"
+    }
+  ],
+  "NewId": "A18A"
+}

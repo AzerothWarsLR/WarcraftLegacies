@@ -35,7 +35,7 @@ public sealed class QuestRangerLord : QuestData
     "Sylvanas stands over her fallen student and lays a hand on his brow. The Scourge took his mind; she gives it back. Nathanos rises again, his will bound to his Dark Lady alone.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => "Learn to train Nathanos Marris from the Altar of Darkness";
+  protected override string RewardDescription => "Learn to train Nathanos Marris from the Altar";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction) =>

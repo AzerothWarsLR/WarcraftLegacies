@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Factions.BansheesHost;
 public sealed class BansheesHostFaction : Faction, IHasRoleplayPaths
 {
   private readonly QuestBansheesVengeance _bansheesVengeance = new(AllLegends.Quel.Spire, AllLegends.Quel.Sylvanas);
+  private readonly QuestRangerLord _rangerLord = new(AllLegends.Quel.Sylvanas);
 
   /// <inheritdoc />
   public BansheesHostFaction() : base("Banshee's Host", playercolor.Cyan,
@@ -45,7 +46,7 @@ public sealed class BansheesHostFaction : Faction, IHasRoleplayPaths
   {
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     AddQuest(_bansheesVengeance);
-    AddQuest(new QuestRangerLord(AllLegends.Quel.Sylvanas));
+    AddQuest(_rangerLord);
     AddHeraldOfArchimonde();
     BansheesHostSpells.Setup();
   }
@@ -53,8 +54,8 @@ public sealed class BansheesHostFaction : Faction, IHasRoleplayPaths
   /// <inheritdoc />
   public void AddRoleplayPaths()
   {
-    AddPath(new PathRiseOfTheForsakenHorde(_bansheesVengeance));
-    AddPath(new PathRiseOfTheForsakenScourge(_bansheesVengeance));
+    AddPath(new PathRiseOfTheForsakenHorde(_bansheesVengeance, _rangerLord));
+    AddPath(new PathRiseOfTheForsakenScourge(_bansheesVengeance, _rangerLord));
   }
 
   private void AddHeraldOfArchimonde()

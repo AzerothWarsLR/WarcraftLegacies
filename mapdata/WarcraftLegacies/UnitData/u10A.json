@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A17J,A17K,A17L,A07C,A08P,Aiun,A0GK"
+      "Value": "A17J,A17K,A17L,A07C,A08P,Aiun,A0GK,A17X"
     },
     {
       "Id": "ubld",
@@ -51,7 +51,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 975
+      "Value": 800
     },
     {
       "Id": "uhpr",
@@ -186,12 +186,16 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.1
+      "Value": 1
     },
     {
       "Id": "uhrt",
       "Type": 3,
       "Value": "always"
+    },
+    {
+      "Id": "udef",
+      "Value": 2
     }
   ]
 }

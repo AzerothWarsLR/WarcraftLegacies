@@ -1,0 +1,35 @@
+{
+  "OldId": "Sca2",
+  "NewId": "A17X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R108"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "n0BY"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Forsaken - Wailing Sorrow)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chaos"
+    }
+  ]
+}

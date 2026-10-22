@@ -1,0 +1,43 @@
+{
+  "OldId": "Atau",
+  "NewId": "A17W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R10A"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Taunt"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Forsaken - Dreadguard)"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Forces nearby enemy units to attack the Dreadguard."
+    }
+  ]
+}

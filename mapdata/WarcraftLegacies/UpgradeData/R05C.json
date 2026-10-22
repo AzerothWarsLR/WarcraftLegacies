@@ -109,6 +109,10 @@
     },
     {
       "Id": "gbpx",
+      "Value": 0
+    },
+    {
+      "Id": "gbpy",
       "Value": 1
     }
   ]
