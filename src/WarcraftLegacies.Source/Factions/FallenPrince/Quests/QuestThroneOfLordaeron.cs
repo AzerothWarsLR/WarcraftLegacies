@@ -25,7 +25,7 @@ public sealed class QuestThroneOfLordaeron : QuestData
   {
     _capitalPalace = capitalPalace;
     _falric = falric;
-    AddObjective(new ObjectiveControlCapital(capitalPalace, false));
+    AddObjective(new ObjectiveControlCapital(capitalPalace, false, true));
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R104_QUEST_COMPLETED_THE_THRONE_OF_LORDAERON_FALLENPRINCE;
   }

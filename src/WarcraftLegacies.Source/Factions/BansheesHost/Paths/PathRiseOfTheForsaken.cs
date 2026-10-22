@@ -2,8 +2,11 @@
 using MacroTools.Factions;
 using MacroTools.Paths;
 using MacroTools.PreplacedWidgets;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Forsaken;
 using WarcraftLegacies.Source.Factions.Scourge;
+using WarcraftLegacies.Source.Objectives.MetaBased;
+using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Shared;
 
@@ -14,11 +17,13 @@ public abstract class PathRiseOfTheForsaken : FactionPath
 {
   private const int ObelisksDestroyed = 2;
 
-  protected PathRiseOfTheForsaken()
+  protected PathRiseOfTheForsaken(QuestData bansheesVengeance)
   {
     IconName = "BansheeRanger";
-    AddRequirement(new ObjectiveUnitsDestroyed(ObelisksDestroyed, "Two of the Icecrown Obelisks have been destroyed",
-      AllPreplacedWidgets.Units.GetAll(UNIT_N094_ICECROWN_OBELISK_SCOURGE))
+    AddRequirement(new ObjectiveEitherOf(
+      new ObjectiveUnitsDestroyed(ObelisksDestroyed, "Two of the Icecrown Obelisks have been destroyed",
+        AllPreplacedWidgets.Units.GetAll(UNIT_N094_ICECROWN_OBELISK_SCOURGE)),
+      new ObjectiveQuestComplete(bansheesVengeance))
     { ShowsInQuestLog = false });
   }
 
@@ -26,7 +31,8 @@ public abstract class PathRiseOfTheForsaken : FactionPath
   protected override void OnTaken(Faction faction)
   {
     var forsakenPlayer = faction.Player;
-    FactionTransition.AssignNewFaction(faction, new ForsakenFaction());
+    var forsaken = new ForsakenFaction();
+    FactionTransition.AssignNewFaction(faction, forsaken);
     var sylvanas = AllLegends.Quel.Sylvanas;
     if (sylvanas.Unit == null || sylvanas.Unit.Alive)
     {
@@ -40,6 +46,9 @@ public abstract class PathRiseOfTheForsaken : FactionPath
       var bases = new ForsakenBases(forsakenPlayer);
       OnBecameForsaken(bases);
       bases.ConvertScourgeBuildings();
+      bases.TrackPalaceName();
+      var undercity = forsaken.AddQuest(new QuestUndercity(AllLegends.Lordaeron.CapitalPalace, bases));
+      forsaken.DisplayDiscovered(undercity, false);
       forsakenPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\Undercity.ogg");
     }
   }

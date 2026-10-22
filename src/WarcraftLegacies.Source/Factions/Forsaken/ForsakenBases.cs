@@ -30,7 +30,6 @@ public sealed class ForsakenBases
 
   private readonly player _forsaken;
   private readonly string _palaceName = AllLegends.Lordaeron.CapitalPalace.Unit.Name;
-  private bool _undercityClaimed;
 
   public ForsakenBases(player forsaken)
   {
@@ -63,20 +62,11 @@ public sealed class ForsakenBases
     }
   }
 
-  /// <summary>
-  /// Gives the Forsaken the Undercity once Capital City is in friendly hands: straight away if it already is,
-  /// otherwise as soon as their team takes it.
-  /// </summary>
-  /// <param name="teammatesCountNow">Whether a teammate holding Capital City right now is enough.</param>
-  public void ClaimUndercity(bool teammatesCountNow)
+  /// <summary>Names the Capital Palace "Undercity" whenever the Forsaken hold it.</summary>
+  public void TrackPalaceName()
   {
-    TryClaimUndercity(teammatesCountNow);
     RefreshPalaceName();
-    AllLegends.Lordaeron.CapitalPalace.ChangedOwner += _ =>
-    {
-      TryClaimUndercity(true);
-      RefreshPalaceName();
-    };
+    AllLegends.Lordaeron.CapitalPalace.ChangedOwner += _ => RefreshPalaceName();
   }
 
   private void RefreshPalaceName()
@@ -127,26 +117,9 @@ public sealed class ForsakenBases
       ? scourge.Player
       : player.NeutralAggressive;
 
-  private void TryClaimUndercity(bool teammatesCount)
+  /// <summary>Builds the Undercity in the catacombs beneath Capital City.</summary>
+  public void BuildUndercity()
   {
-    var palace = AllLegends.Lordaeron.CapitalPalace.Unit;
-    if (_undercityClaimed || !palace.Alive || !(_forsaken.GetPlayerData().Faction is ForsakenFaction))
-    {
-      return;
-    }
-
-    var holder = palace.Owner;
-    if (holder != _forsaken && !(teammatesCount && TeamChanges.AreTeammates(holder, _forsaken)))
-    {
-      return;
-    }
-
-    _undercityClaimed = true;
-    if (holder != _forsaken)
-    {
-      palace.SetOwner(_forsaken);
-    }
-
     PathBase.CreateStructure(_forsaken, UNIT_H08S_UNDERCITY_FORSAKEN, 8384, 9216);
     PathBase.CreateStructure(_forsaken, UNIT_H08C_GRAVE_FORSAKEN, 8704, 9216);
     PathBase.CreateStructure(_forsaken, UNIT_H08C_GRAVE_FORSAKEN, 9472, 9216);
