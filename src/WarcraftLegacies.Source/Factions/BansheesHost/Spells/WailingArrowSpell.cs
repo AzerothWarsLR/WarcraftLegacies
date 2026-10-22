@@ -3,7 +3,6 @@ using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
-using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Factions.BansheesHost.Spells;
 
@@ -48,14 +47,14 @@ public sealed class WailingArrowSpell : Spell
     {
       if (CastFilters.IsTargetEnemyAndAliveUnits(caster, nearby) && nearby.UnitType != DummyCasterManager.UnitTypeId)
       {
-        nearby.Damage(caster, damage, attacktype.Magic);
+        caster.DealDamage(nearby, damage, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
       }
     }
 
     if (silences)
     {
-      DummyCasterManager.GetAbilitySpecificDummyCaster(SilenceAbilityId, ORDER_SILENCE)
-        .CastPoint(caster.Owner, SilenceLevel, new Point(x, y));
+      DummyCasterManager.GetGlobalDummyCaster()
+        .CastPoint(caster.Owner, SilenceAbilityId, ORDER_SILENCE, SilenceLevel, new Point(x, y));
     }
   }
 }
@@ -77,7 +76,7 @@ public sealed class WailingArrowMissile : BasicMissile
     var y = MissileY;
     if (Target != null && Target.Alive)
     {
-      Target.Damage(Caster, ImpactDamage, attacktype.Magic);
+      Caster.DealDamage(Target, ImpactDamage, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
     }
 
     Spell.Wail(Caster, x, y, WailDamage, true);

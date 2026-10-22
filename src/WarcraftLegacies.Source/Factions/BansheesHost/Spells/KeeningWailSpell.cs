@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Factions.BansheesHost.Spells;
 
@@ -37,7 +36,7 @@ public sealed class KeeningWailSpell : Spell
     var damage = Math.Min(Damage, MaxDamage / victims.Count);
     foreach (var victim in victims)
     {
-      victim.Damage(caster, damage, attacktype.Magic);
+      caster.DealDamage(victim, damage, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
     }
   }
 }

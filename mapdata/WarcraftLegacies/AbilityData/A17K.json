@@ -124,6 +124,11 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Curses a target enemy unit with sorrow, dealing 40 damage per second for 8 seconds and healing the Wailing Sorrow for the damage dealt. Can be dispelled."
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

@@ -36,28 +36,28 @@
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": "Htc1",
+      "Id": "Ctc1",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": "Htc2",
+      "Id": "Ctc2",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 3,
-      "Id": "Htc3",
+      "Id": "Ctc3",
       "Type": 2,
       "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 4,
-      "Id": "Htc4",
+      "Id": "Ctc4",
       "Type": 2,
       "Value": 0.3
     },

@@ -1,7 +1,6 @@
 ﻿using MacroTools.Spells;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Factions.BansheesHost.Spells;
 
@@ -47,7 +46,7 @@ public sealed class AnguishBuff : BoundBuff
   public override void OnTick()
   {
     effect.Create(TickEffectPath, Target, "chest").Dispose();
-    Target.Damage(Caster, DamagePerTick, attacktype.Magic);
+    Caster.DealDamage(Target, DamagePerTick, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
     if (!Caster.Alive)
     {
       return;

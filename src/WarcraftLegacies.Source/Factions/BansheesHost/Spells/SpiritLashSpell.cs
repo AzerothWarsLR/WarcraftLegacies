@@ -3,7 +3,6 @@ using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
-using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Factions.BansheesHost.Spells;
 
@@ -65,8 +64,8 @@ public sealed class SpiritLashMissile : BasicMissile
     }
 
     effect.Create(HitEffectPath, unit, "chest").Dispose();
-    unit.Damage(Caster, Damage, attacktype.Magic);
-    DummyCasterManager.GetAbilitySpecificDummyCaster(SilenceAbilityId, ORDER_SILENCE)
-      .CastPoint(Caster.Owner, SilenceLevel, new Point(unit.X, unit.Y));
+    Caster.DealDamage(unit, Damage, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
+    DummyCasterManager.GetGlobalDummyCaster()
+      .CastPoint(Caster.Owner, SilenceAbilityId, ORDER_SILENCE, SilenceLevel, new Point(unit.X, unit.Y));
   }
 }

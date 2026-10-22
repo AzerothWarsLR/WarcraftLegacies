@@ -1,8 +1,7 @@
-﻿using MacroTools.Hazards;
-using MacroTools.Spells;
+﻿using MacroTools.DummyCasters;
+using MacroTools.Hazards;
 using MacroTools.UnitTraits;
 using MacroTools.Utils;
-using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Factions.BansheesHost.Spells;
 
@@ -33,7 +32,8 @@ public sealed class LingeringGrief : UnitTrait, IEffectOnDeath
 /// <summary>The grieving spirit left behind by <see cref="LingeringGrief"/>.</summary>
 public sealed class LingeringGriefHazard : Hazard
 {
-  private readonly unit _source;
+  private readonly player _owner;
+  private unit? _damageSource;
   private readonly float _x;
   private readonly float _y;
   private effect? _spirit;
@@ -45,7 +45,7 @@ public sealed class LingeringGriefHazard : Hazard
 
   public LingeringGriefHazard(unit source) : base(source, source.X, source.Y)
   {
-    _source = source;
+    _owner = source.Owner;
     _x = source.X;
     _y = source.Y;
   }
@@ -53,20 +53,27 @@ public sealed class LingeringGriefHazard : Hazard
   public override void OnCreate()
   {
     _spirit = effect.Create(SpiritEffectPath, _x, _y);
+    _damageSource = unit.Create(_owner, DummyCasterManager.UnitTypeId, _x, _y, 0);
     _spirit.SetAlpha(160);
   }
 
   protected override void OnPeriodic()
   {
+    if (_damageSource == null)
+    {
+      return;
+    }
+
     foreach (var target in GlobalGroup.EnumUnitsInRange(_x, _y, Radius))
     {
-      if (!CastFilters.IsTargetEnemyAndAliveUnits(_source, target))
+      if (!target.Alive || target.IsAllyTo(_owner) || target.UnitType == DummyCasterManager.UnitTypeId ||
+          target.IsUnitType(unittype.Structure))
       {
         continue;
       }
 
       effect.Create(TickEffectPath, target, "chest").Dispose();
-      target.Damage(_source, DamagePerTick, attacktype.Magic);
+      _damageSource.DealDamage(target, DamagePerTick, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
     }
   }
 
@@ -75,6 +82,11 @@ public sealed class LingeringGriefHazard : Hazard
     if (_spirit != null)
     {
       _spirit.Dispose();
+    }
+
+    if (_damageSource != null)
+    {
+      _damageSource.Dispose();
     }
   }
 }
