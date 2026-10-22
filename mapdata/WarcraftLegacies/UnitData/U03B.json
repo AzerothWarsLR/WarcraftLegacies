@@ -121,7 +121,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "units\\creeps\\BansheeGhost\\BansheeGhost.mdl"
+      "Value": "war3mapImported\\BansheeV2.mdl"
     },
     {
       "Id": "uico",
@@ -156,7 +156,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Cunning Hero, a restless spirit who haunts and dominates her foes.|n|cfff5962dCan learn:|R Spirit Lash, Ethereal Veil, Mourning Chorus, Inspire Madness|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Cunning Hero, adept at silencing enemies and turning their dead against them.|n|cfff5962dCan learn:|R Spirit Lash, Ethereal Veil, Mourning Chorus, Inspire Madness|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": "usnd",
