@@ -27,10 +27,8 @@ public sealed class QuestPlague : QuestData
   private readonly Faction _secondaryPlagueFaction;
   private readonly PlagueParameters _plagueParameters;
 
-  private readonly List<unit> _deathknellUnits;
-  private readonly List<unit> _coastUnits;
-  private readonly List<CoastStructure> _coastStructures = new();
-  private bool _coastRescued;
+  private readonly RescueBase _deathknell;
+  private readonly RescueBase _coast;
   private readonly List<unit> _scholomanceUnits;
   private readonly ObjectiveTurn _earliestTurn = new(8);
   private readonly ObjectiveTurn _forcedTurn = new(11);
@@ -59,13 +57,9 @@ public sealed class QuestPlague : QuestData
       _forcedTurn);
     AddObjective(_researchOrForcedTurn);
     AddObjective(_earliestTurn);
-    _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+    _deathknell = new RescueBase(deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideAll));
     _scholomanceUnits = scholomance.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-    _coastUnits = coast.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-    foreach (var coastUnit in _coastUnits)
-    {
-      _coastStructures.Add(new CoastStructure(coastUnit));
-    }
+    _coast = new RescueBase(coast.PrepareUnitsForRescue(RescuePreparationMode.HideAll));
 
     Global = true;
     ResearchId = UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;
@@ -136,45 +130,18 @@ public sealed class QuestPlague : QuestData
   /// Gives the Stratholme coast base to <paramref name="newOwner"/>, rebuilding any of its structures that have been
   /// destroyed. If the Plague hasn't struck yet, the Plague no longer gives it to the Scourge.
   /// </summary>
-  public void HandOverCoast(player newOwner)
-  {
-    if (!_coastRescued)
-    {
-      _coastRescued = true;
-      newOwner.RescueGroup(_coastUnits);
-      return;
-    }
+  public void HandOverCoast(player newOwner) => _coast.HandOver(newOwner);
 
-    foreach (var coastStructure in _coastStructures)
-    {
-      var structure = coastStructure.Unit;
-      if (structure.Alive)
-      {
-        if (structure.Owner != newOwner)
-        {
-          structure.SetOwner(newOwner);
-        }
-
-        continue;
-      }
-
-      var rebuilt = PathBase.CreateStructure(newOwner, coastStructure.UnitTypeId, coastStructure.X, coastStructure.Y);
-      if (rebuilt != null)
-      {
-        coastStructure.Unit = rebuilt;
-      }
-    }
-  }
+  /// <summary>
+  /// Gives the Deathknell base to <paramref name="newOwner"/>, rebuilding any of its structures that have been
+  /// destroyed. If the Plague hasn't struck yet, the Plague no longer gives it to the Scourge.
+  /// </summary>
+  public void HandOverDeathknell(player newOwner) => _deathknell.HandOver(newOwner);
 
   private void RescueBases(Faction completingFaction)
   {
-    completingFaction.Player.RescueGroup(_deathknellUnits);
-    if (!_coastRescued)
-    {
-      _coastRescued = true;
-      completingFaction.Player.RescueGroup(_coastUnits);
-    }
-
+    _deathknell.Rescue(completingFaction.Player);
+    _coast.Rescue(completingFaction.Player);
     completingFaction.Player.RescueGroup(_scholomanceUnits);
   }
 
@@ -282,21 +249,4 @@ public sealed class QuestPlague : QuestData
       controlPoint.ControlLevel = 0;
     }
   }
-}
-
-/// <summary>One structure of the Stratholme coast base and where it stands, so it can be rebuilt.</summary>
-public sealed class CoastStructure
-{
-  public CoastStructure(unit structure)
-  {
-    Unit = structure;
-    UnitTypeId = structure.UnitType;
-    X = structure.X;
-    Y = structure.Y;
-  }
-
-  public unit Unit { get; set; }
-  public int UnitTypeId { get; }
-  public float X { get; }
-  public float Y { get; }
 }

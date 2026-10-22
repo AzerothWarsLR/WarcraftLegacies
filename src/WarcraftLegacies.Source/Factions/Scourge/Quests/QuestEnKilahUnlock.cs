@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Quests;
-using WarcraftLegacies.Source.Extensions;
 using WarcraftLegacies.Source.Objectives.ControlPointBased;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.TurnBased;
+using WarcraftLegacies.Source.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Scourge.Quests;
@@ -15,7 +14,7 @@ namespace WarcraftLegacies.Source.Factions.Scourge.Quests;
 /// </summary>
 public sealed class QuestEnKilahUnlock : QuestData
 {
-  private readonly List<unit> _rescueUnits;
+  private readonly RescueBase _base;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestEnKilahUnlock"/> class.
@@ -27,7 +26,7 @@ public sealed class QuestEnKilahUnlock : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N09H_EN_KILAH));
     AddObjective(new ObjectiveExpire(11, Title));
     AddObjective(new ObjectiveSelfExists());
-    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    _base = new RescueBase(rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures), true);
   }
 
   /// <inheritdoc/>
@@ -43,7 +42,7 @@ public sealed class QuestEnKilahUnlock : QuestData
       ? player.NeutralAggressive
       : completingFaction.Player;
 
-    rescuer.RescueGroupWithUnburrow(_rescueUnits);
+    _base.Rescue(rescuer);
   }
 
   /// <inheritdoc/>
@@ -51,7 +50,13 @@ public sealed class QuestEnKilahUnlock : QuestData
   {
     if (completingFaction.Player != null)
     {
-      completingFaction.Player.RescueGroupWithUnburrow(_rescueUnits);
+      _base.Rescue(completingFaction.Player);
     }
   }
+
+  /// <summary>
+  /// Gives En'kilah to <paramref name="newOwner"/>, rebuilding any of its structures that have been destroyed.
+  /// If the quest hasn't finished yet, it no longer gives En'kilah to anyone.
+  /// </summary>
+  public void HandOver(player newOwner) => _base.HandOver(newOwner);
 }
