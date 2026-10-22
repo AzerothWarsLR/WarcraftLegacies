@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions.BansheesHost;
 using WarcraftLegacies.Source.Factions.Scourge;
@@ -15,6 +16,12 @@ public sealed class BansheesHostTransformation
 {
   /// <summary>The Banshee's Host's base in Northrend.</summary>
   public static Rectangle NorthrendBase => Regions.EnKilahUnlock;
+
+  private const float MusterX = 5513;
+  private const float MusterY = 9440;
+  private const float RankSpacing = 90;
+  private const float FileSpacing = 100;
+  private const float MusterFacing = 270;
 
   /// <summary>Turns <paramref name="quelthalas"/>'s player into the Banshee's Host.</summary>
   public void Execute(Faction quelthalas)
@@ -36,13 +43,14 @@ public sealed class BansheesHostTransformation
     CreateDeathknellBase(whichPlayer, plague);
     PathBase.ClaimArea(NorthrendBase, whichPlayer);
     CreateEnKilahBase(whichPlayer, enKilah);
+    TakeEnKilahControlPoint(whichPlayer);
 
-    var deathknell = Regions.DeathknellUnlock.Center;
-    PathBase.CreateUnits(whichPlayer, UNIT_UACO_ACOLYTE_SCOURGE_WORKER, 5, deathknell.X, deathknell.Y - 250);
-    PathBase.CreateUnits(whichPlayer, UNIT_UBAN_BANSHEE_SCOURGE, 6, deathknell.X - 250, deathknell.Y + 400);
-    PathBase.CreateUnits(whichPlayer, UNIT_H08O_ROTGUARD_FORSAKEN, 4, deathknell.X + 250, deathknell.Y + 400);
+    CreateRank(whichPlayer, UNIT_H08O_ROTGUARD_FORSAKEN, 4, MusterY);
+    CreateRank(whichPlayer, UNIT_UBAN_BANSHEE_SCOURGE, 3, MusterY + RankSpacing);
+    CreateRank(whichPlayer, UNIT_UBAN_BANSHEE_SCOURGE, 3, MusterY + 2 * RankSpacing);
+    CreateRank(whichPlayer, UNIT_UACO_ACOLYTE_SCOURGE_WORKER, 5, MusterY + 3 * RankSpacing);
     AllLegends.Quel.Sylvanas.UnitType = UNIT_U03B_BANSHEE_QUEEN_BANSHEESHOST;
-    PathBase.SummonLegend(AllLegends.Quel.Sylvanas, whichPlayer, new Point(deathknell.X, deathknell.Y + 150));
+    PathBase.SummonLegend(AllLegends.Quel.Sylvanas, whichPlayer, new Point(MusterX, MusterY - RankSpacing));
     whichPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\TragicConfrontation.mp3");
   }
 
@@ -70,6 +78,7 @@ public sealed class BansheesHostTransformation
   /// <summary>Takes over the Scourge's En'kilah outpost, or builds the same outpost if there is none, with a Black Citadel at its heart.</summary>
   private static void CreateEnKilahBase(player whichPlayer, QuestEnKilahUnlock? enKilah)
   {
+    CreateEnKilahOutbuildings(whichPlayer);
     if (enKilah == null)
     {
       PathBase.CreateStructure(whichPlayer, UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, -5792, 18592);
@@ -85,6 +94,34 @@ public sealed class BansheesHostTransformation
         UpgradeToBlackCitadel(whichUnit);
       }
     }
+  }
+
+  /// <summary>The Scourge's hold on En'kilah passes to the Banshee's Host with the base; an enemy who took it keeps it.</summary>
+  private static void TakeEnKilahControlPoint(player whichPlayer)
+  {
+    var controlPoint = AllPreplacedWidgets.Units.Get(UNIT_N09H_EN_KILAH);
+    if (controlPoint.Owner.GetPlayerData().Faction is ScourgeFaction)
+    {
+      controlPoint.SetOwner(whichPlayer);
+    }
+  }
+
+  private static void CreateRank(player whichPlayer, int unitTypeId, int count, float y)
+  {
+    var startX = MusterX - (count - 1) * FileSpacing / 2;
+    for (var i = 0; i < count; i++)
+    {
+      unit.Create(whichPlayer, unitTypeId, startX + i * FileSpacing, y, MusterFacing);
+    }
+  }
+
+  private static void CreateEnKilahOutbuildings(player whichPlayer)
+  {
+    PathBase.CreateStructure(whichPlayer, UNIT_USEP_CRYPT_SCOURGE_BARRACKS, -5152, 18496);
+    PathBase.CreateStructure(whichPlayer, UNIT_UGRV_GRAVEYARD_SCOURGE_RESEARCH, -5334, 17709);
+    PathBase.CreateStructure(whichPlayer, UNIT_UZIG_ZIGGURAT_SCOURGE_FARM, -5830, 18204);
+    PathBase.CreateStructure(whichPlayer, UNIT_UZIG_ZIGGURAT_SCOURGE_FARM, -5369, 18110);
+    PathBase.CreateStructure(whichPlayer, UNIT_UZG1_SPIRIT_TOWER_SCOURGE_TOWER, -5568, 18848);
   }
 
   private static void UpgradeToBlackCitadel(unit necropolis)
