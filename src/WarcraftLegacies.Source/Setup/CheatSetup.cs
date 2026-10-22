@@ -18,6 +18,7 @@ public static class CheatSetup
     CommandManager.Register(new CheatPower());
     CommandManager.Register(new CheatTeamRules());
     CommandManager.Register(new CheatPath());
+    CommandManager.Register(new CheatTestBansheesHost());
     CommandManager.Register(new CheatScenario(
       new CheatTestAdmiral(),
       new CheatTestChainedMag(),
