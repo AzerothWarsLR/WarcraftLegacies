@@ -125,11 +125,5 @@ public sealed class ForsakenBases
     PathBase.CreateStructure(_forsaken, UNIT_H08C_GRAVE_FORSAKEN, 9472, 9216);
     PathBase.CreateStructure(_forsaken, UNIT_U011_PLAGUETORIUM_FORSAKEN, 9792, 9216);
     PathBase.CreateStructure(_forsaken, UNIT_U01J_GRAVEYARD_FORSAKEN, 9760, 7808);
-
-    var message = Loc.Get("The Forsaken descend into the catacombs beneath Capital City, and make the Undercity their home.");
-    foreach (var whichPlayer in WCSharp.Shared.Util.EnumeratePlayers())
-    {
-      whichPlayer.DisplayTextTo($"\n|cffffcc00{Loc.Get("THE UNDERCITY")}|r\n{message}");
-    }
   }
 }

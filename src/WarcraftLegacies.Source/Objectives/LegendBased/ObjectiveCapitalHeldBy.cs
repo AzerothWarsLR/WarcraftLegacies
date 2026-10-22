@@ -21,7 +21,7 @@ public sealed class ObjectiveCapitalHeldBy : Objective
     _target = target;
     _isHolder = isHolder;
     TargetWidget = target.Unit;
-    SetDescription("{target} is held by {holder}", ("{target}", Loc.Get(target.Name)), ("{holder}", Loc.Get(holderName)));
+    SetDescription("{holder} controls {target}", ("{target}", Loc.Get(target.Name)), ("{holder}", Loc.Get(holderName)));
     DisplaysPosition = true;
     if (target.Unit != null)
     {

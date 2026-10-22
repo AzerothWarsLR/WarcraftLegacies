@@ -23,7 +23,7 @@ public sealed class ObjectiveDefeatRisenFoe : Objective
     _unitTypeId = unitTypeId;
     _spawnPoint = spawnPoint;
     _facing = facing;
-    SetDescription("Defeat {foe}", ("{foe}", Loc.Get(foeName)));
+    SetDescription("Kill {foe}", ("{foe}", Loc.Get(foeName)));
     DisplaysPosition = true;
     Position = spawnPoint;
     trigger.ProgressChanged += OnTriggerProgressChanged;

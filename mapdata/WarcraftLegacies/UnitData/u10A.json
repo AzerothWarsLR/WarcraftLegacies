@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A17J,A17K,A17L,A07C,A08P,Aiun"
+      "Value": "A17J,A17K,A17L,A07C,A08P,Aiun,A0GK"
     },
     {
       "Id": "ubld",
@@ -166,7 +166,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Elite caster. A banshee whose grief has grown into a weapon, able to wail, curse and haunt the battlefield even in death.|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Elite banshee caster. Wails to slow enemy attacks, curses foes to drain their life, and haunts the battlefield even after death."
     },
     {
       "Id": "umdl",
