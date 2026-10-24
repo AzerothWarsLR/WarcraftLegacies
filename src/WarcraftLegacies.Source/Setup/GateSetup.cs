@@ -1,4 +1,5 @@
 ﻿using MacroTools.UnitTraits;
+using WarcraftLegacies.Source.Factions.Gilneas;
 using WarcraftLegacies.Source.Shared.UnitTraits;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -47,6 +48,7 @@ public static class GateSetup
         UNIT_H02K_GREYMANE_S_GATE_GATE_CLOSED,
         UNIT_H02L_GREYMANE_S_GATE_GATE_DEAD
       });
+    UnitTypeTraitRegistry.Register(new GreymaneFortification(), GreymaneFortification.GateTypes);
     UnitTypeTraitRegistry.Register(
       new Gate(UNIT_H04R_DIAGONAL_WOODEN_GATE_GATE_OPEN, UNIT_H04T_DIAGONAL_WOODEN_GATE_GATE_DEAD),
       new[]

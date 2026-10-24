@@ -70,13 +70,19 @@ public sealed class GilneasFaction : Faction
 
   private void RegisterQuests()
   {
-    StartingQuest = AddQuest(new QuestShadowfangKeep(Regions.ShadowfangUnlock));
-    AddQuest(new QuestSouthshoregil(Regions.SouthshoreUnlock));
-    AddQuest(new QuestGilneasCity(Regions.Gilneas));
-    if (!FormedMidGame)
+    if (FormedMidGame)
     {
+      ModObjectLimit(UPGRADE_R02R_QUEST_COMPLETED_LIBERATION_OF_GILNEAS, 1);
+      SetObjectLevel(UPGRADE_R02R_QUEST_COMPLETED_LIBERATION_OF_GILNEAS, 1);
+    }
+    else
+    {
+      StartingQuest = AddQuest(new QuestShadowfangKeep(Regions.ShadowfangUnlock));
+      AddQuest(new QuestSouthshoregil(Regions.SouthshoreUnlock));
+      AddQuest(new QuestGilneasCity(Regions.Gilneas));
       AddQuest(new QuestDalarangilneas(Regions.Dalaran));
     }
+
     AddQuest(new QuestCrowley());
     var sunwell = AllLegends.Quel.Sunwell.Unit;
     if (sunwell != null && sunwell.Alive)

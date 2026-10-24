@@ -44,9 +44,20 @@ public sealed class GilneasTransformation
     PathBase.HandOverStructures(whichPlayer, heir, heirEquivalents, Regions.Gilneas);
     DalaranHomeland.MakeBookKeeper(heir);
     PathBase.ConvertStructures(whichPlayer, GilneasEquivalents, Regions.Gilneas);
+    ClaimShadowfangKeep(whichPlayer, heir);
 
     var castle = AllLegends.Gilneas.GilneasCastle.Unit;
     PathBase.RelocateArmy(whichPlayer, ArmyEquivalents, castle.X, castle.Y - 700);
     PathBase.SummonLegend(AllLegends.Gilneas.Genn, whichPlayer, new Point(castle.X, castle.Y - 400));
+    GreymaneFortification.Activate();
+  }
+
+  private static void ClaimShadowfangKeep(player gilneas, player heir)
+  {
+    var shadowfangKeep = AllLegends.Dalaran.Shadowfang.Unit;
+    if (shadowfangKeep != null && shadowfangKeep.Alive && shadowfangKeep.Owner == heir)
+    {
+      shadowfangKeep.SetOwner(gilneas);
+    }
   }
 }
