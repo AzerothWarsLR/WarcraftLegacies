@@ -254,7 +254,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "The hero\u0027s attacks completely poisons enemy units slowing their attack by 250% and movement speed to 150. |n|n|cffffcc00Level 1|r - Lasts 1 seconds on units, 0.4 second on heroes dealing 10 damage per second. |n|cffffcc00Level 2|r - Lasts 2 seconds on units, .8 seconds on heroes dealing 20 damage per second. |n|cffffcc00Level 3|r - Lasts 3 seconds on units, 1.2 seconds on heroes dealing 30 damage per second. |n|cffffcc00Level 4|r - lasts 4 seconds on units, 1.6 seconds on heroes dealing 40 damage per second."
+      "Value": "Putress's attacks poison non-hero enemy units, greatly slowing their movement and attack speed and dealing damage over time.|n|n|cffffcc00Level 1|r - 10 damage per second, lasts 1 second.|n|cffffcc00Level 2|r - 20 damage per second, lasts 2 seconds.|n|cffffcc00Level 3|r - 30 damage per second, lasts 3 seconds.|n|cffffcc00Level 4|r - 40 damage per second, lasts 4 seconds."
     },
     {
       "Level": 1,
@@ -284,25 +284,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 1 seconds dealing 10 damage per second. Lasts 0.4 seconds on heroes."
+      "Value": "Putress's attacks poison non-hero enemy units, greatly slowing their movement and attack speed and dealing 10 damage per second. Lasts 1 second."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 2 seconds dealing 20 damage per second. Lasts 0.4 seconds on heroes."
+      "Value": "Putress's attacks poison non-hero enemy units, greatly slowing their movement and attack speed and dealing 20 damage per second. Lasts 2 seconds."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 3 seconds dealing 30 damage per second. Lasts 0.4 seconds on heroes."
+      "Value": "Putress's attacks poison non-hero enemy units, greatly slowing their movement and attack speed and dealing 30 damage per second. Lasts 3 seconds."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 4 seconds dealing 40 damage per second. Lasts 0.4 seconds on heroes."
+      "Value": "Putress's attacks poison non-hero enemy units, greatly slowing their movement and attack speed and dealing 40 damage per second. Lasts 4 seconds."
     }
   ]
 }

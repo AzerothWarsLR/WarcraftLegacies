@@ -175,7 +175,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him. |n|n|cffffcc00Level 1|r - \u003CAEfk,DataA1\u003E damage per target. |n|cffffcc00Level 2|r - \u003CAEfk,DataA2\u003E damage per target. |n|cffffcc00Level 3|r - \u003CAEfk,DataA3\u003E damage per target. |n|cffffcc00Level 4|r - \u003CAEfk,DataA4\u003E damage per target."
+      "Value": "Sprays poison all around Putress, damaging nearby enemy units.|n|n|cffffcc00Level 1|r - 150 damage per target.|n|cffffcc00Level 2|r - 200 damage per target.|n|cffffcc00Level 3|r - 250 damage per target.|n|cffffcc00Level 4|r - 300 damage per target."
     },
     {
       "Level": 4,
@@ -187,13 +187,13 @@
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him, damaging nearby enemies. Each knife does \u003CAEfk,DataA3\u003E damage."
+      "Value": "Sprays poison all around Putress, dealing 250 damage to each nearby enemy unit."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him, damaging nearby enemies. Each knife does \u003CAEfk,DataA4\u003E damage."
+      "Value": "Sprays poison all around Putress, dealing 300 damage to each nearby enemy unit."
     },
     {
       "Id": "anam",
@@ -227,13 +227,13 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him, damaging nearby enemies. Each knife does \u003CAEfk,DataA1\u003E damage."
+      "Value": "Sprays poison all around Putress, dealing 150 damage to each nearby enemy unit."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him, damaging nearby enemies. Each knife does \u003CAEfk,DataA2\u003E damage."
+      "Value": "Sprays poison all around Putress, dealing 200 damage to each nearby enemy unit."
     },
     {
       "Id": "amat",
