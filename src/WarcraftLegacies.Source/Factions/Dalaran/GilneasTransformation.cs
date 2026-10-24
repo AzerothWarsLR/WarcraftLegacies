@@ -3,6 +3,7 @@ using MacroTools.Factions;
 using MacroTools.Shared;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Gilneas;
+using WarcraftLegacies.Source.Factions.Gilneas.Powers;
 using WarcraftLegacies.Source.Shared;
 using WCSharp.Shared.Data;
 
@@ -34,7 +35,9 @@ public sealed class GilneasTransformation
     }
 
     DalaranHomeland.ClaimHeldLands(dalaran);
-    FactionTransition.AssignNewFaction(dalaran, new GilneasFaction(playercolor.Coal) { FormedMidGame = true });
+    var gilneas = new GilneasFaction(playercolor.Coal) { FormedMidGame = true };
+    FactionTransition.AssignNewFaction(dalaran, gilneas);
+    gilneas.AddPower(new CurseOfTheWorgen());
     PathBase.RemoveHero(AllLegends.Dalaran.Antonidas);
     PathBase.RemoveHero(AllLegends.Dalaran.Jaina);
     PathBase.RemoveHero(AllLegends.Dalaran.Aegwynn);
