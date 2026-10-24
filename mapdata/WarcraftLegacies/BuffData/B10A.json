@@ -1,0 +1,29 @@
+{
+  "OldId": "BUsl",
+  "NewId": "B10A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mass Sleep"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mass Sleep"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is asleep; it can\u0027t move, attack or cast spells until it takes damage."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASMassSleep.blp"
+    }
+  ]
+}

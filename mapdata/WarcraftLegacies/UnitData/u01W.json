@@ -57,12 +57,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "R10D,R10F"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "n07V,u02G,u01V"
+      "Value": "u02G,o05H"
     },
     {
       "Id": "ulum",
@@ -71,7 +71,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R04X"
+      "Value": ""
     },
     {
       "Id": "ubpx",
@@ -99,7 +99,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Royal Quarters of Undercity. |n|cfff5962dTrains:|R Undercity Guardians, Valkyrs, Elder Banshees"
+      "Value": "Royal crypts of the Forsaken.|n|cfff5962dTrains:|R Elite Abominations, Apothecary Bat Riders|n|cfff5962dResearches:|R Epidemic, Echolocation"
     },
     {
       "Id": "unam",

@@ -1,0 +1,172 @@
+{
+  "OldId": "Hvwd",
+  "NewId": "U03B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "ua1b",
+      "Value": 10
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua2r",
+      "Value": 650
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Sylvanas"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv"
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A17N,A17O,A17P,A17M"
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "uagi",
+      "Value": 18
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "uint",
+      "Value": 24
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BansheeMissile\\BansheeMissile.mdl"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BansheeV2.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBansheeQueen.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Banshee Queen"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Banshee Queen"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(BansheesHost)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Banshee Queen"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Sylvanas Windrunner"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, adept at silencing enemies and turning their dead against them.|n|cfff5962dCan learn:|R Spirit Lash, Ethereal Veil, Mourning Chorus, Inspire Madness|n|n|cffffcc00Attacks land and air units.|R"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Banshee"
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    }
+  ]
+}

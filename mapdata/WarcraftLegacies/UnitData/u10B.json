@@ -1,0 +1,37 @@
+{
+  "OldId": "ngh1",
+  "NewId": "u10B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Mourning Spirit"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(BansheesHost)"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "ua1b",
+      "Value": 14
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "A grieving spirit raised by Sylvanas\u0027s Mourning Chorus."
+    }
+  ]
+}

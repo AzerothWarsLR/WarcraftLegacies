@@ -116,7 +116,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h06B,h022,h09Y,h00F,hpea,uaco,h00H"
+      "Value": "h06B,h022,h09Y,h00F,hpea,uaco,h00H,u01K,u10A,n0BY"
     },
     {
       "Id": "utyp",
@@ -136,7 +136,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "R108"
     },
     {
       "Id": "ulum",

@@ -26,6 +26,9 @@ public sealed class Channel : IDisposable
   private readonly timerdialog? _channelingDialog;
   private readonly Point _position;
   private readonly timer _periodictimer;
+  private readonly string _animation;
+  private readonly float _animationLoop;
+  private float _sinceAnimation;
 
   /// <summary>
   /// Fired when the <see cref="Channel"/> ends, successfully or otherwise.
@@ -46,8 +49,11 @@ public sealed class Channel : IDisposable
   /// <param name="position">Where the caster should channel from.</param>
   /// <param name="timerDialogTitle">If set, the <see cref="Channel"/> displays a countdown timer to all players with
   /// this title. If null, no timer is displayed.</param>
-  public Channel(unit caster, int duration, float facing, Point position, string? timerDialogTitle = null)
+  public Channel(unit caster, int duration, float facing, Point position, string? timerDialogTitle = null,
+    string animation = "channel", float animationLoop = 0)
   {
+    _animation = animation;
+    _animationLoop = animationLoop;
     _caster = caster;
     _elapsedDuration = 0;
     _maxDuration = duration;
@@ -56,7 +62,7 @@ public sealed class Channel : IDisposable
 
     caster.SetPosition(_position.X, _position.Y);
     caster.SetPausedEx(true);
-    caster.SetAnimation("channel");
+    caster.SetAnimation(_animation);
     caster.Facing = facing;
     caster.IsInvulnerable = false;
     _sfxProgress = effect.Create(ProgressEffect, caster.X, caster.Y);
@@ -126,6 +132,13 @@ public sealed class Channel : IDisposable
     }
 
     _elapsedDuration += Period;
+    _sinceAnimation += Period;
+    if (_animationLoop > 0 && _sinceAnimation >= _animationLoop && _caster.Alive)
+    {
+      _sinceAnimation = 0;
+      _caster.SetAnimation(_animation);
+    }
+
     if (_elapsedDuration >= _maxDuration)
     {
       End(true);

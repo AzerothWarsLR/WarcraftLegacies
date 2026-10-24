@@ -49,7 +49,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 2115
+      "Value": 1500
     },
     {
       "Id": "ulum",
@@ -80,7 +80,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhme,Rhar,Rguv"
+      "Value": "Rhme,Rhar,Rguv,R10D"
     },
     {
       "Id": "ureq",
@@ -121,17 +121,17 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.3
+      "Value": 1.15
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Algamation of corpses stiched into a foul creature.|n|cfff5962dAbilities:|R Disease Cloud, Resistant Skin, Cleaving Attack|n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
+      "Value": "Hulking amalgamation of corpses stitched together by the Royal Apothecary Society.|n|cfff5962dAbilities:|R Disease Cloud, Cleaving Attack, Resistant Skin|n|cfff5962dCan learn:|R Epidemic|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Elite Abominations"
+      "Value": "Elite Abomination"
     },
     {
       "Id": "utip",

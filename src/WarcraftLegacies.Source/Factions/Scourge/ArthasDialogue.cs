@@ -21,6 +21,27 @@ public static class ArthasDialogue
   private const string ArthasSpeaker = "Arthas Menethil";
   private const float SilvermoonRadius = 1200;
 
+  private static ObjectiveLegendKilledByLegend? _sylvanasDeath;
+  private static ObjectiveTriggered? _sylvanasLiving;
+
+  /// <summary>Complete while Sylvanas is still a living elf; fails once she is raised, cancelling her living dialogue.</summary>
+  public static ObjectiveTriggered SylvanasLiving
+  {
+    get
+    {
+      if (_sylvanasLiving == null)
+      {
+        _sylvanasLiving = new ObjectiveTriggered("Sylvanas is still living");
+        _sylvanasLiving.Trigger();
+      }
+
+      return _sylvanasLiving;
+    }
+  }
+
+  /// <summary>Whether Arthas has already killed Sylvanas and spoken over her.</summary>
+  public static bool SylvanasSlainByArthas => _sylvanasDeath != null && _sylvanasDeath.Progress == QuestProgress.Complete;
+
   /// <summary>The factions that control the given legends when the dialogue plays.</summary>
   public static IEnumerable<Faction> OwnersOf(params LegendaryHero[] legends) => OwnersOf(Array.Empty<Faction>(), legends);
 
@@ -162,6 +183,15 @@ public static class ArthasDialogue
       {
         new ObjectiveLegendFightsLegend(sylvanas, arthas)
       }));
+
+    TriggeredDialogueManager.Add(new TriggeredDialogue(
+      new Dialogue(@"Sound\Dialogue\UndeadExpCamp\Undead02xInterlude\L02Sylvanas61.flac",
+        "Give my regards to hell, you son of a bitch.", "Sylvanas Windrunner"),
+      OwnersOf(arthas, sylvanas),
+      new[]
+      {
+        new ObjectiveLegendKilledByLegend(arthas, sylvanas)
+      }));
   }
 
   /// <summary>Registers Uther confronting the Scourge's Arthas, which can only happen while Lordaeron is still in the game.</summary>
@@ -214,6 +244,7 @@ public static class ArthasDialogue
   private static void RegisterSylvanasDeath(LegendaryHero arthas)
   {
     var sylvanas = AllLegends.Quel.Sylvanas;
+    _sylvanasDeath = new ObjectiveLegendKilledByLegend(sylvanas, arthas);
     TriggeredDialogueManager.Add(new TriggeredDialogue(
       new DialogueSequence(
         new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead04A\U04ASylvanas21.flac",
@@ -222,9 +253,10 @@ public static class ArthasDialogue
           "After all you've put me through, woman, the last thing I'll give you is the peace of death.",
           ArthasSpeaker)),
       OwnersOf(arthas, sylvanas),
-      new[]
+      new Objective[]
       {
-        new ObjectiveLegendKilledByLegend(sylvanas, arthas)
+        _sylvanasDeath,
+        SylvanasLiving
       }));
   }
 

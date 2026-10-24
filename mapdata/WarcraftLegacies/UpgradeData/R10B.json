@@ -1,0 +1,106 @@
+{
+  "OldId": "Rhri",
+  "NewId": "R10B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gglb",
+      "Value": 150
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gtib",
+      "Value": 35
+    },
+    {
+      "Id": "gef1",
+      "Type": 3,
+      "Value": "ratr"
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 150.0
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 0.0
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h08A"
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Forsaken)"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Keen Sight"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Keen Sight"
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDwarvenLongRifle.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Increases the attack range of Deadeyes and their Plague Arrows by 150."
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Id": "gbpy",
+      "Value": 1
+    },
+    {
+      "Id": "gef2",
+      "Type": 3,
+      "Value": "rlev"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "A17Z"
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 0
+    }
+  ]
+}

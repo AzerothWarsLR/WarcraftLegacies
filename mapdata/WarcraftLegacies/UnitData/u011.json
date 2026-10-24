@@ -49,7 +49,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "R109,R10B,R10A"
     },
     {
       "Id": "ulum",
@@ -58,7 +58,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h08N,h08O,n07S"
+      "Value": "h08O,n07S,h08N"
     },
     {
       "Id": "ubpx",
@@ -86,7 +86,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Grim Training Hall for the Forsaken.|n|cfff5962dTrains:|R Ghoul, Crypt Fiend, Gargoyles|n|cfff5962dResearches:|R Ghoul Frenzy, Web, Piercing Screech"
+      "Value": "Primary troop production building.|n|cfff5962dTrains:|R Rotguards, Deadeyes, Dreadguards|n|cfff5962dResearches:|R Ravenous Hunger, Keen Sight, Dread Challenge"
     },
     {
       "Id": "unsf",
@@ -106,7 +106,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Plaguetorium"
+      "Value": "War Quarter"
     },
     {
       "Id": "utip",

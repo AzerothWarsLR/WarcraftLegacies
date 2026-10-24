@@ -56,12 +56,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "R108"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "n0BY,u01K"
+      "Value": "u01K,u10A,n0BY"
     },
     {
       "Id": "upgr",
@@ -105,7 +105,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Primary structure.|n|cff6480ff|cfff5962dTrains:|R Acolytes|n|cfff5962dUpgrades to:|R  Grim Estate"
+      "Value": "Primary structure.|n|cfff5962dTrains:|R Acolytes, Wailing Sorrows|n|cfff5962dResearches:|R Dark Rangers|n|cfff5962dUpgrades to:|R Grim Estate"
     },
     {
       "Id": "unsf",

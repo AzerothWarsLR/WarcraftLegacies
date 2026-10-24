@@ -146,7 +146,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": ""
+      "Value": "R108"
     },
     {
       "Id": "urb1",
@@ -179,7 +179,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "u01K"
+      "Value": "u01K,u10A,n0BY"
     },
     {
       "Id": "upgr",
@@ -233,7 +233,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Medium fort for the Forsaken. |n|cfff5962dUpgrades to:|R Haunted Castle"
+      "Value": "Primary structure.|n|cfff5962dTrains:|R Acolytes, Wailing Sorrows|n|cfff5962dResearches:|R Dark Rangers|n|cfff5962dUpgrades to:|R Haunted Castle"
     },
     {
       "Id": "unsf",

@@ -102,7 +102,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Archer filled tower defense.|n|cfff5962dCan learn:|R Magic Sentry|n|cfff5962dUpgrades Into:|R Improved Guard Tower|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Defensive structure.|n|cfff5962dUpgrades to:|R Improved Dread Tower|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": "unsf",
@@ -127,7 +127,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Plague Tower"
+      "Value": "Dread Tower"
     },
     {
       "Id": "utip",

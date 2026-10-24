@@ -45,7 +45,7 @@
     },
     {
       "Id": "alev",
-      "Value": 2
+      "Value": 3
     },
     {
       "Id": "areq",
@@ -102,6 +102,63 @@
       "Id": "aub1",
       "Type": 3,
       "Value": "Infects nearby enemy living units with Disease Cloud. Disease Cloud deals 2 damage per second. |nLasts 120 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "Bapl"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Apl1",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Apl2",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Apl3",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "enemies,ground,organic"
+    },
+    {
+      "Level": 3,
+      "Id": "Aplu",
+      "Type": 3,
+      "Value": "u00B"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Disease Cloud - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Infects nearby enemy living units with Disease Cloud. Disease Cloud deals 2 damage per second. |nLasts 150 seconds."
     }
   ]
 }

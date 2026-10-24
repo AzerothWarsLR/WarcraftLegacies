@@ -109,7 +109,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R04X"
+      "Value": ""
     },
     {
       "Id": "utyp",
@@ -128,7 +128,7 @@
     },
     {
       "Id": "ubpx",
-      "Value": 3
+      "Value": 2
     },
     {
       "Id": "unsf",
@@ -143,7 +143,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "R"
+      "Value": "E"
     },
     {
       "Id": "usca",
@@ -189,6 +189,10 @@
       "Id": "usnd",
       "Type": 3,
       "Value": "Footman"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

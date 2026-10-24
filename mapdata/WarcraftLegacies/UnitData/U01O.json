@@ -26,7 +26,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 500
+      "Value": 200
     },
     {
       "Id": "upri",
@@ -48,7 +48,7 @@
     {
       "Id": "ureq",
       "Type": 3,
-      "Value": "R04Z"
+      "Value": ""
     },
     {
       "Id": "ugol",
@@ -132,6 +132,10 @@
       "Id": "upor",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

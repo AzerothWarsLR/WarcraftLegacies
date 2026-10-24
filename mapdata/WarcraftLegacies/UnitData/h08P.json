@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0UX,A0SE,A0D1,Aihn"
+      "Value": "A172,A0SE,A0UX,Aihn"
     },
     {
       "Id": "ubld",
@@ -33,7 +33,7 @@
     },
     {
       "Id": "uhpm",
-      "Value": 385
+      "Value": 700
     },
     {
       "Id": "ulum",
@@ -72,7 +72,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R100,R05C,Rhpm,Rguv"
+      "Value": "R05C,Rhpm,Rguv"
     },
     {
       "Id": "urac",
@@ -102,7 +102,7 @@
     {
       "Id": "uhot",
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": "usca",
@@ -112,7 +112,7 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Arcane spellcaster of the Forsaken.|n|cfff5962dAbilities:|r Arcane Missile|n|cfff5962dCan Learn:|R Suppression, Summon Zombie|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Arcane spellcaster of the Forsaken.|n|cfff5962dAbilities:|R Shadow Bolt|n|cfff5962dCan learn:|R Suppression, Summon Zombie|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": "umdl",
@@ -131,17 +131,21 @@
     },
     {
       "Id": "ubpx",
-      "Value": 1
+      "Value": 0
     },
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNNecromancer.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLordNecromancer.blp"
     },
     {
       "Id": "usnd",
       "Type": 3,
       "Value": "Necromancer"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
     }
   ]
 }

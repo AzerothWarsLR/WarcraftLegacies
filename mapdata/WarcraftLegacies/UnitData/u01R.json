@@ -84,7 +84,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R100,R051,Rguv,Rupm"
+      "Value": "R051,Rguv,Rupm,Rhme,Rhar"
     },
     {
       "Id": "udaa",
@@ -104,7 +104,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.2
+      "Value": 1
     },
     {
       "Id": "utub",
@@ -143,6 +143,10 @@
       "Id": "ucut",
       "Type": 3,
       "Value": "- Dark Regeneration,- Dark Regeneration|n- Raise Plagueling,- Dark Regeneration|n- Raise Plagueling|n- Acid Bomb"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
     }
   ]
 }

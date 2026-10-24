@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A075,A201,A0HY"
+      "Value": "A185,A0X4,A181"
     },
     {
       "Id": "ubba",
@@ -68,12 +68,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Plague Construct"
+      "Value": "Stitched Construct"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Plague Construct"
+      "Value": "Train Stitched Construct"
     },
     {
       "Id": "unsf",
@@ -109,12 +109,53 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Heavy melee unit with Acid Blob, Rust Aura and Smoke Bomb. |n|n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units.|r"
+      "Value": "Heavy melee construct.|n|cfff5962dAbilities:|R Slam, Cleaving Attack, Death Throes|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": "upor",
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1375
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "umpm",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 0
+    },
+    {
+      "Id": "ua1b",
+      "Value": 32
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ua1r",
+      "Value": 100
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
     }
   ]
 }
