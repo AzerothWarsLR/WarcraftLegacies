@@ -38,8 +38,8 @@ public static class ForsakenObjectInfo
     yield return new(UNIT_H08P_ARCHIVIST_FORSAKEN_CULT, Unlimited, Support);
     yield return new(UNIT_UBAN_BANSHEE_SCOURGE, Unlimited, Support);
     yield return new(UNIT_U01V_VAL_KYR_FORSAKEN, 4, new List<UnitCategory> { Flyer, Support });
-    yield return new(UNIT_U01P_PLAGUE_CATAPULT_FORSAKEN, 6, Siege);
-    yield return new(UNIT_N07W_PLAGUE_CONSTRUCT_FORSAKEN, 6, Tank);
+    yield return new(UNIT_U01P_FORSAKEN_CATAPULT_FORSAKEN, 6, Siege);
+    yield return new(UNIT_N07W_STITCHED_CONSTRUCT_FORSAKEN, 6, Tank);
     yield return new(UNIT_U02G_ELITE_ABOMINATION_SCOURGE_FORSAKEN_CULT, 6, Tank);
     yield return new(UNIT_O05H_APOTHECARY_BAT_RIDER_FORSAKEN, 12, new List<UnitCategory> { Flyer, AntiAir });
     yield return new(UNIT_U10A_WAILING_SORROW_BANSHEESHOST_ELITE, EliteLimit, new List<UnitCategory> { Elite, Support });

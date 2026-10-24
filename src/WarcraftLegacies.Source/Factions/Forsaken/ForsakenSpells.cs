@@ -13,7 +13,7 @@ public static class ForsakenSpells
   /// <summary>Registers the Forsaken's spells and unit traits.</summary>
   public static void Setup()
   {
-    SpellRegistry.Register(new MassAnySpell(ABILITY_A185_SLAM_FORSAKEN_PLAGUE_CONSTRUCT)
+    SpellRegistry.Register(new MassAnySpell(ABILITY_A185_SLAM_FORSAKEN_STITCHED_CONSTRUCT)
     {
       Radius = 250,
       Damage = new LeveledAbilityField<float>
@@ -38,7 +38,7 @@ public static class ForsakenSpells
       CloudDamagePerSecond = 10,
       CloudEffectPath = @"Units\Undead\PlagueCloud\PlagueCloud.mdl",
       CloudTickEffectPath = @"Units\Undead\PlagueCloud\PlagueCloudtarget.mdl"
-    }, UNIT_N07W_PLAGUE_CONSTRUCT_FORSAKEN);
+    }, UNIT_N07W_STITCHED_CONSTRUCT_FORSAKEN);
 
     new DarkMinionsOnKill
     {

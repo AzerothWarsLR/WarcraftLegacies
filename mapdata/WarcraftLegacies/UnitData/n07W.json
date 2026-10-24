@@ -68,12 +68,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Plague Construct"
+      "Value": "Stitched Construct"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Plague Construct"
+      "Value": "Train Stitched Construct"
     },
     {
       "Id": "unsf",

@@ -54,7 +54,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "(Forsaken - Plague Construct)"
+      "Value": "(Forsaken - Stitched Construct)"
     },
     {
       "Id": "anam",
@@ -71,7 +71,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "When the Plague Construct is destroyed, it bursts apart, dealing 75 damage to nearby enemy units and leaving a Noxious Cloud that deals 10 damage per second to enemy units inside it for 12 seconds."
+      "Value": "When the Stitched Construct is destroyed, it bursts apart, dealing 75 damage to nearby enemy units and leaving a Noxious Cloud that deals 10 damage per second to enemy units inside it for 12 seconds."
     }
   ]
 }
