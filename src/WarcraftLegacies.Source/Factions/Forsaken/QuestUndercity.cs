@@ -3,6 +3,7 @@ using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.Factions.BansheesHost;
 using WarcraftLegacies.Source.Objectives.FactionBased;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 
@@ -35,6 +36,12 @@ public sealed class QuestUndercity : QuestData
   {
     _bases.BuildUndercity();
     ReplacePutress(completingFaction);
+    SylvanasDialogue.PlayUndercity(completingFaction);
+    var owner = completingFaction.Player;
+    if (owner != null)
+    {
+      owner.PlayMusicThematic(@"Sound\Music\mp3Music\Undercity.ogg");
+    }
   }
 
   private static void ReplacePutress(Faction faction)

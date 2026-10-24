@@ -41,6 +41,8 @@ public abstract class PathRiseOfTheForsaken : FactionPath
     var forsaken = new ForsakenFaction();
     FactionTransition.AssignNewFaction(faction, forsaken);
     ArthasDialogue.SetupForsakenBetrayal();
+    SylvanasDialogue.SetupForsaken();
+    SylvanasDialogue.PlayBrokenFree(forsaken);
 
     if (forsakenPlayer != null)
     {
@@ -53,7 +55,7 @@ public abstract class PathRiseOfTheForsaken : FactionPath
       CarryOverQuests(forsaken, AllLegends.Quel.Sylvanas);
       var spoilsOfDalaran = forsaken.AddQuest(new QuestSpoilsOfDalaran(AllLegends.Dalaran.Dalaran));
       forsaken.DisplayDiscovered(spoilsOfDalaran, false);
-      forsakenPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\Undercity.ogg");
+      forsakenPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\Forsaken1.ogg");
     }
   }
 

@@ -276,9 +276,10 @@ public sealed class ScourgeFaction : Faction, IHasRoleplayIntro
             caption: "It is you who should turn back, Sylvanas. Death itself has come for your land.",
             speaker: "Arthas Menethil")),
         ArthasDialogue.OwnersOf(AllLegends.Scourge.Arthas, AllLegends.Quel.Sylvanas),
-        new[]
+        new Objective[]
         {
-          new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Quel.Sylvanas)
+          new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Quel.Sylvanas),
+          ArthasDialogue.SylvanasLiving
         }));
 
     TriggeredDialogueManager.Add(

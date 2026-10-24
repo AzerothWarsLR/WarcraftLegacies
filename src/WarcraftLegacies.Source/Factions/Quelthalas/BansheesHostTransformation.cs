@@ -33,7 +33,8 @@ public sealed class BansheesHostTransformation
     }
 
     whichPlayer.RemoveAllUnits();
-    FactionTransition.AssignNewFaction(quelthalas, new BansheesHostFaction());
+    var bansheesHost = new BansheesHostFaction();
+    FactionTransition.AssignNewFaction(quelthalas, bansheesHost);
 
     FactionManager.TryGetFactionByType<ScourgeFaction>(out var scourge);
     var plague = scourge?.GetAllQuests().OfType<QuestPlague>().FirstOrDefault();
@@ -52,6 +53,8 @@ public sealed class BansheesHostTransformation
     AllLegends.Quel.Sylvanas.UnitType = UNIT_U03B_BANSHEE_QUEEN_BANSHEESHOST;
     PathBase.SummonLegend(AllLegends.Quel.Sylvanas, whichPlayer, new Point(MusterX, MusterY - RankSpacing));
     whichPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\TragicConfrontation.mp3");
+    ArthasDialogue.SylvanasLiving.Fail();
+    SylvanasDialogue.PlayBansheeRaised(bansheesHost);
   }
 
   /// <summary>Takes over the Scourge's Deathknell base, or builds the same base if there is none.</summary>
