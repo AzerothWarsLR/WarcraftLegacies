@@ -65,6 +65,12 @@ public sealed class DarkIronFaction : Faction
     SetObjectLimit(UNIT_H0CV_GENERAL_OF_THE_DARK_IRON_DARKIRON, 1);
   }
 
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
+
   /// <summary>The Dark Iron version of an Ironforge unit, or the unit itself if they share it.</summary>
   public static int GetDarkIronEquivalent(int objectId) =>
     _darkIronEquivalents.GetValueOrDefault(objectId, objectId);

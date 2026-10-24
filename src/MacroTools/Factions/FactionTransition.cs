@@ -15,8 +15,6 @@ public static class FactionTransition
   /// </summary>
   public static void AssignNewFaction(Faction oldFaction, Faction newFaction)
   {
-    newFaction.CopyObjectLevelsFrom(oldFaction);
-
     var whichPlayer = oldFaction.Player;
     if (whichPlayer != null)
     {
@@ -24,6 +22,7 @@ public static class FactionTransition
     }
 
     FactionManager.Register(newFaction);
+    newFaction.CopyObjectLevelsFrom(oldFaction);
     if (whichPlayer != null && newFaction.ControlPointDefenderUnitTypeId != null)
     {
       ControlPointDefenderManager.RefreshDefenders(whichPlayer);

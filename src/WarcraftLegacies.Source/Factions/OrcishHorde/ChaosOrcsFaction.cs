@@ -68,6 +68,12 @@ public sealed class ChaosOrcsFaction : Faction
     SetObjectLimit(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
   }
 
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
+
   /// <summary>Gives <paramref name="orcs"/> anything the Chaos Orcs unlocked that the orcs don't already have.</summary>
   public void HandBackUnlocks(Faction orcs)
   {

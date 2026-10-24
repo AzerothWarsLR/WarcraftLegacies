@@ -498,7 +498,7 @@ public abstract class Faction
 
   /// <summary>
   /// Copies object levels from another <see cref="Faction"/> to this one.
-  /// <para>Only copies levels that this Faction has the object limit to handle.</para>
+  /// <para>Only copies levels that this Faction has the object limit to handle, and never lowers a level.</para>
   /// </summary>
   public void CopyObjectLevelsFrom(Faction otherFaction)
   {
@@ -506,9 +506,10 @@ public abstract class Faction
     foreach (var (objectId, level) in objectLevels)
     {
       var objectLimit = GetObjectLimit(objectId);
-      if (objectLimit > 0)
+      var copiedLevel = Math.Min(objectLimit, level);
+      if (objectLimit > 0 && copiedLevel > GetObjectLevel(objectId))
       {
-        SetObjectLevel(objectId, Math.Min(objectLimit, level));
+        SetObjectLevel(objectId, copiedLevel);
       }
     }
   }

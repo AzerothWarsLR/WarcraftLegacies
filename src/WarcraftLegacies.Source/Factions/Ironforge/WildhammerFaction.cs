@@ -43,4 +43,10 @@ public sealed class WildhammerFaction : Faction
     SetObjectLimit(UNIT_H0CW_SKY_THANE_OF_THE_WILDHAMMER_WILDHAMMER, 1);
     SetObjectLimit(UNIT_H0CX_GRYPHON_MASTER_OF_AERIE_PEAK_WILDHAMMER, 1);
   }
+
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
 }

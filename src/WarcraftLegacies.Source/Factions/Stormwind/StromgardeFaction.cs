@@ -43,4 +43,10 @@ public sealed class StromgardeFaction : Faction
     SetObjectLimit(UNIT_H0CY_KING_OF_STROMGARDE_STROMGARDE, 1);
     SetObjectLimit(UNIT_H0CZ_COMMANDER_OF_THE_STROMGARDE_MILITIA_STROMGARDE, 1);
   }
+
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
 }
