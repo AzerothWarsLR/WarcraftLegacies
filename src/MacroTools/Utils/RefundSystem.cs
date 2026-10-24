@@ -10,11 +10,13 @@ public static class RefundSystem
 {
   private static readonly Dictionary<player, float> _globalTotals = new();
 
-  private static void RefundHostileStructures(player whichPlayer, IEnumerable<unit> units)
+  private static void RefundHostileStructures(player whichPlayer, IEnumerable<unit> units) =>
+    RefundStructures(units.Where(u => u.IsEnemyTo(whichPlayer)));
+
+  private static void RefundStructures(IEnumerable<unit> units)
   {
     foreach (var u in units.Where(u =>
                u.IsUnitType(unittype.Structure) &&
-               u.IsEnemyTo(whichPlayer) &&
                u.IsRemovable()))
     {
       var enemy = u.Owner;
@@ -53,6 +55,15 @@ public static class RefundSystem
   {
     var units = GlobalGroup.EnumUnitsInRange(x, y, radius);
     RefundHostileStructures(whichPlayer, units);
+    FlushMessages();
+  }
+
+  /// <summary>Removes every other player's structures in range, refunding their owners, but leaves neutral buildings alone.</summary>
+  public static void RefundOtherStructuresInRange(player whichPlayer, float x, float y, float radius)
+  {
+    var units = GlobalGroup.EnumUnitsInRange(x, y, radius);
+    RefundStructures(units.Where(u => u.Owner != whichPlayer && u.Owner != player.NeutralPassive &&
+                                      u.Owner != player.NeutralAggressive));
     FlushMessages();
   }
 

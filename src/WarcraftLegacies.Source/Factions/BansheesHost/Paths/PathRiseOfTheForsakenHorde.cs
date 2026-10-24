@@ -11,7 +11,7 @@ public sealed class PathRiseOfTheForsakenHorde : PathRiseOfTheForsaken
   public PathRiseOfTheForsakenHorde(QuestData bansheesVengeance, QuestData rangerLord) : base(bansheesVengeance, rangerLord)
   {
     Name = "Rise of the Forsaken: The Horde";
-    Description = "The Lich King's hold on the dead is failing, and Sylvanas's will is her own once more. Abandon Northrend, cast off his chains, and seek allies among the outcasts of the Horde, beginning with a foothold in Orgrimmar. Take Capital City yourself to make the Undercity your home.";
+    Description = "Sylvanas's will is her own once more. Cast off the Lich King's chains, leave Northrend behind and seek allies among the Horde from an outpost in Durotar. Beneath Capital City, the Undercity waits to become your home.";
   }
 
   /// <inheritdoc />
@@ -23,6 +23,6 @@ public sealed class PathRiseOfTheForsakenHorde : PathRiseOfTheForsaken
   /// <inheritdoc />
   protected override void OnBecameForsaken(ForsakenBases bases)
   {
-    bases.MoveToOrgrimmar();
+    bases.MoveToDurotar();
   }
 }

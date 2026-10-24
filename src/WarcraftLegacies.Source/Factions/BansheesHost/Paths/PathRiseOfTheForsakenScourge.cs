@@ -9,7 +9,7 @@ public sealed class PathRiseOfTheForsakenScourge : PathRiseOfTheForsaken
   public PathRiseOfTheForsakenScourge(QuestData bansheesVengeance, QuestData rangerLord) : base(bansheesVengeance, rangerLord)
   {
     Name = "Rise of the Forsaken: The Scourge";
-    Description = "The Lich King's hold on the dead is failing, and Sylvanas's will is her own once more, but vengeance can wait. The Forsaken keep their hold in Northrend and fight on beside the Scourge, and can take Capital City to make the Undercity their home.";
+    Description = "Sylvanas's will is her own once more, but vengeance can wait. Hold Northrend and fight on beside the Scourge for now. Beneath Capital City, the Undercity waits to become your home.";
   }
 
   /// <inheritdoc />
