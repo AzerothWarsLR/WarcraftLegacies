@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Legends;
 using WCSharp.Events;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.GameLogic;
 
@@ -15,19 +16,27 @@ public static class HeroGlowFix
   /// </summary>
   public static void Setup()
   {
-    PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, () =>
+    PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, () => RefreshColor(@event.Unit, @event.Player));
+
+    var entersMap = trigger.Create();
+    entersMap.RegisterEnterRegion(Rectangle.WorldBounds.Region, null);
+    entersMap.AddAction(() => RefreshColor(@event.EnteringUnit, @event.EnteringUnit.Owner));
+  }
+
+  /// <summary>Recolours the unit so attachments like hero glows match its owner's faction rather than the lobby colour.</summary>
+  private static void RefreshColor(unit whichUnit, player owner)
+  {
+    var legend = LegendaryHeroManager.GetFromUnit(whichUnit);
+    if (legend?.HasCustomColor == true)
     {
-      var triggerUnit = @event.Unit;
-      var triggerPlayer = @event.Player;
-      var revivedLegend = LegendaryHeroManager.GetFromUnit(triggerUnit);
-      if (revivedLegend?.HasCustomColor == true)
-      {
-        triggerUnit.SetColor(revivedLegend.PlayerColor);
-      }
-      else
-      {
-        triggerUnit.SetColor(triggerPlayer.GetPlayerData().Faction?.PlayerColor ?? playercolor.Coal);
-      }
-    });
+      whichUnit.SetColor(legend.PlayerColor);
+      return;
+    }
+
+    var faction = owner.GetPlayerData().Faction;
+    if (faction != null)
+    {
+      whichUnit.SetColor(faction.PlayerColor);
+    }
   }
 }
