@@ -51,5 +51,6 @@ public sealed class KultirasLegends
     LegendaryHeroManager.Register(LegendMeredith);
     LegendaryHeroManager.Register(LegendKatherine);
     CapitalManager.Register(LegendBoralus);
+    LegendAdmiral.AddUnitDependency(LegendBoralus.Unit);
   }
 }
