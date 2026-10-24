@@ -9,4 +9,23 @@ public static class HeroLevelExperience
   };
 
   public static int ForLevel(int level) => _experienceByLevel[level - 1];
+
+  /// <summary>Raises the hero by a number of levels, which can be partial, keeping its progress towards the next one.</summary>
+  public static void GrantLevels(unit hero, float levels)
+  {
+    var level = hero.HeroLevel;
+    var maxLevel = _experienceByLevel.Length;
+    if (level >= maxLevel)
+    {
+      return;
+    }
+
+    var levelStart = ForLevel(level);
+    var position = level + (float)(hero.Experience - levelStart) / (ForLevel(level + 1) - levelStart) + levels;
+    var newLevel = (int)position;
+    var newExperience = newLevel >= maxLevel
+      ? ForLevel(maxLevel)
+      : ForLevel(newLevel) + (int)((position - newLevel) * (ForLevel(newLevel + 1) - ForLevel(newLevel)));
+    hero.SetExperience(newExperience, true);
+  }
 }
