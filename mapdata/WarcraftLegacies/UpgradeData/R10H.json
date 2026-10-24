@@ -1,0 +1,21 @@
+{
+  "OldId": "Roch",
+  "NewId": "R10H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Theramore)"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Quest Completed: Securing Dustwallow"
+    }
+  ]
+}

@@ -57,12 +57,12 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R01I,R00E,R01V"
+      "Value": "R01I,R00E,R01V,R10G"
     },
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h01I,h02D,nhym"
+      "Value": "h01I,h02D,nhym,h0D0,h0D6"
     },
     {
       "Id": "upgr",

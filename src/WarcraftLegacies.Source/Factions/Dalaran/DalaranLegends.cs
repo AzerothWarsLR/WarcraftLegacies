@@ -12,6 +12,8 @@ public sealed class DalaranLegends
   public LegendaryHero Medivh { get; }
   public LegendaryHero Jaina { get; }
   public LegendaryHero Aegwynn { get; }
+  public LegendaryHero Marcus { get; }
+  public LegendaryHero Vimes { get; }
   public Capital Dalaran { get; }
   public Capital Shadowfang { get; }
 
@@ -53,6 +55,16 @@ public sealed class DalaranLegends
         "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."
     };
 
+    Marcus = new LegendaryHero("Marcus Jonathan")
+    {
+      UnitType = UNIT_H0D1_GENERAL_OF_THERAMORE_THERAMORE
+    };
+
+    Vimes = new LegendaryHero("Garran Vimes")
+    {
+      UnitType = UNIT_H0D2_CAPTAIN_OF_THE_THERAMORE_GUARD_THERAMORE
+    };
+
     Shadowfang = new Capital
     {
       Unit = AllPreplacedWidgets.Units.Get(UNIT_H058_SHADOWFANG_KEEP_DALARAN_OTHER),
@@ -66,6 +78,8 @@ public sealed class DalaranLegends
     LegendaryHeroManager.Register(Jaina);
     LegendaryHeroManager.Register(Medivh);
     LegendaryHeroManager.Register(Aegwynn);
+    LegendaryHeroManager.Register(Marcus);
+    LegendaryHeroManager.Register(Vimes);
     CapitalManager.Register(Dalaran);
     CapitalManager.Register(Shadowfang);
   }

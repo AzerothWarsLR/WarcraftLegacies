@@ -1,0 +1,177 @@
+{
+  "OldId": "nmed",
+  "NewId": "h0D4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "udea",
+      "Value": 2
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 37
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 75
+    },
+    {
+      "Id": "ugor",
+      "Value": 45
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "umpi",
+      "Value": 600
+    },
+    {
+      "Id": "umpm",
+      "Value": 600
+    },
+    {
+      "Id": "ua1z",
+      "Value": 800
+    },
+    {
+      "Id": "upri",
+      "Value": 14
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 30
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h068"
+    },
+    {
+      "Id": "umvs",
+      "Value": 230
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A18Q,A18R,A18S,A07C,A0GK,Aihn,ACrk"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Storm Sorcerer"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Storm Sorcerer"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Elite naval mage. Brands enemies with lightning and blasts them away with gales."
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Theramore-Elite)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\StormSorcererKulTiras.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormSorcererKulTiras.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,Rhpm,Rguv,R10I"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.0
+    }
+  ]
+}

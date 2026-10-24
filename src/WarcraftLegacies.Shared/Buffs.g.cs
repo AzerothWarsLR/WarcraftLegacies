@@ -219,6 +219,8 @@ public static class Buffs
   public const int BUFF_B105_DEFILING_HORROR = 1110519861;
   public const int BUFF_B106_DEFILED = 1110519862;
   public const int BUFF_B107_SHARED_SUFFERING = 1110519863;
+  public const int BUFF_B10B_HOLD_THE_LINE = 1110519874;
+  public const int BUFF_B10C_MARKED = 1110519875;
   public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
   public const int BUFF_BEAH_THORNS_AURA = 1111843176;
   public const int BUFF_BEAR_TRUESHOT_AURA = 1111843186;

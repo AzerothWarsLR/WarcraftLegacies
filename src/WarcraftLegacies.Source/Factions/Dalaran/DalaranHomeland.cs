@@ -67,6 +67,7 @@ public static class DalaranHomeland
     EndQuest(dalaran.GetQuestByType<QuestShadowfang>());
     EndQuest(dalaran.GetQuestByType<QuestSouthshore>());
     EndQuest(dalaran.GetQuestByType<QuestDalaran>());
+    EndQuest(dalaran.GetQuestByType<QuestGilneas>());
   }
 
   private static void EndQuest(QuestData quest)

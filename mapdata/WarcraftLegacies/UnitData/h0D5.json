@@ -1,0 +1,91 @@
+{
+  "OldId": "hfoo",
+  "NewId": "h0D5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Powder Keg"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Theramore)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "Units\\Other\\TNTBarrel\\TNTBarrel.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosiveBarrel.blp"
+    },
+    {
+      "Id": "umvs",
+      "Value": 0
+    },
+    {
+      "Id": "uaen",
+      "Value": 0
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 0
+    },
+    {
+      "Id": "ubld",
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "mechanical"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.0
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ucol",
+      "Value": 16.0,
+      "Type": 2
+    },
+    {
+      "Id": "urtm",
+      "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 100
+    },
+    {
+      "Id": "uhpr",
+      "Value": 0.0,
+      "Type": 2
+    }
+  ]
+}

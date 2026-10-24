@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Hold the Line"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Hold the Line"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is holding the line beside its allies and has increased armor."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShieldHumanLionMark.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

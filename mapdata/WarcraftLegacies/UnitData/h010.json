@@ -87,7 +87,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h022,n007"
+      "Value": "h022,n007,h0D4"
     },
     {
       "Id": "utyp",
@@ -144,7 +144,7 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Jaina\u0027s Sanctum"
+      "Value": "Jaina's Sanctum"
     },
     {
       "Id": "uclr",

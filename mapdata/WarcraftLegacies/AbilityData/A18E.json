@@ -1,0 +1,78 @@
+{
+  "OldId": "AHwe",
+  "NewId": "A18E",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "Hwe1",
+      "Type": 3,
+      "Value": "n03V"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R10G"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSeaElemental.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Theramore - Tidesage)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Summon Sea Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Summon Sea Elemental"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Summons a sea elemental to attack the caster's enemies. Has <n03V,realHP> hit points and deals <n03V,mindmg1> - <n03V,maxdmg1> damage. |nLasts <A18E,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

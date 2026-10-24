@@ -1,0 +1,160 @@
+{
+  "OldId": "Nbrn",
+  "NewId": "H0D2",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A18L,A18M,A18N,A18P"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Captain of the Theramore Guard"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Garran Vimes"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Garran Vimes"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Garran Vimes"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Theramore)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Garran Vimes"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, fights with pistol or sword and marks targets for his soldiers."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\FlibustierKulTiras.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFlibustierKulTiras.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.0
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "AGI"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 500
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "instant"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Rifle\\RifleImpact.mdl"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv,A0GK"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R10H"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Captain"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 14
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "uhpm",
+      "Value": 100
+    },
+    {
+      "Id": "udef",
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": "R10H"
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": "R10H"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R10I"
+    },
+    {
+      "Id": "ufoo",
+      "Value": 0
+    }
+  ]
+}

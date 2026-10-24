@@ -1,0 +1,147 @@
+{
+  "OldId": "hsor",
+  "NewId": "h0D6",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A139"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 28
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "upri",
+      "Value": 11
+    },
+    {
+      "Id": "urun",
+      "Type": 1,
+      "Value": 325
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,R03M,R01I,Rhme,Rhar,Rhpm,R10I"
+    },
+    {
+      "Id": "uwal",
+      "Type": 1,
+      "Value": 220
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Magic Missile,- Magic Missile|n- Dispel Magic,- Magic Missile|n- Dispel Magic|n- Flame Shield,- Magic Missile|n- Dispel Magic|n- Flame Shield|n- Spell Steal"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Arcanist"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Arcanist"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Well-versed sorceress in the arcane arts."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\HeroArcanist.mdl"
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate, Adept, Master, Grandmaster"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0D1,A0D2,Aihn,A0VE"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Theramore)"
+    }
+  ]
+}
