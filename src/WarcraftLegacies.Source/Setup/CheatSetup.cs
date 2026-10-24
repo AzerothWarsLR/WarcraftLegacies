@@ -16,6 +16,21 @@ public static class CheatSetup
     CommandManager.Register(new CheatHelp());
     CommandManager.Register(new CheatFaction());
     CommandManager.Register(new CheatPower());
+    CommandManager.Register(new CheatTeamRules());
+    CommandManager.Register(new CheatPath());
+    CommandManager.Register(new CheatScenario(
+      new CheatTestAdmiral(),
+      new CheatTestChainedMag(),
+      new CheatTestDaelin(),
+      new CheatTestDarkHorde(),
+      new CheatTestDarkIron(),
+      new CheatTestGilneas(),
+      new CheatTestGrandAlliance(),
+      new CheatTestPact(),
+      new CheatTestStromgarde(),
+      new CheatTestSunwell(),
+      new CheatTestWildhammer(),
+      new CheatTestWorldTree()));
     CommandManager.Register(new CheatQuest());
     CommandManager.Register(new CheatFood());
     CommandManager.Register(new CheatGod());

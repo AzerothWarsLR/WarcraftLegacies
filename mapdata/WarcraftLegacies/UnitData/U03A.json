@@ -1,0 +1,164 @@
+{
+  "OldId": "Uear",
+  "NewId": "U03A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A17I,AInv,A0GK"
+    },
+    {
+      "Id": "uagi",
+      "Value": 24
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "chaos"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1b",
+      "Value": 28
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "A17D,A17G,A17F,A17H,Aamk"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 350
+    },
+    {
+      "Id": "uint",
+      "Value": 21
+    },
+    {
+      "Id": "upri",
+      "Value": 17
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "ustr",
+      "Value": 29
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.8
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(FallenPrince)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Deathbringer"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Captain Marwyn"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Captain Marwyn"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at stripping enemy magic and inflicting magical damage."
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DeathCaptainMarwynV1_1.mdl"
+    },
+    {
+      "Id": "upra",
+      "Type": 3,
+      "Value": "INT"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R105"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "SirZeliek"
+    }
+  ]
+}

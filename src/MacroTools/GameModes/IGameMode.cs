@@ -6,6 +6,9 @@ public interface IGameMode
   /// <summary>A user-friendly name that players will see.</summary>
   public string Name { get; }
 
+  /// <summary>A short user-friendly description of what this gamemode is, shown under its vote button.</summary>
+  public string Description { get; }
+
   /// <summary>Fired when this <see cref="IGameMode"/> is successfully voted on.</summary>
   public void OnChoose();
 
@@ -15,4 +18,16 @@ public interface IGameMode
   /// vote for in order to pass.</remarks>
   /// </summary>
   public int VoteOffset { get; }
+
+  /// <summary>An icon shown above this gamemode's vote button.</summary>
+  public string IconPath { get; }
+
+  /// <summary>
+  /// If true, every faction already starts with its capitals unlocked in this gamemode, so Hard difficulty and the
+  /// early game option aren't offered.
+  /// </summary>
+  public bool SkipsEarlyGame { get; }
+
+  /// <summary>Whether players vote on diplomacy, or this gamemode decides it.</summary>
+  public DiplomacyRule Diplomacy { get; }
 }

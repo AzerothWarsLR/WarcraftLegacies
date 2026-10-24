@@ -16,6 +16,11 @@ namespace MacroTools.ControlPoints;
 /// </summary>
 public sealed class ControlPointManager
 {
+  /// <summary>
+  /// Scales gold gained from Control Points.
+  /// </summary>
+  public static float IncomeMultiplier = 1f;
+
   static ControlPointManager()
   {
     GameTimeManager.RegisterOnTurn(1, () =>
@@ -27,7 +32,7 @@ public sealed class ControlPointManager
           var playerData = player.GetPlayerData();
           if (playerData.Faction != null)
           {
-            playerData.AddFractionalGold(playerData.TotalIncome * Period / 60);
+            playerData.AddIncome((playerData.BaseIncome * IncomeMultiplier + playerData.BonusIncome) * Period / 60);
           }
         }
       });
@@ -75,6 +80,9 @@ public sealed class ControlPointManager
   public required int RegenerationAbility { get; init; }
 
   public HashSet<player> NonCapturingPlayers { get; } = new();
+
+  /// <summary>Control Points captured by a key player are handed to its value player instead.</summary>
+  public Dictionary<player, player> CaptureRedirects { get; } = new();
 
   /// <summary>
   /// An ability that grants <see cref="ControlPoint"/>s resistance against Piercing damage.
@@ -223,7 +231,13 @@ public sealed class ControlPointManager
       }
 
       @event.Damage = 0;
-      controlPoint.Unit.SetOwner(attacker.Owner);
+      var newOwner = attacker.Owner;
+      if (Instance.CaptureRedirects.TryGetValue(newOwner, out var redirectedOwner))
+      {
+        newOwner = redirectedOwner;
+      }
+
+      controlPoint.Unit.SetOwner(newOwner);
       controlPoint.Unit.SetLifePercent(100);
     }
     catch (Exception ex)

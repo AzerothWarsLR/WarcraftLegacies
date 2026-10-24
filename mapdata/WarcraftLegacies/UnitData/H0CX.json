@@ -1,0 +1,136 @@
+{
+  "OldId": "Hmbr",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uagi",
+      "Value": 20
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "TP49,TP51,TP46,MD07"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 500
+    },
+    {
+      "Id": "uint",
+      "Value": 18
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.7
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "ustr",
+      "Value": 26
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R014"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Gryphon Master"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Wildhammer)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gryphon Master of Aerie Peak"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Gryphon Master"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at defensive combat and supporting gryphon riders."
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Gryphon Master Talonaxe"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Gryphon Master Talonaxe"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DwarvenPaladin.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    }
+  ],
+  "NewId": "H0CX"
+}

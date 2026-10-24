@@ -1,0 +1,48 @@
+{
+  "OldId": "ohwd",
+  "NewId": "u108",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ward of Corruption"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(FallenPrince)"
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "undead"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGrimWard.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\TotemUndeadV1_00.mdl"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.6
+    }
+  ]
+}

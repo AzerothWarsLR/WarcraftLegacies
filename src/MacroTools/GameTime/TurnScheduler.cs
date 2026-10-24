@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.Utils;
 
 namespace MacroTools.GameTime;
 
@@ -34,12 +35,13 @@ internal sealed class TurnScheduler
   /// <remarks>
   /// <para>Callbacks that complete during execution are removed.</para>
   /// <para>Callbacks registered during execution are not evaluated during the same invocation.</para>
+  /// <para>A callback that throws is logged and skipped, so one broken callback can't stop the rest of the turn.</para>
   /// </remarks>
   public void Process(int turn)
   {
     for (int i = 0, count = Callbacks.Count; i < count;)
     {
-      if (Callbacks[i].Advance(turn))
+      if (TryAdvance(Callbacks[i], turn))
       {
         Callbacks[i] = Callbacks[--count];
         Callbacks.RemoveAt(count);
@@ -48,6 +50,19 @@ internal sealed class TurnScheduler
       {
         i++;
       }
+    }
+  }
+
+  private static bool TryAdvance(TurnCallback callback, int turn)
+  {
+    try
+    {
+      return callback.Advance(turn);
+    }
+    catch (Exception ex)
+    {
+      Logger.LogError($"A turn {turn} callback failed: {ex.Message}");
+      return false;
     }
   }
 }

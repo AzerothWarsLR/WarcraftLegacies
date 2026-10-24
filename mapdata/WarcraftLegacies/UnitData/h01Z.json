@@ -78,12 +78,12 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o04B,o04I"
+      "Value": "o04B,o04I,h0CT,n0F0"
     },
     {
       "Id": "utyp",
       "Type": 3,
-      "Value": "ancient,mechanical"
+      "Value": "ancient,mechanical,townhall"
     },
     {
       "Id": "upgr",

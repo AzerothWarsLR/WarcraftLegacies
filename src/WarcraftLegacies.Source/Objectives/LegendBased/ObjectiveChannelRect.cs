@@ -1,4 +1,5 @@
-﻿using MacroTools.Legends;
+﻿using System;
+using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Wrappers;
@@ -22,6 +23,23 @@ public sealed class ObjectiveChannelRect : Objective
 
   private readonly rect _targetRect;
   private Channel? _channel;
+  private bool _closed;
+
+  /// <summary>Fired when the hero starts channeling.</summary>
+  public event Action? ChannelStarted;
+
+  /// <summary>Fired when the channel ends, finished or not.</summary>
+  public event Action? ChannelEnded;
+
+  /// <summary>Stops the current channel and prevents any new one from starting.</summary>
+  public void Close()
+  {
+    _closed = true;
+    if (_channel != null)
+    {
+      _channel.Interrupt();
+    }
+  }
 
   /// <summary>
   /// Initializes a new instance of the <see cref="ObjectiveChannelRect"/> class.
@@ -59,7 +77,7 @@ public sealed class ObjectiveChannelRect : Objective
   private void OnRegionEnter()
   {
     var whichUnit = @event.EnteringUnit;
-    if (!EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive ||
+    if (_closed || !EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive ||
         LegendaryHeroManager.GetFromUnit(@event.Unit) != _targetLegend || _channel != null ||
         Progress != QuestProgress.Incomplete)
     {
@@ -68,6 +86,7 @@ public sealed class ObjectiveChannelRect : Objective
 
     _channel = new Channel(whichUnit, _duration, _facing, Position, _timerDialogTitle);
     _channel.Finished += OnChannelEnd;
+    ChannelStarted?.Invoke();
   }
 
   private void OnChannelEnd(Channel channel)
@@ -80,5 +99,6 @@ public sealed class ObjectiveChannelRect : Objective
     channel.Finished -= OnChannelEnd;
     channel.Dispose();
     _channel = null;
+    ChannelEnded?.Invoke();
   }
 }

@@ -99,6 +99,11 @@
       "Id": "unsf",
       "Type": 3,
       "Value": " (Scourge Siege)"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R107"
     }
   ]
 }

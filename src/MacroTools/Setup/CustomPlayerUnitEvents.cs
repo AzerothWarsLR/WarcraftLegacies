@@ -48,6 +48,8 @@ public static class CustomPlayerUnitEvents
   /// </summary>
   public static string PlayerTakesDamage => nameof(PlayerTakesDamage);
 
+  public static string PlayerTakingDamage => nameof(PlayerTakingDamage);
+
   /// <summary>
   /// A unit owned by a specific player dies.
   /// </summary>
@@ -63,6 +65,11 @@ public static class CustomPlayerUnitEvents
   /// </summary>
   public static string PlayerSpellEffect => nameof(PlayerSpellEffect);
 
+  /// <summary>
+  /// A unit of a specific unit type casts any spell.
+  /// </summary>
+  public static string UnitTypeSpellEffect => nameof(UnitTypeSpellEffect);
+
   static CustomPlayerUnitEvents()
   {
     PlayerUnitEvents.AddCustomEvent(PlayerFinishesTraining, () => @event.TrainedUnit.Owner.Id, playerunitevent.TrainFinish);
@@ -71,8 +78,10 @@ public static class CustomPlayerUnitEvents
     PlayerUnitEvents.AddCustomEvent(PlayerDealingDamage, () => @event.DamageSource.Owner.Id, playerunitevent.Damaging);
     PlayerUnitEvents.AddCustomEvent(PlayerDealsDamage, () => @event.DamageSource.Owner.Id, playerunitevent.Damaged);
     PlayerUnitEvents.AddCustomEvent(PlayerTakesDamage, () => @event.Unit.Owner.Id, playerunitevent.Damaged);
+    PlayerUnitEvents.AddCustomEvent(PlayerTakingDamage, () => @event.Unit.Owner.Id, playerunitevent.Damaging);
     PlayerUnitEvents.AddCustomEvent(PlayerUnitDies, () => @event.Unit.Owner.Id, playerunitevent.Death);
     PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => @event.KillingUnit.Owner.GetPlayerData().Faction?.Id ?? -1, playerunitevent.Death);
     PlayerUnitEvents.AddCustomEvent(PlayerSpellEffect, () => @event.Unit.Owner.Id, playerunitevent.SpellEffect);
+    PlayerUnitEvents.AddCustomEvent(UnitTypeSpellEffect, () => @event.Unit.UnitType, playerunitevent.SpellEffect);
   }
 }

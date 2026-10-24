@@ -15,8 +15,13 @@ namespace WarcraftLegacies.Source.Factions.Sunfury;
 public sealed class SunfuryFaction : Faction
 {
   /// <inheritdoc />
-  public SunfuryFaction()
-    : base("Sunfury", playercolor.Violet, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
+  public SunfuryFaction() : this(playercolor.Violet)
+  {
+  }
+
+  /// <summary>Creates the Sunfury with a specific player colour.</summary>
+  public SunfuryFaction(playercolor playerColor)
+    : base("Sunfury", playerColor, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
     StartingGold = new StartingGold
@@ -72,6 +77,10 @@ public sealed class SunfuryFaction : Faction
       AllLegends.Sunfury.Kael));
     AddQuest(new QuestForgottenKnowledge());
     AddQuest(new QuestWellOfEternity(AllLegends.Sunfury.Kiljaeden));
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
+    var sunwell = AllLegends.Quel.Sunwell.Unit;
+    if (sunwell != null && sunwell.Alive)
+    {
+      AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
+    }
   }
 }

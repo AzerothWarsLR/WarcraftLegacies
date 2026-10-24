@@ -18,8 +18,13 @@ namespace WarcraftLegacies.Source.Factions.Gilneas;
 public sealed class GilneasFaction : Faction
 {
   /// <inheritdoc />
-  public GilneasFaction()
-    : base("Gilneas", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
+  public GilneasFaction() : this(playercolor.Pink)
+  {
+  }
+
+  /// <summary>Creates Gilneas with a specific player colour.</summary>
+  public GilneasFaction(playercolor playerColor)
+    : base("Gilneas", playerColor, @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
     StartingGold = new StartingGold
@@ -46,11 +51,18 @@ public sealed class GilneasFaction : Faction
     RegisterFactionDependentInitializer<DruidsFaction>(RegisterDruidsQuests);
   }
 
+  /// <summary>Whether Gilneas is formed partway through the game, leaving the map's units where they are.</summary>
+  public bool FormedMidGame { get; init; }
+
   /// <inheritdoc />
   public override void OnRegistered()
   {
     RegisterObjectLevels();
-    ReplaceWithFactionUnits(this);
+    if (!FormedMidGame)
+    {
+      ReplaceWithFactionUnits(this);
+    }
+
     RegisterQuests();
     GilneasSpells.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -61,9 +73,16 @@ public sealed class GilneasFaction : Faction
     StartingQuest = AddQuest(new QuestShadowfangKeep(Regions.ShadowfangUnlock));
     AddQuest(new QuestSouthshoregil(Regions.SouthshoreUnlock));
     AddQuest(new QuestGilneasCity(Regions.Gilneas));
-    AddQuest(new QuestDalarangilneas(Regions.Dalaran));
+    if (!FormedMidGame)
+    {
+      AddQuest(new QuestDalarangilneas(Regions.Dalaran));
+    }
     AddQuest(new QuestCrowley());
-    AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
+    var sunwell = AllLegends.Quel.Sunwell.Unit;
+    if (sunwell != null && sunwell.Alive)
+    {
+      AddQuest(new QuestExtractSunwellVial(AllLegends.Quel.Sunwell, Artifacts.SunwellVial));
+    }
   }
   private void RegisterObjectLevels()
   {
@@ -88,9 +107,14 @@ public sealed class GilneasFaction : Faction
 
   private void RegisterBookOfMedivhQuest(LegionFaction legion)
   {
+    if (FormedMidGame)
+    {
+      return;
+    }
+
     SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(AllLegends.Gilneas.GilneasCastle,
       new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), Artifacts.BookOfMedivh,
-      faction == legion, faction == this));
+      faction != this, faction == this, faction == legion));
   }
 
   private void RegisterDruidsQuests(DruidsFaction druids)

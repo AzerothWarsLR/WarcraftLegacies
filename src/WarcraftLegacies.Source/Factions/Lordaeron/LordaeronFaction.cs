@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
@@ -9,10 +10,12 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Legion;
+using WarcraftLegacies.Source.Factions.Lordaeron.Paths;
 using WarcraftLegacies.Source.Factions.Lordaeron.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron.Researches;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -21,8 +24,10 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Lordaeron;
 
-public sealed class LordaeronFaction : Faction
+public sealed class LordaeronFaction : Faction, IHasRoleplayPaths, IHasRoleplayIntro
 {
+  private ScarletCrusadeTransformation? _scarletCrusadeTransformation;
+
   /// <inheritdoc />
   public LordaeronFaction() : base("Lordaeron", playercolor.LightBlue,
     @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
@@ -50,6 +55,11 @@ public sealed class LordaeronFaction : Faction
     RegisterFactionDependentInitializer<ScourgeFaction, LegionFaction>(RegisterScourgeLegionDialogue);
     ProcessObjectInfo(LordaeronObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the great {faction}.\n\nThe greatest of the human kingdoms stands at the height of its power, yet a sickness is spreading through the northern villages, and the dead no longer stay buried.\n\nThe Plague of Undeath is imminent. Fortify your cities and stand with Dalaran and Quel'Thalas, your allies of the North Alliance, for the Scourge will strike at all three of you.\n\nIf you survive the Plague, sail to the frozen wasteland of Northrend and take the fight to the Lich King. Should the kingdom fall, its survivors may yet choose a darker road.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Lordaeron")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()
@@ -90,7 +100,8 @@ public sealed class LordaeronFaction : Faction
       }));
     AddQuest(questTyrHand);
     AddQuest(new QuestMograine());
-    AddQuest(new QuestScarletCrusade(Regions.Scarlet_Spawn, AllLegends.Lordaeron.TyrsHand, AllLegends.Scarlet.Saiden, questTyrHand));
+    _scarletCrusadeTransformation = new ScarletCrusadeTransformation(Regions.Scarlet_Spawn, AllLegends.Lordaeron.TyrsHand, AllLegends.Scarlet.Saiden);
+    AddQuest(new QuestScarletCrusade(_scarletCrusadeTransformation, questTyrHand));
     AddQuest(new QuestShoresOfNorthrend(AllLegends.Lordaeron.Arthas, AllLegends.Neutral.Caerdarrow));
     AddQuest(new QuestThunderEagle(AllLegends.Neutral.DraktharonKeep));
     AddQuest(new QuestChampionoftheLight(AllLegends.Lordaeron.Uther));
@@ -98,6 +109,20 @@ public sealed class LordaeronFaction : Faction
       Artifacts.CrownOfLordaeron, AllLegends.Lordaeron.CapitalPalace, AllLegends.Lordaeron.Arthas));
     AddQuest(new QuestKingdomOfManLordaeron(Artifacts.CrownOfLordaeron,
       Artifacts.CrownOfStormwind, AllLegends.Lordaeron.Arthas));
+  }
+
+  /// <inheritdoc />
+  public void AddRoleplayPaths()
+  {
+    if (_scarletCrusadeTransformation != null && !GetAllPaths().Any(x => x is PathScarletCrusade))
+    {
+      AddPath(new PathScarletCrusade(_scarletCrusadeTransformation, AllLegends.Lordaeron.CapitalPalace, AllLegends.Lordaeron.Stratholme));
+    }
+
+    if (!GetAllPaths().Any(x => x is PathFallenPrince))
+    {
+      AddPath(new PathFallenPrince(new FallenPrinceTransformation(), AllLegends.Lordaeron.Stratholme, AllLegends.Lordaeron.Arthas));
+    }
   }
 
   private static void RegisterResearches()

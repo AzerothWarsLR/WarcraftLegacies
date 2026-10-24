@@ -178,6 +178,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
       Pages[0].Visible = true;
       _activePageIndex = 0;
       RefreshNavigationButtonVisiblity();
+      OnOpened();
     }
     catch (Exception ex)
     {
@@ -211,6 +212,13 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
     var pageCount = Pages.Count(x => x.HasOccupiedCards());
     MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
     MovePreviousButton.Visible = ActivePageIndex > 0;
+  }
+
+  /// <summary>
+  /// Runs on the opening player's machine only, after the book has been opened.
+  /// </summary>
+  protected virtual void OnOpened()
+  {
   }
 
   /// <summary>

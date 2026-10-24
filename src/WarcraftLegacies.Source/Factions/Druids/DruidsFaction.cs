@@ -11,6 +11,7 @@ using WarcraftLegacies.Source.Factions.Druids.Mechanics;
 using WarcraftLegacies.Source.Factions.Druids.Quests;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
 using WarcraftLegacies.Source.Setup;
@@ -21,13 +22,14 @@ using WarcraftLegacies.Source.Shared.Researches;
 
 namespace WarcraftLegacies.Source.Factions.Druids;
 
-public sealed class DruidsFaction : Faction
+public sealed class DruidsFaction : Faction, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public DruidsFaction() :
     base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
     TraditionalTeam = TeamSetup.NightElves;
+    NameTakesArticle = true;
     UndefeatedResearch = UPGRADE_R06E_DRUIDS_EXISTS;
     StartingGold = new StartingGold
     {
@@ -49,6 +51,11 @@ public sealed class DruidsFaction : Faction
     RegisterFactionDependentInitializer<ScourgeFaction>(RegisterScourgeQuests);
     ProcessObjectInfo(DruidsObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the ancient {faction}.\n\nYou begin isolated in the deepest parts of Mount Hyjal, near the World Tree. Cenarius has emerged from his seclusion. Use him to carry the Horn of Cenarius to the Barrow Den and awaken Malfurion from his slumber as soon as possible.\n\nThe Horde is coming to Kalimdor, and the Tauren migrating north already covet the World Tree itself. Heal the forest and awaken the Ancients of Hyjal, and stand with the Sentinels, your allies of the Night Elves.\n\nShould the Burning Legion ever reach Nordrassil, the World Tree itself may have to be sacrificed to stop them.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Druids of the Cenarion Circle")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()

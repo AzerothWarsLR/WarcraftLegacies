@@ -7,6 +7,7 @@ public static class Items
   public const int ITEM_I002_CROWN_OF_STORMWIND = 1227894834;
   public const int ITEM_I003_EYE_OF_SARGERAS = 1227894835;
   public const int ITEM_I004_THE_DOOMHAMMER = 1227894836;
+  public const int ITEM_I005_SCROLL_OF_TELEPORTATION = 1227894837;
   public const int ITEM_I006_BOOK_OF_MEDIVH = 1227894838;
   public const int ITEM_I007_SKULL_OF_GUL_DAN = 1227894839;
   public const int ITEM_I00C_G_HANIR_THE_MOTHER_TREE = 1227894851;

@@ -116,6 +116,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "General research building."
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "o068"
     }
   ]
 }

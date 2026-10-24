@@ -24,8 +24,8 @@ public static class KultirasObjectInfo
     yield return new(UNIT_N07H_TRADE_HOUSE_KULTIRAS_SHOP, Unlimited, Shop);
     yield return new(UNIT_H07W_SHIPYARD_KULTIRAS_SHIPYARD, Unlimited, Shipyard);
     yield return new(UNIT_H06R_GARRISON_KULTIRAS_BARRACKS, Unlimited, Barracks);
-    yield return new(UNIT_H07P_WORKSHOP_KULTIRAS_SPECIALIST, Unlimited, SiegeWorkshop);
-    yield return new(UNIT_H093_ORDER_CHAPTER_HOUSE_KULTIRAS_SIEGE, Unlimited, Specialist);
+    yield return new(UNIT_H07P_WORKSHOP_KULTIRAS_SPECIALIST, Unlimited, Specialist);
+    yield return new(UNIT_H093_ORDER_CHAPTER_HOUSE_KULTIRAS_SIEGE, Unlimited, SiegeWorkshop);
 
     yield return new(UNIT_H01E_DECKHAND_KULTIRAS_WORKER, Unlimited, Builder);
     yield return new(UNIT_E007_THORNSPEAKER_KULTIRAS, Unlimited, Support);

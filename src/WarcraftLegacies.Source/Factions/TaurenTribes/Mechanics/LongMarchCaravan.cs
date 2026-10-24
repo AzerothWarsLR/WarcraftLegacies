@@ -769,9 +769,14 @@ public sealed class LongMarchCaravan
         .First();
       var distance = MathEx.GetDistanceBetweenPoints(nearestKodo.GetPosition(), ambusherUnit.GetPosition());
 
-      if (distance <= AmbusherEngagedRange
-          || !_ambusherProgress.TryGetValue(ambusherUnit, out var progress)
-          || distance < progress.BestDistance - AmbusherProgressDistance)
+      if (distance <= AmbusherEngagedRange || !_ambusherProgress.ContainsKey(ambusherUnit))
+      {
+        _ambusherProgress[ambusherUnit] = (distance, 0);
+        continue;
+      }
+
+      var progress = _ambusherProgress[ambusherUnit];
+      if (distance < progress.BestDistance - AmbusherProgressDistance)
       {
         _ambusherProgress[ambusherUnit] = (distance, 0);
         continue;

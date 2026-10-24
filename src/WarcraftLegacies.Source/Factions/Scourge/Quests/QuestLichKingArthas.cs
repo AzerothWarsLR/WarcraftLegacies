@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Quests;
+using WarcraftLegacies.Source.Factions.Lordaeron.Paths;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WarcraftLegacies.Source.Objectives.LegendBased;
@@ -46,7 +47,7 @@ public sealed class QuestLichKingArthas : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "Arthas becomes the Lich King, the Frozen Throne loses its abilities, and you regain the Domination power if you don't have it";
+    "Arthas becomes the Lich King, the Frozen Throne loses its abilities, and the Scourge regains the Domination power if it doesn't have it";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
@@ -54,22 +55,38 @@ public sealed class QuestLichKingArthas : QuestData
     PlayThematicMusic(@"Sound\Music\mp3Music\LichKingTheme.mp3");
 
     TheFrozenThrone.Vacate(false);
-    if (_theFrozenThrone.Unit != null)
+    var throne = _theFrozenThrone.Unit;
+    if (throne != null && !TeamChanges.AreTeammates(throne.Owner, completingFaction.Player!))
     {
-      _theFrozenThrone.Unit.SetOwner(completingFaction.Player!);
+      throne.SetOwner(completingFaction.Player!);
     }
 
+    if (completingFaction is ScourgeFaction)
+    {
+      CloseFallenPrincePaths();
+    }
+
+    _arthas.ShowsDeathIcon = false;
     _arthas.UnitType = UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE;
     _arthas.PermaDies = true;
     _arthas.DeathMessage = "The day he was born, the very forests of Lordaeron whispered the name Arthas - but no King rules forever.";
 
-    _arthas.Unit?.SetLifePercent(100);
-    _arthas.Unit?.SetManaPercent(100);
-    _arthas.Unit?.AddItemSafe(_helmOfDomination.Item);
+    var arthasUnit = _arthas.Unit;
+    if (arthasUnit != null)
+    {
+      arthasUnit.SetLifePercent(100);
+      arthasUnit.SetManaPercent(100);
+      arthasUnit.AddItemSafe(_helmOfDomination.Item);
+    }
 
     _utgardeKeep.Rescue(completingFaction.Player!);
 
-    var domination = completingFaction.GetPowerByType<Domination>();
+    if (!FactionManager.TryGetFactionByType<ScourgeFaction>(out var scourge))
+    {
+      return;
+    }
+
+    var domination = scourge.GetPowerByType<Domination>();
     if (domination == null)
     {
       domination = new Domination
@@ -86,7 +103,22 @@ public sealed class QuestLichKingArthas : QuestData
         IconName = "Revenant"
       };
 
-      completingFaction.AddPower(domination);
+      scourge.AddPower(domination);
+    }
+  }
+
+  /// <summary>Once the Scourge's own Arthas is the Lich King, Lordaeron can no longer take him as the Fallen Prince.</summary>
+  private static void CloseFallenPrincePaths()
+  {
+    foreach (var faction in FactionManager.GetAllFactions())
+    {
+      foreach (var path in faction.GetAllPaths())
+      {
+        if (path is PathFallenPrince)
+        {
+          path.Close();
+        }
+      }
     }
   }
 }

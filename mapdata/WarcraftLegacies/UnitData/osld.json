@@ -50,7 +50,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "o00A,oshm,odoc"
+      "Value": "o00A,oshm,o100,odoc"
     },
     {
       "Id": "ures",

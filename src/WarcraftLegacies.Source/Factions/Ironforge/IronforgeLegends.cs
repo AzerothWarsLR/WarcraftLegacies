@@ -8,6 +8,11 @@ public sealed class IronforgeLegends
   public LegendaryHero Dagran { get; }
   public LegendaryHero Falstad { get; }
   public LegendaryHero Magni { get; }
+  public LegendaryHero Muradin { get; }
+  public LegendaryHero Moira { get; }
+  public LegendaryHero Angerforge { get; }
+  public LegendaryHero Kurdran { get; }
+  public LegendaryHero Talonaxe { get; }
   public Capital GreatForge { get; }
   public Capital Thelsamar { get; }
   public Capital MenethilHarbor { get; }
@@ -31,6 +36,32 @@ public sealed class IronforgeLegends
       UnitType = UNIT_H00S_KING_OF_KHAZ_MODAN_IRONFORGE,
       DeathMessage = "King Magni Bronzebeard has died.", //Todo: bad flavour
       StartingXp = 1000
+    };
+
+    Muradin = new LegendaryHero("Muradin Bronzebeard")
+    {
+      UnitType = UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE,
+      StartingXp = 2800
+    };
+
+    Moira = new LegendaryHero("Moira Thaurissan")
+    {
+      UnitType = UNIT_H0CU_QUEEN_OF_THE_DARK_IRON_DARKIRON
+    };
+
+    Angerforge = new LegendaryHero("General Angerforge")
+    {
+      UnitType = UNIT_H0CV_GENERAL_OF_THE_DARK_IRON_DARKIRON
+    };
+
+    Kurdran = new LegendaryHero("Kurdran Wildhammer")
+    {
+      UnitType = UNIT_H0CW_SKY_THANE_OF_THE_WILDHAMMER_WILDHAMMER
+    };
+
+    Talonaxe = new LegendaryHero("Gryphon Master Talonaxe")
+    {
+      UnitType = UNIT_H0CX_GRYPHON_MASTER_OF_AERIE_PEAK_WILDHAMMER
     };
 
     GreatForge = new Capital
@@ -58,6 +89,11 @@ public sealed class IronforgeLegends
     LegendaryHeroManager.Register(Dagran);
     LegendaryHeroManager.Register(Falstad);
     LegendaryHeroManager.Register(Magni);
+    LegendaryHeroManager.Register(Muradin);
+    LegendaryHeroManager.Register(Moira);
+    LegendaryHeroManager.Register(Angerforge);
+    LegendaryHeroManager.Register(Kurdran);
+    LegendaryHeroManager.Register(Talonaxe);
     CapitalManager.Register(GreatForge);
     CapitalManager.Register(Thelsamar);
     CapitalManager.Register(MenethilHarbor);

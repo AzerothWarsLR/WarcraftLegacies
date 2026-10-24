@@ -1,0 +1,39 @@
+{
+  "OldId": "Bcri",
+  "NewId": "B107",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNPlagueCloud.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Shared Suffering"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Shared Suffering"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is cursed. Dispelling it spreads the curse to nearby units."
+    }
+  ]
+}

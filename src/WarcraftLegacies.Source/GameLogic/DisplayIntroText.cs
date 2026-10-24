@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
+using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.Save;
 using WCSharp.Shared;
@@ -12,10 +13,27 @@ namespace WarcraftLegacies.Source.GameLogic;
 public static class DisplayIntroText
 {
   /// <summary>
-  /// Displays intro text to all players after some period of time has elapsed.
+  /// Shows the generic welcome/Discord message to all players.
   /// </summary>
-  /// <param name="displayTime">The time after which to display intro text, in seconds.</param>
-  public static void Setup(float displayTime)
+  public static void SetupWelcomeMessage(float displayDuration)
+  {
+    SaveManager.RunWhenLocalPlayerSettingsReady(() =>
+    {
+      foreach (var player in Util.EnumeratePlayers())
+      {
+        player.DisplayTimedTextTo(displayDuration, $@"|cffffcc00{Loc.Get("Warcraft Legacies")}|r
+  |cffaaaaaa{Loc.Get("Join our Discord:")}|r discord.gg/ubQM7PgaG
+
+  {Loc.Get("If you are a new player, look at the Quest (F9) tab to see your objectives.")}
+  ");
+      }
+    });
+  }
+
+  /// <summary>
+  /// Displays each player's faction's intro text after <paramref name="displayTime"/> seconds have elapsed.
+  /// </summary>
+  public static void SetupFactionIntroText(float displayTime)
   {
     timer.Create().Start(displayTime, false, () =>
     {
@@ -25,7 +43,7 @@ public static class DisplayIntroText
         {
           foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
           {
-            player.DisplayTextTo(player.GetPlayerData().Faction?.IntroText?.Invoke() ?? "");
+            player.DisplayTextTo(GetIntroText(player.GetPlayerData().Faction));
           }
         });
 
@@ -36,17 +54,20 @@ public static class DisplayIntroText
         Console.WriteLine($"Error displaying intro text {ex}");
       }
     });
+  }
 
-    SaveManager.RunWhenLocalPlayerSettingsReady(() =>
+  private static string GetIntroText(Faction? faction)
+  {
+    if (faction == null)
     {
-      foreach (var player in Util.EnumeratePlayers())
-      {
-        player.DisplayTimedTextTo(displayTime - 1, $@"|cffffcc00{Loc.Get("Warcraft Legacies")}|r
-  |cffaaaaaa{Loc.Get("Join our Discord:")}|r discord.gg/ubQM7PgaG
+      return "";
+    }
 
-  {Loc.Get("If you are a new player, look at the Quest (F9) tab to see your objectives.")}
-  ");
-      }
-    });
+    if (RoleplaySetting.IsActive && faction is IHasRoleplayIntro roleplayIntro)
+    {
+      return roleplayIntro.RoleplayIntroText;
+    }
+
+    return faction.IntroText?.Invoke() ?? "";
   }
 }

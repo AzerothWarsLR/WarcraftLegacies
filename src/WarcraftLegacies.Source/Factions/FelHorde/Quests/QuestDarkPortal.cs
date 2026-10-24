@@ -25,8 +25,10 @@ public sealed class QuestDarkPortal : QuestData
   /// <param name="outerWaygate1">A Waygate outside outland, next to the Dark Portal.</param>
   /// <param name="outerWaygate2">A Waygate outside outland, next to the Dark Portal.</param>
   /// <param name="outerWaygate3">A Waygate outside outland, next to the Dark Portal.</param>
+  /// <param name="earliestTurn">The first turn the portal can be opened by research.</param>
+  /// <param name="forcedTurn">The turn the portal opens on its own if it hasn't been researched.</param>
   public QuestDarkPortal(unit innerWaygate1, unit innerWaygate2, unit innerWaygate3, unit outerWaygate1,
-    unit outerWaygate2, unit outerWaygate3)
+    unit outerWaygate2, unit outerWaygate3, int earliestTurn = 8, int forcedTurn = 10)
     : base("The Dark Portal",
       "Following the Second War, the archmage Khadgar and his fellow magi sealed the Dark Portal so that it would never again be used to threaten Azeroth. Little did they know that their magicks were only temporary, and that the portal would open again in time.",
       @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
@@ -45,10 +47,20 @@ public sealed class QuestDarkPortal : QuestData
     _outerWaygate3 = outerWaygate3;
     AddObjective(new ObjectiveEitherOf(
       new ObjectiveResearch(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, UNIT_O008_HELLFIRE_CITADEL_FEL, true),
-      new ObjectiveTurn(10)));
-    AddObjective(new ObjectiveTurn(8));
+      new ObjectiveTurn(forcedTurn)));
+    AddObjective(new ObjectiveTurn(earliestTurn));
     Global = true;
   }
+
+  /// <summary>The Blackrock quest whose outpost is handed over when the portal opens.</summary>
+  public QuestBlackrock? HandsOverOutpostOf { get; init; }
+
+  /// <summary>Makes a copy of this quest that opens the portal on different turns.</summary>
+  public QuestDarkPortal WithTurns(int earliestTurn, int forcedTurn) =>
+    new(_innerWaygate1, _innerWaygate2, _innerWaygate3, _outerWaygate1, _outerWaygate2, _outerWaygate3, earliestTurn, forcedTurn)
+    {
+      HandsOverOutpostOf = HandsOverOutpostOf
+    };
 
   /// <inheritdoc />
   public override string RewardFlavour =>
@@ -59,7 +71,15 @@ public sealed class QuestDarkPortal : QuestData
     "The Dark Portal can be used to teleport units between the Eastern Kingdoms and Outland";
 
   /// <inheritdoc />
-  protected override void OnComplete(Faction completingFaction) => OpenPortal();
+  protected override void OnComplete(Faction completingFaction)
+  {
+    OpenPortal();
+    var completingPlayer = completingFaction.Player;
+    if (HandsOverOutpostOf != null && completingPlayer != null)
+    {
+      HandsOverOutpostOf.GiveDarkPortalOutpostTo(completingPlayer);
+    }
+  }
 
   /// <inheritdoc />
   protected override void OnAdd(Faction whichFaction) =>

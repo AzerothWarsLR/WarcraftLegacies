@@ -1,0 +1,24 @@
+{
+  "OldId": "BNab",
+  "NewId": "B02K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Plague Explosion"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been infected with the Plague by Ramstein himself. It is taking damahe over time as well as having reduced movement speed"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\PlagueCloud\\PlagueCloudCaster.mdl"
+    }
+  ]
+}

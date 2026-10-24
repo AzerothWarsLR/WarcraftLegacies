@@ -3,15 +3,18 @@ using MacroTools.Dialogues;
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.GameTime;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Druids;
 using WarcraftLegacies.Source.Factions.FelHorde;
 using WarcraftLegacies.Source.Factions.FelHorde.Quests;
+using WarcraftLegacies.Source.Factions.Illidari.Paths;
 using WarcraftLegacies.Source.Factions.Illidari.Quests;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Sentinels;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
@@ -23,7 +26,7 @@ using WarcraftLegacies.Source.Shared.Researches;
 
 namespace WarcraftLegacies.Source.Factions.Illidari;
 
-public sealed class IllidariFaction : Faction
+public sealed class IllidariFaction : Faction, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public IllidariFaction() : base("Illidan", playercolor.Violet,
@@ -58,6 +61,11 @@ public sealed class IllidariFaction : Faction
   }
 
   /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the cunning {faction}.\n\nCast out by his own people and hunted by the Wardens, Illidan the Betrayer has gathered the naga and his loyal followers in the Broken Isles.\n\nOutland lies beyond the Dark Portal. Defeat Magtheridon and claim his throne, and the Fel Horde and the Black Temple will be yours to command.\n\nOr, if the night elves are hard pressed, Illidan may yet return to stand with his people, whether they want him or not.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Illidari")}|r"));
+
+  /// <inheritdoc />
   public override void OnRegistered()
   {
     RegisterQuests();
@@ -80,13 +88,29 @@ public sealed class IllidariFaction : Faction
 
     base.OnNotPicked();
   }
+  private PathLordOfOutland? GetLordOfOutlandPath()
+  {
+    foreach (var path in GetAllPaths())
+    {
+      if (path is PathLordOfOutland lordOfOutland)
+      {
+        return lordOfOutland;
+      }
+    }
+
+    return null;
+  }
+
   private void RegisterQuests()
   {
     var flameAndSorrow = new QuestBrokenIsles(AllLegends.Naga.Illidan);
     StartingQuest = flameAndSorrow;
     AddQuest(flameAndSorrow);
 
-    var questBlackTemple = new QuestBlackTemple(flameAndSorrow);
+    var lordOfOutland = RoleplaySetting.IsActive ? GetLordOfOutlandPath() : null;
+    var questBlackTemple = lordOfOutland != null
+      ? new QuestBlackTemple(lordOfOutland.Taken)
+      : new QuestBlackTemple(flameAndSorrow);
     AddQuest(questBlackTemple);
 
 

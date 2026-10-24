@@ -48,7 +48,12 @@ public abstract class QuestData
   /// <summary>
   ///   If true, completing this quest will broadcast a message to every player.
   /// </summary>
-  protected bool Global { get; init; }
+  public bool Global { get; set; }
+
+  public bool SuppressCompletionDisplay { get; set; }
+
+  /// <summary>If true, failing this quest shows no message.</summary>
+  public bool SuppressFailureDisplay { get; set; }
 
   /// <summary>
   ///   Describes to the player what will happen when the quest is completed.
@@ -166,10 +171,13 @@ public abstract class QuestData
 
   private void CompleteForFaction(Faction whichFaction)
   {
-    whichFaction.DisplayCompleted(this);
-    if (Global)
+    if (!SuppressCompletionDisplay)
     {
-      whichFaction.Player?.DisplayCompletedGlobal(this);
+      whichFaction.DisplayCompleted(this);
+      if (Global)
+      {
+        whichFaction.Player?.DisplayCompletedGlobal(this);
+      }
     }
 
     if (ResearchId != 0)
@@ -192,7 +200,11 @@ public abstract class QuestData
 
   private void FailForFaction(Faction whichFaction)
   {
-    whichFaction.DisplayFailed(this);
+    if (!SuppressFailureDisplay)
+    {
+      whichFaction.DisplayFailed(this);
+    }
+
     foreach (var objective in Objectives)
     {
       objective.ProgressLocked = true;

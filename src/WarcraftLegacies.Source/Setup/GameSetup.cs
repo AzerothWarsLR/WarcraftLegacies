@@ -2,7 +2,7 @@
 using MacroTools.ControlPoints;
 using MacroTools.Factions;
 using MacroTools.GameModes;
-using MacroTools.GameTime;
+using MacroTools.Legends;
 using MacroTools.Save;
 using MacroTools.Sounds;
 using MacroTools.UnitNames;
@@ -18,6 +18,7 @@ using WarcraftLegacies.Source.GameLogic.SouthKalimdorGuard;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Testing;
+using WarcraftLegacies.Source.UserInterface;
 using WCSharp.W3MMD;
 
 namespace WarcraftLegacies.Source.Setup;
@@ -31,19 +32,30 @@ public static class GameSetup
   /// </summary>
   public static void Setup()
   {
+    // Runs before everything else so the turn timer and starting resources (further down) can wait on it -
+    // see GameStartVoteSequence for why that matters.
+    GameStartVoteSequence.Setup(new IGameMode[]
+    {
+      new Standard(),
+      new GreatWar(),
+      new Roleplay()
+    }, timeToDisplay: 0, modeVoteLength: 15, difficultyVoteLength: 10, customOptionsVoteLength: 30);
+
     W3Mmd.ForceInit();
     MmdVariables.Init();
     MmdManager.Setup();
     MmdEvents.SubscribeToPlayerRegistration();
     FactionManager.Setup();
     UnitTypeSetup.Setup();
+    TeleportScrollSetting.Setup();
     SaveManager.Initialize();
-    DisplayIntroText.Setup(25);
     CinematicMode.Setup(59);
     SetupControlPointManager();
     SetupControlPointDefenderManager();
     SoundLibrary.Setup();
     Artifacts.Setup();
+    LegendaryHero.DiesWithoutAbilityId = ABILITY_LEGN_LEGEND_DUMMY;
+    LegendaryHero.PermaDiesAbilityId = ABILITY_LEGO_LEGEND_DUMMY_PASSIVE;
     AllLegends.Setup();
     ShoreSetup.Setup();
     ControlPointSetup.Setup();
@@ -56,29 +68,15 @@ public static class GameSetup
     FactionStartingResources.Setup();
     FactionMultiboard.Setup();
     PlayerSetup.Setup();
-    FactionChoiceDialogSetup.Setup();
     SharedQuestSetup.Setup();
     SharedSpellSetup.Setup();
     BookSetup.Setup();
     HintConfig.Setup();
     QuestMenuSetup.Setup();
-    GameTimeManager.Start();
-    GameTimeDialog.Setup();
     MapFlagSetup.Setup();
     InfoQuests.Setup();
     DestructibleSetup.Setup();
     AhnQirajSetup.Setup();
-    var gameModeManager = new GameModeManager(new IGameMode[]
-    {
-      new ClosedAlliance(),
-      new OpenAlliance(),
-      new GreatWar()
-    })
-    {
-      TimeToDisplay = 49,
-      VoteLength = 10
-    };
-    gameModeManager.Setup();
     RockSetup.Setup();
     SouthKalimdorGuardSystem.Setup();
     TurnResearchSetup.Setup();
@@ -87,8 +85,8 @@ public static class GameSetup
     NeutralVictimAndPassiveSetup.Setup();
     GateSetup.Setup();
     OrgrimmarSetup.Setup();
+    NordrassilSetup.Setup();
     SulfuronSpireSetup.Setup();
-    StartingQuestPopup.Setup(63);
     RefundZeroLimitUnits.Setup();
     HeroGlowFix.Setup();
     CleanupUnoccupiedPlayerSlots.Setup();
@@ -96,6 +94,7 @@ public static class GameSetup
     PlayerLeaves.Setup();
     FloatingTextSetup.Setup(60, 10);
     AmbianceSetup.Setup();
+    HeroDamageTakenSetting.Setup();
     UnitTypeTraitRegistry.InitializePreplacedUnits();
     IncompatibleResearchSetup.Setup();
     DemonGateSetup.Setup();

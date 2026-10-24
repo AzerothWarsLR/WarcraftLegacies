@@ -9,12 +9,14 @@ using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Dalaran;
 using WarcraftLegacies.Source.Factions.Legion;
+using WarcraftLegacies.Source.Factions.Legion.Quests;
 using WarcraftLegacies.Source.Factions.Lordaeron;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics;
 using WarcraftLegacies.Source.Factions.Scourge.Mechanics.Blight;
 using WarcraftLegacies.Source.Factions.Scourge.Powers;
 using WarcraftLegacies.Source.Factions.Scourge.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.QuestBased;
 using WarcraftLegacies.Source.Objectives.UnitBased;
@@ -25,7 +27,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Scourge;
 
-public sealed class ScourgeFaction : Faction
+public sealed class ScourgeFaction : Faction, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public ScourgeFaction()
@@ -59,7 +61,14 @@ public sealed class ScourgeFaction : Faction
     RegisterFactionDependentInitializer<LegionFaction>(RegisterLegionDialogue);
 
     ProcessObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
+    ModObjectLimit(UPGRADE_R107_QUEST_COMPLETED_THE_KEY_OF_THE_THREE_MOONS_FALLENPRINCE, 1);
+    SetObjectLevel(UPGRADE_R107_QUEST_COMPLETED_THE_KEY_OF_THE_THREE_MOONS_FALLENPRINCE, 1);
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the horrific {faction}.\n\nDeep within Icecrown, the Lich King has bound the dead of Northrend into an army that knows neither fear nor fatigue. The living lands to the south are ripe for the harvest.\n\nCoordinate with the Burning Legion and the Fel Horde, your allies, and unleash the Plague of Undeath to sweep Lordaeron away. When the Plague strikes, you will have a choice of where to instantly transport all your military units.\n\nThe Lich King serves the Legion for now, but Ner'zhul has never forgotten what his masters did to him.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Undead Scourge")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()
@@ -108,11 +117,6 @@ public sealed class ScourgeFaction : Faction
     QuestSapphiron questSapphiron = new(AllPreplacedWidgets.Units.Get(UNIT_UBDR_SAPPHIRON_CREEP),
       AllLegends.Scourge.Kelthuzad);
 
-    QuestLichKingArthas questLichKingArthas =
-      new(AllPreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
-        Artifacts.HelmOfDomination,
-        AllLegends.Scourge.Arthas,
-        AllLegends.Scourge.TheFrozenThrone);
     QuestSlumberingKing questSlumberingKing = new();
 
     AddQuest(questSpiderWar);
@@ -121,7 +125,6 @@ public sealed class ScourgeFaction : Faction
     AddQuest(questEnKilahUnlock);
     AddQuest(questSapphiron);
     //Misc
-    AddQuest(questLichKingArthas);
     AddQuest(questSlumberingKing);
   }
 
@@ -163,6 +166,7 @@ public sealed class ScourgeFaction : Faction
 
   private void RegisterDialogue()
   {
+    ArthasDialogue.Setup();
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(new Dialogue(
           soundFile: @"Sound\Dialogue\UndeadCampaign\Undead08\U08Kelthuzad18.flac",
@@ -198,11 +202,7 @@ public sealed class ScourgeFaction : Faction
         new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas06.flac",
           "Pull your troops back, or we will be forced to unleash our full powers against you! Make your choice, death knight.",
           "Antonidas")
-      ), new Faction[]
-      {
-        this,
-        dalaran
-      }, new List<Objective>
+      ), ArthasDialogue.OwnersOf(AllLegends.Scourge.Arthas, AllLegends.Dalaran.Antonidas), new List<Objective>
       {
         new ObjectiveLegendInRect(AllLegends.Dalaran.Antonidas, Regions.Dalaran, "Dalaran"),
         new ObjectiveLegendInRect(AllLegends.Scourge.Arthas, Regions.Dalaran, "Dalaran")
@@ -212,6 +212,8 @@ public sealed class ScourgeFaction : Faction
 
   private void RegisterLordaeronDialogue(LordaeronFaction lordaeron)
   {
+    ArthasDialogue.SetupUther(this, lordaeron);
+
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(new Dialogue(
         soundFile: @"Sound\Dialogue\HumanCampaign\Human04\H04Kelthuzad28.flac",
@@ -249,11 +251,7 @@ public sealed class ScourgeFaction : Faction
             soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AKelthuzad04.flac",
             caption: "Don't be too overconfident, death knight. The elves must not be taken lightly.",
             speaker: "Kel'thuzad")),
-        new Faction[]
-        {
-          this,
-          quelthalas
-        },
+        ArthasDialogue.OwnersOf(new Faction[] { quelthalas }, AllLegends.Scourge.Arthas, AllLegends.Scourge.Kelthuzad),
         new Objective[]
         {
           new ObjectiveLegendInRect(AllLegends.Scourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
@@ -277,11 +275,7 @@ public sealed class ScourgeFaction : Faction
             soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AArthas13.flac",
             caption: "It is you who should turn back, Sylvanas. Death itself has come for your land.",
             speaker: "Arthas Menethil")),
-        new Faction[]
-        {
-          this,
-          quelthalas
-        },
+        ArthasDialogue.OwnersOf(AllLegends.Scourge.Arthas, AllLegends.Quel.Sylvanas),
         new[]
         {
           new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Quel.Sylvanas)
@@ -298,11 +292,7 @@ public sealed class ScourgeFaction : Faction
             soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05AKelThuzad31.flac",
             caption: "I am reborn, as promised! The Lich King has granted me eternal life!",
             speaker: "Kel'thuzad")),
-        new Faction[]
-        {
-          this,
-          quelthalas
-        },
+        ArthasDialogue.OwnersOf(new Faction[] { this, quelthalas }, AllLegends.Scourge.Arthas),
         new[]
         {
           new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadLich>())
@@ -326,7 +316,7 @@ public sealed class ScourgeFaction : Faction
             soundFile: @"Sound\Dialogue\UndeadCampaign\Undead02\U02KelThuzad29.flac",
             caption: "It is I, Kel'Thuzad. I was right about you, Prince Arthas.",
             speaker: "Kel'thuzad")),
-        new[] { this },
+        ArthasDialogue.OwnersOf(AllLegends.Scourge.Arthas, AllLegends.Scourge.Kelthuzad),
         new Objective[]
         {
           new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Scourge.Kelthuzad),
@@ -354,15 +344,13 @@ public sealed class ScourgeFaction : Faction
             soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05ATichondrius03.flac",
             caption: "I am here to ensure that you do your job, little human. Not do it for you.",
             speaker: "Tichondrius")),
-        new Faction[]
-        {
-          this,
-          legion
-        },
+        ArthasDialogue.OwnersOf(AllLegends.Scourge.Arthas, AllLegends.Legion.Tichondrius),
         new[]
         {
           new ObjectiveLegendMeetsLegend(AllLegends.Scourge.Arthas, AllLegends.Legion.Tichondrius)
         }));
+
+    ArthasDialogue.SetupSummoning(legion.GetQuestByType<QuestSummonLegion>(), legion);
   }
 
   private void RegisterQuelthalasRelatedQuests(QuelthalasFaction quelthalas)
@@ -379,6 +367,16 @@ public sealed class ScourgeFaction : Faction
 
     QuestDestroyStratholme questDestroyStratholme = new(lordaeron, stratholme, arthas);
     AddQuest(questDestroyStratholme);
+
+    var questLichKingArthas = new QuestLichKingArthas(AllPreplacedWidgets.Units.Get(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
+      Artifacts.HelmOfDomination, AllLegends.Scourge.Arthas, AllLegends.Scourge.TheFrozenThrone);
+    questLichKingArthas.AddObjective(new ObjectiveQuestComplete(questDestroyStratholme)
+    {
+      ShowsInPopups = false,
+      ShowsInQuestLog = false,
+      Progress = QuestProgress.Undiscovered
+    });
+    AddQuest(questLichKingArthas);
 
     AddQuest(new QuestCultoftheDamned(lordaeron, AllLegends.Scourge.Rivendare));
   }

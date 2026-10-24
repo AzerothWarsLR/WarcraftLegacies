@@ -5,6 +5,7 @@ using MacroTools.Localization;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Frostwolf;
 using WarcraftLegacies.Source.Factions.Kultiras.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -12,7 +13,7 @@ using WarcraftLegacies.Source.Shared.Quests;
 
 namespace WarcraftLegacies.Source.Factions.Kultiras;
 
-public sealed class KultirasFaction : Faction
+public sealed class KultirasFaction : Faction, IHasRoleplayIntro
 {
   /// <inheritdoc />
   public KultirasFaction()
@@ -39,6 +40,11 @@ public sealed class KultirasFaction : Faction
     RegisterFactionDependentInitializer<FrostwolfFaction>(RegisterDialogue);
     ProcessObjectInfo(KultirasObjectInfo.GetAllObjectLimits());
   }
+
+  /// <inheritdoc />
+  public string RoleplayIntroText => Loc.Format(
+    "You are playing as the maritime {faction}.\n\nThe mightiest fleet in the world rides at anchor in Boralus, and the Lord Admiral's word is law upon the seas.\n\nStormwind is preparing for an invasion through the Dark Portal. Muster the fleet and sail to the aid of Stormwind and Ironforge, your allies of the South Alliance.\n\nKeep an eye on the Lord Admiral's daughter, Jaina. Should she ever cast her lot in with the orcs, Daelin will not stay at anchor.",
+    ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Kul Tiras")}|r"));
 
   /// <inheritdoc />
   public override void OnRegistered()
