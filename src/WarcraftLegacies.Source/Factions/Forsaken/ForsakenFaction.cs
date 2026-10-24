@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Factions;
+using MacroTools.Quests;
 using MacroTools.Researches;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Forsaken.Researches;
+using WarcraftLegacies.Source.Factions.Gilneas;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Forsaken;
 
@@ -39,5 +42,17 @@ public sealed class ForsakenFaction : Faction
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     ForsakenSpells.Setup();
     ResearchManager.Register(new DarkRangers(UPGRADE_R108_DARK_RANGERS_FORSAKEN, DarkRangersCost));
+    RegisterFactionDependentInitializer<GilneasFaction>(RegisterGilneasQuest);
+  }
+
+  private void RegisterGilneasQuest(GilneasFaction gilneas)
+  {
+    if (!gilneas.FormedMidGame)
+    {
+      return;
+    }
+
+    var plagueOfGilneas = AddQuest(new QuestPlagueOfGilneas(AllLegends.Gilneas.GilneasCastle));
+    this.DisplayDiscovered(plagueOfGilneas, false);
   }
 }

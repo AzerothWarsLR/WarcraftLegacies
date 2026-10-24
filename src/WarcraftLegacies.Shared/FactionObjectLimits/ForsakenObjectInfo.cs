@@ -70,7 +70,7 @@ public static class ForsakenObjectInfo
     yield return new(UPGRADE_R109_RAVENOUS_HUNGER_FORSAKEN, Unlimited);
     yield return new(UPGRADE_R10A_DREAD_CHALLENGE_FORSAKEN, Unlimited);
     yield return new(UPGRADE_R10B_KEEN_SIGHT_FORSAKEN, Unlimited);
-    yield return new(UPGRADE_R10D_EPIDEMIC_FORSAKEN, Unlimited);
+    yield return new(UPGRADE_R10D_EPIDEMIC_FORSAKEN, 1);
     yield return new(UPGRADE_R10F_ECHOLOCATION_FORSAKEN, Unlimited);
   }
 }
