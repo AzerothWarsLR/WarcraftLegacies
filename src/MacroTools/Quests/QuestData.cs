@@ -227,6 +227,10 @@ public abstract class QuestData
     foreach (var objective in Objectives)
     {
       objective.EligibleFactions.Add(faction);
+    }
+
+    foreach (var objective in Objectives)
+    {
       objective.OnAdd(faction);
     }
 
