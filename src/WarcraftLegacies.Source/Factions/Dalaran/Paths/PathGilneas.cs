@@ -29,7 +29,7 @@ public abstract class PathGilneas : FactionPath
   protected override void OnTaken(Faction faction)
   {
     var whichPlayer = faction.Player;
-    _transformation.Execute(faction);
+    _transformation.Execute(faction, CanGoSolo);
     if (whichPlayer == null)
     {
       return;

@@ -54,6 +54,9 @@ public sealed class GilneasFaction : Faction
   /// <summary>Whether Gilneas is formed partway through the game, leaving the map's units where they are.</summary>
   public bool FormedMidGame { get; init; }
 
+  /// <summary>Whether Gilneas formed mid-game to stand alone, calling Goldrinn without the Druids.</summary>
+  public bool StandsAlone { get; init; }
+
   /// <inheritdoc />
   public override void OnRegistered()
   {
@@ -84,6 +87,12 @@ public sealed class GilneasFaction : Faction
     }
 
     AddQuest(new QuestCrowley());
+    if (StandsAlone)
+    {
+      AddQuest(new QuestWolfWithin(AllLegends.Gilneas.Tess, AllLegends.Gilneas.Goldrinn, AllLegends.Gilneas.ScytheOfElune,
+        AllLegends.Dalaran.Shadowfang));
+    }
+
     var sunwell = AllLegends.Quel.Sunwell.Unit;
     if (sunwell != null && sunwell.Alive)
     {
@@ -125,6 +134,11 @@ public sealed class GilneasFaction : Faction
 
   private void RegisterDruidsQuests(DruidsFaction druids)
   {
+    if (StandsAlone)
+    {
+      return;
+    }
+
     AddQuest(new QuestGoldrinn(AllLegends.Gilneas.Tess, AllLegends.Gilneas.Goldrinn, druids));
   }
 }

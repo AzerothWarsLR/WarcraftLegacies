@@ -108,7 +108,7 @@ public static class ArtifactManager
           }
 
           var artifactInSlot = GetFromTypeId(itemInSlot.TypeId);
-          if (artifactInSlot == null)
+          if (artifactInSlot == null || artifactInSlot.KeptOnDeath)
           {
             continue;
           }

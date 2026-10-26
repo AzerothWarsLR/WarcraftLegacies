@@ -2,14 +2,13 @@
 using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.GameLogic;
 
 namespace WarcraftLegacies.Source.Factions.Gilneas.Powers;
 
 /// <summary>At night Gilneas's worgen and wolves gain armor, attack speed and regeneration, more so while Gilneas stands alone.</summary>
 public sealed class CurseOfTheWorgen : Power
 {
-  private const float Dawn = 6;
-  private const float Dusk = 18;
   private const int AlliedLevel = 1;
   private const int AloneLevel = 2;
   private const int AloneLimitBonus = 2;
@@ -114,7 +113,7 @@ public sealed class CurseOfTheWorgen : Power
 
     SetLimitsRaised(curseLevel == AloneLevel);
 
-    var level = IsNight() ? curseLevel : 0;
+    var level = DayNight.IsNight() ? curseLevel : 0;
     var stillEmpowered = new List<unit>();
     if (level > 0)
     {
@@ -184,11 +183,5 @@ public sealed class CurseOfTheWorgen : Power
     {
       worgen.RemoveAbility(abilityId);
     }
-  }
-
-  private static bool IsNight()
-  {
-    var timeOfDay = GetFloatGameState(GAME_STATE_TIME_OF_DAY);
-    return timeOfDay >= Dusk || timeOfDay < Dawn;
   }
 }

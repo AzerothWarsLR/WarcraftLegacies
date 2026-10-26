@@ -88,6 +88,7 @@ public static class RoleplaySetting
     SetupNordrassilsSacrifice();
     SetupFelHorde();
     SetupPlagueEvent();
+    AllLegends.Gilneas.ScytheOfElune.KeptOnDeath = true;
     SetupIllidariPaths();
     FactionManager.FactionRegistered += _ => SetupIllidariPaths();
     foreach (var faction in FactionManager.GetAllFactions())
