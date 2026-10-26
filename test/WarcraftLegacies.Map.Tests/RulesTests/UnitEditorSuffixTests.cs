@@ -16,6 +16,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "DarkIron",
     "FallenPrince",
     "BansheesHost",
+    "BloodElves",
     "Nexus",
     "Draenei",
     "Druids",
