@@ -51,7 +51,8 @@ public sealed class QuestBehindTheWall : QuestData
       return;
     }
 
-    owner.Gold += _halfReward ? HalfGoldReward : FullGoldReward;
+    var gold = _halfReward ? HalfGoldReward : FullGoldReward;
+    owner.Gold += gold;
     var levels = _halfReward ? 0.5f : 1f;
     foreach (var hero in GlobalGroup.EnumUnitsOfPlayer(owner))
     {
