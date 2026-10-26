@@ -10,7 +10,7 @@ public sealed class PathGilneasGreymaneWall : PathGilneas
 {
   public PathGilneasGreymaneWall(GilneasTransformation transformation) : base(transformation)
   {
-    Name = "Gilneas: The Greymane Wall (Solo)";
+    Name = "Gilneas: The Greymane Wall Solo";
     Description = "Gilneas City is free, and Genn Greymane has bled enough for the Alliance's wars. He leaves the rest of Dalaran's lands to Lordaeron, seals the Greymane Wall and goes solo, trusting no one beyond it.";
     CanGoSolo = true;
     IntroTemplate =

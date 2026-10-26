@@ -178,7 +178,14 @@ public static class PathBase
   /// Brings <paramref name="whichPlayer"/>'s army to <paramref name="x"/>, <paramref name="y"/>, swapping units for
   /// their <paramref name="equivalents"/>. Ships stay where they are, and swaps beyond the player's limits are removed.
   /// </summary>
-  public static void RelocateArmy(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, float x, float y)
+  public static void RelocateArmy(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, float x, float y) =>
+    RelocateArmy(whichPlayer, equivalents, new[] { new Point(x, y) });
+
+  /// <summary>
+  /// Moves <paramref name="whichPlayer"/>'s army to the <paramref name="spots"/> in turn, so it lands in a few groups
+  /// instead of one block, swapping units for their <paramref name="equivalents"/> where there are any.
+  /// </summary>
+  public static void RelocateArmy(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, IReadOnlyList<Point> spots)
   {
     var faction = whichPlayer.GetPlayerData().Faction;
     var swappedCounts = new Dictionary<int, int>();
@@ -205,8 +212,10 @@ public static class PathBase
         swappedCounts[newType] = swappedCount + 1;
       }
 
-      var unitX = x - ArmySpacing * ArmyColumns / 2 + index % ArmyColumns * ArmySpacing;
-      var unitY = y + index / ArmyColumns * ArmySpacing;
+      var spot = spots[index % spots.Count];
+      var slot = index / spots.Count;
+      var unitX = spot.X - ArmySpacing * ArmyColumns / 2 + slot % ArmyColumns * ArmySpacing;
+      var unitY = spot.Y + slot / ArmyColumns * ArmySpacing;
       index++;
 
       if (hasEquivalent)
