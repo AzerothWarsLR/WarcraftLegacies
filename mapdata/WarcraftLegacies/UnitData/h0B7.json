@@ -68,7 +68,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R00C,R006"
+      "Value": "R00C,R006,R10I"
     },
     {
       "Id": "ureq",

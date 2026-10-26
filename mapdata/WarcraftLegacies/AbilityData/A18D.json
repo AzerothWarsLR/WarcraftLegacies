@@ -1,0 +1,34 @@
+{
+  "OldId": "AId1",
+  "NewId": "A18D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Idef",
+      "Value": 15
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Gilneas - Greymane's Gate)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Greymane Fortification"
+    }
+  ]
+}

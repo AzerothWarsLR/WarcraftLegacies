@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10C",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Marked"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Marked"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHunterMark.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been marked by Garran Vimes and takes increased damage from his allies."
+    }
+  ]
+}

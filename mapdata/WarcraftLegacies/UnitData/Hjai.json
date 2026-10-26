@@ -106,6 +106,11 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNjainahd.blp"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R10I"
     }
   ]
 }

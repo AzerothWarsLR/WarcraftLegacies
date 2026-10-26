@@ -1,0 +1,140 @@
+{
+  "OldId": "hmpr",
+  "NewId": "h0D0",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A10W,A18E,A18F,Aihn"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 1
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "uhpm",
+      "Value": 700
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhpm,Rhme,Rhar,R10G,Rguv,R10I"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEmissary.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Frost Bolt,- Frost Bolt|n- Summon Sea Elemental,- Frost Bolt|n- Summon Sea Elemental|n- Whirlpool"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Theramore)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "MageKulTirasV1_01.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Tidesage"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Tidesage"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Offensive caster."
+    },
+    {
+      "Id": "ucua",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGWaterBurst.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    }
+  ]
+}

@@ -9,9 +9,9 @@ namespace WarcraftLegacies.Source.Factions.Theramore;
 public sealed class TheramoreFaction : Faction
 {
   /// <inheritdoc />
-  public TheramoreFaction() : base("Theramore", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
+  public TheramoreFaction() : base("Theramore", playercolor.LightBlue, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
   {
-    TraditionalTeam = TeamSetup.NorthAlliance;
+    TraditionalTeam = TeamSetup.Horde;
     ControlPointDefenderUnitTypeId = UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
     StartingGold = new StartingGold
     {
@@ -28,5 +28,9 @@ public sealed class TheramoreFaction : Faction
   }
 
   /// <inheritdoc />
-  public override void OnRegistered() => SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  public override void OnRegistered()
+  {
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    TheramoreSpells.Setup();
+  }
 }

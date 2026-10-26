@@ -1,0 +1,655 @@
+{
+  "OldId": "ACav",
+  "NewId": "A18O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 1.0
+    },
+    {
+      "Level": 2,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 2.0
+    },
+    {
+      "Level": 4,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 5,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 5,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 5,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 2.5
+    },
+    {
+      "Level": 5,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 6,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 6,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 6,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 3.0
+    },
+    {
+      "Level": 6,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 7,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 7,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 7,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 3.5
+    },
+    {
+      "Level": 7,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 8,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 8,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 8,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 4.0
+    },
+    {
+      "Level": 8,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 9,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 9,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 9,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 4.5
+    },
+    {
+      "Level": 9,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 10,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 10,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 10,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 5.0
+    },
+    {
+      "Level": 10,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 11,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 11,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 11,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 5.5
+    },
+    {
+      "Level": 11,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 12,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 12,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 12,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 6.0
+    },
+    {
+      "Level": 12,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 13,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 13,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 13,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 6.5
+    },
+    {
+      "Level": 13,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 14,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 14,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 14,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 7.0
+    },
+    {
+      "Level": 14,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 15,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 15,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 15,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 7.5
+    },
+    {
+      "Level": 15,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 16,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 16,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 16,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 8.0
+    },
+    {
+      "Level": 16,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 17,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 17,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 17,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 8.5
+    },
+    {
+      "Level": 17,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 18,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 18,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 18,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 9.0
+    },
+    {
+      "Level": 18,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 19,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 19,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 19,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 9.5
+    },
+    {
+      "Level": 19,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 20,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 20,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 20,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 10.0
+    },
+    {
+      "Level": 20,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 21,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 21,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 21,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 10.5
+    },
+    {
+      "Level": 21,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 22,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 22,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 22,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 11.0
+    },
+    {
+      "Level": 22,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 23,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 23,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 23,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 11.5
+    },
+    {
+      "Level": 23,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 24,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 24,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B10B"
+    },
+    {
+      "Level": 24,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 12.0
+    },
+    {
+      "Level": 24,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Id": "alev",
+      "Value": 24
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Dummy - Theramore)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Hold the Line (Armor)"
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

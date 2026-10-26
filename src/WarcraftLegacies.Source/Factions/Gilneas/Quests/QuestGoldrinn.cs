@@ -19,9 +19,9 @@ public sealed class QuestGoldrinn : QuestData
     "The Worgen curse originated from Goldrinn, the embodiment of ferocity, savagery, and unyielding will. Traveling to Mount Hyjal we might contact the wolf god to help us against our curse.",
     @"ReplaceableTextures\CommandButtons\BTNWorgenHunger.blp")
   {
-    AddObjective(new ObjectiveLegendLevel(tess, 8));
+    AddObjective(new ObjectiveLegendLevel(tess, 7));
     AddObjective(new ObjectiveLegendInRect(tess, Regions.MountHyjal, "Mount Hyjal"));
-    ResearchId = UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD;
+    ResearchId = UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD_OR_THE_WOLF_WITHIN;
     _druids = druids;
     _goldrinn = goldrinn;
   }

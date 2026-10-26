@@ -36,6 +36,13 @@ public sealed class QuestTheramore : QuestData
     AddObjective(new ObjectiveUnitAlive(violetCitadel.Unit));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = theramoreRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    foreach (var rescueUnit in _rescueUnits)
+    {
+      if (rescueUnit.UnitType == UNIT_N0F1_THERAMORE_ISLE)
+      {
+        rescueUnit.IsVisible = true;
+      }
+    }
   }
 
   /// <inheritdoc />

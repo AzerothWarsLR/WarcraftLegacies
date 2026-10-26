@@ -11,6 +11,7 @@ using MacroTools.WorldEvents;
 using WarcraftLegacies.Source.Factions.Kultiras.Paths;
 using WarcraftLegacies.Source.Factions.Theramore;
 using WarcraftLegacies.Source.Factions.Theramore.Paths;
+using WarcraftLegacies.Source.Factions.Theramore.Quests;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -192,6 +193,13 @@ public sealed class DaelinsVengeanceEvent : WorldEvent
     }
 
     Outcome += " " + message;
+    TheramoreDialogue.SetupPleaToThrall();
+    var daelin = AllLegends.Kultiras.LegendAdmiral.Unit;
+    if (daelin != null && daelin.Alive)
+    {
+      theramore.DisplayDiscovered(theramore.AddQuest(new QuestDaughterOfTheSea(AllLegends.Kultiras.LegendAdmiral)), false);
+    }
+
     if (_warOver)
     {
       return;

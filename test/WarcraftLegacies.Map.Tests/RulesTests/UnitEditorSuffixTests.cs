@@ -38,6 +38,7 @@ public sealed class UnitEditorSuffixTests(MapTestFixture fixture)
     "Sunfury",
     "Wildhammer",
     "Stromgarde",
+    "Theramore",
     "Tauren",
     "Warsong",
     "Creep",

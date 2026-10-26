@@ -5,6 +5,7 @@ using WarcraftLegacies.Source.Factions.BansheesHost;
 using WarcraftLegacies.Source.Factions.FallenPrince;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Objectives.MetaBased;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions.Dalaran.Paths;
 
@@ -21,7 +22,7 @@ public sealed class PathTheramore : FactionPath
     _transformation = transformation;
     Name = "Theramore";
     IconName = "Jaina";
-    Description = "The north is lost. Jaina gathers what survivors she can and sails west across the sea, to build a new home for them on the shores of Kalimdor.";
+    Description = "The north is lost. Jaina gathers what survivors she can and sails west across the sea to build a new home on the shores of Kalimdor, where she makes peace with Thrall and joins the Horde.";
     _northBroken = new ObjectiveTriggered("The North Alliance is broken: the Fallen Prince or the Banshee's Host has risen");
     AddRequirement(new ObjectiveEitherOf(_northBroken, new ObjectiveCapitalDead(violetCitadel),
       "The Fallen Prince or the Banshee's Host has risen, or the Violet Citadel has fallen")
@@ -34,6 +35,12 @@ public sealed class PathTheramore : FactionPath
 
     FactionManager.FactionRegistered += CheckNorthBroken;
   }
+
+  /// <inheritdoc />
+  public override bool ChangesTeam => true;
+
+  /// <inheritdoc />
+  protected override Team? GetDestinationTeam(Faction faction) => TeamSetup.Horde;
 
   /// <inheritdoc />
   protected override void OnTaken(Faction faction) => _transformation.Execute(faction);

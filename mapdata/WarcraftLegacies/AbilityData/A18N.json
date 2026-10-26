@@ -1,0 +1,350 @@
+{
+  "OldId": "Abrf",
+  "NewId": "A18N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "H0D2"
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": "Eme4",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 1,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "H0D3"
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "H0D2"
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": "Eme4",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 2,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "H0D3"
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "H0D2"
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": "Eme4",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 3,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "H0D3"
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eme1",
+      "Type": 3,
+      "Value": "H0D2"
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": "Eme4",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Level": 4,
+      "Id": "Emeu",
+      "Type": 3,
+      "Value": "H0D3"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCeremonialSword.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Theramore - Garran Vimes)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Steel and Powder"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCeremonialSword.blp"
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Steel and Powder - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "auar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRifle01.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Draw Sword - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Draw Pistol - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Draw Sword - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Draw Pistol - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Draw Sword - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Draw Pistol - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Draw Sword - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aut1",
+      "Type": 3,
+      "Value": "Draw Pistol - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": "aubx",
+      "Value": 2
+    },
+    {
+      "Id": "auby",
+      "Value": 2
+    },
+    {
+      "Id": "auhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Garran draws his sword to fight in melee with bonus armor and hit points, his attacks healing him, or holsters it to fight with his pistol for bonus damage and attack speed.|n|n|cffffcc00Level 1|r - Sword attacks heal for 10% of the damage dealt.|n|cffffcc00Level 2|r - Sword attacks heal for 15% of the damage dealt.|n|cffffcc00Level 3|r - Sword attacks heal for 20% of the damage dealt.|n|cffffcc00Level 4|r - Sword attacks heal for 25% of the damage dealt."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Garran draws his sword, fighting in melee with bonus armor and hit points. His attacks heal him for 10% of the damage dealt."
+    },
+    {
+      "Level": 1,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Garran holsters his sword and draws his pistol, fighting at range with bonus damage and attack speed."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Garran draws his sword, fighting in melee with bonus armor and hit points. His attacks heal him for 15% of the damage dealt."
+    },
+    {
+      "Level": 2,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Garran holsters his sword and draws his pistol, fighting at range with bonus damage and attack speed."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Garran draws his sword, fighting in melee with bonus armor and hit points. His attacks heal him for 20% of the damage dealt."
+    },
+    {
+      "Level": 3,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Garran holsters his sword and draws his pistol, fighting at range with bonus damage and attack speed."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Garran draws his sword, fighting in melee with bonus armor and hit points. His attacks heal him for 25% of the damage dealt."
+    },
+    {
+      "Level": 4,
+      "Id": "auu1",
+      "Type": 3,
+      "Value": "Garran holsters his sword and draws his pistol, fighting at range with bonus damage and attack speed."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "OldId": "hfoo",
+  "NewId": "h0D9",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 2
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugor",
+      "Value": 14
+    },
+    {
+      "Id": "urtm",
+      "Value": 2
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhar,Rhme,R10I"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Theramore)"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1250
+    },
+    {
+      "Id": "udef",
+      "Value": 5
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": "ua1b",
+      "Value": 22
+    },
+    {
+      "Id": "ugol",
+      "Value": 28
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\ShipsDoctorKulTiras.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShipsDoctorKulTiras.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Footman"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.0
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h068"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A18U,ACce,Aihn"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bosun"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Bosun"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Hardy ship's officer who keeps the crew in line and draws enemy attacks onto himself."
+    }
+  ]
+}

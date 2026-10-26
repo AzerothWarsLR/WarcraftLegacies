@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.Quests;
@@ -24,12 +25,19 @@ public sealed class ObjectiveChannelRect : Objective
   private readonly rect _targetRect;
   private Channel? _channel;
   private bool _closed;
+  private timer? _conditionTimer;
 
   /// <summary>Fired when the hero starts channeling.</summary>
   public event Action? ChannelStarted;
 
   /// <summary>Fired when the channel ends, finished or not.</summary>
   public event Action? ChannelEnded;
+
+  /// <summary>
+  /// If set, the channel only starts while this is true and is interrupted when it stops being true; the hero can
+  /// already be waiting at the location.
+  /// </summary>
+  public Func<bool>? StartCondition { get; init; }
 
   /// <summary>Stops the current channel and prevents any new one from starting.</summary>
   public void Close()
@@ -74,12 +82,60 @@ public sealed class ObjectiveChannelRect : Objective
     Position = new(_targetRect.CenterX, _targetRect.CenterY);
   }
 
+  /// <inheritdoc />
+  public override void OnAdd(Faction whichFaction)
+  {
+    if (StartCondition == null)
+    {
+      return;
+    }
+
+    _conditionTimer = timer.Create();
+    _conditionTimer.Start(1, true, CheckCondition);
+  }
+
+  private void CheckCondition()
+  {
+    if (ProgressLocked)
+    {
+      _conditionTimer?.Dispose();
+      _conditionTimer = null;
+      return;
+    }
+
+    if (_channel != null)
+    {
+      if (!StartCondition!())
+      {
+        _channel.Interrupt();
+      }
+
+      return;
+    }
+
+    var whichUnit = _targetLegend.Unit;
+    if (whichUnit != null && whichUnit.X >= _targetRect.MinX && whichUnit.X <= _targetRect.MaxX &&
+        whichUnit.Y >= _targetRect.MinY && whichUnit.Y <= _targetRect.MaxY)
+    {
+      TryStartChannel(whichUnit);
+    }
+  }
+
   private void OnRegionEnter()
   {
     var whichUnit = @event.EnteringUnit;
-    if (_closed || !EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive ||
-        LegendaryHeroManager.GetFromUnit(@event.Unit) != _targetLegend || _channel != null ||
-        Progress != QuestProgress.Incomplete)
+    if (LegendaryHeroManager.GetFromUnit(@event.Unit) != _targetLegend)
+    {
+      return;
+    }
+
+    TryStartChannel(whichUnit);
+  }
+
+  private void TryStartChannel(unit whichUnit)
+  {
+    if (_closed || !EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive || _channel != null ||
+        Progress != QuestProgress.Incomplete || StartCondition != null && !StartCondition())
     {
       return;
     }

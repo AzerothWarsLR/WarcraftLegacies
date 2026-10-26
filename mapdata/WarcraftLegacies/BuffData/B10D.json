@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10D",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Curse of the Worgen"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Curse of the Worgen"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "The light of the moon has woken the curse in this unit\u0027s blood. It has increased armor, attack speed and health regeneration."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNworgen.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

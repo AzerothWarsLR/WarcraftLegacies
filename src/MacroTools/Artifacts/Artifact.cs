@@ -40,6 +40,9 @@ public sealed class Artifact
   /// </summary>
   public item Item { get; }
 
+  /// <summary>Whether the <see cref="Artifact" /> stays with its carrier when the carrier dies.</summary>
+  public bool KeptOnDeath { get; set; }
+
   /// <summary>
   ///   Describes the kind of location that the <see cref="Artifact" /> is in.
   /// </summary>
