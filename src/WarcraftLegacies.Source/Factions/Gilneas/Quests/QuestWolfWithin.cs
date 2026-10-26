@@ -41,7 +41,7 @@ public sealed class QuestWolfWithin : QuestData
       StartCondition = () => level.Progress == QuestProgress.Complete && hasScythe.Progress == QuestProgress.Complete &&
                              controlKeep.Progress == QuestProgress.Complete && night.Progress == QuestProgress.Complete
     });
-    ResearchId = UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD;
+    ResearchId = UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD_OR_THE_WOLF_WITHIN;
   }
 
   /// <inheritdoc/>

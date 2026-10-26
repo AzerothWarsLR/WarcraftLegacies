@@ -21,7 +21,7 @@ public sealed class QuestGoldrinn : QuestData
   {
     AddObjective(new ObjectiveLegendLevel(tess, 7));
     AddObjective(new ObjectiveLegendInRect(tess, Regions.MountHyjal, "Mount Hyjal"));
-    ResearchId = UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD;
+    ResearchId = UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD_OR_THE_WOLF_WITHIN;
     _druids = druids;
     _goldrinn = goldrinn;
   }
