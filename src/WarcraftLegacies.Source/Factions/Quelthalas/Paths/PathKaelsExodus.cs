@@ -6,7 +6,7 @@ using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas.Paths;
 
-/// <summary>With the Sunwell gone, Kael'thas leads the Blood Elves to Outland in search of a cure for their hunger.</summary>
+/// <summary>With the Sunwell lost, Kael'thas leads the Blood Elves to Outland in search of a cure for their hunger.</summary>
 public sealed class PathKaelsExodus : FactionPath
 {
   private readonly KaelsExodusTransformation _transformation;
@@ -18,8 +18,8 @@ public sealed class PathKaelsExodus : FactionPath
     _getDestination = getDestination;
     Name = "Kael's Exodus";
     IconName = "HeroBloodElfPrince";
-    Description = "The Sunwell is no more, and its loss gnaws at every elf of Quel'thalas. Prince Kael'thas renames his people the Blood Elves and leads the boldest of them through the Dark Portal to Tempest Keep, seeking a new source of power, while Lor'themar holds what remains of the homeland.";
-    AddRequirement(new ObjectiveCapitalDead(AllLegends.Quel.Sunwell) { ShowsInQuestLog = false });
+    Description = "The Sunwell has fallen, and its loss gnaws at every elf of Quel'thalas. Prince Kael'thas renames his people the Blood Elves, leaves the homeland to its old allies and leads them through the Dark Portal to Tempest Keep, seeking a new source of power.";
+    AddRequirement(new ObjectiveCapitalLost(AllLegends.Quel.Sunwell) { ShowsInQuestLog = false });
     CanGoSolo = true;
   }
 

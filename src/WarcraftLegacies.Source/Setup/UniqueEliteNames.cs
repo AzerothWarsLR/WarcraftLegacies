@@ -6,7 +6,7 @@ public static class UniqueEliteNames
 {
   public static Dictionary<int, List<string>> GetNames()
   {
-    return new Dictionary<int, List<string>>
+    var names = new Dictionary<int, List<string>>
     {
       [UNIT_H00F_PALADIN_LORDAERON] =
         new()
@@ -568,6 +568,8 @@ public static class UniqueEliteNames
           "Drak'eem"
         }
     };
+    names[UNIT_H0DH_BLOODWARDER_BLOODELVES] = names[UNIT_N0E7_BLOODWARDER_SUNFURY];
+    return names;
   }
 }
 

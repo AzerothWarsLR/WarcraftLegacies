@@ -52,7 +52,8 @@ public static class SunfurySpells
     }, new[]
     {
       UNIT_N0E7_BLOODWARDER_SUNFURY,
-      UNIT_N0E8_SKYSHIP_SUNFURY
+      UNIT_N0E8_SKYSHIP_SUNFURY,
+      UNIT_H0DH_BLOODWARDER_BLOODELVES
     });
   }
 }
