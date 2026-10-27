@@ -223,6 +223,9 @@ public static class Buffs
   public const int BUFF_B10A_MASS_SLEEP = 1110519873;
   public const int BUFF_B10F_ARCANE_HUNGER = 1110519878;
   public const int BUFF_B10G_ARCANE_BARRIER = 1110519879;
+  public const int BUFF_B10H_DARKENER_S_GAZE = 1110519880;
+  public const int BUFF_B10I_MARKED = 1110519881;
+  public const int BUFF_B10J_FEL_POISON = 1110519882;
   public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
   public const int BUFF_BEAH_THORNS_AURA = 1111843176;
   public const int BUFF_BEAR_TRUESHOT_AURA = 1111843186;

@@ -6,7 +6,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.BloodElves.Quests;
 
-/// <summary>Grow Arboretums in Netherstorm's eco-domes to feed the exiled Blood Elves.</summary>
+/// <summary>Grow Arboretums in Netherstorm's eco-domes to feed the elves exiled to Outland.</summary>
 public sealed class QuestEcoDomes : QuestData
 {
   private const int GoldReward = 300;
@@ -14,7 +14,7 @@ public sealed class QuestEcoDomes : QuestData
   private const string DomeArea = "in one of the 3 Eco-domes in Netherstorm";
 
   public QuestEcoDomes(Rectangle dome1, Rectangle dome2, Rectangle dome3) : base("Eco-domes",
-    "The Blood Elves must learn to live in the inhospitable Netherstorm. Its eco-domes, remnants of the verdant Farahlon, would make fine homes for growth facilities to feed our people.",
+    "Our people must learn to live in the inhospitable Netherstorm. Its eco-domes, remnants of the verdant Farahlon, would make fine homes for growth facilities to feed our people.",
     @"ReplaceableTextures\CommandButtons\BTNFeatherMoonAura.blp")
   {
     AddObjective(new ObjectiveUpgrade(UNIT_H0C5_SANCTUARY_SUNFURY_T3, UNIT_H02P_HOLDING_SUNFURY_T1));
@@ -26,7 +26,7 @@ public sealed class QuestEcoDomes : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    "The eco-domes bloom once more. With food secured, the Blood Elves can spread across Netherstorm.";
+    "The eco-domes bloom once more. With food secured, our people can spread across Netherstorm.";
 
   /// <inheritdoc />
   protected override string RewardDescription => Loc.Format(

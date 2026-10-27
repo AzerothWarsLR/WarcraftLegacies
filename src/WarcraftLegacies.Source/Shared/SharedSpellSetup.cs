@@ -2,6 +2,7 @@
 using MacroTools.Spells;
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Factions.Gilneas.Spells;
+using WarcraftLegacies.Source.Factions.Illidari.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 using WarcraftLegacies.Source.Shared.UnitTraits.Vengeance;
 
@@ -79,6 +80,18 @@ public static class SharedSpellSetup
       TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(warStompCairneMannorothTichondrius);
+
+    var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_AKAMA)
+    {
+      BaseDamage = 150,
+      DamagePerLevel = 50,
+      BlinkEffectPath = @"Abilities\Spells\NightElf\Blink\BlinkCaster.mdl",
+      ExecuteEffectPath = @"Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl",
+      DamageEffectPath = @"Abilities\Spells\Human\ThunderClap\ThunderClapCaster.mdl",
+      BaseExecuteThreshold = 0.25f,
+      ExecuteThresholdPerLevel = 0f
+    };
+    SpellRegistry.Register(shadowAssault);
 
     var vanish = new AddAbilityOnCast(ABILITY_ST9J_VANISH_TESS)
     {

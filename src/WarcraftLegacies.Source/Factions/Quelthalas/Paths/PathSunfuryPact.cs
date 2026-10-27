@@ -14,9 +14,9 @@ public sealed class PathSunfuryPact : FactionPath
   public PathSunfuryPact(SunfuryPactTransformation transformation)
   {
     _transformation = transformation;
-    Name = "The Sunfury";
+    Name = "The Sunfury: The Burning Legion";
     IconName = "FelKaelthas";
-    Description = "The Sunwell has fallen, and its loss gnaws at every elf of Quel'thalas. Prince Kael'thas, desperate to sate his people's hunger, swears himself to Kil'jaeden the Deceiver. Those who follow him become the Sunfury and leave for Tempest Keep, abandoning what remains of the homeland to the Alliance.";
+    Description = "The Sunwell has fallen, and its loss gnaws at every elf of Quel'thalas. Prince Kael'thas, desperate to sate his people's hunger, swears himself to Kil'jaeden the Deceiver. Those who follow him become the Sunfury and leave for Tempest Keep, abandoning what remains of the homeland to the Alliance and joining the Burning Legion.";
     AddRequirement(new ObjectiveCapitalLost(AllLegends.Quel.Sunwell) { ShowsInQuestLog = false });
   }
 

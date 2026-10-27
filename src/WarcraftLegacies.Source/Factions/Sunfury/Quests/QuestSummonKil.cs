@@ -19,7 +19,7 @@ public sealed class QuestSummonKil : QuestData
     AddObjective(new ObjectiveCapitalDead(stormwindKeep));
     AddObjective(new ObjectiveControlCapital(karazhan, false));
     AddObjective(new ObjectiveChannelRect(Regions.KilSummon, "Karazhan", kael, 180, 90, "Summoning Kil'jaeden"));
-    ResearchId = UPGRADE_R09J_QUEST_COMPLETED_THE_DECEIVER;
+    ResearchId = UPGRADE_R09J_QUEST_COMPLETED_THE_DECEIVER_OR_THE_FALL_OF_THE_SUNWELL;
   }
 
   /// <inheritdoc />

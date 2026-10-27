@@ -1,5 +1,4 @@
 ﻿using MacroTools.Spells;
-using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Factions.Illidari.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
 
@@ -15,18 +14,6 @@ public static class IllidariSpells
   /// </summary>
   public static void Setup()
   {
-    var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_AKAMA)
-    {
-      BaseDamage = 150,
-      DamagePerLevel = 50,
-      BlinkEffectPath = @"Abilities\Spells\NightElf\Blink\BlinkCaster.mdl",
-      ExecuteEffectPath = @"Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl",
-      DamageEffectPath = @"Abilities\Spells\Human\ThunderClap\ThunderClapCaster.mdl",
-      BaseExecuteThreshold = 0.25f,
-      ExecuteThresholdPerLevel = 0f
-    };
-    SpellRegistry.Register(shadowAssault);
-
     SpellRegistry.Register(new ShadowAssaultSpell(ABILITY_YBBS_BLINK_STRIKE_DEATHSWORN)
     {
       BaseDamage = 25,

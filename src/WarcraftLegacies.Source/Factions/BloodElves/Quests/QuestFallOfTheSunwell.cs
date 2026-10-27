@@ -1,6 +1,7 @@
 ﻿using MacroTools.Artifacts;
 using MacroTools.Factions;
 using MacroTools.Legends;
+using MacroTools.Localization;
 using MacroTools.Quests;
 using WarcraftLegacies.Source.Objectives.LegendBased;
 using WarcraftLegacies.Source.Shared;
@@ -19,7 +20,8 @@ public sealed class QuestFallOfTheSunwell : QuestData
   private readonly Capital _sunwell;
   private readonly Artifact _heartOfMuru;
 
-  public QuestFallOfTheSunwell(LegendaryHero kael, LegendaryHero kiljaeden, Capital sunwell, Artifact heartOfMuru) : base(
+  public QuestFallOfTheSunwell(LegendaryHero kael, LegendaryHero kiljaeden, Capital sunwell, Artifact heartOfMuru,
+    bool unlocksWarlocks = false) : base(
     "The Fall of the Sunwell",
     "The Heart of M'uru holds enough holy light to tear open the Sunwell. If Kael'thas carries it there, its power would destroy what remains of the well and open a gateway for Kil'jaeden himself.",
     @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
@@ -27,6 +29,11 @@ public sealed class QuestFallOfTheSunwell : QuestData
     _kiljaeden = kiljaeden;
     _sunwell = sunwell;
     _heartOfMuru = heartOfMuru;
+    if (unlocksWarlocks)
+    {
+      ResearchId = UPGRADE_R09J_QUEST_COMPLETED_THE_DECEIVER_OR_THE_FALL_OF_THE_SUNWELL;
+    }
+
     var level = new ObjectiveLegendLevel(kael, RequiredLevel);
     var hasHeart = new ObjectiveLegendHasArtifact(kael, heartOfMuru);
     AddObjective(level);
@@ -43,8 +50,12 @@ public sealed class QuestFallOfTheSunwell : QuestData
     "The heart of M'uru erupts in the depths of the Sunwell. What little remained of the well is consumed, and from the searing void it leaves behind, Kil'jaeden the Deceiver steps into Azeroth.";
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    "Gain control of Kil'jaeden at the Sunwell. The Sunwell is destroyed and the Heart of M'uru is consumed";
+  protected override string RewardDescription => ResearchId == 0
+    ? "Gain control of Kil'jaeden at the Sunwell. The Sunwell is destroyed and the Heart of M'uru is consumed"
+    : Loc.Format(
+      "Gain control of Kil'jaeden at the Sunwell, and learn to train {warlock}s from the {lyceum}. The Sunwell is destroyed and the Heart of M'uru is consumed",
+      ("{warlock}", GetObjectName(UNIT_N0E3_WARLOCK_SUNFURY)),
+      ("{lyceum}", GetObjectName(UNIT_H0CB_LYCEUM_ARCANUM_SUNFURY_MAGIC)));
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

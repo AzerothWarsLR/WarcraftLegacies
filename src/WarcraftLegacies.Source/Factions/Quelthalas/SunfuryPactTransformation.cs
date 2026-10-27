@@ -22,8 +22,8 @@ public sealed class SunfuryPactTransformation
     FactionTransition.AssignNewFaction(quelthalas, sunfury);
     sunfury.ModObjectLimit(UNIT_H098_SUNFURY_MASTERMIND_QUELTHALAS, -1);
     sunfury.ModObjectLimit(UNIT_U02V_HIGH_ASTROMANCER_SUNFURY, -1);
-    sunfury.ModObjectLimit(UNIT_H0CR_MAGISTER_SUNFURY, 1);
-    sunfury.ModObjectLimit(UNIT_H0CS_BETRAYER_OF_SILVERMOON_SUNFURY, 1);
+    sunfury.ModObjectLimit(UNIT_H0DQ_SUNFURY_ASSASSIN_SUNFURY, 1);
+    sunfury.ModObjectLimit(UNIT_H0DP_SUNFURY_CHAMPION_SUNFURY, 1);
 
     PathBase.RemoveHero(AllLegends.Quel.Anasterian);
     PathBase.RemoveHero(AllLegends.Quel.Rommath);
@@ -32,7 +32,12 @@ public sealed class SunfuryPactTransformation
 
     LeaveHomeland(whichPlayer);
     RelocateArmy(whichPlayer);
-    BuildBase(whichPlayer);
+    BuildTownBase(whichPlayer, UNIT_H0C5_SANCTUARY_SUNFURY_T3, UNIT_N09S_CENTURION_SUNFURY, UNIT_H0CF_BOWMAN_SUNFURY);
+    GiveOutposts(whichPlayer);
     PathBase.SummonLegend(AllLegends.Sunfury.Kael, whichPlayer, new Point(BaseX, BaseY + 400));
+    if (sunfury.IntroText != null)
+    {
+      whichPlayer.DisplayTextTo(sunfury.IntroText());
+    }
   }
 }

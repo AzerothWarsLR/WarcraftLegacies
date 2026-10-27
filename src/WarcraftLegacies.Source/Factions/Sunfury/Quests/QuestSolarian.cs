@@ -20,7 +20,7 @@ public sealed class QuestSolarian : QuestData
   {
     AddObjective(new ObjectiveAcquireArtifact(essence));
 
-    ResearchId = UPGRADE_R09K_QUEST_COMPLETED_THE_HIGH_ASTROMANCER;
+    ResearchId = UPGRADE_R09K_QUEST_COMPLETED_THE_HIGH_ASTROMANCER_OR_THE_SILENT_BLADE;
   }
 
   /// <inheritdoc />
