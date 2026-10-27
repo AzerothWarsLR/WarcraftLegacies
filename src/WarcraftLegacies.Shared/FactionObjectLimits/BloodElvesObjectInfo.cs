@@ -29,7 +29,7 @@ public static class BloodElvesObjectInfo
     yield return new(UNIT_H0DG_SCORPION_BLOODELVES, 6, Siege);
     yield return new(UNIT_H0DL_DRAGONHAWK_RIDER_BLOODELVES, 6, new List<UnitCategory> { Flyer, Support });
     yield return new(UPGRADE_R10J_CLOUD_BLOODELVES, Unlimited);
-    yield return new(UNIT_H0DH_BLOODWARDER_BLOODELVES, 6, new List<UnitCategory> { Elite, Destroyer, Summoner, Tank });
+    yield return new(UNIT_H0DH_SUNBLADE_MAGISTER_BLOODELVES, 6, new List<UnitCategory> { Elite, Destroyer, Support });
     yield return new(UNIT_H0DI_PRINCE_OF_QUEL_THALAS_BLOODELVES, 1, new List<UnitCategory> { Destroyer, Support });
     yield return new(UNIT_H04F_ARCHMAGE_QUELTHALAS, 1, Support);
     yield return new(UNIT_H0DJ_HIGH_ASTROMANCER_BLOODELVES, 1, new List<UnitCategory> { Destroyer, Marksman });

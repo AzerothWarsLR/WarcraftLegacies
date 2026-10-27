@@ -31,7 +31,8 @@ public sealed class KaelsExodusTransformation
 
     LeaveHomeland(whichPlayer);
     RelocateBloodElvesArmy(whichPlayer);
-    BuildBase(whichPlayer, UNIT_H0DB_CENTURION_BLOODELVES, UNIT_H0DC_BOWMAN_BLOODELVES);
+    BuildTownBase(whichPlayer, UNIT_H0C5_SANCTUARY_SUNFURY_T3, UNIT_H0DB_CENTURION_BLOODELVES, UNIT_H0DC_BOWMAN_BLOODELVES);
+    GiveOutposts(whichPlayer);
     PathBase.SummonLegend(AllLegends.Sunfury.Kael, whichPlayer, new Point(BaseX, BaseY + 400));
   }
 }

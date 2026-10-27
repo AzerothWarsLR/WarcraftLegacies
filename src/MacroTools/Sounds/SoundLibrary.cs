@@ -14,6 +14,8 @@ public static class SoundLibrary
 
   public static sound Discovered { get; private set; }
 
+  public static sound Error { get; private set; }
+
   public static void Setup()
   {
     Rescue = sound.CreateFromLabel("Rescue", false, false, false, 10000, 10000);
@@ -22,5 +24,6 @@ public static class SoundLibrary
     Failed = sound.CreateFromLabel("QuestFailed", false, false, false, 10000, 10000);
     Warning = sound.CreateFromLabel("Warning", false, false, false, 10000, 10000);
     Discovered = sound.CreateFromLabel("QuestNew", false, false, false, 10000, 10000);
+    Error = sound.CreateFromLabel("InterfaceError", false, false, false, 10, 10);
   }
 }

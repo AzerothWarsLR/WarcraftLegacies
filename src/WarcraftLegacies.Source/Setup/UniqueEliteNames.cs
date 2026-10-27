@@ -568,7 +568,19 @@ public static class UniqueEliteNames
           "Drak'eem"
         }
     };
-    names[UNIT_H0DH_BLOODWARDER_BLOODELVES] = names[UNIT_N0E7_BLOODWARDER_SUNFURY];
+    names[UNIT_H0DH_SUNBLADE_MAGISTER_BLOODELVES] = new()
+    {
+      "Magister Aerithas Sunflare",
+      "Magister Rhaelis Emberveil",
+      "Magister Elenaria Dawnspire",
+      "Magister Saelira Flamewhisper",
+      "Magister Valanna Brightcinder",
+      "Magister Ithria Sunstrand",
+      "Magister Keleth Ashenbloom",
+      "Magister Thalanya Goldflame",
+      "Magister Lyandra Pyrelight",
+      "Magister Sylrenna Duskfire"
+    };
     return names;
   }
 }

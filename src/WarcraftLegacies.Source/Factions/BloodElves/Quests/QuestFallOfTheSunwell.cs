@@ -44,7 +44,7 @@ public sealed class QuestFallOfTheSunwell : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "The Heart of M'uru is consumed, the Sunwell is destroyed, and Kil'jaeden is summoned at the Sunwell under your control";
+    "Gain control of Kil'jaeden at the Sunwell. The Sunwell is destroyed and the Heart of M'uru is consumed";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

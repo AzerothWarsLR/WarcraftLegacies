@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A12S,A12H,A0EK,A11N,A07C,A0GK,Aihn,A08P"
+      "Value": "A193,A194,A196,A07C,A0GK,Aihn,A08P"
     },
     {
       "Id": "ua1t",
@@ -35,7 +35,7 @@
     },
     {
       "Id": "udef",
-      "Value": 7
+      "Value": 2
     },
     {
       "Id": "udty",
@@ -44,7 +44,7 @@
     },
     {
       "Id": "ua1b",
-      "Value": 43
+      "Value": 30
     },
     {
       "Id": "ufoo",
@@ -60,15 +60,15 @@
     },
     {
       "Id": "uhpm",
-      "Value": 1200
+      "Value": 850
     },
     {
       "Id": "umpi",
-      "Value": 1100
+      "Value": 450
     },
     {
       "Id": "umpm",
-      "Value": 1100
+      "Value": 450
     },
     {
       "Id": "ua1z",
@@ -86,7 +86,7 @@
     {
       "Id": "umpr",
       "Type": 2,
-      "Value": 1
+      "Value": 1.25
     },
     {
       "Id": "uhrt",
@@ -117,12 +117,7 @@
     },
     {
       "Id": "ua1r",
-      "Value": 400
-    },
-    {
-      "Id": "udaa",
-      "Type": 3,
-      "Value": "A12Q"
+      "Value": 600
     },
     {
       "Id": "ubpx",
@@ -141,42 +136,42 @@
     {
       "Id": "ua1m",
       "Type": 3,
-      "Value": "war3mapImported\\BEGlaiveMissile.mdl"
+      "Value": "Units\\Human\\HeroBloodElf\\BloodElfBall.mdl"
     },
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Bloodwarder"
+      "Value": "Sunblade Magister"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Bloodwarder"
+      "Value": "Train Sunblade Magister"
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "The strongest lieutenants of Kael. Powerful versus magic users."
+      "Value": "Elite blood elf caster. Hurls spears of fire, wards allies against hostile spells, and feeds on the magic of nearby enemies."
     },
     {
       "Id": "usnd",
       "Type": 3,
-      "Value": ""
+      "Value": "Sorceress"
     },
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\EliteBloodElfSpellThief.mdl"
+      "Value": "war3mapImported\\HeroBloodMage2.mdl"
     },
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.9
+      "Value": 1
     },
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelf_Guard.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElfRanger_by67chrome.blp"
     }
   ]
 }

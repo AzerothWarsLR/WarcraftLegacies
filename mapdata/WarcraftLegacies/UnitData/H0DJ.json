@@ -40,7 +40,7 @@
     {
       "Id": "ustp",
       "Type": 2,
-      "Value": 1.9
+      "Value": 2.2
     },
     {
       "Id": "ugol",
@@ -71,7 +71,7 @@
     },
     {
       "Id": "ustr",
-      "Value": 9
+      "Value": 14
     },
     {
       "Id": "uagp",
@@ -173,6 +173,10 @@
     {
       "Id": "ubpy",
       "Value": 0
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
     }
   ]
 }

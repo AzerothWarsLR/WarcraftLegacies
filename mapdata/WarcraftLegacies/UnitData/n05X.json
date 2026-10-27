@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0L2"
+      "Value": "A0L2,A199"
     },
     {
       "Id": "ucol",
@@ -56,7 +56,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "n0E7,n0E2"
+      "Value": "n0E7,n0E2,h0DH"
     },
     {
       "Id": "utyp",

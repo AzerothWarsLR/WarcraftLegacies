@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Factions.BloodElves;
 public sealed class BloodElvesFaction : Faction
 {
   public BloodElvesFaction()
-    : base("Blood Elves", playercolor.Violet, @"ReplaceableTextures\CommandButtons\BTNHeroBloodElfPrince.blp")
+    : base("Blood Elves", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNHeroBloodElfPrince.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
     CinematicMusic = "BloodElfTheme";
@@ -39,6 +39,7 @@ public sealed class BloodElvesFaction : Faction
   {
     RegisterQuests();
     SunfurySpells.Setup();
+    BloodElvesSpells.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
 

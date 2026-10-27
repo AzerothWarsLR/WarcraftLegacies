@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A01Y,A06B,ACsi,A112"
+      "Value": "A01Y,A06B,ACsi,A112,A0GK"
     },
     {
       "Id": "udef",
@@ -149,7 +149,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.6
+      "Value": 1.9
     },
     {
       "Id": "unam",

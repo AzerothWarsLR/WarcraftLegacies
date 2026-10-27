@@ -4,8 +4,10 @@ using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
 using WarcraftLegacies.Source.Factions.Sunfury.Quests;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.Shared.Quests;
@@ -55,6 +57,11 @@ public sealed class SunfuryFaction : Faction
   /// <inheritdoc />
   public override void OnNotPicked()
   {
+    if (RoleplaySetting.IsActive)
+    {
+      SunfuryRelocation.HideOutposts();
+    }
+
     Regions.Area52Unlock.CleanupNeutralPassiveUnits();
     Regions.Netherstorm.CleanupNeutralPassiveUnits();
     Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();

@@ -1,0 +1,33 @@
+{
+  "OldId": "ANss",
+  "NewId": "A195",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "aite",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(BloodElves - Sunblade Magister) (Functional)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Arcane Barrier"
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    }
+  ]
+}

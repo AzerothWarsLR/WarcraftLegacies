@@ -1,0 +1,148 @@
+{
+  "OldId": "ANcl",
+  "NewId": "A193",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(BloodElves - Sunblade Magister)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Fire Spear"
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Ncl1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Ncl2",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Ncl3",
+      "Value": 17
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": "Ncl5",
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Ncl6",
+      "Type": 3,
+      "Value": "breathoffire"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "ground,air,enemy,neutral"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell,throw"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInferno.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fire Spear"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Hurls a spear of fire in a line, dealing 75 damage to each enemy unit it passes through and leaving a trail of burning ground that deals 15 damage per second to enemy units for 5 seconds, up to a total of 900 damage. Burning ground from several spears does not stack."
+    },
+    {
+      "Id": "acat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "aeat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 using MacroTools.UnitTraits;
 using WarcraftLegacies.Source.Factions.Sunfury.Spells;
 using WarcraftLegacies.Source.Shared.Spells;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Sunfury;
 
@@ -41,6 +42,22 @@ public static class SunfurySpells
     };
     SpellRegistry.Register(siphoningRitual);
 
+    SpellRegistry.Register(new TempestStormSpell(ABILITY_A199_TEMPEST_STORM_BLOODELVES_TEMPEST_KEEP)
+    {
+      Center = new Point(4118, -21702),
+      RadiusX = 533,
+      RadiusY = 494,
+      Duration = 25,
+      TickInterval = 1,
+      DamagePerTick = 40,
+      StormEffectPath = @"Doodads\Cinematic\EnergyField\EnergyField.mdl",
+      StormEffectScale = 1,
+      StormEffectSpacing = 300,
+      StormRed = 200,
+      StormGreen = 90,
+      StormBlue = 255
+    });
+
     UnitTypeTraitRegistry.Register(new RestoreManaFromDamage(ABILITY_A11N_ARCANE_ABSORPTION_SUNFURY_STORMWIND)
     {
       ManaPerDamage = new LeveledAbilityField<float>
@@ -52,8 +69,19 @@ public static class SunfurySpells
     }, new[]
     {
       UNIT_N0E7_BLOODWARDER_SUNFURY,
-      UNIT_N0E8_SKYSHIP_SUNFURY,
-      UNIT_H0DH_BLOODWARDER_BLOODELVES
+      UNIT_N0E8_SKYSHIP_SUNFURY
+    });
+
+    UnitTypeTraitRegistry.Register(new AutocastOnCreated(ORDER_FLAMING_ARROWS), new[]
+    {
+      UNIT_H0CE_BLOOD_KNIGHT_SQUIRE_SUNFURY,
+      UNIT_H0DF_BLOOD_KNIGHT_SQUIRE_BLOODELVES
+    });
+
+    UnitTypeTraitRegistry.Register(new AutocastOnCreated(ORDER_POISON_ARROWS), new[]
+    {
+      UNIT_H0CF_BOWMAN_SUNFURY,
+      UNIT_H0DC_BOWMAN_BLOODELVES
     });
   }
 }
