@@ -1,4 +1,5 @@
 ﻿using MacroTools.Factions;
+using WarcraftLegacies.Source.Factions.BloodElves;
 using WarcraftLegacies.Source.Factions.Sunfury;
 using WarcraftLegacies.Source.Shared;
 using WCSharp.Shared.Data;
@@ -39,5 +40,8 @@ public sealed class SunfuryPactTransformation
     {
       whichPlayer.DisplayTextTo(sunfury.IntroText());
     }
+
+    KaelDialogue.PlayPact(sunfury);
+    KaelDialogue.RegisterVashjMeeting();
   }
 }

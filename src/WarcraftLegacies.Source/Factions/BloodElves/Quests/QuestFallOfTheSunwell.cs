@@ -72,6 +72,8 @@ public sealed class QuestFallOfTheSunwell : QuestData
       var spot = Regions.Sunwell.Center;
       PathBase.SummonLegend(_kiljaeden, owner, new Point(spot.X, spot.Y - 200));
     }
+
+    KaelDialogue.PlayKiljaedenSummoned(completingFaction);
   }
 
   private void DestroySunwell()

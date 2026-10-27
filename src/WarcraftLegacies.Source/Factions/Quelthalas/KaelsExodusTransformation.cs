@@ -38,5 +38,8 @@ public sealed class KaelsExodusTransformation
     {
       whichPlayer.DisplayTextTo(bloodElves.IntroText());
     }
+
+    KaelDialogue.PlayExodus(bloodElves);
+    KaelDialogue.RegisterVashjMeeting();
   }
 }

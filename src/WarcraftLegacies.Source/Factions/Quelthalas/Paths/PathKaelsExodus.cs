@@ -1,7 +1,9 @@
 ﻿using System;
 using MacroTools.Factions;
 using MacroTools.Paths;
+using WarcraftLegacies.Source.Factions.BloodElves;
 using WarcraftLegacies.Source.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas.Paths;
@@ -30,5 +32,13 @@ public sealed class PathKaelsExodus : FactionPath
   protected override Team? GetDestinationTeam(Faction faction) => _getDestination();
 
   /// <inheritdoc />
-  protected override void OnTaken(Faction faction) => _transformation.Execute(faction);
+  protected override void OnTaken(Faction faction)
+  {
+    var joinsIllidan = _getDestination() != TeamSetup.Horde;
+    _transformation.Execute(faction);
+    if (joinsIllidan)
+    {
+      KaelDialogue.RegisterIllidanPledge();
+    }
+  }
 }
