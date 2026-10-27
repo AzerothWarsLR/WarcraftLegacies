@@ -20,8 +20,8 @@ public sealed class KaelsExodusTransformation
 
     var bloodElves = new BloodElvesFaction();
     FactionTransition.AssignNewFaction(quelthalas, bloodElves);
-    bloodElves.ModObjectLimit(UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS, 1);
-    bloodElves.SetObjectLevel(UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS, 1);
+    bloodElves.ModObjectLimit(UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_OR_CHAMPIONS_OF_SILVERMOON_QUEL_THALAS, 1);
+    bloodElves.SetObjectLevel(UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_OR_CHAMPIONS_OF_SILVERMOON_QUEL_THALAS, 1);
 
     PathBase.RemoveHero(AllLegends.Quel.Anasterian);
     PathBase.RemoveHero(AllLegends.Quel.Sylvanas);

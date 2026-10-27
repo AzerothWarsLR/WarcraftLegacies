@@ -20,7 +20,7 @@ public sealed class QuestQueensArchive : QuestData
   {
     AddObjective(new ObjectiveControlLevel(UNIT_N04Y_NAZJATAR, 8));
     AddObjective(new ObjectiveChannelRect(Regions.Nazjatar, "Nazjatar", rommath, 80, 270));
-    ResearchId = UPGRADE_R075_QUEST_COMPLETED_THE_QUEEN_S_ARCHIVE;
+    ResearchId = UPGRADE_R075_QUEST_COMPLETED_THE_QUEEN_S_ARCHIVE_OR_AZSHARA_S_FORBIDDEN_TOMES;
   }
 
   /// <inheritdoc />
