@@ -131,6 +131,20 @@ public static class PlayerDisplayExtensions
   }
 
   /// <summary>
+  /// Shows the player a yellow warning above their command card with the error sound, like the game's own "Must target a unit" warnings.
+  /// </summary>
+  public static void DisplayError(this player whichPlayer, string message)
+  {
+    if (player.LocalPlayer != whichPlayer)
+    {
+      return;
+    }
+
+    DisplayTimedTextToPlayer(whichPlayer, 0.52f, 0.96f, 2, $"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n|cffffcc00{message}|r");
+    SoundLibrary.Error.Start();
+  }
+
+  /// <summary>
   /// Pings the minimap using some sensible defaults.
   /// </summary>
   public static player PingMinimapSimple(this player whichPlayer, float x, float y, float duration, int red = 255,

@@ -24,7 +24,7 @@ public sealed class QuestTheBloodElves : QuestData
     @"ReplaceableTextures\CommandButtons\BTNHeroBloodElfPrince.blp")
 
   {
-    ResearchId = UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS;
+    ResearchId = UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_OR_CHAMPIONS_OF_SILVERMOON_QUEL_THALAS;
     AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
     AddObjective(new ObjectiveControlLevel(UNIT_N030_DRAK_THARON_KEEP, 10));
   }

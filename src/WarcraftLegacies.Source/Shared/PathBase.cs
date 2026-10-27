@@ -18,8 +18,7 @@ public static class PathBase
   private const float StructureSize = 256;
   private const float Facing = 270;
   private const int MaxNudges = 4;
-  private const float ArmySpacing = 150;
-  private const int ArmyColumns = 8;
+  private const float ArmySpacing = 120;
 
   private static readonly HashSet<int> _ships = new()
   {
@@ -178,11 +177,19 @@ public static class PathBase
   /// Brings <paramref name="whichPlayer"/>'s army to <paramref name="x"/>, <paramref name="y"/>, swapping units for
   /// their <paramref name="equivalents"/>. Ships stay where they are, and swaps beyond the player's limits are removed.
   /// </summary>
-  public static void RelocateArmy(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, float x, float y)
+  public static void RelocateArmy(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, float x, float y) =>
+    RelocateArmy(whichPlayer, equivalents, new[] { new Point(x, y) });
+
+  /// <summary>
+  /// Moves <paramref name="whichPlayer"/>'s army to the <paramref name="spots"/> in turn, so it lands in a few groups
+  /// instead of one block, swapping units for their <paramref name="equivalents"/> where there are any.
+  /// </summary>
+  public static void RelocateArmy(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, IReadOnlyList<Point> spots)
   {
     var faction = whichPlayer.GetPlayerData().Faction;
     var swappedCounts = new Dictionary<int, int>();
-    var index = 0;
+    var movers = new List<unit>();
+    var newTypes = new List<int>();
     foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
     {
       if (!whichUnit.Alive || whichUnit.IsUnitType(unittype.Structure) || !whichUnit.IsRemovable() ||
@@ -205,17 +212,31 @@ public static class PathBase
         swappedCounts[newType] = swappedCount + 1;
       }
 
-      var unitX = x - ArmySpacing * ArmyColumns / 2 + index % ArmyColumns * ArmySpacing;
-      var unitY = y + index / ArmyColumns * ArmySpacing;
-      index++;
+      movers.Add(whichUnit);
+      newTypes.Add(hasEquivalent ? newType : 0);
+    }
 
-      if (hasEquivalent)
+    var perSpot = (movers.Count + spots.Count - 1) / spots.Count;
+    var columns = 1;
+    while (columns * columns < perSpot)
+    {
+      columns++;
+    }
+
+    var rows = (perSpot + columns - 1) / columns;
+    for (var index = 0; index < movers.Count; index++)
+    {
+      var spot = spots[index % spots.Count];
+      var slot = index / spots.Count;
+      var unitX = spot.X + (slot % columns - (columns - 1) / 2f) * ArmySpacing;
+      var unitY = spot.Y + (slot / columns - (rows - 1) / 2f) * ArmySpacing;
+      if (newTypes[index] != 0)
       {
-        ReplaceUnit(whichUnit, whichPlayer, newType, unitX, unitY);
+        ReplaceUnit(movers[index], whichPlayer, newTypes[index], unitX, unitY);
       }
       else
       {
-        whichUnit.SetPosition(unitX, unitY);
+        movers[index].SetPosition(unitX, unitY);
       }
     }
   }

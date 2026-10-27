@@ -1,13 +1,12 @@
 ﻿using MacroTools.Factions;
-using MacroTools.Localization;
-using WarcraftLegacies.Source.Factions.Sunfury;
+using WarcraftLegacies.Source.Factions.BloodElves;
 using WarcraftLegacies.Source.Shared;
 using WCSharp.Shared.Data;
 using static WarcraftLegacies.Source.Factions.Quelthalas.SunfuryRelocation;
 
 namespace WarcraftLegacies.Source.Factions.Quelthalas;
 
-/// <summary>Turns Quel'thalas into the Blood Elves, led by Kael'thas from a new base beside Tempest Keep.</summary>
+/// <summary>Turns Quel'thalas into the Blood Elves, who leave their homeland to their old allies and follow Kael'thas to Tempest Keep.</summary>
 public sealed class KaelsExodusTransformation
 {
   /// <summary>Turns <paramref name="quelthalas"/>'s player into the Blood Elves.</summary>
@@ -19,19 +18,21 @@ public sealed class KaelsExodusTransformation
       return;
     }
 
-    var bloodElves = new SunfuryFaction();
+    var bloodElves = new BloodElvesFaction();
     FactionTransition.AssignNewFaction(quelthalas, bloodElves);
-    bloodElves.Name = Loc.Get("Blood Elves");
-    bloodElves.ModObjectLimit(UNIT_H098_SUNFURY_MASTERMIND_QUELTHALAS, -1);
-    bloodElves.ModObjectLimit(UNIT_H02E_REGENT_OF_QUEL_THALAS_QUELTHALAS_VASSAL, 1);
+    bloodElves.ModObjectLimit(UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_OR_CHAMPIONS_OF_SILVERMOON_QUEL_THALAS, 1);
+    bloodElves.SetObjectLevel(UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_OR_CHAMPIONS_OF_SILVERMOON_QUEL_THALAS, 1);
 
     PathBase.RemoveHero(AllLegends.Quel.Anasterian);
-    PathBase.RemoveHero(AllLegends.Quel.Rommath);
     PathBase.RemoveHero(AllLegends.Quel.Sylvanas);
+    PathBase.RemoveHero(AllLegends.Quel.Lorthemar);
+    AllLegends.Sunfury.Kael.UnitType = UNIT_H0DI_PRINCE_OF_QUEL_THALAS_BLOODELVES;
+    AllLegends.Sunfury.Solarian.UnitType = UNIT_H0DJ_HIGH_ASTROMANCER_BLOODELVES;
 
-    ConvertToSunfury(whichPlayer);
-    BuildBase(whichPlayer);
+    LeaveHomeland(whichPlayer);
+    RelocateBloodElvesArmy(whichPlayer);
+    BuildTownBase(whichPlayer, UNIT_H0C5_SANCTUARY_SUNFURY_T3, UNIT_H0DB_CENTURION_BLOODELVES, UNIT_H0DC_BOWMAN_BLOODELVES);
+    GiveOutposts(whichPlayer);
     PathBase.SummonLegend(AllLegends.Sunfury.Kael, whichPlayer, new Point(BaseX, BaseY + 400));
-    PathBase.SummonLegend(AllLegends.Quel.Lorthemar, whichPlayer, new Point(BaseX + 200, BaseY + 400));
   }
 }

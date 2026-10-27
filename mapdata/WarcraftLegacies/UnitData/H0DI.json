@@ -1,0 +1,162 @@
+{
+  "OldId": "Hkal",
+  "NewId": "H0DI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ua2t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A04H,A0FD,A0WH,A0FA"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "ua2z",
+      "Value": 900
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ua2r",
+      "Value": 600
+    },
+    {
+      "Id": "uwu2",
+      "Value": 0
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uaen",
+      "Value": 3
+    },
+    {
+      "Id": "usrg",
+      "Value": 0
+    },
+    {
+      "Id": "usma",
+      "Value": 1
+    },
+    {
+      "Id": "ustr",
+      "Value": 26
+    },
+    {
+      "Id": "uint",
+      "Value": 29
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.4
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A12Q"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv,Asph"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(BloodElves)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "uma2",
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": "ua2m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SerpentWardMissile\\SerpentWardMissile.mdl"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Kael\u0027thas Sunstrider"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Prince of Quel\u0027thalas"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Kael\u0027thas Sunstrider"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Mystical hero, adept at dealing magical damage."
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    }
+  ]
+}

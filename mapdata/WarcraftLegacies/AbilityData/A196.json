@@ -1,0 +1,64 @@
+{
+  "OldId": "AEev",
+  "NewId": "A196",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASMagicMix.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(BloodElves - Sunblade Magister)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Arcane Hunger"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Arcane Hunger"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Whenever an enemy unit casts a spell nearby, the Sunblade Magister feeds on its magic, restoring 15 mana and gaining a floating sphere. Each sphere increases the damage of her next Fire Spear by 15%, up to 3 spheres. The spheres fade after 8 seconds or when she casts Fire Spear."
+    }
+  ]
+}

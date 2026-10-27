@@ -21,6 +21,8 @@ using WarcraftLegacies.Source.Factions.Lordaeron;
 using WarcraftLegacies.Source.Factions.Lordaeron.Quests;
 using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Paths;
+using WarcraftLegacies.Source.Factions.Quelthalas;
+using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
 using WarcraftLegacies.Source.Factions.Scourge;
 using WarcraftLegacies.Source.Factions.Scourge.Events;
 using WarcraftLegacies.Source.Factions.Scourge.Paths;
@@ -104,6 +106,18 @@ public static class RoleplaySetting
     if (FactionManager.TryGetFactionByType<LordaeronFaction>(out var lordaeron))
     {
       RemoveQuest(lordaeron, lordaeron.GetQuestByType<QuestScarletCrusade>(), UPGRADE_R0XZ_THE_SCARLET_CRUSADE_LORDAERON_SCARLET);
+    }
+
+    if (FactionManager.TryGetFactionByType<QuelthalasFaction>(out var quelthalas))
+    {
+      quelthalas.RemoveQuest(quelthalas.GetQuestByType<QuestTheBloodElves>());
+      quelthalas.RemoveQuest(quelthalas.GetQuestByType<QuestQueensArchive>());
+      quelthalas.RemoveQuest(quelthalas.GetQuestByType<QuestForgottenKnowledge>());
+      quelthalas.AddQuest(new QuestChampionsOfSilvermoon(AllLegends.Neutral.DraktharonKeep));
+      quelthalas.AddQuest(new QuestAzsharasForbiddenTomes(AllLegends.Quel.Rommath));
+      quelthalas.AddQuest(new QuestRuinsOfSuramar());
+      quelthalas.SetObjectLimit(UNIT_N048_BLOOD_MAGE_QUELTHALAS, 0);
+      quelthalas.SetObjectLimit(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 0);
     }
   }
 

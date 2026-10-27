@@ -1,0 +1,80 @@
+{
+  "OldId": "rde3",
+  "NewId": "I0WH",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": "AIx5"
+    },
+    {
+      "Id": "icla",
+      "Type": 3,
+      "Value": "Artifact"
+    },
+    {
+      "Id": "idrp",
+      "Value": 1
+    },
+    {
+      "Id": "igol",
+      "Value": 250
+    },
+    {
+      "Id": "ihtp",
+      "Value": 500000
+    },
+    {
+      "Id": "ipaw",
+      "Value": 0
+    },
+    {
+      "Id": "isel",
+      "Value": 0
+    },
+    {
+      "Id": "istr",
+      "Value": 600
+    },
+    {
+      "Id": "isst",
+      "Value": 800
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAquaGem.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "ides",
+      "Type": 3,
+      "Value": "|cffffcc00Lore|r|n|cffffdeadThe heart of the naaru M\u0027uru, still pulsing with holy light. In the right hands, its power could open a gateway for something far darker."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Heart of M\u0027uru"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Heart of M\u0027uru"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases Strength, Agility and Intelligence by \u003CAIx5,DataA1\u003E.|n|cffffcc00Lore|r|n|cffffdeadThe heart of the naaru M\u0027uru, still pulsing with holy light. In the right hands, its power could open a gateway for something far darker."
+    }
+  ]
+}

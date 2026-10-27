@@ -139,6 +139,10 @@
     {
       "Id": "ubpy",
       "Value": 0
+    },
+    {
+      "Id": "uint",
+      "Value": 22
     }
   ]
 }

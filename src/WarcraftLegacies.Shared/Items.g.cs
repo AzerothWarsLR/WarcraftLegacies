@@ -51,6 +51,7 @@ public static class Items
   public const int ITEM_I028_BOW_OF_ELUNE_S_GRACE = 1227895352;
   public const int ITEM_I029_TINY_WAR_MILL = 1227895353;
   public const int ITEM_I0WG_WARGLAIVES_OF_AZZINOTH = 1227904839;
+  public const int ITEM_I0WH_HEART_OF_M_URU = 1227904840;
   public const int ITEM_ISGC_THE_SCARAB_GONG = 1230194499;
   public const int ITEM_IYGL_VAL_ANYR_HAMMER_OF_ANCIENT_KINGS = 1230587724;
   public const int ITEM_ZB07_FROSTMOURNE = 1514287159;

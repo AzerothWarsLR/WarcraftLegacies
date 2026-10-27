@@ -6,7 +6,7 @@ public static class UniqueEliteNames
 {
   public static Dictionary<int, List<string>> GetNames()
   {
-    return new Dictionary<int, List<string>>
+    var names = new Dictionary<int, List<string>>
     {
       [UNIT_H00F_PALADIN_LORDAERON] =
         new()
@@ -568,6 +568,20 @@ public static class UniqueEliteNames
           "Drak'eem"
         }
     };
+    names[UNIT_H0DH_SUNBLADE_MAGISTER_BLOODELVES] = new()
+    {
+      "Magister Aerithas Sunflare",
+      "Magister Rhaelis Emberveil",
+      "Magister Elenaria Dawnspire",
+      "Magister Saelira Flamewhisper",
+      "Magister Valanna Brightcinder",
+      "Magister Ithria Sunstrand",
+      "Magister Keleth Ashenbloom",
+      "Magister Thalanya Goldflame",
+      "Magister Lyandra Pyrelight",
+      "Magister Sylrenna Duskfire"
+    };
+    return names;
   }
 }
 

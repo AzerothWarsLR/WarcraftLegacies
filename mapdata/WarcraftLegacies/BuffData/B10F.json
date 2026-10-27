@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Arcane Hunger"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Fed on nearby enemy magic, restoring mana and increasing the damage of Fire Spear."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Arcane Hunger"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASMagicMix.blp"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ public sealed class QuestForgottenKnowledge : QuestData
   {
     AddObjective(new ObjectiveControlLevel(UNIT_N032_SURAMAR, 10));
     AddObjective(new ObjectiveTurn(18));
-    ResearchId = UPGRADE_R08Z_QUEST_COMPLETED_FORGOTTEN_KNOWLEDGE;
+    ResearchId = UPGRADE_R08Z_QUEST_COMPLETED_FORGOTTEN_KNOWLEDGE_OR_THE_RUINS_OF_SURAMAR;
   }
 
   /// <inheritdoc />
