@@ -23,11 +23,13 @@ public static class SunfuryRelocation
   /// <inheritdoc cref="BaseX"/>
   public const float BaseY = -22912;
 
-  private static readonly Point[] _bloodElvesArmySpots =
+  private static readonly Point[] _armySpots =
   {
     new(2500, -21550),
     new(2700, -22600)
   };
+
+  private const float ArmySpotClearRadius = 900;
 
   private static readonly List<unit> _outposts = new();
 
@@ -78,12 +80,35 @@ public static class SunfuryRelocation
     });
 
   /// <summary>Brings <paramref name="whichPlayer"/>'s army to the new base as Sunfury units.</summary>
-  public static void RelocateArmy(player whichPlayer) =>
-    PathBase.RelocateArmy(whichPlayer, ArmyEquivalents, BaseX, BaseY + 800);
+  public static void RelocateArmy(player whichPlayer)
+  {
+    ClearArmySpots();
+    PathBase.RelocateArmy(whichPlayer, ArmyEquivalents, _armySpots);
+  }
 
   /// <summary>Brings <paramref name="whichPlayer"/>'s army to the new base as Blood Elf units.</summary>
-  public static void RelocateBloodElvesArmy(player whichPlayer) =>
-    PathBase.RelocateArmy(whichPlayer, BloodElvesArmyEquivalents, _bloodElvesArmySpots);
+  public static void RelocateBloodElvesArmy(player whichPlayer)
+  {
+    ClearArmySpots();
+    PathBase.RelocateArmy(whichPlayer, BloodElvesArmyEquivalents, _armySpots);
+  }
+
+  /// <summary>Removes any creeps still standing where the army arrives.</summary>
+  private static void ClearArmySpots()
+  {
+    foreach (var spot in _armySpots)
+    {
+      foreach (var creep in GlobalGroup.EnumUnitsInRange(spot.X, spot.Y, ArmySpotClearRadius))
+      {
+        if (creep.Owner == player.NeutralAggressive && creep.Alive && !creep.IsUnitType(unittype.Structure) &&
+            creep.IsRemovable())
+        {
+          creep.DropAllItems();
+          creep.Dispose();
+        }
+      }
+    }
+  }
 
   /// <summary>Hides the Sunfury outposts at Tempest Keep, Area 52 and Upper Netherstorm so a path can hand them out later.</summary>
   public static void HideOutposts()
@@ -189,19 +214,6 @@ public static class SunfuryRelocation
   {
     var heir = GetHomelandHeir(out var equivalents);
     PathBase.HandOverStructures(whichPlayer, heir, equivalents);
-  }
-
-  /// <summary>Creates the new base beside Tempest Keep, guarded by Sunfury soldiers.</summary>
-  public static void BuildBase(player whichPlayer) =>
-    BuildBase(whichPlayer, UNIT_N09S_CENTURION_SUNFURY, UNIT_H0CF_BOWMAN_SUNFURY);
-
-  /// <summary>Creates the new base beside Tempest Keep, guarded by <paramref name="soldierType"/> and <paramref name="archerType"/>.</summary>
-  public static void BuildBase(player whichPlayer, int soldierType, int archerType)
-  {
-    BuildTownBase(whichPlayer, UNIT_H02P_HOLDING_SUNFURY_T1, soldierType, archerType);
-    PathBase.CreateStructure(whichPlayer, UNIT_N05X_TEMPEST_KEEP_QUELTHALAS_OTHER, 4480, -21696);
-    PathBase.CreateStructure(whichPlayer, UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST, 4192, -21344);
-    PathBase.CreateStructure(whichPlayer, UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE, 4064, -22048);
   }
 
   /// <summary>Creates the new <paramref name="hallType"/>, barracks and altar, guarded by <paramref name="soldierType"/> and <paramref name="archerType"/>.</summary>

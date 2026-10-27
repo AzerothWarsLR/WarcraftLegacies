@@ -4,6 +4,7 @@ using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Factions.BloodElves.Quests;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
 using WarcraftLegacies.Source.Factions.Sunfury.Quests;
@@ -35,9 +36,13 @@ public sealed class SunfuryFaction : Faction
     CinematicMusic = "BloodElfTheme";
     FoodMaximum = 250;
     ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
-    IntroText = () => Loc.Format(
-      "You are playing as the power-hungry {faction}.\n\nYou begin in Netherstorm. Your first mission is to build three biodomes in the green areas protected by a bubble.\n\nUnite with your fel ally to push through the Dark Portal and destroy Stormwind.\n\nYour ultimate goal is to summon Kil'jaeden and annihilate your enemies.",
-      ("{faction}", $"{PrefixCol}{Loc.Get("Sunfury")}|r"));
+    IntroText = RoleplaySetting.IsActive
+      ? () => Loc.Format(
+        "You are now playing as the {faction}.\n\nThe Sunwell has fallen, and its loss gnaws at every elf of Quel'thalas. Prince Kael'thas has sworn his people to Kil'jaeden the Deceiver and led them through the Dark Portal to Tempest Keep, leaving the homeland to the Alliance.\n\nClaim the power of Netherstorm and slay the naaru M'uru. With its heart, Kael'thas can return to the Sunwell and open the way for his new master.",
+        ("{faction}", $"{PrefixCol}{Loc.Get("Sunfury")}|r"))
+      : () => Loc.Format(
+        "You are playing as the power-hungry {faction}.\n\nYou begin in Netherstorm. Your first mission is to build three biodomes in the green areas protected by a bubble.\n\nUnite with your fel ally to push through the Dark Portal and destroy Stormwind.\n\nYour ultimate goal is to summon Kil'jaeden and annihilate your enemies.",
+        ("{faction}", $"{PrefixCol}{Loc.Get("Sunfury")}|r"));
     Nicknames = new List<string>
     {
       "sf",
@@ -57,9 +62,15 @@ public sealed class SunfuryFaction : Faction
   /// <inheritdoc />
   public override void OnNotPicked()
   {
+    var well = AllPreplacedWidgets.Units.Get(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER);
     if (RoleplaySetting.IsActive)
     {
       SunfuryRelocation.HideOutposts();
+      well.IsVisible = false;
+    }
+    else
+    {
+      well.Dispose();
     }
 
     Regions.Area52Unlock.CleanupNeutralPassiveUnits();
@@ -67,12 +78,17 @@ public sealed class SunfuryFaction : Faction
     Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();
     Regions.TempestKeep.CleanupNeutralPassiveUnits();
     Regions.SunfuryStartingPosition.CleanupNeutralPassiveUnits();
-    AllPreplacedWidgets.Units.Get(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Dispose();
     base.OnNotPicked();
   }
 
   private void RegisterQuests()
   {
+    if (RoleplaySetting.IsActive)
+    {
+      RegisterRoleplayQuests();
+      return;
+    }
+
     var newQuest =
       AddQuest(new QuestTempestKeep(Regions.TempestKeep, Regions.Biodome1, Regions.Biodome2, Regions.Biodome3));
     StartingQuest = newQuest;
@@ -84,6 +100,24 @@ public sealed class SunfuryFaction : Faction
       AllLegends.Sunfury.Kael));
     AddQuest(new QuestForgottenKnowledge());
     AddQuest(new QuestWellOfEternity(AllLegends.Sunfury.Kiljaeden));
+    AddSunwellVialQuest();
+  }
+
+  private void RegisterRoleplayQuests()
+  {
+    StartingQuest = AddQuest(new QuestEcoDomes(Regions.Biodome1, Regions.Biodome2, Regions.Biodome3));
+    AddQuest(new QuestForgottenKnowledge());
+    AddQuest(new QuestSilentBlade(Artifacts.EssenceofMurmur));
+    var heartOfMuru = new QuestHeartOfMuru();
+    AddQuest(heartOfMuru);
+    AddQuest(new QuestFallOfTheSunwell(AllLegends.Sunfury.Kael, AllLegends.Sunfury.Kiljaeden, AllLegends.Quel.Sunwell,
+      heartOfMuru.HeartOfMuru, true));
+    AddQuest(new QuestWellOfEternity(AllLegends.Sunfury.Kiljaeden));
+    AddSunwellVialQuest();
+  }
+
+  private void AddSunwellVialQuest()
+  {
     var sunwell = AllLegends.Quel.Sunwell.Unit;
     if (sunwell != null && sunwell.Alive)
     {

@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10H",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Darkener\u0027s Gaze"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Thaladred has fixed his gaze on this unit; it is revealed and takes bonus damage from his attacks."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Darkener\u0027s Gaze"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASDemonGaze.blp"
+    }
+  ]
+}

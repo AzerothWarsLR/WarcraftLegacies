@@ -1,0 +1,150 @@
+{
+  "OldId": "AEev",
+  "NewId": "A19F",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Sunfury - Thaladred)"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASDrainMana.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDrainMana.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Siphoning Strikes"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Siphoning Strikes - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Thaladred\u0027s attacks drain mana from their target and restore mana to Thaladred and your other units within 500 range.|n|n|cffffcc00Level 1|r - 4 mana for Thaladred, 1 for other units.|n|cffffcc00Level 2|r - 8 mana for Thaladred, 2 for other units.|n|cffffcc00Level 3|r - 12 mana for Thaladred, 3 for other units.|n|cffffcc00Level 4|r - 16 mana for Thaladred, 4 for other units."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Siphoning Strikes - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Siphoning Strikes - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Siphoning Strikes - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Siphoning Strikes - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Thaladred\u0027s attacks drain up to 4 mana from their target and restore 4 mana to Thaladred. Your other units within 500 range restore 1 mana."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Thaladred\u0027s attacks drain up to 8 mana from their target and restore 8 mana to Thaladred. Your other units within 500 range restore 2 mana."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Thaladred\u0027s attacks drain up to 12 mana from their target and restore 12 mana to Thaladred. Your other units within 500 range restore 3 mana."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Thaladred\u0027s attacks drain up to 16 mana from their target and restore 16 mana to Thaladred. Your other units within 500 range restore 4 mana."
+    }
+  ]
+}

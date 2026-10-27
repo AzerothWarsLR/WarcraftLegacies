@@ -289,25 +289,25 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Akama teleports behind the target unit and deals 200 damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault."
+      "Value": "Teleports behind the target unit and deals 200 damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault."
     },
     {
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Akama teleports behind the target unit and deals 300 damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault."
+      "Value": "Teleports behind the target unit and deals 250 damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault."
     },
     {
       "Level": 3,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Akama teleports behind the target unit and deals 400 damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault."
+      "Value": "Teleports behind the target unit and deals 300 damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault."
     },
     {
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Akama teleports behind the target unit and deals 500 damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault."
+      "Value": "Teleports behind the target unit and deals 350 damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault."
     },
     {
       "Id": "aart",
@@ -322,7 +322,7 @@
     {
       "Id": "arut",
       "Type": 3,
-      "Value": "Akama teleports behind the target unit and deals damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault.|n|n|cffffcc00Level 1|r - Deals 200 damage.|n|cffffcc00Level 2|r - Deals 300 damage.|n|cffffcc00Level 3|r - Deals 400 damage.|n|cffffcc00Level 4|r - Deals 500 damage."
+      "Value": "Teleports behind the target unit and deals damage. Non-hero units below 25% hit points are executed, refreshing Shadow Assault.|n|n|cffffcc00Level 1|r - Deals 200 damage.|n|cffffcc00Level 2|r - Deals 250 damage.|n|cffffcc00Level 3|r - Deals 300 damage.|n|cffffcc00Level 4|r - Deals 350 damage."
     }
   ]
 }

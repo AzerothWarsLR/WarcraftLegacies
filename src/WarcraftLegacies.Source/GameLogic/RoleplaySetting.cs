@@ -119,6 +119,9 @@ public static class RoleplaySetting
       quelthalas.SetObjectLimit(UNIT_N048_BLOOD_MAGE_QUELTHALAS, 0);
       quelthalas.SetObjectLimit(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 0);
     }
+
+    AllLegends.Quel.Sunwell.DeathMessage =
+      "The Sunwell has fallen. The fount that sustained the high elves for seven thousand years is gone, and a terrible hunger takes hold of every elf of Quel'thalas.";
   }
 
   private static void RemoveQuest(Faction faction, QuestData quest, int researchId)

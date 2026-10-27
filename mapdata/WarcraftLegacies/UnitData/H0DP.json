@@ -1,0 +1,196 @@
+{
+  "OldId": "Hpal",
+  "NewId": "H0DP",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A19A,A19C,A19F,A19G"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A12Q,A0GK,AInv"
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "ustr",
+      "Value": 24
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.6
+    },
+    {
+      "Id": "uagi",
+      "Value": 15
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.4
+    },
+    {
+      "Id": "uint",
+      "Value": 16
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.6
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElfLieutenant.blp"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodElfLieutenant.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Thaladred"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Thaladred"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Thaladred"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Sunfury)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\BloodElfSwordsmanAV2.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Sunfury Champion"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Thaladred the Darkener"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.25
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Warrior Hero, adept at leading the charge into enemy lines."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HighElfSwordsman"
+    },
+    {
+      "Id": "urq1",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "urq2",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A12Q"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 300
+    },
+    {
+      "Id": "ua1b",
+      "Value": 20
+    },
+    {
+      "Id": "umvs",
+      "Value": 250
+    }
+  ]
+}

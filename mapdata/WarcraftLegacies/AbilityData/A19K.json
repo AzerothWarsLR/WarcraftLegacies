@@ -1,0 +1,150 @@
+{
+  "OldId": "AEev",
+  "NewId": "A19K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Sunfury - Kagani)"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASToxicDagger.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNToxicDagger.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Fel-Tipped Blades"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Fel-Tipped Blades - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Kagani\u0027s attacks poison their target for 5 seconds, stacking up to 5 times. Each stack deals damage per second and reduces the target\u0027s attack speed by 4%.|n|n|cffffcc00Level 1|r - 2 damage per second per stack.|n|cffffcc00Level 2|r - 3 damage per second per stack.|n|cffffcc00Level 3|r - 4 damage per second per stack.|n|cffffcc00Level 4|r - 5 damage per second per stack."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fel-Tipped Blades - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fel-Tipped Blades - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fel-Tipped Blades - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Fel-Tipped Blades - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Kagani\u0027s attacks poison their target, stacking up to 5 times. Each stack deals 2 damage per second and reduces the target\u0027s attack speed by 4%.|nLasts 5 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Kagani\u0027s attacks poison their target, stacking up to 5 times. Each stack deals 3 damage per second and reduces the target\u0027s attack speed by 4%.|nLasts 5 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Kagani\u0027s attacks poison their target, stacking up to 5 times. Each stack deals 4 damage per second and reduces the target\u0027s attack speed by 4%.|nLasts 5 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Kagani\u0027s attacks poison their target, stacking up to 5 times. Each stack deals 5 damage per second and reduces the target\u0027s attack speed by 4%.|nLasts 5 seconds."
+    }
+  ]
+}

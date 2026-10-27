@@ -9,8 +9,8 @@ public sealed class SunfuryLegends
   public LegendaryHero Kael { get; }
   public LegendaryHero Kiljaeden { get; }
   public LegendaryHero Pathaleon { get; }
-  public LegendaryHero Selin { get; }
-  public LegendaryHero DarKhan { get; }
+  public LegendaryHero Kagani { get; }
+  public LegendaryHero Thaladred { get; }
   public Capital WellOfEternity { get; }
 
   public SunfuryLegends()
@@ -34,14 +34,14 @@ public sealed class SunfuryLegends
       StartingXp = 1800
     };
 
-    Selin = new LegendaryHero("Selin Fireheart")
+    Kagani = new LegendaryHero("Kagani Nightstrike")
     {
-      UnitType = UNIT_H0CR_MAGISTER_SUNFURY
+      UnitType = UNIT_H0DQ_SUNFURY_ASSASSIN_SUNFURY
     };
 
-    DarKhan = new LegendaryHero("Dar'Khan Drathir")
+    Thaladred = new LegendaryHero("Thaladred the Darkener")
     {
-      UnitType = UNIT_H0CS_BETRAYER_OF_SILVERMOON_SUNFURY
+      UnitType = UNIT_H0DP_SUNFURY_CHAMPION_SUNFURY
     };
 
     Kael = new LegendaryHero("Kael'thas Sunstrider")
@@ -63,8 +63,8 @@ public sealed class SunfuryLegends
   {
     LegendaryHeroManager.Register(Solarian);
     LegendaryHeroManager.Register(Pathaleon);
-    LegendaryHeroManager.Register(Selin);
-    LegendaryHeroManager.Register(DarKhan);
+    LegendaryHeroManager.Register(Kagani);
+    LegendaryHeroManager.Register(Thaladred);
     LegendaryHeroManager.Register(Kiljaeden);
     LegendaryHeroManager.Register(Kael);
     CapitalManager.Register(WellOfEternity);
