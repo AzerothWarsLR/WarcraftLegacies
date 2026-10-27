@@ -90,12 +90,12 @@
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNBloodElfSorceress.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBESorceress_Icon.blp"
     },
     {
       "Id": "ussi",
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNBloodElfSorceress.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBESorceress_Icon.blp"
     },
     {
       "Id": "uawt",
