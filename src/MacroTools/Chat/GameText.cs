@@ -128,12 +128,17 @@ public static class GameText
     {
       if (s[i] == '|' && i + 1 < s.Length)
       {
-        switch (s[i + 1])
+        var code = s[i + 1];
+        if (code == 'c')
         {
-          case 'c':
-            i += 10; continue;
-          case 'r':
-            i += 2; continue;
+          i += 10;
+          continue;
+        }
+
+        if (code == 'r')
+        {
+          i += 2;
+          continue;
         }
       }
       total += CharWidth(s[i]);
