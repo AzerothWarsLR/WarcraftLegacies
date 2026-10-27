@@ -121,7 +121,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Shields a target friendly unit with an arcane barrier that blocks the next negative spell cast on it. Lasts 20 seconds. Each unit can only be shielded once every 30 seconds."
+      "Value": "Shields a target friendly unit with an arcane barrier that blocks the next negative spell cast on it. Each unit can only be shielded once every 30 seconds.|nLasts 20 seconds."
     },
     {
       "Id": "acat",

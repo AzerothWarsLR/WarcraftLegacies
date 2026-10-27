@@ -130,7 +130,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Fills the barrier around Tempest Keep with arcane lightning for 25 seconds, dealing 40 damage per second to enemy units inside."
+      "Value": "Fills the barrier around Tempest Keep with arcane lightning, dealing 40 damage per second to enemy units inside.|nLasts 25 seconds."
     }
   ]
 }

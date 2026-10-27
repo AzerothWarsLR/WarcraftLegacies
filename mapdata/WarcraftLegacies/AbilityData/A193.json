@@ -127,7 +127,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Hurls a spear of fire in a line, dealing 75 damage to each enemy unit it passes through and leaving a trail of burning ground that deals 15 damage per second to enemy units for 5 seconds, up to a total of 900 damage. Burning ground from several spears does not stack."
+      "Value": "Hurls a spear of fire in a line, dealing 75 damage to each enemy unit it passes through and leaving a trail of burning ground that deals 15 damage per second to enemy units, up to a total of 900 damage. Burning ground from several spears does not stack.|nThe burning ground lasts 5 seconds."
     },
     {
       "Id": "acat",
