@@ -229,9 +229,9 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
     ResearchManager.RegisterIncompatibleSet(flamethrower, artillery);
 
     var darkIronFlamethrower = new Flamethrower(UPGRADE_R10K_FLAMETHROWER_DARKIRON, UNIT_H0AA_MAGMA_TANK_DARKIRON,
-      UNIT_H0EC_FLAME_TANK_DARKIRON, 0);
+      UNIT_H0EC_FLAME_TANK_DARKIRON, 150);
     var darkIronArtillery = new Artillery(UPGRADE_R10L_ARTILLERY_DARKIRON, UNIT_H0AA_MAGMA_TANK_DARKIRON,
-      UNIT_H0ED_WAR_TANK_DARKIRON, 0);
+      UNIT_H0ED_WAR_TANK_DARKIRON, 150);
     ResearchManager.RegisterIncompatibleSet(darkIronFlamethrower, darkIronArtillery);
   }
 }
