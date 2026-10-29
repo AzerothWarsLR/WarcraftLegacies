@@ -34,7 +34,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Uses fragmentation mortars to increase damage dealt to Unarmored and Medium armor units. Deals <Afsh,DataC1> extra damage to primary target, <Afsh,DataD1> in medium AOE and <Afsh,DataE1> in large AOE."
+      "Value": "Uses fragmentation mortars to increase damage dealt to Unarmored and Medium armor units. Deals <A1AT,DataC1> extra damage to primary target, <A1AT,DataD1> in medium AOE and <A1AT,DataE1> in large AOE."
     },
     {
       "Id": "areq",

@@ -20,7 +20,7 @@ public sealed class QuestDrownedFleet : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    "Boralus lies in ruins and its treasury is carried off to Shadowforge City. Kul Tiras will not rule the waves again.";
+    "Boralus lies in ruins, and its treasury has been carried off to Shadowforge City.";
 
   /// <inheritdoc />
   protected override string RewardDescription => Loc.Format("Gain {gold} gold", ("{gold}", GoldReward.ToString()));

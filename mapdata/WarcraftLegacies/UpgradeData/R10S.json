@@ -66,7 +66,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Allows Steam Tanks to Overclock, causing them to attack <A0F5,DataB1,%>% faster but take <A0F5,DataC1,%>% more damage for <A0F5,Dur1> seconds."
+      "Value": "Allows Magma Tanks, Flame Tanks and War Tanks to Overclock, causing them to attack <A1AP,DataB1,%>% faster but take <A1AP,DataC1,%>% more damage for <A1AP,Dur1> seconds."
     }
   ]
 }

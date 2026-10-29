@@ -61,7 +61,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Equips Dwarven Warriors and Thanes with mithril plating, reducing incoming damage from attacks by <A02O,DataC1> for Dwarven Warriors and <VP20,DataC1> for Thanes."
+      "Value": "Equips Warriors and Anvilrage Guardsmen with mithril plating, reducing incoming damage from attacks by <A1AN,DataC1>."
     }
   ]
 }

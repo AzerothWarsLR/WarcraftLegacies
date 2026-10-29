@@ -19,7 +19,7 @@ public sealed class QuestThaurissansVengeance : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    "Stormwind burns, and its steel is hauled down into the forges beneath Blackrock Mountain. Our war machines run hotter than ever.";
+    "Stormwind burns, and its steel has been hauled down to the forges beneath Blackrock Mountain.";
 
   /// <inheritdoc />
   protected override string RewardDescription => Loc.Format(

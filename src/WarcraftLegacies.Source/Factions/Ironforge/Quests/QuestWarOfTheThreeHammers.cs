@@ -37,7 +37,7 @@ public sealed class QuestWarOfTheThreeHammers : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    "Aerie Peak has fallen and the last of the three hammers is broken. Dark Iron banners rise over the Hinterlands, and the gryphon roosts make fine nests for our wyrms.";
+    "Aerie Peak has fallen and the last of the three hammers is broken. The Hinterlands now belong to the Dark Iron, and our wyrms take over the gryphon roosts.";
 
   /// <inheritdoc />
   protected override string RewardDescription => Loc.Format(

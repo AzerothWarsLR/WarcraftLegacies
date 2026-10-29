@@ -24,7 +24,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Launches a Dwarven flare above a target point, which reveals that area for <Afla,Dur1> seconds. |nReveals invisible units.|n|n|cffffcc00120 second cooldown."
+      "Value": "Launches a Dwarven flare above a target point, which reveals that area for <A1AS,Dur1> seconds. |nReveals invisible units.|n|n|cffffcc00120 second cooldown."
     },
     {
       "Id": "areq",

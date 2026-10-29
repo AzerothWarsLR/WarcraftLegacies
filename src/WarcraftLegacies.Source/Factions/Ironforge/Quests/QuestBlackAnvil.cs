@@ -21,7 +21,7 @@ public sealed class QuestBlackAnvil : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    "The Black Anvil burns once more. Its flames call out to the Firelands, and something deep below answers.";
+    "The Black Anvil burns once more, and its flames reach into the Firelands.";
 
   /// <inheritdoc />
   protected override string RewardDescription => "Unlocks the quest The Firelord Unbound";

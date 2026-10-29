@@ -89,7 +89,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Causes this unit to attack <A0F5,DataB1,%>% faster, but take <A0F5,DataC1,%>% more damage for <A0F5,Dur1> seconds.|n<A0F5,Cool1> second cooldown."
+      "Value": "Causes this unit to attack <A1AP,DataB1,%>% faster, but take <A1AP,DataC1,%>% more damage for <A1AP,Dur1> seconds.|n<A1AP,Cool1> second cooldown."
     }
   ]
 }

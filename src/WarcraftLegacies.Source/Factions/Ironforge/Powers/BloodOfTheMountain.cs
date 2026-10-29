@@ -8,7 +8,7 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.Powers;
 
-/// <summary>Dark Iron units fighting in Khaz Modan, the Wetlands, Grim Batol or Blackrock gain armor and damage, more so while the Dark Iron stand alone.</summary>
+/// <summary>Dark Iron units fighting on their home ground gain armor and damage, more so while the Dark Iron stand alone.</summary>
 public sealed class BloodOfTheMountain : Power
 {
   private const int AlliedLevel = 1;

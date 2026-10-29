@@ -39,7 +39,7 @@ public sealed class QuestFirelordUnbound : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    "Blackrock Mountain erupts as Ragnaros, the Firelord, tears his way into Azeroth. This time, he burns for the Dark Iron.";
+    "Blackrock Mountain erupts as Ragnaros tears his way into Azeroth, bound to serve the Dark Iron.";
 
   /// <inheritdoc />
   protected override string RewardDescription =>
@@ -62,7 +62,7 @@ public sealed class QuestFirelordUnbound : QuestData
     foreach (var whichPlayer in Util.EnumeratePlayers())
     {
       whichPlayer.DisplayLegendaryHeroSummoned(_ragnaros,
-        "Ragnaros, the Elemental Lord of Fire, has been called forth by the Dark Iron. Blackrock Mountain erupts as the Firelord marches beneath their banners.");
+        "Ragnaros, the Elemental Lord of Fire, has been summoned by the Dark Iron.");
     }
   }
 }

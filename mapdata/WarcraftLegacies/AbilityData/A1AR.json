@@ -84,7 +84,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals <VP09,DataB1> damage to summoned units.|r"
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals <A1AR,DataB1> damage to summoned units.|r"
     },
     {
       "Level": 2,

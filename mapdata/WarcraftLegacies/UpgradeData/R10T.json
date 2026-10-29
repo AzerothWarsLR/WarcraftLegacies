@@ -95,7 +95,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Causes Riflemen to deal <A0F4,DataB1,%>% increased damage to units with Heavy armor."
+      "Value": "Causes Riflemen and Anvilrage Reservists to deal <A1AO,DataB1,%>% increased damage to units with Heavy armor."
     }
   ]
 }

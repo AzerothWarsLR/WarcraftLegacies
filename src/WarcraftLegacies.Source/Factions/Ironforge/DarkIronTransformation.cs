@@ -142,10 +142,7 @@ public sealed class DarkIronTransformation
   private static bool IsStillInGame(Faction faction) =>
     faction.Player != null && faction.ScoreStatus == ScoreStatus.Undefeated && faction.Player.GetPlayerData().Faction == faction;
 
-  /// <summary>
-  /// Takes Grim Batol from whichever creeps hold it, unless a faction already does, and swaps the creep buildings
-  /// around it for Dark Iron ones.
-  /// </summary>
+  /// <summary>Takes Grim Batol from the creeps holding it and swaps their buildings for Dark Iron ones.</summary>
   private static void ClaimGrimBatol(player whichPlayer)
   {
     var grimBatol = AllLegends.Neutral.GrimBatol.Unit;

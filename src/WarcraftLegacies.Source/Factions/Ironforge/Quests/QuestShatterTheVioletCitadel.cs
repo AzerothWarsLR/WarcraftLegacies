@@ -19,7 +19,7 @@ public sealed class QuestShatterTheVioletCitadel : QuestData
 
   /// <inheritdoc />
   public override string RewardFlavour =>
-    "The Violet Citadel lies shattered. From its broken vaults, Moira draws out forbidden shadow lore.";
+    "The Violet Citadel lies shattered, and Moira has claimed the shadow lore hidden in its vaults.";
 
   /// <inheritdoc />
   protected override string RewardDescription => Loc.Format(
