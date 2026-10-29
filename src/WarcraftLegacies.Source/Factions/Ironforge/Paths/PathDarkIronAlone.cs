@@ -1,12 +1,15 @@
-﻿namespace WarcraftLegacies.Source.Factions.Ironforge.Paths;
+﻿using WarcraftLegacies.Source.Factions.Ironforge.Quests;
 
-/// <summary>The Dark Iron rule from Shadowforge City and answer to no one.</summary>
+namespace WarcraftLegacies.Source.Factions.Ironforge.Paths;
+
+/// <summary>The Dark Iron rule Khaz Modan from Ironforge and answer to no one.</summary>
 public sealed class PathDarkIronAlone : PathDarkIron
 {
-  public PathDarkIronAlone(DarkIronTransformation transformation) : base(transformation)
+  public PathDarkIronAlone(DarkIronTransformation transformation, QuestDarkIron darkIronAlliance)
+    : base(transformation, darkIronAlliance)
   {
     Name = "The Dark Iron: Alone";
-    Description = "The Great Forge has gone cold and Magni is dead. Dagran Thaurissan and Moira claim what is left of the dwarves for the Dark Iron and rule from Shadowforge City and Grim Batol, bowing to neither the Alliance nor the Legion. The rest of Khaz Modan is left to the Alliance.";
+    Description = "The Dark Iron have returned to the fold, but not as subjects. Moira Thaurissan, Magni's own daughter and Dagran's queen, claims the throne of Ironforge, and all of Khaz Modan and Grim Batol answer to the Dark Iron. They bow to neither the Alliance nor the Legion. Magni, Muradin and Falstad will not serve her.";
     CanGoSolo = true;
   }
 }

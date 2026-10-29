@@ -479,6 +479,24 @@ public static class UniqueEliteNames
           "Thorgas Broadaxe",
           "Thurin Stormbreaker"
         },
+      [UNIT_H0EB_DARK_IRON_THANE_DARKIRON_ELITE] =
+        new()
+        {
+          "Anger'rel",
+          "Doom'rel",
+          "Dope'rel",
+          "Fineous Darkvire",
+          "Gloom'rel",
+          "Haterel",
+          "Hurley Blackbreath",
+          "Overseer Maltorius",
+          "Plugger Spazzring",
+          "Ribbly Screwspigot",
+          "Seeth'rel",
+          "Verek Ironbrand",
+          "Vile'rel",
+          "Warder Stilgiss"
+        },
       [UNIT_N07G_MUSKETEER_KULTIRAS] =
         new()
         {

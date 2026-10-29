@@ -2,14 +2,15 @@
 using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Ironforge.Paths;
-using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.Factions.Ironforge.Quests;
 
 namespace WarcraftLegacies.Source.Cheats;
 
 /// <summary>
-/// Destroys the Great Forge so the Dark Iron paths open. Run by anyone but Ironforge, it also makes Ironforge take one.
+/// Completes the Dark Iron Alliance quest so the Dark Iron paths open. Run by anyone but Ironforge, it also makes Ironforge take one.
 /// </summary>
 public sealed class CheatTestDarkIron : Command
 {
@@ -24,7 +25,7 @@ public sealed class CheatTestDarkIron : Command
 
   /// <inheritdoc />
   public override string Description =>
-    "Destroys the Great Forge so the Dark Iron paths open. Run as another faction, Ironforge also takes The Dark Iron: The Burning Legion, or Alone with \"alone\".";
+    "Completes the Dark Iron Alliance quest so the Dark Iron paths open. Run as another faction, Ironforge also takes The Dark Iron: The Burning Legion, or Alone with \"alone\".";
 
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
@@ -34,15 +35,15 @@ public sealed class CheatTestDarkIron : Command
       return "Ironforge isn't in the game.";
     }
 
-    var greatForge = AllLegends.Ironforge.GreatForge.Unit;
-    if (greatForge != null && greatForge.Alive)
+    var darkIronAlliance = ironforge.GetQuestByType<QuestDarkIron>();
+    if (darkIronAlliance.Progress != QuestProgress.Complete)
     {
-      greatForge.Kill();
+      darkIronAlliance.Progress = QuestProgress.Complete;
     }
 
     if (cheater.GetPlayerData().Faction == ironforge)
     {
-      return "The Great Forge is destroyed. Open the Paths book.";
+      return "The Dark Iron Alliance is complete. Open the Paths book.";
     }
 
     var goAlone = parameters.Length > 0 && parameters[0] == "alone";

@@ -1,0 +1,36 @@
+{
+  "OldId": "Afla",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 1550
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(DarkIron)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Launches a Dwarven flare above a target point, which reveals that area for <A1AS,Dur1> seconds. |nReveals invisible units.|n|n|cffffcc00120 second cooldown."
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R10V"
+    }
+  ],
+  "NewId": "A1AS"
+}

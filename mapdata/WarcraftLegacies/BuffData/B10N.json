@@ -1,0 +1,39 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIsp\\SpeedTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Forward, Shadowforge!"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been rallied; it moves and attacks faster."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Forward, Shadowforge!"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASGarrisonArmy.blp"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10Q",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Molten Shield"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is wrapped in molten armor; it takes less damage and moves faster."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Molten Shield"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFireShield.blp"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    }
+  ]
+}
