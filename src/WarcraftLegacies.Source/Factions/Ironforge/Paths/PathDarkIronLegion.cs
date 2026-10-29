@@ -1,15 +1,17 @@
 ﻿using MacroTools.Factions;
+using WarcraftLegacies.Source.Factions.Ironforge.Quests;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.Paths;
 
-/// <summary>The Dark Iron join the Burning Legion's side, as they once marched beside the Blackrock orcs.</summary>
+/// <summary>The Dark Iron take Ironforge and join the Burning Legion's side.</summary>
 public sealed class PathDarkIronLegion : PathDarkIron
 {
-  public PathDarkIronLegion(DarkIronTransformation transformation) : base(transformation)
+  public PathDarkIronLegion(DarkIronTransformation transformation, QuestDarkIron darkIronAlliance)
+    : base(transformation, darkIronAlliance)
   {
     Name = "The Dark Iron: The Burning Legion";
-    Description = "The Great Forge has gone cold and Magni is dead. Dagran Thaurissan and Moira claim what is left of the dwarves for the Dark Iron, rule from Shadowforge City and Grim Batol, and take up arms once more beside the Blackrock and their demon masters. The rest of Khaz Modan is left to the Alliance.";
+    Description = "The Dark Iron have returned to the fold, but not as subjects. Moira Thaurissan, Magni's own daughter and Dagran's queen, claims the throne of Ironforge, and all of Khaz Modan and Grim Batol answer to the Dark Iron. Their old masters stir in the fires below, and the dwarves take up arms beside the Burning Legion. Magni, Muradin and Falstad will not serve her.";
   }
 
   /// <inheritdoc />

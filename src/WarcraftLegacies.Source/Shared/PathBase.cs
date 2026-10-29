@@ -281,12 +281,20 @@ public static class PathBase
   }
 
   /// <summary>Swaps the structures <paramref name="whichPlayer"/> owns inside <paramref name="area"/> for their <paramref name="equivalents"/>.</summary>
-  public static void ConvertStructures(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, Rectangle area)
+  public static void ConvertStructures(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, Rectangle area) =>
+    ConvertStructures(whichPlayer, equivalents, (x, y) => area.Contains(x, y));
+
+  /// <summary>Swaps every structure <paramref name="whichPlayer"/> owns for its <paramref name="equivalents"/>.</summary>
+  public static void ConvertStructures(player whichPlayer, IReadOnlyDictionary<int, int> equivalents) =>
+    ConvertStructures(whichPlayer, equivalents, (_, _) => true);
+
+  private static void ConvertStructures(player whichPlayer, IReadOnlyDictionary<int, int> equivalents,
+    Func<float, float, bool> isInArea)
   {
     foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
     {
       if (!whichUnit.Alive || !whichUnit.IsUnitType(unittype.Structure) || !whichUnit.IsRemovable() ||
-          !area.Contains(whichUnit.X, whichUnit.Y))
+          !isInArea(whichUnit.X, whichUnit.Y))
       {
         continue;
       }

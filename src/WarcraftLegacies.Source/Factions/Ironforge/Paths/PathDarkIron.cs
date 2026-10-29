@@ -1,20 +1,20 @@
 ﻿using MacroTools.Factions;
 using MacroTools.Paths;
-using WarcraftLegacies.Source.Objectives.LegendBased;
-using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.Factions.Ironforge.Quests;
+using WarcraftLegacies.Source.Objectives.QuestBased;
 
 namespace WarcraftLegacies.Source.Factions.Ironforge.Paths;
 
-/// <summary>With the Great Forge extinguished and Magni dead, Dagran Thaurissan claims the throne for the Dark Iron.</summary>
+/// <summary>Once the Dark Iron are brought back into the fold, Moira Thaurissan claims the throne of Ironforge for them.</summary>
 public abstract class PathDarkIron : FactionPath
 {
   private readonly DarkIronTransformation _transformation;
 
-  protected PathDarkIron(DarkIronTransformation transformation)
+  protected PathDarkIron(DarkIronTransformation transformation, QuestDarkIron darkIronAlliance)
   {
     _transformation = transformation;
     IconName = "RPGDarkIron";
-    AddRequirement(new ObjectiveCapitalDead(AllLegends.Ironforge.GreatForge) { ShowsInQuestLog = false });
+    AddRequirement(new ObjectiveQuestComplete(darkIronAlliance) { ShowsInQuestLog = false });
   }
 
   /// <inheritdoc />
