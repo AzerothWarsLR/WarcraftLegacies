@@ -19,6 +19,7 @@ public sealed class QuestRagnaros : QuestData
   private readonly LegendaryHero _ragnaros;
   private readonly unit _ragnarosSummoningPedestal;
   private readonly ObjectiveHeroWithLevelInRect _heroInRectObjective;
+  private bool _retired;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestRagnaros"/> class.
@@ -54,8 +55,29 @@ public sealed class QuestRagnaros : QuestData
     _ragnarosSummoningPedestal.IsInvulnerable = false;
   }
 
+  /// <summary>Hands the Firelands portal to the Dark Iron: nobody else can summon Ragnaros as a world boss any more.</summary>
+  public void Retire()
+  {
+    _retired = true;
+    if (Progress != QuestProgress.Complete)
+    {
+      SuppressFailureDisplay = true;
+      Progress = QuestProgress.Failed;
+    }
+
+    if (_ragnarosSummoningPedestal.Alive)
+    {
+      _ragnarosSummoningPedestal.Kill();
+    }
+  }
+
   private void OnCastSummonSpell()
   {
+    if (_retired)
+    {
+      return;
+    }
+
     var ragnarosSummonPoint = new Point(12332, -10597);
     _ragnaros.ForceCreate(player.NeutralAggressive, ragnarosSummonPoint, 320);
     effect effect = effect.Create(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X, ragnarosSummonPoint.Y);
