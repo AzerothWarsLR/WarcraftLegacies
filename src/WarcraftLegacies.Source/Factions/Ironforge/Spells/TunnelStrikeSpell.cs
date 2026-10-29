@@ -11,6 +11,7 @@ public sealed class TunnelStrikeSpell : Spell
   private const float TickInterval = 0.05f;
   private const float DigDelay = 0.5f;
   private const float BurrowTimeScale = 3;
+  private const int BurrowAnimationIndex = 2;
   private const float ArrivalDistance = 60;
   private const float MaxTunnelTime = 3;
   private const int TicksPerDustCloud = 4;
@@ -37,7 +38,7 @@ public sealed class TunnelStrikeSpell : Spell
     SetUnitInvulnerable(caster, true);
     BlzPauseUnitEx(caster, true);
     SetUnitTimeScale(caster, BurrowTimeScale);
-    SetUnitAnimation(caster, "morph");
+    SetUnitAnimationByIndex(caster, BurrowAnimationIndex);
     effect.Create(DustEffectPath, caster.X, caster.Y).Dispose();
 
     var dig = timer.Create();
