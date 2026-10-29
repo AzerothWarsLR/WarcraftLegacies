@@ -41,11 +41,7 @@ public sealed class QuestWarOfTheThreeHammers : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription => Loc.Format(
-    "Gain a {keep}, {barracks}, {tavern} and {bunker} in the Hinterlands, and train {count} more {wyrm}s",
-    ("{keep}", GetObjectName(UNIT_H0DS_DARK_IRON_KEEP_DARKIRON_T2)),
-    ("{barracks}", GetObjectName(UNIT_H0DW_DARK_IRON_BARRACKS_DARKIRON_BARRACKS)),
-    ("{tavern}", GetObjectName(UNIT_H0DU_DARK_IRON_TAVERN_DARKIRON_FARM)),
-    ("{bunker}", GetObjectName(UNIT_H0E2_GUARD_BUNKER_DARKIRON_TOWER)),
+    "Gain a small base in the Hinterlands, and train {count} more {wyrm}s",
     ("{count}", FireWyrmLimitBonus.ToString()),
     ("{wyrm}", GetObjectName(UNIT_H0E6_FIRE_WYRM_DARKIRON)));
 

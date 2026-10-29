@@ -23,7 +23,7 @@ public sealed class QuestShatterTheVioletCitadel : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription => Loc.Format(
-    "{word} can jump to one more enemy",
+    "Moira's {word} can jump to one more enemy",
     ("{word}", GetObjectName(ABILITY_A19U_SHADOWFLAME_WORD_DARKIRON_MOIRA)));
 
   /// <inheritdoc />

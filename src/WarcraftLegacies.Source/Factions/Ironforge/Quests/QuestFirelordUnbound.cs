@@ -43,7 +43,7 @@ public sealed class QuestFirelordUnbound : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    "Gain control of Ragnaros, Lord of the Firelands, at the Firelands portal";
+    "Gain control of Ragnaros, Lord of the Firelands";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
