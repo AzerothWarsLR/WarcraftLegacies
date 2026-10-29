@@ -8,7 +8,7 @@
     {
       "Id": "gef1",
       "Type": 3,
-      "Value": ""
+      "Value": "rlev"
     },
     {
       "Id": "gglb",
@@ -24,22 +24,6 @@
     },
     {
       "Level": 1,
-      "Id": "greq",
-      "Type": 3,
-      "Value": "n06R"
-    },
-    {
-      "Id": "gef2",
-      "Type": 3,
-      "Value": "renw"
-    },
-    {
-      "Id": "gba2",
-      "Type": 2,
-      "Value": 2
-    },
-    {
-      "Level": 1,
       "Id": "gar1",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonFire2.blp"
@@ -52,7 +36,7 @@
       "Level": 1,
       "Id": "gnsf",
       "Type": 3,
-      "Value": "(Elemental)"
+      "Value": "(DarkIron)"
     },
     {
       "Level": 1,
@@ -76,7 +60,22 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Improves the Fire Wyrms by increasing their attack range by 200, attack damage by 20 and change their damage type to Chaos."
+      "Value": "Improves the Fire Wyrm's Breath of Fire, increasing its damage from 75 to 125 and its area of effect from 200 to 250."
+    },
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "A1AB"
     }
   ]
 }

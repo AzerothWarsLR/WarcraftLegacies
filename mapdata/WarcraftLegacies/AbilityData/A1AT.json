@@ -1,0 +1,46 @@
+{
+  "OldId": "Afsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "flk1",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "flk2",
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "flk3",
+      "Type": 2,
+      "Value": 65
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(DarkIron)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Uses fragmentation mortars to increase damage dealt to Unarmored and Medium armor units. Deals <Afsh,DataC1> extra damage to primary target, <Afsh,DataD1> in medium AOE and <Afsh,DataE1> in large AOE."
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R10W"
+    }
+  ],
+  "NewId": "A1AT"
+}

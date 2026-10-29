@@ -1,0 +1,150 @@
+{
+  "OldId": "AEev",
+  "NewId": "A19Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Eev1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(DarkIron - Moira)"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHolyRestorationAura.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyRestorationAura.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Voice of the Throne"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Voice of the Throne - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Whenever an enemy unit dies within 800 range of Moira, friendly units near her restore a portion of their maximum hit points.|n|n|cffffcc00Level 1|r - 2% of maximum hit points.|n|cffffcc00Level 2|r - 4% of maximum hit points.|n|cffffcc00Level 3|r - 6% of maximum hit points.|n|cffffcc00Level 4|r - 8% of maximum hit points."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Voice of the Throne - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Voice of the Throne - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Voice of the Throne - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Voice of the Throne - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Whenever an enemy unit dies within 800 range of Moira, friendly units near her restore 2% of their maximum hit points."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Whenever an enemy unit dies within 800 range of Moira, friendly units near her restore 4% of their maximum hit points."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Whenever an enemy unit dies within 800 range of Moira, friendly units near her restore 6% of their maximum hit points."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Whenever an enemy unit dies within 800 range of Moira, friendly units near her restore 8% of their maximum hit points."
+    }
+  ]
+}

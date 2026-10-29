@@ -1,0 +1,35 @@
+{
+  "OldId": "Sca1",
+  "NewId": "A19N",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R10K"
+    },
+    {
+      "Level": 1,
+      "Id": "Cha1",
+      "Type": 3,
+      "Value": "h0EC"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Magma Tank to Flame Tank)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Chaos"
+    },
+    {
+      "Id": "ausk",
+      "Type": 3,
+      "Value": "h01P"
+    }
+  ]
+}

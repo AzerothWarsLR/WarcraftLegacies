@@ -103,6 +103,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Summons Heroes and Demi-heroes. "
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "h0DV"
     }
   ]
 }
