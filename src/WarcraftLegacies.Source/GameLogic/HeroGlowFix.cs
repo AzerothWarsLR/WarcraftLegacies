@@ -29,5 +29,17 @@ public static class HeroGlowFix
         triggerUnit.SetColor(triggerPlayer.GetPlayerData().Faction?.PlayerColor ?? playercolor.Coal);
       }
     });
+
+    PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingTrained, () =>
+    {
+      var trainedUnit = @event.Unit;
+      var faction = trainedUnit.Owner.GetPlayerData().Faction;
+      if (faction != null && !trainedUnit.IsUnitType(unittype.Hero))
+      {
+        var otherColor = faction.PlayerColor == playercolor.Red ? playercolor.Blue : playercolor.Red;
+        trainedUnit.SetColor(otherColor);
+        trainedUnit.SetColor(faction.PlayerColor);
+      }
+    });
   }
 }

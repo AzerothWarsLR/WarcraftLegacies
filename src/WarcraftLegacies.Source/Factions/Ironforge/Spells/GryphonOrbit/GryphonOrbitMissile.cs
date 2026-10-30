@@ -9,6 +9,7 @@ public sealed class GryphonOrbitMissile : OrbitalMissile
 {
   public float Damage { get; init; }
   public float Duration { get; set; }
+  private bool _coloured;
 
   public GryphonOrbitMissile(unit caster, unit target, string model) : base(caster, target)
   {
@@ -34,6 +35,13 @@ public sealed class GryphonOrbitMissile : OrbitalMissile
 
   public override void OnPeriodic()
   {
+    if (!_coloured && Effect != null)
+    {
+      Effect.SetColor(Caster.Owner);
+      Effect.PlayAnimation(animtype.Walk);
+      _coloured = true;
+    }
+
     MissileX += 0.001f;
 
     Duration -= PeriodicEvents.SYSTEM_INTERVAL;

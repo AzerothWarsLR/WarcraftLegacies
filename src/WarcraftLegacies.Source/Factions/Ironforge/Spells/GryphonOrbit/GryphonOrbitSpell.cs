@@ -8,8 +8,9 @@ namespace WarcraftLegacies.Source.Factions.Ironforge.Spells.GryphonOrbit;
 
 public sealed class GryphonOrbitSpell : Spell
 {
-  public int GryphonTypeId { get; init; }
-  public int StormRiderTypeId { get; init; }
+  public Dictionary<int, string> GryphonModels { get; init; } = new();
+  public LeveledAbilityField<int> MaximumGryphons { get; init; } = new();
+  public string BaseGryphonPath { get; init; } = "";
   public LeveledAbilityField<float> Damage { get; init; } = new();
   public LeveledAbilityField<float> Duration { get; init; } = new();
   public float CollisionRadius { get; init; }
@@ -39,7 +40,7 @@ public sealed class GryphonOrbitSpell : Spell
 
     for (var i = 0; i < BaseProjectileCount; i++)
     {
-      var m = CreateMissile(caster, damage, duration, "war3mapImported\\WarGryphon_Yellow.mdl");
+      var m = CreateMissile(caster, damage, duration, BaseGryphonPath);
       m.OrbitalAngle = (360f / BaseProjectileCount) * i;
       missiles.Add(m);
       MissileSystem.Add(m);
@@ -56,24 +57,12 @@ public sealed class GryphonOrbitSpell : Spell
     var group = CreateGroup();
     GroupEnumUnitsInRange(group, caster.X, caster.Y, 600, null);
 
+    var maximumGryphons = MaximumGryphons.GetValue(level);
     var u = FirstOfGroup(group);
     while (u != null)
     {
-      string model = null;
-
-      if (u.Owner == caster.Owner && u.Alive)
-      {
-        if (u.UnitType == GryphonTypeId)
-        {
-          model = "war3mapImported\\GryphonRider_Yellow.mdx";
-        }
-        else if (u.UnitType == StormRiderTypeId)
-        {
-          model = "war3mapImported\\WarGryphon_Yellow.mdl";
-        }
-      }
-
-      if (model != null)
+      if (borrowed.Count < maximumGryphons && u.Owner == caster.Owner && u.Alive &&
+          GryphonModels.TryGetValue(u.UnitType, out var model))
       {
         borrowed.Add(new BorrowedGryphon(u));
 

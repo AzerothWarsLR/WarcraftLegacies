@@ -13,6 +13,11 @@ public sealed class LethalStrike : UnitTrait, IAppliesEffectOnDamage
 
   public float BonusDamage { get; init; } = 40;
 
+  /// <summary>If set, only units with this ability strike, and the bonus grows with its level.</summary>
+  public int AbilityTypeId { get; init; }
+
+  public float BonusDamagePerLevel { get; init; }
+
   public string EffectPath { get; init; } = @"Abilities\Spells\Other\Stampede\StampedeMissileDeath.mdl";
 
   public void OnDealsDamage()
@@ -26,6 +31,16 @@ public sealed class LethalStrike : UnitTrait, IAppliesEffectOnDamage
     if (IsUnitIllusion(attacker))
     {
       return;
+    }
+
+    var level = 0;
+    if (AbilityTypeId != 0)
+    {
+      level = attacker.GetAbilityLevel(AbilityTypeId);
+      if (level == 0)
+      {
+        return;
+      }
     }
 
     var target = @event.Unit;
@@ -45,7 +60,7 @@ public sealed class LethalStrike : UnitTrait, IAppliesEffectOnDamage
 
     _lastTargets.Remove(attacker);
     _hitCounts.Remove(attacker);
-    @event.Damage += BonusDamage;
+    @event.Damage += BonusDamage + BonusDamagePerLevel * level;
     effect.Create(EffectPath, target, "chest").Dispose();
     ShowBonusText(target, R2I(@event.Damage));
   }

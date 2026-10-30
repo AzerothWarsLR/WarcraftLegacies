@@ -43,8 +43,15 @@ public static class IronforgeSpells
 
     SpellRegistry.Register(new GryphonOrbitSpell(ABILITY_TP10_STORMGUARD_FALSTAD_WILDHAMMER)
     {
-      GryphonTypeId = UNIT_HGRY_GRYPHON_RIDER_IRONFORGE,
-      // StormRiderTypeId = UNIT_H03Z_STORMRIDER_IRONFORGE,
+      GryphonModels = new Dictionary<int, string>
+      {
+        { UNIT_HGRY_GRYPHON_RIDER_IRONFORGE, @"units\human\GryphonRider\GryphonRider.mdl" },
+        { UNIT_H0FL_GRYPHON_RIDER_WILDHAMMER, @"units\human\GryphonRider\GryphonRider.mdl" },
+        { UNIT_H0F6_GRYPHON_WILDHAMMER, @"war3mapImported\WildhammerGryphon.mdx" },
+        { UNIT_H0F7_SOARER_WILDHAMMER, @"war3mapImported\WildhammerSoarer.mdl" }
+      },
+      MaximumGryphons = new LeveledAbilityField<int> { Base = 2, PerLevel = 2 },
+      BaseGryphonPath = @"units\human\GryphonRider\GryphonRider.mdl",
       Damage = new LeveledAbilityField<float> { Base = 30, PerLevel = 20 },
       Duration = new LeveledAbilityField<float> { Base = 25, PerLevel = 5 },
       CollisionRadius = 100,

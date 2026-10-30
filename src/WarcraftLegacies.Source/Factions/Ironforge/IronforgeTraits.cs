@@ -10,12 +10,15 @@ public static class IronforgeTraits
 {
   public static void Setup()
   {
-    // UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
-    //{
-    // DummyAbilityId = ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
-    // DummyOrderId = ORDER_FORKED_LIGHTNING,
-    // ProcChance = 0.2f
-    // }, UNIT_HGRY_GRYPHON_RIDER_IRONFORGE);
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A10J_MASTER_OF_LIGHTNING_IRONFORGE)
+    {
+      DummyAbilityId = ABILITY_VP27_FORKED_LIGHTNING_IRONFORGE_FALSTAD_DUMMY,
+      DummyOrderId = ORDER_FORKED_LIGHTNING,
+      ProcChance = 0.1f,
+      RequiredResearch = UPGRADE_VP31_MASTERS_OF_LIGHTNING_IRONFORGE,
+      BonusChance = 0.05f,
+      BonusChanceResearch = UPGRADE_R11C_WRATH_OF_THE_THUNDERAAN_WILDHAMMER
+    }, new[] { UNIT_HGRY_GRYPHON_RIDER_IRONFORGE, UNIT_H0FL_GRYPHON_RIDER_WILDHAMMER });
 
     UnitTypeTraitRegistry.Register(new SpellOnAttackConeCast(ABILITY_TP27_FLAMETHROWER_FLAME_TANK)
     {
