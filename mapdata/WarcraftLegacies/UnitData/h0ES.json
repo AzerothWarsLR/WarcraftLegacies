@@ -1,0 +1,130 @@
+{
+  "OldId": "hgra",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 20
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 16
+    },
+    {
+      "Id": "urtm",
+      "Value": 60
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h0EL"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "h0FL,h0F6,h0FA"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R114,R115,R116"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "ubpy",
+      "Value": 1
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\WH-GryphonAviaryV1.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.0
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 3.6
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Air production building. "
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Wildhammer)"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Gryphon Aviary"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWH-GryphonAviary.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Gryphon Aviary"
+    }
+  ],
+  "NewId": "h0ES"
+}

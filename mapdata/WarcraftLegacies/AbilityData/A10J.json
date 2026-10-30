@@ -51,7 +51,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "When this unit attacks, it has a 20% chance to hurl lightning at 5 targets, dealing 75 damage to each of them."
+      "Value": "When this unit attacks, it has a 10% chance to hurl lightning at 5 targets, dealing 75 damage to each of them."
     },
     {
       "Id": "anam",

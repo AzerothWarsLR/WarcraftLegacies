@@ -1,0 +1,39 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10W",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "war3mapImported\\WildhammerFrayTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Into the Fray"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is shielded; damage that would leave it below 10% hit points is greatly reduced."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Into the Fray"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerIntoTheFray.blp"
+    }
+  ]
+}

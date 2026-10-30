@@ -71,7 +71,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "TP10,Aamk,VP24,VP23,VP26"
+      "Value": "Aamk,A1AX,A1AY,A1B0,A1B2"
     },
     {
       "Id": "uhpm",
@@ -188,7 +188,7 @@
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroGriffonWarrior.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerSkymaster.blp"
     },
     {
       "Id": "uawt",
@@ -207,7 +207,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "Wildhammer.mdl"
+      "Value": "war3mapImported\\WildhammerSkymaster.mdl"
     },
     {
       "Id": "uhot",
@@ -227,7 +227,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.25
+      "Value": 1.0
     },
     {
       "Id": "unam",
@@ -252,7 +252,7 @@
     {
       "Id": "ussi",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGryphonRider.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerSkymaster.blp"
     },
     {
       "Id": "utip",
