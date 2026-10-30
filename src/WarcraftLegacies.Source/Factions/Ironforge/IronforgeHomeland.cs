@@ -42,23 +42,26 @@ public static class IronforgeHomeland
     EndQuest(ironforge.GetQuestByType<QuestWildhammer>());
   }
 
-  /// <summary>Stormwind if it's still in the game, otherwise Kul Tiras, otherwise nobody, with the buildings each turns Ironforge buildings into.</summary>
-  public static player GetHeir(out Dictionary<int, int>? equivalents)
+  /// <summary>
+  /// Stormwind, otherwise Kul Tiras, whichever is still in the game on <paramref name="ironforgePlayer"/>'s side,
+  /// otherwise the creeps, with the buildings each turns Ironforge buildings into.
+  /// </summary>
+  public static player GetHeir(player ironforgePlayer, out Dictionary<int, int>? equivalents)
   {
-    if (FactionManager.TryGetFactionByType<StormwindFaction>(out var stormwind) && IsStillInGame(stormwind))
+    if (FactionManager.TryGetFactionByType<StormwindFaction>(out var stormwind) && IsHeir(stormwind, ironforgePlayer))
     {
       equivalents = StormwindEquivalents;
       return stormwind.Player!;
     }
 
-    if (FactionManager.TryGetFactionByType<KultirasFaction>(out var kultiras) && IsStillInGame(kultiras))
+    if (FactionManager.TryGetFactionByType<KultirasFaction>(out var kultiras) && IsHeir(kultiras, ironforgePlayer))
     {
       equivalents = KultirasEquivalents;
       return kultiras.Player!;
     }
 
     equivalents = null;
-    return player.NeutralPassive;
+    return player.NeutralAggressive;
   }
 
   private static void EndQuest(QuestData quest)
@@ -72,6 +75,7 @@ public static class IronforgeHomeland
   private static bool IsUnfinished(QuestData quest) =>
     quest.Progress != QuestProgress.Complete && quest.Progress != QuestProgress.Failed;
 
-  private static bool IsStillInGame(Faction faction) =>
-    faction.Player != null && faction.ScoreStatus == ScoreStatus.Undefeated;
+  private static bool IsHeir(Faction faction, player ironforgePlayer) =>
+    faction.Player != null && faction.ScoreStatus == ScoreStatus.Undefeated &&
+    TeamChanges.AreTeammates(faction.Player, ironforgePlayer);
 }

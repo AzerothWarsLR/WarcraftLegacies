@@ -280,6 +280,24 @@ public static class PathBase
     }
   }
 
+  /// <summary>Swaps <paramref name="whichPlayer"/>'s units for their <paramref name="equivalents"/> where they stand.</summary>
+  public static void ConvertArmy(player whichPlayer, IReadOnlyDictionary<int, int> equivalents)
+  {
+    foreach (var whichUnit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
+    {
+      if (!whichUnit.Alive || whichUnit.IsUnitType(unittype.Structure) || !whichUnit.IsRemovable() ||
+          !whichUnit.IsSelectable())
+      {
+        continue;
+      }
+
+      if (equivalents.TryGetValue(whichUnit.UnitType, out var newType))
+      {
+        ReplaceUnit(whichUnit, whichPlayer, newType, whichUnit.X, whichUnit.Y);
+      }
+    }
+  }
+
   /// <summary>Swaps the structures <paramref name="whichPlayer"/> owns inside <paramref name="area"/> for their <paramref name="equivalents"/>.</summary>
   public static void ConvertStructures(player whichPlayer, IReadOnlyDictionary<int, int> equivalents, Rectangle area) =>
     ConvertStructures(whichPlayer, equivalents, (x, y) => area.Contains(x, y));
