@@ -11,7 +11,7 @@
     },
     {
       "Id": "ubld",
-      "Value": 9
+      "Value": 30
     },
     {
       "Id": "ucar",
@@ -160,6 +160,16 @@
     {
       "Id": "ua1s",
       "Value": 21
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "hero"
     }
   ],
   "NewId": "h0F5"
