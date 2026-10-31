@@ -1,0 +1,74 @@
+{
+  "OldId": "Alsh",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Wildhammer - Elementalist)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Forms a shield of electricity around a target unit, dealing 20 damage per second to units around it. |n|cffffcc00Lasts 20 seconds."
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R111"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Lightning Shield"
+    },
+    {
+      "Id": "achd",
+      "Value": 1
+    }
+  ],
+  "NewId": "A1BI"
+}

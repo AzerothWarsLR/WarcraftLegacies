@@ -1,0 +1,67 @@
+{
+  "OldId": "Aco2",
+  "NewId": "A1AU",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "coa1",
+      "Type": 3,
+      "Value": "h0F6"
+    },
+    {
+      "Level": 1,
+      "Id": "coau",
+      "Type": 3,
+      "Value": "h0F7"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Climbs onto a nearby Gryphon, becoming a Soarer that attacks from the air with the hit points of both."
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Mount Gryphon"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Wildhammer)"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerMount.blp"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Mount Gryphon"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

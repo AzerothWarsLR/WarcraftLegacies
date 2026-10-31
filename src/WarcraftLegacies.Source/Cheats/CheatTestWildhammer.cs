@@ -2,14 +2,15 @@
 using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Quests;
 using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Ironforge.Paths;
-using WarcraftLegacies.Source.Shared;
+using WarcraftLegacies.Source.Factions.Ironforge.Quests;
 
 namespace WarcraftLegacies.Source.Cheats;
 
 /// <summary>
-/// Destroys the Great Forge so the Wildhammer path opens. Run by anyone but Ironforge, it also makes Ironforge take it.
+/// Completes the Wildhammer Alliance quest so the Wildhammer path opens. Run by anyone but Ironforge, it also makes Ironforge take it.
 /// </summary>
 public sealed class CheatTestWildhammer : Command
 {
@@ -24,7 +25,7 @@ public sealed class CheatTestWildhammer : Command
 
   /// <inheritdoc />
   public override string Description =>
-    "Destroys the Great Forge so the Wildhammer path opens. Run as another faction, Ironforge also takes it.";
+    "Completes the Wildhammer Alliance quest so the Wildhammer path opens. Run as another faction, Ironforge also takes it.";
 
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
@@ -34,15 +35,15 @@ public sealed class CheatTestWildhammer : Command
       return "Ironforge isn't in the game.";
     }
 
-    var greatForge = AllLegends.Ironforge.GreatForge.Unit;
-    if (greatForge != null && greatForge.Alive)
+    var wildhammerAlliance = ironforge.GetQuestByType<QuestWildhammer>();
+    if (wildhammerAlliance.Progress != QuestProgress.Complete)
     {
-      greatForge.Kill();
+      wildhammerAlliance.Progress = QuestProgress.Complete;
     }
 
     if (cheater.GetPlayerData().Faction == ironforge)
     {
-      return "The Great Forge is destroyed. Open the Paths book.";
+      return "The Wildhammer Alliance is complete. Open the Paths book.";
     }
 
     var path = ironforge.GetAllPaths().OfType<PathWildhammer>().FirstOrDefault();

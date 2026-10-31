@@ -1,0 +1,39 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10X",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Blood Hunt"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is bleeding; it takes damage over time."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Blood Hunt"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerBloodHunt.blp"
+    }
+  ]
+}

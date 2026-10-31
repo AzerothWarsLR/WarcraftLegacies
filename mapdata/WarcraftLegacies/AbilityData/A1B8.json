@@ -1,0 +1,303 @@
+{
+  "OldId": "Aeye",
+  "NewId": "A1B8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B084"
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 1,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "h0FD"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerWatcherInTheSky.blp"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Wildhammer - Talonaxe)"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Watcher in the Sky"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Watcher in the Sky - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a Watcher in the Sky to circle the target point for 30 seconds. It sees invisible units and has 1400 sight range."
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerWatcherInTheSky.blp"
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "h0FI"
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B084"
+    },
+    {
+      "Level": 3,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "h0FJ"
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B084"
+    },
+    {
+      "Level": 4,
+      "Id": "hwdu",
+      "Type": 3,
+      "Value": "h0FK"
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 1000
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 50
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B084"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Watcher in the Sky - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Sends a Watcher in the Sky to circle the target point for 30 seconds. It sees invisible units, and from level 2 it strikes nearby enemies with lightning.|n|n|cffffcc00Level 1|r - 1400 sight range.|n|cffffcc00Level 2|r - 1600 sight range, 20 damage per strike.|n|cffffcc00Level 3|r - 1800 sight range, 35 damage per strike.|n|cffffcc00Level 4|r - 2000 sight range, 50 damage per strike."
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Watcher in the Sky - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a Watcher in the Sky to circle the target point for 30 seconds. It sees invisible units, has 1600 sight range and strikes nearby enemies with lightning for 20 damage."
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Watcher in the Sky - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a Watcher in the Sky to circle the target point for 30 seconds. It sees invisible units, has 1800 sight range and strikes nearby enemies with lightning for 35 damage."
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Watcher in the Sky - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Sends a Watcher in the Sky to circle the target point for 30 seconds. It sees invisible units, has 2000 sight range and strikes nearby enemies with lightning for 50 damage."
+    }
+  ]
+}

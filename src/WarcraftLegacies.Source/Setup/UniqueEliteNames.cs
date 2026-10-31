@@ -497,6 +497,21 @@ public static class UniqueEliteNames
           "Vile'rel",
           "Warder Stilgiss"
         },
+      [UNIT_H0F5_CLOUD_GUARDIAN_WILDHAMMER_ELITE] =
+        new()
+        {
+          "Agnar Beastamer",
+          "Colin Thundermar",
+          "Eoin Dunwald",
+          "Fanny Thundermar",
+          "Fraggar Thundermantle",
+          "Gorkas",
+          "Guthrum Thunderfist",
+          "Iain Firebeard",
+          "Keegan Firebeard",
+          "Kerr Ironsight",
+          "Mardrack Greenwell"
+        },
       [UNIT_N07G_MUSKETEER_KULTIRAS] =
         new()
         {

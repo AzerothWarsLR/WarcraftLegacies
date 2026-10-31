@@ -45,6 +45,15 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
     };
     RegisterFactionDependentInitializer<StormwindFaction>(RegisterStormwindResearches);
     ProcessObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());
+    foreach (var unitTypeId in WildhammerFaction.CapitalUnits)
+    {
+      SetObjectLimit(unitTypeId, 0);
+    }
+
+    foreach (var unitTypeId in DarkIronFaction.CapitalUnits)
+    {
+      SetObjectLimit(unitTypeId, 0);
+    }
   }
 
   /// <inheritdoc />
@@ -59,7 +68,7 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
     var darkIronAlliance = GetQuestByType<QuestDarkIron>();
     AddPath(new PathDarkIronLegion(transformation, darkIronAlliance));
     AddPath(new PathDarkIronAlone(transformation, darkIronAlliance));
-    AddPath(new PathWildhammer(new WildhammerTransformation()));
+    AddPath(new PathWildhammer(new WildhammerTransformation(), GetQuestByType<QuestWildhammer>()));
     LinkMagniToTheGreatForge();
   }
 
@@ -92,6 +101,7 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
     RegisterQuests();
     IronforgeSpells.Setup();
     DarkIronSpells.Setup();
+    WildhammerSpells.Setup();
     IronforgeTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }

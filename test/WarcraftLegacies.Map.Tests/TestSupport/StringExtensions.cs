@@ -7,6 +7,7 @@ public static class StringExtensions
 
   public static string NormalizeModelPath(this string text)
   {
-    return text.ToLower().Replace(@"\\", "\\").Replace("/", "\\");
+    var path = text.ToLower().Replace(@"\\", "\\").Replace("/", "\\");
+    return path.EndsWith(".mdl") ? path[..^4] + ".mdx" : path;
   }
 }

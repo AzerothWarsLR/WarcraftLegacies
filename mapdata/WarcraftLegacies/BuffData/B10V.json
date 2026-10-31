@@ -1,0 +1,44 @@
+{
+  "OldId": "BEim",
+  "NewId": "B10V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Raging Axes"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This Siegebreaker is raging; its attacks deal double damage, but it is hurt by them."
+    },
+    {
+      "Id": "fnsf",
+      "Type": 3,
+      "Value": "(Wildhammer - Siegebreaker)"
+    },
+    {
+      "Id": "fsat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Raging Axes"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerRageAxesOn.blp"
+    }
+  ]
+}

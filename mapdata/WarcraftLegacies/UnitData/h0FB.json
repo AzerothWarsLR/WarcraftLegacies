@@ -1,0 +1,131 @@
+{
+  "OldId": "hfoo",
+  "NewId": "h0FB",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A1BM,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 20
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 30
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 40
+    },
+    {
+      "Id": "ugor",
+      "Value": 19
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1400
+    },
+    {
+      "Id": "upri",
+      "Value": 3
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 320
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rguv,Rhar,Rhme"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerRamVanguard.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Wildhammer)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\WildhammerRam.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Ram Vanguard"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Warrior"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Stout defender of Dun Morogh."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Knight"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h0ER"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "OldId": "hgry",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A1AW,A07C,Asth"
+    },
+    {
+      "Id": "ubld",
+      "Value": 9
+    },
+    {
+      "Id": "ucar",
+      "Value": 3
+    },
+    {
+      "Id": "ua2c",
+      "Type": 2,
+      "Value": 2.3
+    },
+    {
+      "Id": "ua2b",
+      "Value": 34
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 38
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 500
+    },
+    {
+      "Id": "umpm",
+      "Value": 500
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R02K,Rhar,Rhme,Rhan,Rhhb,Rguv,R118"
+    },
+    {
+      "Id": "umvs",
+      "Value": 350
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1250
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "upri",
+      "Value": 3
+    },
+    {
+      "Id": "ubpx",
+      "Value": 0
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Wildhammer)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Powerful flying creature, mounted by a Wildhammer thrower. "
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Soarer"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\WildhammerSoarer.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWildhammerSoarer.blp"
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "war3mapImported\\WildhammerSoarerMissile.mdl"
+    },
+    {
+      "Id": "udef",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 37
+    },
+    {
+      "Id": "ua1s",
+      "Value": 15
+    },
+    {
+      "Id": "ua1r",
+      "Value": 350
+    }
+  ],
+  "NewId": "h0F7"
+}

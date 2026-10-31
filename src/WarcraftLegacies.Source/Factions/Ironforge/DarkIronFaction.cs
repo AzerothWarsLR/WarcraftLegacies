@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.Factions;
 using MacroTools.Localization;
 using MacroTools.PreplacedWidgets;
@@ -104,7 +103,7 @@ public sealed class DarkIronFaction : Faction
 
     foreach (var (objectId, limit) in ironforge.GetAllObjectLimits())
     {
-      if (!_leftBehind.Contains(objectId))
+      if (!_leftBehind.Contains(objectId) && !CapitalUnits.Contains(objectId))
       {
         SetObjectLimit(GetDarkIronEquivalent(objectId), limit);
       }
@@ -131,6 +130,13 @@ public sealed class DarkIronFaction : Faction
   /// <summary>The Dark Iron version of an Ironforge unit, or the unit itself if they share it.</summary>
   public static int GetDarkIronEquivalent(int objectId) =>
     _researchEquivalents.GetValueOrDefault(objectId, _darkIronEquivalents.GetValueOrDefault(objectId, objectId));
+
+  /// <summary>Dark Iron units that capitals shared with Ironforge can train.</summary>
+  public static readonly int[] CapitalUnits =
+  {
+    UNIT_H0CT_DARK_IRON_MASON_DARKIRON_WORKER,
+    UNIT_H0EB_DARK_IRON_THANE_DARKIRON_ELITE
+  };
 
   /// <summary>Every Ironforge unit and building the Dark Iron replace with one of their own.</summary>
   public static IReadOnlyDictionary<int, int> UnitEquivalents => _darkIronEquivalents;

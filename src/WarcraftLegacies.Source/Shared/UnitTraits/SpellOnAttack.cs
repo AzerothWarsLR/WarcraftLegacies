@@ -43,6 +43,16 @@ public sealed class SpellOnAttack : UnitTrait, IAppliesEffectOnDamage
   public int RequiredResearch { get; init; }
 
   /// <summary>
+  /// Extra chance for the effect to occur once the player has <see cref="BonusChanceResearch"/>.
+  /// </summary>
+  public float BonusChance { get; init; }
+
+  /// <summary>
+  /// The research that grants <see cref="BonusChance"/>.
+  /// </summary>
+  public int BonusChanceResearch { get; init; }
+
+  /// <summary>
   /// The current level of this <see cref="DummyAbilityId"/> instance for any specified unit.
   /// </summary>
   public int GetAbilityLevel(unit whichUnit) => whichUnit.GetAbilityLevel(_abilityTypeId);
@@ -90,6 +100,11 @@ public sealed class SpellOnAttack : UnitTrait, IAppliesEffectOnDamage
     {
       var abilityLevel = GetAbilityLevel(caster);
       procChance = abilityLevel == 0 ? 0f : ProcChance + (abilityLevel * ProcChancePerLevel);
+    }
+
+    if (BonusChanceResearch != 0 && caster.Owner.GetTechResearched(BonusChanceResearch, false) > 0)
+    {
+      procChance += BonusChance;
     }
 
     if (GetRandomReal(0, 1) >= procChance)

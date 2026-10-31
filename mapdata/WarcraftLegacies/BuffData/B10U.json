@@ -1,0 +1,39 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10U",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\GeneralAuraTarget\\GeneralAuraTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Master's Whistle"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This gryphon has heard its master; it attacks faster."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Master's Whistle"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAnimalWarTraining.blp"
+    }
+  ]
+}
