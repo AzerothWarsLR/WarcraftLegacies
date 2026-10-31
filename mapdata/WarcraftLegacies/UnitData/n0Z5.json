@@ -1,0 +1,59 @@
+{
+  "OldId": "ngme",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Thandol Foreman"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\human\\Peasant\\Peasant.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPeasant.blp"
+    },
+    {
+      "Id": "usei",
+      "Type": 3,
+      "Value": "I02A"
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ushb",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.0
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.0
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "The Thandol Span collapsed long ago, and the foreman\u0027s crew is raising it again. Paying them makes the work go faster."
+    }
+  ],
+  "NewId": "n0Z5"
+}
