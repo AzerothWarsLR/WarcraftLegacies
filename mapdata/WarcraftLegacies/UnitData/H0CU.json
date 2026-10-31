@@ -26,7 +26,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "Aamk,VP29,ANdh,VP30,A08Q"
+      "Value": "Aamk,A19U,A19W,A19Y,A19Z"
     },
     {
       "Id": "uhpm",
@@ -92,7 +92,7 @@
     {
       "Id": "uico",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronCaster.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPrincessMoiraBronzebeard.blp"
     },
     {
       "Id": "uclb",
@@ -106,7 +106,7 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\Unit_DarkIronShadowCaster.mdl"
+      "Value": "war3mapImported\\PrincessMoiraBronzebeard.mdl"
     },
     {
       "Id": "uclg",
@@ -144,7 +144,7 @@
     {
       "Id": "usnd",
       "Type": 3,
-      "Value": "HeroAvatarMountainKing"
+      "Value": "Sorceress"
     },
     {
       "Id": "ubpx",
@@ -153,7 +153,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.3
+      "Value": 0.75
     }
   ]
 }

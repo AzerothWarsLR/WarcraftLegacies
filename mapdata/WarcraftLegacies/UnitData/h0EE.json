@@ -1,6 +1,6 @@
 {
   "OldId": "nwrg",
-  "NewId": "n0F0",
+  "NewId": "h0EE",
   "Unk": [
     0
   ],
@@ -91,7 +91,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R010,Rhme,Rhar,Rguv"
+      "Value": "R10U,Rhme,Rhar,Rguv"
     },
     {
       "Id": "udty",
@@ -114,7 +114,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "(DarkIron Elite)"
+      "Value": "(DarkIron)"
     },
     {
       "Id": "uclg",
@@ -142,7 +142,7 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Train Shadowforge Gatebreaker"
+      "Value": "Train War Golem"
     },
     {
       "Id": "utub",
@@ -158,11 +158,6 @@
       "Id": "uico",
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronGolem.blp"
-    },
-    {
-      "Id": "unam",
-      "Type": 3,
-      "Value": "Shadowforge Gatebreaker"
     }
   ]
 }

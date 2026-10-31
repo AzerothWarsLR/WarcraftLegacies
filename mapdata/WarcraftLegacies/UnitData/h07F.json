@@ -179,7 +179,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h019,h037,h0CT,n0F0"
+      "Value": "h019,h037,h0CT"
     },
     {
       "Id": "uupt",
@@ -254,6 +254,11 @@
       "Id": "utip",
       "Type": 3,
       "Value": "Upgrade to Dwarf Hold"
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "h0DS,h0DT"
     }
   ]
 }

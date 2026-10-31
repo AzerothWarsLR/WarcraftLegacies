@@ -56,8 +56,9 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
     }
 
     var transformation = new DarkIronTransformation();
-    AddPath(new PathDarkIronLegion(transformation));
-    AddPath(new PathDarkIronAlone(transformation));
+    var darkIronAlliance = GetQuestByType<QuestDarkIron>();
+    AddPath(new PathDarkIronLegion(transformation, darkIronAlliance));
+    AddPath(new PathDarkIronAlone(transformation, darkIronAlliance));
     AddPath(new PathWildhammer(new WildhammerTransformation()));
     LinkMagniToTheGreatForge();
   }
@@ -80,7 +81,7 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
 
   /// <inheritdoc />
   public string RoleplayIntroText => Loc.Format(
-    "You are playing as the long-enduring {faction}.\n\nDeep within Khaz Modan, the forges of Ironforge burn brighter than ever, and the Bronzebeards are as stubborn as the mountain itself.\n\nThe Fel Horde is gathering beyond the Dark Portal. Muster your forces and aid Stormwind and Kul Tiras, your allies of the South Alliance, or risk losing them.\n\nYet the dwarves are a fractured people. The Dark Iron stir beneath Blackrock Mountain, and the Wildhammer keep their own counsel at Aerie Peak. Should the Great Forge ever go cold, one of them may claim what is left of the dwarves.",
+    "You are playing as the long-enduring {faction}.\n\nDeep within Khaz Modan, the forges of Ironforge burn brighter than ever, and the Bronzebeards are as stubborn as the mountain itself.\n\nThe Fel Horde is gathering beyond the Dark Portal. Muster your forces and aid Stormwind and Kul Tiras, your allies of the South Alliance, or risk losing them.\n\nYet the dwarves are a fractured people. The Dark Iron stir beneath Blackrock Mountain, and the Wildhammer keep their own counsel at Aerie Peak. Bring the Dark Iron back into the fold and Moira may claim the throne for them; should the Great Forge ever go cold, Falstad may rally the dwarves at Aerie Peak.",
     ("{faction}", $"{PrefixCol}{Loc.Get("Kingdom of Ironforge")}|r"));
 
   /// <inheritdoc />
@@ -90,6 +91,7 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
     RegisterObjectLevels();
     RegisterQuests();
     IronforgeSpells.Setup();
+    DarkIronSpells.Setup();
     IronforgeTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
@@ -220,10 +222,17 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
 
   private static void RegisterResearches()
   {
-    var flamethrower = new Flamethrower(UPGRADE_TP28_FLAMETHROWER_IRONFORGE, 0, 5);
-    var artillery = new Artillery(UPGRADE_TP29_ARTILLERY_IRONFORGE, 0, 5);
-
+    var flamethrower = new Flamethrower(UPGRADE_TP28_FLAMETHROWER_IRONFORGE, UNIT_H01P_STEAM_TANK_IRONFORGE,
+      UNIT_TP01_FLAME_TANK_IRONFORGE, 0, 5);
+    var artillery = new Artillery(UPGRADE_TP29_ARTILLERY_IRONFORGE, UNIT_H01P_STEAM_TANK_IRONFORGE,
+      UNIT_TP02_ARTILLERY_TANK_IRONFORGE, 0, 5);
     ResearchManager.RegisterIncompatibleSet(flamethrower, artillery);
+
+    var darkIronFlamethrower = new Flamethrower(UPGRADE_R10K_FLAMETHROWER_DARKIRON, UNIT_H0AA_MAGMA_TANK_DARKIRON,
+      UNIT_H0EC_FLAME_TANK_DARKIRON, 150);
+    var darkIronArtillery = new Artillery(UPGRADE_R10L_ARTILLERY_DARKIRON, UNIT_H0AA_MAGMA_TANK_DARKIRON,
+      UNIT_H0ED_WAR_TANK_DARKIRON, 150);
+    ResearchManager.RegisterIncompatibleSet(darkIronFlamethrower, darkIronArtillery);
   }
 }
 

@@ -1,0 +1,47 @@
+{
+  "OldId": "AIms",
+  "NewId": "A1A5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Imvb",
+      "Value": 60
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Imvb",
+      "Value": 80
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Imvb",
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Imvb",
+      "Value": 120
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(DarkIron - Angerforge)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Forward, Shadowforge! (Speed)"
+    }
+  ]
+}

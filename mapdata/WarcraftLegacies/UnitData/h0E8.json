@@ -1,0 +1,126 @@
+{
+  "OldId": "hfoo",
+  "NewId": "h0E8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A020,A1AN,A0B8,Aihn"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "udef",
+      "Value": 3
+    },
+    {
+      "Id": "ua1d",
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 16
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 17
+    },
+    {
+      "Id": "ugor",
+      "Value": 19
+    },
+    {
+      "Id": "uhpm",
+      "Value": 925
+    },
+    {
+      "Id": "upri",
+      "Value": 3
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R10R,Rguv,Rhar,Rhme"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumBash"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronVanguard.blp"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(DarkIron)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\DarkIronEliteCaptain.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1.15
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Warrior"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Warrior"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Stout defender of Dun Morogh."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "HeroMountainKing"
+    }
+  ]
+}

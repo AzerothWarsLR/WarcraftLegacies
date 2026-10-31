@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10O",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Blood of the Mountain"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Blood of the Mountain"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Fighting on the stone of its homeland. This unit has increased armor and deals more damage."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronForge.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0F5,S01F,TP03,TP02,S01H,S01G"
+      "Value": "A1AP,S01F,A19O,A19N,S01H,S01G"
     },
     {
       "Id": "uacq",
@@ -123,7 +123,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "Rhar,Rhme,Rguv"
+      "Value": "Rhar,Rhme,Rguv,R10M"
     },
     {
       "Id": "ua2t",

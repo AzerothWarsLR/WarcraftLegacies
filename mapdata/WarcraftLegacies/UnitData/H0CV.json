@@ -33,7 +33,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "TP49,TP51,TP46,MD07"
+      "Value": "Aamk,A07N,A1A0,A1A1,A1A2"
     },
     {
       "Id": "uhpm",
@@ -120,12 +120,22 @@
     {
       "Id": "umdl",
       "Type": 3,
-      "Value": "war3mapImported\\DwarvenWarrior.mdl"
+      "Value": "war3mapImported\\DarkIronCaptain.mdl"
     },
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.4
+      "Value": 1.45
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGeneralAngerforge.blp"
+    },
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "AInv,A0GK"
     }
   ],
   "NewId": "H0CV"

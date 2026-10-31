@@ -9,16 +9,22 @@ namespace WarcraftLegacies.Source.Factions.Ironforge.Researches;
 /// </summary>
 public sealed class Artillery : Research
 {
+  private readonly int _steamTank;
+  private readonly int _artilleryTank;
+
   /// <inheritdoc />
-  public Artillery(int researchTypeId, int goldCost, int lumberCost = 0) : base(researchTypeId, goldCost, lumberCost)
+  public Artillery(int researchTypeId, int steamTank, int artilleryTank, int goldCost, int lumberCost = 0)
+    : base(researchTypeId, goldCost, lumberCost)
   {
+    _steamTank = steamTank;
+    _artilleryTank = artilleryTank;
   }
 
   /// <inheritdoc />
   public override void OnResearch(player researchingPlayer)
   {
     var faction = researchingPlayer.GetPlayerData().Faction;
-    faction?.ModObjectLimit(UNIT_H01P_STEAM_TANK_IRONFORGE, -3);
-    faction?.ModObjectLimit(UNIT_TP02_ARTILLERY_TANK_IRONFORGE, 3);
+    faction?.ModObjectLimit(_steamTank, -3);
+    faction?.ModObjectLimit(_artilleryTank, 3);
   }
 }

@@ -9,16 +9,22 @@ namespace WarcraftLegacies.Source.Factions.Ironforge.Researches;
 /// </summary>
 public sealed class Flamethrower : Research
 {
+  private readonly int _steamTank;
+  private readonly int _flameTank;
+
   /// <inheritdoc />
-  public Flamethrower(int researchTypeId, int goldCost, int lumberCost = 0) : base(researchTypeId, goldCost, lumberCost)
+  public Flamethrower(int researchTypeId, int steamTank, int flameTank, int goldCost, int lumberCost = 0)
+    : base(researchTypeId, goldCost, lumberCost)
   {
+    _steamTank = steamTank;
+    _flameTank = flameTank;
   }
 
   /// <inheritdoc />
   public override void OnResearch(player researchingPlayer)
   {
     var faction = researchingPlayer.GetPlayerData().Faction;
-    faction?.ModObjectLimit(UNIT_H01P_STEAM_TANK_IRONFORGE, -3);
-    faction?.ModObjectLimit(UNIT_TP01_FLAME_TANK_IRONFORGE, 3);
+    faction?.ModObjectLimit(_steamTank, -3);
+    faction?.ModObjectLimit(_flameTank, 3);
   }
 }

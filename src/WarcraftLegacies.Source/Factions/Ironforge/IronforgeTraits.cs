@@ -24,7 +24,7 @@ public static class IronforgeTraits
       ProcChance = 1.0f,
       Cooldown = 0,
       CastDistance = 250
-    }, UNIT_TP01_FLAME_TANK_IRONFORGE);
+    }, new[] { UNIT_TP01_FLAME_TANK_IRONFORGE, UNIT_H0EC_FLAME_TANK_DARKIRON });
     UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_VP26_MASTER_OF_LIGHTNING_IRONFORGE_FALSTAD)
     {
       DummyAbilityId = ABILITY_VP27_FORKED_LIGHTNING_IRONFORGE_FALSTAD_DUMMY,

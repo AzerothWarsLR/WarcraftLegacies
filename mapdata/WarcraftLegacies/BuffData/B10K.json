@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10K",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedDamage.mdl"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Firebrand"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is burning; it takes damage over time."
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Firebrand"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFistOfFire.blp"
+    }
+  ]
+}

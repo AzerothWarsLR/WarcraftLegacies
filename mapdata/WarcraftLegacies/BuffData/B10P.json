@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B10P",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Drill Lodged"
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Drill Lodged"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit\u0027s drill is stuck in the ground. It cannot move."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWormBurrow.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

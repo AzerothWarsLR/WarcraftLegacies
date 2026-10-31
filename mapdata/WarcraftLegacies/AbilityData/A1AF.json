@@ -1,0 +1,47 @@
+{
+  "OldId": "AIms",
+  "NewId": "A1AF",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Imvb",
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Imvb",
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Imvb",
+      "Value": 50
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "Imvb",
+      "Value": 50
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(DarkIron - Ragnaros)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Molten Shield (Speed)"
+    }
+  ]
+}

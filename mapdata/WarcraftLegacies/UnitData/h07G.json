@@ -257,7 +257,7 @@
     {
       "Id": "utra",
       "Type": 3,
-      "Value": "h019,h037,h0CT,n0F0"
+      "Value": "h019,h037,h0CT"
     },
     {
       "Id": "upgr",
@@ -281,7 +281,7 @@
     {
       "Id": "udep",
       "Type": 3,
-      "Value": "h01U,h001,h01Z"
+      "Value": "h01U,h001,h01Z,h0DT"
     },
     {
       "Id": "uico",

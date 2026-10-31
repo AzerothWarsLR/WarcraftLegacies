@@ -11,6 +11,7 @@ public sealed class IronforgeLegends
   public LegendaryHero Muradin { get; }
   public LegendaryHero Moira { get; }
   public LegendaryHero Angerforge { get; }
+  public LegendaryHero Ragnaros { get; }
   public LegendaryHero Kurdran { get; }
   public LegendaryHero Talonaxe { get; }
   public Capital GreatForge { get; }
@@ -54,6 +55,12 @@ public sealed class IronforgeLegends
       UnitType = UNIT_H0CV_GENERAL_OF_THE_DARK_IRON_DARKIRON
     };
 
+    Ragnaros = new LegendaryHero("Ragnaros")
+    {
+      UnitType = UNIT_U02K_LORD_OF_THE_FIRELANDS_DARKIRON,
+      StartingXp = 2800
+    };
+
     Kurdran = new LegendaryHero("Kurdran Wildhammer")
     {
       UnitType = UNIT_H0CW_SKY_THANE_OF_THE_WILDHAMMER_WILDHAMMER
@@ -92,6 +99,7 @@ public sealed class IronforgeLegends
     LegendaryHeroManager.Register(Muradin);
     LegendaryHeroManager.Register(Moira);
     LegendaryHeroManager.Register(Angerforge);
+    LegendaryHeroManager.Register(Ragnaros);
     LegendaryHeroManager.Register(Kurdran);
     LegendaryHeroManager.Register(Talonaxe);
     CapitalManager.Register(GreatForge);
