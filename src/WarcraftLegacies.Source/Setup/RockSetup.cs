@@ -22,9 +22,6 @@ public static class RockSetup
     //AQ Rocks
     RockSystem.Register(new RockGroup(Regions.AQ_Blockers, _rockChunkId));
 
-    //Bridge Rocks
-    RockSystem.Register(new RockGroup(Regions.BridgeAmbient, _rockChunkId, 30));
-
     RockSystem.Register(new RockGroup(Regions.Blockers_Feralas, _southKalimdorRockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
     RockSystem.Register(new RockGroup(Regions.Blockers_Stonetalon_Peak, _southKalimdorRockChunkId, SouthKalimdorGuardSystem.UnlockTurn));
     RockSystem.Register(new RockGroup(Regions.Blockers_Tanaris, _southKalimdorRockChunkId, SouthKalimdorGuardSystem.UnlockTurn));

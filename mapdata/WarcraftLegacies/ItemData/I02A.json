@@ -1,0 +1,50 @@
+{
+  "OldId": "manh",
+  "NewId": "I02A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "iabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "igol",
+      "Value": 300
+    },
+    {
+      "Id": "ilum",
+      "Value": 0
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Pay the Repair Crew"
+    },
+    {
+      "Id": "iico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRepair.blp"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Pay the Repair Crew"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Pays the foreman\u0027s crew to work faster. The Thandol Span is restored 5 turns sooner."
+    },
+    {
+      "Id": "isto",
+      "Value": 1
+    },
+    {
+      "Id": "istr",
+      "Value": 10
+    }
+  ]
+}

@@ -50,6 +50,7 @@ public static class Items
   public const int ITEM_I027_GOREFIEND_S_TRUNCHEON = 1227895351;
   public const int ITEM_I028_BOW_OF_ELUNE_S_GRACE = 1227895352;
   public const int ITEM_I029_TINY_WAR_MILL = 1227895353;
+  public const int ITEM_I02A_PAY_THE_REPAIR_CREW = 1227895361;
   public const int ITEM_I0WG_WARGLAIVES_OF_AZZINOTH = 1227904839;
   public const int ITEM_I0WH_HEART_OF_M_URU = 1227904840;
   public const int ITEM_ISGC_THE_SCARAB_GONG = 1230194499;

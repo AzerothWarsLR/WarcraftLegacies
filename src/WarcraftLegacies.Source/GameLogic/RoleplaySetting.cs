@@ -34,6 +34,7 @@ using WarcraftLegacies.Source.Factions.TaurenTribes.Paths;
 using WarcraftLegacies.Source.Factions.Theramore;
 using WarcraftLegacies.Source.GameLogic.GrandAlliance;
 using WarcraftLegacies.Source.GameLogic.HyjalPact;
+using WarcraftLegacies.Source.GameLogic.ThandolSpan;
 using WarcraftLegacies.Source.Objectives.MetaBased;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
@@ -85,6 +86,7 @@ public static class RoleplaySetting
     SetupHyjalPact();
     SetupDaelinsVengeance();
     SetupGrandAlliance();
+    SetupThandolSpan();
     SetupDaughtersOfTheAlliance();
     SetupBloodOfMannoroth();
     SetupNordrassilsSacrifice();
@@ -146,6 +148,25 @@ public static class RoleplaySetting
   {
     GrandAlliance = new GrandAllianceEvent();
     WorldEventManager.Register(GrandAlliance);
+  }
+
+  private static void SetupThandolSpan()
+  {
+    var thandolSpan = new ThandolSpanEvent();
+    WorldEventManager.Register(thandolSpan);
+    ThandolSpanBridge.AnnouncesRestoration = false;
+    if (GrandAlliance == null)
+    {
+      return;
+    }
+
+    GrandAlliance.StateChanged += worldEvent =>
+    {
+      if (worldEvent.State == WorldEventState.Happened)
+      {
+        ThandolSpanBridge.RestoreNow("the Grand Alliance formed");
+      }
+    };
   }
 
   private static void SetupHyjalPact()
