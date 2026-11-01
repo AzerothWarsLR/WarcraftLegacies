@@ -55,7 +55,7 @@
       "Level": 4,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<MD27,DataA4>个无法移动的毒蛇结界攻击敌人。每个结界拥有<osp4,realHP>点生命值，对魔法免疫，并造成轻微伤害。|n持续<Arsw,Dur4>秒。|n|n|cffffcc00能攻击地面和空中单位。|r"
+      "Value": "召唤<MD27,DataA4>个无法移动的毒蛇结界攻击敌人。每个结界拥有<osp4,realHP>点生命值，对魔法免疫，并造成高额伤害。|n持续<Arsw,Dur4>秒。|n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Id": "ansf",

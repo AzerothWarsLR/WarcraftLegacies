@@ -41,6 +41,12 @@ public sealed class LocaleOverlayTests
         {
           offenders.Add($"{overlay.Name}: {modification.Field}");
         }
+        else if (modification.ValueKind != JsonValueKind.String)
+        {
+          // A statistic written as a number where text belongs overrides the base just as surely as a field that
+          // has no business being in an overlay, and a silent skip would let it through.
+          offenders.Add($"{overlay.Name}: {modification.Field} is not text");
+        }
       }
     }
 
@@ -56,7 +62,8 @@ public sealed class LocaleOverlayTests
     foreach (var overlay in Overlays())
     {
       var baseValues = Modifications(overlay.BasePath)
-        .ToDictionary(modification => (modification.Field, modification.Level), modification => modification.Value);
+        .Where(modification => modification.ValueKind == JsonValueKind.String)
+        .ToDictionary(modification => (modification.Field, modification.Level), modification => modification.Text);
       if (baseValues.Values.Any(ContainsChinese))
       {
         // The base records of a localised build tree have already been shipped Chinese.
@@ -65,8 +72,9 @@ public sealed class LocaleOverlayTests
 
       foreach (var modification in Modifications(overlay.OverlayPath))
       {
-        if (baseValues.TryGetValue((modification.Field, modification.Level), out var english) &&
-            english == modification.Value)
+        if (modification.ValueKind == JsonValueKind.String &&
+            baseValues.TryGetValue((modification.Field, modification.Level), out var english) &&
+            english == modification.Text)
         {
           offenders.Add($"{overlay.Name}: {modification.Field} level {modification.Level}");
         }
@@ -97,7 +105,7 @@ public sealed class LocaleOverlayTests
     }
   }
 
-  private static IEnumerable<(string Field, int? Level, string Value)> Modifications(string path)
+  private static IEnumerable<(string Field, int? Level, JsonValueKind ValueKind, string Text)> Modifications(string path)
   {
     if (!File.Exists(path))
     {
@@ -112,11 +120,19 @@ public sealed class LocaleOverlayTests
 
     foreach (var modification in modifications.EnumerateArray())
     {
-      if (!modification.TryGetProperty("Id", out var id) ||
-          !modification.TryGetProperty("Value", out var value) ||
-          value.ValueKind != JsonValueKind.String)
+      var field = modification.TryGetProperty("Id", out var id) && id.ValueKind == JsonValueKind.String
+        ? id.GetString() ?? ""
+        : "";
+
+      var valueKind = JsonValueKind.Undefined;
+      var text = "";
+      if (modification.TryGetProperty("Value", out var value))
       {
-        continue;
+        valueKind = value.ValueKind;
+        if (valueKind == JsonValueKind.String)
+        {
+          text = value.GetString() ?? "";
+        }
       }
 
       var level = modification.TryGetProperty("Level", out var levelElement) &&
@@ -124,7 +140,7 @@ public sealed class LocaleOverlayTests
         ? levelElement.GetInt32()
         : (int?)null;
 
-      yield return (id.GetString() ?? "", level, value.GetString() ?? "");
+      yield return (field, level, valueKind, text);
     }
   }
 

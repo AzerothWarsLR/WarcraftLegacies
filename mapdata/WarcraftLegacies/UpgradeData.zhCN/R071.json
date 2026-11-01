@@ -38,13 +38,13 @@
       "Level": 1,
       "Id": "gnam",
       "Type": 3,
-      "Value": "巫医专家级训练"
+      "Value": "妖术医师专家级训练"
     },
     {
       "Level": 2,
       "Id": "gnam",
       "Type": 3,
-      "Value": "巫医大师级训练"
+      "Value": "妖术医师大师级训练"
     }
   ],
   "NewId": "R071"

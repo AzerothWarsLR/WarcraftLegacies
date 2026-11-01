@@ -17,12 +17,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "神圣堡垒"
+      "Value": "神圣城堡"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "升级到神圣堡垒"
+      "Value": "升级到神圣城堡"
     }
   ],
   "NewId": "o051"

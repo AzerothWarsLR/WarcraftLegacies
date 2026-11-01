@@ -42,7 +42,7 @@
       "Level": 2,
       "Id": "aub1",
       "Type": 3,
-      "Value": "召唤<ZBsw,DataA2>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp2,realHP>点生命值，免疫魔法和法术，并造成中等伤害。 |n持续<ZBsw,Dur2>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r"
+      "Value": "召唤<ZBsw,DataA2>个无法移动的毒蛇结界攻击施法者的敌人。每个结界拥有<osp2,realHP>点生命值，免疫魔法和法术，并造成轻微伤害。 |n持续<ZBsw,Dur2>秒。 |n|n|cffffcc00能攻击地面和空中单位。|r"
     },
     {
       "Id": "anam",

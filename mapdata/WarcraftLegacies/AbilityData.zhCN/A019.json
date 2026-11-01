@@ -24,7 +24,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "使半径<A019,Area1>范围内的<A019,DataA1>具友方单位尸体复活。"
+      "Value": "使半径<A019,Area1>范围内的<A019,DataA1>具友方单位的尸体复活。"
     }
   ],
   "NewId": "A019"

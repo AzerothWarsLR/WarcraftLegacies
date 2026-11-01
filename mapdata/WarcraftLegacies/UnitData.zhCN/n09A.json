@@ -12,12 +12,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "余烬牧师"
+      "Value": "余烬教士"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "训练余烬牧师"
+      "Value": "训练余烬教士"
     },
     {
       "Id": "utub",

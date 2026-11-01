@@ -12,17 +12,17 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "牧师"
+      "Value": "教士"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "训练牧师"
+      "Value": "训练教士"
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "治疗型施法单位。"
+      "Value": "治疗型施法者。"
     }
   ],
   "NewId": "h04M"

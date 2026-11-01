@@ -42,7 +42,7 @@
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,
   "PrologueScreenPath": "",
-  "PrologueScreenText": "\uFFFD",
+  "PrologueScreenText": "",
   "PrologueScreenTitle": "",
   "PrologueScreenSubtitle": "",
   "FogStyle": 0,
@@ -8602,7 +8602,7 @@
     },
     {
       "Index": 6,
-      "Name": "C\u0027Thun",
+      "Name": "C'Thun",
       "ItemSets": [
         {
           "Items": [

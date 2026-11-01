@@ -17,12 +17,12 @@
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "施法单位生产建筑。"
+      "Value": "施法者生产建筑。"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "建造法阵"
+      "Value": "建造召唤法阵"
     }
   ],
   "NewId": "u006"
