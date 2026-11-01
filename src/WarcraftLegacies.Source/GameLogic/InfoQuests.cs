@@ -1,4 +1,4 @@
-using MacroTools.Localization;
+﻿using MacroTools.Localization;
 
 namespace WarcraftLegacies.Source.GameLogic;
 
