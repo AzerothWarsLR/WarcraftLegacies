@@ -7,7 +7,7 @@
     {
       "Id": "ansf",
       "Type": 3,
-      "Value": "（自身施放 - 地精攻城行者）"
+      "Value": "（自身施法 - 地精攻城行者）"
     },
     {
       "Id": "anam",
@@ -24,7 +24,7 @@
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "溢流 - [|cffffcc002级|r]"
+      "Value": "自身嗜血术 - [|cffffcc002级|r]"
     },
     {
       "Level": 1,

@@ -12,12 +12,12 @@
     {
       "Id": "anam",
       "Type": 3,
-      "Value": "召唤王室禁卫"
+      "Value": "召唤皇家卫兵"
     },
     {
       "Id": "aret",
       "Type": 3,
-      "Value": "学习召唤王室禁卫 - [|cffffcc00等级 %d|r]"
+      "Value": "学习召唤皇家卫兵 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -28,7 +28,7 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "召唤王室禁卫 - [|cffffcc001级|r]"
+      "Value": "召唤皇家卫兵 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,

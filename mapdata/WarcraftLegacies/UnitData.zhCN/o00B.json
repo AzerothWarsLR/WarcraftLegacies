@@ -7,7 +7,7 @@
     {
       "Id": "unsf",
       "Type": 3,
-      "Value": "（野外生物）"
+      "Value": "（中立生物）"
     },
     {
       "Id": "unam",
@@ -17,7 +17,7 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "训练十兵卫索斯"
+      "Value": "复活 - 十兵卫索斯"
     }
   ],
   "NewId": "o00B"

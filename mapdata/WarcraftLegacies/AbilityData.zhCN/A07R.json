@@ -17,7 +17,7 @@
     {
       "Id": "aret",
       "Type": 3,
-      "Value": "学习万能镣铐 - [|cffffcc00%d 级|r]"
+      "Value": "学习万能枷锁 - [|cffffcc00等级 %d|r]"
     },
     {
       "Id": "arut",
@@ -28,25 +28,25 @@
       "Level": 1,
       "Id": "atp1",
       "Type": 3,
-      "Value": "万能枷锁 - [|cffffcc001 级|r]"
+      "Value": "万能枷锁 - [|cffffcc001级|r]"
     },
     {
       "Level": 2,
       "Id": "atp1",
       "Type": 3,
-      "Value": "万能枷锁 - [|cffffcc002 级|r]"
+      "Value": "万能枷锁 - [|cffffcc002级|r]"
     },
     {
       "Level": 3,
       "Id": "atp1",
       "Type": 3,
-      "Value": "万能枷锁 - [|cffffcc003 级|r]"
+      "Value": "万能枷锁 - [|cffffcc003级|r]"
     },
     {
       "Level": 4,
       "Id": "atp1",
       "Type": 3,
-      "Value": "万能枷锁 - [|cffffcc004 级|r]"
+      "Value": "万能枷锁 - [|cffffcc004级|r]"
     },
     {
       "Level": 2,

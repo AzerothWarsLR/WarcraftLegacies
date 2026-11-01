@@ -24,7 +24,7 @@
       "Level": 1,
       "Id": "aub1",
       "Type": 3,
-      "Value": "为一个友方生命单位恢复<A0H0,DataA1>点生命值。"
+      "Value": "为一个友方活体单位恢复<A0H0,DataA1>点生命值。"
     }
   ],
   "NewId": "A0V1"

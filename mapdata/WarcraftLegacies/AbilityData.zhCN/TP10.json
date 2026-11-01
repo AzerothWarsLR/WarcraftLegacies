@@ -17,7 +17,7 @@
     {
       "Id": "aret",
       "Type": 3,
-      "Value": "学习风暴卫士 - [|cffffcc00等级 %d|r]"
+      "Value": "学习风暴守卫 - [|cffffcc00%d级|r]"
     },
     {
       "Level": 1,

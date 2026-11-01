@@ -12,12 +12,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "牧师"
+      "Value": "教区牧师"
     },
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "训练牧师"
+      "Value": "训练教区牧师"
     },
     {
       "Id": "utub",
