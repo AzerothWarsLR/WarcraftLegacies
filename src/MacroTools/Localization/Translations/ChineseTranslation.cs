@@ -5,8 +5,9 @@ namespace MacroTools.Localization.Translations;
 /// <summary>
 /// The map's Simplified Chinese text.
 /// <para>
-/// The entries are added one at a time in the constructor rather than stated as a collection initialiser: CSharp.lua
-/// compiles an initialiser into a perfect-hash lookup, and a collision there stops the map from starting.
+/// The entries are added one at a time in the constructor rather than stated as a collection initialiser.
+/// CSharp.lua compiles a large initialiser into one table plus a perfect-hash lookup, and past a few hundred
+/// entries that lookup collides and the map refuses to start with "key already exists".
 /// </para>
 /// </summary>
 internal sealed class ChineseTranslation : ITranslation
@@ -32,6 +33,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("\nPlayer Data: {value}", "\n玩家数据：{value}");
     Add("\nPlayer: {value}", "\n玩家：{value}");
     Add("\nUsing this ability pings each of these capitals on the minimap.", "\n使用该技能会在小地图上标记所有这些首都。");
+    Add("-{command}: {description}", "-{command}：{description}");
     Add("<faction> <key>", "<阵营> <键>");
     Add("<faction> <team>", "<阵营> <队伍>");
     Add("A Cunning Plan", "毒计");
@@ -43,13 +45,13 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Adding {name} to selected units.", "正在将{name}加入选中单位。");
     Add("Adds the specified spell to all selected units.", "为所有选中的单位添加指定技能。");
     Add("Aegwynn", "艾格文");
+    Add("After months of digging, excavating, and tomb raiding, {hero} and the Explorer's League have finally unearthed an artifact from Ul'dum: {artifact}.", "经过数月的挖掘、开凿与盗墓，{hero}与探险者协会终于从奥丹姆发掘出一件神器：{artifact}。");
     Add("After months of digging, excavating, and tomb raiding, {unit} and the Explorer's League have finally unearthed an artifact from Ul'dum: {artifact}.", "历经数月的挖掘、开凿与探墓，{unit}与探险者协会终于从奥丹姆发掘出一件神器：{artifact}。");
     Add("Ahn'Qiraj", "安其拉");
     Add("Ahn'qiraj", "安其拉");
     Add("Al'Aqir", "奥拉基尔");
     Add("Alcaz Isle", "奥卡兹岛");
     Add("Alexandros Mograine", "大领主亚历山德罗斯·莫格莱尼");
-    Add("Alignement", "归位");
     Add("All abilities removed from {unit}", "已移除{unit}的所有技能");
     Add("All of your heroes gain {xp} experience", "你的所有英雄获得 {xp} 点经验值");
     Add("All text settings set to {value}.", "所有文本设置已设为 {value}。");
@@ -63,6 +65,9 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Antonidas", "安东尼达斯");
     Add("Anub'arak", "阿努巴拉克");
     Add("Any level {level}+ hero reaches {rect}", "任意 {level} 级或以上的英雄抵达 {rect}");
+    Add("Anyone casts {ability}", "任意单位施放 {ability}");
+    Add("Anyone casts {spell}", "任意单位施放 {spell}");
+    Add("Anyone starts casting {ability}", "任意单位开始施放{ability}");
     Add("Anyone starts casting {spell}", "任何人开始施放{spell}");
     Add("Arathi Highlands", "阿拉希高地");
     Add("Archimonde", "阿克蒙德");
@@ -71,7 +76,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Arthas Menethil", "阿尔萨斯·米奈希尔");
     Add("Artifacts", "神器");
     Add("Artifacts (F7)", "神器 (F7)");
-    Add("Ascension", "飞升");
     Add("Ash and Smoke", "灰烬与硝烟");
     Add("Ashenvale", "灰谷");
     Add("Astranaar", "阿斯特兰纳");
@@ -79,7 +83,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Attempted to create already existing Artifact from {artifact}.", "试图用{artifact}创建已存在的神器。");
     Add("Attempted to register faction that already exists with name {faction}.", "试图注册同名阵营{faction}，该阵营已存在。");
     Add("Attempted to spawn {count} of object {unit}.", "已尝试生成 {count} 个{unit}。");
-    Add("Awakening", "觉醒");
     Add("Awakening of Stormrage", "怒风的苏醒");
     Add("Azeroth", "艾泽拉斯");
     Add("Azjol-Nerub", "艾卓-尼鲁布");
@@ -92,7 +95,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("BIG", "巨额");
     Add("Badlands", "荒芜之地");
     Add("Balor Island", "巴洛岛");
-    Add("Baron Rivendare", "巫妖王");
+    Add("Baron Rivendare", "瑞文戴尔男爵");
     Add("Battle for Azeroth", "争霸艾泽拉斯");
     Add("Beyond the Dark Portal", "穿越黑暗之门");
     Add("Bilgewater Harbor", "污水港");
@@ -110,15 +113,14 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Book of Medivh", "麦迪文之书");
     Add("Booty Bay", "藏宝海湾");
     Add("Borean Tundra", "北风苔原");
-    Add("Breaking Bad Blood", "斩断血咒");
     Add("Brigitte Abendis", "布丽奇特·阿比迪斯");
     Add("Brill", "布瑞尔");
     Add("Broken Isles", "破碎群岛");
     Add("Broken Isles left", "破碎群岛 左");
     Add("Broken Isles right", "破碎群岛 右");
     Add("Broken Isles top right", "破碎群岛 右上");
-    Add("Brute Allegiance", "蛮兵归附");
     Add("Build {building} {area}", "{area}建造{building}");
+    Add("Build {count} {building}s ({current}/{count})", "建造 {count} 座{building}（{current}/{count}）");
     Add("Build {count} {building}s {area} ({current}/{count})", "{area}建造{count}座{building}（{current}/{count}）");
     Add("Build {unit}s ({current}/{target})", "建造{unit}（{current}/{target}）");
     Add("Burning Legion", "燃烧军团");
@@ -129,6 +131,9 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Cairne Bloodhoof", "凯恩·血蹄");
     Add("Cannot select closest widget from an empty collection.", "无法从空集合中选择最近的控件。");
     Add("Captain Falric", "法瑞克队长");
+    Add("Cast {ability}", "施放 {ability}");
+    Add("Cast {ability} from {unit}", "由{unit}施放{ability}");
+    Add("Cast {spell}", "施放 {spell}");
     Add("Cast {spell} from {caster}", "由{caster}施放{spell}");
     Add("Caverns of Time", "时光之穴");
     Add("Cenarius", "塞纳留斯");
@@ -142,6 +147,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Control {unit}", "夺取{unit}");
     Add("Core of the Ship", "飞船核心");
     Add("Corrupting the Monastery", "腐化修道院");
+    Add("Countdown to Extinction", "灭绝倒计时");
     Add("Created a penguin at all registered Shores.", "已在所有已注册的海岸生成企鹅。");
     Add("Crossroads", "十字路口");
     Add("Crown of Shadow", "暗影之冠");
@@ -149,6 +155,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Crown of the Triumvirate", "执政团之冠");
     Add("Crystalsong Forest", "晶歌森林");
     Add("Current settings:\nCamera distance: {distance}\n\nShow quest text: {questText}\n\nPlay dialogue: {dialogue}\n\nShow captions: {captions}\n\nSmart follow: {smartFollow}", "当前设置：\n镜头距离：{distance}\n\n显示任务文本：{questText}\n\n播放对话：{dialogue}\n\n显示字幕：{captions}\n\n智能跟随：{smartFollow}");
+    Add("Current settings:\nCamera distance: {value}\n\nShow quest text: {questText}\n\nPlay dialogue: {dialogue}\n\nShow captions: {captions}\n\nSmart follow: {smartFollow}", "当前设置：\n镜头距离：{value}\n\n显示任务文本：{questText}\n\n播放对话：{dialogue}\n\n显示字幕：{captions}\n\n智能跟随：{smartFollow}");
     Add("Daelin Proudmoore", "戴林·普罗德摩尔");
     Add("Dagran Thaurissan", "达格兰·索瑞森大帝");
     Add("Dalaran", "达拉然");
@@ -168,16 +175,13 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Destroyed {artifact}", "已摧毁{artifact}");
     Add("Destroyer of Worlds", "诸界的毁灭者");
     Add("Destroys the specified Artifact.", "摧毁指定的神器。");
-    Add("Destruction", "毁灭");
     Add("Displays the current limit of a unit or research.", "显示某个单位或研发项目的当前上限。");
     Add("Draenor", "德拉诺");
     Add("Dragonblight", "龙骨荒野");
     Add("Drak'Tharon Keep", "达克萨隆要塞");
     Add("Drak'tharon Keep", "达克萨隆要塞");
-    Add("Drekthar's Spellbook", "德雷克塔尔的法术书");
     Add("Driven by Vengeance", "为复仇所驱");
     Add("Druids", "德鲁伊");
-    Add("Druids Demise", "德鲁伊的末日");
     Add("Drustvar", "德鲁斯瓦");
     Add("Dun Morogh", "丹莫罗");
     Add("Durotar", "杜隆塔尔");
@@ -187,19 +191,18 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Eastern Kingdoms", "东部王国");
     Add("Eastern Plaguelands", "东瘟疫之地");
     Add("Echo Isles", "回音群岛");
-    Add("Echoes of War", "战争回响");
     Add("Eco-domes", "生态圆顶");
     Add("Eliminate Piracy", "剿灭海盗");
     Add("Elwynn Forest", "艾尔文森林");
     Add("Emerald Dream", "翡翠梦境");
     Add("Emerald Portal", "翡翠传送门");
     Add("Emeriss", "艾莫莉丝");
-    Add("Emissary of the Firelands", "火焰之地特使");
     Add("Ertan", "埃尔坦");
     Add("Eternity, Distilled", "凝聚的永恒");
     Add("Everlook", "永望镇");
     Add("Eversong Woods", "永歌森林");
     Add("Exodar", "埃索达");
+    Add("Expected {faction} to have the Cult Spies Power.", "预期{faction}拥有教派间谍能力。");
     Add("Explorer's League Foundation", "探险者协会的创立");
     Add("Explorer's League Kalimdor Expedition", "探险者协会卡利姆多远征");
     Add("Faction '{faction}' registered without an associated player.", "阵营「{faction}」注册时没有关联玩家。");
@@ -209,19 +212,17 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Failed to execute {ability}: {error}.", "执行{ability}失败：{error}。");
     Add("Failed to set the object level of {name} to {level}; it is {current} instead.", "无法将{name}的对象等级设为 {level}；当前为 {current}。");
     Add("Fall of Silvermoon", "银月城的陷落");
+    Add("False", "关");
     Add("Falstad Wildhammer", "弗斯塔德·蛮锤");
     Add("Feathermoon Stronghold", "羽月要塞");
     Add("Fel Horde", "邪部落");
     Add("Felsteel Refining", "邪钢精炼");
     Add("Felwood", "费伍德森林");
     Add("Feralas", "菲拉斯");
-    Add("Fiend of a Thousand Faces", "千面恶魔");
-    Add("Fireland Invasion", "火焰之地入侵");
     Add("Firelands", "火焰之地");
     Add("Forever Dusk", "永暮");
     Add("Forgotten Knowledge", "被遗忘的知识");
     Add("Fountain of Health in Alterac", "奥特兰克的生命之泉");
-    Add("Fresh Meat", "新鲜血肉");
     Add("Frostwolf", "霜狼");
     Add("Gadgetzan", "加基森");
     Add("Gain {gold} gold and a base in Area 52", "获得 {gold} 黄金和一处位于 52 区的基地");
@@ -231,12 +232,10 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Gargok", "加尔戈克");
     Add("Garithos", "奥斯玛·加里索斯");
     Add("Garrosh Hellscream", "加尔鲁什·地狱咆哮");
-    Add("Gates of Ahn'Qiraj", "安其拉之门");
     Add("Genn Greymane", "吉恩·格雷迈恩");
     Add("Gets a list of abilities that the first selected unit has.", "列出第一个选中单位所拥有的技能。");
     Add("Gets the current order of the first selected unit.", "获取第一个选中单位当前的命令。");
     Add("Ghostlands", "幽魂之地");
-    Add("Gift of Flesh", "血肉之赐");
     Add("Gilneas", "吉尔尼斯");
     Add("Gilneas City", "吉尔尼斯城");
     Add("Gives the player a specified amount of gold.", "给予玩家指定数量的黄金。");
@@ -319,6 +318,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Lost City of the Tol'vir", "托维尔失落之城");
     Add("Lucille Waycrest", "露希尔·维克雷斯");
     Add("Maelstrom", "大漩涡");
+    Add("Magatha Grimtotem", "玛加萨·恐怖图腾");
     Add("Magni Bronzebeard", "麦格尼·铜须");
     Add("Magtheridon", "玛瑟里顿");
     Add("Maiev Shadowsong", "玛维·影歌");
@@ -332,13 +332,10 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Maraad", "守备官玛尔拉德");
     Add("Marauding Ogres", "食人魔肆虐");
     Add("Marks you as an MMD winner and writes MMD data immediately.", "将你标记为 MMD 胜者，并立即写入 MMD 数据。");
-    Add("Maw of Go'rath", "戈拉什之口");
-    Add("Maw of Shu'ma", "舒玛之口");
     Add("Medivh", "麦迪文");
     Add("Menethil Harbour", "米奈希尔港");
     Add("Meredith Waycrest", "梅瑞狄斯·维克雷斯");
     Add("Moam", "莫阿姆");
-    Add("Mockery of Life", "生命的嘲弄");
     Add("Molten Core", "熔火之心");
     Add("Moonglade", "月光林地");
     Add("Mount Hyjal", "海加尔山");
@@ -373,8 +370,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Old Hatreds", "旧日的仇恨");
     Add("Onslaught", "突袭");
     Add("Onyxia's Lair", "奥妮克希亚的巢穴");
+    Add("Orcish Horde", "兽人部落");
     Add("Orgrimmar", "奥格瑞玛");
-    Add("Otherwordly Invaders", "异界入侵者");
     Add("Ouro", "奥罗");
     Add("Outland", "外域");
     Add("Outskirts", "城郊地区");
@@ -405,7 +402,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Ratchet", "棘齿城");
     Add("Reach level {level} with {hero}", "让{hero}达到 {level} 级");
     Add("Reach {rect} with a level {level}+ hero", "让一名 {level} 级或以上的英雄抵达 {rect}");
-    Add("Rebuilding of Ahn'Qiraj", "重建安其拉");
     Add("Reconquering Tempest Keep", "重夺风暴要塞");
     Add("Redridge Mountains", "赤脊山");
     Add("Removed Power {power}.", "已移除力量{power}。");
@@ -447,6 +443,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Sets the mana of all selected units to the specified value.", "将所有选中单位的法力值设定为指定数值。");
     Add("Setting camera height to {height}.", "正在将镜头高度设为 {height}。");
     Add("Setting hero level of selected units to {level}.", "正在将选中单位的英雄等级设为 {level}。");
+    Add("Setting hitpoints of selected units to {value}.", "正在将选中单位的生命值设为 {value}。");
     Add("Setting mana of selected units to {mana}.", "正在将选中单位的魔法值设为 {mana}。");
     Add("Setting owner of selected units to {player}.", "正在将选中单位的所有者设为{player}。");
     Add("Setting play dialogue option to {value}.", "正在将对话语音设为 {value}。");
@@ -460,7 +457,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Shaladrassil", "莎拉达希尔");
     Add("Shandris Feathermoon", "珊蒂斯·羽月");
     Add("Shared control with {faction}.", "已与{faction}共享控制权。");
-    Add("Shimmering Flats", "闪光平原");
     Add("Sholazar Basin", "索拉查盆地");
     Add("Shores of Feathermoon", "羽月海岸");
     Add("Shores of Northrend", "诺森德海岸");
@@ -471,7 +467,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Silverpine Forest", "银松森林");
     Add("Skipping forward {turns} turns.", "正在快进 {turns} 个回合。");
     Add("Skywall", "天空之墙");
-    Add("Slithering Forward", "蛇行推进");
     Add("Smart Follow is now off; units will use Warcraft III's native follow behavior.", "智能跟随已关闭；单位将使用《魔兽争霸3》原版的跟随行为。");
     Add("Smart Follow is now on.", "智能跟随已开启。");
     Add("Solarian", "索兰莉安");
@@ -482,6 +477,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Southern Badlands", "南部荒芜之地");
     Add("Southern Barrens", "南贫瘠之地");
     Add("Southshore", "南海镇");
+    Add("Start casting {ability}", "开始施放{ability}");
     Add("Start casting {spell}", "开始施放{spell}");
     Add("Stonetalon", "石爪山");
     Add("Stonetalon Mountains", "石爪山脉");
@@ -493,11 +489,12 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Stranglethorn Vale", "荆棘谷");
     Add("Stratholme", "斯坦索姆");
     Add("Stromgarde", "斯托姆加德");
-    Add("Subduing Neptulon", "制服耐普图隆");
+    Add("Subdue the Tauren", "驯服牛头人");
     Add("Successfully changed faction to {faction}.", "已成功切换阵营为{faction}。");
     Add("Sulfuron Spire", "萨弗隆尖塔");
     Add("Sunfury", "日怒");
     Add("Suramar", "苏拉玛");
+    Add("Surrendered control", "交出控制权");
     Add("Surrendered control of all players.", "已交出所有玩家的控制权。");
     Add("Surrendered control of {faction}.", "已交出{faction}的控制权。");
     Add("Swamp of Sorrows", "悲伤沼泽");
@@ -506,6 +503,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Taerar and Ysondre", "泰拉尔与伊森德雷");
     Add("Tanaris", "塔纳利斯");
     Add("Tarren Mill", "塔伦米尔");
+    Add("Tauren Tribes", "牛头人部族");
     Add("Teldrassil", "泰达希尔");
     Add("Tempest Keep", "风暴要塞");
     Add("Temple City of En'kilah", "圣城恩其拉");
@@ -518,7 +516,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Ascension", "加冕");
     Add("The Barrens", "贫瘠之地");
     Add("The Beast With a Thousand Maws", "千喉之兽");
-    Add("The Blade of the Black Empire", "黑暗帝国之刃");
     Add("The Blood Elves", "血精灵");
     Add("The Blood of Mannoroth", "玛诺洛斯之血");
     Add("The Bloodpact", "血之盟约");
@@ -544,7 +541,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Draenei", "德莱尼");
     Add("The Dragons of Nightmare {dragon1} and {dragon2} have been defeated.", "梦魇巨龙{dragon1}与{dragon2}已被击败。");
     Add("The Druid's Rise", "德鲁伊高地");
-    Add("The Emperor's Constructs", "皇帝的造物");
     Add("The Exile", "流放者");
     Add("The Exodar", "埃索达");
     Add("The Eye of Sargeras", "萨格拉斯之眼");
@@ -558,7 +554,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Long March", "远征");
     Add("The Maelstrom", "大漩涡");
     Add("The Nexus", "魔枢");
-    Add("The Noxious Lair", "毒雾巢穴");
     Add("The Queen's Archive", "女王的档案馆");
     Add("The Rebel", "叛逆者");
     Add("The Scarlet Crusade", "血色十字军");
@@ -570,15 +565,12 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Stonecore", "巨石之核");
     Add("The Storm Peaks", "风暴峭壁");
     Add("The Sunwell", "太阳之井");
-    Add("The Throne of the Four Winds", "四风王座");
     Add("The Turtle Demigod", "海龟半神");
     Add("The Vortex Pinnacle", "漩涡尖塔");
-    Add("The Waking City", "苏醒之城");
-    Add("The War of the Shifting Sands", "流沙之战");
     Add("The Way Forward", "前进之路");
     Add("The Wayward Well", "歧路之井");
     Add("The Well of Eternity", "永恒之井");
-    Add("The World Stone", "世界之石");
+    Add("The World Tree", "世界之树");
     Add("The World-Shaman", "救世萨满");
     Add("The game time dialog has already been initialized.", "游戏时间对话框已经初始化。");
     Add("The paramater {value} did not equal 'on' or 'off'.", "参数 {value} 不是「on」或「off」。");
@@ -597,10 +589,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Tichondrius", "提克迪奥斯");
     Add("Tiragarde", "提拉加德");
     Add("Tirisfal Glades", "提瑞斯法林地");
-    Add("Titan Jailors", "泰坦狱卒");
     Add("Titanforged", "泰坦铸造");
     Add("To Alterac", "通往奥特兰克");
-    Add("To Break or Bind", "或破或缚");
     Add("To Northrend", "通往诺森德");
     Add("To Tame a Land", "征服大地");
     Add("To the Skies!", "直冲云霄");
@@ -609,16 +599,16 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Token Resistance", "象征性的抵抗");
     Add("Tol Barad", "托尔巴拉德");
     Add("Tomb of Sargeras", "萨格拉斯之墓");
+    Add("Took control", "取得控制权");
     Add("Took control of all players.", "已取得所有玩家的控制权。");
     Add("Took control of {faction}.", "已取得{faction}的控制权。");
     Add("Tortolla", "托尔托拉");
     Add("Tranquillien", "塔奎林");
     Add("Tried to resurrect a unit that is already alive.", "试图复活一个仍然存活的单位。");
+    Add("True", "开");
     Add("Turn {turn}", "第 {turn} 回合");
     Add("Twilight Highlands", "暮光高地");
-    Add("Twilight landing", "暮光登陆场");
     Add("Twilight of the Gods", "诸神的黄昏");
-    Add("Twilight's Reckoning", "暮光清算");
     Add("Tyr's Hand", "提尔之手");
     Add("Tyrande Whisperwind", "泰兰德·语风");
     Add("Ulduar", "奥杜尔");
@@ -627,7 +617,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Under the Burning Sky", "在燃烧的天空下");
     Add("UnitUpgrade failed: Either faction or upgrade is null.", "单位升级失败：阵营或升级为空。");
     Add("Unknown {command} verb '{verb}'. Valid verbs: {verbs}.", "未知的 {command} 动词「{verb}」。可用动词：{verbs}。");
-    Add("Unyielding Bonds", "不屈之盟");
     Add("Upper Netherstorm", "上层虚空风暴");
     Add("Ursoc", "乌索克");
     Add("Usage: -{command} <verb> [args]", "用法：-{command} <动词> [参数]");
@@ -647,8 +636,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Vol'jin", "洛坎");
     Add("Vordrassil", "沃达希尔");
     Add("Vortex Pinnacle", "漩涡尖塔");
-    Add("Waking Dream", "清醒之梦");
-    Add("War of the Shifting Sands", "流沙之战");
     Add("War of the Spider", "蜘蛛之战");
     Add("Warcraft Legacies", "魔兽争霸：遗产");
     Add("Warlord Najentus", "督军纳因图斯");
@@ -720,6 +707,9 @@ internal sealed class ChineseTranslation : ITranslation
     Add("the Tomb of Sargeras entrance", "萨格拉斯之墓入口");
     Add("the Tomb of Sargeras' entrance", "萨格拉斯之墓的入口");
     Add("the Vortex Pinnacle", "漩涡尖塔");
+    Add("{ability}: {id}\n", "{ability}：{id}\n");
+    Add("{controlWord} of all players.", "已取得所有玩家的控制权。");
+    Add("{controlWord} of {faction}.", "已取得{faction}的控制权。");
     Add("{dragon1} and {dragon2}", "{dragon1}与{dragon2}");
     Add("{dragon1} and {dragon2} have appeared in {loc1} and {loc2}.", "{dragon1}与{dragon2}已出现在{loc1}和{loc2}。");
     Add("{faction} has completed the quest {quest}", "{faction}完成了任务{quest}");
@@ -735,9 +725,11 @@ internal sealed class ChineseTranslation : ITranslation
     Add("{hero} is level {level}", "{hero} 的等级达到 {level}");
     Add("{legend} reaches {rect}", "{legend} 抵达 {rect}");
     Add("{locale,-10} (not stored for this locale)", "{locale,-10} （此语言未存储）");
+    Add("{name} ({value} gold/min)", "{name}（{value} 黄金/分钟）");
     Add("{name} exists", "{name}已存在");
     Add("{name} has already been registered.", "{name}已被登记。");
     Add("{name} is owned by Neutral Passive and is not invulnerable.", "{name}由中立被动所有，且不是无敌的。");
+    Add("{target} has been destroyed", "{target} 已被摧毁");
     Add("{target} is alive", "{target} 存活");
     Add("{target} is dead", "{target} 已死亡");
     Add("{target} is destroyed", "{target} 已被摧毁");
@@ -751,6 +743,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("{unit} is at position {x}, {y}.", "{unit}位于坐标 {x}, {y}。");
     Add("{unit} is not an active Waygate.", "{unit}不是有效的传送门。");
     Add("{unit}'s current order: {order}", "{unit}当前的指令：{order}");
+    Add("{unit}'s current order: {order}\n", "{unit}当前的指令：{order}\n");
     Add("{unit}'s last protector died, which should make it vulnerable, but it is already vulnerable.", "{unit}的最后一名守护者已阵亡，本应使其变为可攻击状态，但它已经处于可攻击状态。");
     Add("|cff00ff00You received {gold} gold refunded from removed buildings.|r", "|cff00ff00你收到了 {gold} 金币，来自被移除的建筑退款。|r");
     Add(" Gilneas notcing our regained might in Southern-Lordaeron has decided to submit to our might to defend Lordaeron from the iminent Scourge invasion.", " 吉尔尼斯目睹我们在洛丹伦南部重振雄威，已决定臣服于我们的力量，共同抵御迫在眉睫的天灾入侵。");
@@ -763,6 +756,10 @@ internal sealed class ChineseTranslation : ITranslation
     Add("'{locale}' is not a locale Warcraft III loads. Known names: ", "「{locale}」不是《魔兽争霸3》会加载的语言。已知名称：");
     Add("Setting hitpoints of selected units to ", "正在将选中单位的生命值设为 ");
     Add("Attempted to Person ", "试图对单位执行 Person：");
+    Add(" [Page {page}/{total}, add page # for more]", " [第 {page}/{total} 页，输入 page # 查看更多]");
+    Add(" [Page {page}/{total}]", " [第 {page}/{total} 页]");
+    Add("[{index}] [{key}] {name}", "[{index}] [{key}] {name}");
+    Add("[{index}] [{key}] {name} - {progress}", "[{index}] [{key}] {name} - {progress}");
     Add("\nFaction:", "\n阵营：");
     Add("\nPlayer Data:", "\n玩家数据：");
     Add("\nPlayer:", "\n玩家：");
@@ -770,29 +767,29 @@ internal sealed class ChineseTranslation : ITranslation
     Add("!! localized map has no '{name}', skipped", "！！本地化地图没有「{name}」，已跳过");
     Add("\"Elite\"", "\"精英\"");
     Add("\"Faction Quests\"", "\"阵营任务\"");
-    Add("\"Gate Armor: |cff00ff00400%|r|nFortified: |cff00ff00200%|r|NUnarmored: |cff00ff00150%|r|NLight: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NMedium: |cffff000050%|r|NHero: |cffff000050%|r\"", "\"大门护甲： |cff00ff00400%|r|n加强型： |cff00ff00200%|r|n无甲： |cff00ff00150%|r|n轻型： |cffffff00100%|r|n重型： |cffffff00100%|r|n中型： |cffff000050%|r|n英雄： |cffff000050%|r\"");
+    Add("\"Gate Armor: |cff00ff00400%|r|nFortified: |cff00ff00200%|r|NUnarmored: |cff00ff00150%|r|NLight: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NMedium: |cffff000050%|r|NHero: |cffff000050%|r\"", "\"城门护甲 |cff00ff00400%|r|n加强型护甲 |cff00ff00200%|r|N无甲 |cff00ff00150%|r|N轻甲 |cffffff00100%|r|N重甲 |cffffff00100%|r|N中甲 |cffff000050%|r|N英雄 |cffff000050%|r\"");
     Add("\"Gold Generated\"", "\"黄金产出\"");
-    Add("\"Gold is gained as income from Control Points.\"", "\"黄金通过控制点产出。\"");
-    Add("\"Heavy: |cff00ff00180%|r|NLight: |cff00ff00125%|r|NUnarmored: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r|nGate Armor: |cffff000030%|r\"", "\"重型： |cff00ff00180%|r|n轻型： |cff00ff00125%|r|n无甲： |cffffff00100%|r|n中型： |cffff000075%|r|n英雄： |cffff000050%|r|n加强型： |cffff000035%|r|n大门护甲： |cffff000030%|r\"");
+    Add("\"Gold is gained as income from Control Points.\"", "\"黄金来自控制点提供的收入。\"");
+    Add("\"Heavy: |cff00ff00180%|r|NLight: |cff00ff00125%|r|NUnarmored: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r|nGate Armor: |cffff000030%|r\"", "\"重甲 |cff00ff00180%|r|N轻甲 |cff00ff00125%|r|N无甲 |cffffff00100%|r|N中甲 |cffff000075%|r|N英雄 |cffff000050%|r|N加强型护甲 |cffff000035%|r|n城门护甲 |cffff000030%|r\"");
     Add("\"Knowledge Gained\"", "\"知识获取\"");
-    Add("\"Knowledge Income Rate:\"", "\"知识收入率：\"");
+    Add("\"Knowledge Income Rate:\"", "\"知识收入速率：\"");
     Add("\"Knowledge is gained from completing Quests.\"", "\"知识通过完成任务获得。\"");
     Add("\"Knowledge\"", "\"知识\"");
-    Add("\"Light: |cff00ff00200%|r|NUnarmored: |cff00ff00150%|r|NHeavy: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r|nGate Armor: |cffff000030%\"", "\"轻型： |cff00ff00200%|r|n无甲： |cff00ff00150%|r|n重型： |cffffff00100%|r|n中型： |cffff000075%|r|n英雄： |cffff000050%|r|n加强型： |cffff000035%|r|n大门护甲： |cffff000030%\"");
-    Add("\"Medium: |cff00ff00150%|r|NUnarmored: |cffffff00100%|r|NLight: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NHero: |cffffff00100%|r|NFortified: |cffff000070%|r|nGate Armor: |cffff000030%\"", "\"中型： |cff00ff00150%|r|n无甲： |cffffff00100%|r|n轻型： |cffffff00100%|r|n重型： |cffffff00100%|r|n英雄： |cffffff00100%|r|n加强型： |cffff000070%|r|n大门护甲： |cffff000030%\"");
-    Add("\"Medium: |cff00ff0030% |r|NUnarmored: |cff00ff0030%|r|NLight: |cff00ff0030%|r|r|NHeavy: |cff00ff0030%|r|NHero: |cff00ff0030%|r|NSeige |cffff0000400%|r\"", "\"中型： |cff00ff0030%|r|n无甲： |cff00ff0030%|r|n轻型： |cff00ff0030%|r|r|n重型： |cff00ff0030%|r|n英雄： |cff00ff0030%|r|n攻城： |cffff0000400%|r\"");
-    Add("\"Normal: |cffffff00100%|r|NMagic: |cffffff00100%|r|nSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NPierce: |cffff0000150%|r|NSiege: |cffff0000150%|r\"", "\"普通： |cffffff00100%|r|n魔法： |cffffff00100%|r|n法术： |cffffff00100%|r|n英雄： |cffffff00100%|r|n混乱： |cffff0000110%|r|n穿刺： |cffff0000150%|r|n攻城： |cffff0000150%|r\"");
-    Add("\"Normal: |cffffff00100%|r|NSiege: |cffffff00100%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NMagic: |cffff0000125%|r|NPierce: |cffff0000200%|r\"", "\"普通： |cffffff00100%|r|n攻城： |cffffff00100%|r|n法术： |cffffff00100%|r|n英雄： |cffffff00100%|r|n混乱： |cffff0000110%|r|n魔法： |cffff0000125%|r|n穿刺： |cffff0000200%|r\"");
+    Add("\"Light: |cff00ff00200%|r|NUnarmored: |cff00ff00150%|r|NHeavy: |cffffff00100%|r|NMedium: |cffff000075%|r|NHero: |cffff000050%|r|NFortified: |cffff000035%|r|nGate Armor: |cffff000030%\"", "\"轻甲 |cff00ff00200%|r|N无甲 |cff00ff00150%|r|N重甲 |cffffff00100%|r|N中甲 |cffff000075%|r|N英雄 |cffff000050%|r|N加强型护甲 |cffff000035%|r|n城门护甲 |cffff000030%\"");
+    Add("\"Medium: |cff00ff00150%|r|NUnarmored: |cffffff00100%|r|NLight: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NHero: |cffffff00100%|r|NFortified: |cffff000070%|r|nGate Armor: |cffff000030%\"", "\"中甲 |cff00ff00150%|r|N无甲 |cffffff00100%|r|N轻甲 |cffffff00100%|r|N重甲 |cffffff00100%|r|N英雄 |cffffff00100%|r|N加强型护甲 |cffff000070%|r|n城门护甲 |cffff000030%\"");
+    Add("\"Medium: |cff00ff0030% |r|NUnarmored: |cff00ff0030%|r|NLight: |cff00ff0030%|r|r|NHeavy: |cff00ff0030%|r|NHero: |cff00ff0030%|r|NSeige |cffff0000400%|r\"", "\"中甲 |cff00ff0030% |r|N无甲 |cff00ff0030%|r|N轻甲 |cff00ff0030%|r|r|N重甲 |cff00ff0030%|r|N英雄 |cff00ff0030%|r|NSeige |cffff0000400%|r\"");
+    Add("\"Normal: |cffffff00100%|r|NMagic: |cffffff00100%|r|nSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NPierce: |cffff0000150%|r|NSiege: |cffff0000150%|r\"", "\"普通 |cffffff00100%|r|N魔法 |cffffff00100%|r|n法术 |cffffff00100%|r|N英雄 |cffffff00100%|r|N混乱 |cffff0000110%|r|N穿刺 |cffff0000150%|r|N攻城 |cffff0000150%|r\"");
+    Add("\"Normal: |cffffff00100%|r|NSiege: |cffffff00100%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NMagic: |cffff0000125%|r|NPierce: |cffff0000200%|r\"", "\"普通 |cffffff00100%|r|N攻城 |cffffff00100%|r|N法术 |cffffff00100%|r|N英雄 |cffffff00100%|r|N混乱 |cffff0000110%|r|N魔法 |cffff0000125%|r|N穿刺 |cffff0000200%|r\"");
     Add("\"Not enough knowledge.\"", "\"知识不足。\"");
-    Add("\"Pierce: |cff00ff0035%|r|nMagic: |cff00ff0035%|r|nNormal: |cff00ff0070%|r|nHero: |cff00ff0070%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nSiege: |cffff0000200%|r\"", "\"穿刺： |cff00ff0035%|r|n魔法： |cff00ff0035%|r|n普通： |cff00ff0070%|r|n英雄： |cff00ff0070%|r|n法术： |cffffff00100%|r|n混乱： |cffff0000110%|r|n攻城： |cffff0000200%|r\"");
-    Add("\"Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff000%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r\"", "\"穿刺： |cff00ff0050%|r|n攻城： |cff00ff0050%|r|n魔法： |cff00ff0050%|r|n法术： |cff00ff000%|r|n普通： |cffffff00100%|r|n英雄： |cffffff00100%|r|n混乱： |cffff0000110%|r\"");
-    Add("\"Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff0070%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r\"", "\"穿刺： |cff00ff0050%|r|n攻城： |cff00ff0050%|r|n魔法： |cff00ff0050%|r|n法术： |cff00ff0070%|r|n普通： |cffffff00100%|r|n英雄： |cffffff00100%|r|n混乱： |cffff0000110%|r\"");
-    Add("\"Pierce: |cffffff00100%|r|nSiege: |cffffff00100%|r|nNormal: |cffffff00100%|r|r|nHero: |cffffff00100%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nMagic: |cffff0000180%|r\"", "\"穿刺： |cffffff00100%|r|n攻城： |cffffff00100%|r|n普通： |cffffff00100%|r|r|n英雄： |cffffff00100%|r|n法术： |cffffff00100%|r|n混乱： |cffff0000110%|r|n魔法： |cffff0000180%|r\"");
+    Add("\"Pierce: |cff00ff0035%|r|nMagic: |cff00ff0035%|r|nNormal: |cff00ff0070%|r|nHero: |cff00ff0070%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nSiege: |cffff0000200%|r\"", "\"穿刺 |cff00ff0035%|r|n魔法 |cff00ff0035%|r|n普通 |cff00ff0070%|r|n英雄 |cff00ff0070%|r|n法术 |cffffff00100%|r|n混乱 |cffff0000110%|r|n攻城 |cffff0000200%|r\"");
+    Add("\"Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff000%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r\"", "\"穿刺 |cff00ff0050%|r|N攻城 |cff00ff0050%|r|N魔法 |cff00ff0050%|r|n法术 |cff00ff000%|r|N普通 |cffffff00100%|r|N英雄 |cffffff00100%|r|N混乱 |cffff0000110%|r\"");
+    Add("\"Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff0070%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r\"", "\"穿刺 |cff00ff0050%|r|N攻城 |cff00ff0050%|r|N魔法 |cff00ff0050%|r|n法术 |cff00ff0070%|r|N普通 |cffffff00100%|r|N英雄 |cffffff00100%|r|N混乱 |cffff0000110%|r\"");
+    Add("\"Pierce: |cffffff00100%|r|nSiege: |cffffff00100%|r|nNormal: |cffffff00100%|r|r|nHero: |cffffff00100%|r|nSpell: |cffffff00100%|r|nChaos: |cffff0000110%|r|nMagic: |cffff0000180%|r\"", "\"穿刺 |cffffff00100%|r|n攻城 |cffffff00100%|r|n普通 |cffffff00100%|r|r|n英雄 |cffffff00100%|r|n法术 |cffffff00100%|r|n混乱 |cffff0000110%|r|n魔法 |cffff0000180%|r\"");
     Add("\"Shared Quests\"", "\"共享任务\"");
-    Add("\"Siege: |cff00ff0050%|r|NPierce: |cff00ff0075%|r|NMagic: |cff00ff0075%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NNormal: |cffff0000150%|r\"", "\"攻城： |cff00ff0050%|r|n穿刺： |cff00ff0075%|r|n魔法： |cff00ff0075%|r|n法术： |cffffff00100%|r|n英雄： |cffffff00100%|r|n混乱： |cffff0000110%|r|n普通： |cffff0000150%|r\"");
-    Add("\"Type: |Cffffcc00Gate|R\"", "\"类型：|Cffffcc00大门|R\"");
-    Add("\"Unarmored: |cffffff00100%|r|nLight: |cffffff00100%|r|NMedium: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NHero: |cffffff00100%|r|NFortified: |cffff000070%|r|nGate Armor: |cffff000030%|r\"", "\"无甲： |cffffff00100%|r|n轻型： |cffffff00100%|r|n中型： |cffffff00100%|r|n重型： |cffffff00100%|r|n英雄： |cffffff00100%|r|n加强型： |cffff000070%|r|n大门护甲： |cffff000030%|r\"");
-    Add("\"Unarmored:|cff00ff00110%|r |nLight:|cff00ff00110%|r|NMedium: |cff00ff00110%|r|NHeavy:|cff00ff00110%|r|NHero: |cff00ff00110%|r|NFortified:|cff00ff00110%|r|nGate Armor: |cffff000030%|r\"", "\"无甲：|cff00ff00110%|r |n轻型：|cff00ff00110%|r|n中型： |cff00ff00110%|r|n重型：|cff00ff00110%|r|n英雄： |cff00ff00110%|r|n加强型：|cff00ff00110%|r|n大门护甲： |cffff000030%|r\"");
+    Add("\"Siege: |cff00ff0050%|r|NPierce: |cff00ff0075%|r|NMagic: |cff00ff0075%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NNormal: |cffff0000150%|r\"", "\"攻城 |cff00ff0050%|r|N穿刺 |cff00ff0075%|r|N魔法 |cff00ff0075%|r|N法术 |cffffff00100%|r|N英雄 |cffffff00100%|r|N混乱 |cffff0000110%|r|N普通 |cffff0000150%|r\"");
+    Add("\"Type: |Cffffcc00Gate|R\"", "\"类型：|Cffffcc00城门|R\"");
+    Add("\"Unarmored: |cffffff00100%|r|nLight: |cffffff00100%|r|NMedium: |cffffff00100%|r|NHeavy: |cffffff00100%|r|NHero: |cffffff00100%|r|NFortified: |cffff000070%|r|nGate Armor: |cffff000030%|r\"", "\"无甲 |cffffff00100%|r|n轻甲 |cffffff00100%|r|N中甲 |cffffff00100%|r|N重甲 |cffffff00100%|r|N英雄 |cffffff00100%|r|N加强型护甲 |cffff000070%|r|n城门护甲 |cffff000030%|r\"");
+    Add("\"Unarmored:|cff00ff00110%|r |nLight:|cff00ff00110%|r|NMedium: |cff00ff00110%|r|NHeavy:|cff00ff00110%|r|NHero: |cff00ff00110%|r|NFortified:|cff00ff00110%|r|nGate Armor: |cffff000030%|r\"", "\"无甲|cff00ff00110%|r |n轻甲|cff00ff00110%|r|N中甲 |cff00ff00110%|r|N重甲|cff00ff00110%|r|N英雄 |cff00ff00110%|r|N加强型护甲|cff00ff00110%|r|n城门护甲 |cffff000030%|r\"");
     Add("'{locale}' is not a locale Warcraft III loads. Known names:", "「{locale}」不是《魔兽争霸3》会加载的语言。已知名称：");
     Add("4 free {warden}s appear at the Broken Isles, and you learn to train {warden}s from the {vault} and from {bastion}s", "破碎群岛出现 4 名免费的{warden}，你还能学会从{vault}和{bastion}训练{warden}");
     Add("A Vial of the Sunwell appears on the ground, and the Sunwell permanently loses 500 maximum mana", "一瓶太阳之井井水出现在地面上，太阳之井永久失去 500 点最大魔法值");
@@ -841,6 +838,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Aldos Firestar", "阿尔多斯·火芒");
     Add("Alexstrasza", "阿莱克丝塔萨");
     Add("Algammon", "阿尔盖蒙");
+    Add("Alignement", "归位");
     Add("Alive", "完好");
     Add("All abilities removed from", "已移除以下单位的全部技能：");
     Add("All creeps {area} are dead ({current}/{max})", "{area}的野怪已全部死亡（{current}/{max}）");
@@ -870,7 +868,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Anti-mage", "反法师");
     Add("Anubris", "阿努布里斯");
     Add("Anya Eversong", "安雅·永歌");
-    Add("Anyone casts {spell}", "任意单位施放 {spell}");
     Add("Aosp", "尖刺屏障");
     Add("Aphx", "凤凰变形（卵化）");
     Add("Apiv", "永久隐身");
@@ -894,6 +891,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Artifacts are unique items that can grant major advantages. You can find out where Artifacts are using the Artifact Book.", "神器是能带来巨大优势的独特物品。你可以用神器图鉴查看神器的位置。");
     Add("Artifacts are unique items that can grant major advantages. You can find out where Artifacts are using the Artifact Menu at the top-left of your screen.", "神器是独特的物品，能带来巨大的优势。你可以通过屏幕左上方的神器菜单查看神器的位置。");
     Add("As foretold by the Lich King, Kel'thuzad has been slain. Unseen to his assailants, his spirit is carried away by the howling winds of Northrend and reconstituted at the base of Icecrown Citadel.", "正如巫妖王所预言，克尔苏加德已被杀死。在他的袭击者未曾察觉之时，他的灵魂被诺森德呼啸的寒风卷走，并在冰冠堡垒的基座处重铸成形。");
+    Add("Ascension", "飞升");
     Add("Ashbringer", "灰烬使者");
     Add("Ashenvale has awakened!", "灰谷已经苏醒！");
     Add("Asp1", "法球");
@@ -910,6 +908,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Attempted to spawn", "已尝试生成");
     Add("Auberdin needs to be mobilized for war. Darkshore has already been attacked by wild creatures gone mad.", "奥伯丁必须动员起来备战。黑海岸已遭到发狂野兽的袭击。");
     Add("Aurrius the Pure", "纯洁的奥里尔斯");
+    Add("Awakening", "觉醒");
     Add("Axe of Cenarius", "塞纳留斯之斧");
     Add("Azure Fragment", "碧蓝碎片");
     Add("Baine Bloodhoof", "贝恩·血蹄");
@@ -954,6 +953,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Bor Stonebreaker", "波尔·碎石");
     Add("Boralus Keep has fallen", "伯拉勒斯要塞已经陷落");
     Add("Brann Bronzebeard", "布莱恩·铜须");
+    Add("Breaking Bad Blood", "斩断血咒");
     Add("Brew of Divinity", "神圣佳酿");
     Add("Brigitte Abbendis gains the Divine Intervention ability, and you gain control of the Crimson Cathedral in Sholazar Bassin", "布丽奇特·阿比迪斯获得神圣干涉技能，你获得索拉查盆地血色大教堂的控制权");
     Add("Bring {item} to {rect}", "将 {item} 带到 {rect}");
@@ -961,6 +961,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Bronze Fragment", "青铜碎片");
     Add("Brother Halbrecht Pyre", "哈尔布雷希特·派尔修士");
     Add("Brother? What are you doing here?", "哥哥！你来这里干什么？");
+    Add("Brute Allegiance", "蛮兵归附");
     Add("Brutillus", "布鲁提卢斯");
     Add("Build Orgrimmar", "建造奥格瑞玛");
     Add("Build {count} different buildings {area} ({current}/{count})", "{area}建造 {count} 种不同的建筑（{current}/{count}）");
@@ -991,14 +992,14 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Can the formalities, Uther. I'm not king yet. It's good to see you.", "不必拘礼，乌瑟尔。我还不是国王。很高兴见到你。");
     Add("Can your blood atone for genocide, orc? Your Horde killed countless innocents with its rampage across Stormwind and Lordaeron. Do you really think you can just sweep all that away and cast aside your guilt so easily? No, your kind will never change, and I will never stop fighting you.", "你们的血还得清屠城的债吗 ，兽人？你的部落在暴风城和洛丹伦肆虐时，杀害的无辜百姓不计其数。你真以为你们的血债能一笔勾销，犯下的罪行能一了百了？不，你们死性难改，我要跟你们血战到底。");
     Add("Captain, are all my forces accounted for?", "队长，我的部队都到齐了吗？");
-    Add("Cast {spell}", "施放 {spell}");
-    Add("Caster Production", "施法单位生产");
+    Add("Caster Production", "施法者生产");
     Add("Casters from the four winds.", "来自四风的施法者。");
     Add("Castle", "城堡");
     Add("Cenarius, Demigod of the Night Elves, has fallen. His spirit lives on, a mere echo of his former self.", "暗夜精灵的半神塞纳留斯已经陨落。他的灵魂仍在，却只是昔日自我的一缕残响。");
     Add("Centrius", "塞恩特里司");
     Add("Ceredwyn", "塞里德温");
     Add("Charib'dishal", "查莉布迪莎");
+    Add("Chen Stormstout", "陈·风暴烈酒");
     Add("Cho'Nammoth", "古纳魔斯");
     Add("Cho'gall", "古加尔");
     Add("Choose What To Do With Your Troops", "决定如何处置你的部队");
@@ -1058,7 +1059,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Control of the Windrunner Spire", "控制风行者之塔");
     Add("Corrupted Sunwell", "腐化的太阳之井");
     Add("Council of Dalaran", "达拉然议会");
-    Add("Countdown to Extinction", "灭绝倒计时");
     Add("Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the Caverns of Time and call him to serve me in the present once again.", "无数纪元之前，督军佐诺兹是我最得力的将领之一。遗憾的是，他如今被困于过去。要召唤他，我必须夺取时光之穴，将他唤回现世再度为我效力。");
     Add("Create Corpse", "制造尸体");
     Add("Creature production building.", "生物生产建筑。");
@@ -1093,6 +1093,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Destroy {target}", "摧毁{target}");
     Add("Destroyed", "已摧毁");
     Add("Destroyer", "毁灭者");
+    Add("Destruction", "毁灭");
     Add("Dethecus", "德斯库斯");
     Add("Detheroc", "德塞洛克");
     Add("Dethros Nightreaver", "德索斯·掠夜者");
@@ -1121,8 +1122,10 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Dreadbane", "恐祸");
     Add("Drek'Thar", "德雷克塔尔");
     Add("Drek'thar's Spellbook", "德雷克塔尔的法术书");
+    Add("Drekthar's Spellbook", "德雷克塔尔的法术书");
     Add("Drenar Wolfheart", "德雷纳·狼心");
     Add("Drogath the Cruel", "残忍的德罗加斯");
+    Add("Druids Demise", "德鲁伊的末日");
     Add("Druids of the Cenarion Circle", "塞纳里奥议会德鲁伊");
     Add("Duke Dreadmoore", "达德摩尔公爵");
     Add("Duke Lionheart", "狮心公爵");
@@ -1139,6 +1142,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Each turn, every Capital and every gate gains bonus maximum hit points. Capitals gain {capitalPercent}% and gates gain {gatePercent}%.", "每个回合，每一座都城和每一扇大门都会获得额外的最大生命值。都城获得{capitalPercent}%，大门获得{gatePercent}%。");
     Add("Earth Protection", "大地守护");
     Add("Ecen", "塞纳留斯");
+    Add("Echoes of War", "战争回响");
     Add("Edmund Sharpshot", "埃蒙德·神射");
     Add("Edric Lightbane", "埃德里克·光祸");
     Add("Eevi", "玛维·影歌");
@@ -1158,8 +1162,10 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Elunara Brightblade", "艾露娜拉·辉刃");
     Add("Elune be praised! I knew you would come, Shan'do Stormrage.", "赞美艾露恩！我就知道你会来，怒风大导师。");
     Add("Emerald Fragment", "翡翠碎片");
+    Add("Emissary of the Firelands", "火焰之地特使");
     Add("Empty", "空置");
     Add("Enables training of Tichondrius and Anetheron from the Altar of Destruction and to cast the Portal spells from the Legion Teleporter", "启用从毁灭祭坛中训练提克迪奥斯与安纳塞隆，并从军团传送器施放传送门法术");
+    Add("End turn must be >= start turn", "结束回合必须大于或等于起始回合");
     Add("Enemy {descriptor} unit has entered {rect}", "敌方{descriptor}单位已进入{rect}");
     Add("Eons ago, the council that led the Eredar was the Triumvirate. If Velen could reconquer Argus, he could reform the Crown of the Triumvirate", "万古之前，领导艾瑞达的议会便是执政团。倘若维伦能重夺阿古斯，他就能重铸执政团之冠");
     Add("Eryndor Tidewarden", "埃林多尔·潮汐守卫");
@@ -1174,11 +1180,14 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Experience", "经验值");
     Add("Extensive study of Murmur's essence has granted Solarion the power to channel void energies.", "对摩摩尔精华的深入研究，使索兰莉安获得了引导虚空能量的力量。");
     Add("Eye of Sargeras", "萨格拉斯之眼");
+    Add("E|cffffd700X|rIT", "退出程序");
+    Add("E|cffffd700X|rIT Program", "退出程序");
     Add("Facing the looming threat of the Scourge and its horrific Plague, Genn Greymane has decided to pardon Darius Crowley for the Northgate rebellion so that he can assist in Gilneas' defense.", "面对天灾及其可怕瘟疫的逼近，吉恩·格雷迈恩决定赦免达利乌斯·克罗雷在北门叛乱中的罪责，让他协助保卫吉尔尼斯。");
     Add("Faelith Sunrunner", "菲莉丝·奔日者");
     Add("Failed", "已失败");
     Add("Failed setting hero level of selected units to", "未能将选中单位的英雄等级设定为");
     Add("Failed setting hitpoints of selected units to", "未能将选中单位的生命值设定为");
+    Add("Failed to execute {GetObjectName(IncreaseControlLevelAbilityTypeId)}: {ex}.", "执行{GetObjectName(IncreaseControlLevelAbilityTypeId)}失败：{ex}。");
     Add("Fandral Staghelm", "范达尔·鹿盔");
     Add("Fandral's Flamescythe", "范达尔的烈焰镰刀");
     Add("Fate decreed that Arthas would witness the fall of Stratholme and become corrupted by vengeance. Instead, he defended his homeland from the ravenous Scourge and took the battle to Northrend. Back at home, Terenas Menethil is forced to admit: his son is ready to be King.", "命运本注定阿尔萨斯将目睹斯坦索姆的陷落，并被复仇所腐蚀。然而，他保卫了家园免受贪婪天灾的侵袭，并将战火烧到了诺森德。而在国内，泰瑞纳斯·米奈希尔不得不承认：他的儿子已准备好成为国王。");
@@ -1189,7 +1198,9 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Fenric the Howler", "嚎叫者芬里克");
     Add("Fenris Darkmane", "芬里斯·暗鬃");
     Add("Fenris'ar Gul", "芬里萨·古尔");
+    Add("Fiend of a Thousand Faces", "千面恶魔");
     Add("Fighter", "战士");
+    Add("Fireland Invasion", "火焰之地入侵");
     Add("Flyer Production", "飞行单位生产");
     Add("Flying", "飞行");
     Add("Foerend", "弗伦德");
@@ -1199,6 +1210,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Forfeit the game and become an observer.", "放弃游戏并成为观战者。");
     Add("Forfeit vote passed.", "弃权投票通过。");
     Add("Forfeit vote registered.", "弃权票已记录。");
+    Add("Fresh Meat", "新鲜血肉");
     Add("From within the depths of the Frozen Throne, the Lich King Ner'zhul cries out for his champion. Release the Helm of Domination from its confines and merge its power with that of the Scourge's greatest Death Knight.", "在冰封王座的深处，巫妖王耐奥祖呼唤着他的勇士。解开统御之盔的束缚，将其力量与天灾最强大的死亡骑士融为一体。");
     Add("Frontline soldiers of the hive.", "虫巢的前线士兵。");
     Add("Frost Breath", "冰霜吐息");
@@ -1257,6 +1269,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Gar'dal Grimsight", "伽达尔·恐视");
     Add("Garrick Flameward", "嘉里克·焰卫");
     Add("Garruk Moonbane", "加鲁克·月祸");
+    Add("Gates of Ahn'Qiraj", "安其拉之门");
     Add("Gavinrad the Dire", "严厉的格文拉德");
     Add("Gazlowe", "加兹鲁维");
     Add("Gazz Stripbolt", "加兹·斯特里波尔特");
@@ -1267,6 +1280,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Gholbine", "戈尔比恩");
     Add("Ghulmar Gravevein", "古尔玛·墓脉");
     Add("Gideon Seawatch", "吉迪恩·望海");
+    Add("Gift of Flesh", "血肉之赐");
     Add("Gilaras Drakeson", "吉拉纳斯·达拉克森");
     Add("Gilneas Manor", "吉尔尼斯庄园");
     Add("Gilneas notcing our regained might in Southern-Lordaeron has decided to submit to our might to defend Lordaeron from the iminent Scourge invasion.", "吉尔尼斯目睹我们在洛丹伦南部重振雄威，已决定臣服于我们的力量，共同抵御迫在眉睫的天灾入侵。");
@@ -1387,6 +1401,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Instant build activated.", "瞬间建造已激活。");
     Add("Instant build deactivated.", "瞬间建造已关闭。");
     Add("Intelligence", "智力");
+    Add("Interval must be > 0", "间隔必须大于 0");
     Add("Invaders from Azeroth have taken control of the Twilight landing. Destroy them!", "来自艾泽拉斯的入侵者已控制了暮光登陆场。消灭他们！");
     Add("Invalid input. Use 'on', 'off', 'true', or 'false'.", "输入无效。请使用 'on'、'off'、'true' 或 'false'。");
     Add("Invalid parameter used.", "使用了无效的参数。");
@@ -1526,7 +1541,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Lyrian Starwhisper", "莱里安·星语");
     Add("MAJOR EVENT", "重大事件");
     Add("Maelstrom Spirit", "大漩涡之灵");
-    Add("Magatha Grimtotem", "玛加萨·恐怖图腾");
     Add("Magic Hero, robust damage dealing spellcaster.", "魔法型英雄，是坚固耐打的伤害型施法者。");
     Add("Magis Coldeye", "玛吉斯·冷眼");
     Add("Magnus Brightwrath", "马格努斯·炽怒");
@@ -1558,6 +1572,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Master of magics from Ny'alotha.", "来自尼奥罗萨的魔法大师。");
     Add("Mature Egg", "成熟的卵");
     Add("Mave Whisperwind", "梅芙·语风");
+    Add("Maw of Go'rath", "戈拉什之口");
+    Add("Maw of Shu'ma", "舒玛之口");
     Add("Mazuru", "玛祖鲁");
     Add("Medivh's body was corrupted by Sargeras at conception. Now that he is dead, the secrets of the Tomb of Sargeras and Karazhan combined might allow the mages of Dalaran to cleanse his spirit.", "麦迪文尚在母胎之中时，其肉身便被萨格拉斯腐化。如今他已死去，若能结合萨格拉斯之墓与卡拉赞的秘密，达拉然的法师们或许可以净化他的灵魂。");
     Add("Medivh's death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.", "麦迪文之死让艾泽拉斯失去了守护者。他留下的法术书可以用来赋予一位新的守护者力量。");
@@ -1567,6 +1583,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Mira Shadewither", "米拉·影凋");
     Add("Mira Whitemane", "米拉·怀特迈恩");
     Add("Mizgill", "米兹吉尔");
+    Add("Mockery of Life", "生命的嘲弄");
     Add("Modera", "莫德拉");
     Add("Modi Stonesmith", "莫迪·石匠");
     Add("Mograine has been gone for a long time, if Lordaeron would be in great peril, he would surely come back to defend it!", "莫格莱尼已离开多时。倘若洛丹伦陷入巨大危难，他必定会回来保卫它！");
@@ -1672,7 +1689,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Oranil Sunshield", "奥拉尼尔·太阳之盾");
     Add("Orb of Light", "光明宝珠");
     Add("Orb of the Arcane", "奥术宝珠");
-    Add("Orcish Horde", "兽人部落");
     Add("Ordin Frostbane", "奥丁·霜刺");
     Add("Orendis Starflare", "奥伦迪斯·星耀");
     Add("Orex", "雷克萨");
@@ -1680,6 +1696,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Orithal Sunblade", "奥里萨尔·日刃");
     Add("Orkn", "洛坎");
     Add("Orryx Felbreaker", "奥里克斯·破邪者");
+    Add("Otherwordly Invaders", "异界入侵者");
     Add("Othr", "萨尔");
     Add("Our hidden master, Kil'jaeden, calls to us from the depths of the Twisting Nether. The bounty of fel energy residing within Karazhan could be used to bring him forth - but not while the Kingdom of Stormwind is still strong enough to interfere.", "我们隐秘的主宰基尔加丹正从扭曲虚空深处向我们发出召唤。卡拉赞中蕴藏的丰厚邪能足以将他召唤至此——但只要暴风王国仍有能力干涉，便无法成事。");
     Add("Our people spread throughout the lands of Upper Netherstorm, erecting their homes amidst its arcane crystals and basking in its magical storms.", "我们的人民遍布上层虚空风暴各地，在奥术水晶之间建起家园，沐浴于魔法风暴之中。");
@@ -1708,6 +1725,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Pinging all limited units you control.", "正在为你控制的所有受限单位发出信号。");
     Add("Pings all limited units you control.", "在你控制的所有受限单位处发出信号。");
     Add("Place a valid power source in the {target}", "在 {target} 中放置一个有效的能量源");
+    Add("Please visit our Discord at: https://discord.gg/4eGZn\n\nAn enormous thank you to...\n\nPrevious Azeroth Wars developers: Augur, Crusader793, Bhaal_Spawn., EagleMan, Avrion, Railen, Thurr, Rhemar, SteakonSpear, Talinn, LuneLune, Dave_Rolf, Richardik, and HerrDave,\nthe founders of Warcraft Legacies, Lordsebas and YakaryBovine,\nour contributors, Naowsx, Savantic, Headhunter, Tracy, Deathlord, zbovo, Chunky, and TheG,\nand to the artists who have created the swathe of custom icons and models that we use: Ujimasa Hojo, General Frank, Shiv, Malvodion, nGy, UgoUgo, JetFangInferno, -Grendel,  SpasMaster, Eagle XI, Mythic, Hamsta, assasin_lord, Hayate, R.A.N.G.I.T.,  Stefan.K,  Eusira, 00110000, Pyritie, Sunchips, Dojo, PeeKay, nhocklanhox6, dhguardianes, HappyTauren, HerrDave, Shyster, takakenji, JesusHipster, Boogles, Kwaliti, Tauer, WhiteDeath, and Mechanical Man", "请访问我们的 Discord：https://discord.gg/4eGZn\n\n在此向以下各位致以最诚挚的谢意……\n\n《艾泽拉斯战争》历代开发者：Augur、Crusader793、Bhaal_Spawn.、EagleMan、Avrion、Railen、Thurr、Rhemar、SteakonSpear、Talinn、LuneLune、Dave_Rolf、Richardik 与 HerrDave，\n《魔兽争霸：遗产》的创立者：Lordsebas 与 YakaryBovine，\n我们的贡献者：Naowsx、Savantic、Headhunter、Tracy、Deathlord、zbovo、Chunky 与 TheG，\n以及为本作创作了大量自定义图标与模型的艺术家：Ujimasa Hojo、General Frank、Shiv、Malvodion、nGy、UgoUgo、JetFangInferno、-Grendel、SpasMaster、Eagle XI、Mythic、Hamsta、assasin_lord、Hayate、R.A.N.G.I.T.、Stefan.K、Eusira、00110000、Pyritie、Sunchips、Dojo、PeeKay、nhocklanhox6、dhguardianes、HappyTauren、HerrDave、Shyster、takakenji、JesusHipster、Boogles、Kwaliti、Tauer、WhiteDeath 与 Mechanical Man");
     Add("Please visit our Discord at: https://discord.gg/ubQM7PgaG\n\nAn enormous thank you to...\n\nPrevious Azeroth Wars developers: Augur, Crusader793, Bhaal_Spawn., EagleMan, Avrion, Railen, Thurr, Rhemar, SteakonSpear, Talinn, LuneLune, Dave_Rolf, Richardik, and HerrDave,\nthe founders of Warcraft Legacies, Lordsebas and YakaryBovine,\nour contributors, Naowsx, Savantic, Headhunter, Tracy, Deathlord, zbovo, Chunky, and TheG,\nand to the artists who have created the swathe of custom icons and models that we use: Ujimasa Hojo, General Frank, Shiv, Malvodion, nGy, UgoUgo, JetFangInferno, -Grendel,  SpasMaster, Eagle XI, Mythic, Hamsta, assasin_lord, Hayate, R.A.N.G.I.T.,  Stefan.K,  Eusira, 00110000, Pyritie, Sunchips, Dojo, PeeKay, nhocklanhox6, dhguardianes, HappyTauren, HerrDave, Shyster, takakenji, JesusHipster, Boogles, Kwaliti, Tauer, WhiteDeath, and Mechanical Man", "请访问我们的 Discord：https://discord.gg/ubQM7PgaG\n\n在此向以下各位致以最诚挚的谢意……\n\n《艾泽拉斯战争》历代开发者：Augur、Crusader793、Bhaal_Spawn.、EagleMan、Avrion、Railen、Thurr、Rhemar、SteakonSpear、Talinn、LuneLune、Dave_Rolf、Richardik 与 HerrDave，\n《魔兽争霸：遗产》的创立者：Lordsebas 与 YakaryBovine，\n我们的贡献者：Naowsx、Savantic、Headhunter、Tracy、Deathlord、zbovo、Chunky 与 TheG，\n以及为本作创作了大量自定义图标与模型的艺术家：Ujimasa Hojo、General Frank、Shiv、Malvodion、nGy、UgoUgo、JetFangInferno、-Grendel、SpasMaster、Eagle XI、Mythic、Hamsta、assasin_lord、Hayate、R.A.N.G.I.T.、Stefan.K、Eusira、00110000、Pyritie、Sunchips、Dojo、PeeKay、nhocklanhox6、dhguardianes、HappyTauren、HerrDave、Shyster、takakenji、JesusHipster、Boogles、Kwaliti、Tauer、WhiteDeath 与 Mechanical Man");
     Add("Powerful air elemental", "强大的空气元素。");
     Add("Powerful hunters of magic.", "强大的魔法猎手。");
@@ -1738,6 +1756,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Quests are unique objectives that grant rewards when completed. View the Quest Menu (F9) to see the quests available to your faction.", "任务是独特的目标，完成后可获得奖励。查看任务菜单（F9）以了解你的阵营可接取的任务。");
     Add("Quests for", "任务列表：");
     Add("Quinton Seafoe", "昆顿·海敌");
+    Add("Quit DO NOT FORGET TO RESTART WARCRAFT 3", "退出。下一局开始前别忘了重启《魔兽争霸3》。");
+    Add("Quit Game DO NOT FORGET TO RESTART WARCRAFT 3", "退出游戏。下一局开始前别忘了重启《魔兽争霸3》。");
     Add("REFUND", "返还资源");
     Add("RESEARCH ACQUIRED", "已获得研究");
     Add("Ra'Adoom", "拉阿杜姆");
@@ -1749,6 +1769,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Ras Frostwhisper", "莱斯·霜语");
     Add("Ravengrim the Unbound", "无拘者拉文格里姆");
     Add("Ravok Nightfang", "拉沃克·夜牙");
+    Add("Rebuilding of Ahn'Qiraj", "重建安其拉");
     Add("Reforge Zin'rokh, Destroyer of Worlds from its Shards", "用碎片重铸辛洛斯，诸界的毁灭者");
     Add("Rematerialization", "重塑");
     Add("Remembered Tauren:", "被铭记的牛头人：");
@@ -1810,7 +1831,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Sets your language ('en'/'english' or 'es'/'espanol'/'spanish').", "设定你的语言（'zh'/'zhcn'/'chinese'、'en'/'english' 或 'es'/'espanol'/'spanish'）。");
     Add("Setting camera height to", "正在将镜头高度设定为");
     Add("Setting hero level of selected units to", "正在将选中单位的英雄等级设定为");
-    Add("Setting hitpoints of selected units to", "正在将选中单位的生命值设定为");
+    Add("Setting hitpoints of selected units to", "正在将选中单位的生命值设为");
     Add("Setting mana of selected units to", "正在将选中单位的法力值设定为");
     Add("Setting owner of selected units to", "正在将选中单位的所有者设定为");
     Add("Setting play dialogue option to", "正在将播放对话选项设定为");
@@ -1829,6 +1850,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Share control of your units with another faction.", "与另一个阵营共享你的单位控制权。");
     Add("Shared control with", "已共享控制权：");
     Add("Shared control with all factions on your team.", "已与你队伍中的所有阵营共享控制权。");
+    Add("Shimmering Flats", "闪光平原");
     Add("Ships", "船只");
     Add("Shipyard", "船坞");
     Add("Shop", "商店");
@@ -1864,6 +1886,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Skips the game forward a number of turns.", "使游戏跳过指定回合数。");
     Add("Skull of Gul'dan", "古尔丹之颅");
     Add("Slippers of Agility +4", "敏捷便鞋+4");
+    Add("Slithering Forward", "蛇行推进");
     Add("So, Warden Shadowsong, you've made it at last. I knew you would.", "看来，守望者影歌，你到底还是来了。我就知道。");
     Add("So, you've taken up Frostmourne at the expense of your comrades' lives, just as the Dark Lord said you would. You're stronger than I thought.", "原来如此，你以战友的生命为代价拿起了霜之哀伤。黑暗之主的预言果然没错。你比我预想的更强大！");
     Add("Soldiers and Super Majors gain the Vampiric Attack ability", "士兵与超级少校获得吸血攻击技能");
@@ -1896,8 +1919,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Strong support spellcaster of the Horde.", "部落强大的支援型施法者。");
     Add("Strongest Silithid.", "最强的异种蝎。");
     Add("Subdue the Ogres", "驯服食人魔");
-    Add("Subdue the Tauren", "驯服牛头人");
     Add("Subdue the Trolls", "驯服巨魔");
+    Add("Subduing Neptulon", "制服耐普图隆");
     Add("Successfully changed faction to", "已成功将阵营切换为");
     Add("Sulfiren Bonewrought", "苏尔菲伦·骨锻");
     Add("Sulfuras, Hand of Ragnaros", "萨弗拉斯，炎魔拉格纳罗斯之手");
@@ -1919,7 +1942,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Taming the Maelstrom", "驯服大漩涡");
     Add("Tanin Hawkwing", "塔宁·鹰翼");
     Add("Tank", "坦克");
-    Add("Tauren Tribes", "牛头人部族");
     Add("Tech-Orb 4000", "科技宝珠 4000");
     Add("Teleport", "传送");
     Add("Teleport activated. Use patrol to move instantly.", "传送已激活。使用巡逻命令即可瞬间移动。");
@@ -1954,6 +1976,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Black Empire has poured out near Feathermoon and begun threatening the wilds. These invaders must be repelled.", "黑暗帝国的大军已涌至羽月要塞附近，开始威胁这片荒野。必须击退这些入侵者。");
     Add("The Black Temple in Shadowmoon Valley is the capital for the forces of Outland. We must destroy it to stop the external threat once and for all.", "影月谷的黑暗神殿是外域势力的都城。我们必须摧毁它，才能一劳永逸地终结这场外来威胁。");
     Add("The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron", "黑石氏族已占据了奥特兰克，为了洛丹伦的安全，必须将他们消灭");
+    Add("The Blade of the Black Empire", "黑暗帝国之刃");
     Add("The Blade of the Black Empire appears near The Abyss", "黑暗帝国之刃出现在深渊附近");
     Add("The Blue Dragons of Northrend are the wardens of magic on Azeroth. They might be convinced to willingly join the mages of Dalaran.", "诺森德的蓝龙是艾泽拉斯魔法的守护者。或许能说服他们自愿加入达拉然的法师阵营。");
     Add("The Book of Medivh", "麦迪文之书");
@@ -1980,6 +2003,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Dreadlords have played a subtle hand in preparing Lordaeron for the coming of the Scourge. Once the Plague is unleashed, the Dreadlords will activate their own assets.", "恐惧魔王们一直在暗中布局，为天灾的降临铺平洛丹伦的道路。一旦瘟疫被释放，恐惧魔王便会启用他们自己的棋子。");
     Add("The Dwarven Dominion must be established before Ironforge can join the war.", "必须在铁炉堡参战之前建立起矮人霸权。");
     Add("The Elves of Quel'thalas have a deep reliance on the Sunwell's magic. But perhaps in these dark times, they might turn to darker magicks to sate themselves.", "奎尔萨拉斯的精灵极度依赖太阳之井的魔法。但或许在这黑暗的时代，他们可以转向更黑暗的魔法来满足自己。");
+    Add("The Emperor's Constructs", "皇帝的造物");
     Add("The Exodar Generator becomes invulnerable until all Crystal Protectors around it have been destroyed", "在所有环绕它的水晶守护者被摧毁之前，埃索达发生器处于无敌状态");
     Add("The Exodar is destroyed. It can never be repaired again.", "埃索达已被摧毁。它再也无法修复了。");
     Add("The Exodar's core has been rebuilt - the Crystal Protectors around it now shield it from any harm.", "埃索达的核心已经重建——环绕它的水晶守护者如今会为它抵挡一切伤害。");
@@ -2013,6 +2037,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Naga explorers in the Cape of Stranglethorn are rejoined with the Illidari forces from Outland, and are eager to battle the Alliance.", "荆棘谷海角的纳迦探子重新与来自外域的伊利达雷部队会合，他们渴望与联盟一战。");
     Add("The Necromancer Kel'thuzad has been immersed in the Sunwell and reborn as a Lich. The well, formerly a beacon of eternal light and power, has been twisted into a font of dark magic, spreading malevolence across the land.", "通灵师克尔苏加德已浸入太阳之井，重生为巫妖。这口井曾是永恒光明与力量的化身，如今已被扭曲为黑暗魔法的源泉，将邪恶散播到整片土地。");
     Add("The Nexus has been captured. The Blue Dragonflight fights for Dalaran.", "魔枢已被占领。蓝龙军团为达拉然而战。");
+    Add("The Noxious Lair", "毒雾巢穴");
     Add("The Old God C'thun has excised from the world, ridding the Legion - and Azeroth - of an ancient threat. The Deceiver upholds his end of the bargain, and bestows unto the Illidari his gift.", "上古之神克苏恩已被逐出这个世界，为军团——也为艾泽拉斯——除去了一桩古老的威胁。欺诈者履行了他的承诺，将他的馈赠赐予伊利达雷。");
     Add("The Old Gods C'Thun and N'Zoth threaten to spread chaos across the land. By eliminating these ancient terrors, the Warsong may claim victory and infuse their warriors with newfound strength.", "上古之神克苏恩与恩佐斯威胁要将混乱散播到整个大地。消灭这些远古的恐怖存在，战歌氏族便能赢得胜利，并为其战士注入全新的力量。");
     Add("The Orc Warlock Gul'dan is ultimately responsible for the formation of the Fel Horde. Though long dead, his teachings could still be extracted from his body.", "兽人术士古尔丹正是邪部落得以建立的罪魁祸首。尽管他早已死去，但我们仍可从他的遗骸中攫取他的教诲。");
@@ -2036,6 +2061,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Tauren of Thunder Bluff are noble warriors, but their allegiances are uncertain. Bring them into the fold or pillage their lands.", "雷霆崖的牛头人是高贵的战士，但他们的效忠尚不明朗。将他们纳入麾下，或是劫掠他们的土地。");
     Add("The Tauren tribes must abandon their ancestral camp and march east across the Barrens, escorted by a handful of guards, to build a new home at Thunder Bluff. Centaur raiders infest the plains between here and there.", "牛头人部族必须放弃祖辈的营地，在少数护卫的护送下东行穿越贫瘠之地，去雷霆崖建立新的家园。沿途的平原上遍布半人马劫掠者。");
     Add("The Third War is over. Archimonde has successfully consumed the energies of the Well of Eternity resting beneath Nordrassil. The last line of defense against the Burning Legion has fallen, and with it dies the hopes and dreams of Azeroth.", "第三次大战已然终结。阿克蒙德成功汲取了诺达希尔之下那口永恒之井的能量。抵御燃烧军团的最后一道防线已经崩溃，艾泽拉斯的希望与梦想也随之破灭。");
+    Add("The Throne of the Four Winds", "四风王座");
     Add("The Thunder Eagles of the Storm Peaks live in fear of the Legion. Wipe out the Legion Nexus to bring these great birds out into the open.", "风暴峭壁的雷鹰生活在燃烧军团的阴影之下。摧毁军团魔枢，让这些巨鸟现身于世。");
     Add("The Titan Construct has fallen, and C'thun stirs within his prison. The Old God is free to spread chaos once more.", "泰坦造物已经倒下，克苏恩在他的牢笼中苏醒。上古之神重获自由，可以再度散播混乱了。");
     Add("The Tomb of Sargeras has been opened by {unit}.", "萨格拉斯之墓已被{unit}打开。");
@@ -2043,6 +2069,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Violet Citadel", "紫罗兰城堡");
     Add("The Violet Citadel, the ultimate bastion of arcane knowledge in the Eastern Kingdoms, crumbles like a sand castle.", "紫罗兰城堡，东部王国奥术知识的终极堡垒，此刻却像一座沙堡般轰然崩塌。");
     Add("The Vortex Pinnacle has been captured by the Horde. Drek'thar has gifted Warchief Thrall his magical spellbook for this achievement.", "旋云之巅已被部落占领。为表彰这一功绩，德雷克塔尔将他的法术书赠予了大酋长萨尔。");
+    Add("The Waking City", "苏醒之城");
+    Add("The War of the Shifting Sands", "流沙之战");
     Add("The Warden Maiev presided over Illidan's imprisonment in the barrow prisons for ten thousand years. His escape has spurred on a relentless quest for vengeance, and nothing short of death will stop her.", "一万年来，守望者玛维一直在兽穴牢狱中看守着被囚禁的伊利丹。他的逃脱激起了她无休无止的复仇之旅，不取其性命，她绝不罢休。");
     Add("The Warden Shadowsong has been gravely wounded, stopping her pursuit of Illidan - for now.", "守望者影歌身负重伤，被迫中止了对伊利丹的追捕——至少暂时如此。");
     Add("The Warsong Clan has set sail for the icy shores of Northrend and set up a formidable encampment at Borean Tundra.", "战歌氏族已扬帆驶向诺森德的冰封海岸，并在北风苔原建立起一座坚固的营地。");
@@ -2051,7 +2079,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The Wildhammer dwarves roam freely over the peaks of the Hinterlands. An audience with them might earn their cooperation.", "蛮锤矮人自由自在地游荡在辛特兰的群峰之间。前去拜会他们，或许能赢得他们的合作。");
     Add("The Windrunner tower is a strong asset to Quel'thalas.", "风行者之塔是奎尔萨拉斯的强大助力。");
     Add("The Worgen curse originated from Goldrinn, the embodiment of ferocity, savagery, and unyielding will. Traveling to Mount Hyjal we might contact the wolf god to help us against our curse.", "狼人诅咒源自戈德林——凶暴、野性与不屈意志的化身。前往海加尔山，我们或许能联系上这位狼神，助我们对抗自身的诅咒。");
-    Add("The World Tree", "世界之树");
+    Add("The World Stone", "世界之石");
     Add("The World Tree Shaladrassil was planted in the land once known as Val'sharah, the cradle of Druidic culture. Val'sharah was shattered by the Great Sundering along with the rest of the Broken Isles. The tree still remains, but without a Druidic presence it will wither in time.", "世界之树莎拉达希尔曾栽种在如今被称为瓦尔莎拉的土地上，那里是德鲁伊文化的摇篮。瓦尔莎拉在大分裂中随破碎群岛的其余部分一同崩碎。这棵树至今犹存，但若没有德鲁伊的照料，它终将枯萎。");
     Add("The World of Azeroth is mine.", "艾泽拉斯世界归我所有。");
     Add("The abominable sandwurm Ouro has been created by Cthun", "可憎的沙虫奥罗已由克苏恩创造而出");
@@ -2103,7 +2131,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("The mages of Dalaran has decided to submit to our might after noticing our resurgent control of Southern-Lordaeron to help defeat the Scourge.", "达拉然的法师们注意到我们已重新掌控洛丹伦南部，于是决定屈服于我们的力量，协助击败天灾。");
     Add("The majestic city of Stratholme has been destroyed.", "宏伟的斯坦索姆城已被摧毁。");
     Add("The mesas of Thunderbluff have been swept clean of the Tauren. The Bloodhoof are without a home.", "雷霆崖的台地已被牛头人清扫一空。血蹄部族失去了家园。");
-    Add("The mighty ancestral sword of the Trollbane.", "托尔贝恩家族强大无比的祖传之剑。");
+    Add("The mighty ancestral sword of the Trollbane.", "购买托尔贝恩家族强大无比的祖传之剑。");
     Add("The mind of humans are feeble and easily corruptable, the Scarlet Monastery will be a perfect ground for a secret demon portal", "人类的心智脆弱，极易被腐化，血色修道院将是建造一座秘密恶魔传送门的绝佳地点");
     Add("The missing vial of Eternity, it seems, was used to create yet another Well of arcane energy that has since become the center of High Elven civilization.", "那瓶失踪的永恒井水，似乎被用来创造了另一座奥术能量之井，如今它已成为高等精灵文明的中心。");
     Add("The monstrous Old God N'Zoth threatens Kalimdor with madness and ruin. End his terrifying reign to secure the continent and further the Horde's ambitions.", "可怖的上古之神恩佐斯以癫狂与毁灭威胁着卡利姆多。终结他恐怖的统治，以确保这片大陆的安宁，并推进部落的野心。");
@@ -2176,6 +2204,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Thurin Stormbreaker", "图林·破风者");
     Add("Thyssara Coralguard", "希萨拉·珊瑚守卫");
     Add("Tichondrius gains 15 Strength, Agility and Intelligence and improves his Vampiric Siphon ability", "提克迪奥斯获得 15 点力量、敏捷与智力，并强化他的吸血虹吸技能");
+    Add("Titan Jailors", "泰坦狱卒");
+    Add("To Break or Bind", "或破或缚");
     Add("To force the mages of Dalaran to submit to our might we must Secure the outlying regions of the Arathi Highlands,", "要让达拉然的法师们屈服于我们的力量，我们必须控制阿拉希高地的外围区域。");
     Add("To force the mages of Dalaran to submit to our might we must Secure the outlying regions of the Arathi Highlands, The Hinterlands and the Troll city of Jintha'alor", "要迫使达拉然的法师屈服于我们的力量，我们必须控制阿拉希高地、辛特兰的外围地区，以及巨魔城市辛萨罗");
     Add("To prepare the destruction of the Lordaeron kingdom, a secret cult will be formed.", "为筹备毁灭洛丹伦王国，一个秘密教派将被建立。");
@@ -2201,6 +2231,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Turns dialogue captions on or off (accepts 'true', 'false', 'on', 'off').", "开启或关闭对话字幕（接受 'true'、'false'、'on'、'off'）。");
     Add("Turns dialogue sound on or off (accepts 'true', 'false', 'on', 'off').", "开启或关闭对话语音（接受 'true'、'false'、'on'、'off'）。");
     Add("Turns quest text on or off (accepts 'true', 'false', 'on', 'off').", "开启或关闭任务文本（接受 'true'、'false'、'on'、'off'）。");
+    Add("Twilight landing", "暮光登陆场");
+    Add("Twilight's Reckoning", "暮光清算");
     Add("Twisted Creature from Ny'alotha.", "来自尼奥罗萨的扭曲生物。");
     Add("Tygra Snowscar", "提格拉·雪痕");
     Add("Tyoril Sunchaser", "提奥里尔·猎日者");
@@ -2220,6 +2252,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Units", "单位");
     Add("Unknown", "未知");
     Add("Unspoiled Wilderness", "未染之地");
+    Add("Unyielding Bonds", "不屈之盟");
     Add("Unyielding pride of the Warsong Clan, forged in battle and bound by honor", "战歌氏族不屈的骄傲，于战斗中铸就，为荣耀所约束。");
     Add("Upgrade your {from} to a {to}", "将你的 {from} 升级为 {to}");
     Add("Upper Elemental production building.", "上级元素生产建筑。");
@@ -2273,6 +2306,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Vorrik the Shadowleg", "影足者沃里克");
     Add("Vote Game Mode", "投票选择游戏模式");
     Add("Vote to forfeit the game.", "投票放弃本局游戏。");
+    Add("Waking Dream", "清醒之梦");
+    Add("War of the Shifting Sands", "流沙之战");
     Add("Warchief, our ship sustained heavy damage when we passed through the raging maelstrom. It's unsalvageable.", "大酋长，我们的舰船在穿过汹涌的大漩涡时严重受损，已经无法修复了。");
     Add("Warden Shadowsong", "守望者影歌");
     Add("Warglaives of Azzinoth", "埃辛诺斯战刃");
@@ -2341,6 +2376,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("With the south coast of the Eastern Kingdoms now secure, High Bank has been established as a base of operations on an island near the Twilight Highlands.", "随着东部王国南海岸如今已然安定，滩头堡已在暮光高地附近的一座岛屿上建立，作为行动基地。");
     Add("With the swamps of Zangarmarsh secured, Lady Vashj and her Naga begin the work of rebuilding their clutcheries.", "赞加沼泽平定之后，瓦丝琪女士与她的纳迦开始重建他们的孵化场。");
     Add("With the threat of the Scourge and the Plague, Mograine has returned to help Lordaeorn in their dire times.", "面对天灾与瘟疫的威胁，莫格莱尼已归来，在危难之际助洛丹伦一臂之力。");
+    Add("Without Grom's leadership to restrain the Warband, the ogres are slaughtered.", "没有格罗姆的领导来约束战歌部众，食人魔惨遭屠戮。");
     Add("Without aid from the primary Sentinel force, Feathermoon Stronghold will undoubtedly fall to the assault of the Old Gods. We will need to restore it.", "若无哨兵主力部队的援助，羽月要塞必将陷落于上古之神的攻势之下。我们必须重建它。");
     Add("Wizards of the Kirin Tor! I am Arthas, first of the Lich King's death knights! I demand that you open your gates and surrender to the might of the Scourge!", "肯瑞托的法师们！我是阿尔萨斯，巫妖王的首席死亡骑士！我命令你们打开大门，向天灾军团投降！");
     Add("World-Shaman", "救世萨满");
@@ -2454,7 +2490,7 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Your Control Points gain {bonus} additional levels each turn.", "你的控制点每回合额外获得{bonus}个等级。");
     Add("Your Control Points increase your units' movement speed by 15% in a large radius.", "你的控制点会在较大范围内使你的单位移动速度提高 15%。");
     Add("Your Orc units have a {chance}% chance on attack to call down a lightning bolt dealing {damage} magic damage. Thrall instead has a 100% chance.", "你的兽人单位在攻击时有{chance}% 的几率召下一道闪电，造成{damage}点魔法伤害。萨尔则有 100% 的几率。");
-    Add("Your casters and Paladins gain 200 hit points and 5 damage, and Paladins gain the Reincarnation ability", "你的施法单位与圣骑士获得 200 点生命值和 5 点伤害，圣骑士获得重生技能");
+    Add("Your casters and Paladins gain 200 hit points and 5 damage, and Paladins gain the Reincarnation ability", "你的施法者与圣骑士获得 200 点生命值和 5 点伤害，圣骑士获得重生技能");
     Add("Your existing forces are removed, then you restart the game as the Scarlet Crusade in Tyr's Hand", "你现有的部队将被移除，随后你将以提尔之手的血色十字军重新开始游戏");
     Add("Your father ruled this land for seventy years, and you've ground it to dust in a matter of days.", "你的父亲统治了这片土地七十年，你却用了几天就让它化为乌有。");
     Add("Your non-Resistant units have a {chance}% chance to rematerialize in {location} upon death.", "你的非抗性单位死亡时有{chance}% 的几率在{location}重塑。");
@@ -2483,6 +2519,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("Zytheris the Vigilant", "警觉者齐瑟里斯");
     Add("[Page {page}/{count}, add a page number for more]", "[第 {page}/{count} 页，追加页码查看更多]");
     Add("[Page {page}/{count}]", "[第 {page}/{count} 页]");
+    Add("[Page {page}/{total}, add page # for more]", "[第 {page}/{total} 页，输入 page # 查看更多]");
+    Add("[Page {page}/{total}]", "[第 {page}/{total} 页]");
     Add("ability-code:Afrb", "霜冻吐息");
     Add("ability-code:Agyd", "制造尸体");
     Add("ability-code:Alit", "闪电攻击");
@@ -2574,7 +2612,6 @@ internal sealed class ChineseTranslation : ITranslation
     Add("{playerName} has left the game.", "{playerName}已离开游戏。");
     Add("{player} has left the game and counts as a forfeit vote. ({votes}/{required}).", "{player}已离开游戏，计为一票弃权。（{votes}/{required}）。");
     Add("{player} voted to forfeit. ({votes}/{required}).", "{player}投票弃权。（{votes}/{required}）。");
-    Add("{target} has been destroyed", "{target} 已被摧毁");
     Add("{target} is Control Level {level} or higher", "{target} 的控制等级达到 {level} 级或更高");
     Add("{target} is Control Level {level} or higher ({current}/{level})", "{target} 的控制等级达到 {level} 级或更高（{current}/{level}）");
     Add("{team} has captured {captured} out of {total} Control Points required to win the game!", "{team}已占领{total}个获胜所需控制点中的{captured}个！");
@@ -2583,34 +2620,8 @@ internal sealed class ChineseTranslation : ITranslation
     Add("{unit} has assembled Zin'rokh, Destroyer of Worlds!", "{unit}已重铸辛洛斯，诸界的毁灭者！");
     Add("{unit} has seized control of the portal to the Firelands, and can now summon Ragnaros.", "{unit}已夺取火焰之地传送门的控制权，现在可以召唤拉格纳罗斯。");
     Add("{unit} has seized control of the prison of Yogg-Saron, and can now free him.", "{unit}已夺取尤格-萨隆监狱的控制权，现在可以释放他。");
+    Add("|cffffd700Q|ruit mission |cffff0000DO NOT FORGET TO RESTART WARCRAFT 3 BEFORE NEXT GAME!|r", "|cffffd700退|r出任务 |cffff0000下一局开始前别忘了重启《魔兽争霸3》！|r");
     Add("C'thun, the great distorter of flesh, needs to amass samples from many beings to create ", "克苏恩，这位伟大的血肉扭曲者，需要从众多生灵身上收集样本，以创造");
-    Add(" [Page {page}/{total}, add page # for more]", " [第 {page}/{total} 页，输入 page # 查看更多]");
-    Add(" [Page {page}/{total}]", " [第 {page}/{total} 页]");
-    Add("-{command}: {description}", "-{command}：{description}");
-    Add("[{index}] [{key}] {name}", "[{index}] [{key}] {name}");
-    Add("[{index}] [{key}] {name} - {progress}", "[{index}] [{key}] {name} - {progress}");
-    Add("{controlWord} of {faction}.", "已取得{faction}的控制权。");
-    Add("{controlWord} of all players.", "已取得所有玩家的控制权。");
-    Add("{name} ({value} gold/min)", "{name}（{value} 黄金/分钟）");
-    Add("After months of digging, excavating, and tomb raiding, {hero} and the Explorer's League have finally unearthed an artifact from Ul'dum: {artifact}.", "经过数月的挖掘、开凿与盗墓，{hero}与探险者协会终于从奥丹姆发掘出一件神器：{artifact}。");
-    Add("Anyone casts {ability}", "任意单位施放 {ability}");
-    Add("Anyone starts casting {ability}", "任意单位开始施放{ability}");
-    Add("Build {count} {building}s ({current}/{count})", "建造 {count} 座{building}（{current}/{count}）");
-    Add("Cast {ability}", "施放 {ability}");
-    Add("Cast {ability} from {unit}", "由{unit}施放{ability}");
-    Add("Chen Stormstout", "陈·风暴烈酒");
-    Add("End turn must be >= start turn", "结束回合必须大于或等于起始回合");
-    Add("Expected {faction} to have the Cult Spies Power.", "预期{faction}拥有教派间谍能力。");
-    Add("Failed to execute {GetObjectName(IncreaseControlLevelAbilityTypeId)}: {ex}.", "执行{GetObjectName(IncreaseControlLevelAbilityTypeId)}失败：{ex}。");
-    Add("False", "关");
-    Add("Interval must be > 0", "间隔必须大于 0");
-    Add("Setting hitpoints of selected units to {value}.", "正在将选中单位的生命值设为 {value}。");
-    Add("Start casting {ability}", "开始施放{ability}");
-    Add("Surrendered control", "交出控制权");
-    Add("Took control", "取得控制权");
-    Add("True", "开");
-    Add("Without Grom's leadership to restrain the Warband, the ogres are slaughtered.", "没有格罗姆的领导来约束战歌部众，食人魔惨遭屠戮。");
-
   }
 
   /// <summary>
