@@ -15,7 +15,7 @@ public sealed class QuestDarkHorde : QuestData
 
   public QuestDarkHorde(Capital stormwindKeep, Capital blackrockSpire, LegendaryHero rend) : base("The Dark Horde",
     "With Stormwind in ruins, Rend Blackhand means to rally the Blackrock clan beneath the spire and forge a Dark Horde that answers to no one but him.",
-    @"ReplaceableTextures\CommandButtons\BTNBlackhand.blp")
+    @"ReplaceableTextures\CommandButtons\BTNBlackrockGrunt.blp")
   {
     _rend = rend;
     AddObjective(new ObjectiveCapitalDead(stormwindKeep));
@@ -29,8 +29,12 @@ public sealed class QuestDarkHorde : QuestData
     "The Blackrock banners rise over the burning spire. The Dark Horde is born, and Rend Blackhand bows to no fortress.";
 
   /// <inheritdoc />
-  protected override string RewardDescription =>
-    "Fel Grunts, Fel Raiders, Bonebreakers and Fel Crossbowmen gain 100 hit points, 10 damage and 2 armor. Rend Blackhand gains a level and 175 hit points, and can be revived even without Blackrock Spire";
+  protected override string RewardDescription => ForMaghar
+    ? "Grunts, Raiders, Bonebreakers and Crossbowmen gain 100 hit points, 10 damage and 2 armor. Rend Blackhand gains a level and 175 hit points, and can be revived even without Blackrock Spire"
+    : "Fel Grunts, Fel Raiders, Bonebreakers and Fel Crossbowmen gain 100 hit points, 10 damage and 2 armor. Rend Blackhand gains a level and 175 hit points, and can be revived even without Blackrock Spire";
+
+  /// <summary>Whether this is the Mag'har's copy of the quest.</summary>
+  public bool ForMaghar { get; init; }
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)

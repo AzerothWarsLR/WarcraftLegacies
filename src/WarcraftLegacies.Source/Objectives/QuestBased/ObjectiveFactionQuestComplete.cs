@@ -19,6 +19,15 @@ public sealed class ObjectiveFactionQuestComplete : Objective
     Progress = QuestProgress.Incomplete;
   }
 
+  /// <inheritdoc />
+  public override void OnAdd(Faction whichFaction)
+  {
+    if (_target.Progress == QuestProgress.Complete)
+    {
+      Progress = QuestProgress.Complete;
+    }
+  }
+
   private void OnQuestProgressChanged(FactionQuestProgressChangedEventArgs args)
   {
     if (args.Quest == _target && args.Quest.Progress == QuestProgress.Complete)
