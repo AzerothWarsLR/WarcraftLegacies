@@ -1,0 +1,150 @@
+{
+  "OldId": "owar",
+  "NewId": "o205",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A13Q,A0ES,A1CW,A0EH,A020,Aion"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0EH"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucam",
+      "Value": 0
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "udef",
+      "Value": 6
+    },
+    {
+      "Id": "ua1d",
+      "Value": 3
+    },
+    {
+      "Id": "ua1b",
+      "Value": 31
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 23
+    },
+    {
+      "Id": "ugor",
+      "Value": 28
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1125
+    },
+    {
+      "Id": "umpr",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Id": "urtm",
+      "Value": 4
+    },
+    {
+      "Id": "ua1s",
+      "Value": 7
+    },
+    {
+      "Id": "umvs",
+      "Value": 270
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R11F,Rguv,R02L,R00Y,Rhar,Rhme,R0AC,R11O"
+    },
+    {
+      "Id": "ucs1",
+      "Type": 3,
+      "Value": "MetalMediumBash"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "o20I"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Maghar)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Bonebreaker"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Bonebreaker"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Heavily armoured Blackrock veteran."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\MagharBonebreaker.mdx"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMagharBonebreaker.blp"
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "Grunt"
+    }
+  ]
+}

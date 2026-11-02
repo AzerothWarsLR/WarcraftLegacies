@@ -1,0 +1,193 @@
+{
+  "OldId": "Nbbc",
+  "NewId": "O20S",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0GK,AInv"
+    },
+    {
+      "Id": "uagi",
+      "Value": 27
+    },
+    {
+      "Id": "uagp",
+      "Type": 2,
+      "Value": 1.8
+    },
+    {
+      "Id": "ubld",
+      "Value": 13
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 16
+    },
+    {
+      "Id": "ua1c",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "ua1b",
+      "Value": 5
+    },
+    {
+      "Id": "uhab",
+      "Type": 3,
+      "Value": "Aamk,A1CN,A1CO,A1CQ,A1CR"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "uint",
+      "Value": 18
+    },
+    {
+      "Id": "uinp",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "ustr",
+      "Value": 26
+    },
+    {
+      "Id": "ustp",
+      "Type": 2,
+      "Value": 2.7
+    },
+    {
+      "Id": "utco",
+      "Value": 0
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R011,R0AD"
+    },
+    {
+      "Id": "ugol",
+      "Value": 100
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R03C"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMagharRampager.blp"
+    },
+    {
+      "Id": "uawt",
+      "Type": 3,
+      "Value": "Revive Maim"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 1
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Maghar)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\MaimBlackhandBrown.mdx"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Son of Blackhand"
+    },
+    {
+      "Id": "upro",
+      "Type": 3,
+      "Value": "Maim Blackhand"
+    },
+    {
+      "Id": "utpr",
+      "Type": 3,
+      "Value": "Revive Rend"
+    },
+    {
+      "Id": "ussi",
+      "Type": 3,
+      "Value": "UI\\Glues\\ScoreScreen\\scorescreen-hero-blademaster.blp"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Cunning Hero, specialised in dealing damage and disrupting enemies."
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Summon Rend"
+    },
+    {
+      "Id": "ubpy",
+      "Value": 0
+    },
+    {
+      "Id": "ua1w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Id": "ua1m",
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\SearingArrow\\SearingArrowMissile.mdl"
+    },
+    {
+      "Id": "ua1z",
+      "Value": 1500
+    }
+  ]
+}

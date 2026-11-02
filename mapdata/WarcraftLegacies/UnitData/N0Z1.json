@@ -8,7 +8,7 @@
     {
       "Id": "uabi",
       "Type": 3,
-      "Value": "A0EJ,AInv"
+      "Value": "A0GK,AInv"
     },
     {
       "Id": "uagp",
@@ -40,7 +40,7 @@
     {
       "Id": "uhab",
       "Type": 3,
-      "Value": "Aamk,A04N,TP33,A07M,A0KU"
+      "Value": "Aamk,A1D6,A1D7,A1D8,A1D9"
     },
     {
       "Id": "uhpm",
@@ -112,17 +112,17 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.15
+      "Value": 1.2
     },
     {
       "Id": "utub",
       "Type": 3,
-      "Value": "Warrior Hero, specialises in dealing damage in all forms."
+      "Value": "Doom lord of the Burning Legion, who commands the Fel Horde in Magtheridon\u0027s place."
     },
     {
       "Id": "usnd",
       "Type": 3,
-      "Value": "HeroPitLord"
+      "Value": "DoomGuard"
     },
     {
       "Id": "ubpx",
@@ -131,12 +131,12 @@
     {
       "Id": "unam",
       "Type": 3,
-      "Value": "Servant of the Legion"
+      "Value": "Doom Lord"
     },
     {
       "Id": "upro",
       "Type": 3,
-      "Value": "Fel Warlord"
+      "Value": "Kazzak the Supreme"
     },
     {
       "Id": "upru",
@@ -145,7 +145,17 @@
     {
       "Id": "utip",
       "Type": 3,
-      "Value": "Summon Fel Warlord"
+      "Value": "Summon Kazzak the Supreme"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\demon\\DoomGuard\\DoomGuard.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDoomGuard.blp"
     }
   ]
 }

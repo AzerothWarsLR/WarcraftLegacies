@@ -1,0 +1,29 @@
+{
+  "OldId": "Boar",
+  "NewId": "B111",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Healing Stream"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is being healed by a Healing Stream Totem."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Healing Stream"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASLifeTotem.blp"
+    }
+  ]
+}

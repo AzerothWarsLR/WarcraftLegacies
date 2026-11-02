@@ -1,0 +1,29 @@
+{
+  "OldId": "Bfae",
+  "NewId": "B10Y",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Shattered Armor"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Shattered Armor"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit\u0027s armor has been shattered; it has reduced armor."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBreakingSmash.blp"
+    }
+  ]
+}

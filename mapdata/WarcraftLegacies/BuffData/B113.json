@@ -1,0 +1,39 @@
+{
+  "OldId": "Bfae",
+  "NewId": "B113",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Mark of Kazzak"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Mark of Kazzak"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is losing mana; if it runs dry, the mark explodes."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHandOfDoom.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Doom\\DoomTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

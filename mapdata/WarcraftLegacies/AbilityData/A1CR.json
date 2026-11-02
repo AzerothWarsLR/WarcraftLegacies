@@ -1,0 +1,267 @@
+{
+  "OldId": "AHav",
+  "NewId": "A1CR",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "Hav1",
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Hav2",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": "Hav3",
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 150
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B110"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B110"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B110"
+    },
+    {
+      "Id": "alev",
+      "Value": 3
+    },
+    {
+      "Id": "alsk",
+      "Value": 5
+    },
+    {
+      "Id": "arlv",
+      "Value": 10
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyPower.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNUnholyPower.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 3
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 3
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Maghar - Maim)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Forge-Fury"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Forge-Fury - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Maim takes on the fury of the Blackrock forge for 30 seconds, gaining armor, hit points and attack damage. His attacks splash fire on enemy units near the target and set them burning for 3 seconds.|n|n|cffffcc00Level 1|r - \u002B5 armor, \u002B300 hit points, \u002B15 damage, 25 splash damage, 10 burn damage per second.|n|cffffcc00Level 2|r - \u002B8 armor, \u002B500 hit points, \u002B25 damage, 40 splash damage, 15 burn damage per second.|n|cffffcc00Level 3|r - \u002B11 armor, \u002B700 hit points, \u002B35 damage, 55 splash damage, 20 burn damage per second."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Forge-Fury - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Forge-Fury - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Forge-Fury - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Maim takes on the fury of the Blackrock forge, gaining 5 armor, 300 hit points and 15 attack damage for 30 seconds. His attacks splash fire on enemy units near the target for 25 damage and set them burning for 10 damage per second for 3 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Maim takes on the fury of the Blackrock forge, gaining 8 armor, 500 hit points and 25 attack damage for 30 seconds. His attacks splash fire on enemy units near the target for 40 damage and set them burning for 15 damage per second for 3 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Maim takes on the fury of the Blackrock forge, gaining 11 armor, 700 hit points and 35 attack damage for 30 seconds. His attacks splash fire on enemy units near the target for 55 damage and set them burning for 20 damage per second for 3 seconds."
+    }
+  ]
+}

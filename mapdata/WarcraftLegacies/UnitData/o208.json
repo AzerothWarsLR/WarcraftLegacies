@@ -1,0 +1,140 @@
+{
+  "OldId": "ushd",
+  "NewId": "o208",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ubld",
+      "Value": 4
+    },
+    {
+      "Id": "udtm",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "udty",
+      "Type": 3,
+      "Value": "none"
+    },
+    {
+      "Id": "ugol",
+      "Value": 10
+    },
+    {
+      "Id": "uhpm",
+      "Value": 200
+    },
+    {
+      "Id": "umvh",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "umvt",
+      "Type": 3,
+      "Value": "foot"
+    },
+    {
+      "Id": "usin",
+      "Value": 1500
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "umvs",
+      "Value": 335
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": "_"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiritWolf.blp"
+    },
+    {
+      "Id": "uclb",
+      "Value": 50
+    },
+    {
+      "Id": "ubpx",
+      "Value": 3
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Maghar)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\orc\\SpiritWolf\\SpiritWolf.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Spirit Wolf"
+    },
+    {
+      "Id": "uclr",
+      "Value": 50
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Spirit Wolf"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Ghostly wolf spirit that roams unseen ahead of the Mag\u0027har."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "SpiritWolf"
+    }
+  ]
+}
