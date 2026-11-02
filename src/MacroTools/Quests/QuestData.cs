@@ -150,7 +150,8 @@ public abstract class QuestData
     }
   }
 
-  private void RefreshDescription()
+  /// <summary>Rebuilds the quest log text, for when the flavour or rewards change after the quest is added.</summary>
+  protected void RefreshDescription()
   {
     var language = Loc.GetSystemLanguage();
     var description = Loc.Get(Flavour, language);

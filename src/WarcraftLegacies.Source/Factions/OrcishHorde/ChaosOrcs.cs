@@ -64,6 +64,7 @@ public sealed class ChaosOrcs
     _chaosFaction = chaosFaction;
     FactionTransition.AssignNewFaction(_orcs, chaosFaction);
     chaosFaction.SetObjectLevel(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
+    chaosFaction.SetObjectLevel(UPGRADE_R062_QUEST_COMPLETED_KALIMDOR_ABLAZE_ORCISH_HORDE, 1);
     TeamHandicaps.Refresh();
     SendThrallAndVoljinAway();
     GiveUpOrgrimmar(orcPlayer);
@@ -98,7 +99,6 @@ public sealed class ChaosOrcs
     orcPlayer.GetPlayerData().Faction = _orcs;
     ControlPointDefenderManager.RefreshDefenders(orcPlayer);
     TeamHandicaps.Refresh();
-    RemoveHero(AllLegends.Warsong.Saurfang);
     LoseGrom();
     ReclaimOrgrimmar(orcPlayer);
     BringHeroesHome(orcPlayer);

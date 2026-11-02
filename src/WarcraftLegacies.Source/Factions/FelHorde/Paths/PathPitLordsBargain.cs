@@ -22,7 +22,7 @@ public sealed class PathPitLordsBargain : FactionPath
     _chainedMagtheridon = chainedMagtheridon;
     Name = "The Pit Lord's Bargain";
     IconName = "PitLord";
-    Description = "Hellfire Citadel has fallen and Magtheridon with it, but a Pit Lord does not fade so easily. Swear the clans to Illidan, and the Betrayer's warlocks will drag Magtheridon back in chains outside Hellfire, where your heroes can free him. The Fel Horde will march beside the Illidari and send a share of its spoils to the Black Temple every turn.";
+    Description = "If Magtheridon falls to anyone but the Illidari, the Fel Horde can still choose to swear itself to them. Their warlocks will bind Magtheridon in chains outside Hellfire Citadel, where he may yet return to the clans, and the Fel Horde will send tribute to the Black Temple. If the Illidari slay him themselves, they take the Fel Horde by force instead.";
     AddRequirement(new ObjectiveLegendKilledBy(magtheridon, "an enemy other than the Illidari", IsEnemyOtherThanIllidari, true) { ShowsInQuestLog = false });
   }
 

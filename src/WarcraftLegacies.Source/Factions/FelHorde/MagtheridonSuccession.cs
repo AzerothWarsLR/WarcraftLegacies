@@ -9,14 +9,14 @@ namespace WarcraftLegacies.Source.Factions.FelHorde;
 public static class MagtheridonSuccession
 {
   /// <summary>Removes Magtheridon for good and gives <paramref name="felHorde"/> <paramref name="successor"/> instead.</summary>
-  /// <paramref name="successor"/> hero where he was.
-  public static void Replace(Faction felHorde, LegendaryHero successor)
+  /// <paramref name="successor"/> hero where he was, or at <paramref name="spawnPosition"/> if given.
+  public static void Replace(Faction felHorde, LegendaryHero successor, Point? spawnPosition = null)
   {
     var owner = felHorde.Player;
     var magtheridon = AllLegends.FelHorde.Magtheridon;
     var magtheridonUnit = magtheridon.Unit;
     var experience = magtheridonUnit == null ? 0 : magtheridonUnit.Experience;
-    var position = owner == null ? null : GetSpawnPosition(magtheridon, owner);
+    var position = owner == null ? null : spawnPosition ?? GetSpawnPosition(magtheridon, owner);
 
     felHorde.ModObjectLimit(UNIT_NMAG_LORD_OF_OUTLAND_FEL, -felHorde.GetObjectLimit(UNIT_NMAG_LORD_OF_OUTLAND_FEL));
     if (magtheridon.Unit != null)

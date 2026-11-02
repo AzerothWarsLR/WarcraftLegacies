@@ -115,10 +115,7 @@ public static class RoleplayStartingBases
     {
       StartInCapital(felHorde, AllLegends.FelHorde.HellfireCitadel);
       Complete(felHorde, felHorde.GetQuestByType<QuestHellfireCitadel>(), Regions.HellfireUnlock);
-      Complete(felHorde, felHorde.GetQuestByType<QuestBlackrock>(), Regions.BlackrockUnlock);
-      felHorde.Player.SetTechResearched(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, 1);
       SpawnHero(felHorde, AllLegends.FelHorde.Magtheridon, new Point(637, -26035));
-      SpawnHero(felHorde, AllLegends.FelHorde.Rend, new Point(13059, -10991));
       SpawnDemiHero(felHorde, UNIT_N05T_KAZZAK_THE_SUPREME_FEL_DEMI, new Point(1850, -26173));
     }
 

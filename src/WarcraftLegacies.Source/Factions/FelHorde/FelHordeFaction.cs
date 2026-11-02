@@ -53,6 +53,7 @@ public sealed class FelHordeFaction : Faction, IHasRoleplayIntro
     RegisterObjectLevels();
     RegisterQuests();
     FelHordeSpells.Setup();
+    MagharSpells.Setup();
     FelHordeTraits.Setup();
     JuggernautDeath.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
