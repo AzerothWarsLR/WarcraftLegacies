@@ -39,6 +39,10 @@ public sealed class StormwindFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
       "storm"
     };
     ProcessObjectInfo(StormwindObjectInfo.GetAllObjectLimits());
+    foreach (var unitTypeId in StromgardeFaction.CapitalUnits)
+    {
+      SetObjectLimit(unitTypeId, 0);
+    }
   }
 
   /// <inheritdoc />
@@ -64,6 +68,7 @@ public sealed class StormwindFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
     RegisterQuests();
     RegisterResearches();
     StormwindSpells.Setup();
+    StromgardeSpells.Setup();
     StormwindTraits.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }

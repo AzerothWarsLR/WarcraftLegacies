@@ -8,8 +8,14 @@ public static class TierVeteranGuard
 {
   private static void Research()
   {
-    @event.Player.GetPlayerData().Faction?.ModObjectLimit(UNIT_H03K_MARSHAL_STORMWIND, -Faction.Unlimited);
-    @event.Player.GetPlayerData().Faction?.ModObjectLimit(UNIT_H03U_REAR_MARSHAL_STORMWIND_DEFENSIVE, 12);
+    var faction = @event.Player.GetPlayerData().Faction;
+    if (faction == null)
+    {
+      return;
+    }
+
+    faction.ModObjectLimit(StromgardeFaction.EquivalentFor(faction, UNIT_H03K_MARSHAL_STORMWIND), -Faction.Unlimited);
+    faction.ModObjectLimit(StromgardeFaction.EquivalentFor(faction, UNIT_H03U_REAR_MARSHAL_STORMWIND_DEFENSIVE), 12);
   }
 
   public static void Setup()

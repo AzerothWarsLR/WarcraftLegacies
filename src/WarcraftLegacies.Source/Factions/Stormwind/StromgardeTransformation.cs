@@ -1,8 +1,12 @@
 ﻿using System.Collections.Generic;
+using MacroTools.ControlPoints;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.Legends;
+using MacroTools.PreplacedWidgets;
 using MacroTools.Quests;
 using MacroTools.Shared;
+using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Factions.Ironforge;
 using WarcraftLegacies.Source.Factions.Kultiras;
@@ -16,8 +20,8 @@ namespace WarcraftLegacies.Source.Factions.Stormwind;
 public sealed class StromgardeTransformation
 {
   private static readonly Point _stromgardeKeep = new(14064, 912);
-
-  private static readonly Dictionary<int, int> _noEquivalents = new();
+  private const float ClearRadius = 800;
+  private const float SecondHandOverDelay = 1;
 
   private static readonly Dictionary<int, int> _landmarks = new()
   {
@@ -50,16 +54,22 @@ public sealed class StromgardeTransformation
     }
 
     ClaimHeldLands(stormwind);
-    FactionTransition.AssignNewFaction(stormwind, new StromgardeFaction(stormwind));
+    var stromgarde = new StromgardeFaction(stormwind);
+    FactionTransition.AssignNewFaction(stormwind, stromgarde);
+    CarryOverResearches(stromgarde, whichPlayer);
     PathBase.RemoveHero(AllLegends.Stormwind.Varian);
     PathBase.RemoveHero(AllLegends.Stormwind.Bolvar);
     PathBase.RemoveHero(AllLegends.Stormwind.Khadgar);
 
     var heir = GetHeir(out var heirEquivalents);
     PathBase.HandOverStructures(whichPlayer, heir, heirEquivalents, Regions.Stromgarde);
+    PathBase.ConvertStructures(whichPlayer, StromgardeFaction.UnitEquivalents);
 
-    PathBase.RelocateArmy(whichPlayer, _noEquivalents, _stromgardeKeep.X, _stromgardeKeep.Y - 600);
+    PathBase.RelocateArmy(whichPlayer, StromgardeFaction.UnitEquivalents, _stromgardeKeep.X, _stromgardeKeep.Y - 600);
     PathBase.SummonLegend(AllLegends.Stormwind.Thoras, whichPlayer, new Point(_stromgardeKeep.X, _stromgardeKeep.Y - 400));
+    FortifyStromgardeKeep(whichPlayer);
+    StromgardeQuests.Setup(stormwind, stromgarde);
+    HandOverLateStructures(whichPlayer, heir, heirEquivalents);
     whichPlayer.PlayMusicThematic(@"Sound\Music\mp3Music\AllianceBattleMarch.ogg");
   }
 
@@ -115,6 +125,93 @@ public sealed class StromgardeTransformation
 
     equivalents = null;
     return player.NeutralPassive;
+  }
+
+  /// <summary>Makes Stromgarde Keep a capital, with the improved cannon towers in Stromgarde rebuilt as Stromgarde Protectors that guard it.</summary>
+  private static void FortifyStromgardeKeep(player whichPlayer)
+  {
+    var keep = AllPreplacedWidgets.Units.Get(UNIT_H02V_STROMGARDE_KEEP_STORMWIND_OTHER);
+    if (keep == null || !keep.Alive || keep.Owner != whichPlayer)
+    {
+      return;
+    }
+
+    var capital = new Capital
+    {
+      Unit = keep,
+      Capturable = true
+    };
+    CapitalManager.Register(capital);
+    foreach (var tower in GlobalGroup.EnumUnitsInRect(Regions.Stromgarde))
+    {
+      if (!tower.Alive || tower.Owner != whichPlayer || tower.UnitType != UNIT_H0G1_IMPROVED_CANNON_TOWER_STROMGARDE)
+      {
+        continue;
+      }
+
+      var x = tower.X;
+      var y = tower.Y;
+      var facing = tower.Facing;
+      tower.Dispose();
+      var protector = unit.Create(whichPlayer, UNIT_H0GM_STROMGARDE_PROTECTOR_STROMGARDE_PROTECTOR, x, y, facing);
+      if (protector != null)
+      {
+        capital.AddProtector(protector);
+      }
+    }
+  }
+
+  /// <summary>Gives Stromgarde the Arathi Highlands control point, clearing out creeps and other players' buildings around it.</summary>
+  private static void ClaimArathiHighlands(player whichPlayer)
+  {
+    var controlPoint = ControlPointManager.Instance.GetFromUnitType(UNIT_N01Z_ARATHI_HIGHLANDS).Unit;
+    foreach (var whichUnit in GlobalGroup.EnumUnitsInRange(controlPoint.X, controlPoint.Y, ClearRadius))
+    {
+      if (!whichUnit.Alive || !whichUnit.IsRemovable() || whichUnit.Owner == whichPlayer || whichUnit == controlPoint)
+      {
+        continue;
+      }
+
+      var owner = whichUnit.Owner;
+      var isStructure = whichUnit.IsUnitType(unittype.Structure);
+      if (owner == player.NeutralAggressive && !isStructure)
+      {
+        whichUnit.DropAllItems();
+        whichUnit.Dispose();
+      }
+      else if (isStructure && owner != player.NeutralPassive && owner != player.NeutralAggressive)
+      {
+        owner.Gold += whichUnit.GoldCost;
+        whichUnit.Dispose();
+      }
+    }
+
+    controlPoint.SetOwner(whichPlayer);
+  }
+
+  /// <summary>Hands over any buildings outside Stromgarde that reached the player just after the path was taken, then claims the Arathi Highlands.</summary>
+  private static void HandOverLateStructures(player whichPlayer, player heir, Dictionary<int, int>? heirEquivalents)
+  {
+    var delay = timer.Create();
+    delay.Start(SecondHandOverDelay, false, () =>
+    {
+      delay.Dispose();
+      PathBase.HandOverStructures(whichPlayer, heir, heirEquivalents, Regions.Stromgarde);
+      ClaimArathiHighlands(whichPlayer);
+    });
+  }
+
+  /// <summary>Gives Stromgarde every level Stormwind had in a research it replaces with its own.</summary>
+  private static void CarryOverResearches(Faction stromgarde, player whichPlayer)
+  {
+    foreach (var pair in StromgardeFaction.ResearchEquivalents)
+    {
+      var level = whichPlayer.GetTechResearched(pair.Key, false);
+      if (level > 0)
+      {
+        stromgarde.SetObjectLevel(pair.Value, level);
+      }
+    }
   }
 
   private static bool IsStillInGame(Faction faction) =>

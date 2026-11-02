@@ -54,6 +54,11 @@ public sealed class IronforgeFaction : Faction, IHasRoleplayPaths, IHasRoleplayI
     {
       SetObjectLimit(unitTypeId, 0);
     }
+
+    foreach (var unitTypeId in StromgardeFaction.CapitalUnits)
+    {
+      SetObjectLimit(unitTypeId, 0);
+    }
   }
 
   /// <inheritdoc />
