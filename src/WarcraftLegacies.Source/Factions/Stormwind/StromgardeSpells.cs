@@ -28,9 +28,8 @@ public static class StromgardeSpells
     {
       Hero = AllLegends.Stormwind.Thoras,
       AuraAbilityId = ABILITY_A1DM_CROWN_OF_ARATHOR_STROMGARDE_THORAS,
-      BonusAbilityId = ABILITY_A1DN_CROWN_OF_ARATHOR_BELOW_HALF_STROMGARDE_THORAS_BUFF,
-      Radius = 700,
-      MaximumLevel = 4
+      BuffAbilityId = ABILITY_A1DN_CROWN_OF_ARATHOR_BELOW_HALF_STROMGARDE_THORAS_BUFF,
+      Radius = 700
     }.Register();
 
     SpellRegistry.Register(new HighlandChargeSpell(ABILITY_A1DO_HIGHLAND_CHARGE_STROMGARDE_THORAS)
@@ -69,10 +68,9 @@ public static class StromgardeSpells
     new BattleHardened
     {
       AbilityTypeId = ABILITY_A1DU_BATTLE_HARDENED_STROMGARDE_DANATH,
-      ArmorAbilityId = ABILITY_A1DV_BATTLE_HARDENED_STROMGARDE_DANATH_BUFF,
+      BuffAbilityId = ABILITY_A1DV_BATTLE_HARDENED_STROMGARDE_DANATH_BUFF,
       MaximumStacks = new LeveledAbilityField<int> { Base = 2, PerLevel = 2 },
-      StackDuration = 5,
-      MaximumArmorLevel = 10
+      StackDuration = 5
     }.Register();
 
     SpellRegistry.Register(new StandOfHonorHoldSpell(ABILITY_A1DW_STAND_OF_HONOR_HOLD_STROMGARDE_DANATH)

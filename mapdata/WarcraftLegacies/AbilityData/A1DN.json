@@ -99,28 +99,28 @@
       "Pointer": 1,
       "Id": "Had1",
       "Type": 2,
-      "Value": 1
+      "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": "Had1",
       "Type": 2,
-      "Value": 2
+      "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": "Had1",
       "Type": 2,
-      "Value": 3
+      "Value": 0
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": "Had1",
       "Type": 2,
-      "Value": 4
+      "Value": 0
     },
     {
       "Level": 1,

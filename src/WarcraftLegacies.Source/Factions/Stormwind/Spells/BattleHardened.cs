@@ -11,10 +11,9 @@ public sealed class BattleHardened
   private readonly Dictionary<unit, timer> _expiries = new();
 
   public required int AbilityTypeId { get; init; }
-  public required int ArmorAbilityId { get; init; }
+  public required int BuffAbilityId { get; init; }
   public required LeveledAbilityField<int> MaximumStacks { get; init; }
   public required float StackDuration { get; init; }
-  public required int MaximumArmorLevel { get; init; }
 
   /// <summary>Starts listening for attacks.</summary>
   public void Register() => PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, OnAnyUnitDamaged);
@@ -39,27 +38,41 @@ public sealed class BattleHardened
       stacks = previous;
     }
 
-    var maximum = MaximumStacks.GetValue(level);
-    if (stacks < maximum)
+    if (stacks < MaximumStacks.GetValue(level))
     {
-      stacks++;
+      SetStacks(hardened, stacks + 1);
     }
 
-    _stacks[hardened] = stacks;
-    if (hardened.GetAbilityLevel(ArmorAbilityId) != stacks)
-    {
-      AuraLevel.SetLevel(hardened, ArmorAbilityId, stacks, MaximumArmorLevel);
-    }
     if (!_expiries.TryGetValue(hardened, out var expiry))
     {
       expiry = timer.Create();
       _expiries[hardened] = expiry;
     }
 
-    expiry.Start(StackDuration, false, () =>
+    expiry.Start(StackDuration, false, () => SetStacks(hardened, 0));
+  }
+
+  private void SetStacks(unit hardened, int stacks)
+  {
+    var current = 0;
+    if (_stacks.TryGetValue(hardened, out var previous))
     {
-      _stacks[hardened] = 0;
-      hardened.RemoveAbility(ArmorAbilityId);
-    });
+      current = previous;
+    }
+
+    BlzSetUnitArmor(hardened, BlzGetUnitArmor(hardened) + stacks - current);
+    _stacks[hardened] = stacks;
+    if (stacks == 0)
+    {
+      hardened.RemoveAbility(BuffAbilityId);
+      return;
+    }
+
+    if (hardened.GetAbilityLevel(BuffAbilityId) == 0)
+    {
+      hardened.AddAbility(BuffAbilityId);
+    }
+
+    hardened.SetAbilityLevel(BuffAbilityId, stacks);
   }
 }
