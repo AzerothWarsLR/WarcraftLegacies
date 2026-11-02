@@ -17,6 +17,17 @@ public static class FelHordeSpells
   /// </summary>
   public static void Setup()
   {
+    SpellRegistry.Register(new MarkOfKazzakSpell(ABILITY_A1D9_MARK_OF_KAZZAK_FEL_KAZZAK)
+    {
+      ManaDrainPerSecond = new LeveledAbilityField<float> { Base = 20, PerLevel = 10 },
+      ExplosionDamage = new LeveledAbilityField<float> { Base = 150, PerLevel = 150 },
+      Duration = 10,
+      SplashRadius = 250,
+      BuffAbilityId = ABILITY_A1DA_MARK_OF_KAZZAK_BUFF_FEL_KAZZAK_DUMMY,
+      BuffId = BUFF_B113_MARK_OF_KAZZAK,
+      ExplosionEffectPath = @"Abilities\Spells\Other\Doom\DoomDeath.mdl"
+    });
+
     var ascendance = new Ascendance(ABILITY_AEME_ASCENDANCE_TEAL_ZULUHED)
     {
       DurationBase = 15,

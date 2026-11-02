@@ -9,6 +9,7 @@ public sealed class FelHordeLegends
   public LegendaryHero Rend { get; }
   public LegendaryHero Teron { get; }
   public LegendaryHero Kargath { get; }
+  public LegendaryHero Maim { get; }
 
   public Capital BlackrockSpire { get; }
   public Capital BlackTemple { get; }
@@ -34,6 +35,11 @@ public sealed class FelHordeLegends
     Kargath = new LegendaryHero("Kargath Bladefist")
     {
       UnitType = UNIT_N03D_WARCHIEF_OF_THE_FEL_HORDE_FEL,
+    };
+
+    Maim = new LegendaryHero("Maim Blackhand")
+    {
+      UnitType = UNIT_O20S_SON_OF_BLACKHAND_MAGHAR
     };
 
     Teron = new LegendaryHero("Teron Gorefiend")
@@ -81,6 +87,7 @@ public sealed class FelHordeLegends
     LegendaryHeroManager.Register(Rend);
     LegendaryHeroManager.Register(Teron);
     LegendaryHeroManager.Register(Kargath);
+    LegendaryHeroManager.Register(Maim);
     CapitalManager.Register(BlackrockSpire);
     CapitalManager.Register(BlackTemple);
     CapitalManager.Register(HellfireCitadel);

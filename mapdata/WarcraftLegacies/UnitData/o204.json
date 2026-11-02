@@ -1,0 +1,155 @@
+{
+  "OldId": "unec",
+  "NewId": "o204",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A0AR,A1CT,A1CU,Aion"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0AR"
+    },
+    {
+      "Id": "ubld",
+      "Value": 3
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": "ua1b",
+      "Value": 6
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 14
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "umpi",
+      "Value": 200
+    },
+    {
+      "Id": "upri",
+      "Value": 10
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "uhpr",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Id": "uhrt",
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": "urtm",
+      "Value": 3
+    },
+    {
+      "Id": "ua1s",
+      "Value": 3
+    },
+    {
+      "Id": "umvs",
+      "Value": 220
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "utyp",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R03L,Rhme,Rhar,R11G,R023,Rguv,Ropm"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 800
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMagharSpiritcaller.blp"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Heal,- Heal|n- Unholy Frenzy,- Heal|n- Unholy Frenzy|n- Unholy Armor"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Maghar)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\MagharSpiritcaller.mdx"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Spiritcaller"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Spiritcaller"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Elder who speaks with the ancestors and the elements to mend the Mag\u0027har\u0027s wounds."
+    },
+    {
+      "Id": "usnd",
+      "Type": 3,
+      "Value": "ShamanX"
+    }
+  ]
+}

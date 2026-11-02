@@ -1,0 +1,186 @@
+{
+  "OldId": "ANca",
+  "NewId": "A1D8",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "nca1",
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": "nca1",
+      "Type": 2,
+      "Value": 0.4
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": "nca1",
+      "Type": 2,
+      "Value": 0.55
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": "nca1",
+      "Type": 2,
+      "Value": 0.7
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 2,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 3,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 4,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNCleavingAttack.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCleavingAttack.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 2
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Fel - Kazzak)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Cleaving Attack"
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Cleaving Attack - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Cleaving Attack - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Cleaving Attack - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Cleaving Attack - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Cleaving Attack - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Kazzak\u0027s attacks strike with such force that part of their damage hits enemies near the target.|n|n|cffffcc00Level 1|r - 25% of damage dealt to nearby enemies.|n|cffffcc00Level 2|r - 40% of damage dealt to nearby enemies.|n|cffffcc00Level 3|r - 55% of damage dealt to nearby enemies.|n|cffffcc00Level 4|r - 70% of damage dealt to nearby enemies."
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Kazzak\u0027s attacks strike with such force that 25% of their damage hits enemies near the target."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Kazzak\u0027s attacks strike with such force that 40% of their damage hits enemies near the target."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Kazzak\u0027s attacks strike with such force that 55% of their damage hits enemies near the target."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Kazzak\u0027s attacks strike with such force that 70% of their damage hits enemies near the target."
+    }
+  ]
+}

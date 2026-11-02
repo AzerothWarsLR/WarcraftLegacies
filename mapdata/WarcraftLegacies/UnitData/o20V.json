@@ -1,0 +1,38 @@
+{
+  "OldId": "ohwd",
+  "NewId": "o20V",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "A1D1"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 250
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Healing Stream Totem"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Maghar)"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLifeTotem.blp"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\OrcWaterTotem.mdx"
+    }
+  ]
+}

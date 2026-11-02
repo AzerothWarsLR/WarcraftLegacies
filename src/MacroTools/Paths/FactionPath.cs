@@ -34,6 +34,9 @@ public abstract class FactionPath
   /// <summary>The icon name, without the BTN prefix or file extension.</summary>
   public string IconName { get; init; } = "";
 
+  /// <summary>Colour code for the path's name in the announcement, or null to leave it uncoloured.</summary>
+  public string? NameColorCode { get; init; }
+
   public string IconPath => $@"ReplaceableTextures\CommandButtons\BTN{IconName}.blp";
 
   /// <summary>What happens if the path is taken.</summary>
@@ -436,9 +439,15 @@ public abstract class FactionPath
       }
     }
 
+    var pathName = Loc.Get(Name);
+    if (NameColorCode != null)
+    {
+      pathName = $"{NameColorCode}{pathName}|r";
+    }
+
     foreach (var whichPlayer in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      whichPlayer.DisplayTextTo($"\n|cffffcc00{Loc.Get("PATH CHOSEN")}|r - {Loc.Format("{faction} has taken the path of {path}.", ("{faction}", faction.ColoredName), ("{path}", Loc.Get(Name)))}");
+      whichPlayer.DisplayTextTo($"\n|cffffcc00{Loc.Get("PATH CHOSEN")}|r - {Loc.Format("{faction} has taken the path of {path}.", ("{faction}", faction.ColoredName), ("{path}", pathName))}");
     }
 
     SoundLibrary.Completed.Start();

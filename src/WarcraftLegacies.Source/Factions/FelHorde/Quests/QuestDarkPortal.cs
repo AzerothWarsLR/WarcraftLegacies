@@ -15,6 +15,8 @@ public sealed class QuestDarkPortal : QuestData
   private readonly unit _outerWaygate1;
   private readonly unit _outerWaygate2;
   private readonly unit _outerWaygate3;
+  private readonly int _earliestTurn;
+  private readonly int _forcedTurn;
 
   /// <summary>
   /// Initializes a new instance of the class <see cref="QuestDarkPortal"/>.
@@ -28,7 +30,8 @@ public sealed class QuestDarkPortal : QuestData
   /// <param name="earliestTurn">The first turn the portal can be opened by research.</param>
   /// <param name="forcedTurn">The turn the portal opens on its own if it hasn't been researched.</param>
   public QuestDarkPortal(unit innerWaygate1, unit innerWaygate2, unit innerWaygate3, unit outerWaygate1,
-    unit outerWaygate2, unit outerWaygate3, int earliestTurn = 8, int forcedTurn = 10)
+    unit outerWaygate2, unit outerWaygate3, int earliestTurn = 8, int forcedTurn = 10,
+    int researchBuildingId = UNIT_O008_HELLFIRE_CITADEL_FEL)
     : base("The Dark Portal",
       "Following the Second War, the archmage Khadgar and his fellow magi sealed the Dark Portal so that it would never again be used to threaten Azeroth. Little did they know that their magicks were only temporary, and that the portal would open again in time.",
       @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
@@ -46,14 +49,24 @@ public sealed class QuestDarkPortal : QuestData
     outerWaygate3.IsVisible = false;
     _outerWaygate3 = outerWaygate3;
     AddObjective(new ObjectiveEitherOf(
-      new ObjectiveResearch(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, UNIT_O008_HELLFIRE_CITADEL_FEL, true),
+      new ObjectiveResearch(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, researchBuildingId, true),
       new ObjectiveTurn(forcedTurn)));
     AddObjective(new ObjectiveTurn(earliestTurn));
+    _earliestTurn = earliestTurn;
+    _forcedTurn = forcedTurn;
     Global = true;
   }
 
   /// <summary>The Blackrock quest whose outpost is handed over when the portal opens.</summary>
   public QuestBlackrock? HandsOverOutpostOf { get; init; }
+
+  /// <summary>Makes a copy of this quest whose portal is researched at <paramref name="buildingId"/>.</summary>
+  public QuestDarkPortal ResearchedAt(int buildingId, QuestBlackrock? handsOverOutpostOf) =>
+    new(_innerWaygate1, _innerWaygate2, _innerWaygate3, _outerWaygate1, _outerWaygate2, _outerWaygate3, _earliestTurn,
+      _forcedTurn, buildingId)
+    {
+      HandsOverOutpostOf = handsOverOutpostOf
+    };
 
   /// <summary>Makes a copy of this quest that opens the portal on different turns.</summary>
   public QuestDarkPortal WithTurns(int earliestTurn, int forcedTurn) =>

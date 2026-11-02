@@ -1,0 +1,175 @@
+{
+  "OldId": "nbdk",
+  "NewId": "o209",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": "ZBIN,A1CV"
+    },
+    {
+      "Id": "uacq",
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Id": "ua1t",
+      "Type": 3,
+      "Value": "magic"
+    },
+    {
+      "Id": "udaa",
+      "Type": 3,
+      "Value": "A0DS"
+    },
+    {
+      "Id": "ubld",
+      "Value": 12
+    },
+    {
+      "Id": "udef",
+      "Value": 4
+    },
+    {
+      "Id": "ufoo",
+      "Value": 1
+    },
+    {
+      "Id": "ugol",
+      "Value": 27
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "ua2z",
+      "Value": 900
+    },
+    {
+      "Id": "upri",
+      "Value": 6
+    },
+    {
+      "Id": "urac",
+      "Type": 3,
+      "Value": "orc"
+    },
+    {
+      "Id": "umvs",
+      "Value": 260
+    },
+    {
+      "Id": "uspe",
+      "Value": 1
+    },
+    {
+      "Id": "ua1g",
+      "Type": 3,
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "R00P,R11K,R11J,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": "uaen",
+      "Value": 1
+    },
+    {
+      "Id": "ua2w",
+      "Type": 3,
+      "Value": "missile"
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "R09X,o20F"
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 32
+    },
+    {
+      "Id": "ua1b",
+      "Value": 55
+    },
+    {
+      "Id": "ua2b",
+      "Value": 50
+    },
+    {
+      "Id": "uhpm",
+      "Value": 1600
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "ua1f",
+      "Value": 50
+    },
+    {
+      "Id": "ua1h",
+      "Value": 75
+    },
+    {
+      "Id": "ua1q",
+      "Value": 100
+    },
+    {
+      "Id": "ua1r",
+      "Value": 600
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Maghar)"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Red Drake"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Train Red Drake"
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Fierce red drake ridden into battle by the Mag\u0027har."
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "units\\creeps\\RedDragon\\RedDragon.mdl"
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRedDragon.blp"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    }
+  ]
+}

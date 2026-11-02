@@ -22,8 +22,11 @@ public sealed class QuestBlackrock : QuestData
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestBlackrock"/> class.
   /// </summary>
-  public QuestBlackrock(Rectangle rescueRect1, Rectangle rescueRect2, IEnumerable<QuestData> prequisites) : base("Blackrock Unification",
-    "Make contact with the Blackrock clan and convince them to join Magtheridon",
+  public QuestBlackrock(Rectangle rescueRect1, Rectangle rescueRect2, IEnumerable<QuestData> prequisites,
+    int researchBuildingId = UNIT_O008_HELLFIRE_CITADEL_FEL, bool forMaghar = false) : base("Blackrock Unification",
+    forMaghar
+      ? "Make contact with the Blackrock clan and convince them to join Garrosh"
+      : "Make contact with the Blackrock clan and convince them to join Magtheridon",
     @"ReplaceableTextures\CommandButtons\BTNBlackhand.blp")
   {
     foreach (var prequisite in prequisites)
@@ -31,7 +34,7 @@ public sealed class QuestBlackrock : QuestData
       AddObjective(new ObjectiveQuestComplete(prequisite));
     }
 
-    AddObjective(new ObjectiveResearch(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, UNIT_O008_HELLFIRE_CITADEL_FEL));
+    AddObjective(new ObjectiveResearch(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, researchBuildingId, forMaghar));
     AddObjective(new ObjectiveTurn(9));
     AddObjective(new ObjectiveExpire(15, Title));
     AddObjective(new ObjectiveSelfExists());
@@ -39,6 +42,9 @@ public sealed class QuestBlackrock : QuestData
     _rescueUnits1 = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     _rescueUnits2 = rescueRect2.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
   }
+
+  /// <summary>Set when another faction takes this quest over, so failing it doesn't give Blackrock away.</summary>
+  public bool HandedOver { get; set; }
 
   /// <summary>Whether the outpost near the Dark Portal is held back until the Dark Portal opens.</summary>
   public bool OutpostWaitsForDarkPortal { get; set; }
@@ -59,6 +65,11 @@ public sealed class QuestBlackrock : QuestData
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
   {
+    if (HandedOver)
+    {
+      return;
+    }
+
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
       ? player.NeutralAggressive
       : completingFaction.Player;

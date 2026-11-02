@@ -1,0 +1,29 @@
+{
+  "OldId": "Basl",
+  "NewId": "B112",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Earthbind"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is held by an Earthbind Totem; it moves slower."
+    },
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Earthbind"
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASEarthTotem.blp"
+    }
+  ]
+}

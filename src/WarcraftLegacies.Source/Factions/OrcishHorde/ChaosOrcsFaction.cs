@@ -27,7 +27,6 @@ public sealed class ChaosOrcsFaction : Faction
 
   private static readonly HashSet<int> _chaosOnly = new()
   {
-    UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_WARSONG,
     UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT,
     UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH
   };

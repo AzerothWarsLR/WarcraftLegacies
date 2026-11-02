@@ -1,0 +1,29 @@
+{
+  "OldId": "BHav",
+  "NewId": "B110",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Forge-Fury"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Forge-Fury"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit burns with the fury of the Blackrock forge; its attacks splash fire."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASUnholyPower.blp"
+    }
+  ]
+}

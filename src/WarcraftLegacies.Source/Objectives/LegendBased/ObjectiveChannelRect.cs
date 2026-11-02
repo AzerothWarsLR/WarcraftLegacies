@@ -3,6 +3,7 @@ using MacroTools.Factions;
 using MacroTools.Legends;
 using MacroTools.Localization;
 using MacroTools.Quests;
+using MacroTools.Utils;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
 
@@ -20,7 +21,8 @@ public sealed class ObjectiveChannelRect : Objective
   private readonly TriggerWrapper _entersRectTrig = new();
   private readonly float _facing;
   private readonly string? _timerDialogTitle;
-  private readonly Legend _targetLegend;
+  private readonly Legend? _targetLegend;
+  private readonly int _targetUnitTypeId;
   private readonly string _animation;
   private readonly float _animationLoop;
 
@@ -63,21 +65,42 @@ public sealed class ObjectiveChannelRect : Objective
   /// displays a countdown timer to all players with this title. If null, no timer is displayed.</param>
   public ObjectiveChannelRect(Rectangle targetRect, string rectName, LegendaryHero legendaryHero, int duration,
     float facing, string? timerDialogTitle = null, string animation = "channel", float animationLoop = 0)
+    : this(targetRect, duration, facing, timerDialogTitle, animation, animationLoop)
   {
-    _animation = animation;
-    _animationLoop = animationLoop;
-    _targetRect = targetRect.Rect;
-    var target = RectToRegion(_targetRect);
     _targetLegend = legendaryHero;
-    _duration = duration;
     SetDescription(
       "Have {hero} channel at {rect} for {duration} seconds",
       ("{hero}", legendaryHero.Name),
       ("{rect}", Loc.Get(rectName)),
       ("{duration}", duration.ToString()));
+  }
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ObjectiveChannelRect"/> class that any unit of
+  /// <paramref name="unitTypeId"/> can complete.
+  /// </summary>
+  public ObjectiveChannelRect(Rectangle targetRect, string rectName, int unitTypeId, string unitName, int duration,
+    float facing, string? timerDialogTitle = null, string animation = "channel", float animationLoop = 0)
+    : this(targetRect, duration, facing, timerDialogTitle, animation, animationLoop)
+  {
+    _targetUnitTypeId = unitTypeId;
+    SetDescription(
+      "Have {hero} channel at {rect} for {duration} seconds",
+      ("{hero}", Loc.Get(unitName)),
+      ("{rect}", Loc.Get(rectName)),
+      ("{duration}", duration.ToString()));
+  }
+
+  private ObjectiveChannelRect(Rectangle targetRect, int duration, float facing, string? timerDialogTitle,
+    string animation, float animationLoop)
+  {
+    _animation = animation;
+    _animationLoop = animationLoop;
+    _targetRect = targetRect.Rect;
+    _duration = duration;
     _facing = facing;
     _timerDialogTitle = timerDialogTitle;
-
+    var target = RectToRegion(_targetRect);
     MapEffectPath = TargetEffect;
 
     _entersRectTrig.Trigger.RegisterEnterRegion(target);
@@ -89,7 +112,7 @@ public sealed class ObjectiveChannelRect : Objective
   /// <inheritdoc />
   public override void OnAdd(Faction whichFaction)
   {
-    if (StartCondition == null)
+    if (StartCondition == null && _targetLegend != null)
     {
       return;
     }
@@ -109,7 +132,7 @@ public sealed class ObjectiveChannelRect : Objective
 
     if (_channel != null)
     {
-      if (!StartCondition!())
+      if (StartCondition != null && !StartCondition())
       {
         _channel.Interrupt();
       }
@@ -117,24 +140,41 @@ public sealed class ObjectiveChannelRect : Objective
       return;
     }
 
-    var whichUnit = _targetLegend.Unit;
-    if (whichUnit != null && whichUnit.X >= _targetRect.MinX && whichUnit.X <= _targetRect.MaxX &&
-        whichUnit.Y >= _targetRect.MinY && whichUnit.Y <= _targetRect.MaxY)
+    if (_targetLegend != null)
     {
-      TryStartChannel(whichUnit);
+      var whichUnit = _targetLegend.Unit;
+      if (whichUnit != null && IsInRect(whichUnit))
+      {
+        TryStartChannel(whichUnit);
+      }
+
+      return;
+    }
+
+    foreach (var candidate in GlobalGroup.EnumUnitsInRect(_targetRect))
+    {
+      if (candidate.UnitType == _targetUnitTypeId && candidate.Alive && EligibleFactions.Contains(candidate.Owner))
+      {
+        TryStartChannel(candidate);
+        return;
+      }
     }
   }
 
   private void OnRegionEnter()
   {
     var whichUnit = @event.EnteringUnit;
-    if (LegendaryHeroManager.GetFromUnit(@event.Unit) != _targetLegend)
+    if (_targetLegend != null ? LegendaryHeroManager.GetFromUnit(whichUnit) != _targetLegend : whichUnit.UnitType != _targetUnitTypeId)
     {
       return;
     }
 
     TryStartChannel(whichUnit);
   }
+
+  private bool IsInRect(unit whichUnit) =>
+    whichUnit.X >= _targetRect.MinX && whichUnit.X <= _targetRect.MaxX &&
+    whichUnit.Y >= _targetRect.MinY && whichUnit.Y <= _targetRect.MaxY;
 
   private void TryStartChannel(unit whichUnit)
   {

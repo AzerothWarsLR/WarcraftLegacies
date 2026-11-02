@@ -65,7 +65,7 @@ public static class RoleplayFronts
     faction is ScourgeFaction || faction is FallenPrinceFaction || faction is BansheesHostFaction;
 
   private static bool AttacksSouth(Faction faction) =>
-    faction is FelHordeFaction || faction is LegionFaction || (faction is SunfuryFaction && IsOnTeam(faction, TeamSetup.Legion)) ||
+    faction is FelHordeFaction || faction is MagharFaction || faction is LegionFaction || (faction is SunfuryFaction && IsOnTeam(faction, TeamSetup.Legion)) ||
     (faction is DarkIronFaction && IsOnTeam(faction, TeamSetup.Legion));
 
   private static bool DefendsSouth(Faction faction) =>
@@ -73,7 +73,7 @@ public static class RoleplayFronts
     faction is StromgardeFaction;
 
   private static bool AttacksKalimdor(Faction faction) =>
-    faction is OrcishHordeFaction || faction is TaurenTribesFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.Horde));
+    faction is OrcishHordeFaction || faction is TaurenTribesFaction || faction is MagharFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.Horde));
 
   private static bool DefendsKalimdor(Faction faction) =>
     faction is SentinelsFaction || faction is DruidsFaction || (faction is TheramoreFaction && IsOnTeam(faction, TeamSetup.NightElves)) ||

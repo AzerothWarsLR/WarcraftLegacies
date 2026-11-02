@@ -21,6 +21,7 @@ using WarcraftLegacies.Source.Factions.Lordaeron;
 using WarcraftLegacies.Source.Factions.Lordaeron.Quests;
 using WarcraftLegacies.Source.Factions.OrcishHorde;
 using WarcraftLegacies.Source.Factions.OrcishHorde.Paths;
+using WarcraftLegacies.Source.Factions.OrcishHorde.Quests;
 using WarcraftLegacies.Source.Factions.Quelthalas;
 using WarcraftLegacies.Source.Factions.Quelthalas.Quests;
 using WarcraftLegacies.Source.Factions.Scourge;
@@ -120,6 +121,13 @@ public static class RoleplaySetting
       quelthalas.AddQuest(new QuestRuinsOfSuramar());
       quelthalas.SetObjectLimit(UNIT_N048_BLOOD_MAGE_QUELTHALAS, 0);
       quelthalas.SetObjectLimit(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 0);
+    }
+
+    if (FactionManager.TryGetFactionByType<OrcishHordeFaction>(out var orcs))
+    {
+      orcs.GetQuestByType<QuestDemolishElfCities>().UnlocksSaurfang = true;
+      orcs.SetObjectLimit(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_ORCISH_HORDE, 0);
+      orcs.SetObjectLimit(UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_WARSONG, 1);
     }
 
     AllLegends.Quel.Sunwell.DeathMessage =
