@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B115",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Crown of Arathor"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Crown of Arathor"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is under the protection of the King of Stromgarde; it has bonus armor."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASAchillesArmor.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

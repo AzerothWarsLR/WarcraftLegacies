@@ -1,0 +1,39 @@
+{
+  "OldId": "Bblo",
+  "NewId": "B114",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "King\u0027s Command"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "King\u0027s Command"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been commanded by the king; it attacks and moves faster."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNKingsSword.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\BattleRoar\\RoarTarget.mdl"
+    },
+    {
+      "Id": "fta0",
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

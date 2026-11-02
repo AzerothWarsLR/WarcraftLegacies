@@ -1,0 +1,75 @@
+{
+  "OldId": "ACav",
+  "NewId": "A1DT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stromgarde - Danath) (Buff)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Commander\u0027s Mark"
+    },
+    {
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Commander\u0027s Mark"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": -11
+    },
+    {
+      "Id": "atat",
+      "Type": 3,
+      "Value": "war3mapImported\\MarkOfIronWill.mdl"
+    },
+    {
+      "Id": "ata0",
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "B116"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Had1",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "atar",
+      "Type": 3,
+      "Value": "_"
+    }
+  ]
+}
