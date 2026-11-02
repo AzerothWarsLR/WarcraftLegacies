@@ -17,6 +17,10 @@ namespace MacroTools.WorldEvents;
 public abstract class WorldEvent
 {
   private const float TickInterval = 0.25f;
+  private const float AnnouncementGap = 6;
+
+  private static readonly List<WorldEvent> _pendingAnnouncements = new();
+  private static timer? _announcementTimer;
 
   private readonly List<Objective> _requirements = new();
   private WorldEventState _state = WorldEventState.Upcoming;
@@ -207,8 +211,13 @@ public abstract class WorldEvent
   {
     StopTicking();
     HappenedOnTurn = GameTimeManager.Turn;
+    QueueAnnouncement(this);
     State = WorldEventState.Happened;
+    OnHappened();
+  }
 
+  private void ShowAnnouncement()
+  {
     foreach (var whichPlayer in WCSharp.Shared.Util.EnumeratePlayers())
     {
       whichPlayer.DisplayTextTo($"\n|cffffcc00{Loc.Get("EVENT")}|r - {Loc.Get(Name)}\n{Loc.Get(Description)}");
@@ -216,7 +225,40 @@ public abstract class WorldEvent
 
     EventBanner.Show(IconPath, Loc.Get(Name), Loc.Get(Description));
     SoundLibrary.Warning.Start();
-    OnHappened();
+  }
+
+  /// <summary>Announces events one at a time, a few seconds apart, so events set off together don't drown each other out.</summary>
+  private static void QueueAnnouncement(WorldEvent worldEvent)
+  {
+    _pendingAnnouncements.Add(worldEvent);
+    if (_announcementTimer == null)
+    {
+      ShowNextAnnouncement();
+    }
+  }
+
+  private static void ShowNextAnnouncement()
+  {
+    if (_pendingAnnouncements.Count == 0)
+    {
+      if (_announcementTimer != null)
+      {
+        _announcementTimer.Dispose();
+        _announcementTimer = null;
+      }
+
+      return;
+    }
+
+    var next = _pendingAnnouncements[0];
+    _pendingAnnouncements.RemoveAt(0);
+    next.ShowAnnouncement();
+    if (_announcementTimer == null)
+    {
+      _announcementTimer = timer.Create();
+    }
+
+    _announcementTimer.Start(AnnouncementGap, false, ShowNextAnnouncement);
   }
 
   private void AnnounceImminent()
