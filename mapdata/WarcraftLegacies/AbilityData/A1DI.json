@@ -1,0 +1,29 @@
+{
+  "OldId": "Acmg",
+  "NewId": "A1DI",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R11U"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stromgarde - Battlemage)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Control Magic"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    }
+  ]
+}

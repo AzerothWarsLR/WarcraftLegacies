@@ -72,6 +72,8 @@ public static class ThandolSpanBridge
   private static texttag? _countdownText;
   private static readonly List<string> _payers = new();
   private static int _finishTurn = DefaultFinishTurn;
+  private static string? _hurriedBy;
+  private static bool _wasHurried;
 
   /// <summary>Whether the bridge has been restored.</summary>
   public static bool IsRestored { get; private set; }
@@ -146,10 +148,27 @@ public static class ThandolSpanBridge
     Restore();
   }
 
+  /// <summary>Brings the end of the repairs forward to <paramref name="turn"/> if that is sooner, crediting <paramref name="cause"/>.</summary>
+  /// <param name="turn">The turn the repairs should finish by.</param>
+  /// <param name="cause">What hurried the repairs, such as "the Grand Alliance formed".</param>
+  public static void FinishBy(int turn, string cause)
+  {
+    if (IsRestored || turn >= _finishTurn)
+    {
+      return;
+    }
+
+    _finishTurn = turn;
+    _hurriedBy = cause;
+    _wasHurried = true;
+    RefreshCountdownText();
+  }
+
   private static void OnTurn()
   {
     if (!IsRestored && GameTimeManager.Turn >= _finishTurn)
     {
+      RestoredBy = _hurriedBy;
       Restore();
     }
   }
@@ -162,7 +181,8 @@ public static class ThandolSpanBridge
     }
 
     var buyer = @event.Unit.Owner;
-    if (_finishTurn <= EarliestFinishTurn)
+    var earliestTurn = EarliestPaidFinishTurn();
+    if (_finishTurn <= earliestTurn)
     {
       buyer.Gold += SpeedUpCost;
       return;
@@ -174,10 +194,11 @@ public static class ThandolSpanBridge
       _payers.Add(buyerFaction.ColoredName);
     }
 
-    _finishTurn = Math.Max(EarliestFinishTurn, _finishTurn - TurnsSavedPerPayment);
+    _finishTurn = Math.Max(earliestTurn, _finishTurn - TurnsSavedPerPayment);
+    _hurriedBy = null;
     var side = @event.Unit.Y < BridgeMiddleY ? South : North;
     HireWorker(side);
-    if (_finishTurn == EarliestFinishTurn)
+    if (_finishTurn == earliestTurn)
     {
       foreach (var foreman in _foremen)
       {
@@ -193,6 +214,10 @@ public static class ThandolSpanBridge
 
     RefreshCountdownText();
   }
+
+  /// <summary>Payments can't finish the bridge before turn 8, unless something already hurried it, then no sooner than next turn.</summary>
+  private static int EarliestPaidFinishTurn() =>
+    _wasHurried ? Math.Min(EarliestFinishTurn, GameTimeManager.Turn + 1) : EarliestFinishTurn;
 
   private static void HireWorker(int side)
   {

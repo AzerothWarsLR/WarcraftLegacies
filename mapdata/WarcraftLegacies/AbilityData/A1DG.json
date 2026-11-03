@@ -1,0 +1,24 @@
+{
+  "OldId": "Asps",
+  "NewId": "A1DG",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stromgarde - Battlemage)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Spell Steal"
+    }
+  ]
+}

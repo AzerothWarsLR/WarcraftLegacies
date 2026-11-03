@@ -1,0 +1,40 @@
+{
+  "OldId": "hwat",
+  "NewId": "h0GL",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Water Elemental"
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Stromgarde Summon)"
+    },
+    {
+      "Id": "uhpm",
+      "Value": 400
+    },
+    {
+      "Id": "ua1b",
+      "Value": 11
+    },
+    {
+      "Id": "ua1d",
+      "Value": 1
+    },
+    {
+      "Id": "ua1s",
+      "Value": 5
+    },
+    {
+      "Id": "upgr",
+      "Type": 3,
+      "Value": "Rhme,Rhar,R11X"
+    }
+  ]
+}

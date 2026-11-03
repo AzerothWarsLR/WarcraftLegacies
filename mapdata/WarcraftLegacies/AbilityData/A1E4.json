@@ -1,0 +1,95 @@
+{
+  "OldId": "Aivs",
+  "NewId": "A1E4",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stromgarde - Magus of Stromgarde)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Invisibility"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": "abpx",
+      "Value": 1
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInvisibility.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Invisibility (|cffffcc00W|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Makes a target friendly unit invisible for 60 seconds. Attacking or casting a spell ends it."
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 75
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R11V"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "1"
+    }
+  ]
+}

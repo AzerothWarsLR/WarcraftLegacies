@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B118",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Stand of Honor Hold"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Stand of Honor Hold"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Danath holds his ground; he takes no damage."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGarithosAvatar.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

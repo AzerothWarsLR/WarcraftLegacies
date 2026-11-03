@@ -1,0 +1,122 @@
+{
+  "OldId": "harm",
+  "NewId": "h0FT",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "uabi",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "ubld",
+      "Value": 30
+    },
+    {
+      "Id": "ucol",
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": "ugol",
+      "Value": 15
+    },
+    {
+      "Id": "ugor",
+      "Value": 13
+    },
+    {
+      "Id": "ulur",
+      "Value": 0
+    },
+    {
+      "Id": "upat",
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": "upap",
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": "upri",
+      "Value": 18
+    },
+    {
+      "Id": "ureq",
+      "Type": 3,
+      "Value": "h0FN,h0FS"
+    },
+    {
+      "Id": "ures",
+      "Type": 3,
+      "Value": "R02B,R11Z"
+    },
+    {
+      "Id": "utra",
+      "Type": 3,
+      "Value": "o20Y,h0GF,h0GE,e03I,h0GG"
+    },
+    {
+      "Id": "ulum",
+      "Value": 0
+    },
+    {
+      "Id": "uico",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStromgardeWorkshop.blp"
+    },
+    {
+      "Id": "ubpx",
+      "Value": 2
+    },
+    {
+      "Id": "unsf",
+      "Type": 3,
+      "Value": "(Stromgarde)"
+    },
+    {
+      "Id": "umdl",
+      "Type": 3,
+      "Value": "war3mapImported\\StromgardeWorkshop.mdl"
+    },
+    {
+      "Id": "uhot",
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": "usca",
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": "ussc",
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": "uubs",
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": "utub",
+      "Type": 3,
+      "Value": "Trains siege weapons, gryphon riders and Stromgarde\u0027s marshals."
+    },
+    {
+      "Id": "unam",
+      "Type": 3,
+      "Value": "Armory"
+    },
+    {
+      "Id": "utip",
+      "Type": 3,
+      "Value": "Build Armory"
+    }
+  ]
+}

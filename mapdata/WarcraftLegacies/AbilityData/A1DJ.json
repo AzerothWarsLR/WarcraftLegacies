@@ -1,0 +1,298 @@
+{
+  "OldId": "AOsf",
+  "NewId": "A1DJ",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 4
+    },
+    {
+      "Id": "aher",
+      "Value": 1
+    },
+    {
+      "Id": "arlv",
+      "Value": 1
+    },
+    {
+      "Id": "alsk",
+      "Value": 2
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stromgarde - Thoras)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Call to Arms"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "arhk",
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStromgardeMilitia.blp"
+    },
+    {
+      "Id": "arar",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStromgardeMilitia.blp"
+    },
+    {
+      "Id": "abpx",
+      "Value": 0
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "arpx",
+      "Value": 0
+    },
+    {
+      "Id": "arpy",
+      "Value": 0
+    },
+    {
+      "Id": "aret",
+      "Type": 3,
+      "Value": "Learn Call to Arms - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": "arut",
+      "Type": 3,
+      "Value": "Thoras calls the Kingsguard to his side for 30 seconds. They benefit from melee and armor upgrades.|n|n|cffffcc00Level 1|r - 2 Kingsguard with 850 hit points.|n|cffffcc00Level 2|r - 3 Kingsguard with 900 hit points.|n|cffffcc00Level 3|r - 3 Kingsguard with 1100 hit points.|n|cffffcc00Level 4|r - 4 Kingsguard with 1200 hit points."
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Call to Arms - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Call to Arms - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Call to Arms - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Call to Arms - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Thoras calls 2 Kingsguard with 850 hit points to his side for 30 seconds. They benefit from melee and armor upgrades."
+    },
+    {
+      "Level": 2,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Thoras calls 3 Kingsguard with 900 hit points to his side for 30 seconds. They benefit from melee and armor upgrades."
+    },
+    {
+      "Level": 3,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Thoras calls 3 Kingsguard with 1100 hit points to his side for 30 seconds. They benefit from melee and armor upgrades."
+    },
+    {
+      "Level": 4,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Thoras calls 4 Kingsguard with 1200 hit points to his side for 30 seconds. They benefit from melee and armor upgrades."
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 2,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 3,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 4,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 2,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": "amcs",
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "h0GH"
+    },
+    {
+      "Level": 2,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "h0GI"
+    },
+    {
+      "Level": 3,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "h0GJ"
+    },
+    {
+      "Level": 4,
+      "Id": "Osf1",
+      "Type": 3,
+      "Value": "h0GK"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 2
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 3
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 3
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": "Osf2",
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": "adur",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 2,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 4,
+      "Id": "ahdu",
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 4,
+      "Id": "abuf",
+      "Type": 3,
+      "Value": "BFig"
+    }
+  ]
+}

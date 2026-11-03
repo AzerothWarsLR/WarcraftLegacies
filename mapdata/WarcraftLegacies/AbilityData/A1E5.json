@@ -1,0 +1,130 @@
+{
+  "OldId": "ACbz",
+  "NewId": "A1E5",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "alev",
+      "Value": 1
+    },
+    {
+      "Id": "aher",
+      "Value": 0
+    },
+    {
+      "Id": "arac",
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stromgarde - Magus of Stromgarde)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Blizzard"
+    },
+    {
+      "Id": "ahky",
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": "abpx",
+      "Value": 2
+    },
+    {
+      "Id": "abpy",
+      "Value": 2
+    },
+    {
+      "Id": "aart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlizzard.blp"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Blizzard (|cffffcc00E|r)"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Calls down 3 waves of freezing ice shards that deal 45 damage each to units in a target area."
+    },
+    {
+      "Level": 1,
+      "Id": "acdn",
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": "amcs",
+      "Value": 125
+    },
+    {
+      "Level": 1,
+      "Id": "aare",
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": "aran",
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": "Hbz1",
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": "Hbz2",
+      "Type": 2,
+      "Value": 45
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": "Hbz3",
+      "Value": 6
+    },
+    {
+      "Level": 1,
+      "Pointer": 6,
+      "Id": "Hbz6",
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": "aani",
+      "Type": 3,
+      "Value": "spell,looping"
+    },
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R11V"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
+    },
+    {
+      "Id": "achd",
+      "Value": 1
+    }
+  ]
+}

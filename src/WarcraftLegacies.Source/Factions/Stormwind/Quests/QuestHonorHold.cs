@@ -31,6 +31,12 @@ public sealed class QuestHonorHold : QuestData
     ResearchId = UPGRADE_R039_QUEST_COMPLETED_HONOR_HOLD;
   }
 
+  /// <summary>Set when Stromgarde takes this quest over; this copy then gives no rewards of its own.</summary>
+  public bool HandedOver { get; set; }
+
+  /// <summary>The units at Honor Hold waiting to join whoever completes the quest.</summary>
+  public IReadOnlyList<unit> RescueUnits => _rescueUnits;
+
   /// <inheritdoc/>
   public override string RewardFlavour =>
     "Honor Hold is now free from the constant looming threat of Hellfire Citadel, and have finally been reconnected with their Alliance from Azeroth.";
@@ -44,6 +50,11 @@ public sealed class QuestHonorHold : QuestData
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
   {
+    if (HandedOver)
+    {
+      return;
+    }
+
     foreach (var unit in _rescueUnits)
     {
       unit.Rescue(player.NeutralAggressive);
@@ -53,6 +64,11 @@ public sealed class QuestHonorHold : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
+    if (HandedOver)
+    {
+      return;
+    }
+
     foreach (var unit in _rescueUnits)
     {
       unit.Rescue(completingFaction.Player);

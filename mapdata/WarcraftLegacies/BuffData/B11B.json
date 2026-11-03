@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B11B",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Crown of Arathor (Wounded)"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Crown of Arathor (Wounded)"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This wounded unit is shielded by the King of Stromgarde; it has extra armor."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASAchillesArmor.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

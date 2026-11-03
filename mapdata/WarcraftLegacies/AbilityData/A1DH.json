@@ -1,0 +1,36 @@
+{
+  "OldId": "Amdf",
+  "NewId": "A1DH",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "areq",
+      "Type": 3,
+      "Value": "R11U"
+    },
+    {
+      "Id": "ansf",
+      "Type": 3,
+      "Value": "(Stromgarde - Battlemage)"
+    },
+    {
+      "Id": "anam",
+      "Type": 3,
+      "Value": "Magic Defense"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magic Defense"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate to gain magic immunity, but move 33% slower and take 50% more damage from attacks."
+    }
+  ]
+}

@@ -550,6 +550,25 @@ public static class UniqueEliteNames
           "Sir Marcus Shieldheart",
           "Sir Victor Lightmane"
         },
+      [UNIT_H0GD_CHAMPION_OF_ARATHOR_STROMGARDE_ELITE] =
+        new()
+        {
+          "Sir Aldous Greyhelm",
+          "Sir Brannoc Highcliff",
+          "Sir Cadric Stonewall",
+          "Sir Duncan Ironvale",
+          "Sir Edric Grimsword",
+          "Sir Falk Ravenmoor",
+          "Sir Gerran Thornfield",
+          "Sir Halvard Stormcrest",
+          "Sir Ivo Ashcombe",
+          "Sir Jarren Greystone",
+          "Sir Kellan Arathorn",
+          "Sir Merrick Coldbrook",
+          "Sir Osric Highmantle",
+          "Sir Tobin Ravenhold",
+          "Sir Wendel Cragmoor"
+        },
       [UNIT_N086_FEL_DEATH_KNIGHT_FEL_ELITE_TIER] =
         new()
       {

@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B116",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Commander\u0027s Mark"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Commander\u0027s Mark"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit has been marked by Danath; it takes more damage from all sources."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHunterMark.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

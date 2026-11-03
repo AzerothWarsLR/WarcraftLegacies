@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B11A",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Last Defender"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Last Defender"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "This unit is making a last stand; it takes 50% less damage."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFootmanDefendOn.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "OldId": "BHad",
+  "NewId": "B117",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "fnam",
+      "Type": 3,
+      "Value": "Battle-Hardened"
+    },
+    {
+      "Id": "ftip",
+      "Type": 3,
+      "Value": "Battle-Hardened"
+    },
+    {
+      "Id": "fube",
+      "Type": 3,
+      "Value": "Danath has been hardened by the fighting; he has bonus armor."
+    },
+    {
+      "Id": "fart",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBlackArmor.blp"
+    },
+    {
+      "Id": "ftat",
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

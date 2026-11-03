@@ -1,0 +1,116 @@
+{
+  "OldId": "Rhde",
+  "NewId": "R11R",
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": "gba1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "gba2",
+      "Type": 2,
+      "Value": -1
+    },
+    {
+      "Id": "gba3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gco1",
+      "Type": 3,
+      "Value": "Adef"
+    },
+    {
+      "Id": "gco2",
+      "Type": 3,
+      "Value": "h0G8"
+    },
+    {
+      "Id": "gco3",
+      "Type": 3,
+      "Value": "A0P3"
+    },
+    {
+      "Id": "gglb",
+      "Value": 200
+    },
+    {
+      "Id": "glmb",
+      "Value": 0
+    },
+    {
+      "Id": "gmo1",
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Id": "gmo2",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Id": "gmo3",
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "greq",
+      "Type": 3,
+      "Value": "h0FO,R11Y"
+    },
+    {
+      "Id": "gtib",
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRanger.blp"
+    },
+    {
+      "Id": "gbpx",
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Stromgarde)"
+    },
+    {
+      "Level": 1,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 1,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Expedition Survivors"
+    },
+    {
+      "Level": 1,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Research Expedition Survivors"
+    },
+    {
+      "Level": 1,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Survivors of the Alliance Expedition into Draenor, returning to arms to once again defend Azeroth.|n|nAllows training of |cffcece00Troll Hunters |rin place of |cffcece00Highland Spearmen|r with the following changes:|n|n- Damage increased by 12.|n- Range increased by 150.|n- Movement Speed increased by 20.|n- Health increased by 100.|n|nTroll Hunters have the following abilities:|n|n|cffcece00Critical Strike|r - Gives a 15% chance to do 2 times normal damage on an attack.|n|cffcece00|nPoison Arrows|r - Deals \u003CAEpa,DataA1\u003E bonus damage and poisons the target dealing \u003CAEpa,DataB1\u003E bonus damage every second for 4 seconds."
+    },
+    {
+      "Id": "gbpy",
+      "Value": 2
+    }
+  ]
+}
