@@ -16,7 +16,6 @@ public sealed class FontOfPower : Power
 {
   private readonly List<Objective> _objectives = new();
   private readonly List<Capital> _fontsOfPower;
-  private bool _isActive;
   private readonly List<player> _playersWithPower = new();
 
   /// <summary>Active when the <see cref="Power"/> is active, inactive otherwise.</summary>
@@ -28,18 +27,18 @@ public sealed class FontOfPower : Power
   /// <summary>How much additional damage is dealt per point of damage.</summary>
   public required float BonusDamagePercentage { get; init; }
 
-  private bool IsActive
+  private bool FontActive
   {
-    get => _isActive;
+    get => IsActive;
     set
     {
-      _isActive = value;
-      var prefix = IsActive ? "" : "|cffc0c0c0";
+      IsActive = value;
+      var prefix = value ? "" : "|cffc0c0c0";
       Description = prefix + Loc.Format(
         "All units deal {damage}% extra damage and regain {mana}% of the mana cost of abilities. Only active while your team controls the Sunwell, the Well of Eternity, Black Temple, or Nordrassil.",
         ("{damage}", ((int)(BonusDamagePercentage * 100)).ToString()),
         ("{mana}", ((int)(ManaRefundPercentage * 100)).ToString()));
-      var researchLevel = _isActive ? 1 : 0;
+      var researchLevel = value ? 1 : 0;
       foreach (var player in _playersWithPower)
       {
         player.GetPlayerData().Faction?.SetObjectLevel(ResearchId, researchLevel);
@@ -162,5 +161,5 @@ public sealed class FontOfPower : Power
 
   private void OnObjectiveProgressChanged(Objective _) => RefreshIsActive();
 
-  private void RefreshIsActive() => IsActive = _objectives.Any(x => x.Progress == QuestProgress.Complete);
+  private void RefreshIsActive() => FontActive = _objectives.Any(x => x.Progress == QuestProgress.Complete);
 }

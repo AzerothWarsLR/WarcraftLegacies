@@ -8,6 +8,7 @@ namespace MacroTools.Factions;
 public abstract class Power
 {
   private string _description = "";
+  private bool _isActive = true;
 
   public string IconName { get; init; } = "";
 
@@ -27,9 +28,28 @@ public abstract class Power
 
   public bool Usable { get; set; }
 
+  /// <summary>Whether the <see cref="Power"/> currently has an effect. Inactive powers are listed last.</summary>
+  public bool IsActive
+  {
+    get => _isActive;
+    protected set
+    {
+      if (_isActive == value)
+      {
+        return;
+      }
+
+      _isActive = value;
+      ActiveChanged?.Invoke(this);
+    }
+  }
+
   public bool OnCooldown { get; set; }
 
   public event Action<Power>? DescriptionChanged;
+
+  /// <summary>Fired when <see cref="IsActive"/> changes.</summary>
+  public event Action<Power>? ActiveChanged;
 
   /// <summary>
   ///   Fired when the <see cref="Power" /> is added to a <see cref="player" />.

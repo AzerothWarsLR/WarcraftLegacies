@@ -73,7 +73,7 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
 
   private void OnFactionAddPower(FactionPowerEventArgs factionPowerEventArgs)
   {
-    AddPower(factionPowerEventArgs.Power);
+    ReRender();
     _hasUnseenPower = true;
     RefreshGlow();
   }
@@ -113,7 +113,18 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
 
   private void OnFactionRemovePower(FactionPowerEventArgs factionPowerEventArgs)
   {
+    factionPowerEventArgs.Power.ActiveChanged -= OnPowerActiveChanged;
     ReRender();
+  }
+
+  private void OnPowerActiveChanged(Power power)
+  {
+    ReRender();
+    if (power.IsActive)
+    {
+      _hasUnseenPower = true;
+      RefreshGlow();
+    }
   }
 
   /// <inheritdoc />
@@ -124,9 +135,23 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
       return;
     }
 
-    foreach (var power in _trackedFaction.GetAllPowers())
+    var powers = _trackedFaction.GetAllPowers();
+    foreach (var power in powers)
     {
-      AddPower(power);
+      power.ActiveChanged -= OnPowerActiveChanged;
+      power.ActiveChanged += OnPowerActiveChanged;
+      if (power.IsActive)
+      {
+        AddPower(power);
+      }
+    }
+
+    foreach (var power in powers)
+    {
+      if (!power.IsActive)
+      {
+        AddPower(power);
+      }
     }
 
     RefreshNavigationButtonVisiblity();
