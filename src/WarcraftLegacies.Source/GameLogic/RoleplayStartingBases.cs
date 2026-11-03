@@ -24,6 +24,7 @@ using WarcraftLegacies.Source.Factions.Sentinels;
 using WarcraftLegacies.Source.Factions.Sentinels.Quests;
 using WarcraftLegacies.Source.Factions.Stormwind;
 using WarcraftLegacies.Source.Factions.Stormwind.Quests;
+using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Shared;
 using WarcraftLegacies.Source.UserInterface;
 using WCSharp.Shared.Data;
@@ -91,6 +92,7 @@ public static class RoleplayStartingBases
       Complete(stormwind, stormwind.GetQuestByType<QuestNethergarde>(), Regions.NethergardeUnlock);
       SpawnHero(stormwind, AllLegends.Stormwind.Varian, new Point(9781, -10995));
       SpawnHero(stormwind, AllLegends.Stormwind.Bolvar, new Point(17165, -17321));
+      GiveCrownOfStormwindToVarian();
     }
 
     if (FactionManager.TryGetFactionByType<KultirasFaction>(out var kultiras) && kultiras.Player != null)
@@ -211,6 +213,25 @@ public static class RoleplayStartingBases
     GameStartVoteSequence.PauseUnit(unit.Create(owner, unitType, position.X, position.Y, 270));
   }
 
+  /// <summary>Varian starts wearing the Crown of Stormwind instead of it waiting on Hogger, whose camp is already cleared.</summary>
+  private static void GiveCrownOfStormwindToVarian()
+  {
+    var varian = AllLegends.Stormwind.Varian.Unit;
+    var crown = Artifacts.CrownOfStormwind;
+    if (varian == null || crown.Item == null)
+    {
+      return;
+    }
+
+    var holder = crown.OwningUnit;
+    if (holder != null)
+    {
+      holder.RemoveItem(crown.Item);
+    }
+
+    varian.AddItemSafe(crown.Item);
+  }
+
   private static void ClaimBaseArea(Rectangle baseArea, player owner)
   {
     foreach (var creep in GlobalGroup.EnumUnitsInRect(baseArea))
@@ -234,6 +255,11 @@ public static class RoleplayStartingBases
       if (CapitalManager.UnitIsCapital(creep))
       {
         continue;
+      }
+
+      if (creep.InventorySize > 0)
+      {
+        creep.DropAllItems();
       }
 
       creep.Dispose();

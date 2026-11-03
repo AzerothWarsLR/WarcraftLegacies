@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Factions;
+using MacroTools.GameTime;
 using MacroTools.Paths;
 using MacroTools.Quests;
 using MacroTools.WorldEvents;
@@ -48,6 +49,7 @@ public static class RoleplaySetting
 {
   private const int TeamCap = 5;
   private const int BlocCap = 6;
+  private const int GrandAllianceBridgeDelay = 5;
   private const int FelHordePlayer = 6;
   private const int DarkPortalEarliestTurn = 5;
   private const int DarkPortalForcedTurn = 7;
@@ -172,7 +174,7 @@ public static class RoleplaySetting
     {
       if (worldEvent.State == WorldEventState.Happened)
       {
-        ThandolSpanBridge.RestoreNow("the Grand Alliance formed");
+        ThandolSpanBridge.FinishBy(GameTimeManager.Turn + GrandAllianceBridgeDelay, "the Grand Alliance sent its masons");
       }
     };
   }

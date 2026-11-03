@@ -11,10 +11,10 @@ public sealed class ThandolSpanEvent : WorldEvent
   {
     Name = "The Thandol Span Restored";
     IconName = "Repair";
-    Description = "The great dwarven bridge between Arathi and the Wetlands lies in ruin, and a dwarven crew is hard at work raising it again. Paying its foremen speeds up the work, and should the Alliance unite, the bridge is restored at once.";
+    Description = "The great dwarven bridge between Arathi and the Wetlands lies in ruin, and a dwarven crew is hard at work raising it again. Paying its foremen speeds up the work, and should the Alliance unite, its masons finish the bridge within 5 turns.";
 
     var restored = new ObjectiveTriggered(
-      $"The crew finishes on turn {ThandolSpanBridge.DefaultFinishTurn}, {ThandolSpanBridge.TurnsSavedPerPayment} turns sooner for each payment to a foreman (no sooner than turn {ThandolSpanBridge.EarliestFinishTurn}), or the Grand Alliance forms");
+      $"The crew finishes on turn {ThandolSpanBridge.DefaultFinishTurn}, {ThandolSpanBridge.TurnsSavedPerPayment} turns sooner for each payment to a foreman (no sooner than turn {ThandolSpanBridge.EarliestFinishTurn}), or 5 turns after the Grand Alliance forms");
     AddRequirement(restored);
     ThandolSpanBridge.Restored += () =>
     {
