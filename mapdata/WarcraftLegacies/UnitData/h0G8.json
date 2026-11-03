@@ -82,7 +82,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R01N,R03D,Rhme,Rhar,Rguv,R11X"
+      "Value": "R01N,R11Z,Rhme,Rhar,Rguv,R11X"
     },
     {
       "Id": "uico",
@@ -110,7 +110,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.1
+      "Value": 1.0
     },
     {
       "Id": "unam",

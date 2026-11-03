@@ -21,7 +21,7 @@ public sealed class QuestTrollbaneLegacy : QuestData
     AddObjective(new ObjectiveLegendLevel(thoras, 10));
     AddObjective(new ObjectiveLegendLevel(danath, 10));
     AddObjective(new ObjectiveLegendLevel(galen, 10));
-    ResearchId = UPGRADE_R11Y_TROLLBANE_LEGACY_STROMGARDE;
+    ResearchId = UPGRADE_R11Y_QUEST_COMPLETED_THE_TROLLBANE_LEGACY_STROMGARDE;
   }
 
   /// <inheritdoc/>
@@ -29,7 +29,7 @@ public sealed class QuestTrollbaneLegacy : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    "Thoras, Danath and Galen each gain 5 Strength, Agility and Intelligence, and the Kingsguard gain 250 hit points and 10 damage";
+    "Thoras, Danath and Galen each gain 5 Strength, Agility and Intelligence, the Kingsguard gain 250 hit points and 10 damage, and you can research the upgrades that turn your Swordsmen, Spearmen, Lancers and Marshals into their veteran forms";
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

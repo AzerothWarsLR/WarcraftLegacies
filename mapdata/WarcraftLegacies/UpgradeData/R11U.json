@@ -89,11 +89,11 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Increases Battlemages\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Control Magic."
+      "Value": "Increases Battlemages\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Magic Defense."
     },
     {
       "Id": "glvl",
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": "gbpy",
@@ -103,7 +103,43 @@
       "Level": 1,
       "Id": "gar1",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNStromgardeBattlemage.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellBreakerMagicDefend.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "gnam",
+      "Type": 3,
+      "Value": "Battlemage Master Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gtp1",
+      "Type": 3,
+      "Value": "Battlemage Master Training"
+    },
+    {
+      "Level": 2,
+      "Id": "gub1",
+      "Type": 3,
+      "Value": "Further increases Battlemages\u0027 mana capacity and mana regeneration rate, and gives them the ability to cast Control Magic."
+    },
+    {
+      "Level": 2,
+      "Id": "gar1",
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNControlMagic.blp"
+    },
+    {
+      "Level": 2,
+      "Id": "ghk1",
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Level": 2,
+      "Id": "gnsf",
+      "Type": 3,
+      "Value": "(Stromgarde)"
     }
   ]
 }

@@ -13,8 +13,8 @@ public sealed class QuestBulwarkOfArathor : QuestData
     "King Thoradin once walled off the Arathi Highlands against all comers. Secure the highlands from Stromgarde to the mountains of Alterac and stand as his wall did.",
     @"ReplaceableTextures\CommandButtons\BTNStromgardeCastle.blp")
   {
-    AddObjective(new ObjectiveControlPoint(UNIT_N01K_STROMGARDE));
-    AddObjective(new ObjectiveControlPoint(UNIT_N01Z_ARATHI_HIGHLANDS));
+    AddObjective(new ObjectiveControlPoint(UNIT_N01K_STROMGARDE, 0));
+    AddObjective(new ObjectiveControlPoint(UNIT_N01Z_ARATHI_HIGHLANDS, 0));
     AddObjective(new ObjectiveControlPoint(UNIT_N019_ALTERAC_MOUNTAINS));
     ResearchId = UPGRADE_R11X_BULWARK_OF_ARATHOR_STROMGARDE;
   }

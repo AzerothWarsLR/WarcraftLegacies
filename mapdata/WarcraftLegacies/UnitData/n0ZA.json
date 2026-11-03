@@ -112,7 +112,7 @@
     {
       "Id": "ucua",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNExplosion.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGUPGWaterBurst.blp"
     },
     {
       "Id": "unsf",
@@ -147,7 +147,17 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 0.94
+      "Value": 0.78
+    },
+    {
+      "Id": "ucun",
+      "Type": 3,
+      "Value": "Initiate,Adept,Master"
+    },
+    {
+      "Id": "ucut",
+      "Type": 3,
+      "Value": "- Summon Water Elemental,- Summon Water Elemental|n- Invisibility,- Summon Water Elemental|n- Invisibility|n- Blizzard"
     }
   ]
 }

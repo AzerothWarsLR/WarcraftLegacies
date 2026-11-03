@@ -82,7 +82,7 @@
     {
       "Id": "ucua",
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\UPGBTNSearingArrows.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGBTNstaffofsilence.blp"
     },
     {
       "Id": "ucun",
@@ -92,7 +92,7 @@
     {
       "Id": "ucut",
       "Type": 3,
-      "Value": "-Smite,- Smite |n- Renewal,- Smite|n- Renewal|n- Light Burst"
+      "Value": "- Feedback|n- Spell Steal,- Feedback|n- Spell Steal|n- Magic Defense,- Feedback|n- Spell Steal|n- Magic Defense|n- Control Magic"
     },
     {
       "Id": "unsf",

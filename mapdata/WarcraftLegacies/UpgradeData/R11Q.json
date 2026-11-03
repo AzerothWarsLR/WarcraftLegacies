@@ -62,7 +62,7 @@
       "Level": 1,
       "Id": "greq",
       "Type": 3,
-      "Value": "h0FO"
+      "Value": "h0FO,R11Y"
     },
     {
       "Id": "gtib",
@@ -106,7 +106,7 @@
     },
     {
       "Id": "gbpx",
-      "Value": 0
+      "Value": 2
     },
     {
       "Id": "gbpy",

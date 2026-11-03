@@ -75,7 +75,7 @@
     {
       "Id": "upgr",
       "Type": 3,
-      "Value": "R01N,R02Y,R03D,Rhme,Rhar,Rguv,R11X"
+      "Value": "R01N,R02Y,R11Z,Rhme,Rhar,Rguv,R11X"
     },
     {
       "Id": "ureq",
@@ -129,7 +129,7 @@
     {
       "Id": "usca",
       "Type": 1,
-      "Value": 1.05
+      "Value": 0.95
     },
     {
       "Id": "ussc",

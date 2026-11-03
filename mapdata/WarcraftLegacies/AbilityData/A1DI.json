@@ -19,6 +19,11 @@
       "Id": "anam",
       "Type": 3,
       "Value": "Control Magic"
+    },
+    {
+      "Id": "arqa",
+      "Type": 3,
+      "Value": "2"
     }
   ]
 }

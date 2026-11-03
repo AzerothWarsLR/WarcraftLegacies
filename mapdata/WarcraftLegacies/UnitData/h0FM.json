@@ -56,7 +56,7 @@
     {
       "Id": "ures",
       "Type": 3,
-      "Value": "R03D,R11S,R11Q,R11R,R11W"
+      "Value": ""
     },
     {
       "Id": "utra",
@@ -116,6 +116,11 @@
       "Id": "utub",
       "Type": 3,
       "Value": "Primary structure. "
+    },
+    {
+      "Id": "udep",
+      "Type": 3,
+      "Value": "h0FN,h0FO,h02V"
     }
   ]
 }

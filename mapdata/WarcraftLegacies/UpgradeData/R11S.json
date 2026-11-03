@@ -101,17 +101,17 @@
     },
     {
       "Id": "gbpy",
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": "gbpx",
-      "Value": 1
+      "Value": 0
     },
     {
       "Level": 1,
       "Id": "greq",
       "Type": 3,
-      "Value": "h0FN"
+      "Value": "h0FN,R11Y"
     }
   ]
 }

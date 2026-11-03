@@ -8,7 +8,7 @@
     {
       "Id": "areq",
       "Type": 3,
-      "Value": ""
+      "Value": "R11U"
     },
     {
       "Id": "ansf",
@@ -19,6 +19,18 @@
       "Id": "anam",
       "Type": 3,
       "Value": "Magic Defense"
+    },
+    {
+      "Level": 1,
+      "Id": "atp1",
+      "Type": 3,
+      "Value": "Magic Defense"
+    },
+    {
+      "Level": 1,
+      "Id": "aub1",
+      "Type": 3,
+      "Value": "Activate to gain magic immunity, but move 33% slower and take 50% more damage from attacks."
     }
   ]
 }

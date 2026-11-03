@@ -64,7 +64,7 @@
       "Level": 1,
       "Id": "gub1",
       "Type": 3,
-      "Value": "Providing teachings from the mages of Stromgarde allowing |cffcece00Priests|r to use |cffcece00Mana Burn|r.|n|n|cffcece00Mana Burn|r - Sends a bolt of negative energy that burns up to 55 points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned.|n|nGrants an additional +5 damage to |cffcece00Chaplains |rand |cffcece00Priests|r."
+      "Value": "Providing teachings from the mages of Stromgarde allowing |cffcece00Priests|r to use |cffcece00Mana Burn|r.|n|n|cffcece00Mana Burn|r - Sends a bolt of negative energy that burns up to 55 points of a target enemy unit\u0027s mana. The mana combusts, dealing damage equal to the amount of mana burned.|n|nGrants an additional \u002B5 damage to |cffcece00Priests|r."
     },
     {
       "Id": "gbpy",

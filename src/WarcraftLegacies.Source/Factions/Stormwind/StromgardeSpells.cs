@@ -7,12 +7,17 @@ namespace WarcraftLegacies.Source.Factions.Stormwind;
 /// <summary>Sets up the spells of Stromgarde's heroes.</summary>
 public static class StromgardeSpells
 {
-  /// <summary>Sets up the spells of Thoras, Danath and the Champion of Arathor.</summary>
+  /// <summary>Sets up the spells of Thoras, Danath, the Champion of Arathor and the Battlemage.</summary>
   public static void Setup()
   {
     RegisterThoras();
     RegisterDanath();
     RegisterChampionOfArathor();
+    new MagicDefenseVulnerability
+    {
+      UnitTypeId = UNIT_N0Z9_BATTLEMAGE_STROMGARDE,
+      ExtraAttackDamage = 0.5f
+    }.Register();
   }
 
   private static void RegisterThoras()
@@ -85,7 +90,7 @@ public static class StromgardeSpells
   {
     SpellRegistry.Register(new HammerOfArathorSpell(ABILITY_A1DY_HAMMER_OF_ARATHOR_STROMGARDE_CHAMPION_OF_ARATHOR)
     {
-      Damage = 150,
+      Damage = 90,
       SlowAbilityId = ABILITY_A1DZ_HAMMER_OF_ARATHOR_SLOW_STROMGARDE_CHAMPION_OF_ARATHOR_DUMMY,
       HitEffectPath = @"Abilities\Weapons\AncientProtectorMissile\AncientProtectorMissile.mdl"
     });
